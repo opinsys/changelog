@@ -16,3 +16,8 @@ browserify:
 browserify-watch:
 	watchify -v -d index.js -o bundle.js
 
+commit-js: browserify
+	uglifyjs bundle.js -o bundle.js
+	git add -f bundle.js
+	git commit bundle.js -m "update bundle"
+
