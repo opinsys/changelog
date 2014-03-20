@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Muutokset Opinsys-järjestelmässä</title>
+        <link rel="stylesheet" type="text/css" href="theme.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="login">
+            <a href="http://opinsys.fi" target="_blank">
+                <img src="opinsys_logo.png" alt="Opinsys Oy">
+            </a>
+
+            <div class="doc">
+            <h1>Opinsys-järjestelmän päivitykset</h1>
+<markdown>
+
+<anchor>ltsp-quantal-testing-2014-02-27-154921-i386</anchor>
+
+## Päätekuva 2013-39 - Torolf
+
+### Uudet toiminnallisuudet
+
+- Epson V33 Lisätty ajurit päätekuvaan
+- Epson Perfection 1650 Lisätty udev-konfiguraatiokytkin päätekuvaan
+- Eno Ajurit lisätty ja paritus automatisoitu
+- Mimetyypit liitettäville medioille
+- DVD-levyt käynnistyvät Kaffeinella ja CD-levyt Gooboxilla
+- Cd-soitin Lisätty webmenuun goobox
+- Tulostin firmwaret Lisätty firmwaret mm. hp:n tulostimille
+
+### Muut muutokset
+
+- sssd Päivitetty
+- zram Kytketty pois päältä
+- Gimp Toimii taas webmenusta
+
+<advanced>
+
+### Pakettimuutokset
+
+    > apt                                      0.9.7.5ubuntu5.4               0.9.7.5ubuntu5.5
+    > apt-transport-https                      0.9.7.5ubuntu5.4               0.9.7.5ubuntu5.5
+    > apt-utils                                0.9.7.5ubuntu5.4               0.9.7.5ubuntu5.5
+    + bluez-compat                             -                              4.101-0ubuntu6
+    > cmaptools                                5.05.08-0+opinsys1             5.05.08-0+opinsys2
+    + esci-interpreter-perfection-v330         -                              0.2.0-1
+    + iscan                                    -                              2.29.1-5~usb0.1.ltdl7
+    + iscan-data                               -                              1.23.0-1
+    > libapt-inst1.5:i386                      0.9.7.5ubuntu5.4               0.9.7.5ubuntu5.5
+    > libapt-pkg4.12:i386                      0.9.7.5ubuntu5.4               0.9.7.5ubuntu5.5
+    > libgnutls26:i386                         2.12.14-5ubuntu4.3             2.12.14-5ubuntu4.4
+    > libipa-hbac0:i386                        1.9.4-0ubuntu2                 1.11.0-0ubuntu3+opinsys1
+    - libnl1:i386                              1.1-7                          -
+    > libnss-sss:i386                          1.9.4-0ubuntu2                 1.11.0-0ubuntu3+opinsys1
+    > libnss-winbind:i386                      2:3.6.6-3ubuntu5               2:3.6.6-3ubuntu5.2
+    + libpam-pwquality:i386                    -                              1.2.2-1
+    > libpam-sss:i386                          1.9.4-0ubuntu2                 1.11.0-0ubuntu3+opinsys1
+    > libpam-winbind:i386                      2:3.6.6-3ubuntu5               2:3.6.6-3ubuntu5.2
+    > libraw5:i386                             0.14.7-0ubuntu1.12.10.1        0.14.7-0ubuntu1.12.10.2
+    + libsemanage1:i386                        -                              2.1.6-6
+    + libsemanage-common                       -                              2.1.6-6
+    + libsepol1:i386                           -                              2.1.4-3ubuntu2
+    > libsmbclient:i386                        2:3.6.6-3ubuntu5               2:3.6.6-3ubuntu5.2
+    > libsss-idmap0:i386                       1.9.4-0ubuntu2                 1.11.0-0ubuntu3+opinsys1
+    + libsss-sudo:i386                         -                              1.9.4-0ubuntu2
+    + libustr-1.0-1:i386                       -                              1.0.4-3
+    > libwbclient0:i386                        2:3.6.6-3ubuntu5               2:3.6.6-3ubuntu5.2
+    - linux-headers-3.5.0-40                   3.5.0-40.62                    -
+    - linux-headers-3.5.0-40-generic           3.5.0-40.62                    -
+    + linux-headers-3.5.0-41                   -                              3.5.0-41.64
+    + linux-headers-3.5.0-41-generic           -                              3.5.0-41.64
+    > linux-headers-generic                    3.5.0.40.56                    3.5.0.41.57
+    > linux-headers-generic-pae                3.5.0.40.56                    3.5.0.41.57
+    - linux-image-3.5.0-40-generic             3.5.0-40.62                    -
+    + linux-image-3.5.0-41-generic             -                              3.5.0-41.64
+    - linux-image-extra-3.5.0-40-generic       3.5.0-40.62                    -
+    + linux-image-extra-3.5.0-41-generic       -                              3.5.0-41.64
+    > linux-libc-dev:i386                      3.5.0-40.62                    3.5.0-41.64
+    > nodejs-bundle                            0.8.23-0+opinsys1              0.10.12-0+opinsys1
+    > opinsys-linux-firmware                   0.1.0-0+opinsys1               0.2.0-0+opinsys1
+    > puavo-client                             1.3.15-0+opinsys1              1.3.20-0+opinsys1
+    - puavo-load-balancer                      0.3.4-0+opinsys1               -
+    + puavo-load-reporter                      -                              0.4.33-0+opinsys1
+    > puavo-ltsp-client                        0.9.17-0+opinsys1              0.9.18-0+opinsys1
+    > puavo-ltsp-install                       0.9.17-0+opinsys1              0.9.18-0+opinsys1
+    > python-openssl                           0.13-2ubuntu1                  0.13-2ubuntu1.1
+    > python-sss                               1.9.4-0ubuntu2                 1.11.0-0ubuntu3+opinsys1
+    > samba-common                             2:3.6.6-3ubuntu5               2:3.6.6-3ubuntu5.2
+    > samba-common-bin                         2:3.6.6-3ubuntu5               2:3.6.6-3ubuntu5.2
+    > smbclient                                2:3.6.6-3ubuntu5               2:3.6.6-3ubuntu5.2
+    > sssd                                     1.9.4-0ubuntu2                 1.11.0-0ubuntu3+opinsys1
+    + sssd-ad                                  -                              1.11.0-0ubuntu3+opinsys1
+    + sssd-ad-common                           -                              1.11.0-0ubuntu3+opinsys1
+    + sssd-common                              -                              1.11.0-0ubuntu3+opinsys1
+    + sssd-ipa                                 -                              1.11.0-0ubuntu3+opinsys1
+    + sssd-krb5                                -                              1.11.0-0ubuntu3+opinsys1
+    + sssd-krb5-common                         -                              1.11.0-0ubuntu3+opinsys1
+    + sssd-ldap                                -                              1.11.0-0ubuntu3+opinsys1
+    + sssd-proxy                               -                              1.11.0-0ubuntu3+opinsys1
+    > webmenu                                  0.5.5-0+opinsys1               0.5.7-0+opinsys1
+    > winbind                                  2:3.6.6-3ubuntu5               2:3.6.6-3ubuntu5.2
+    - zram-config                              0.1                            -
+</advanced>
+
+</markdown>
+
+            </div>
+        </div>
+        <script src="bundle.js" charset="utf-8"></script>
+    </body>
+</html>
