@@ -42,12 +42,6 @@ renderer.heading = function(text, level) {
 };
 
 renderer.html = function(html) {
-    console.log(html);
-    // if (isTag("anchor", html)) {
-    //     var anchor = $.trim($(html).text());
-    //     return '<a class=anchor id=' + anchor + ' href="#' + anchor +'">#</a>';
-    // }
-
     if (isTag("advanced", html)) {
         html = html.replace(tagRe("advanced"), "");
         console.log("AD", html);
