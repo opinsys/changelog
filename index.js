@@ -44,7 +44,6 @@ renderer.heading = function(text, level) {
 renderer.html = function(html) {
     if (isTag("advanced", html)) {
         html = html.replace(tagRe("advanced"), "");
-        console.log("AD", html);
         return (
             '<div class=more-wrap>' +
                 '<a href="" class=show-more data-md="' + html + '">Lisätietoja</a>' +
