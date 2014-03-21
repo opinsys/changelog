@@ -15,6 +15,76 @@
             <h1>Päivitykset</h1>
 <markdown>
 
+<anchor>ltsp-quantal-testing-2014-02-27-154921-i386</anchor>
+
+## Opinsys 2014-12 XXXXX
+
+### Uudet toiminnallisuudet
+
+- Käyttäjät voivat antaa palautetta uloskirjautumisen yhteydessä
+- Ohjelmavalikoimaan on lisätty BlueGriffon WYSIWYG HTML-editori
+- Ohjelmavalikoimaan on lisätty YTL:n Digabiprojektin suosittelemat matematiikkasovellukset (Dia, WxMaxima & Pinta)
+- Puavo-laitehallinnasta on mahdollista asettaa päätelaitteen oletusäänilaite
+- Vieraskirjautumisen kytkeminen päälle kevytpäätelaitteille on mahdollista
+
+
+### Muut muutokset
+
+- CD-soittimen kelaustoiminnallisuus on korjattu päivittämällä ohjelma uudempaan versioon
+- Uuden laitteen lisäyksen yhteydessä asiakkaan organisaatio tulee oletusasetuksena
+- Skratch-ohjelmointiympäristön käynnistäminen on estetty kevytpäätelaitteilla
+- Kevytpäätteillä epävakautta aiheuttanut ongelma on poistettu
+
+<advanced>
+
+### Tekniset muutokset
+
+- Käyttäjien kotikansiot on mahdollista mountata käyttäen sambaa lisäämällä laitteelle sambahomes-tagi.
+
+### Pakettimuutokset
+
+                                                    
+</advanced>
+
+
+
+<anchor>ltsp-quantal-master-2014-02-28-120620-i386</anchor>
+
+## Opinsys 2014-9 - Onni XXXXX
+
+### Uudet toiminnallisuudet
+
+- Ohjelmavalikoimaan on lisätty Photofilmstrip, jolla voi tehdä valokuvista videoesityksiä
+- Lisätty käynnistysvalikkoon mahdollisuus välittää viestejä käyttäjälle Puavon kautta
+- Päätelaitteen oletusäänilaite voidaan asettaa Puavosta
+- Firefox-selaimen kotisivu voidaan asettaa Puavosta
+
+
+### Muut muutokset
+
+- Pdf-tiedostojen oletuslukijaksi on asetettu Adoben Acroread
+- Firefoxin sallittujen flash-sovellusten listalle on lisätty sivusto bbc.co.uk
+
+<advanced>
+
+### Tekniset muutokset
+
+- Päätelaitteiden oletuskerneliksi on asetettu linux 3.12.10.opinsys3 
+- Korjauksia ntp-palveluun, joka auttaa laitteiden kelloja pysymään paremmin synkronissa. Kellonjen heittely on aiheuttanut satunnaisia kirjautumisongelmia.
+- Linux kernelin Zram-ominaisuus on otettu käyttöön. Ominaisuus auttaa erityisesti vähän keskusmuistia omaavien tehopäätelaitteden toimintaa.
+- Nvidian näytönohjainajurit päivitetty 304.88 -> 304.117 
+- Tehopäätteille mahdollista ottaa käyttöön /tmp -osio. Jos bootissa löytyy /dev/mapper/puavo-tmp, se mountataan /tmp:iin.
+-
+
+### Pakettimuutokset
+
+                                                    
+</advanced>
+
+
+
+
+
 
 <anchor>ltsp-quantal-testing-2014-02-27-154921-i386</anchor>
 
