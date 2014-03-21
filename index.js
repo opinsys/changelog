@@ -55,9 +55,9 @@ renderer.html = function(html) {
     return html;
 };
 
-var md = $("markdown");
+var md = $(".markdown");
 
-md.replaceWith(marked(md.html(), { renderer: renderer }));
+md.replaceWith(marked(md.children("code").html(), { renderer: renderer }));
 
 $(".show-more").each(function() {
     var el = $(
