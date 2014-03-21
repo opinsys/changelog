@@ -15,9 +15,9 @@
             <h1>Päivitykset</h1>
 <markdown>
 
-<anchor>ltsp-quantal-testing-2014-02-27-154921-i386</anchor>
+<anchor>ltsp-quantal-master-2014-03-21-082239-i386</anchor>
 
-## Opinsys 2014-12 XXXXX
+## Päätekuva 14.12 Pentti
 
 ### Uudet toiminnallisuudet
 
@@ -26,7 +26,6 @@
 - Ohjelmavalikoimaan on lisätty YTL:n Digabiprojektin suosittelemat matematiikkasovellukset (Dia, WxMaxima & Pinta)
 - Puavo-laitehallinnasta on mahdollista asettaa päätelaitteen oletusäänilaite
 - Vieraskirjautumisen kytkeminen päälle kevytpäätelaitteille on mahdollista
-
 
 ### Muut muutokset
 
@@ -43,10 +42,123 @@
 
 ### Pakettimuutokset
 
+    > adobe-flashplugin                        11.2.202.341-0quantal1         11.2.202.346-0quantal1        
+    > adobe-flash-properties-gtk               11.2.202.341-0quantal1         11.2.202.346-0quantal1        
+    + aften                                    -                              0.0.8+git20100105-0ubuntu2    
+    - aptirepo-upload                          0.5.0-19+quantal.i386+master.548f261240b9ee3cbf30e711c4d95dc99d4326e6 -                             
+    + bluegriffon                              -                              1.7.2-4+quantal.i386+master.742a6d392a2c388f02149e4e123a2e42e2af49ab
+    + bluegriffon-data                         -                              1.7.2-4+quantal.i386+master.742a6d392a2c388f02149e4e123a2e42e2af49ab
+    - bluez-compat                             4.101-0ubuntu6                 -                             
+    > chromium-browser                         32.0.1700.107-0ubuntu0.12.10.1~20140204.880.1 33.0.1750.152-0ubuntu0.12.10.1~pkg895.1
+    > chromium-browser-l10n                    32.0.1700.107-0ubuntu0.12.10.1~20140204.880.1 33.0.1750.152-0ubuntu0.12.10.1~pkg895.1
+    > chromium-codecs-ffmpeg-extra             32.0.1700.107-0ubuntu0.12.10.1~20140204.880.1 33.0.1750.152-0ubuntu0.12.10.1~pkg895.1
+    > cups-filters                             1.0.24-2ubuntu0.1              1.0.24-2ubuntu0.2             
+    + faac                                     -                              1.28-0ubuntu2                 
+    > firefox                                  27.0.1+build1-0ubuntu0.12.10.1 28.0+build2-0ubuntu0.12.10.1  
+    > firefox-locale-en                        27.0.1+build1-0ubuntu0.12.10.1 28.0+build2-0ubuntu0.12.10.1  
+    > firefox-locale-fi                        27.0.1+build1-0ubuntu0.12.10.1 28.0+build2-0ubuntu0.12.10.1  
+    > firefox-locale-sv                        27.0.1+build1-0ubuntu0.12.10.1 28.0+build2-0ubuntu0.12.10.1  
+    > fluentd                                  0.10.41-8+quantal.i386+master.bffa4b2ec4e603a736a2135dd4ba00499061552e 0.10.41-9+quantal.i386+master.f0aadd1cfea790138f2fce1cc0fd86cfa143067a
+    > fluent-plugin-puavo                      0.2.0-13+quantal.i386+master.be13afad7c0d7c14caa64b8dae319e38d0fd2019 0.2.0-14+quantal.i386+master.06473467f10d1adcd11df14a0c8ccaac18724c5a
+    + giblib1:i386                             -                              1.2.4-8                       
+    > gir1.2-gtk-3.0                           3.6.0-0ubuntu3.2               3.6.0-0ubuntu3.3              
+    > goobox                                   3.0.1-2                        3.2.1-3+quantal.i386+master.a1008b396bb364e613be80b2ffd30e850d2a6391
+    + gpac                                     -                              0.5.0~dfsg0-1                 
+    + gpac-modules-base:i386                   -                              0.5.0~dfsg0-1                 
+    + hal                                      -                              0.5.14-8                      
+    + hal-info                                 -                              20091130-1                    
+    > icedtea-6-jre-cacao:i386                 6b27-1.12.6-1ubuntu0.12.10.4   6b30-1.13.1-1ubuntu2~0.12.10.1
+    > icedtea-6-jre-jamvm:i386                 6b27-1.12.6-1ubuntu0.12.10.4   6b30-1.13.1-1ubuntu2~0.12.10.1
+    > icedtea-7-plugin:i386                    1.3.2-1ubuntu0.12.10.2         1.3.2-1ubuntu0.12.10.3        
+    > icedtea-netx-common                      1.3.2-1ubuntu0.12.10.2         1.3.2-1ubuntu0.12.10.3        
+    > icedtea-netx:i386                        1.3.2-1ubuntu0.12.10.2         1.3.2-1ubuntu0.12.10.3        
+    > idle-python2.7                           2.7.3-5ubuntu4.3               2.7.3-5ubuntu4.4              
+    > imagemagick                              8:6.7.7.10-2ubuntu4.1          8:6.7.7.10-2ubuntu4.2         
+    > imagemagick-common                       8:6.7.7.10-2ubuntu4.1          8:6.7.7.10-2ubuntu4.2         
+    + lame                                     -                              3.99.5+repack1-3              
+    + libao4:i386                              -                              1.1.0-1ubuntu3                
+    + libao-common                             -                              1.1.0-1ubuntu3                
+    > libcupsfilters1:i386                     1.0.24-2ubuntu0.1              1.0.24-2ubuntu0.2             
+    + libdirac-decoder0:i386                   -                              1.0.2-6                       
+    > libfontembed1:i386                       1.0.24-2ubuntu0.1              1.0.24-2ubuntu0.2             
+    > libgail-3-0:i386                         3.6.0-0ubuntu3.2               3.6.0-0ubuntu3.3              
+    > libgnutls26:i386                         2.12.14-5ubuntu4.5             2.12.14-5ubuntu4.6            
+    + libgpac2:i386                            -                              0.5.0~dfsg0-1                 
+    > libgtk-3-0:i386                          3.6.0-0ubuntu3.2               3.6.0-0ubuntu3.3              
+    > libgtk-3-bin                             3.6.0-0ubuntu3.2               3.6.0-0ubuntu3.3              
+    > libgtk-3-common                          3.6.0-0ubuntu3.2               3.6.0-0ubuntu3.3              
+    + libimlib2                                -                              1.4.5-1ubuntu1                
+    > libmagickcore5-extra:i386                8:6.7.7.10-2ubuntu4.1          8:6.7.7.10-2ubuntu4.2         
+    > libmagickcore5:i386                      8:6.7.7.10-2ubuntu4.1          8:6.7.7.10-2ubuntu4.2         
+    > libmagickwand5:i386                      8:6.7.7.10-2ubuntu4.1          8:6.7.7.10-2ubuntu4.2         
+    + liboggz2                                 -                              1.1.1-1                       
+    + libogmrip1                               -                              0.13.6-0ubuntu5               
+    > libpam-envfeed                           0.5-1+quantal.i386+master.bffa4b2ec4e603a736a2135dd4ba00499061552e 0.5-3+quantal.i386+master.a1008b396bb364e613be80b2ffd30e850d2a6391
+    > libpython2.7                             2.7.3-5ubuntu4.3               2.7.3-5ubuntu4.4              
+    > libpython3.2                             3.2.3-6ubuntu3.4               3.2.3-6ubuntu3.5              
+    > librsvg2-2:i386                          2.36.3-0ubuntu1                2.36.3-0ubuntu1.1             
+    > librsvg2-bin                             2.36.3-0ubuntu1                2.36.3-0ubuntu1.1             
+    > librsvg2-common:i386                     2.36.3-0ubuntu1                2.36.3-0ubuntu1.1             
+    > libservlet3.0-java                       7.0.30-0ubuntu1.2              7.0.30-0ubuntu1.3             
+    > libssh-4:i386                            0.5.2-1ubuntu0.12.10.2         0.5.2-1ubuntu0.12.10.3        
+    > libtomcat7-java                          7.0.30-0ubuntu1.2              7.0.30-0ubuntu1.3             
+    > libudisks2-0:i386                        2.0.0-1ubuntu1                 2.0.0-1ubuntu1.1              
+    - linux-headers-3.5.0-46                   3.5.0-46.70                    -                             
+    - linux-headers-3.5.0-46-generic           3.5.0-46.70                    -                             
+    + linux-headers-3.5.0-47                   -                              3.5.0-47.71                   
+    + linux-headers-3.5.0-47-generic           -                              3.5.0-47.71                   
+    > linux-headers-generic                    3.5.0.46.62                    3.5.0.47.63                   
+    > linux-headers-generic-pae                3.5.0.46.62                    3.5.0.47.63                   
+    - linux-image-3.5.0-46-generic             3.5.0-46.70                    -                             
+    + linux-image-3.5.0-47-generic             -                              3.5.0-47.71                   
+    - linux-image-extra-3.5.0-46-generic       3.5.0-46.70                    -                             
+    + linux-image-extra-3.5.0-47-generic       -                              3.5.0-47.71                   
+    > linux-libc-dev:i386                      3.5.0-46.70                    3.5.0-47.71                   
+    > ltsp-lightdm                             0.3.10-9+quantal.i386+tjjr.64de373a5567027ddd16a85ed5078144f377775d 0.3.10-10+quantal.i386+master.b0e51f0ee219895b14672a76eff6cbe7b322a4d2
+    + mkvtoolnix                               -                              5.1.0-1ubuntu2                
+    > nodejs-bundle                            0.10.22-15+quantal.i386+master.c00a0ac2b1be955a7c01bc62e4a26707dd49ef51 0.10.22-19+quantal.i386+master.a1008b396bb364e613be80b2ffd30e850d2a6391
+    + oggz-tools                               -                              1.1.1-1                       
+    + ogmrip                                   -                              0.13.6-0ubuntu5               
+    + ogmrip-ac3                               -                              0.2-0.1ubuntu2                
+    + ogmrip-dirac                             -                              0.1-0.2build1                 
+    + ogmrip-doc                               -                              0.13.6-0ubuntu5               
+    + ogmrip-mpeg                              -                              0.2-0.2ubuntu1                
+    + ogmrip-oggz                              -                              0.2-0.0                       
+    + ogmrip-profiles                          -                              0.2-0.0                       
+    + ogmrip-video-copy                        -                              0.3-0.0                       
+    + ogmtools                                 -                              1:1.5-3ubuntu1                
+    > openjdk-6-jdk:i386                       6b27-1.12.6-1ubuntu0.12.10.4   6b30-1.13.1-1ubuntu2~0.12.10.1
+    > openjdk-6-jre-headless:i386              6b27-1.12.6-1ubuntu0.12.10.4   6b30-1.13.1-1ubuntu2~0.12.10.1
+    > openjdk-6-jre:i386                       6b27-1.12.6-1ubuntu0.12.10.4   6b30-1.13.1-1ubuntu2~0.12.10.1
+    > openjdk-6-jre-lib                        6b27-1.12.6-1ubuntu0.12.10.4   6b30-1.13.1-1ubuntu2~0.12.10.1
+    > opinsys-ca-certificates                  1.0.2-2+quantal.i386+master.1359e1a7f9eea68a4ab150a7064338cd16e51373 1.0.2-3+quantal.i386+master.1359e1a7f9eea68a4ab150a7064338cd16e51373
+    > perlmagick                               8:6.7.7.10-2ubuntu4.1          8:6.7.7.10-2ubuntu4.2         
+    - polyvision                               2.2.2-0+opinsys2               -                             
+    + puavo-autopilot                          -                              0.1-5+quantal.i386+master.5654559330b3c49c2246473c996a9a14bc1c7215
+    > puavo-client                             1.4.0-11+quantal.i386+master.fc32427aba1a58fccd6c8da083a1d0983ccdf069 1.4.0-14+quantal.i386+master.c36dc65493418ecf091fc23e8f704468e83c056c
+    > puavo-devscripts                         0.5.0-49+quantal.i386+master.09df5c7a3e4b80039a0574a38a13689112490c73 0.5.0-61+quantal.i386+master.c2de20d48c3d78b25a301263ed0918135afafd37
+    > puavo-ltsp-client                        0.12.0-108+quantal.i386+tjjr.775edbf93faf87b34a7d2452186e532f49494037 0.12.0-166+quantal.i386+master.2e522865bf26a9020a80bc9401f41149d48617ee
+    > puavo-ltsp-install                       0.12.0-108+quantal.i386+tjjr.775edbf93faf87b34a7d2452186e532f49494037 0.12.0-166+quantal.i386+master.2e522865bf26a9020a80bc9401f41149d48617ee
+    > puavo-monitor                            1.0.2-2+quantal.i386+master.2d446ce33dc8d0559cf785524b826c83ff9a5d00 1.0.2-4+quantal.i386+master.2d446ce33dc8d0559cf785524b826c83ff9a5d00
+    > puavo-sharedir-client                    0.4.0-13+quantal.i386+master.d1f244a013735c341973756f4fdc7267c3523648 0.4.0-16+quantal.i386+master.67746e058ef921453508ee74b3596b4effc73083
+    > python2.7                                2.7.3-5ubuntu4.3               2.7.3-5ubuntu4.4              
+    > python2.7-doc                            2.7.3-5ubuntu4.3               2.7.3-5ubuntu4.4              
+    > python2.7-minimal                        2.7.3-5ubuntu4.3               2.7.3-5ubuntu4.4              
+    > python3.2                                3.2.3-6ubuntu3.4               3.2.3-6ubuntu3.5              
+    > python3.2-minimal                        3.2.3-6ubuntu3.4               3.2.3-6ubuntu3.5              
+    > ruby-trollop                             1.16.2-3                       1.16.2-4+quantal.i386+master.c39d4a07cd2657ca78ae2792525bc5039c546524
+    + scrot                                    -                              0.8-13                        
+    > sudo                                     1.8.5p2-1ubuntu1.1             1.8.5p2-1ubuntu1.2            
+    + thoggen                                  -                              0.7.1-1ubuntu1                
+    > tzdata                                   2013g-0ubuntu0.12.10           2014a-0ubuntu0.12.10          
+    > tzdata-java                              2013g-0ubuntu0.12.10           2014a-0ubuntu0.12.10          
+    > udisks                                   1.0.4-6                        1.0.4-6ubuntu0.1              
+    > udisks2                                  2.0.0-1ubuntu1                 2.0.0-1ubuntu1.1              
+    + vorbis-tools                             -                              1.4.0-1ubuntu3                
+    > webmenu                                  0.7.0-32+quantal.i386+master.77b727cdeabfcb3dae21a1cf72309774b65ee461 0.7.0-48+quantal.i386+master.9f2c4cb71a98a2b3983d0b239c4791bd3b15d055
+    + xautomation                              -                              1.03-1.1                      
                                                     
 </advanced>
-
-
 
 <anchor>ltsp-quantal-master-2014-02-28-120620-i386</anchor>
 
