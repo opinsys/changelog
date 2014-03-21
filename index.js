@@ -33,6 +33,17 @@ function parseAttributes(text) {
 
 }
 
+/**
+ * Add support for Markdown Extra style attributes
+ *
+ *      # Heading {.foo}
+ *
+ * renders to
+ *
+ *      <h1 class="foo">Heading</h1>
+ *
+ * http://michelf.ca/projects/php-markdown/extra/#header-id
+ **/
 renderer.heading = function(text, level) {
     var attrs = "";
     var ob = parseAttributes(text);
