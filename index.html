@@ -15,28 +15,51 @@
             <h1>Päivitykset</h1>
 <pre class="markdown"><code>
 
-## Opinsys 14.12 - Pentti {#ltsp-quantal-master-2014-03-21-082239-i386}
+## Opinsys 14.12 - Vihtori {#ltsp-quantal-master-2014-03-22-131723-i386.img}
 
 ### Uudet toiminnallisuudet
 
-- Käyttäjät voivat antaa palautetta uloskirjautumisen yhteydessä
-- Ohjelmavalikoimaan on lisätty BlueGriffon WYSIWYG HTML-editori
-- Ohjelmavalikoimaan on lisätty YTL:n Digabiprojektin suosittelemat matematiikkasovellukset (Dia, WxMaxima & Pinta)
-- Puavo-laitehallinnasta on mahdollista asettaa päätelaitteen oletusäänilaite
-- Vieraskirjautumisen kytkeminen päälle kevytpäätelaitteille on mahdollista
+- Vieraskirjautumisen kytkeminen päälle kevytpäätteille on mahdollista.
+
+- Laitteiden oletusäänilaitteiden valintaan lisätty tuki useille
+  äänikorteille ja niiden useille käyttöprofiileille.
+
+- Ohjelmavalikoimaan on lisätty BlueGriffon WYSIWYG HTML-editori.
+
+- Ohjelmavalikoimaan on lisätty YTL:n Digabiprojektin suosittelemat
+  matematiikkasovellukset (Dia, WxMaxima & Pinta).
+
+- Ohjelmavalikoimaan on lisätty PyCharm Python-editori.
 
 ### Muut muutokset
 
-- CD-soittimen kelaustoiminnallisuus on korjattu päivittämällä ohjelma uudempaan versioon
-- Uuden laitteen lisäyksen yhteydessä asiakkaan organisaatio tulee oletusasetuksena
-- Skratch-ohjelmointiympäristön käynnistäminen on estetty kevytpäätelaitteilla
-- Kevytpäätteillä epävakautta aiheuttanut ongelma on poistettu
+- CD-soittimen kelaustoiminnallisuus on korjattu päivittämällä ohjelma
+  uudempaan versioon.
+
+- Uuden laitteen lisäyksen yhteydessä asiakkaan organisaatio tulee
+  oletusasetuksena.
+
+- Skratch-ohjelmointiympäristön käynnistäminen on estetty
+  kevytpäätelaitteilla.
+
+- Kevytpäätteillä epävakautta aiheuttanut ongelma on poistettu.
+
+- Puavo-laitehallinnasta on mahdollista asettaa päätelaitteen
+  oletusäänilaite.
 
 <advanced>
 
 ### Tekniset muutokset
 
-- Käyttäjien kotikansiot on mahdollista mountata käyttäen sambaa lisäämällä laitteelle sambahomes-tagi.
+- Webmenun palautekysely on mahdollista aktivoida Puavosta laite- tai
+  koulukohtaisella tagilla `enable_webmenu_feedback`.
+
+- Käyttäjien kotikansiot on mahdollista mountata käyttäen sambaa
+  asettamalla laitteelle Puavoon `sambahomes`-tagi.
+
+- Oletusäänilaitekentät Puavossa hyväksyvät monisarakkeisia
+  arvoja. Shell-komento `puavo-pulseaudio-list` tulostaa ko. laitteen
+  äänilaitetiedot monisarakkeisessa muodossa.
 
 ### Pakettimuutokset
 
@@ -162,25 +185,25 @@
 
 ### Uudet toiminnallisuudet
 
-- Ohjelmavalikoimaan on lisätty Photofilmstrip, jolla voi tehdä valokuvista videoesityksiä
-- Lisätty käynnistysvalikkoon mahdollisuus välittää viestejä käyttäjälle Puavon kautta
-- Päätelaitteen oletusäänilaite voidaan asettaa Puavosta
-- Firefox-selaimen kotisivu voidaan asettaa Puavosta
+- Ohjelmavalikoimaan on lisätty Photofilmstrip-ohjelma, jolla voi tehdä valokuvista videoesityksiä.
+- Käynnistysvalikkoon on lisätty viestialue, jossa käyttäjälle voidaan viestiä Puavon kautta.
+- Päätelaitteen oletusäänilaite voidaan asettaa Puavosta.
+- Firefox-selaimen kotisivu voidaan asettaa Puavosta.
 
 ### Muut muutokset
 
-- Pdf-tiedostojen oletuslukijaksi on asetettu Adoben Acroread
-- Firefoxin sallittujen flash-sovellusten listalle on lisätty sivusto bbc.co.uk
+- Pdf-tiedostojen oletuslukijaksi on asetettu Adobe Acroread.
+- Firefoxin sallittujen flash-sovellusten listalle on lisätty sivusto bbc.co.uk.
 
 <advanced>
 
 ### Tekniset muutokset
 
-- Päätelaitteiden oletuskerneliksi on asetettu linux 3.12.10.opinsys3
-- Korjauksia ntp-palveluun, joka auttaa laitteiden kelloja pysymään paremmin synkronissa. Kellonjen heittely on aiheuttanut satunnaisia kirjautumisongelmia.
-- Linux kernelin Zram-ominaisuus on otettu käyttöön. Ominaisuus auttaa erityisesti vähän keskusmuistia omaavien tehopäätelaitteden toimintaa.
-- Nvidian näytönohjainajurit päivitetty 304.88 -> 304.117
-- Tehopäätteille mahdollista ottaa käyttöön /tmp -osio. Jos bootissa löytyy /dev/mapper/puavo-tmp, se mountataan /tmp:iin.
+- Päätelaitteiden oletuskerneliksi on asetettu linux 3.12.10.opinsys3.
+- Korjauksia ntp-palveluun, joka auttaa laitteiden kelloja pysymään synkronissa.
+- Kernelin Zram-ominaisuus on otettu käyttöön. Ominaisuus auttaa erityisesti vähän keskusmuistia omaavien tehopäätelaitteden toimintaa.
+- Nvidian näytönohjainajurit on päivitetty 304.88 -> 304.117
+- Tehopäätteille mahdollista ottaa käyttöön erillinen /tmp -osio fyysiseltä medialta. Jos käynnistymisen aikana koneesta löytyy /dev/mapper/puavo-tmp, se mountataan /tmp:iin.
 
 ### Pakettimuutokset
 
