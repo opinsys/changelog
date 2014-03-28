@@ -5,11 +5,11 @@ var $ = require("jquery");
 
 
 function tagRe(tag) {
-    return new RegExp('\\<\\/?' + tag + '\\>', "g");
+    return '\\<\\/?' + tag + '(.*)\\>';
 }
 
-function isTag(tag, html) {
-    return tagRe(tag).test(html);
+function matchTag(tag, html) {
+    return html.match(new RegExp(tagRe(tag)));
 }
 
 function parseAttributes(text) {
@@ -53,15 +53,20 @@ renderer.heading = function(text, level) {
 };
 
 renderer.html = function(html) {
-    if (isTag("advanced", html)) {
-        html = html.replace(tagRe("advanced"), "");
+    var title = "Lisätietoja";
+    var match = matchTag("advanced", html);
+    if (match) {
+        if (match[1]) {
+            var titleMatch = match[1].match(/title="?([^"]+)"?/);
+            title = titleMatch[1];
+        }
+        html = html.replace(new RegExp(tagRe("advanced"), "g"), "");
         return (
             '<div class=more-wrap>' +
-                '<a href="" class=show-more data-md="' + html + '">Lisätietoja</a>' +
+                '<a href="" class=show-more data-md="' + html + '">' + title + '</a>' +
             '</div>'
         );
     }
-
     return html;
 };
 
