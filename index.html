@@ -17,11 +17,24 @@
 
 <advanced title="Tuleva päivitys">
 
-## Opinsys yy.ww
+## Opinsys 14.14
 
 ### Uudet toiminnallisuudet
 
+- Lisätty uusi laitetyyppi: Langattomanverkon tukiasema
+
+### Muut muutokset
+
+- Korjattu kannettavien kirjautumista tilanteessa, jossa ei olla oman koulun verkossa
+
+
 <advanced>
+
+### Tekniset muutokset
+
+- Korjattu Dropboxin toiminta kevytpäätteillä käytettäessä Samba-kotihakemistoja
+- Korjattu palautetyökalun asettaminen koulukohtaisesti näkyviin
+
 
 ### Pakettimuutokset
 
@@ -125,6 +138,11 @@
 - Oletusäänilaitekentät Puavossa hyväksyvät monisarakkeisia
   arvoja. Shell-komento `puavo-pulseaudio-list` tulostaa ko. laitteen
   äänilaitetiedot monisarakkeisessa muodossa.
+
+### Tiedossa olevia ongelmia
+
+- Dropbox ja git eivät toimi oikein käytettäessä Samba-kotikansioita kevytpäätteillä
+- Palautetyökalun asettaminen koulukohtaisesti ei toimi
 
 ### Pakettimuutokset
 
