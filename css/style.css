@@ -79,7 +79,7 @@ h2:hover a.anchor {
 }
 
 .show-more {
-  margin: 1em;
+  /* margin: 1em; */
 }
 
 .more {
@@ -91,7 +91,7 @@ h2:hover a.anchor {
 }
 
 .more-wrap {
-  margin: 2em;
+  /* margin: 2em; */
 }
 
 .more * {
