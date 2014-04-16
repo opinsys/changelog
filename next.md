@@ -2,9 +2,24 @@
 
 ### Uudet toiminnallisuudet
 
-- Käyttäjät voivat muokata työpöydän menu-valikon kautta omaa profiiliansa (nimi, kuva, puhelinnumero).
+- <advanced title="Käyttäjät voivat muokata omaa profiilia työpöydältä">
+  Käyttäjät voivat nyt muokata oman käyttäjätunnuksensa tietoja. Esimerkiksi
+  muokattavia tietoja ovat: oma kuva, puhelinnumero ja kieli. Tietojen muokkaaminen
+  tapahtuu napsauttamalla Menu > Oma nimi.
+  </advanced>
 
-- Kannettavat tietokoneet päivittyvät myös koulun verkon ulkopuolella.
+- <advanced title="Käyttäjän kuva näytetään Menu-valikossa.">
+  Menu-valikossa näytetään käyttäjän oma kuva, jos hän on asettanut sen omaan profiiliinsa.
+  </advanced>
+
+- <advanced title="Kannettavat tietokoneet päivittyvät myös koulun verkon ulkopuolella.">
+  Käyttäjät voivat nyt muokata oman käyttäjätunnuksensa tietoja. Esimerkiksi
+  muokattavia tietoja ovat: oma kuva, puhelinnumero ja kieli.
+  </advanced>
+
+- <advanced title="Lisätty KTouch-harjoituksia.">
+  Järjestelmään on lisätty Jyväskylän Kortepohjan koululla tehdyt harjoitukset.
+  </advanced>
 
 ### Muut muutokset
 
@@ -16,7 +31,23 @@
   poistopainiketta käyttäen toimii kuten työpöydältä.
   </advanced>
 
+- <advanced title="DVD/CD-levyjen toistaminen VLC-soittimella.">
+  Ongelmana oli DVD/CD-levyjen toistaminen VLC-soittimella. Avattaessa DVD-levyä
+  VLC-ohjelmassa, ohjelma ilmoitti että polkua /dev/dvd ei ole. Ongelma on nyt korjattu
+  ja VLC:llä voi toistaa DVD-levyjä valitsemalla ohjelmasta Media > Avaa Levy...
+  </advanced>
+
 - Spotify on päivitetty uusimpaan versioon.
+
+- <advanced title="Lisätty uusia sivustoja Flashblockin ja Java sallittujen palveluiden listalle.">
+  Lisätty sivustot: ugri.net (flash), rockway.fi(flash), ugri.net(flash), 
+  sanomapro.fi(flash), pelastusopisto.fi(flash) ja www.walter-fendt.de.
+  </advanced>
+
+- <advanced title="Java-päivitys">
+  Oraclen Java-ohjelmisto on pävitetty uusimpaan versioon Java 7 Update 55 CPU.
+  </advanced>
+
 
 ### Tiedossa olevat ongelmat
 
