@@ -15,7 +15,7 @@
 - Kannettavat tietokoneet päivittyvät myös koulun verkon ulkopuolella.
 
 - <advanced title="Lisätty KTouch-harjoituksia.">
-  Järjestelmään on lisätty Jyväskylän Kortepohjan koululla tehdyt harjoitukset.
+  Järjestelmään on lisätty Terho Reuhkalan (Jyväskylän Kortepohjan koulu) tekemät harjoitukset.
   </advanced>
 
 ### Muut muutokset
