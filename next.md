@@ -48,6 +48,8 @@
   Oraclen Java-ohjelmisto on pävitetty uusimpaan versioon Java 7 Update 55 CPU.
   </advanced>
 
+- Lisätty fontteja ja makroja LaTeX-dokumenttien ladontaa varten.
+
 ### Tiedossa olevat ongelmat
 
 - Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
@@ -58,6 +60,22 @@
 <br />
 
 <advanced>
+
+### Tekniset muutokset
+
+- 3.10 -sarjan kerneleille symbolinen versionimi 'stable'. Jotkin
+  laitemallit tarvitsevat tämän käynnistyäkseen.
+
+- Intel Management Engine Interface (MEI) asetettu moduliksi
+  kerneleihin. Aiemmin MEI oli kerneleihin sisäänrakennettuna, mikä
+  aiheutti ongelmia tietyissä tapauksissa kannettavien virransäästötilan
+  toimintaan.
+
+- Wlan-tukiasemien kanavanvalintaa korjattu usean radion
+  kokoonpanoissa. Aiemmin usealle radiolle saattoi tulla valituksi sama
+  kanava, jolloin vain ensimmäinen kanavan saanut radio tuli
+  käyttöön. Korjauksen myötä jokaiselle radiopiirille taataan
+  yksilöllinen kanava.
 
 ### Pakettimuutokset
 
