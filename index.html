@@ -16,6 +16,45 @@
 
 <pre class="markdown"><code>
 
+## Opinsys 14.17 - Alina {#ltsp-quantal-master-2014-04-22-161300-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="WLAN-tukiasemien toiminta korjattu yli 15 merkkiä pitkien verkkonimien kanssa.">
+  Aiemmin WLAN-tukiasemat, joille Puavosta oli asetettu yli 15 merkkiä
+  pitkä verkkonimi, eivät toimineet. Ongelma koski vain
+  päätekuvia 14.14 ja 14.16.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus tietyssä
+  tilanteessa.
+
+<br/>
+
+<advanced>
+
+### Tekniset yksityiskohdat
+
+- WLAN-tukiasemien verkkonimikorjauksen myötä WLAN-verkkojen
+  verkkolaitteiden nimet eivät vastaa enää verkkojen verkkotunnuksia
+  (SSID). Verkkolaitteiden nimet ovat muutoksen myötä verkkotunnusten
+  typistettyjä md5-tiivistesummia.
+
+### Päätekuvan pakettimuutokset
+
+    New packages:
+    Removed packages:
+    Upgraded packages:
+      puavo-wlanap 0.7.3-14+quantal.i386+master.e90a36c305fdce005422e0622609e7d1531483b6
+        (was 0.7.2-10+quantal.i386+master.192c46c141d6e53d5c7f2c7a7c62c76cde83f8e3)
+    Downgraded packages:
+
+</advanced>
+
 ## Opinsys 14.16 - Otto {#ltsp-quantal-master-2014-04-17-161536-i386}
 
 ### Uudet toiminnallisuudet
@@ -36,7 +75,7 @@
   Järjestelmään on lisätty Terho Reuhkalan (Jyväskylän Kortepohjan koulu) tekemät harjoitukset.
   </advanced>
 
-### Muut muutokset
+### Korjaukset ja muut muutokset
 
 - <advanced title="DVD/CD-levyjen poistoon ja lisäämiseen liittyvä ongelma on korjattu.">
   Ongelmana oli DVD/CD-levyasemien toiminnan epävakaus, joka johtui
@@ -79,7 +118,7 @@
 
 <advanced>
 
-### Tekniset muutokset
+### Tekniset yksityiskohdat
 
 - Lisätty 3.10 -sarjan kerneleille symbolinen versionimi 'stable'. Jotkin
   laitemallit tarvitsevat tämän käynnistyäkseen.
@@ -95,7 +134,7 @@
   käyttöön. Korjauksen myötä jokaiselle piirille taataan
   yksilöllinen kanava.
 
-### Pakettimuutokset
+### Päätekuvan pakettimuutokset
 
     New packages:
       emacs24 24.1+1-2ubuntu3
@@ -280,7 +319,7 @@
 - Lisätty uusi laitetyyppi: langaton tukiasema
 - Näyttöasetukset tulevat voimaan näyttöjen kytkemisten ja poiskytkemisten myötä. Käytännössä tämä korjaa ongelman jota on esiintynyt tietyn päätelaite-dokumenttikamerayhdistelmän kanssa. Tällöin kuvan vaihtaminen kameralta on saattanut hukata näyttöjen kloonausasetuksen.
 
-### Muut muutokset
+### Korjaukset ja muut muutokset
 
 - Korjattu kannettavien kirjautumista tilanteessa, jossa ei olla oman
   koulun verkossa.
@@ -298,11 +337,11 @@
 
 <advanced>
 
-### Tekniset muutokset
+### Tekniset yksityiskohdat
 
 - Korjattu palautetyökalun asettaminen koulukohtaisesti näkyviin
 
-### Pakettimuutokset
+### Päätekuvan pakettimuutokset
 
     New packages:
       cowsay 3.03+dfsg1-4
@@ -373,7 +412,7 @@
 
 - Ohjelmavalikoimaan on lisätty PyCharm Python-editori.
 
-### Muut muutokset
+### Korjaukset ja muut muutokset
 
 - CD-soittimen kelaustoiminnallisuus on korjattu päivittämällä ohjelma
   uudempaan versioon.
@@ -400,7 +439,7 @@
 
 <advanced>
 
-### Tekniset muutokset
+### Tekniset yksityiskohdat
 
 - Ohjelmavalikon palautekysely on mahdollista aktivoida Puavosta laite- tai
   koulukohtaisella tagilla `enable_webmenu_feedback`.
@@ -412,7 +451,7 @@
   arvoja. Shell-komento `puavo-pulseaudio-list` tulostaa ko. laitteen
   äänilaitetiedot monisarakkeisessa muodossa.
 
-### Pakettimuutokset
+### Päätekuvan pakettimuutokset
 
     New packages:
       aften 0.0.8+git20100105-0ubuntu2
@@ -631,7 +670,7 @@
 - Päätelaitteen oletusäänilaite voidaan asettaa Puavosta.
 - Firefox-selaimen kotisivu voidaan asettaa Puavosta.
 
-### Muut muutokset
+### Korjaukset ja muut muutokset
 
 - Pdf-tiedostojen oletuslukijaksi on asetettu Adobe Acroread.
 - Firefoxin sallittujen flash-sovellusten listalle on lisätty sivusto bbc.co.uk.
@@ -640,7 +679,7 @@
 
 <advanced>
 
-### Tekniset muutokset
+### Tekniset yksityiskohdat
 
 - Päätelaitteiden oletuskerneliksi on asetettu linux 3.12.10.opinsys3.
 - Korjauksia ntp-palveluun, joka auttaa laitteiden kelloja pysymään synkronissa.
@@ -648,7 +687,7 @@
 - Nvidian näytönohjainajurit on päivitetty 304.88 -> 304.117
 - Tehopäätteille mahdollista ottaa käyttöön erillinen /tmp -osio fyysiseltä medialta. Jos käynnistymisen aikana koneesta löytyy /dev/mapper/puavo-tmp, se mountataan /tmp:iin.
 
-### Pakettimuutokset
+### Päätekuvan pakettimuutokset
 
     New packages:
       libcuda1-304 304.117-7+quantal.i386+master.7fc023189e094cc4e5b5fccd025773bf612872b6
