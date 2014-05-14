@@ -16,8 +16,226 @@
 
 <pre class="markdown"><code>
 
-## Opinsys 14.18 - Teijo {#ltsp-quantal-master-2014-04-29-125024-i386.img}
+## Opinsys 14.20 - Tuula {#ltsp-quantal-master-2014-05-14-150613-i386}
 
+### Korjaukset ja muut muutokset
+
+- Firefox päivitetty versioon 29.
+
+- Lisätty tuki Vernier LabPro -laitteelle.
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus tietyssä
+  tilanteessa.
+
+- USB-massamuistin poistaminen ei toimi Nautiluksen valikosta
+  kevytpäätteillä.
+
+<br/>
+
+<advanced>
+
+### Tekniset muutokset
+
+- Päätekuvassa webkiosk-toiminallisuus, joka mahdollista tehopäätteen
+  käyttämisen "webbikioskina". Webkiosk-tilassa tehopääte kirjatuu
+  automaattisesti sisään vierastunnuksella, kysyy käyttäjältä istunnossa
+  käytettävän kielen ja avaa selaimen. Toiminnallisuus aktivoidaan
+  lisäämällä tehopäätteen laitetageihin `webkiosk`.
+
+- Päätekuvissa kdump-toiminnallisuus, joka mahdollistaa päätelaitteiden
+  kernel-kaatumisten raportoinnin automaattisesti. Toiminallisuus
+  aktivoidaan asettamalla kernel-parametriksi
+  `crashkernel=128M`.
+
+### Päätekuvan pakettimuutokset
+
+    New packages:
+      9menu 1.8-5
+      crash 6.1.6-1ubuntu0.12.10.1
+      kdump-tools 1.4.4-1
+      kexec-tools 1:2.0.3-1ubuntu2
+      libdw1:i386 0.153-1ubuntu1.1
+      linux-headers-3.5.0-49 3.5.0-49.74
+      linux-headers-3.5.0-49-generic 3.5.0-49.74
+      linux-image-3.12.10.opinsys4-dbg 3.12.10.opinsys4-1
+      linux-image-3.5.0-49-generic 3.5.0-49.74
+      linux-image-extra-3.5.0-49-generic 3.5.0-49.74
+      makedumpfile 1.4.4-1
+      menu 2.1.46ubuntu1
+      ratpoison 1.4.5-4
+      webkiosk-language-selector 0.1-4+quantal.i386+master.420042ee2e1d057a77dd275186239d55c625c1d3
+      xautolock 1:2.2-3
+      xlockmore 1:5.31-1.1
+    Removed packages:
+      linux-headers-3.5.0-48 3.5.0-48.72
+      linux-headers-3.5.0-48-generic 3.5.0-48.72
+      linux-image-3.5.0-48-generic 3.5.0-48.72
+      linux-image-extra-3.5.0-48-generic 3.5.0-48.72
+      ltspfs 1.1-2build1
+      ltsp-lightdm 0.3.10-12+quantal.i386+master.b0e51f0ee219895b14672a76eff6cbe7b322a4d2
+    Upgraded packages:
+      adobe-flashplugin 11.2.202.356-0quantal1
+        (was 11.2.202.350-0quantal1)
+      adobe-flash-properties-gtk 11.2.202.356-0quantal1
+        (was 11.2.202.350-0quantal1)
+      bluegriffon 1.7.2-9+quantal.i386+master.8db6a37a9ec40ae0ca789a988f9ad15bed198bd6
+        (was 1.7.2-4+quantal.i386+master.742a6d392a2c388f02149e4e123a2e42e2af49ab)
+      bluegriffon-data 1.7.2-9+quantal.i386+master.8db6a37a9ec40ae0ca789a988f9ad15bed198bd6
+        (was 1.7.2-4+quantal.i386+master.742a6d392a2c388f02149e4e123a2e42e2af49ab)
+      chromium-browser 34.0.1847.116-0ubuntu~1.12.10.0~pkg900
+        (was 33.0.1750.152-0ubuntu0.12.10.1~pkg895.1)
+      chromium-browser-l10n 34.0.1847.116-0ubuntu~1.12.10.0~pkg900
+        (was 33.0.1750.152-0ubuntu0.12.10.1~pkg895.1)
+      chromium-codecs-ffmpeg-extra 34.0.1847.116-0ubuntu~1.12.10.0~pkg900
+        (was 33.0.1750.152-0ubuntu0.12.10.1~pkg895.1)
+      cups 1.6.1-0ubuntu11.6
+        (was 1.6.1-0ubuntu11.5)
+      cups-bsd 1.6.1-0ubuntu11.6
+        (was 1.6.1-0ubuntu11.5)
+      cups-client 1.6.1-0ubuntu11.6
+        (was 1.6.1-0ubuntu11.5)
+      cups-common 1.6.1-0ubuntu11.6
+        (was 1.6.1-0ubuntu11.5)
+      cups-ppdc 1.6.1-0ubuntu11.6
+        (was 1.6.1-0ubuntu11.5)
+      debootstrap 1.0.42ubuntu0.4
+        (was 1.0.42ubuntu0.3)
+      distro-info-data 0.10ubuntu5
+        (was 0.10ubuntu4)
+      dpkg 1.16.7ubuntu6.2
+        (was 1.16.7ubuntu6)
+      dpkg-dev 1.16.7ubuntu6.2
+        (was 1.16.7ubuntu6)
+      firefox 29.0+build1-0ubuntu0.12.10.3
+        (was 28.0+build2-0ubuntu0.12.10.1)
+      firefox-locale-en 29.0+build1-0ubuntu0.12.10.3
+        (was 28.0+build2-0ubuntu0.12.10.1)
+      firefox-locale-fi 29.0+build1-0ubuntu0.12.10.3
+        (was 28.0+build2-0ubuntu0.12.10.1)
+      firefox-locale-sv 29.0+build1-0ubuntu0.12.10.3
+        (was 28.0+build2-0ubuntu0.12.10.1)
+      fluentd 0.10.46-14+quantal.i386+master.8db6a37a9ec40ae0ca789a988f9ad15bed198bd6
+        (was 0.10.41-9+quantal.i386+master.f0aadd1cfea790138f2fce1cc0fd86cfa143067a)
+      fluent-plugin-puavo 0.2.0-17+quantal.i386+master.529b61ffc9ad48f9fcf63b02cecc63aeb93886b8
+        (was 0.2.0-14+quantal.i386+master.06473467f10d1adcd11df14a0c8ccaac18724c5a)
+      icedtea-6-jre-cacao:i386 6b31-1.13.3-1ubuntu1~0.12.10.1
+        (was 6b30-1.13.1-1ubuntu2~0.12.10.2)
+      icedtea-6-jre-jamvm:i386 6b31-1.13.3-1ubuntu1~0.12.10.1
+        (was 6b30-1.13.1-1ubuntu2~0.12.10.2)
+      icedtea-7-jre-jamvm:i386 7u55-2.4.7-1ubuntu1~0.12.10.1
+        (was 7u51-2.4.4-0ubuntu0.12.10.2)
+      indicator-applet 12.10.1-2+quantal.i386+master.8db6a37a9ec40ae0ca789a988f9ad15bed198bd6
+        (was 12.10.1-1+quantal.i386+master.420c771959042aeb9df125bfb48b450e7f910a5e)
+      indicator-applet-complete 12.10.1-2+quantal.i386+master.8db6a37a9ec40ae0ca789a988f9ad15bed198bd6
+        (was 12.10.1-1+quantal.i386+master.420c771959042aeb9df125bfb48b450e7f910a5e)
+      libcups2:i386 1.6.1-0ubuntu11.6
+        (was 1.6.1-0ubuntu11.5)
+      libcupscgi1:i386 1.6.1-0ubuntu11.6
+        (was 1.6.1-0ubuntu11.5)
+      libcupsimage2:i386 1.6.1-0ubuntu11.6
+        (was 1.6.1-0ubuntu11.5)
+      libcupsmime1:i386 1.6.1-0ubuntu11.6
+        (was 1.6.1-0ubuntu11.5)
+      libcupsppdc1:i386 1.6.1-0ubuntu11.6
+        (was 1.6.1-0ubuntu11.5)
+      libdpkg-perl 1.16.7ubuntu6.2
+        (was 1.16.7ubuntu6)
+      libelf1:i386 0.153-1ubuntu1.1
+        (was 5.5.35-0ubuntu0.12.10.2)
+      libssl1.0.0:i386 1.0.1c-3ubuntu2.8
+        (was 1.0.1c-3ubuntu2.7)
+      libssl-dev 1.0.1c-3ubuntu2.8
+        (was 1.0.1c-3ubuntu2.7)
+      libssl-doc 1.0.1c-3ubuntu2.8
+        (was 1.0.1c-3ubuntu2.7)
+      libtiff5:i386 4.0.2-1ubuntu2.3
+        (was 4.0.2-1ubuntu2.2)
+      libtiff-tools 4.0.2-1ubuntu2.3
+        (was 4.0.2-1ubuntu2.2)
+      liitu-themes 0.2.8-105+quantal.i386+master.1a43fb750bb2aab9669bd47fef5eecf44495c3d4
+        (was 0.2.8-102+quantal.i386+master.51ea8dc1b8032f58f8cc285257b7971f53ca7986)
+      linux-headers-generic 3.5.0.49.65
+        (was 3.5.0.48.64)
+      linux-headers-generic-pae 3.5.0.49.65
+        (was 3.5.0.48.64)
+      linux-libc-dev:i386 3.5.0-49.74
+        (was 3.5.0-48.72)
+      mysql-client-core-5.5 5.5.37-0ubuntu0.12.10.1
+        (was 5.5.35-0ubuntu0.12.10.2)
+      mysql-common 5.5.37-0ubuntu0.12.10.1
+        (was 5.5.35-0ubuntu0.12.10.2)
+      mysql-server-core-5.5 5.5.37-0ubuntu0.12.10.1
+        (was 5.5.35-0ubuntu0.12.10.2)
+      nodejs-bundle 0.10.22-20+quantal.i386+master.d559538bf4f6e4ab75919b9c76e607aa494a6e88
+        (was 0.10.22-19+quantal.i386+master.a1008b396bb364e613be80b2ffd30e850d2a6391)
+      node-webkit 0.8.6-25+quantal.i386+master.8db6a37a9ec40ae0ca789a988f9ad15bed198bd6
+        (was 0.8.5-13+quantal.i386+master.3a98e76e018a71ce1f7bc62694772b4d0372663a)
+      openjdk-6-jdk:i386 6b31-1.13.3-1ubuntu1~0.12.10.1
+        (was 6b30-1.13.1-1ubuntu2~0.12.10.2)
+      openjdk-6-jre-headless:i386 6b31-1.13.3-1ubuntu1~0.12.10.1
+        (was 6b30-1.13.1-1ubuntu2~0.12.10.2)
+      openjdk-6-jre:i386 6b31-1.13.3-1ubuntu1~0.12.10.1
+        (was 6b30-1.13.1-1ubuntu2~0.12.10.2)
+      openjdk-6-jre-lib 6b31-1.13.3-1ubuntu1~0.12.10.1
+        (was 6b30-1.13.1-1ubuntu2~0.12.10.2)
+      openjdk-7-doc 7u55-2.4.7-1ubuntu1~0.12.10.1
+        (was 7u51-2.4.4-0ubuntu0.12.10.2)
+      openjdk-7-jdk:i386 7u55-2.4.7-1ubuntu1~0.12.10.1
+        (was 7u51-2.4.4-0ubuntu0.12.10.2)
+      openjdk-7-jre-headless:i386 7u55-2.4.7-1ubuntu1~0.12.10.1
+        (was 7u51-2.4.4-0ubuntu0.12.10.2)
+      openjdk-7-jre:i386 7u55-2.4.7-1ubuntu1~0.12.10.1
+        (was 7u51-2.4.4-0ubuntu0.12.10.2)
+      openssl 1.0.1c-3ubuntu2.8
+        (was 1.0.1c-3ubuntu2.7)
+      opinsys-linux-firmware 0.2.8-105+quantal.i386+master.1a43fb750bb2aab9669bd47fef5eecf44495c3d4
+        (was 0.2.8-102+quantal.i386+master.51ea8dc1b8032f58f8cc285257b7971f53ca7986)
+      opinsys-theme 0.2.8-105+quantal.i386+master.1a43fb750bb2aab9669bd47fef5eecf44495c3d4
+        (was 0.2.8-102+quantal.i386+master.51ea8dc1b8032f58f8cc285257b7971f53ca7986)
+      puavo-autopilot 0.1-10+quantal.i386+master.2b1aac3faccc48a5094d6306f4cd5b7ed4cd07e3
+        (was 0.1-5+quantal.i386+master.5654559330b3c49c2246473c996a9a14bc1c7215)
+      puavo-devscripts 0.5.0-72+quantal.i386+master.92bb964bfc649e72286f0acf65303a9d45a5cd7a
+        (was 0.5.0-71+quantal.i386+master.92bb964bfc649e72286f0acf65303a9d45a5cd7a)
+      puavo-ltsp-client 0.12.0-279+quantal.i386+master.d7beed75726c8ade564359c4584873b8f16d6b99
+        (was 0.12.0-226+quantal.i386+master.ecd902202b4e127ecae0005f6a02fd8e583a4f0d)
+      puavo-ltsp-install 0.12.0-279+quantal.i386+master.d7beed75726c8ade564359c4584873b8f16d6b99
+        (was 0.12.0-226+quantal.i386+master.ecd902202b4e127ecae0005f6a02fd8e583a4f0d)
+      puavo-wlanap-dnsproxy 0.7.3-14+quantal.i386+master.e90a36c305fdce005422e0622609e7d1531483b6
+        (was 0.7.2-10+quantal.i386+master.192c46c141d6e53d5c7f2c7a7c62c76cde83f8e3)
+      pycharm 3.1.1-3+quantal.i386+master.8db6a37a9ec40ae0ca789a988f9ad15bed198bd6
+        (was 3.1.1-2+quantal.i386+master.51497fd0fb5a84981e413282f28ee96c6d9462d9)
+      qemu-utils 1.2.0+noroms-0ubuntu2.12.10.7
+        (was 1.2.0+noroms-0ubuntu2.12.10.6)
+      quicktile 0.2.1-4+quantal.i386+master.d559538bf4f6e4ab75919b9c76e607aa494a6e88
+        (was 0.2.1-1+quantal.i386+master.b9cc0acfa07174bd3541b2fad594718e3c0cf277)
+      thunderbird 1:24.5.0+build1-0ubuntu0.12.10.1
+        (was 1:24.4.0+build1-0ubuntu0.12.10.1)
+      thunderbird-gnome-support 1:24.5.0+build1-0ubuntu0.12.10.1
+        (was 1:24.4.0+build1-0ubuntu0.12.10.1)
+      thunderbird-locale-en 1:24.5.0+build1-0ubuntu0.12.10.1
+        (was 1:24.4.0+build1-0ubuntu0.12.10.1)
+      thunderbird-locale-en-gb 1:24.5.0+build1-0ubuntu0.12.10.1
+        (was 1:24.4.0+build1-0ubuntu0.12.10.1)
+      thunderbird-locale-fi 1:24.5.0+build1-0ubuntu0.12.10.1
+        (was 1:24.4.0+build1-0ubuntu0.12.10.1)
+      thunderbird-locale-sv 1:24.5.0+build1-0ubuntu0.12.10.1
+        (was 1:24.4.0+build1-0ubuntu0.12.10.1)
+      thunderbird-locale-sv-se 1:24.5.0+build1-0ubuntu0.12.10.1
+        (was 1:24.4.0+build1-0ubuntu0.12.10.1)
+      vstloggerpro 3.8.4.5-11+quantal.i386+master.8db6a37a9ec40ae0ca789a988f9ad15bed198bd6
+        (was 3.8.4.5-10+quantal.i386+master.49e7c68bec70f876306bbd683bb6f330d0ae166a)
+      webmenu 0.7.0-65+quantal.i386+master.9db4f1a377bd32ad5423fde8c4f387a4fae3591b
+        (was 0.7.0-58+quantal.i386+master.eddf3afaa9b5278a3fe03f169b9b8bb4636f15a9)
+    Downgraded packages:
+    
+</advanced>
+    
+## Opinsys 14.18 - Teijo {#ltsp-quantal-master-2014-04-29-125024-i386}
+    
 ### Korjaukset ja muut muutokset
 
 - <advanced title="Korjattu ongelma kannettavien Wifi-radioiden aktivoitumisessa.">
