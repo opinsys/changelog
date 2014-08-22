@@ -12,9 +12,53 @@
                 <img src="opinsys_logo.png" alt="Opinsys Oy">
             </a>
             <div class="doc">
-            <h1>Päivitykset</h1>
+            <h1>Opinsys-järjestelmän versiot ja muutokset</h1>
+            <p>Seuraavassa on kuvattu Opinsys-järjestelmän eri versiot ja niissä tapahtunet muutokset edelliseen nähden.</p>
 
 <pre class="markdown"><code>
+
+## Opinsys 14.34 - Samuli {#ltsp-quantal-master-2014-08-20-155659-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Java-päivitys">
+  Päivitys Oraclen Javan versioon 7u67. Java ilmoitti ongelmasta webbisivulta
+  käynnistettävien Appletin yhteydessä sertifikaattien allekirjoituksesta ja esti niiden
+  suorittamisen.
+  </advanced>
+
+- <advanced title="Smartboard">
+  Smart Notebook on päivitetty versioon 10.3 SP1. Ohjelmistossa tulee tuki uusille 
+  laitteille, joita ovat SMART Board® M600 interactive whiteboards ja LightRaise™ 60wi 
+  interactive projectors.
+  </advanced>
+
+- <advanced title="Firefox 31 ja Wilman pdf-tulostus">
+  Uusi Firefox-selaimen versio korjaa esimerkiksi Wilman tuottamien PDF-tiedostojen
+  tulostusongelman, kun käytetään selaimen omaa pdf-lukijaa. Ongelma esiintyi siten, että 
+  tulostettaessa paperit jäivät valkoisiksi.
+  </advanced>
+
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus kun ohjelma on käynnistetty uudelleen
+  useita kertoja peräkkäin.
+
+<br/>
+
+<advanced>
+
+### Tekniset muutokset
+
+- Käytössä oleva oletuskernel ei sisällä korjausta NFS-kotihakemistojen kanssa esiintyviin vakausongelmiin.
+  Kernelin saa kuitenkin käyttöö asettamalla Puavoon laitekohtaisest kernelin käyttöön: linux-image-3.12.10.opinsys5
+
+
+</advanced>
+
 
 ## Opinsys 14.31 - Elena {#ltsp-quantal-master-2014-07-31-155522-i386}
 
