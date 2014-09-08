@@ -17,6 +17,62 @@
 
 <pre class="markdown"><code>
 
+## Opinsys 14.36 - Roni {#ltsp-quantal-master-2014-09-05-xx-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Näytön lukitseminen helpommaksi">
+  Näytön lukitseminen on jatkossa hieman helpompaa valitsemalla Menu > Lukitse näyttö. Tämän lisäksi näytön voi lukita 
+  poistu-valikon kautta tai painamalla pikanäppäinyhdistelmään Ctrl + Alt + L. Näytön lukitseminen on olennaista turvattaessa
+  omat tiedot tilanteessa jossa laite jätetään vartioimatta.
+  </advanced>
+
+- <advanced title="Logger Pro">
+  LoggerPro-laitteiden toiminnassa on ollut ongelmia tiettyjen mittalaitteiden kanssa. Ongelmat ovat liittyneet käyttäjän 
+  oikeuksiin lukea tietoa laitteesta. Ohjelman oikeusongelmat ovat nyt korjattu.
+  </advanced>
+
+- <advanced title="Lisätty Kdenlive-videoeditointisovellus">
+  Kdenlive sopii monipuoliseen videoeditointiin. Ohjelma löytyy valitsemalla Menu > Ääni ja Video > Kdenlive.
+  </advanced>
+
+- <advanced title="Lisätty Midi-musiikkisovellukset JACK Audio connection kit ja Qsynth.">
+  Molemmat ohjelmat löytyvät valitsemalla Menu > Ääni ja Video > Flyidsynth GUI / JACK control. Ohjelmat on lisätty asiakkaiden
+  toiveesta ja ne on todettu toimivaksi. Opinsysillä ei ole kuitenkaan tällä hetkellä laitteistoa varmistamaan niiden toimivuutta,
+  joten ohjelmistoihin tulee suhtautua siten että ne ovat testauksessa ja niistä kerätään kokemuksia.
+  </advanced>
+
+-  <advanced title="Korjauksia langattoman verkon tukiasemiin">
+  Langattoman verkon tukiasemiin on tehty pieniä korjauksia, niin että yksittäisten laitteiden lähetystehoa voidaan säätää. Lisäksi
+  tukiasemien virransäästötoimintoa on muutettu, koska sen on havaittu aiheuttavan ongelmia verkon toiminnalle.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- LoggerPro-ohjelmisto kaatuu usein mittaustoiminnon päätteeksi. Valmistajan mukaan ongelma on tiedossa ja heiltä on tulossa 
+  siihen pian korjaus.
+ 
+- Mimio-studion käytettävissä oleva version on 9.12. Valitettavasti tätä uudempia ohjelmistoversioita emme voi tällä hetkellä
+  tukea ilman laite valmistajan apua.
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus kun ohjelma on käynnistetty uudelleen
+  useita kertoja peräkkäin.
+
+<br/>
+
+<advanced>
+
+### Tekniset muutokset
+
+- Käytössä oleva oletuskernel ei sisällä korjausta NFS-kotihakemistojen kanssa esiintyviin vakausongelmiin.
+  Kernelin saa kuitenkin käyttöön asettamalla Puavoon laitekohtaisesti kernelin käyttöön: linux-image-3.12.10.opinsys5
+
+
+</advanced>
+
+
 ## Opinsys 14.34 - Samuli {#ltsp-quantal-master-2014-08-20-155659-i386}
 
 ### Korjaukset ja muut muutokset
