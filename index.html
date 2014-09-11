@@ -17,7 +17,7 @@
 
 <pre class="markdown"><code>
 
-## Opinsys 14.36 - Roni {#ltsp-quantal-master-2014-09-05-xx-i386}
+## Opinsys 14.36 - Roni {#ltsp-quantal-master-2014-09-05-092326-i386}
 
 ### Korjaukset ja muut muutokset
 
@@ -53,7 +53,7 @@
   siihen pian korjaus.
  
 - Mimio-studion käytettävissä oleva version on 9.12. Valitettavasti tätä uudempia ohjelmistoversioita emme voi tällä hetkellä
-  tukea ilman laite valmistajan apua.
+  tukea ilman laitevalmistajan apua.
 
 - Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
 
@@ -69,6 +69,22 @@
 - Käytössä oleva oletuskernel ei sisällä korjausta NFS-kotihakemistojen kanssa esiintyviin vakausongelmiin.
   Kernelin saa kuitenkin käyttöön asettamalla Puavoon laitekohtaisesti kernelin käyttöön: linux-image-3.12.10.opinsys5
 
+### Ohjelmistomuutokset
+
+    New packages:
+      dosbox 0.74-3
+      libsdl-sound1.2:i386 1.0.3-6
+      linux-headers-3.12.10.opinsys6 3.12.10.opinsys6-0
+      linux-image-3.12.10.opinsys6 3.12.10.opinsys6-0
+      linux-image-3.12.10.opinsys6-dbg 3.12.10.opinsys6-0
+      screen 4.0.3-14ubuntu9
+      sysstat 10.0.5-1
+    Removed packages:
+      linux-image-3.12.10.opinsys5-dbg 3.12.10.opinsys5-0
+    Upgraded packages:
+      webmenu 0.7.0-129+quantal.i386+trusty.bfe65bbd2ad2de57d1d436243b930cb1a014cffc
+        (was 0.7.0-82+quantal.i386+master.5fa9aff83c77d9613284be648c90dfb73784d125)
+    Downgraded packages:
 
 </advanced>
 
