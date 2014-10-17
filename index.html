@@ -17,6 +17,238 @@
 
 <pre class="markdown"><code>
 
+
+## Opinsys 14.42 - Sirkka {#ltsp-opinsysrestricted-trusty-2014-10-16-160820-i386}
+
+### Korjaukset ja muut muutokset
+
+- Oraclen Java on päivittynyt versioon 7u72. 
+ 
+- Firefox-nettiselain on päivittynyt versioon 32.
+
+- Oletus Pdf-lukijaksi on asetettu Acroread
+
+- Lisätty Racket-ohjelmointikieli
+
+- <advanced title="Sovellusten ikonikorjauksia">
+  Kolourpaintin, Jack Controlin ja Hydrogenin kuvakkeen käynnistysvalikossa on korjattu. 
+  </advanced>
+
+- <advanced title="Ekapelin käynnistin estetty kevytpäätteillä">
+  Ekapelin käynnistin on estetty kevytpäätteiltä, koska laitteiden resurssit eivät riitä pelin pelaamiseen.
+  </advanced>
+
+- <advanced title="Kevytpäätteiden sammutus ja uudelleenkäynnistys työpöydältä">
+  Kevytpäätteiden sammuttaminen ja uudelleenkäynnsitäminen toimii taas myös suoraan työpöydältä tehtynä.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+<br/>
+
+### Tekniset muutokset
+
+- <advanced title="X2go">
+  Järjestelmässä mukana X2Go-istuntoa koeskevat korjaukset, joilla etätyöpöytää voi testata. Ei suositella vielä tuotanto käyttöön.
+  </advanced>
+- <advanced title="Kannettavien päivitys"> 
+  Kannettavien päivityksessä on tehty muutoksia tilanteeseen, jossa laite on käynnistetty varajärjestelmästä. Aiemmin päivittäminen
+  oli mahdollista vain oletuskuvasta päivitettävään kuvaan. Tämä olisi voinut aiheuttaa ongelmia tilanteessa, jossa oletuskuva ei
+  olisikaan kyseisellä laitteella toimiva. Nyt päivittäminen onnistuu molempia kuvia käyttämällä.
+ </advanced>
+
+<advanced>
+
+### Ohjelmistomuutokset
+
+  New packages:
+    linux-headers-3.13.0-37 3.13.0-37.64
+    linux-headers-3.13.0-37-generic 3.13.0-37.64
+    puavo-image-tools 0.12.0-645+trusty.i386+trusty.016ab2fb2e959441570235f348f112b9a031fb46
+    racket 5.3.6+dfsg1-1
+    racket-common 5.3.6+dfsg1-1
+    racket-doc 5.3.6+dfsg1-1
+    realtimebattle 1.0.8-14
+    realtimebattle-common 1.0.8-14
+    xinput-calibrator 0.7.5+git20140201-1
+    xtightvncviewer 1.3.9-6.4ubuntu1
+  Removed packages:
+  Upgraded packages:
+    adobe-flashplugin 11.2.202.411-0trusty1
+      (was 11.2.202.406-0trusty1)
+    adobe-flash-properties-gtk 11.2.202.411-0trusty1
+      (was 11.2.202.406-0trusty1)
+    apport 2.14.1-0ubuntu3.5
+      (was 2.14.1-0ubuntu3.4)
+    apport-gtk 2.14.1-0ubuntu3.5
+      (was 2.14.1-0ubuntu3.4)
+    apt 1.0.1ubuntu2.5
+    (was 1.0.1ubuntu2.4.1)
+    apt-transport-https 1.0.1ubuntu2.5
+      (was 1.0.1ubuntu2.4.1)
+    apt-utils 1.0.1ubuntu2.5
+    (was 1.0.1ubuntu2.4.1)
+    bash 4.3-7ubuntu1.5
+      (was 4.3-7ubuntu1.4)
+    bsdutils 1:2.20.1-5.1ubuntu20.2
+    (was 1:2.20.1-5.1ubuntu20.1)
+    crash 7.0.3-3ubuntu4
+      (was 7.0.3-3ubuntu3)
+    file 1:5.14-2ubuntu3.2
+      (was 1:5.14-2ubuntu3.1)
+    firefox 33.0+build2-0ubuntu0.14.04.1
+      (was 32.0.3+build1-0ubuntu0.14.04.1)
+    firefox-locale-de 33.0+build2-0ubuntu0.14.04.1
+      (was 32.0.3+build1-0ubuntu0.14.04.1)
+    firefox-locale-en 33.0+build2-0ubuntu0.14.04.1
+      (was 32.0.3+build1-0ubuntu0.14.04.1)
+    firefox-locale-fi 33.0+build2-0ubuntu0.14.04.1
+      (was 32.0.3+build1-0ubuntu0.14.04.1)
+    firefox-locale-sv 33.0+build2-0ubuntu0.14.04.1
+      (was 32.0.3+build1-0ubuntu0.14.04.1)
+    fonts-droid 1:4.3-3ubuntu1.1
+      (was 1:4.3-3ubuntu1)
+    gir1.2-gudev-1.0 1:204-5ubuntu20.7
+      (was 1:204-5ubuntu20.6)
+    gir1.2-panelapplet-4.0 1:3.8.0-1ubuntu12.2
+      (was 1:3.8.0-1ubuntu12.1)
+    gnome-calculator 1:3.10.2-0ubuntu1.2
+      (was 1:3.10.2-0ubuntu1.1)
+    gnome-panel 1:3.8.0-1ubuntu12.2
+      (was 1:3.8.0-1ubuntu12.1)
+    gnome-panel-data 1:3.8.0-1ubuntu12.2
+      (was 1:3.8.0-1ubuntu12.1)
+    gnome-session 3.9.90-3+trusty.i386+trusty.4b9b14e5dc86d8b289e9b96db3c902640c734b49
+      (was 3.9.90-2+trusty.i386+trusty.489a96d8e352d8758aa51de5951170a58208585f)
+    gnome-session-bin 3.9.90-3+trusty.i386+trusty.4b9b14e5dc86d8b289e9b96db3c902640c734b49
+      (was 3.9.90-2+trusty.i386+trusty.489a96d8e352d8758aa51de5951170a58208585f)
+    gnome-session-common 3.9.90-3+trusty.i386+trusty.4b9b14e5dc86d8b289e9b96db3c902640c734b49
+      (was 3.9.90-2+trusty.i386+trusty.489a96d8e352d8758aa51de5951170a58208585f)
+    gnome-session-flashback 1:3.8.0-1ubuntu12.2
+      (was 1:3.8.0-1ubuntu12.1)
+    hunspell-sv-se 1:4.2.1-0ubuntu1.1
+      (was 1.51-1)
+    language-selector-common 0.129.3
+      (was 0.129.2)
+    libapt-inst1.5:i386 1.0.1ubuntu2.5
+      (was 1.0.1ubuntu2.4.1)
+    libapt-pkg4.12:i386 1.0.1ubuntu2.5
+      (was 1.0.1ubuntu2.4.1)
+    libblkid1:i386 2.20.1-5.1ubuntu20.2
+      (was 2.20.1-5.1ubuntu20.1)
+    libgudev-1.0-0:i386 1:204-5ubuntu20.7
+      (was 1:204-5ubuntu20.6)
+    libgweather-3-6 3.10.2-0ubuntu2
+      (was 3.10.2-0ubuntu1)
+    libgweather-common 3.10.2-0ubuntu2
+      (was 3.10.2-0ubuntu1)
+    libmagic1:i386 1:5.14-2ubuntu3.2
+      (was 1:5.14-2ubuntu3.1)
+    libmount1:i386 2.20.1-5.1ubuntu20.2
+      (was 2.20.1-5.1ubuntu20.1)
+    libmysqlclient18:i386 5.5.40-0ubuntu0.14.04.1
+      (was 5.5.38-0ubuntu0.14.04.1)
+    libopenscenegraph99 3.2.0~rc1-4ubuntu0.1
+      (was 3.2.0~rc1-4)
+    libopenthreads14 3.2.0~rc1-4ubuntu0.1
+      (was 3.2.0~rc1-4)
+    libpam-systemd:i386 204-5ubuntu20.7
+      (was 204-5ubuntu20.6)
+    libpanel-applet-4-0 1:3.8.0-1ubuntu12.2
+      (was 1:3.8.0-1ubuntu12.1)
+    libsystemd-daemon0:i386 204-5ubuntu20.7
+      (was 204-5ubuntu20.6)
+    libsystemd-journal0:i386 204-5ubuntu20.7
+      (was 204-5ubuntu20.6)
+    libsystemd-login0:i386 204-5ubuntu20.7
+      (was 204-5ubuntu20.6)
+    libudev1:i386 204-5ubuntu20.7
+      (was 204-5ubuntu20.6)
+    libuuid1:i386 2.20.1-5.1ubuntu20.2
+      (was 2.20.1-5.1ubuntu20.1)
+    libxen-4.4 4.4.0-0ubuntu5.2
+      (was 4.4.0-0ubuntu5.1)
+    libxenstore3.0 4.4.0-0ubuntu5.2
+      (was 4.4.0-0ubuntu5.1)
+    linux-headers-generic 3.13.0.37.44
+      (was 3.13.0.36.43)
+    linux-libc-dev:i386 3.13.0-37.64
+      (was 3.13.0-36.63)
+    lmms 1.0.0+stable-0ubuntu1
+      (was 1.0.0+bzr2569-0ubuntu1)
+    lmms-common 1.0.0+stable-0ubuntu1
+      (was 1.0.0+bzr2569-0ubuntu1)
+    man-db 2.6.7.1-1ubuntu1
+      (was 2.6.7.1-1)
+    mount 2.20.1-5.1ubuntu20.2
+      (was 2.20.1-5.1ubuntu20.1)
+    myspell-en-gb 1:4.2.1-0ubuntu1.1
+      (was 1:4.2.1-0ubuntu1)
+    mysql-client-core-5.5 5.5.40-0ubuntu0.14.04.1
+      (was 5.5.38-0ubuntu0.14.04.1)
+    mysql-common 5.5.40-0ubuntu0.14.04.1
+      (was 5.5.38-0ubuntu0.14.04.1)
+    mysql-server-core-5.5 5.5.40-0ubuntu0.14.04.1
+      (was 5.5.38-0ubuntu0.14.04.1)
+    mythes-en-us 1:4.2.1-0ubuntu1.1
+      (was 1:4.2.1-0ubuntu1)
+    opinsys-theme 0.2.8-212+trusty.amd64+trusty.cbce4623000417fc79970b8cdead63d6b38568ce
+      (was 0.2.8-189+trusty.i386+trusty.7a8629c96d9de4f9c2c4825b9626692f2883a098)
+    oracle-java 1.7.71-24+trusty.i386+trusty.37dc6e8a3843db2efe3dcb7a13467daf7328c287
+      (was 1.7.67-21+trusty.i386+trusty.141d09d4b31912475d0a3fb1937d43eb98103267)
+    oxideqt-codecs-extra:i386 1.2.5-0ubuntu0.14.04.1
+      (was 1.1.2-0ubuntu0.14.04.1)
+    puavo-ltsp-client 0.12.0-645+trusty.i386+trusty.016ab2fb2e959441570235f348f112b9a031fb46
+      (was 0.12.0-592+trusty.i386+trusty.2ef39b5a048193becdd6a575f6449009cb7da665)
+    puavo-ltsp-install 0.12.0-645+trusty.i386+trusty.016ab2fb2e959441570235f348f112b9a031fb46
+      (was 0.12.0-592+trusty.i386+trusty.2ef39b5a048193becdd6a575f6449009cb7da665)
+    python3-apport 2.14.1-0ubuntu3.5
+      (was 2.14.1-0ubuntu3.4)
+    python3-magic 1:5.14-2ubuntu3.2
+      (was 1:5.14-2ubuntu3.1)
+    python3-problem-report 2.14.1-0ubuntu3.5
+      (was 2.14.1-0ubuntu3.4)
+    python-cupshelpers 1.4.3+20140219-0ubuntu2.2
+      (was 1.4.3+20140219-0ubuntu2.1)
+    python-requests 2.2.1-1ubuntu0.1
+      (was 2.2.1-1)
+    rsyslog 7.4.4-1ubuntu2.3
+      (was 7.4.4-1ubuntu2.1)
+    system-config-printer-common 1.4.3+20140219-0ubuntu2.2
+      (was 1.4.3+20140219-0ubuntu2.1)
+    system-config-printer-gnome 1.4.3+20140219-0ubuntu2.2
+      (was 1.4.3+20140219-0ubuntu2.1)
+    system-config-printer-udev 1.4.3+20140219-0ubuntu2.2
+      (was 1.4.3+20140219-0ubuntu2.1)
+    systemd-services 204-5ubuntu20.7
+      (was 204-5ubuntu20.6)
+    thunderbird 1:31.2.0+build2-0ubuntu0.14.04.1
+      (was 1:31.1.2+build1-0ubuntu0.14.04.1)
+    thunderbird-gnome-support 1:31.2.0+build2-0ubuntu0.14.04.1
+      (was 1:31.1.2+build1-0ubuntu0.14.04.1)
+    thunderbird-locale-de 1:31.2.0+build2-0ubuntu0.14.04.1
+      (was 1:31.1.2+build1-0ubuntu0.14.04.1)
+    thunderbird-locale-en 1:31.2.0+build2-0ubuntu0.14.04.1
+      (was 1:31.1.2+build1-0ubuntu0.14.04.1)
+    thunderbird-locale-en-gb 1:31.2.0+build2-0ubuntu0.14.04.1
+      (was 1:31.1.2+build1-0ubuntu0.14.04.1)
+    thunderbird-locale-fi 1:31.2.0+build2-0ubuntu0.14.04.1
+    (was 1:31.1.2+build1-0ubuntu0.14.04.1)
+    thunderbird-locale-sv 1:31.2.0+build2-0ubuntu0.14.04.1
+      (was 1:31.1.2+build1-0ubuntu0.14.04.1)
+    udev 204-5ubuntu20.7
+      (was 204-5ubuntu20.6)
+    util-linux 2.20.1-5.1ubuntu20.2
+      (was 2.20.1-5.1ubuntu20.1)
+    uuid-runtime 2.20.1-5.1ubuntu20.2
+      (was 2.20.1-5.1ubuntu20.1)
+    webmenu 0.7.0-142+trusty.i386+trusty.033b65ff47e2a4ae2d437c446829bace2d937756
+      (was 0.7.0-140+trusty.i386+trusty.526f56773fcca0a45d11849b34c3a5dd060d4da7)
+Downgraded packages:
+
+</advanced>
+
 ## Opinsys 14.40 - Siru {#ltsp-opinsysrestricted-trusty-2014-09-30-075947-i386}
 
 Tämä päivitys tuo mukanaan merkittäviä uudistuksia koko järjestelmään. Käytännössä kaikki käytössä olevat sovellukset ovat 
