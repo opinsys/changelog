@@ -17,6 +17,56 @@
 
 <pre class="markdown"><code>
 
+## Opinsys 14.44 -  XXXX {#ltsp-opinsysrestricted-trusty-2014-10-27-}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Työpöydän kuvakkeiden häviäminen resoluution vaihdon yhteydessä">
+  Näytön resoluution muuttaminen tai esimerkiksi dokumenttikameran kuvalähteen vaihtaminen, saattoi 1/3 tapauksissa kaataa työpöydän kuvakkeita hallinnoivan
+  Nautilus-tiedostoselainohjelmiston. Kuvakkeet palautuivat normaaliksi, kun käyttäjä avasi kotikansionsa uudelleen. Ongelma on nyt korjattu.
+  </advanced>
+- <advanced title="Kevytpäätelaitteiden resoluution asettaminen Puavosta">
+  Puavosta asetettu resoluutio ei tullut käyttöön kevytpäätelaitteille. Tämä ongelma on nyt korjattu.
+  </advanced>
+- <advanced title="Uuden laitteen rekisteröintiä on siistitty">
+  Uuden laitteen rekisteröinnin yhteydessä saattoi näytölle tulostua loputtomasti laitetason viestejä, jotka häiritsivät itse rekisteröintitoimenpidettä. Nyt kyseisiä viestejä ei 
+  enää näytetä.
+  </advanced>
+
+
+### Tiedossa olevat ongelmat
+
+- <advanced title="Hiiren kursori on näkymätön ensimmäisellä kirjautumisella">
+  Olemme saaneet yksittäisiä havaintoja, että hiiren kursori on ollut näkymätön käyttäjän ensimmäisellä kirjautumisella uuden järjestelmä version käyttöönoton jälkeen.
+  Järjestelmää voi vian ollessa päällä edelleen käyttää ja hiirellä voi vaikuttaa työpöydän tapahtumiin. Uloskirjautumisen jälkeen hiiren kursori toimii jälleen normaalisti.
+  Selvitämme ongelman aiheuttajaa.
+  </advanced>
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+<br/>
+
+### Tekniset muutokset
+
+- <advanced title="Kevytpäätepalvelimille testaukseen vaihtoehtoinen kernel">
+  Kevytpäätepalvelimille on mahdollista asettaa käyttöön -kernel. Sitä käytetään testattaessa NFS-palvelun aiheuttamaan järjestelmän epävakautta.
+  </advanced>
+- <advanced title="Kannettavien päivitys"> 
+  Kannettavien päivityksessä on tehty muutoksia tilanteeseen, jossa laite on käynnistetty varajärjestelmästä. Aiemmin päivittäminen
+  oli mahdollista vain oletuskuvasta päivitettävään kuvaan. Tämä olisi voinut aiheuttaa ongelmia tilanteessa, jossa oletuskuva ei
+  olisikaan kyseisellä laitteella toimiva. Nyt päivittäminen onnistuu molempia kuvia käyttämällä.
+ </advanced>
+
+
+
+<advanced>
+
+### Ohjelmistomuutokset
+
+
+
+</advanced>
+
+
+
 
 ## Opinsys 14.41 - Sirkka {#ltsp-opinsysrestricted-trusty-2014-10-16-160820-i386}
 
