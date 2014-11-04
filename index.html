@@ -17,51 +17,341 @@
 
 <pre class="markdown"><code>
 
-## Opinsys 14.44 -  XXXX {#ltsp-opinsysrestricted-trusty-2014-10-27-}
+## Opinsys 14.45 - Arttu {#ltsp-opinsysrestricted-trusty-2014-10-31-115628-i386}
 
 ### Korjaukset ja muut muutokset
 
 - <advanced title="Työpöydän kuvakkeiden häviäminen resoluution vaihdon yhteydessä">
-  Näytön resoluution muuttaminen tai esimerkiksi dokumenttikameran kuvalähteen vaihtaminen, saattoi 1/3 tapauksissa kaataa työpöydän kuvakkeita hallinnoivan
-  Nautilus-tiedostoselainohjelmiston. Kuvakkeet palautuivat normaaliksi, kun käyttäjä avasi kotikansionsa uudelleen. Ongelma on nyt korjattu.
-  </advanced>
-- <advanced title="Kevytpäätelaitteiden resoluution asettaminen Puavosta">
-  Puavosta asetettu resoluutio ei tullut käyttöön kevytpäätelaitteille. Tämä ongelma on nyt korjattu.
-  </advanced>
-- <advanced title="Uuden laitteen rekisteröintiä on siistitty">
-  Uuden laitteen rekisteröinnin yhteydessä saattoi näytölle tulostua loputtomasti laitetason viestejä, jotka häiritsivät itse rekisteröintitoimenpidettä. Nyt kyseisiä viestejä ei 
-  enää näytetä.
+
+  Näytön resoluution muuttaminen tai esimerkiksi dokumenttikameran
+  kuvalähteen vaihtaminen, saattoi 1/3 tapauksissa kaataa työpöydän
+  kuvakkeita hallinnoivan Nautilus-tiedostoselainohjelmiston. Kuvakkeet
+  palautuivat normaaliksi, kun käyttäjä avasi kotikansionsa
+  uudelleen. Ongelma on nyt korjattu.
+
   </advanced>
 
+- <advanced title="Kevytpäätelaitteiden resoluution asettaminen Puavosta">
+
+  Puavosta asetettu resoluutio ei tullut käyttöön
+  kevytpäätelaitteille. Tämä ongelma on nyt korjattu.
+
+  </advanced>
+
+- <advanced title="Uuden laitteen rekisteröintiä on siistitty">
+
+  Uuden laitteen rekisteröinnin yhteydessä saattoi näytölle tulostua
+  loputtomasti laitetason viestejä, jotka häiritsivät itse
+  rekisteröintitoimenpidettä. Nyt kyseisiä viestejä ei enää näytetä.
+
+  </advanced>
 
 ### Tiedossa olevat ongelmat
 
 - <advanced title="Hiiren kursori on näkymätön ensimmäisellä kirjautumisella">
-  Olemme saaneet yksittäisiä havaintoja, että hiiren kursori on ollut näkymätön käyttäjän ensimmäisellä kirjautumisella uuden järjestelmä version käyttöönoton jälkeen.
-  Järjestelmää voi vian ollessa päällä edelleen käyttää ja hiirellä voi vaikuttaa työpöydän tapahtumiin. Uloskirjautumisen jälkeen hiiren kursori toimii jälleen normaalisti.
-  Selvitämme ongelman aiheuttajaa.
+
+  Olemme saaneet yksittäisiä havaintoja, että hiiren kursori on ollut
+  näkymätön käyttäjän ensimmäisellä kirjautumisella uuden järjestelmä
+  version käyttöönoton jälkeen. Järjestelmää voi vian ollessa päällä
+  edelleen käyttää ja hiirellä voi vaikuttaa työpöydän
+  tapahtumiin. Uloskirjautumisen jälkeen hiiren kursori toimii jälleen
+  normaalisti. Selvitämme ongelman aiheuttajaa.
+
   </advanced>
+
 - Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
 <br/>
 
 ### Tekniset muutokset
 
 - <advanced title="Kevytpäätepalvelimille testaukseen vaihtoehtoinen kernel">
-  Kevytpäätepalvelimille on mahdollista asettaa käyttöön -kernel. Sitä käytetään testattaessa NFS-palvelun aiheuttamaan järjestelmän epävakautta.
-  </advanced>
-- <advanced title="Kannettavien päivitys"> 
-  Kannettavien päivityksessä on tehty muutoksia tilanteeseen, jossa laite on käynnistetty varajärjestelmästä. Aiemmin päivittäminen
-  oli mahdollista vain oletuskuvasta päivitettävään kuvaan. Tämä olisi voinut aiheuttaa ongelmia tilanteessa, jossa oletuskuva ei
-  olisikaan kyseisellä laitteella toimiva. Nyt päivittäminen onnistuu molempia kuvia käyttämällä.
- </advanced>
 
+  Kevytpäätepalvelimille on mahdollista asettaa käyttöön kernelistä
+  versio 3.2.0-70-generic-pae, jota testataan NFS-palvelun aiheuttaman
+  järjestelmän epävakauden korjaamiseksi.
+
+  </advanced>
+- <advanced title="Kannettavien päivitys korjattu päivittymään varajärjestelmästä"> 
+
+  Kannettavien päivityksessä on tehty muutoksia tilanteeseen, jossa
+  laite on käynnistetty varajärjestelmästä. Aiemmin päivittäminen oli
+  mahdollista vain oletuskuvasta päivitettävään kuvaan. Tämä olisi
+  voinut aiheuttaa ongelmia tilanteessa, jossa oletuskuva ei olisikaan
+  kyseisellä laitteella toimiva. Nyt päivittäminen onnistuu molempia
+  kuvia käyttämällä.
+
+ </advanced>
 
 
 <advanced>
 
 ### Ohjelmistomuutokset
 
-
+    New packages:
+      devilspie 0.23-2
+      libnss-ldapd:i386 0.9.4-5+trusty.i386+master.fe165edb0ee7d8d4e2eb1707ece30653e4375fff
+      linux-headers-3.13.0-39 3.13.0-39.66
+      linux-headers-3.13.0-39-generic 3.13.0-39.66
+      linux-headers-3.2.0-70 3.2.0-70.105
+      linux-headers-3.2.0-70-generic-pae 3.2.0-70.105
+      linux-image-3.2.0-70-generic-pae 3.2.0-70.105
+      nscd 2.19-0ubuntu6.3
+      nslcd 0.9.4-5+trusty.i386+master.fe165edb0ee7d8d4e2eb1707ece30653e4375fff
+      nslcd-utils 0.9.4-5+trusty.i386+master.fe165edb0ee7d8d4e2eb1707ece30653e4375fff
+    Removed packages:
+      linux-headers-3.13.0-37 3.13.0-37.64
+      linux-headers-3.13.0-37-generic 3.13.0-37.64
+    Upgraded packages:
+      bluegriffon 1.7.2-12+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 1.7.2-11+trusty.i386+trusty.db2ce0689b2881b71c796a5c091e3f7ae4437589)
+      bluegriffon-data 1.7.2-12+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 1.7.2-11+trusty.i386+trusty.db2ce0689b2881b71c796a5c091e3f7ae4437589)
+      debootstrap 1.0.59ubuntu0.2
+        (was 1.0.59ubuntu0.1)
+      dymo-cups-drivers 1.4.0-3+trusty.i386+master.dfb5bdb5d390ddea0c4d145893816c43742d6ec4
+        (was 1.4.0-1+trusty.i386+trusty.667d099b86cdd1d9032afecb2c363b9f7720c7c6)
+      ekapeli 1.95-2+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 1.95-1+trusty.i386+trusty.a8227616f990993aeb6e9bd63696de05adf7610c)
+      fluentd 0.10.55-16+trusty.i386+master.c63523f042e8fbfce903067b0f7b04def9801a47
+        (was 0.10.41-12+trusty.i386+trusty.124b8c96bc60567cf8c55a886040cb16e0de33b3)
+      fluent-plugin-puavo 0.2.0-21+trusty.i386+master.38201ec28ff8fe713856d056f7914b982ac74cc4
+        (was 0.2.0-18+trusty.i386+trusty.5bfce532e5e4244978d3f777302369e4edb8f014)
+      geogebra 5.0.4.0-4+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 5.0.4.0-3+trusty.i386+trusty.cb99ef56b6503bd74f35ed636b02f6bd70e26e56)
+      gir1.2-gnomebluetooth-1.0 3.8.2.1-0ubuntu4.1
+        (was 3.8.2.1-0ubuntu4)
+      gir1.2-pango-1.0 1.36.3-1ubuntu1.1
+        (was 1.36.3-1ubuntu1)
+      gnome-bluetooth 3.8.2.1-0ubuntu4.1
+        (was 3.8.2.1-0ubuntu4)
+      gnome-keyring 3.10.1-1ubuntu4.1
+        (was 3.10.1-1ubuntu4)
+      gnome-session 3.9.90-4+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 3.9.90-3+trusty.i386+trusty.4b9b14e5dc86d8b289e9b96db3c902640c734b49)
+      gnome-session-bin 3.9.90-4+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 3.9.90-3+trusty.i386+trusty.4b9b14e5dc86d8b289e9b96db3c902640c734b49)
+      gnome-session-common 3.9.90-4+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 3.9.90-3+trusty.i386+trusty.4b9b14e5dc86d8b289e9b96db3c902640c734b49)
+      goobox 3.2.1-7+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 3.2.1-5+trusty.i386+trusty.5ecb461d5a9510ab362e2adbdee7938091f8c447)
+      hardening-includes 2.5ubuntu2.1
+        (was 2.5ubuntu2)
+      hostapd 1:2.0-6+trusty.i386+master.8db6a37a9ec40ae0ca789a988f9ad15bed198bd6
+        (was 1:2.0-1+trusty.i386+trusty.049dc1ec04d41d199a5daa6bf4f6759cc207ba65)
+      icedtea-6-jre-cacao:i386 6b33-1.13.5-1ubuntu0.14.04
+        (was 6b32-1.13.4-4ubuntu0.14.04.1)
+      icedtea-6-jre-jamvm:i386 6b33-1.13.5-1ubuntu0.14.04
+        (was 6b32-1.13.4-4ubuntu0.14.04.1)
+      iivari-client 1.3.4-6+trusty.i386+master.57da24dd35a7210ee22add9a4855b64a2a21431d
+        (was 1.3.4-4+trusty.i386+trusty.57da24dd35a7210ee22add9a4855b64a2a21431d)
+      indicator-applet 12.10.2+14.04.20140403-9+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 12.10.2+14.04.20140403-8+trusty.i386+trusty.0322df5bcefefbf06012f20976afac3418361b59)
+      indicator-applet-complete 12.10.2+14.04.20140403-9+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 12.10.2+14.04.20140403-8+trusty.i386+trusty.0322df5bcefefbf06012f20976afac3418361b59)
+      kdump-tools 1.5.5-2ubuntu1.1
+        (was 1.5.5-2ubuntu1)
+      kexec-tools 1:2.0.6-0ubuntu2.1
+        (was 1:2.0.6-0ubuntu2)
+      ldap-utils 2.4.40-18+trusty.i386+master.5c72b77d8e9e197a583cf46e94f565f20e93830e
+        (was 2.4.31-1+nmu2ubuntu8)
+      libcuda1-304 304.117-12+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 304.117-10+trusty.i386+trusty.d7b68e16b78eec2e7cfe4fa1dce63a17ff854589)
+      libglib2.0-0:i386 2.40.2-0ubuntu1
+        (was 2.40.0-2)
+      libglib2.0-bin 2.40.2-0ubuntu1
+        (was 2.40.0-2)
+      libglib2.0-data 2.40.2-0ubuntu1
+        (was 2.40.0-2)
+      libgnome-bluetooth11 3.8.2.1-0ubuntu4.1
+        (was 3.8.2.1-0ubuntu4)
+      libindicator3-7 12.10.2+14.04.20141007.1-0ubuntu1
+        (was 12.10.2+14.04.20140402-0ubuntu1)
+      libindicator7 12.10.2+14.04.20141007.1-0ubuntu1
+        (was 12.10.2+14.04.20140402-0ubuntu1)
+      libldap-2.4-2:i386 2.4.40-18+trusty.i386+master.5c72b77d8e9e197a583cf46e94f565f20e93830e
+        (was 2.4.31-1+nmu2ubuntu8)
+      liblightdm-gobject-1-0 1.10.1-5+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 1.10.1-4+trusty.i386+trusty.85ce22afaedcf0ac214d11c5c053cd9cb6443982)
+      libnm-gtk0 0.9.8.8-9+trusty.i386+master.acb37ec0916939fadec446c16559fdbf2e299e0c
+        (was 0.9.8.8-8+trusty.i386+trusty.1f2472d83455d154917cfe76146b5ad2328e5e35)
+      libnm-gtk-common 0.9.8.8-9+trusty.i386+master.acb37ec0916939fadec446c16559fdbf2e299e0c
+        (was 0.9.8.8-8+trusty.i386+trusty.1f2472d83455d154917cfe76146b5ad2328e5e35)
+      libnux-4.0-0 4.0.6+14.04.20140930-0ubuntu1
+        (was 4.0.6+14.04.20140409-0ubuntu1)
+      libnux-4.0-common 4.0.6+14.04.20140930-0ubuntu1
+        (was 4.0.6+14.04.20140409-0ubuntu1)
+      libp11-kit-gnome-keyring:i386 3.10.1-1ubuntu4.1
+        (was 3.10.1-1ubuntu4)
+      libpam-envfeed 0.5-27+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 0.5-26+trusty.i386+trusty.b614aea3a666fc0b56444020a9635dcde1bfe842)
+      libpam-gnome-keyring:i386 3.10.1-1ubuntu4.1
+        (was 3.10.1-1ubuntu4)
+      libpango-1.0-0:i386 1.36.3-1ubuntu1.1
+        (was 1.36.3-1ubuntu1)
+      libpango1.0-0:i386 1.36.3-1ubuntu1.1
+        (was 1.36.3-1ubuntu1)
+      libpangocairo-1.0-0:i386 1.36.3-1ubuntu1.1
+        (was 1.36.3-1ubuntu1)
+      libpangoft2-1.0-0:i386 1.36.3-1ubuntu1.1
+        (was 1.36.3-1ubuntu1)
+      libpangoxft-1.0-0:i386 1.36.3-1ubuntu1.1
+        (was 1.36.3-1ubuntu1)
+      libpurple0 1:2.10.9-0ubuntu3.2
+        (was 1:2.10.9-0ubuntu3.1)
+      libpurple-bin 1:2.10.9-0ubuntu3.2
+        (was 1:2.10.9-0ubuntu3.1)
+      libssl1.0.0:i386 1.0.1f-1ubuntu2.7
+        (was 1.0.1f-1ubuntu2.5)
+      libssl-dev:i386 1.0.1f-1ubuntu2.7
+        (was 1.0.1f-1ubuntu2.5)
+      libssl-doc 1.0.1f-1ubuntu2.7
+        (was 1.0.1f-1ubuntu2.5)
+      libunity-control-center1 14.04.3+14.04.20140410-9+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 14.04.3+14.04.20140410-6+trusty.i386+trusty.e859e7b757a473d7ed6906e40f2dc8ab99e4d284)
+      libunity-core-6.0-9 7.2.3+14.04.20140826-0ubuntu1
+        (was 7.2.2+14.04.20140714-0ubuntu1.1)
+      libxml2:i386 2.9.1+dfsg1-3ubuntu4.4
+        (was 2.9.1+dfsg1-3ubuntu4.3)
+      libxml2-utils 2.9.1+dfsg1-3ubuntu4.4
+        (was 2.9.1+dfsg1-3ubuntu4.3)
+      lightdm 1.10.1-5+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 1.10.1-4+trusty.i386+trusty.85ce22afaedcf0ac214d11c5c053cd9cb6443982)
+      linux-headers-generic 3.13.0.39.46
+        (was 3.13.0.37.44)
+      linux-libc-dev:i386 3.13.0-39.66
+        (was 3.13.0-37.64)
+      lshw 02.16-2ubuntu1.1
+        (was 02.16-2ubuntu1)
+      ltsp-client 5.4.3-8+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 5.4.3-7+trusty.i386+trusty.3650c2c5a218c1ec7bf172dafa53896c0089226b)
+      ltsp-client-core 5.4.3-8+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 5.4.3-7+trusty.i386+trusty.3650c2c5a218c1ec7bf172dafa53896c0089226b)
+      ltsp-server 5.4.3-8+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 5.4.3-7+trusty.i386+trusty.3650c2c5a218c1ec7bf172dafa53896c0089226b)
+      makedumpfile 1.5.5-2ubuntu1.1
+        (was 1.5.5-2ubuntu1)
+      nautilus-dropbox-dist 2.10.29-7+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 2.10.29-6+trusty.i386+trusty.c4bb0e999977bda4c5bf97597f5059f1678649f7)
+      network-manager-gnome 0.9.8.8-9+trusty.i386+master.acb37ec0916939fadec446c16559fdbf2e299e0c
+        (was 0.9.8.8-8+trusty.i386+trusty.1f2472d83455d154917cfe76146b5ad2328e5e35)
+      nodejs-bundle 0.10.33-30+trusty.i386+master.82e034f9352b875296be1e68ba31de4ee3c42edb
+        (was 0.10.22-28+trusty.i386+trusty.85ce22afaedcf0ac214d11c5c053cd9cb6443982)
+      node-webkit 0.8.6-27+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 0.8.6-26+trusty.i386+trusty.db2ce0689b2881b71c796a5c091e3f7ae4437589)
+      nvidia-304 304.117-12+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 304.117-10+trusty.i386+trusty.d7b68e16b78eec2e7cfe4fa1dce63a17ff854589)
+      nvidia-opencl-icd-304 304.117-12+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 304.117-10+trusty.i386+trusty.d7b68e16b78eec2e7cfe4fa1dce63a17ff854589)
+      openjdk-6-jdk:i386 6b33-1.13.5-1ubuntu0.14.04
+        (was 6b32-1.13.4-4ubuntu0.14.04.1)
+      openjdk-6-jre-headless:i386 6b33-1.13.5-1ubuntu0.14.04
+        (was 6b32-1.13.4-4ubuntu0.14.04.1)
+      openjdk-6-jre:i386 6b33-1.13.5-1ubuntu0.14.04
+        (was 6b32-1.13.4-4ubuntu0.14.04.1)
+      openjdk-6-jre-lib 6b33-1.13.5-1ubuntu0.14.04
+        (was 6b32-1.13.4-4ubuntu0.14.04.1)
+      openjdk-7-doc 7u71-2.5.3-0ubuntu0.14.04.1
+        (was 7u65-2.5.2-3~14.04)
+      openjdk-7-jdk:i386 7u71-2.5.3-0ubuntu0.14.04.1
+        (was 7u65-2.5.2-3~14.04)
+      openjdk-7-jre-headless:i386 7u71-2.5.3-0ubuntu0.14.04.1
+        (was 7u65-2.5.2-3~14.04)
+      openjdk-7-jre:i386 7u71-2.5.3-0ubuntu0.14.04.1
+        (was 7u65-2.5.2-3~14.04)
+      openssl 1.0.1f-1ubuntu2.7
+        (was 1.0.1f-1ubuntu2.5)
+      opinsys-ca-certificates 1.0.2-6+trusty.i386+master.e20e7f8f3875bd7b720a6976752966560017bab5
+        (was 1.0.2-4+trusty.i386+trusty.e20e7f8f3875bd7b720a6976752966560017bab5)
+      opinsys-theme 0.2.8-240+trusty.amd64+master.b268d03cbc2516033a1ebb793930eed1e3cc39ce
+        (was 0.2.8-212+trusty.amd64+trusty.cbce4623000417fc79970b8cdead63d6b38568ce)
+      oracle-java 1.7.71-30+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 1.7.71-24+trusty.i386+trusty.37dc6e8a3843db2efe3dcb7a13467daf7328c287)
+      pidgin 1:2.10.9-0ubuntu3.2
+        (was 1:2.10.9-0ubuntu3.1)
+      pidgin-data 1:2.10.9-0ubuntu3.2
+        (was 1:2.10.9-0ubuntu3.1)
+      pitivi 0.93-3ubuntu0.1
+        (was 0.93-3)
+      puavo-autopilot 0.1-17+trusty.i386+master.385f2abbd4d1779144995c745ff0fb48b51e3d0c
+        (was 0.1-11+trusty.i386+trusty.a74c5b3e25c1ba72cac9064b008116228d14e02e)
+      puavo-client 1.4.2-33+trusty.i386+master.bb8296ac3577e160f7b009a5db55954af8c73c90
+        (was 1.4.2-29+trusty.i386+trusty.bb8296ac3577e160f7b009a5db55954af8c73c90)
+      puavo-devscripts 0.5.0-79+trusty.i386+master.30bd7b67481df3f5f8d72c2f790b8a3de97f8494
+        (was 0.5.0-74+trusty.i386+trusty.3f6cfb92b3ce758b7508da42a9eda2d32ec3ad49)
+      puavo-hw-log 1.0-6+trusty.i386+master.a842ee2b9c55af23a05e88ff67a4012b2cd12ffd
+        (was 1.0-5+trusty.i386+trusty.a842ee2b9c55af23a05e88ff67a4012b2cd12ffd)
+      puavo-hw-tools 1.0-6+trusty.i386+master.e8e1bd48dc138be05513eb5726e2ca640d28770f
+        (was 1.0-4+trusty.i386+trusty.e8e1bd48dc138be05513eb5726e2ca640d28770f)
+      puavo-image-tools 0.12.0-673+trusty.i386+master.35b1aae05fa8ff215fd135231a30bd614a5449e9
+        (was 0.12.0-645+trusty.i386+trusty.016ab2fb2e959441570235f348f112b9a031fb46)
+      puavo-local-config 0.1-83+trusty.i386+master.2c644ef102da9c4befa0606331e4837b2ea95e16
+        (was 0.1-81+trusty.i386+trusty.2c644ef102da9c4befa0606331e4837b2ea95e16)
+      puavo-ltsp-client 0.12.0-673+trusty.i386+master.35b1aae05fa8ff215fd135231a30bd614a5449e9
+        (was 0.12.0-645+trusty.i386+trusty.016ab2fb2e959441570235f348f112b9a031fb46)
+      puavo-ltsp-install 0.12.0-673+trusty.i386+master.35b1aae05fa8ff215fd135231a30bd614a5449e9
+        (was 0.12.0-645+trusty.i386+trusty.016ab2fb2e959441570235f348f112b9a031fb46)
+      puavo-monitor 1.0.2-8+trusty.i386+master.3c78ade6ae790f9a987fe48555e84a3d638180af
+        (was 1.0.2-7+trusty.i386+trusty.3c78ade6ae790f9a987fe48555e84a3d638180af)
+      puavo-sharedir-client 0.4.0-27+trusty.i386+master.2fec3bcabd56b1a985e6b6b501dbde70fa0f621a
+        (was 0.4.0-25+trusty.i386+trusty.2fec3bcabd56b1a985e6b6b501dbde70fa0f621a)
+      puavo-vpn-client 0.1.3-8+trusty.i386+master.dfd78670c91bfd340e01a96108f974352ba981c7
+        (was 0.1.3-6+trusty.i386+trusty.73fd6870cf05aa58cb5c2dd190421af72db35a89)
+      puavo-wlanap 0.8.0-29+trusty.i386+master.7b254581965c9a97efa248b4d04002dd14827d25
+        (was 0.8.0-27+trusty.i386+trusty.bf55edba971d4ad21987ec37d78b9ef8c772e7e0)
+      puavo-wlanap-dnsproxy 0.8.0-29+trusty.i386+master.7b254581965c9a97efa248b4d04002dd14827d25
+        (was 0.8.0-27+trusty.i386+trusty.bf55edba971d4ad21987ec37d78b9ef8c772e7e0)
+      pycharm 3.1.1-5+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 3.1.1-4+trusty.i386+trusty.db2ce0689b2881b71c796a5c091e3f7ae4437589)
+      python3-software-properties 0.92.37.2
+        (was 0.92.37.1)
+      python-libxml2 2.9.1+dfsg1-3ubuntu4.4
+        (was 2.9.1+dfsg1-3ubuntu4.3)
+      qemu-keymaps 2.0.0+dfsg-2ubuntu1.6
+        (was 2.0.0+dfsg-2ubuntu1.5)
+      qemu-kvm 2.0.0+dfsg-2ubuntu1.6
+        (was 2.0.0+dfsg-2ubuntu1.5)
+      qemu-system-common 2.0.0+dfsg-2ubuntu1.6
+        (was 2.0.0+dfsg-2ubuntu1.5)
+      qemu-system-x86 2.0.0+dfsg-2ubuntu1.6
+        (was 2.0.0+dfsg-2ubuntu1.5)
+      qemu-utils 2.0.0+dfsg-2ubuntu1.6
+        (was 2.0.0+dfsg-2ubuntu1.5)
+      snap4arduino 1.0.3.opinsys3-14+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 1.0.3.opinsys3-13+trusty.i386+trusty.76f950f956f9e360cf2ce86c3e0097b39311a73a)
+      software-properties-common 0.92.37.2
+        (was 0.92.37.1)
+      tzdata 2014i-0ubuntu0.14.04
+        (was 2014e-0ubuntu0.14.04)
+      tzdata-java 2014i-0ubuntu0.14.04
+        (was 2014e-0ubuntu0.14.04)
+      unity-control-center 14.04.3+14.04.20140410-9+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 14.04.3+14.04.20140410-6+trusty.i386+trusty.e859e7b757a473d7ed6906e40f2dc8ab99e4d284)
+      unity-services 7.2.3+14.04.20140826-0ubuntu1
+        (was 7.2.2+14.04.20140714-0ubuntu1.1)
+      update-notifier-common 0.154.1ubuntu1
+        (was 0.154.1)
+      visionmedia-mon 1.2.2-10+trusty.i386+master.91126a90b21945f834e98b6fb89fb24b59b973ae
+        (was 1.2.2-9+trusty.i386+trusty.fa996adc4e34b2d24e365cf53e7121229dc7b63a)
+      vstdrivers 1.5.1.1-20+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 1.5.1.1-19+trusty.i386+trusty.1e3de9df46436b491eaf8fe1a70bca35e2ea5349)
+      vstloggerpro 3.8.4.6-20+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 3.8.4.6-19+trusty.i386+trusty.611c92c39891630d3fa6b244988c28d31328cdf2)
+      vtun 3.0.2-5+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 3.0.2-3+trusty.i386+trusty.010591ca2c3c93a744ec6bc205d95647237352db)
+      webkiosk-language-selector 0.1-6+trusty.i386+master.a7689783898fdbd0c3bda0d56f25683326922771
+        (was 0.1-5+trusty.i386+trusty.a7689783898fdbd0c3bda0d56f25683326922771)
+      webmenu 0.7.0-144+trusty.i386+master.d952f4bed37c8d703cfcccf4a49939f9fcd98b2e
+        (was 0.7.0-142+trusty.i386+trusty.033b65ff47e2a4ae2d437c446829bace2d937756)
+      wpasupplicant 2.0-6+trusty.i386+master.8db6a37a9ec40ae0ca789a988f9ad15bed198bd6
+        (was 2.0-1+trusty.i386+trusty.049dc1ec04d41d199a5daa6bf4f6759cc207ba65)
+      xchat 2.8.8-7.1ubuntu5.1
+        (was 2.8.8-7.1ubuntu5)
+      xchat-common 2.8.8-7.1ubuntu5.1
+        (was 2.8.8-7.1ubuntu5)
+      xul-ext-flashblock 1.5.17-5+trusty.i386+master.531cf0dbc32b3c20a22e783612e968055ffb1d1e
+        (was 1.5.17-4+trusty.i386+trusty.88de89f83d7c01200297061bab2a104de525aa2a)
+    Downgraded packages:
 
 </advanced>
 
