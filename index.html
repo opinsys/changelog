@@ -17,6 +17,60 @@
 
 <pre class="markdown"><code>
 
+## Opinsys 15.5 - Irja {#ltsp-opinsysrestricted-trusty-2015-01-30-120352-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Kannettavien kotikansio ja yhteiset kansiot">
+  Kannettavien yhteyttä koulun palvelimen kotikansioon ja yhteisiin kansioihin on muutettu.
+  Jatkossa yhteyteen käytetään eri tekniikkaa ja muutoksella tavoitellaan luotettavampaa teknistä
+  toimivuutta ja helpompaa käyttöä. Päätoiminnallisuus säilyy käyttäjän näkökulmasta samanlaisena 
+  kuin ennen. Lisänä aiempaan verrattuna tiedostoselaimeen on tullut kaksi painiketta (share ja 
+  käyttäjätunnus palvelimella homedir.xxx). Nämä linkit johtavat samaan sijaintiin kuin kirjanmerkeissä 
+  olevat linkit.
+  
+  </advanced>
+
+- <advanced title="Pääsy yhteisiin kansioihin (esim. Smart Notebook)">
+  Aiemmin kaikista ohjelmista ei ole pystynyt tallentamaan yhteysiin kansioihin kovinkaan helposti.
+  Ongelma on johtunut siitä, että kaikki ohjelmat (Esim. Smart Notebook) eivät tue kirjanmerkkien 
+  käyttämistä, joilla pääsy yhteisiin kansioihin on mahdollistettu helposti. Jatkossa yhteisiin
+  kansioihiin pääsee myös oman kotikansion juuressa olevista linkeistä. Nämä näkyvät käytännössä 
+  kaikissa ohjelmissa.
+</advanced>
+
+- <advanced title="Flash-liitännäinen Firefoxissa">
+  Firefoxin Flash-liitännäinen on toisinaan aiheuttanut harmia tilanteessa, jossa siitä on juuri
+  julkaistu uusi versio, mutta järjestelmässä on vielä vanha. Tällöin Firefox varoittaa liitännäisen
+  käytöstä ja näyttää tästä ilmoituksen. Ilmoitus on nyt käytettävyyssyistä otettu oletuksena pois käytöstä.
+  Järjestelmässä on käytössä Flashblock-liitännäinen joka oletuksena estää ei-luotetuilta sivuilta Flashin
+  suorittamisen ja lisää tietoturvaa siirtymävaiheeseen.
+  </advanced>
+
+
+### Tiedossa olevat ongelmat
+
+- <advanced title="gvfsd-smb prosessi aiheuttaa ylimääräistä kuormaa vierastunnuksella kannettavilla">
+  Kannettavien prosessilistauksessa saattaa näkyä gvfsd-smb-prosessi, joka aiheuttaa kuormaa laitteelle.
+  Ongelma esiintyy vain vierastunnuksella ja se korjataa tuleviin versioihin.
+  </advanced>
+
+### Tekniset muutokset
+
+- <advanced title="Käytös kun NBD-yhteys katkeaa">
+  NBD-yhteyden katketessa (esim. päätelaite on jäänyt päälle samalla kun palvelin on käynnistetty uudelleen) päätelaitteet
+  oletuksena käynnistyvät automaattisesti uudelleen, kun palvelin palaa takaisin verkkoon. Tällä pyritään estämään,
+  että verkkoon jäisi sekavassa tilassa olevia laitteita, jotka aiheuttavat hämmennystä käyttäjissä.
+  </advanced>
+
+- <advanced title="Ylläpito VNC-etäyhteys ja xrandr-aliakset">
+  Ylläpitäjän näkökulmasta helpostusta tuovat jatkossa adm-x11vnc- ja adm-xrandr-aliakset.
+  </advanced>
+
+
+
+
+
 ## Opinsys 15.4 - Aune {#ltsp-opinsysrestricted-trusty-2015-01-21-104756-i386}
 
 ### Korjaukset ja muut muutokset
@@ -51,16 +105,19 @@
 ### Tekniset muutokset
 
 - <advanced title="Laitteiden rekisteröinti">
-  Laitteiden rekisteröinti toiminnallisuus on muuttunut seuraavasti.
+  Laitteiden rekisteröintitoiminnallisuus on muuttunut seuraavasti.
 
-  -- Normaalia laitteiden rekisteröintiä on yksinkertaistettu ja hämäävät preseed-toiminnallisuudet on
+  - Normaalia laitteiden rekisteröintiä on yksinkertaistettu ja hämäävät preseed-toiminnallisuudet on
      piilotettu
 
-  -- Rekisteröintiin on lisätty Guru-moodi, jossa on mahdollista käyttää preseed-asennusta, esiasentaa
+  - Rekisteröintiin on lisätty Guru-moodi, jossa on mahdollista käyttää preseed-asennusta, esiasentaa
      kannettavia ilman rekisteröintiä ja valmistella usb-asennusmedia kannettava-asennusta varten. Toiminnallisuus
      löytyy kirjoittamalla "guru" rekisteröintiohjelman käynnistyttyä (Press enter to begin installation).
   </advanced>
 
+- <advanced title="Ylläpito VNC-etäyhteys ja xrandr-scriptit">
+  Ylläpitäjän näkökulmasta helpostusta tuovat jatkossa adm-x11vnc- ja adm-xrandr-aliakset.
+  </advanced>
 
 ## Opinsys 14.51 - Heimo {#ltsp-opinsysrestricted-trusty-2014-12-15-131120-i386}
 
