@@ -1,0 +1,1089 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Muutokset Opinsys-järjestelmässä</title>
+        <link rel="stylesheet" type="text/css" href="../css/theme.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+    <body>
+        <div class="login main">
+            <a href="http://opinsys.fi" target="_blank">
+                <img src="../opinsys_logo.png" alt="Opinsys Oy">
+            </a>
+            <div class="doc">
+            <h1>Opinsys-järjestelmän versiot ja muutokset</h1>
+            <p>Seuraavassa on kuvattu Opinsys-järjestelmän eri versiot ja tärkeimmät käyttöön vaikuttavat muutokset aina 
+edelliseen julkaisuun nähden. Näiden muutosten lisäksi versiopäivityksiin sisältyy uusimmat tietoturva- ja ohjelmistopäivitykset (esim. verkkoselaimet).</p>
+
+<pre class="markdown"><code>
+
+## Opinsys 15.18 - Vappu {#ltsp-opinsysrestricted-trusty-2015-04-30-081636-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Oletusselaimen valinta">
+  Jatkossa käyttäjän on mahdollista valita helkilökohtainen oletusverkkoselaimensa. Oletusselaimen valinta
+  vaikuttaa työpöydän alapaneelissa näkyvään selaimen käynnistimeen ja esimerkiksi siihen millä selaimella
+  kotikansiossa olevat html-tiedostot avataan.
+  HUOM! Keskitetyt koulukohtaiset kotisivuasetukset on kuitenkin tuettuna vain Firefox-selaimessa.
+</advanced>
+
+- <advanced title="KTouch-konekirjoitusharjoitus">
+  Jyväskylän Kortepohjan koulun opettajan Terho Reuhkalan (Jyväskylän Kortepohjan koulu) tekemät harjoitukset
+  on laitettu Ktouch-ohjelman oletusharjoitukseksi. Samalla ohjelman vaikeustasoa on laskettu, koska
+  ohjelman omat harjoitukset on ohjelman päivittymisen myötä todettu liian vaikeiksi ja pitkiksi.  
+</advanced>
+ 
+- <advanced title="Korjattu HP dc7900-tietokoneiden sammumisongelma">
+  Ainakin HP:n valmistamilla dc7900 -tietokoneilla automaattisammutus saattoi jäädä jumiin.
+  Ongelma saattoi aiheutua mikäli tietokone toimi langattoman verkon tukiasemana ja siinä
+  oli antennitikku kiinni. Ongelma on nyt korjattu ja tietokoneiden pitäisi sammua normaalisti.
+</advanced>
+
+- <advanced title="Liittyminen langattomiin verkkoihin kannettavilla">
+  Päivityksen myötä kannettavilla on mahdollista liittyä tuntemattomiin langattomiin verkkoihin heti kirjautumisruudusta.
+  Aiemmin tämä johti virheilmoitukseen, jossa kerrottiin että käyttäjällä ei ole oikeutta tehdä näin.
+  Jatkossa käyttäjien itse työpöydältä lisäämiä langattomia verkkoja (esim. kodin langaton verkko) ei siivota 
+  automaattisesti pois. Käyttäjien itse lisäämät langattomat verkot ovat käytettävissä kyseisellä laitteella vain hänen omalla 
+  tunnuksellaan. Kuitenkin jos kannettava on asetettu tietylle henkilölle henkilökohtaiseksi laitteeksi, onkyseisellä 
+  käyttäjällä oikeus jakaa lisäämiään langattomia verkkoja myös muiden koneen käyttäjien käyttöön. 
+</advanced>
+  
+- <advanced title="Java päivitys">
+  Järjestelmän Oracle Java-ohjelmisto on päivitetty versioon 7U79.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+- Silverlight-sisällön näyttämiseen tarkoitettu pipelight-laajennos ei tällä hetkellä toimi luotettavasti.
+
+### Tekniset muutokset
+
+
+
+## Opinsys 15.15 - Tero {#ltsp-opinsysrestricted-trusty-2015-04-10-103142-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Lisätty Processing-ohjelmointiympäristö">
+  Processing on etenkin ohjelmoinnin opetuksen alkeisiin sopiva, visuaalinen ohjelmointiympäristö. 
+  Processing IDE-ohjelmointiympäristö löytyy valitsemalla Menu > Ohjelmointi > Processing.
+</advanced>
+
+- <advanced title="Lisätty SimpleScreenRecorder-sovellus työpöydän videotallennusten tekemiseen">
+  Ohjelma löytyy valitsemalla Menu > Apuohjelmat > Työpöytänauhoitus
+</advanced>
+
+- Lisätty ajurit Canon pixma mg5650 USB-tulostimelle.
+  
+- <advanced title="Lisätty Avogadro-sovellus orgaanisen kemian molekyylien mallintamiseen">
+  Ohjelma löytyy valitsemalla Menu > Opetusohjelmat > Avogadro.
+</advanced>
+
+- <advanced title="Korjattu Unity3D-sovellusten aiheuttama alapaneelin häviäminen">
+  Poistuttaessa Unity3D:llä kehitetyistä ohjelmista työpöydän alapaneeli saattoi hävitä. 
+  Tämä ongelma on nyt korjattu ohjelmistokirjaston päivityksen myötä.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+- Silverlight-sisällön näyttämiseen tarkoitettu pipelight-laajennos ei tällä hetkellä toimi luotettavasti.
+
+### Tekniset muutokset
+
+- <advanced title="Uusia Puavo-tageja kannettavien unitilaa varten">
+  Tagi "nolidsuspend" estää kannettavaa menemästä nukkumaan, jos sen luukku suljetaan.
+  Tagi "nosuspend" estää kokonaan unitilan käytöstä. Tagit ovat käytettävissä pääkäyttäjätunnuksilla
+  joilla ne voidaan asettaa Puavo-laitehallinnasta laitekohtaisesti käyttöön. 
+  </advanced>
+
+
+## Opinsys 15.13 - Aava {#ltsp-opinsysrestricted-trusty-2015-03-25-104000-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Ekapeli">
+  Ekapelin päivittyminen aiheutti tilanteen, jossa Ekapeli ei enää käynnistynyt. Ongelma on nyt korjattu
+  siten, että seuraavan Ekapeli päivityksen yhteydessä vastaavaa vikaa ei pitäsi enää ilmaantua.
+  </advanced>
+
+- <advanced title="Tulostintietojen päivittyminen kannettavilla">
+  Kannettavilla tietokoneilla ilmeni ongelma, jossa tulostintiedot eivät päivittyneet koneilla
+  automaattisesti. Ongelma on nyt korjattu.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+
+
+### Tekniset muutokset
+
+- <advanced title="Automaattitestaajan kirjautuminen">
+  Automaattisen testausjärjestelmän kirjautuminen ei edellisessä versiossa toiminut. Ongelma
+  on nyt korjattu ja automaattitestaus toimii normaalisti.
+  </advanced>
+
+
+
+
+## Opinsys 15.9 - Nestori {#ltsp-opinsysrestricted-trusty-2015-02-26-125553-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Lisätty Globilab-sovellus">
+  Järjestelmään on lisätty Globilab-sovellus, kyseisen valmistajan Fysiikan mitta-antureiden käyttöön.
+  </advanced>
+
+- <advanced title="Lisätty php-ohjelmisto ohjelmoinnin opetuksen tarkoituksiin">
+  Käyttäjien on mahdollista suorittaa komentoriviltä php-koodia tai käynnistää omalla koneellaan
+  testipalvelin esimerkiksi php-koodia sisältävien html-sivujen testaamiseen.
+</advanced>
+
+- <advanced title="Päivitetty Bluefish-html-editori">
+  Ohjelmassa oli todettu bugi, joka esti ohjelman käynnistymisen jatkossa. Ohjelma on nyt päivitetty
+  uusimpaan versioon, jossa kyseinen vikatilanne ei enää esiinny.
+  </advanced>
+
+
+### Tiedossa olevat ongelmat
+
+
+
+### Tekniset muutokset
+
+- <advanced title="Lisätty uusia Linux-kerneleitä testikäyttöön">
+  Järjestelmään on lisätty uusi Mainline-kernel, Ubuntu Utopic-kernel sekä 64 bit-kernel. 
+  Näitä voidaan testata esimerkiksi epämääräisten laiteongelmien yhteydessä. Kernelit saa 
+  päätelaitteelle käyttöön lisäämällä sille Puavon webbiliittymästä kerneliksi: 
+  "edge" (mainline kernel), "utopic" (Ubuntu Utopic Unicorn), "stable-amd64" (64-bit).
+  </advanced>
+
+
+
+## Opinsys 15.7 - Sulo {#ltsp-opinsysrestricted-trusty-2015-02-13-063611-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Lisätty uudet sovellukset T-lasku ja tilitin">
+  Ohjelmat löytyvät Menu > Toimisto-valikon alta.
+  </advanced>
+
+- <advanced title="Lisätty Ekapelin versiot: SpelEtt ja Ekapeli Maahanmuuttaja.">
+  Molemmat pelit löytyvät valikosta valitsemalla Menu > Opetusohjelmat > Spelet & Ekapeli-maahanmuuttaja.
+</advanced>
+
+- <advanced title="Firefox-selaimen osoitepalkin toimimattomuus vanhoilla tietokoneilla">
+  Vanhoilla intel-näytönojainta (i8xx) käyttävillä tietokoneilla Firefoxin osoitepalkki näkyi 
+  sotkuisena. Ongelma on nyt korjattu ainakin useimpien koneiden osalta. Mikäli ongelmaa
+  edelleen ilmenee niin toivomme, että ilmoitatte siitä tukipalveluun.
+  </advanced>
+
+
+### Tiedossa olevat ongelmat
+
+
+
+### Tekniset muutokset
+
+- <advanced title="Käyttöliittymän skaalaus digitaalisella TV-näytöllä">
+  Käyttöliittymän automaattinen skaalaus on nyt kytketty pois päältä. Ominaisuus aiheutti käyttöliittymän
+  virheellisen suuren skaalauksen tilanteessa, jossa tietokone oli liitetty DVI-/tai HDMI-liitännällä televisioon.
+  </advanced>
+
+
+## Opinsys 15.5 - Irja {#ltsp-opinsysrestricted-trusty-2015-01-30-120352-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Kannettavien kotikansio ja yhteiset kansiot">
+  Kannettavien yhteyttä koulun palvelimen kotikansioon ja yhteisiin kansioihin on muutettu.
+  Jatkossa yhteyteen käytetään eri tekniikkaa ja muutoksella tavoitellaan luotettavampaa teknistä
+  toimivuutta ja helpompaa käyttöä. Päätoiminnallisuus säilyy käyttäjän näkökulmasta samanlaisena 
+  kuin ennen. Lisänä aiempaan verrattuna tiedostoselaimeen on tullut kaksi painiketta (share ja 
+  käyttäjätunnus palvelimella homedir.xxx). Nämä linkit johtavat samaan sijaintiin kuin kirjanmerkeissä 
+  olevat linkit.
+  
+  </advanced>
+
+- <advanced title="Pääsy yhteisiin kansioihin (esim. Smart Notebook)">
+  Aiemmin kaikista ohjelmista ei ole pystynyt tallentamaan yhteysiin kansioihin kovinkaan helposti.
+  Ongelma on johtunut siitä, että kaikki ohjelmat (Esim. Smart Notebook) eivät tue kirjanmerkkien 
+  käyttämistä, joilla pääsy yhteisiin kansioihin on mahdollistettu helposti. Jatkossa yhteisiin
+  kansioihiin pääsee myös oman kotikansion juuressa olevista linkeistä. Nämä näkyvät käytännössä 
+  kaikissa ohjelmissa.
+</advanced>
+
+- <advanced title="Flash-liitännäinen Firefoxissa">
+  Firefoxin Flash-liitännäinen on toisinaan aiheuttanut harmia tilanteessa, jossa siitä on juuri
+  julkaistu uusi versio, mutta järjestelmässä on vielä vanha. Tällöin Firefox varoittaa liitännäisen
+  käytöstä ja näyttää tästä ilmoituksen. Ilmoitus on nyt käytettävyyssyistä otettu oletuksena pois käytöstä.
+  Järjestelmässä on käytössä Flashblock-liitännäinen joka oletuksena estää ei-luotetuilta sivuilta Flashin
+  suorittamisen ja lisää tietoturvaa siirtymävaiheeseen.
+  </advanced>
+
+
+### Tiedossa olevat ongelmat
+
+- <advanced title="gvfsd-smb prosessi aiheuttaa ylimääräistä kuormaa vierastunnuksella kannettavilla">
+  Kannettavien prosessilistauksessa saattaa näkyä gvfsd-smb-prosessi, joka aiheuttaa kuormaa laitteelle.
+  Ongelma esiintyy vain vierastunnuksella ja se korjataa tuleviin versioihin.
+  </advanced>
+
+### Tekniset muutokset
+
+- <advanced title="Käytös kun NBD-yhteys katkeaa">
+  NBD-yhteyden katketessa (esim. päätelaite on jäänyt päälle samalla kun palvelin on käynnistetty uudelleen) päätelaitteet
+  oletuksena käynnistyvät automaattisesti uudelleen, kun palvelin palaa takaisin verkkoon. Tällä pyritään estämään,
+  että verkkoon jäisi sekavassa tilassa olevia laitteita, jotka aiheuttavat hämmennystä käyttäjissä.
+  </advanced>
+
+- <advanced title="Ylläpito VNC-etäyhteys ja xrandr-aliakset">
+  Ylläpitäjän näkökulmasta helpostusta tuovat jatkossa adm-x11vnc- ja adm-xrandr-aliakset.
+  </advanced>
+
+
+
+
+
+## Opinsys 15.4 - Aune {#ltsp-opinsysrestricted-trusty-2015-01-21-104756-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Mimio Studio 11.30">
+  Mimio Studio on päivittynyt uusimpaan versioon. Olemme testanneet ohjelmiston toimivuutta vain Mimio Teach-laitteella.
+  Valmistajan mukaan ohjelmiston pitäisi tukea myös uudempia Mimion kosketustauluja, tykkejä ja dokumenttikameroita.
+  </advanced>
+
+- Java päivitetty versioon 7U75
+
+- <advanced title="Lisätty ohjelmointisovellus DRRacket">
+  Racket-ohjelmointiin tarkoitettu sovellus löytyy valitsemalla Menu > Ohjelmointi > DrRacket.
+</advanced>
+
+- <advanced title="Lisätty käynnistin Edisonille">
+  Edison-palvelulle on lisätty oma käynnistin Websovelluksiin.
+  </advanced>
+
+
+### Tiedossa olevat ongelmat
+
+- <advanced title="Hiiren kursori saattaa olla näkymätön ensimmäisellä kirjautumisella">
+  Olemme saaneet yksittäisiä havaintoja, että hiiren kursori on ollut
+  näkymätön käyttäjän ensimmäisellä kirjautumisella uuden järjestelmä
+  version käyttöönoton jälkeen. Järjestelmää voi vian ollessa päällä
+  edelleen käyttää ja hiirellä voi vaikuttaa työpöydän
+  tapahtumiin. Uloskirjautumisen jälkeen hiiren kursori toimii jälleen
+  normaalisti. Selvitämme ongelman aiheuttajaa.
+  </advanced>
+
+### Tekniset muutokset
+
+- <advanced title="Laitteiden rekisteröinti">
+  Laitteiden rekisteröintitoiminnallisuus on muuttunut seuraavasti.
+
+  - Normaalia laitteiden rekisteröintiä on yksinkertaistettu ja hämäävät preseed-toiminnallisuudet on
+     piilotettu
+
+  - Rekisteröintiin on lisätty Guru-moodi, jossa on mahdollista käyttää preseed-asennusta, esiasentaa
+     kannettavia ilman rekisteröintiä ja valmistella usb-asennusmedia kannettava-asennusta varten. Toiminnallisuus
+     löytyy kirjoittamalla "guru" rekisteröintiohjelman käynnistyttyä (Press enter to begin installation).
+  </advanced>
+
+- <advanced title="Ylläpito VNC-etäyhteys ja xrandr-scriptit">
+  Ylläpitäjän näkökulmasta helpostusta tuovat jatkossa adm-x11vnc- ja adm-xrandr-aliakset.
+  </advanced>
+
+## Opinsys 14.51 - Heimo {#ltsp-opinsysrestricted-trusty-2014-12-15-131120-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Adobe Flash-liitännäinen päivitetty">
+  Adoben Flash-liitännäinen on päivitetty. Samalla Firefox-selaimen asetuksia on muutettu niin, että Flashin päivityksen julkaiseminen
+  ei aiheuta välitöntä ongelmaa ja estä liitännäisen käyttöä. Järjestelmässä on käytössä Flashblock-laajennos, joka estää epäilyttäviltä 
+  sivustoilta käytettävät flash-sisällöt.
+  </advanced>
+
+
+
+
+### Tiedossa olevat ongelmat
+
+- <advanced title="Hiiren kursori saattaa olla näkymätön ensimmäisellä kirjautumisella">
+
+  Olemme saaneet yksittäisiä havaintoja, että hiiren kursori on ollut
+  näkymätön käyttäjän ensimmäisellä kirjautumisella uuden järjestelmä
+  version käyttöönoton jälkeen. Järjestelmää voi vian ollessa päällä
+  edelleen käyttää ja hiirellä voi vaikuttaa työpöydän
+  tapahtumiin. Uloskirjautumisen jälkeen hiiren kursori toimii jälleen
+  normaalisti. Selvitämme ongelman aiheuttajaa.
+  </advanced>
+
+### Tekniset muutokset
+
+
+
+## Opinsys 14.50 - Anneli {#ltsp-opinsysrestricted-trusty-2014-12-09-144355-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Ilmoitus järjestelmäpäivityksestä">
+  Jatkossa järjestelmäpäivityksistä tulee ilmoitus jokaiselle käyttäjälle. Ilmoitusalueen kuvakkeesta
+  napsauttamalla pääsee jatkossa lukemaan tarkempaa päivitystiedotetta. Ilmoitus poistuu, kun käyttäjä on joko
+  avannut tiedotteen tai kun käyttäjä on kirjautunut järjestelmään kolme kertaa peräkkäin lukematta tiedotetta.
+  </advanced>
+
+- <advanced title="Elisa viihde">
+  Elisa viihde toimii nyt Firefox-selainta käytettäessä. Firefox-selaimeen on otettu käyttöön
+  VLC-plugin jota käytetään jatkossa sivuihin upotettujen videoiden toistamiseen.
+  </advanced>
+
+- <advanced title="Paikallisten Shockwave flash tiedostojen toistaminen Firefoxissa">
+  Firefox-selaimella voi katsoa omassa kotikansiossa olevia paikallisia Shockwave Flash
+  -tiedostoja avaamalla ne selaimessa tai vetämällä ja pudottamalla tiedoston kotikansiosta
+  selainikkunaan.
+  </advanced>
+
+- <advanced title="Calibre e-kirjasovellus">
+  Järjestelmään on lisätty Calibre e-kirjasovellus. Se käynnistyy valitsemalla Menu > Toimisto >
+  E-book library management.
+  </advanced>
+
+- <advanced title="Netflix">
+  Netflix-palvelu toimii taas Googlen Chrome-selaimen lisäksi myös Menu > Web-sovellukset 
+  > Netflix-linkin kautta. Netflixin palveluunsa tekemistä muutoksista johtuen kyseinen sovellus 
+  ei hetkellisesti toiminut.
+  </advanced>
+
+- <advanced title="Netbeans päivitetty versioon 8">
+  Netbeans-ohjelmointiympäristö on päivitetty versioon 8. Aiemmin ohjelmassa oli ongelma Java-projektia
+  luotaessa, joka esti uuden työn aloittamisen. Tämä ongelma on nyt samalla korjautunut. 
+  </advanced>
+
+- <advanced title="Helsingin yliopiston Java MOOC-kurssit ">
+  Järjestelmään on lisätty TMC Netbeans-liitännäinen. Liitännäinen vaaditaan Helsingin 
+  yliopiston tarjoamille Java Mooc-kursseille.
+  </advanced>
+
+- <advanced title="Lisätty käynnistin Unelmakoululle">
+  Unelmakoulu-palvelulle on lisätty oma käynnistin Websovelluksiin. Unelmakoulu löytyy valitsemalla 
+  Menu > Web-sovellukset > Unelmakoulu. Opinsys-järjestelmän ja Unelmakoulu-palvelun välille on 
+  mahdollista tehdä integraatio eli käyttää molemmissa palveluissa samoja käyttäjätunnuksia. 
+  </advanced>
+
+- <advanced title="Lisätty käynnistin SMART-työkalupaneelilla">
+  SMART Notebook-älytauluohjelmiston työkalupaneeli on mahdollista käynnistää erikseen, vaikka tietokoneessa
+  ei olisi SMART-laitetta kiinni. Ohjelmisto vaatii kuitenkin toimiakseen ohjelmiston lisenssin. Työkalupaneelin
+  saa käyntiin valitsemalla Menu > Älytaulut > Notebook työkalut.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- <advanced title="Hiiren kursori on näkymätön ensimmäisellä kirjautumisella">
+
+  Olemme saaneet yksittäisiä havaintoja, että hiiren kursori on ollut
+  näkymätön käyttäjän ensimmäisellä kirjautumisella uuden järjestelmä
+  version käyttöönoton jälkeen. Järjestelmää voi vian ollessa päällä
+  edelleen käyttää ja hiirellä voi vaikuttaa työpöydän
+  tapahtumiin. Uloskirjautumisen jälkeen hiiren kursori toimii jälleen
+  normaalisti. Selvitämme ongelman aiheuttajaa.
+  </advanced>
+
+### Tekniset muutokset
+
+
+
+## Opinsys 14.46 - Martti {#ltsp-opinsysrestricted-trusty-2014-11-10-145145-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Näyttöjen asetukset">
+  Laitteille keskitetysti asetettavat näyttöasetukset ovat voineet aiheuttaa häiriöitä näyttöjen
+  näkyvyydessä. Tähän on tehty suuria muutoksia siten, että jos laitteelle on asetettu keskitetysti
+  tietty näyttöasetus, niin käyttäjän asetukset eivät voi sitä vahingossa sotkea.
+  </advanced>
+
+- <advanced title="LibreOffice Calc-taulukkolaskenta">
+  LibreOfficesta korjattu taulukkojen järjestämiseen vaikuttanut oletusasetusmuutos.  
+  </advanced>
+
+
+- <advanced title="Näppäimistökartan vaihtuminen vahingossa">
+  On havaittu, että käyttäjien näppäimistökartta on usein saattanut vaihtua kyriiliseksi vahingossa.
+  Ongelmaa aiheuttanut pikanäppäin on poistettu ja asetusta voi muuttaa jatkossa vain hiirellä.  
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- Netflix-palvelu ei toimi käynnistettäessä Menu > Web-sovellukset > Netflix-linkin 
+  kautta. Netflix toimii normaalisti käytettäessä Google Chrome-selainta.
+
+- <advanced title="Hiiren kursori on näkymätön ensimmäisellä kirjautumisella">
+
+  Olemme saaneet yksittäisiä havaintoja, että hiiren kursori on ollut
+  näkymätön käyttäjän ensimmäisellä kirjautumisella uuden järjestelmä
+  version käyttöönoton jälkeen. Järjestelmää voi vian ollessa päällä
+  edelleen käyttää ja hiirellä voi vaikuttaa työpöydän
+  tapahtumiin. Uloskirjautumisen jälkeen hiiren kursori toimii jälleen
+  normaalisti. Selvitämme ongelman aiheuttajaa.
+
+  </advanced>
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+### Tekniset muutokset
+
+- <advanced title="Näyttöjen xrandr asetukset"> 
+  Puavon ja päätekuva Xrandr-asetuksiin sekä toiminnallisuuteen on tehty suuria muutoksia.
+  Aiemmin xrandr toiminnallisuus on aiheuttanut erilaisia, ympäristösidonnaisia näyttöasetus-
+  ongelmia. Tarkempi kuvaus muutoksista tehdään heti, kun tilanne on saatu vakiintuneeksi.
+  </advanced>
+
+- <advanced title="Kirjautumisruudun taustakuvan asettaminen valinnaisesta päätekuvan kansiosta"> 
+  Satunnainen polku näytettäville kuville voidaan asettaan greeter_background_random_subdir:DIRPATH
+  tagilla
+  </advanced>
+
+## Opinsys 14.44 - Arttu {#ltsp-opinsysrestricted-trusty-2014-10-31-115628-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Työpöydän kuvakkeiden häviäminen resoluution vaihdon yhteydessä">
+
+  Näytön resoluution muuttaminen tai esimerkiksi dokumenttikameran
+  kuvalähteen vaihtaminen, saattoi 1/3 tapauksissa kaataa työpöydän
+  kuvakkeita hallinnoivan Nautilus-tiedostoselainohjelmiston. Kuvakkeet
+  palautuivat normaaliksi, kun käyttäjä avasi kotikansionsa
+  uudelleen. Ongelma on nyt korjattu.
+
+  </advanced>
+
+- <advanced title="Kevytpäätelaitteiden resoluution asettaminen Puavosta">
+
+  Puavosta asetettu resoluutio ei tullut käyttöön
+  kevytpäätelaitteille. Tämä ongelma on nyt korjattu.
+
+  </advanced>
+
+- <advanced title="Uuden laitteen rekisteröintiä on siistitty">
+
+  Uuden laitteen rekisteröinnin yhteydessä saattoi näytölle tulostua
+  loputtomasti laitetason viestejä, jotka häiritsivät itse
+  rekisteröintitoimenpidettä. Nyt kyseisiä viestejä ei enää näytetä.
+
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- <advanced title="Hiiren kursori on näkymätön ensimmäisellä kirjautumisella">
+
+  Olemme saaneet yksittäisiä havaintoja, että hiiren kursori on ollut
+  näkymätön käyttäjän ensimmäisellä kirjautumisella uuden järjestelmä
+  version käyttöönoton jälkeen. Järjestelmää voi vian ollessa päällä
+  edelleen käyttää ja hiirellä voi vaikuttaa työpöydän
+  tapahtumiin. Uloskirjautumisen jälkeen hiiren kursori toimii jälleen
+  normaalisti. Selvitämme ongelman aiheuttajaa.
+
+  </advanced>
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+### Tekniset muutokset
+
+- <advanced title="Kevytpäätepalvelimille testaukseen vaihtoehtoinen kernel">
+
+  Kevytpäätepalvelimille on mahdollista asettaa käyttöön kernelistä
+  versio 3.2.0-70-generic-pae, jota testataan NFS-palvelun aiheuttaman
+  järjestelmän epävakauden korjaamiseksi.
+
+  </advanced>
+- <advanced title="Kannettavien päivitys korjattu päivittymään varajärjestelmästä"> 
+
+  Kannettavien päivityksessä on tehty muutoksia tilanteeseen, jossa
+  laite on käynnistetty varajärjestelmästä. Aiemmin päivittäminen oli
+  mahdollista vain oletuskuvasta päivitettävään kuvaan. Tämä olisi
+  voinut aiheuttaa ongelmia tilanteessa, jossa oletuskuva ei olisikaan
+  kyseisellä laitteella toimiva. Nyt päivittäminen onnistuu molempia
+  kuvia käyttämällä.
+
+ </advanced>
+
+## Opinsys 14.41 - Sirkka {#ltsp-opinsysrestricted-trusty-2014-10-16-160820-i386}
+
+### Korjaukset ja muut muutokset
+
+- Oraclen Java on päivittynyt versioon 7u71.
+ 
+- Firefox-nettiselain on päivittynyt versioon 32.
+
+- Oletus Pdf-lukijaksi on asetettu Acroread
+
+- Lisätty Racket-ohjelmointikieli
+
+- <advanced title="Sovellusten ikonikorjauksia">
+  Kolourpaintin, Jack Controlin ja Hydrogenin kuvakkeet käynnistysvalikossa on korjattu. 
+  </advanced>
+
+- <advanced title="Ekapelin käynnistin estetty kevytpäätteillä">
+  Ekapelin käynnistin on estetty kevytpäätteiltä, koska laitteiden resurssit eivät riitä pelin pelaamiseen.
+  </advanced>
+
+- <advanced title="Kevytpäätteiden sammutus ja uudelleenkäynnistys työpöydältä">
+  Kevytpäätteiden sammuttaminen ja uudelleenkäynnistäminen toimii taas myös suoraan työpöydältä tehtynä.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- <advanced title="Hiiren kursori on näkymätön ensimmäisellä kirjautumisella">
+  Olemme saaneet yksittäisiä havaintoja, että hiiren kursori on ollut näkymätön käyttäjän ensimmäisellä kirjautumisella uuden järjestelmä version käyttöönoton jälkeen.
+  Järjestelmää voi vian ollessa päällä edelleen käyttää ja hiirellä voi vaikuttaa työpöydän tapahtumiin. Uloskirjautumisen jälkeen hiiren kursori toimii jälleen normaalisti.
+  Selvitämme ongelman aiheuttajaa.
+  </advanced>
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+### Tekniset muutokset
+
+- <advanced title="X2go">
+  Järjestelmässä mukana X2Go-istuntoa koeskevat korjaukset, joilla etätyöpöytää voi testata. Ei suositella vielä tuotanto käyttöön.
+  </advanced>
+- <advanced title="Kannettavien päivitys"> 
+  Kannettavien päivityksessä on tehty muutoksia tilanteeseen, jossa laite on käynnistetty varajärjestelmästä. Aiemmin päivittäminen
+  oli mahdollista vain oletuskuvasta päivitettävään kuvaan. Tämä olisi voinut aiheuttaa ongelmia tilanteessa, jossa oletuskuva ei
+  olisikaan kyseisellä laitteella toimiva. Nyt päivittäminen onnistuu molempia kuvia käyttämällä.
+ </advanced>
+- Lisätty paketti xinput-calibrator
+- Lisätty Godaddy intermediate-sertifikaatti Citrixiä varten
+
+## Opinsys 14.40 - Siru {#ltsp-opinsysrestricted-trusty-2014-09-30-075947-i386}
+
+Tämä päivitys tuo mukanaan merkittäviä uudistuksia koko järjestelmään. Käytännössä kaikki käytössä olevat sovellukset ovat 
+päivittyneet uudempiin versioihin. Suurimmat ulkoasulliset muutokset ovat kirjautumisruudun ja työpöydän oletustaustakuvat, 
+käyttöliittymä pysyy muuten tuttuna ja turvallisena. 
+
+Seuraavassa on listattuna tärkeimpiä näkyviä muutoksia joihin päivitys vaikuttaa.
+
+### Uudet sovellukset
+
+- <advanced title="Google Chrome">
+  Järjestelmään on lisätty Google Chrome-selain. Sovellus löytyy valitsemalla Menu > Internet > Chrome-selain.
+  </advanced>
+
+- <advanced title="Ekapeli">
+  Ekapeli on nyt paketoitu mukaan järjestelmään niin että enää ei vaadita koko pelin lataamista webbisivuilta. 
+  Nopeasti käynnistyvä Ekapeli löytyy valitsemalla Menu > Opetusohjelmat > Ekapeli. Ekapeli on tietysti edelleen 
+  käytettävissä vanhaan tapaa palvelun omilta sivuilta.
+  </advanced>
+
+- <advanced title="Enchanting Lego Mindstorm ohjelmointityökalu">
+  Lego Midstorms robottien ohjelmointia varten olemme lisänneet asiakkaiden toiveesta Enchanting-sovelluksen. Ohjelmointi 
+  tapahtuu Scratch-ohjelmointi-ympäristöstä tutulla käyttöliittymällä. Sovellus ei ole Legon omaa tuotantoa ja se voi 
+  mitätöidä esimerkiksi laitteiden takuun! Ohjelman käyttö on siis täysin omalla vastuulla.
+  </advanced>
+
+- <advanced title="Fritzing">
+  Fritzing on esimerkiksi Arduino-projektien suunnitteluun tarkoitettu sovellus. Se löytyy valitsemalla Menu > Ohjelmointi > Fritzing.
+  </advanced>
+
+- <advanced title="Kena Vision Mikroskooppi">
+  Kena Vision usb-mikroskoopeille tarkoitettu sovellus löytyy valitsemalla Menu > Ääni ja video > Kena Vision Microscope.
+  </advanced>
+
+- <advanced title="Nalle-ohjelmointi">
+  Tämä on uusi Scratch-ohjelmointympäristöön pohjautuva työkalu Opinsysin Nallen ohjelmointiin. Ohjelma sopii hyvin esimerkiksi alakoulun
+  ohjelmoinnini opiskeluun.
+  </advanced>
+
+- <advanced title="Netflix (kokeellinen)">
+  Netflixin käyttöä varten on nyt oma Chrome-selainta käyttävä sovellus. Se löytyy valitsemalla Menu > Web-sovellukset > Netflix.
+  Ominaisuus on vielä koekäytössä, joten sen toiminnassa voi ilmennä yllättäviä ongelmia tai käyttö estyä, jos Netflix tekee 
+  esimerkiksi yllättäviä muutoksia palveluunsa.
+  </advanced>
+
+### Ohjelmien toiminnassa tapahtuneet muutokset
+
+- <advanced title="LibreOffice avaa nyt iCloudissa luodut .doc-tiedostot">
+  LibreOffice on päivittynyt uudempaan versioon 4.2.6.3. Päivitys korjaa mm. iCloudissa luotujen MS Office muotoisten .doc-tiedostojen avaamisessa 
+  ilmenneet ongelmat.
+  </advanced>
+
+- <advanced title="Geogebra päivittynyt versioon 5.0">
+  Geogebra-sovellus on päivitetty uusimpaan versioon 5.0.
+  </advanced>
+
+- <advanced title="Google Chrome ja Chromium selaimet eivät tue enää Java-appleteja">
+  Google on tehnyt muutoksen selaimiinsa, niin että ne eivät enää tue Java-appletien käyttöä. Emme tiedä onko tähän tulossa muutosta.
+  Java-appletit toimivat normaalisti oletuksena olevassa Firefox-selaimessa.
+  </advanced>
+
+- <advanced title="Palautetyökalun asteikko muuttunut">
+  Uloskirjautmisen yhteydessä oleva palautetyökalu on muuttunut. Palauteasteikko on nyt neliportainen ja anonyymin palautteen anto on
+  poistettu.
+  </advanced>
+
+- <advanced title="Poistu-valikon käyttöliittymä">
+  Poistu-valikon käyttöliittymää on muutettu yhdenmukaisemmaksi muun järjestelmän kanssa. Kaikkiin toimintoihin pääsee nyt yhdellä klikkauksella.
+  Käyttäjältä ei enää kysytä vahvistusta toimenpiteelle lukittaessa näyttöä tai 
+  </advanced>
+
+- <advanced title="Qomo qview qd3900 -dokumenttikamera toimii esim. Muikku-ohjelmistossa">
+  Laitteen kuva näkyi aiemmin vain vihreänä, kun se oli kytkettynä työasemaan usb-johdolla. Nyt laite toimii oikein Muikku-ohjelmassa tai webbikamerana.
+  </advanced>
+
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="SMARTBoard Notebook-ohjelman piirtoalueelta ei enää häviä kosketus, käynnistettäessä Notebookia uudelleen useita kertoja peräkkäin.">
+  Tämä ongelma on poistunut päivityksen myötä.
+  </advanced>
+
+- <advanced title="iPhone ja iPad-laitteiden liittäminen massamuistiksi">
+  Applen mobillilaitteiden liittämisessä on aiemmin ollut ongelmia ja esimerkiksi kuviin on päässyt käsiksi vain Shotwell-sovelluksella. Nyt nämä
+  laitteet toimivat paremmin myös normaalilla tiedostoselaimella.
+  </advanced>
+
+- <advanced title="Android (ja Windows phone)-mobiililaitteiden liittäminen massamuistiksi">
+  Joillakin uudemmilla MTP-protokollaa käyttävillä mobiililaitteilla on ollut ongelmia liitettäessä niitä työasemiin. Nyt
+  laitteet toimivat paremmin.
+  </advanced>
+
+- <advanced title="Järjestelmäversion ja laitteen nimen näyttäminen kirjautumisruudussa">
+  Opinsys-järjestelmän versio, laitetyyppi ja laitteen nimi näkyvät jatkossa kirjautumisruudun yläreunan palkissa.
+  </advanced>
+
+
+### Tiedossa olevat ongelmat
+
+- Kevytpäätteiden USB-massamuistien (usb-tikut)
+ 
+- Mimio-studion käytettävissä oleva version on 9.12. Valitettavasti tätä uudempia ohjelmistoversioita emme voi tällä hetkellä
+  tukea ilman laitevalmistajan apua.
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+## Opinsys 14.36 - Roni {#ltsp-quantal-master-2014-09-05-092326-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Näytön lukitseminen tehty helpommaksi">
+  Näytön lukitseminen on jatkossa hieman helpompaa valitsemalla Menu > Lukitse näyttö. Tämän lisäksi näytön voi lukita 
+  painamalla pikanäppäinyhdistelmään Ctrl + Alt + L. 
+  </advanced>
+
+- <advanced title="Logger Pro">
+  LoggerPro-laitteiden toiminnassa on ollut ongelmia tiettyjen mittalaitteiden kanssa. Ongelmat ovat liittyneet käyttäjän 
+  oikeuksiin lukea tietoa laitteesta. Ohjelman oikeusongelmat ovat nyt korjattu.
+  </advanced>
+
+- <advanced title="Lisätty Kdenlive-videoeditointisovellus">
+  Kdenlive-videoeditointisovellus on lisätty ohjelmien käynnistyvalikkoon Menu > Ääni ja Video > Kdenlive.
+  </advanced>
+
+- <advanced title="Lisätty Midi-musiikkisovellukset JACK Audio connection kit ja Qsynth.">
+  Molemmat ohjelmat löytyvät valitsemalla Menu > Ääni ja Video > Flyidsynth GUI / JACK control. Ohjelmat on lisätty asiakkaiden
+  toiveesta ja ne on todettu toimivaksi. Opinsysillä ei kuitenkaan ole laitteistoa varmistamaan niiden toimivuutta, joten 
+  ohjelmistot ovat esisijaisesti testikäytössä ja niistä kerätään kokemuksia.
+  </advanced>
+
+-  <advanced title="Korjauksia langattoman verkon tukiasemiin">
+  Langattoman verkon tukiasemiin on tehty korjauksia niiden toiminta varmuuden kasvattamiseksi. Jatkossa yksittäisten laitteiden 
+  lähetystehoa voidaan säätää, jolloin aiemmin toistensa toimintaa mahdollisesti häirinneet tukiasemat toimivat paremmin. Lisäksi
+  tukiasemien virransäästötoimintoa on muutettu, koska sen on havaittu aiheuttavan ongelmia verkon toiminnalle.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- LoggerPro-ohjelmisto kaatuu usein mittaustoiminnon päätteeksi. Valmistajan mukaan ongelma on tiedossa ja heiltä on tulossa 
+  siihen pian korjaus.
+ 
+- Mimio-studion käytettävissä oleva version on 9.12. Valitettavasti tätä uudempia ohjelmistoversioita emme voi tällä hetkellä
+  tukea ilman laitevalmistajan apua.
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus kun ohjelma on käynnistetty uudelleen
+  useita kertoja peräkkäin.
+
+## Opinsys 14.34 - Samuli {#ltsp-quantal-master-2014-08-20-155659-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Java-päivitys">
+  Päivitys Oraclen Javan versioon 7u67. Java ilmoitti ongelmasta webbisivulta
+  käynnistettävien Appletin yhteydessä sertifikaattien allekirjoituksesta ja esti niiden
+  suorittamisen.
+  </advanced>
+
+- <advanced title="Smartboard">
+  Smart Notebook on päivitetty versioon 10.3 SP1. Ohjelmistossa tulee tuki uusille 
+  laitteille, joita ovat SMART Board® M600 interactive whiteboards ja LightRaise™ 60wi 
+  interactive projectors.
+  </advanced>
+
+- <advanced title="Firefox 31 ja Wilman pdf-tulostus">
+  Uusi Firefox-selaimen versio korjaa esimerkiksi Wilman tuottamien PDF-tiedostojen
+  tulostusongelman, kun käytetään selaimen omaa pdf-lukijaa. Ongelma esiintyi siten, että 
+  tulostettaessa paperit jäivät valkoisiksi.
+  </advanced>
+
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus kun ohjelma on käynnistetty uudelleen
+  useita kertoja peräkkäin.
+
+## Opinsys 14.31 - Elena {#ltsp-quantal-master-2014-07-31-155522-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Java-päivitys">
+  Päivitys Oraclen Javan versioon 7u65. Java ilmoitti ongelmasta webbisivulta 
+  käynnistettävien Appletin yhteydessä sertifikaattien allekirjoituksesta ja esti niiden 
+  suorittamisen.
+  </advanced>
+
+- <advanced title="Korjaus NFS-verkkohakemistojen aiheuttamaan epävakauteen"> Korjaus
+  Linux-ytimen NFS-tiedostojärjestelmään. NFS-verkkohakemistojen käyttö
+  aiheutti työpöytäistuntojen jumimisen, mikä ilmeni erityisesti
+  kevytpäätekäytössä.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus kun ohjelma on käynnistetty uudelleen
+  useita kertoja peräkkäin.
+
+## Opinsys 14.26 - Aatto {#ltsp-quantal-master-2014-06-23-143423-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Googlen ääni- ja videoliitännäinen on päivitetty. ">
+  Googlen ääni- ja videoliitännäinen, jota käytetään esimerkiksi Hangouts-palvelussa on päivitetty. 
+  </advanced>
+- <advanced title="Skype-päivitys">
+  Skype-ohjelmisto on päivitetty uusimpaan versioon.
+  </advanced>
+- <advanced title="Java-päivitys">
+  Korjaus Oraclen Javan päivitykseen Java 7 update 60. Java ilmoitti ongelmasta webbisivulta 
+  käynnistettävien Appletin yhteydessä sertifikaattien allekirjoituksesta ja esti niiden 
+  suorittamisen.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus kun ohjelma on käynnistetty uudelleen
+  useita kertoja peräkkäin.
+
+## Opinsys 14.22 - Pasi {#ltsp-quantal-master-2014-05-30-105036-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="USB-massamuistien käyttö kevytpäätteellä">
+  Korjattu USB-massamuistien toimivuus kevytpäätteillä.
+  </advanced>
+- <advanced title="Laitteen sammuttaminen webkiosk-tilassa on estetty">
+  Päätelaitteen sammuttaminen, uudelleen käynnistys ja asettaminen unitilaan on nyt estetty kun 
+  laite on Webkiosk-tilassa.
+  </advanced>
+- <advanced title="Java-päivitys">
+  Oraclen Java on päivitetty versioon Java 7 update 60.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus kun ohjelma on käynnistetty uudelleen 
+  useita kertoja peräkkäin.
+
+## Opinsys 14.20.1 - Sohvi {#ltsp-quantal-master-2014-05-15-142300-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="DVD/CD-levyjen toistaminen VLC-soittimella.">
+  Korjattu päätekuvan 14.16 korjaus ko. ongelmaan. =)
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus tietyssä
+  tilanteessa.
+
+- USB-massamuistin poistaminen ei toimi Nautiluksen valikosta
+  kevytpäätteillä.
+
+## Opinsys 14.20 - Tuula {#ltsp-quantal-master-2014-05-14-150613-i386}
+
+### Korjaukset ja muut muutokset
+
+- Firefox päivitetty versioon 29.
+
+- Lisätty tuki Vernier LabPro -laitteelle.
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus tietyssä
+  tilanteessa.
+
+- USB-massamuistin poistaminen ei toimi Nautiluksen valikosta
+  kevytpäätteillä.
+
+### Tekniset muutokset
+
+- Päätekuvassa webkiosk-toiminallisuus, joka mahdollista tehopäätteen
+  käyttämisen "webbikioskina". Webkiosk-tilassa tehopääte kirjatuu
+  automaattisesti sisään vierastunnuksella, kysyy käyttäjältä istunnossa
+  käytettävän kielen ja avaa selaimen. Toiminnallisuus aktivoidaan
+  lisäämällä tehopäätteen laitetageihin `webkiosk`.
+
+- Päätekuvissa kdump-toiminnallisuus, joka mahdollistaa päätelaitteiden
+  kernel-kaatumisten raportoinnin automaattisesti. Toiminallisuus
+  aktivoidaan asettamalla kernel-parametriksi
+  `crashkernel=128M`.
+    
+## Opinsys 14.18 - Teijo {#ltsp-quantal-master-2014-04-29-125024-i386}
+    
+### Korjaukset ja muut muutokset
+
+- <advanced title="Korjattu ongelma kannettavien Wifi-radioiden aktivoitumisessa.">
+  Satunnaisilla kannettavilla tietokoneilla havaittiin ongelmia langattoman verkon 
+  radion kytkeytymisesä automaattisewsti päälle, kun laite käynnistettiin. 
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus tietyssä
+  tilanteessa.
+
+## Opinsys 14.17 - Alina {#ltsp-quantal-master-2014-04-22-161300-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="WLAN-tukiasemien toiminta korjattu yli 15 merkkiä pitkien verkkonimien kanssa.">
+  Aiemmin WLAN-tukiasemat, joille Puavosta oli asetettu yli 15 merkkiä
+  pitkä verkkonimi, eivät toimineet. Ongelma koski vain
+  päätekuvia 14.14 ja 14.16.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus tietyssä
+  tilanteessa.
+
+### Tekniset yksityiskohdat
+
+- WLAN-tukiasemien verkkonimikorjauksen myötä WLAN-verkkojen
+  verkkolaitteiden nimet eivät vastaa enää verkkojen verkkotunnuksia
+  (SSID). Verkkolaitteiden nimet ovat muutoksen myötä verkkotunnusten
+  typistettyjä md5-tiivistesummia.
+
+## Opinsys 14.16 - Otto {#ltsp-quantal-master-2014-04-17-161536-i386}
+
+### Uudet toiminnallisuudet
+
+- <advanced title="Käyttäjät voivat muokata omaa profiilia työpöydältä">
+  Käyttäjät voivat nyt muokata oman käyttäjätunnuksensa tietoja. Esimerkiksi
+  muokattavia tietoja ovat: oma kuva, puhelinnumero ja kieli. Tietojen voi muokata
+  tapahtuu napsauttamalla Menu > Oma nimi.
+  </advanced>
+
+- <advanced title="Käyttäjän kuva näytetään Menu-valikossa.">
+  Menu-valikossa näytetään käyttäjän oma kuva, jos hän on asettanut sen omaan profiiliinsa.
+  </advanced>
+
+- Kannettavat tietokoneet päivittyvät myös koulun verkon ulkopuolella.
+
+- <advanced title="Lisätty KTouch-harjoituksia.">
+  Järjestelmään on lisätty Terho Reuhkalan (Jyväskylän Kortepohjan koulu) tekemät harjoitukset.
+  </advanced>
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="DVD/CD-levyjen poistoon ja lisäämiseen liittyvä ongelma on korjattu.">
+  Ongelmana oli DVD/CD-levyasemien toiminnan epävakaus, joka johtui
+  levyjen poistamisesta levyaseman fyysistä poistopainiketta
+  käyttäen. Työpöydältä levykuvakkeesta poistamalla epävakautta ei ole
+  ilmennyt. Korjauksen myötä DVD/CD-levyjen poisto levyaseman fyysistä
+  poistopainiketta käyttäen toimii kuten työpöydältä.
+  </advanced>
+
+- <advanced title="DVD/CD-levyjen toistaminen VLC-soittimella.">
+  Ongelmana oli DVD/CD-levyjen toistaminen VLC-soittimella. Avattaessa DVD-levyä
+  VLC-ohjelmassa, ohjelma ilmoitti että polkua `/dev/dvd` ei ole. Ongelma on nyt korjattu
+  ja VLC:llä voi toistaa DVD-levyjä valitsemalla ohjelmasta Media > Avaa Levy...
+  </advanced>
+
+- Spotify on päivitetty uusimpaan versioon.
+
+- <advanced title="Lisätty uusia sivustoja Flashblockin sallittujen palveluiden listalle.">
+  Lisätyt sivustot: rockway.fi, ugri.net, sanomapro.fi ja pelastusopisto.fi.
+  </advanced>
+
+- <advanced title="Lisätty uusia sivustoja Javan sallittujen palveluiden listalle.">
+  Lisätyt sivustot: www.walter-fendt.de.
+  </advanced>
+
+- <advanced title="Java-päivitys">
+  Oraclen Java-ohjelmisto on pävitetty uusimpaan versioon Java 7 Update 55 CPU.
+  </advanced>
+
+- Lisätty fontteja ja makroja LaTeX-dokumenttien ladontaa varten.
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja.
+
+- SMARTBoard Notebook-ohjelman piirtoalueelta häviää kosketus tietyssä
+  tilanteessa.
+
+### Tekniset yksityiskohdat
+
+- Lisätty 3.10 -sarjan kerneleille symbolinen versionimi
+  ``stable``. Jotkin laitemallit tarvitsevat tämän käynnistyäkseen.
+
+- Intel Management Engine Interface (MEI) asetettu moduliksi
+  kerneleihin. Aiemmin MEI oli kerneleihin sisäänrakennettuna, mikä
+  aiheutti ongelmia tietyissä tapauksissa kannettavien virransäästötilan
+  toimintaan.
+
+- Wlan-tukiasemien kanavanvalintaa korjattu usean langattoman piirin
+  kokoonpanoissa. Aiemmin usealle radiolle saattoi tulla valituksi sama
+  kanava, jolloin vain ensimmäinen kanavan saanut piiri tuli
+  käyttöön. Korjauksen myötä jokaiselle piirille taataan
+  yksilöllinen kanava.
+
+## Opinsys 14.14 - Pellervo {#ltsp-quantal-master-2014-04-02-152902-i386}
+
+### Uudet toiminnallisuudet
+
+- Lisätty uusi laitetyyppi: langaton tukiasema
+
+- Näyttöasetukset tulevat voimaan näyttöjen kytkemisten ja
+  poiskytkemisten myötä. Käytännössä tämä korjaa ongelman jota on
+  esiintynyt tietyn päätelaite-dokumenttikamerayhdistelmän
+  kanssa. Tällöin kuvan vaihtaminen kameralta on saattanut hukata
+  näyttöjen kloonausasetuksen.
+
+### Korjaukset ja muut muutokset
+
+- Korjattu kannettavien kirjautumista tilanteessa, jossa ei olla oman
+  koulun verkossa.
+
+- Korjattu vieraskäyttäjien ryhmäoikeudet, jonka johdosta mm. Arduino
+  toimii myös vierastunnuksilla.
+
+- Korjattu kannettavien kirjautumisongelma offline-tilassa.
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ei toimi käytettäessä Samba-kotihakemistoja
+
+### Tekniset yksityiskohdat
+
+- Korjattu palautetyökalun asettaminen koulukohtaisesti näkyviin
+
+## Opinsys 14.12 - Vihtori {#ltsp-quantal-master-2014-03-22-131723-i386}
+
+### Uudet toiminnallisuudet
+
+- Vieraskirjautumisen kytkeminen päälle kevytpäätteille on mahdollista.
+
+- Ohjelmavalikoimaan on lisätty BlueGriffon WYSIWYG HTML-editori.
+
+- Ohjelmavalikoimaan on lisätty YTL:n Digabiprojektin suosittelemat
+  matematiikkasovellukset (Dia, WxMaxima ja Pinta).
+
+- Ohjelmavalikoimaan on lisätty PyCharm Python-editori.
+
+### Korjaukset ja muut muutokset
+
+- CD-soittimen kelaustoiminnallisuus on korjattu päivittämällä ohjelma
+  uudempaan versioon.
+
+- Uuden laitteen rekisteröinnin yhteydessä asiakkaan organisaatio tulee
+  oletusasetuksena.
+
+- Scratch-ohjelmointiympäristön käynnistäminen on estetty
+  kevytpäätelaitteilla.
+
+- Kevytpäätteillä epävakautta aiheuttanut ongelma on korjattu.
+
+- Laitteiden oletusäänilaitteiden valintaan lisätty tuki useille
+  äänikorteille ja niiden useille käyttöprofiileille.
+
+### Tiedossa olevat ongelmat
+
+- Dropbox ja Git eivät toimi oikein käytettäessä Samba-kotikansioita
+  kevytpäätteillä.
+
+- Palautetyökalun asettaminen koulukohtaisesti ei toimi.
+
+### Tekniset yksityiskohdat
+
+- Ohjelmavalikon palautekysely on mahdollista aktivoida Puavosta laite- tai
+  koulukohtaisella tagilla ``enable_webmenu_feedback``.
+
+- Käyttäjien kotikansiot on mahdollista mountata käyttäen sambaa
+  asettamalla laitteelle Puavoon ``sambahomes``-tagi.
+
+- Oletusäänilaitekentät Puavossa hyväksyvät monisarakkeisia
+  arvoja. Shell-komento ``puavo-pulseaudio-list`` tulostaa ko. laitteen
+  äänilaitetiedot monisarakkeisessa muodossa.
+
+## Opinsys 14.9 - Onni {#ltsp-quantal-master-2014-02-28-120620-i386}
+
+### Uudet toiminnallisuudet
+
+- Ohjelmavalikoimaan on lisätty Photofilmstrip-ohjelma, jolla voi tehdä
+  valokuvista videoesityksiä.
+
+- Käynnistysvalikkoon on lisätty viestialue, jossa käyttäjälle voidaan
+  viestiä Puavon kautta.
+
+- Päätelaitteen oletusäänilaite voidaan asettaa Puavosta.
+
+- Firefox-selaimen kotisivu voidaan asettaa Puavosta.
+
+### Korjaukset ja muut muutokset
+
+- Pdf-tiedostojen oletuslukijaksi on asetettu Adobe Acroread.
+
+- Firefoxin sallittujen flash-sovellusten listalle on lisätty sivusto
+  bbc.co.uk.
+
+### Tekniset yksityiskohdat
+
+- Päätelaitteiden oletuskerneliksi on asetettu linux 3.12.10.opinsys3.
+
+- Korjauksia ntp-palveluun, joka auttaa laitteiden kelloja pysymään
+  synkronissa.
+
+- Kernelin Zram-ominaisuus on otettu käyttöön. Ominaisuus auttaa
+  erityisesti vähän keskusmuistia omaavien tehopäätelaitteden toimintaa.
+
+- Nvidian näytönohjainajurit on päivitetty 304.88 -> 304.117
+
+- Tehopäätteille mahdollista ottaa käyttöön erillinen ``/tmp`` -osio
+  fyysiseltä medialta. Jos käynnistymisen aikana koneesta löytyy
+  ``/dev/mapper/puavo-tmp``, se mountataan ``/tmp``:iin.
+
+</code></pre>
+            </div>
+        </div>
+        <script src="../bundle.js?v=2" charset="utf-8"></script>
+    </body>
+</html>
