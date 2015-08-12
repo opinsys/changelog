@@ -63,7 +63,7 @@ renderer.html = function(html) {
         html = html.replace(new RegExp(tagRe("advanced"), "g"), "");
         return (
             '<div class=more-wrap>' +
-                '<a href="" class=show-more data-md="' + html + '">' + title + '</a>' +
+                "<a href='' class=show-more data-md='" + html + "'>" + title + '</a>' +
             '</div>'
         );
     }
