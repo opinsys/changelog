@@ -28,7 +28,8 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi versiopäivityksiin si
 </advanced>
 
 - <advanced title="Lisätty Vidyoclient">
-  Järjestelmään on lisätty Vidyo-videoneuvottelun asiakasohjelmisto. 
+  Järjestelmään on lisätty Vidyo-videoneuvottelun asiakasohjelmisto. Ohjelma löytyy valitsemalla
+  ``Menu`` > ``Intenet`` > ``VidyoDesktop``
 </advanced>
 
 - <advanced title="Lisätty käynnistin Viope-palvelulle">
@@ -50,6 +51,17 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi versiopäivityksiin si
   vihreään kuvakkeeseen.
 </advanced>
 
+- <advanced title="Korjattu Dropboxin käynnistyminen kirjauduttaessa">
+  Jatkossa Dropbox-ohjelmaa ei käynnistetä turhaan kirjautumisen yhteydessä, mikäli se ei ole ollut käyttäjätunnuksella
+  oikeasti käytössä. Aiemmin Dropbox saattoi ilmestyä turhaan jokaisella kirjautumisella, jos käyttäjätunnuksella oli
+  joskus käyty käynnistämällä ohjelma Menusta, mutta ei kuitenkaan otettu sitä oikeasti käyttöön.
+</advanced>
+
+- <advanced title="Korjattu Tuxguitar -ohjelman äänet">
+  Tuxguitar-ohjelman äänet on nyt mahdollista saada toimimaan. Äänien toimimattomuuden aiheutti yhden puuttuneen ohjelma-
+  paketin lisääminen järjestelmään.
+</advanced>
+
 ### Tiedossa olevat ongelmat
 
 - Silverlight-sisällön näyttämiseen tarkoitettu pipelight-laajennos ei tällä hetkellä toimi luotettavasti.
@@ -57,9 +69,9 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi versiopäivityksiin si
 ### Tekniset muutokset
 
 - <advanced title="Kannettavan resetointi tehdasasetuksille">
-  Järjestelmään on lisätty ``puavo-reset-laptop-to-factory-defaults``-ohjelmisto, jolla pääkäyttäjän (root) oikeuksilla on mahdollista 
+  Järjestelmään on lisätty ``puavo-reset-laptop-to-factory-defaults``-ohjelma, jolla pääkäyttäjän (root) oikeuksilla on mahdollista 
   nollata kannettava tehdasasetuksille. Ohjelma poistaa kaikki kannettavalle tehdyt asetukset, sekä tyhjentää home-osion. Käyttäjän 
-  tiedostojen poistaminen ei kuitenkaan ole täysin tietoturvallista ja sopivilla työkaluilla tiedostoja on mahdollista kaivaa kovalevyltä 
+  tiedostojen poistaminen ei kuitenkaan ole täysin tietoturvallista, koska sopivilla työkaluilla tiedostoja on mahdollista kaivaa kovalevyltä 
   jälkikäteen.
 </advanced>
 
@@ -73,13 +85,13 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi versiopäivityksiin si
 </advanced>
 
 - <advanced title="Uusia laitetageja">
-  Lisätty seuraavat tagit: ``smartboard``, ``nosmartboard``, ``desktop_background:FILEPATH``, ``greeter_background_firstlogin:FILEPATH``.
-  Tagien kuvaukset löytyvät <a href="https://github.com/opinsys/puavo/wiki/Kernel-parameters-and-device-tags">täältä</a>.
+  Lisätty seuraavat tagit: ``smartboard``, ``nosmartboard``, ``desktop_background:FILEPATH``, ``greeter_background_firstlogin:FILEPATH``,
+  ``remove_rt2800usb_at_shutdown``, ``no_remove_rt2800usb_at_shutdown``. Tagien kuvaukset löytyvät <a href="https://github.com/opinsys/puavo/wiki/Kernel-parameters-and-device-tags">täältä</a>.
 </advanced>
 
 - <advanced title="Kannettavien tietokoneiden päivittyminen">
   Aiemmin kannettavien päivittyminen vaati, että laitteille oli saatavissa rdiff-tiedostot eri tuotantoversioiden välillä. Jatkossa
-  Päivittäminen onnistuu myös, jos rdiff-tiedostoja ei ole tarjolla siten, että päivitysautomatiikka lataa järjestelmäversion koko
+  Päivittäminen onnistuu myös, jos rdiff-tiedostoja ei ole tarjolla. Tällöin päivitysautomatiikka lataa järjestelmäversion koko
   päätekuvatiedoston.
 </advanced>
 
