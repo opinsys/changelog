@@ -18,12 +18,84 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi versiopäivityksiin si
 
 <pre class="markdown"><code>
 
+## Opinsys 15.33 - Sanni {#ltsp-opinsysrestricted-trusty-2015-08-11-101325-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Ensimmäinen kirjautuminen kannettaville">
+  Aiemmin ensimmäinen kirjautuminen kannettaville tietokoneille piti tehdä koulun lähiverkossa. Nyt
+  kirjautuminen onnistuu internetyhteyden yli mistä tahansa.
+</advanced>
+
+- <advanced title="Lisätty Vidyoclient">
+  Järjestelmään on lisätty Vidyo-videoneuvottelun asiakasohjelmisto. 
+</advanced>
+
+- <advanced title="Lisätty käynnistin Viope-palvelulle">
+   Viope löytyy valitsemalla ``Menu`` > ``Web-sovellukset`` > ``Viope``
+</advanced>
+
+- <advanced title="Päivitetty Kdenlive">
+  Kdenlive-videoeditointiohjelma on päivitetty uudempaan versioon.
+</advanced>
+
+- <advanced title="Korjattu päätteiden sammumisongelmaa">
+  Päätelaitteita jotka toimivat langattomanverkon tukiasemana saattoi edelleen jäädä jumiin sammutuksen yhteydessä.
+  Ongelmaa on nyt korjattu siten, että sammumisongelmaan aiemmin tehtyä korjausta (HP dc7900-tietokoneet) ei käytetä
+  kaikilla laitteilla, vaan se tulee asettaa käyttöön Puavo-hallintaliittymän kayttä koulu-/laitekohtaisesti.
+</advanced>
+  
+- <advanced title="Versiopäivitysten työpöytäilmoitus">
+  Versiopäivityksen yhteydessä työpöydän paneeliin tuleva ilmoituskuvake on vaihdettu aiemmasta punaisesta huutomerkistä 
+  vihreään kuvakkeeseen.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+- Silverlight-sisällön näyttämiseen tarkoitettu pipelight-laajennos ei tällä hetkellä toimi luotettavasti.
+
+### Tekniset muutokset
+
+- <advanced title="Kannettavan resetointi tehdasasetuksille">
+  Järjestelmään on lisätty ``puavo-reset-laptop-to-factory-defaults``-ohjelmisto, jolla pääkäyttäjän (root) oikeuksilla on mahdollista 
+  nollata kannettava tehdasasetuksille. Ohjelma poistaa kaikki kannettavalle tehdyt asetukset, sekä tyhjentää home-osion. Käyttäjän 
+  tiedostojen poistaminen ei kuitenkaan ole täysin tietoturvallista ja sopivilla työkaluilla tiedostoja on mahdollista kaivaa kovalevyltä 
+  jälkikäteen.
+</advanced>
+
+- <advanced title="Laitteen rekisteröinti tehdään tmuxissa">
+  Laitteiden rekisteröinti käynnistetään tmuxiin, joka mahdollistaa rekisteröintiin liittymisen helposti etäyhteydellä sekä, pääsyn 
+  koneelle paikallisesti root-käyttäjänä rekisteröinnin aikana. Se helpottaa esimerkiksi laiteongelmien selvittämistä asennuksen yhteydessä.
+</advanced>
+
+- <advanced title="Lokitiedostojen logrotate-asetukset">
+  Kannettavien tietokoneiden logrotate-toiminnallisuutta on muutettu siten, että todennäköisyys state-kovalevyosion täyttymiselle on pienempi. 
+</advanced>
+
+- <advanced title="Uusia laitetageja">
+  Lisätty seuraavat tagit: ``smartboard``, ``nosmartboard``, ``desktop_background:FILEPATH``, ``greeter_background_firstlogin:FILEPATH``.
+  Tagien kuvaukset löytyvät <a href="https://github.com/opinsys/puavo/wiki/Kernel-parameters-and-device-tags">täältä</a>.
+</advanced>
+
+- <advanced title="Kannettavien tietokoneiden päivittyminen">
+  Aiemmin kannettavien päivittyminen vaati, että laitteille oli saatavissa rdiff-tiedostot eri tuotantoversioiden välillä. Jatkossa
+  Päivittäminen onnistuu myös, jos rdiff-tiedostoja ei ole tarjolla siten, että päivitysautomatiikka lataa järjestelmäversion koko
+  päätekuvatiedoston.
+</advanced>
+
+- <advanced title="Kannettavien tietokoneiden versiotieto">
+  Jatkossa kannettavat tietokoneet lähettävät versiotietonsa Puavo-laitehallintaan, mikäli käytössä oleva versio on muuttunut Puavossa 
+  olevaan tietoon nähden.
+</advanced>
+
+
+
 ## Opinsys 15.18 - Vappu {#ltsp-opinsysrestricted-trusty-2015-04-30-081636-i386}
 
 ### Korjaukset ja muut muutokset
 
 - <advanced title="Oletusselaimen valinta">
-  Jatkossa käyttäjän on mahdollista valita helkilökohtainen oletusverkkoselaimensa. Oletusselaimen valinta
+  Jatkossa käyttäjän on mahdollista valita henkilökohtainen oletusverkkoselaimensa. Oletusselaimen valinta
   vaikuttaa työpöydän alapaneelissa näkyvään selaimen käynnistimeen ja esimerkiksi siihen millä selaimella
   kotikansiossa olevat html-tiedostot avataan.
   HUOM! Keskitetyt koulukohtaiset kotisivuasetukset on kuitenkin tuettuna vain Firefox-selaimessa.
