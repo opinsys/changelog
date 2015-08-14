@@ -18,6 +18,47 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi versiopäivityksiin si
 
 <pre class="markdown"><code>
 
+## L1533 - Chili {#ltsp-lukiolaiskannettava-trusty-2015-08-11-123012-i386}
+
+### Korjaukset ja muutokset
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Kirjautumisohjeen näkyminen ensimmäisen kirjautumisen jälkeen">
+  Kirjautumisruudussa saattoi toisinaan näkyä ohjekuva, jonka on tarkoitus näkyä vain laitteen ensimmäisellä käyttökerralla.
+  Ongelma on nyt korjattu ja ohje kuva näkyy vain laitteilla joille ei ole kertaakaan kirjauduttu.
+</advanced>
+
+- <advanced title="Päivitetty Kdenlive">
+  Kdenlive-videoeditointiohjelma on päivitetty uudempaan versioon 0.9.10. Kdenliven käytössä on havaittu epävakautta ja 
+  uusi versio mahdollisesti korjaa joitakin ohjelman ongelmia. Ohjelman tekniset muutokset edelliseen versioon löytyvät
+  listattuna ohjelman kehittäjien julkaisemasta <a href="https://kdenlive.org/discover/0.9.10">muutoslokista</a>. 
+</advanced>
+
+- <advanced title="Korjattu Dropboxin käynnistyminen kirjauduttaessa">
+  Jatkossa Dropbox-ohjelmaa ei käynnistetä turhaan kirjautumisen yhteydessä, mikäli se ei ole ollut käyttäjätunnuksella
+  oikeasti käytössä. Aiemmin Dropbox saattoi ilmestyä turhaan jokaisella kirjautumisella. Tämä tapahtui, jos käyttäjätunnuksella 
+  oli joskus käynnistetty ohjelma Menusta, mutta ei kuitenkaan otettu sitä oikeasti käyttöön.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+- Silverlight-sisällön näyttämiseen tarkoitettu pipelight-laajennos ei tällä hetkellä toimi luotettavasti.
+
+### Tekniset muutokset
+
+- <advanced title="Kannettavan resetointi tehdasasetuksille">
+  Järjestelmään on lisätty ``puavo-reset-laptop-to-factory-defaults``-ohjelma, jolla pääkäyttäjän (root) oikeuksilla on mahdollista 
+  nollata kannettava tehdasasetuksille. Ohjelma poistaa kaikki kannettavalle tehdyt asetukset, sekä tyhjentää home-osion. Käyttäjän 
+  tiedostojen poistaminen ei kuitenkaan ole täysin tietoturvallista, koska sopivilla työkaluilla tiedostoja on mahdollista kaivaa kovalevyltä 
+  jälkikäteen.
+</advanced>
+
+- <advanced title="Lokitiedostojen logrotate-asetukset">
+  Kannettavien tietokoneiden logrotate-toiminnallisuutta on muutettu siten, että todennäköisyys state-kovalevyosion täyttymiselle on pienempi.
+</advanced>
+
+
 ## L1527 - Banaani {#ltsp-lukiolaiskannettava-trusty-2015-06-30-105550-i386}
 
 ### Korjaukset ja muutokset
