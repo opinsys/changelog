@@ -18,6 +18,58 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi versiopäivityksiin si
 
 <pre class="markdown"><code>
 
+## Opinsys 15.35 - Tauno {#ltsp-opinsysrestricted-trusty-2015-08-11-101325-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Lisätty Ekapeli Alku">
+  Ekapelin uusi versio Ekapeli Alku on nyt lisätty järjestelmään. Peli vaatii toimiakseen tehokkaan tietokoneen. 
+  Uuden ekapeli voi käynnistää valitsemalla ``Menu`` > ``Opetusohjelmat`` > ``Ekapeli Alku``.
+</advanced>
+
+- <advanced title="Etätuen salliminen ja tukipyynnön tekeminen">
+  Työpöydän alapaneeliin on lisätty uusi Etätuki-painike. Painikkeen avulla käyttäjä voi sallia etätuen antamisen 
+  asioidessaan Opinsysin tukipalvelun kanssa. Lisäksi tukipyynnön tekeminen onnistuu helpommin valitsemalla 
+  valikosta "Ilmoita ongelmasta".
+</advanced>
+
+- <advanced title="Tuxpaint päivitetty uudempaan versioon">
+  Tuxpaint-piirto-ohjelma on päivitetty uusimpaan versioon. Tärkeimpänä korjauksena on käyttöliittymän
+  parempi suomennos.
+</advanced>
+
+- Näppäimistökartan valitsin lisätty myös kirjautumisruutuun
+
+- <advanced title="Korjattu Processing-ohjelmointiympäristö">
+  Java-ympäristön päivitys versioon 8 rikkoi Processing-ohjelmointiympäristön toiminnallisuutta. Ongelma on
+  nyt korjattu.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+- Silverlight-sisällön näyttämiseen tarkoitettu pipelight-laajennos ei tällä hetkellä toimi luotettavasti.
+
+### Tekniset muutokset
+
+- <advanced title="Smart Notebookin näkyminen laitteilla">
+  Smart Notebook tulee automaattisesti näkyviin laitteille joissa on Smartin lisenssi ja kosketustaulu kytkettynä.
+</advanced>
+
+- <advanced title="HP Laserjet-tulostinten toiminta">
+  HP:n LaserJet tulostimet jotka ovat aiemmin vaatineet toimiakseen erillisen plugin ohjelman toimivat nyt kytkemällä ne suoraan
+  tietokoneeseen kiinni.
+</advanced>
+
+- <advanced title="Gnome Shell-paketit">
+  Päätekuvaan on lisätty Gnome 3 Shellin peruspaketit.
+</advanced>
+
+- <advanced title="Näppäimetön tila">
+  Laitekohtaisesti on mahdollista asettaa tagi ``nokeyboard``. Joka käynnistää automaattisesti Onboard-virtuaalinäppäimistön.
+</advanced>
+
+- Lisätty Otsonkoulun oppilaiden tekemät taustakuvat
+
 ## Opinsys 15.33 - Sanni {#ltsp-opinsysrestricted-trusty-2015-08-11-101325-i386}
 
 ### Korjaukset ja muut muutokset
@@ -82,6 +134,8 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi versiopäivityksiin si
 - Silverlight-sisällön näyttämiseen tarkoitettu pipelight-laajennos ei tällä hetkellä toimi luotettavasti.
 
 ### Tekniset muutokset
+
+- Java-ympäristössä on siirrytty käyttämään versiota 8 aiemman versio 7:n sijaan
 
 - <advanced title="Kannettavan resetointi tehdasasetuksille">
   Järjestelmään on lisätty ``puavo-reset-laptop-to-factory-defaults``-ohjelma, jolla pääkäyttäjän (root) oikeuksilla on mahdollista 
