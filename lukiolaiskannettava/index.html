@@ -14,9 +14,54 @@
             <div class="doc">
             <h1>Lukiolaiskannettavan versiot ja muutokset</h1>
             <p>Seuraavassa on kuvattu Opinsys Lukiolaiskannettavan eri versiot ja tärkeimmät käyttöön vaikuttavat muutokset aina 
-edelliseen julkaisuun nähden. Näiden muutosten lisäksi versiopäivityksiin sisältyy uusimmat tietoturva- ja ohjelmistopäivitykset (esim. verkkoselaimet).</p>
+edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin sisältyy uusimmat tietoturva- ja ohjelmistopäivitykset</b> (esim. kaikki verkkoselaimet Firefox, Chrome jne.).</p>
 
 <pre class="markdown"><code>
+
+## L1540 - Endiivi {#ltsp-lukiolaiskannettava-trusty-2015-10-02-080121-i386}
+
+### Korjaukset ja muutokset
+
+- <advanced title="Muutos: Jatkossa kannettavat päivittyvät oletuksena automaattisesti">
+  Tämän järjestelmäversion jälkeen kannettava päivitetään jatkossa oletuksena automaattisesti. Tällä pyritään varmistamaan, että laitteet pysyvät ajantasalla ja
+  että uusimmat tietoturvakorjaukset tulevat varmasti käyttöön. 
+  
+  Automaatinen päivitys on otettavissa helposti pois päältä valitsemalla ``Menu`` > ``Kannettavan asetukset`` > ``Järjestelmäpäivitykset``. Automaattipäivityksen käynnistyessä
+  käyttäjällä on aina mahdollisuus keskeyttää päivittäminen, jos se esimerkiksi hidastaa liikaa verkon toimintaa. 
+
+  Päivityksen ollessa taustalla päällä, laitetta voi edelleen käyttää normaalisti. Sen voi esimerkiksi sammuttaa ja käynnistää uudelleen täysin turvallisesti.
+</advanced>
+
+- <advanced title="Päivitys: DrRacket-ohjelmointiympäristö">
+  Racket ohjelmointi-ympäristö on päivitetty versioon 6.1.
+</advanced>
+
+- <advanced title="Päivitys: Geogebra">
+  Geogebra on päivitetty versioon 5.0.155.
+</advanced>
+
+- <advanced title="Kehittäjätilassa tehtyjen muutosten nollaaminen">
+  Kehittäjätilassa tehdyt muutokset on nyt mahdollista nollata alapaneelin päivityskuvakkeen kautta löytyvästä ``Nollaa kehitystila`` -painikkeesta.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+- Silverlight-sisällön näyttämiseen tarkoitettu pipelight-laajennos ei tällä hetkellä toimi luotettavasti.
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Käyttöliittymän skaalautuminen näytön kuvan koon mukaisesti - Jatkossa käyttöliittymän skaalautumista voi hallita laitekohtaisen tagin avulla: 
+  ``dconf_scaling_factor:${kokonaisluku}``.
+
+- Lisätty ibus-libpinyin - Paketin avulla on mahdollista testata kiinan kielen kirjoittamista työpöytäohjelmissa.
+
+- Lisätty laitteiden asennukseen oma preseed Lenovo 11e-mallille.
+
+- Lisätty vaihtoehtoinen ajuri Realtekin verkkokorteille"> Ajurin voi ottaa käyttöön Kernel-parametrilla: ``modprobe.blacklist=r8169``.
+
+</advanced>
+
 
 ## L1535 - Durian {#ltsp-lukiolaiskannettava-trusty-2015-08-28-091345-i386}
 
