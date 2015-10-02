@@ -14,9 +14,82 @@
             <div class="doc">
             <h1>Opinsys-järjestelmän versiot ja muutokset</h1>
             <p>Seuraavassa on kuvattu Opinsys-järjestelmän eri versiot ja tärkeimmät käyttöön vaikuttavat muutokset aina 
-edelliseen julkaisuun nähden. Näiden muutosten lisäksi versiopäivityksiin sisältyy uusimmat tietoturva- ja ohjelmistopäivitykset (esim. verkkoselaimet).</p>
+edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin sisältyy uusimmat tietoturva- ja ohjelmistopäivitykset</b> (esim. verkkoselaimet).</p>
 
 <pre class="markdown"><code>
+
+## Opinsys 15.40 - Valio {#ltsp-opinsysrestricted-trusty-2015-10-02-065105-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Korjaus: Firefox-ikkunan näkyminen valkoisena ">
+  Firefoxin uusin päivitys rikkoi ohjelman toiminnan tietyillä vanhoilla tietokonemalleilla. Ongelma esiintyi siten, että 
+  Firefox-selaimen ikkuna näkyi valkoisena. Se on nyt korjattu.
+</advanced>
+
+- <advanced title="Päivitys: DrRacket-ohjelmointiympäristö">
+  Racket ohjelmointi-ympäristö on päivitetty versioon 6.1.
+</advanced>
+
+- <advanced title="Päivitys: Geogebra">
+  Geogebra on päivitetty versioon 5.0.155.
+</advanced>
+
+- <advanced title="Päivitys: Spotify">
+  Spotify-sovellus on päivittynyt uuteen versioon ja korjaa samalla useita esim. musiikin toiston katkeamisena kuuluneita ongelmia.
+</advanced>
+
+- <advanced title="Päivitys: InfoTV-näyttöjen sammutuksen ajastus">
+  Info-tv-laitteiden näyttöjen päälläolo on nyt ajastettavissa laitteen laiteasetuksista kohdasta automaattisammutus. 
+</advanced>
+
+- <advanced title="Lisäys: Gnu Backgammon-peli">
+  Pelin saa käynnistetty valitsemalla ``Menu`` > ``Opetusohjelmat`` > ``Backgammon``.
+</advanced>
+
+- <advanced title="Muutos: Päivitykset oletuksena automaattisiksi henkilökohtaisilla kannettavilla">
+  Jatkossa ``henkilökohtaisten kannettavien`` päivitykset ovat päällä automaattisesti. Tällä pyritään varmistamaan, että laitteet pysyvät ajantasalla ja
+  että uusimmat tietoturvakorjaukset tulevat varmasti käyttöön. 
+  
+  Automaatinen päivitys on helposti otettavissa pois päältä valitsemalla ``Menu`` > 
+  ``Kannettavan asetukset``. Automaattipäivityksen käynnistyessä käyttäjällä on aina mahdollisuus keskeyttää päivittäminen. 
+
+  Päivityksen ollessa päällä taustalla, laitetta voi käyttää edelleen normaalisti ja sen voi esimerkiksi sammuttaa ja käynnistää uudelleen täysin turvallisesti.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+- Silverlight-sisällön näyttämiseen tarkoitettu pipelight-laajennos ei tällä hetkellä toimi luotettavasti.
+
+### Tekniset muutokset
+
+- <advanced title="Käyttöliittymän skaalautuminen näytön kuvan koon mukaisesti">
+  Jatkossa käyttöliittymän skaalautumista voi hallita laitekohtaisen tagin avulla: ``dconf_scaling_factor:${kokonaisluku}``.
+</advanced>
+
+- <advanced title="Lisätty ibus-libpinyin">
+  Paketin avulla on mahdollista testata kiinan kielen kirjoittamista työpöytäohjelmissa.
+
+- <advanced title="Kehittäjätilassa tehtyjen muutosten nollaaminen">
+  Kehittäjätilassa tehdyt muutokset on nyt mahdollista nollata alapaneelin päivityskuvakkeen kautta löytyvästä painikkeesta.
+</advanced>
+
+- <advanced title="Kehittäjätilassa tehtyjen muutosten nollaaminen">
+  dkms-paketit bcmwl, nvidia-304, r8168 kerneleille: precise, trusty, utopic, vivid, hwgen2, edge (kaikki 32-bit).
+</advanced>
+
+- Lisätty laitteiden asennukseen oma preseed Lenovo 11e-mallille.
+
+- Lisätty tuki TP-Link TL-WN881ND-kortille siten, että se voi toimia tukiasemana.
+
+- <advanced title="Lisätty vaihtoehtoinen ajuri Realtekin verkkokorteille">
+  Ajurin voi ottaa käyttöön Kernel-parametrilla: ``modprobe.blacklist=r8169``.
+</advanced>
+
+
+
+
+
 
 ## Opinsys 15.35 - Tauno {#ltsp-opinsysrestricted-trusty-2015-08-28-061432-i386}
 
