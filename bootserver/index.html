@@ -1,0 +1,489 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bootserver Release Notes</title>
+        <link rel="stylesheet" type="text/css" href="../css/theme.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+    <body>
+        <div class="login main">
+            <a href="http://opinsys.fi" target="_blank">
+                <img src="../opinsys_logo.png" alt="Opinsys Oy">
+            </a>
+            <div class="doc">
+            <h1>Bootserver Release Notes</h1>
+
+<pre class="markdown"><code>
+
+## Release 22 {#22}
+
+* Lots of security fixes in various Ubuntu packages.
+
+* Bootserver reports its version to Puavo after a succesful update.
+
+* Remove and avoid syncing lukiolaiskannettava images and rdiffs if
+  schools/devices do not have any references to them.
+
+* Support for locally administered Shorewall interfaces.
+
+* The recommended kernel is updated to 3.10.81-031081-generic.
+
+* Update path 21 => 22:
+
+  - Need to get 200.0MiB of archives.
+
+  - Has **medium** impact on the availability of the end user service:
+
+    - Daemon process `cups`, `nscd`, and `tomcat6` will be started and
+      stopped during the update process. Estimated maximum service
+      downtime for these processes is ~2min.
+
+    - Daemon processes `dnsmasq` and `racoon` will be restarted
+      quickly (~1sec service downtime) during the update process.
+
+  - <advanced title="6 new packages">
+        linux-headers-3.10.81-031081             3.10.81-031081.201506230313
+        linux-headers-3.10.81-031081-generic     3.10.81-031081.201506230313
+        linux-headers-3.2.0-86                   3.2.0-86.124
+        linux-headers-3.2.0-86-generic           3.2.0-86.124
+        linux-image-3.10.81-031081-generic       3.10.81-031081.201506230313
+        linux-image-3.2.0-86-generic             3.2.0-86.124
+</advanced>
+
+  - <advanced title="80 updated packages">
+
+        apt                                      0.8.16~exp12ubuntu10.24
+        apt-transport-https                      0.8.16~exp12ubuntu10.24
+        apt-utils                                0.8.16~exp12ubuntu10.24
+        binutils                                 2.22-6ubuntu1.3
+        cups                                     1.5.3-0ubuntu8.7
+        cups-client                              1.5.3-0ubuntu8.7
+        cups-common                              1.5.3-0ubuntu8.7
+        cups-ppdc                                1.5.3-0ubuntu8.7
+        curl                                     7.22.0-3ubuntu4.14
+        debootstrap                              1.0.40~ubuntu0.8
+        devscripts                               2.11.6ubuntu1.7
+        dnsmasq                                  2.59-4ubuntu0.2
+        dnsmasq-base                             2.59-4ubuntu0.2
+        dosfstools                               3.0.12-1ubuntu1.2
+        dpkg                                     1.16.1.2ubuntu7.6
+        dpkg-dev                                 1.16.1.2ubuntu7.6
+        fuse                                     2.8.6-2ubuntu2.1
+        icedtea-6-jre-cacao                      6b35-1.13.7-1ubuntu0.12.04.2
+        icedtea-6-jre-jamvm                      6b35-1.13.7-1ubuntu0.12.04.2
+        ipsec-tools                              1:0.8.0-9ubuntu1.1
+        libapt-inst1.4                           0.8.16~exp12ubuntu10.24
+        libapt-pkg4.12                           0.8.16~exp12ubuntu10.24
+        libc-bin                                 2.15-0ubuntu10.12
+        libc-dev-bin                             2.15-0ubuntu10.12
+        libc6                                    2.15-0ubuntu10.12
+        libc6-dev                                2.15-0ubuntu10.12
+        libcups2                                 1.5.3-0ubuntu8.7
+        libcupscgi1                              1.5.3-0ubuntu8.7
+        libcupsimage2                            1.5.3-0ubuntu8.7
+        libcupsmime1                             1.5.3-0ubuntu8.7
+        libcupsppdc1                             1.5.3-0ubuntu8.7
+        libcurl3                                 7.22.0-3ubuntu4.14
+        libcurl3-gnutls                          7.22.0-3ubuntu4.14
+        libdpkg-perl                             1.16.1.2ubuntu7.6
+        libfuse2                                 2.8.6-2ubuntu2.1
+        libgnutls28                              3.0.11-1ubuntu2.1
+        libmysqlclient18                         5.5.43-0ubuntu0.12.04.1
+        libpq5                                   9.1.18-0ubuntu0.12.04
+        libpython2.7                             2.7.3-0ubuntu3.8
+        libsdl1.2debian                          1.2.14-6.4ubuntu3.1
+        libservlet2.5-java                       6.0.35-1ubuntu3.6
+        libssl1.0.0                              1.0.1-4ubuntu5.31
+        libtasn1-3                               2.10-1ubuntu1.4
+        libtomcat6-java                          6.0.35-1ubuntu3.6
+        libx11-6                                 2:1.4.99.1-0ubuntu2.3
+        libx11-data                              2:1.4.99.1-0ubuntu2.3
+        libx11-xcb1                              2:1.4.99.1-0ubuntu2.3
+        libxext6                                 2:1.3.0-3ubuntu0.2
+        libxfixes3                               1:5.0-4ubuntu4.4
+        libxi6                                   2:1.7.1.901-1ubuntu1~precise3
+        libxrender1                              1:0.9.6-2ubuntu0.2
+        libxv1                                   2:1.0.6-2ubuntu0.2
+        linux-generic                            3.2.0.86.100
+        linux-headers-generic                    3.2.0.86.100
+        linux-image-3.10.81-031081-generic       3.10.81-031081.201506230313
+        linux-image-generic                      3.2.0.86.100
+        linux-image-server                       3.2.0.86.100
+        multiarch-support                        2.15-0ubuntu10.12
+        mysql-common                             5.5.43-0ubuntu0.12.04.1
+        nscd                                     2.15-0ubuntu10.12
+        ntp                                      1:4.2.6.p3+dfsg-1ubuntu3.4
+        ntpdate                                  1:4.2.6.p3+dfsg-1ubuntu3.4
+        openjdk-6-jre-headless                   6b35-1.13.7-1ubuntu0.12.04.2
+        openjdk-6-jre-lib                        6b35-1.13.7-1ubuntu0.12.04.2
+        openssl                                  1.0.1-4ubuntu5.31
+        opinsys-bootserver                       0.6.1-200+precise+master.5e8179065de0d1db91ef2ed94cd9d3db09c2ccf3
+        opinsys-rules                            0.6.1-200+precise+master.5e8179065de0d1db91ef2ed94cd9d3db09c2ccf3
+        patch                                    2.6.1-3ubuntu0.1
+        ppp                                      2.4.5-5ubuntu1.2
+        puavo-client                             2.1.0-93+precise.master.7e104bbc3f8e4be9bcf35550272af0e359bb5bcf
+        python2.7                                2.7.3-0ubuntu3.8
+        python2.7-minimal                        2.7.3-0ubuntu3.8
+        racoon                                   1:0.8.0-9ubuntu1.1
+        tcpdump                                  4.2.1-1ubuntu2.2
+        tomcat6                                  6.0.35-1ubuntu3.6
+        tomcat6-common                           6.0.35-1ubuntu3.6
+        tzdata                                   2015d-0ubuntu0.12.04
+        tzdata-java                              2015d-0ubuntu0.12.04
+        update-manager-core                      1:0.156.14.19
+        upstart                                  1.5-0ubuntu7.3
+</advanced>
+
+## Release 21 {#21}
+
+* Fixed a deadlock bug in `nbd-server`. The bug caused `nbd-server` to
+  occasionally lockup, effectively making it incapable of accepting
+  any new connections.
+
+* Fix `puavo-rest` to refresh cached organization data when it is
+  accessed via REST API.
+
+* Update path 20 => 21:
+
+  - Need to get 15.0MiB of archives.
+
+  - Has very high impact on the availability of the end user service:
+
+    - Daemon process `nbd-server` will be restarted during the update
+      and all nbd connections will be terminated, which effectively
+      breaks all netboot device sessions.
+
+  - <advanced title="9 updated packages">
+        gnupg                     1.4.11-3ubuntu2.9
+        gpgv                      1.4.11-3ubuntu2.9
+        libgcrypt11               1.5.0-3ubuntu0.4
+        libtiff4                  3.9.5-2ubuntu1.8
+        nbd-server                3.3-0+opinsys4
+        opinsys-bootserver        0.5.3-152+precise+master.9e09e002bb5ba127c14ab50629d2cb0dc814e3a3
+        opinsys-rules             0.5.3-152+precise+master.9e09e002bb5ba127c14ab50629d2cb0dc814e3a3
+        puavo-rest                0.11.0-478+precise.master.1b821bb9e7d48c27dfdf69b54eae2d38850dd287
+        puavo-rest-bootserver     0.11.0-478+precise.master.1b821bb9e7d48c27dfdf69b54eae2d38850dd287
+</advanced>
+
+## Release 20 {#20}
+
+* Known issues:
+
+  - It has been reported that occasionally after updating to version
+    20, `nslcd` has been running more than two processes, effectively
+    breaking name lookups from LDAP. After a succesful update, please
+    run:
+
+        pgrep -x -c nslcd # Print the number of nslcd processes.
+
+    If the number it prints is not 2, kill all `nslcd` processes and
+    then make a fresh start:
+
+        sudo killall nslcd
+        sudo service nslcd start
+
+* Image synchronization is optimized to ignore opinsysextra-images by
+  bootservers which do not have any use for them. This change in
+  behavior is introduced to save both network bandwidth and disk
+  space.
+
+  - If there are no references to any opinsysextra-images in Puavo and
+    there are no locked opinsysextra-images in `/opt/ltsp/images`, all
+    existing opinsysextra-images and their corresponding rdiffs are
+    deleted. Moreover, opinsysextra-images will not be synced by
+    `opinsys-img-sync` command.
+
+  - Inversely, opinsysextra-images are synced normally if there is at
+    least one `.lock` file for any opinsysextra-image or there is at
+    least one reference to any opinsysextra-image in Puavo.
+
+  - Admins wishing to maintain the old behavior should create a lock
+    file for any opinsysextra-image (the image file does not even need
+    to exist), for example:
+
+        sudo touch /opt/ltsp/images/ltsp-opinsysextra-trusty-1970-01-01-000000-i386.img.lock
+
+* Local administrators (Puavoadmins) are maintained in Puavo as
+  organization owners instead of Puppet.
+
+  - The local copy of the organization owner database (Orgjson) is saved to
+    `/etc/puavo/org.json` with `puavoadmins-update` command which is
+    executed during configuration phase with a dedicated ECS.
+
+  - Orgjson contains names, public ssh keys and uids of Puavoadmins.
+
+  - OpenSSH server authenticates users against the Orgjson.
+
+  - Name services for Puavoadmins is provided by puavoadmins NSS
+    module.
+
+  - The primary group of Puavoadmins is `puavoadmins` (gid=555).
+
+  - Puavoadmins are granted the right to run anything as root via
+    `sudo`. Puavoadmins must authenticate themselves with their Puavo
+    password.
+
+  - Old administrators are removed automatically from `/etc/passwd` and
+    `/etc/group`. Make sure no old administrators are logged in during
+    the update!
+
+* Support for locally maintained firewall rules.
+
+* Qemu is updated to improve network throughput of virtual domains.
+
+* Numerous security fixes in base packages.
+
+* Update path 19 => 20:
+
+  - Need to get 85.8MiB of archives.
+
+  - Has low impact on the availability of the end user service:
+
+    - Processes `cups`, `nscd` and `fluentd` are restarted during the
+      update.
+
+  - <advanced title="68 updated packages">
+        cups                             1.5.3-0ubuntu8.6
+        cups-client                      1.5.3-0ubuntu8.6
+        cups-common                      1.5.3-0ubuntu8.6
+        cups-ppdc                        1.5.3-0ubuntu8.6
+        fluent-plugin-puavo              0.3.0-27+precise+master.80cbfc1cc91405ec52b91d91e2ac56e48ec8b44d
+        fluentd                          0.10.57-3+opinsys1
+        ipxe-qemu                        1.0.0+git-20141004.86285d1-5+precise.amd64+kvm2.b46e748e7c545a159841dbbdca8298f730e5d049
+        libaudit0                        1.7.18-1ubuntu1
+        libc-bin                         2.15-0ubuntu10.11
+        libc-dev-bin                     2.15-0ubuntu10.11
+        libc6                            2.15-0ubuntu10.11
+        libc6-dev                        2.15-0ubuntu10.11
+        libcups2                         1.5.3-0ubuntu8.6
+        libcupscgi1                      1.5.3-0ubuntu8.6
+        libcupsimage2                    1.5.3-0ubuntu8.6
+        libcupsmime1                     1.5.3-0ubuntu8.6
+        libcupsppdc1                     1.5.3-0ubuntu8.6
+        libfdt1                          1.3.0-2ubuntu1
+        libfreetype6                     2.4.8-1ubuntu2.2
+        libgnutls26                      2.12.14-5ubuntu3.9
+        libgnutls28                      3.0.11-1ubuntu2
+        libhogweed2                      2.4-1
+        libjansson4                      2.2.1-1
+        libnetcf1                        0.1.9-2ubuntu3.2
+        libnettle4                       2.4-1
+        libnl-route-3-200                3.2.3-2ubuntu2
+        librrd4                          1.4.7-1ubuntu1
+        librrds-perl                     1.4.7-1ubuntu1
+        libssh2-1                        1.2.8-2
+        libssl1.0.0                      1.0.1-4ubuntu5.25
+        libvirt-bin                      1.2.9-9+opinsys2
+        libvirt-clients                  1.2.9-9+opinsys2
+        libvirt-daemon                   1.2.9-9+opinsys2
+        libvirt-daemon-system            1.2.9-9+opinsys2
+        libvirt0                         1.2.9-9+opinsys2
+        libx86-1                         1.1+ds1-7ubuntu1
+        libxen-4.1                       4.1.6.1-0ubuntu0.12.04.5
+        libxenstore3.0                   4.1.6.1-0ubuntu0.12.04.5
+        linux-generic                    3.2.0.79.93
+        linux-headers-3.2.0-79           3.2.0-79.115
+        linux-headers-3.2.0-79-generic   3.2.0-79.115
+        linux-headers-generic            3.2.0.79.93
+        linux-image-3.2.0-79-generic     3.2.0-79.115
+        linux-image-generic              3.2.0.79.93
+        linux-image-server               3.2.0.79.93
+        multiarch-support                2.15-0ubuntu10.11
+        nscd                             2.15-0ubuntu10.11
+        openssl                          1.0.1-4ubuntu5.25
+        opinsys-bootserver               0.5.3-151+precise+master.4ca7a6113e5f3582862d2fa5ac9fe5608c4986f7
+        opinsys-rules                    0.5.3-151+precise+master.4ca7a6113e5f3582862d2fa5ac9fe5608c4986f7
+        pm-utils                         1.4.1-9fix.ubuntu12.04
+        puavo-devscripts                 0.6.2
+        puavo-ltsp-bootserver            0.16.1-825+precise+master.6512d9483dbaaac5afad18c18b9f59e24626c2ea
+        puavo-rules                      1.6.0-119+precise+master.3458e69ded612ebed33b79de0cc28bbb7aed7f44
+        puavoadmins                      0.2.11
+        qemu-keymaps                     1.0.50-2012.03-0ubuntu2.1
+        qemu-kvm                         2.0.0+dfsg-2ubuntu1.10+opinsys1
+        qemu-system-common               2.0.0+dfsg-2ubuntu1.10+opinsys1
+        qemu-system-x86                  2.0.0+dfsg-2ubuntu1.10+opinsys1
+        qemu-utils                       2.0.0+dfsg-2ubuntu1.10+opinsys1
+        rrdtool                          1.4.7-1ubuntu1
+        ruby-puavobs                     0.16.1-825+precise+master.6512d9483dbaaac5afad18c18b9f59e24626c2ea
+        seabios                          1.7.4-4
+        sharutils                        1:4.11-1
+        sudo                             1.8.3p1-1ubuntu3.7
+        tzdata                           2015b-0ubuntu0.12.04
+        tzdata-java                      2015b-0ubuntu0.12.04
+        vbetool                          1.1-2ubuntu1
+</advanced>
+
+## Release 19 {#19}
+
+* Contains several security updates:
+
+  - `bind9`: [CVE-2015-1349](http://people.canonical.com/~ubuntu-security/cve/2015/CVE-2015-1349.html)
+
+  - `e2fsprogs`: [CVE-2015-0247](http://people.canonical.com/~ubuntu-security/cve/2015/CVE-2015-0247.html) and [CVE-2015-1572](http://people.canonical.com/~ubuntu-security/cve/2015/CVE-2015-1572.html)
+
+  - `samba`: [CVE-2015-0240](http://people.canonical.com/~ubuntu-security/cve/2015/CVE-2015-0240.html)
+
+  - `unzip`: [CVE-2015-1315](http://people.canonical.com/~ubuntu-security/cve/2015/CVE-2015-1315.html)
+
+* Updating is highly recommended.
+
+* Update path 18 => 19:
+
+  - Has very low impact on the availability of the service:
+    daemon processes named and smbd will be restarted quickly
+    during the update process.
+
+  - <advanced title="24 updated packages">
+        e2fslibs             1.42-1ubuntu2.2
+        e2fsprogs            1.42-1ubuntu2.2
+        libcomerr2           1.42-1ubuntu2.2
+        libss2               1.42-1ubuntu2.2
+        libnss3              3.17.4-0ubuntu0.12.04.1
+        libnss3              3.17.4-0ubuntu0.12.04.1
+        samba                2:3.6.3-2ubuntu2.12
+        libwbclient0         2:3.6.3-2ubuntu2.12
+        smbclient            2:3.6.3-2ubuntu2.12
+        samba-common         2:3.6.3-2ubuntu2.12
+        samba-common-bin     2:3.6.3-2ubuntu2.12
+        bind9                1:9.8.1.dfsg.P1-4ubuntu0.10
+        bind9-host           1:9.8.1.dfsg.P1-4ubuntu0.10
+        dnsutils             1:9.8.1.dfsg.P1-4ubuntu0.10
+        libisc83             1:9.8.1.dfsg.P1-4ubuntu0.10
+        libisccc80           1:9.8.1.dfsg.P1-4ubuntu0.10
+        libisccfg82          1:9.8.1.dfsg.P1-4ubuntu0.10
+        liblwres80           1:9.8.1.dfsg.P1-4ubuntu0.10
+        libdns81             1:9.8.1.dfsg.P1-4ubuntu0.10
+        bind9utils           1:9.8.1.dfsg.P1-4ubuntu0.10
+        libbind9-80          1:9.8.1.dfsg.P1-4ubuntu0.10
+        ca-certificates      20141019ubuntu0.12.04.1
+        update-manager-core  1:0.156.14.18
+        unzip                6.0-4ubuntu2.3
+</advanced>
+
+## Release 18 {#18}
+
+* Change ECS/Reboot to delay rebooting by 1 minute. Previously
+  the reboot was immediate.
+
+  * Allows admins to cancel the reboot within the 1 minute
+    remorse period.
+
+  * Gives enough time for pre15 updates to finish gracefully.
+
+## Release 17 {#17}
+
+* Updated the recommended kernel to `3.10.69-031069-generic`.
+
+* Updated LDAP and Kerberos configurations (`/etc/nslcd.conf`,
+  `/etc/krb5.conf` and `/etc/ldap/ldap.conf`) to ensure `krb5` and `ldap`
+  requests fallback to the master server in case local `krb5kdc`
+  and/or `slapd` are unavailable.
+
+* Added `vpn1` to firewall's ovpn zone. The default OpenVPN
+  interface will be renamed to `vpn1` in the future. This change
+  prepares the system for the upcoming rename to ensure smooth
+  transition.
+
+* Fixed a race condition in smoke tests which caused occasional
+  test prepartion failures.
+
+* Updated MOTD shows a note if the last update was unsuccessful.
+
+* Added Munin to collect and plot system data. Plotted graphs are
+  available in port 8089 at `localhost`.
+
+* Fixed logrotate to copytruncate netboot device -specific
+  syslogs to avoid remote rsyslogs from appending to deleted log
+  files.
+
+## Release 16 {#16}
+
+* Security fixes for `openjdk-6` and `eglibc`.
+
+* ECS(reboot): run if any process uses an old version of libc.
+
+## Release 15 {#15}
+
+* Version numbering scheme has been simplified: from now on, it
+  is simply an integer increasing by one on each release.
+
+* Ubuntu mirrors have been versioned. Versioned mirrors ensure
+  consistent upgrades across all servers.
+
+* Packages `krb5`, `openldap` and `libverto` include now i386
+  versions. This fixes multiarch package dependecy problems
+  experienced on some systems which have manually installed extraneous
+  packages.
+
+* OpenSSH has been updated to 6.6p1. The new `openssh-server`
+  introduces `AuthorizedKeysCommand` option, which will be used in
+  upcoming releases to grant SSH-access to Puavo administrators.
+
+* MOTD has been updated to display an update note when a new version
+  is available.
+
+* Various extra configuration scripts (ECS) will be run in the last
+  phase of the update. ECSs are unsafe by nature, meaning that running
+  them has immediate and significant effects on the
+  availability/quality of the service. ECSs are *never* run
+  automatically, they always require attention and explicit execution
+  approval from the system admin.
+
+* New OpenVPN configuration for alternative/secondary adminstrative
+  tunnel. New OpenVPN instance with the alternative configuration will
+  be started automatically. This requires changes to the current
+  firewall configuration.
+
+* All smoke test combinations can be run sequentially without any
+  interruptions:
+
+      sudo puavo-bootserver-smoke-test --all
+
+  A test result summary is printed to standard output after all
+  test runs have finished.
+
+* The update tool has been changed to run apt non-interacively by
+  default. This change should make updating even easier by not
+  prompting any configuration file changes or debconf selections. To
+  run the update in the old interactive mode, run:
+
+      sudo opinsys-update-bootserver --apt-mode interactive
+
+  Use `--help` to get help.
+
+* To update, run:
+
+      sudo opinsys-update-bootserver
+
+  * During the update, debconf can ask some questions. Accept the
+    default answer to each question:
+
+        Q: Check server's SSL certificate?
+        A: demand
+
+        Q: Restart services during package upgrades without asking?
+        A: no
+
+        Q: Services to restart for nslcd upgrade?
+        A: racoon cups cron atd
+
+        Q: Disable SSH password authentication for root?
+        A: No
+
+</code></pre>
+            </div>
+        </div>
+        <script src="../bundle.js?v=2" charset="utf-8"></script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9439432-8', 'auto');
+  ga('send', 'pageview');
+
+       </script>
+    </body>
+</html>
