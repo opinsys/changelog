@@ -18,6 +18,57 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+## Opinsys 15.43 - Stella {#ltsp-opinsysrestricted-trusty-2015-10-}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Uusi ominaisuus: Keskitetty kotisivuasetus Google Chrome/Chromium-selaimille">
+  Puavo-hallintaliittymästä asetettava kotisivu-asetus toimii nyt Firefox-selaimen lisäksi myös
+  Chrome ja Chromium-selaimilla.
+</advanced>
+
+- <advanced title="Lisäys: Tuki Picaxe-mikrokontrollerille">
+  Korjattu käyttöoikeuksia, niin että laitetta on mahdollista käyttää ohjelmointityöaluilla.
+</advanced>
+
+- <advanced title="Korjaus: Tulostaminen Tuxpaintissa">
+   Tuxpaintilla tulostaminen ei ole aiemmin toiminut, mikäli koululle ei ole ollut asetettuna oletustulostinta.
+   Nyt Tuxpaintin tulostuspainike avaa ikkunan, josta voi valita halutun tulostimen.
+</advanced>
+
+- <advanced title="Korjaus: Ekapeli Alun toimivuus Intel q965-tietokoneilla">
+  Ekapeli Alku ei toiminut aiemmin kunnolla kyseistä komponenttia käyttävillä tietokoneilla. Pelin grafiikat
+  eivät näkyneet oikein ja esimerkiksi tehtävissä kirjaimet eivät näkyneet lainkaan. Nyt ongelmaa on kierretty
+  siten, että grafiikat toimivat oikein, mutta koneen suorittimesta riippuen ne saattavat olla vähän hitaammat.
+</advanced>
+
+- <advanced title="Korjaus: Päivitysilmoitus henkilökohtaisesti ylläpidettävällä kannettavalla">
+  Edellisen versiopäivityksen seurauksena päivitysilmoituksen käytös muuttui niin, että se tuli tarpeettomasti
+  näkyviin aina kerran tunnissa vaikka varsinaista päivitystä ei tehty. Jatkossa ilmoitus tulee vain, kun
+  varsinainen järjestelmäpäivitys on oikeasti tehty.
+</advanced>
+
+- <advanced title="Korjaus: USB-laitteiden toimivuus kannettavilla käytettäessä akkuvirtaa">
+  Joillakin kannettavamalleilla (esim. Lenovo 11e) usb-laitteet eivät välttämättä toimineet, mikäli käytettiin
+  pelkkää akkuvirtaa. Ongelma saattoi näkyä esimerkiksi niin, että ulkoinen hiiri tai muistikortinlukija eivät
+  toimineet. Tämä johtui siitä, että tietokoneen usb-portit menivät virransäästötilaan. Ongelma on nyt korjattu.
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+
+- <advanced title="Lisätty Vitikkalan koulun taidekuvat kirjautumisruudun taustakuvalikoimaan">
+  Kuvat löytyvät nimellä vitikkala.
+</advanced>
+
+- <advanced title="Networkmanager-asetukset kannettavien asennuksen yhteydessä">
+  Kannettavilla saattoi asennuksen yhteydessä ilmetä, että kaikki langattoman verkon asetukset
+  eivät tulleet koneelle oikein. Ongelma on nyt <a href="https://github.com/opinsys/puavo/issues/259">korjattu</a>.
+</advanced>
+
 ## Opinsys 15.40 - Valio {#ltsp-opinsysrestricted-trusty-2015-10-02-065105-i386}
 
 ### Korjaukset ja muut muutokset
