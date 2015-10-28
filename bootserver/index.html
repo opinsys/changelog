@@ -16,6 +16,51 @@
 
 <pre class="markdown"><code>
 
+## Release 24 {#24}
+
+* The default administrative VPN interface has been renamed to `vpn1`
+  and it's type is changed from `tun` to `tap`. The change is put into
+  effect the next time `openvpn` is restarted.
+
+* The recommended kernel is updated to 3.10.92-031092.
+
+* Update path 23 => 24
+
+  - Typically, need to get 115.0MiB of archives.
+
+  - Has **very low** impact on the availability of the end user service:
+
+    - No services will be restarted. The service is affected only
+      cpu/net/disk usage of the update process.
+
+  - <advanced title="6 new packages">
+        linux-headers-3.10.92-031092          (3.10.92-031092.201510262203)
+        linux-headers-3.10.92-031092-generic  (3.10.92-031092.201510262203)
+        linux-headers-3.2.0-92                (3.2.0-92.131)
+        linux-headers-3.2.0-92-generic        (3.2.0-92.131)
+        linux-image-3.10.92-031092-generic    (3.10.92-031092.201510262203)
+        linux-image-3.2.0-92-generic          (3.2.0-92.131)
+</advanced>
+
+  - <advanced title="16 updated packages">
+        apt                    (0.8.16~exp12ubuntu10.25 => 0.8.16~exp12ubuntu10.26)
+        apt-transport-https    (0.8.16~exp12ubuntu10.25 => 0.8.16~exp12ubuntu10.26)
+        apt-utils              (0.8.16~exp12ubuntu10.25 => 0.8.16~exp12ubuntu10.26)
+        libapt-inst1.4         (0.8.16~exp12ubuntu10.25 => 0.8.16~exp12ubuntu10.26)
+        libapt-pkg4.12         (0.8.16~exp12ubuntu10.25 => 0.8.16~exp12ubuntu10.26)
+        libmysqlclient18       (5.5.44-0ubuntu0.12.04.1 => 5.5.46-0ubuntu0.12.04.2)
+        libpq5                 (9.1.18-0ubuntu0.12.04 => 9.1.19-0ubuntu0.12.04)
+        linux-generic          (3.2.0.91.105 => 3.2.0.92.106)
+        linux-headers-generic  (3.2.0.91.105 => 3.2.0.92.106)
+        linux-image-generic    (3.2.0.91.105 => 3.2.0.92.106)
+        linux-image-server     (3.2.0.91.105 => 3.2.0.92.106)
+        mysql-common           (5.5.44-0ubuntu0.12.04.1 => 5.5.46-0ubuntu0.12.04.2)
+        opinsys-bootserver     (0.6.2-233+precise+master.8783cea597009d5922d0fa750915b95ab2126346 => 0.6.3-237+precise+master.475d4a2c60ca8e3821bc11ae34394162f4980664)
+        opinsys-rules          (0.6.2-233+precise+master.8783cea597009d5922d0fa750915b95ab2126346 => 0.6.3-237+precise+master.475d4a2c60ca8e3821bc11ae34394162f4980664)
+        tzdata                 (2015f-0ubuntu0.12.04 => 2015g-0ubuntu0.12.04)
+        tzdata-java            (2015f-0ubuntu0.12.04 => 2015g-0ubuntu0.12.04)
+</advanced>
+
 ## Release 23 {#23}
 
 * Lots of security fixes in various packages.
