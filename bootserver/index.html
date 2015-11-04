@@ -16,6 +16,73 @@
 
 <pre class="markdown"><code>
 
+## Release 25 {#25}
+
+* Package `puavo-rest` is updated to fix a bootserver update issue in a
+  situation where an organization owner list contained a dangling
+  reference to a previously deleted user. Deleted user appeared as an
+  invalid entry in the organization owner list which caused the update
+  to abort in the post-update phase.
+
+* Security updates:
+
+  - Package `ntp`:
+    [CVE-2015-5146](https://security-tracker.debian.org/tracker/CVE-2015-5146),
+    [CVE-2015-5146](https://security-tracker.debian.org/tracker/CVE-2015-5146),
+    [CVE-2015-5194](https://security-tracker.debian.org/tracker/CVE-2015-5194),
+    [CVE-2015-5194](https://security-tracker.debian.org/tracker/CVE-2015-5194),
+    [CVE-2015-5195](https://security-tracker.debian.org/tracker/CVE-2015-5195),
+    [CVE-2015-5195](https://security-tracker.debian.org/tracker/CVE-2015-5195),
+    [CVE-2015-5196](https://security-tracker.debian.org/tracker/CVE-2015-5196),
+    [CVE-2015-5196](https://security-tracker.debian.org/tracker/CVE-2015-5196),
+    [CVE-2015-7703](https://security-tracker.debian.org/tracker/CVE-2015-7703),
+    [CVE-2015-5219](https://security-tracker.debian.org/tracker/CVE-2015-5219),
+    [CVE-2015-5219](https://security-tracker.debian.org/tracker/CVE-2015-5219),
+    [CVE-2015-5300](https://security-tracker.debian.org/tracker/CVE-2015-5300),
+    [CVE-2015-5300](https://security-tracker.debian.org/tracker/CVE-2015-5300),
+    [CVE-2015-7691](https://security-tracker.debian.org/tracker/CVE-2015-7691),
+    [CVE-2015-7691](https://security-tracker.debian.org/tracker/CVE-2015-7691),
+    [CVE-2015-7692](https://security-tracker.debian.org/tracker/CVE-2015-7692),
+    [CVE-2015-7702](https://security-tracker.debian.org/tracker/CVE-2015-7702),
+    [CVE-2015-7701](https://security-tracker.debian.org/tracker/CVE-2015-7701),
+    [CVE-2015-7701](https://security-tracker.debian.org/tracker/CVE-2015-7701),
+    [CVE-2015-7704](https://security-tracker.debian.org/tracker/CVE-2015-7704),
+    [CVE-2015-7704](https://security-tracker.debian.org/tracker/CVE-2015-7704),
+    [CVE-2015-7705](https://security-tracker.debian.org/tracker/CVE-2015-7705),
+    [CVE-2015-7850](https://security-tracker.debian.org/tracker/CVE-2015-7850),
+    [CVE-2015-7850](https://security-tracker.debian.org/tracker/CVE-2015-7850),
+    [CVE-2015-7852](https://security-tracker.debian.org/tracker/CVE-2015-7852),
+    [CVE-2015-7852](https://security-tracker.debian.org/tracker/CVE-2015-7852),
+    [CVE-2015-7853](https://security-tracker.debian.org/tracker/CVE-2015-7853),
+    [CVE-2015-7853](https://security-tracker.debian.org/tracker/CVE-2015-7853),
+    [CVE-2015-7855](https://security-tracker.debian.org/tracker/CVE-2015-7855),
+    [CVE-2015-7855](https://security-tracker.debian.org/tracker/CVE-2015-7855),
+    [CVE-2015-7871](https://security-tracker.debian.org/tracker/CVE-2015-7871),
+    [CVE-2015-7871](https://security-tracker.debian.org/tracker/CVE-2015-7871)
+
+  - Package `unzip`:
+    [CVE-2015-7696](https://security-tracker.debian.org/tracker/CVE-2015-7696),
+    [CVE-2015-7697](https://security-tracker.debian.org/tracker/CVE-2015-7697)
+
+* Update path 24 => 25
+
+  - Typically, need to get 45.7MiB of archives.
+
+  - Has **low** impact on the availability of the end user service:
+
+    - Daemon process `puavo-rest` will be started and stopped during
+      the update process. Estimated service downtime for this process
+      is ~20sec. During the downtime, netboot devices are unable to
+      boot or login.
+
+  - <advanced title="5 updated packages">
+        ntp                    (4.2.6.p3+dfsg-1ubuntu3.4 => 4.2.6.p3+dfsg-1ubuntu3.6)
+        ntpdate                (4.2.6.p3+dfsg-1ubuntu3.4 => 4.2.6.p3+dfsg-1ubuntu3.6)
+        puavo-rest             (0.11.0-676+precise.master.c1a2b763a07c9a4d91f39dafe448088cff0f2143 => 0.11.0-717+precise.master.94141c4f9ada98837c5e56b3e69ff18ea849d7a8)
+        puavo-rest-bootserver  (0.11.0-676+precise.master.c1a2b763a07c9a4d91f39dafe448088cff0f2143 => 0.11.0-717+precise.master.94141c4f9ada98837c5e56b3e69ff18ea849d7a8)
+        unzip                  (6.0-4ubuntu2.3 => 6.0-4ubuntu2.4)
+</advanced>
+
 ## Release 24 {#24}
 
 * The default administrative VPN interface has been renamed to `vpn1`
