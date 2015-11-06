@@ -18,6 +18,66 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+## Opinsys 15.45 - Reima {#ltsp-opinsysrestricted-trusty-2015-11-05}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Päivitys: Uusi LibreOffice 5">
+  LibreOffice toimisto-ohjelmisto on päivitetty uusimpaan versioon 5. Päivitys ei tuo suuria muutoksia käyttöliittymään, mutta korjaa
+  useita ohjelman bugeja, tiedostoyhteensopivuutta MS Officen kanssa ja pieniä käytettävyysongelmia. Esimerkiksi tekstinkäsittelydokumenttiin 
+  liitettyjen dokumenttien skaalaus on nyt oletuksena suhteellinen eli kuvien kuvasuhteet säilyvät oikeina kokoa muutettaessa. 
+</advanced>
+
+- <advanced title="Uusi ominaisuus: Ohjelmien käynnistysvalikossa ohjelmat on jaoteltu myös oppiaineiden mukaan">
+  Opinsys-järjestelmän sovelluksia on nyt mahdollista tutkia nyt myös oppiaineiden mukaisesti tehdyn jaottelun mukaisesti.
+  Jaottelu on OPS 2014 oppiaineiden mukainen. Normaalin jaoittelun (kategoriat) ja oppiainejaottelun välillä on mahdollista
+  liikkua valikossa olevilla välilehdillä. Oppiainejaottelu sisältää huomattavasti kapeamman sovellusvalikoiman perinteiseen
+  näkymään verrattuna, koska kaikkia sovelluksia ei luonnollisesti voi yhdistää suoraan tiettyyn oppiaineeseen. 
+  <img src="testi.png" width="20">
+</advanced>
+
+- <advanced title="Käynnistävalikon käyttöliittymään lisätty taikaisin-painike (nuoli)">
+  Käynnistävalikon käyttöliittymään on lisätty nyt myös nuolipainike, jolla pääsee takaisin valikkohierarkian edelliseen
+  näkymään. 
+</advanced>
+
+- <advanced title="Lisäys: Lmms-musiikintekosovellus">
+  Ohjelma löytyy valitsemalla ``Menu`` > ``Ääni & Video`` > ``LMMS -musiikkityökalu``.
+</advanced>
+
+- <advanced title="Lisäys: Käynnistävalikon Pelit-kategoria">
+  Käynnistävalikossa on nyt myös Peli-kategoria, josta oletuksena löytyy nyt yksi peli (Backgammon).
+</advanced>
+
+- <advanced title="Korjaus: Youtuben (Chrome/Chromium) ja Ekapelin (Alku) toiminta vanhoilla tietokoneilla (Intel q963/965)">
+  Ekapeli Alku ja Youtuben katsominen tietyillä noin viisi vuotta vanhoilla tietokoneilla (Fujitsu Siemens Esprimo, Hp Compaq dc7700) 
+  eivät toimineet hyvin. Aiheutuneet ongelmat olivat grafiikan piirrossa esiintyneitä visuaalisia ongelmia ja esimerkiksi koneen 
+  jumittelua. Ongelma esiintyi vain näillä tiettyä grafiikkapiiriä käyttävillä koneilla. Ekapelin osalta ongelmaa korjattiin
+  jo edellisessä versiopäivityksessä, mutta vaikkakin peli toimi vakaasti se oli hitaampi kuin normaalisti. Ongelmat on nyt korjattu.
+</advanced>
+
+- <advanced title="Korjaus: Linkkien avautuminen Chrome/Chromium -selaimilla">
+  Selainten ulkopuolelta avatut linkit (jos Chrome/Chromium on on oletusselaimena) avautuvat nyt olemassa olevan selainikkunan
+  uuteen välilehteen. Aiemmin linkit avautuivat uuteen ikkunaan. Ulkopuolelta avattavilla linkeillä tarkoitetaan muista sovelluksista
+  avattavia linkkejä jotka avautuvat oletusverkkoselaimessa (pikaviestin, sähköpostiohjelma jne.)
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+-  Pääkäyttäjien on mahdollista määritellä tageilla ympäristömuuttujia: esim. env:HUMPPA=1 env:LIBGL_ALWAYS_SOFTWARE=1
+-  mesa-dri -päivitys tagilla "edgers_mesa_dri" (ei välttämättä tarvita, koska automatiikka korjaa joitain 
+   näyttöpiiriongelmia (Intel q963/965, Ekapeli-alku ja chrome/youtube)
+-  xorg-intel + synaptics -ajurit päivitetty, vanhat saa takaisin tagilla "trusty_xorg_drivers"
+-  Webmenun kaksi sisältörakennetta on yhdistetty yhdeksi (normaali ja henkilökohtainen kannettava).
+-  edge-kernel päivitetty versioon 4.2.5.opinsys1, broadcom wireless ei enää toimi sen kanssa
+</advanced>
+
+
 ## Opinsys 15.42 - Stella {#ltsp-opinsysrestricted-trusty-2015-10-16-063617-i386}
 
 ### Korjaukset ja muut muutokset
