@@ -16,6 +16,55 @@
 
 <pre class="markdown"><code>
 
+## Release 26 {#26}
+
+* Package `puavo-rest`: optimized organization data queries by limiting
+  the search scope:
+  [opinsys/puavo-users@3c041501](https://github.com/opinsys/puavo-users/commit/3c041501bbdca5087c4106bab73db7d5e174e134)
+
+* Security updates:
+
+  - Package `libnspr4`:
+    [CVE-2015-7183](https://security-tracker.debian.org/tracker/CVE-2015-7183)
+
+  - Package `libnss3`:
+    [CVE-2015-7181](https://security-tracker.debian.org/tracker/CVE-2015-7181),
+    [CVE-2015-7182](https://security-tracker.debian.org/tracker/CVE-2015-7182)
+
+* Update path 25 => 26
+
+  - Typically, need to get 106.0MiB of archives.
+
+  - Has **low/medium** impact on the availability of the end user service:
+
+    - Daemon process `puavo-rest` will be started and stopped during
+      the update process. Estimated service downtime for this process
+      is ~30sec. During the downtime, netboot devices are unable to
+      boot or login.
+
+  - <advanced title="5 new packages">
+        gdisk                           (0.8.1-1ubuntu0.1)
+        libicu48                        (4.8.1.1-3ubuntu0.6)
+        linux-headers-3.2.0-94          (3.2.0-94.134)
+        linux-headers-3.2.0-94-generic  (3.2.0-94.134)
+        linux-image-3.2.0-94-generic    (3.2.0-94.134)
+</advanced>
+
+  - <advanced title="12 updated packages">
+        libnspr4               (4.10.7-0ubuntu0.12.04.1 => 4.10.10-0ubuntu0.12.04.1)
+        libnss3                (3.19.2-0ubuntu0.12.04.1 => 3.19.2.1-0ubuntu0.12.04.1)
+        libnss3-1d             (3.19.2-0ubuntu0.12.04.1 => 3.19.2.1-0ubuntu0.12.04.1)
+        linux-generic          (3.2.0.92.106 => 3.2.0.94.108)
+        linux-headers-generic  (3.2.0.92.106 => 3.2.0.94.108)
+        linux-image-generic    (3.2.0.92.106 => 3.2.0.94.108)
+        linux-image-server     (3.2.0.92.106 => 3.2.0.94.108)
+        puavo-image-tools      (0.16.1-928+precise+master.2211bb558f7f140674659071cb0e1cb09e82ab5f => 0.17.0-943+precise+master.7df6057a87f0e86a7c2997cfbe81325093c54de7)
+        puavo-ltsp-bootserver  (0.16.1-928+precise+master.2211bb558f7f140674659071cb0e1cb09e82ab5f => 0.17.0-943+precise+master.7df6057a87f0e86a7c2997cfbe81325093c54de7)
+        puavo-rest             (0.11.0-717+precise.master.94141c4f9ada98837c5e56b3e69ff18ea849d7a8 => 0.11.0-728+precise.master.d35b30b58bc86233baec8563ebd8bacf752f37da)
+        puavo-rest-bootserver  (0.11.0-717+precise.master.94141c4f9ada98837c5e56b3e69ff18ea849d7a8 => 0.11.0-728+precise.master.d35b30b58bc86233baec8563ebd8bacf752f37da)
+        unzip                  (6.0-4ubuntu2.4 => 6.0-4ubuntu2.5)
+</advanced>
+
 ## Release 25 {#25}
 
 * Package `puavo-rest` is updated to fix a bootserver update issue in a
