@@ -18,7 +18,52 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
-## Opinsys 15.45 - Reima {#ltsp-opinsysrestricted-trusty-2015-11-05}
+## Opinsys 15.47 - Tenho {#ltsp-opinsysrestricted-trusty-2015-11-18-124727-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Korjaus: Lenovo-kannettavien näppäimistön toimimattomuus">
+   Tietyillä Lenovon kannettavamalleilla (esim. Thinkpad 11e ja Thinkpad Edge 320) oli mahdollista saada näppäimistö toimimattomaan tilaan painamalla. Tämä painamalla 
+   äänevoimakkuuden säädön ``hiljemmalle-painiketta``, niin paljon että äänet menivät mykistykselle. Ongelma on ilmeisesti Lenovon kannettavien virheellisessä
+   laitehohjelmistossa, jonka aiheuttama ongelma on nyt käyttöjärjestelmässä kierretty.
+</advanced>
+
+- <advanced title="Lisäys: Python IDLE 3.4">
+   Python ohjelmointi IDE:n versio 3.4 on lisätty järjestelmään ja ohjelmointiohjelmien valikoimaan.
+</advanced>
+
+- <advanced title="Lisäys: Taustakuvan lukitseminen">
+   Järjestelmän pääkäyttäjien on mahdollista estää työpöydän taustakuvan vaihtaminen laitekohtaisella lukitusasetuksella. 
+   Tämä tapahtuu asettamalla laittelle tagi ``desktopbackgroundlock``.
+</advanced>
+
+- <advanced title="Korjaus: Välilehdet poistettu uloskirjautumisikkunasta">
+   Edellisen version yhteydessä lisätyt välilehdet on nyt otettu pois uloskirjautumisruudusta.
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Lisätty ``mumble``-paketti.
+- ``yenta_socket``-moduuli on asetettu oletuksena blacklistille. Säädettävissä tageilla takaisin päälle.
+- Tietokoneen käynnistyksen yhteydessä käynnistettäviä järjestelmän palveluita voidaan jatkossa hallinnoida tagien avulla. Haluttuja palveluita 
+  voidaan kytkeä päälle/pois esim. ongelman selvityksen ajaksi.
+- Laiteasetuksia/järjestelmäversio raportoidaan laitteen käynnistyksessä syslogiin. Tällä pyritään helpottamaan ongelman selvittämistä.
+- ``4.2.*`` kernelit käyttävät ``hwgen2``-nimeä.
+- Lisätty tagit joilla voi hallita Lenovon kannettavien volumesäädin/näppäimistö ongelmaa ``force_release_keys``.
+- Lisätty uusia intel x96x-piirisarjaisia tietokoneita (PCI ID-tiedot), joissa on havaittu grafiikkaongelmia (vrt. 15.45 - Reima).
+- Lisätty ``4.2.5`` kernelille bcmwl-moduuli.
+- Lisätty iwlwifi wlan-firmware (ucode 15) edge-kernelille.
+- Korjattu kirjautumisruudun satunnaisen taustakuvan arvonta niin, että on mahdollista näyttää pelkkiä Ubuntu oletustaustakuvia. 
+- Uusien tagien kuvaukset tarkemmin täällä: https://github.com/opinsys/puavo/wiki/Kernel-parameters-and-device-tags
+</advanced>
+
+
+## Opinsys 15.45 - Reima {#ltsp-opinsysrestricted-trusty-2015-11-05-140133-i386}
 
 ### Korjaukset ja muut muutokset
 
