@@ -23,9 +23,9 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 ### Korjaukset ja muut muutokset
 
 - <advanced title="Korjaus: Lenovo-kannettavien näppäimistön toimimattomuus">
-   Tietyillä Lenovon kannettavamalleilla (esim. Thinkpad 11e ja Thinkpad Edge 320) oli mahdollista saada näppäimistö toimimattomaan tilaan painamalla. Tämä painamalla 
-   äänevoimakkuuden säädön ``hiljemmalle-painiketta``, niin paljon että äänet menivät mykistykselle. Ongelma on ilmeisesti Lenovon kannettavien virheellisessä
-   laitehohjelmistossa, jonka aiheuttama ongelma on nyt käyttöjärjestelmässä kierretty.
+   Tietyillä Lenovon kannettavamalleilla (esim. Thinkpad 11e ja Thinkpad Edge 320) oli mahdollista saada näppäimistö toimimattomaan. Tämä painamalla 
+   äänevoimakkuuden säätöpainiketta hiljemmalle, niin että äänet menivät mykistykselle. Ongelma on ilmeisesti Lenovon kannettavien virheellisessä
+   laiteohjelmistossa, joka on nyt järjestelmässä kierretty.
 </advanced>
 
 - <advanced title="Lisäys: Python IDLE 3.4">
@@ -53,7 +53,7 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 - Tietokoneen käynnistyksen yhteydessä käynnistettäviä järjestelmän palveluita voidaan jatkossa hallinnoida tagien avulla. Haluttuja palveluita 
   voidaan kytkeä päälle/pois esim. ongelman selvityksen ajaksi.
 - Laiteasetuksia/järjestelmäversio raportoidaan laitteen käynnistyksessä syslogiin. Tällä pyritään helpottamaan ongelman selvittämistä.
-- ``4.2.*`` kernelit käyttävät ``hwgen2``-nimeä.
+- ``4.2.*`` kernelit käyttävät ``hwgen3``-nimeä.
 - Lisätty tagit joilla voi hallita Lenovon kannettavien volumesäädin/näppäimistö ongelmaa ``force_release_keys``.
 - Lisätty uusia intel x96x-piirisarjaisia tietokoneita (PCI ID-tiedot), joissa on havaittu grafiikkaongelmia (vrt. 15.45 - Reima).
 - Lisätty ``4.2.5`` kernelille bcmwl-moduuli.
