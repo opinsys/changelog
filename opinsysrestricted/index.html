@@ -18,28 +18,25 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
-## Opinsys 15.50 - Anna {#ltsp-opinsysrestricted-trusty-2015-12-09-122927-i386}
+## Opinsys 16.2 - Tulossa {#ltsp-opinsysrestricted-trusty-2016-01-14-093150-i386}
 
 ### Korjaukset ja muut muutokset
 
-- <advanced title="Lisäys: Source Sans fonttiperhe">
-   Järjestelmästä löytyy nyt viisi uutta Source Sans pro fonttia.
+- <advanced title="Lisäys: Menu-valikon oppiainenäkymää on laajennettu tulevan OPS2016 mukaiseksi.">
+   Oppiainevalikon sisältö on muutettu siten, että se noudattaa tulevan OPS2016 jaottelua. Lisäksi
+   valikkoon on lisätty verkosta löytyvää oppimateriaalia.
 </advanced>
 
-- <advanced title="Lisäys: Nalleohjelmoinnin esimerkkiohjelmat Arduino ohjelmointiympäristöön">
-   Arduino Idestä löytyy nyt Opinsys Nalle-ohjelmoinnin esimerkiksi valitsemalla ``File > Examples > Nalle``.
-   Esimerkeissä hyödynnetään kaikkia Nallen ominaisuuksia kuten kaiutinta, moottoreita, asentotunnistinta
-   ja etäisyyssensoria.
+- <advanced title="Lisäys: Opettajatietokoneisiin liitettyjen kosketustaulujen kalibrointi">
+   Joillakin älytykeillä (esim. Hitachi)/kosketusnäytöillä on saattanut olla ongelmana että kosketuspiste ei vastaa näytöllä
+   kosketettua kohtaa. Nyt asetusta on mahdollista laitekohtaisesti muuttaa Puavo-laitehallinnasta laitetagin avulla.
+   https://github.com/opinsys/puavo/wiki/Kernel-parameters-and-device-tags
 </advanced>
 
-- <advanced title="Lisäys: Ohjelmoitavan Zumo robotin esimerkkiohjelmat">
-   Arduino Idestä löytyy valmiina Zumorobotin ohjelmointiin hyödynnettäviä ohjelmapätkiä valitsemalla 
-   ``File`` > ``Examples`` > ``Zumo32U4`` / ``Zumo32U4_opinsys``.
-</advanced>
-
-- <advanced title="Korjaus: Lukituksen avauksen hitaus kannettavilla unitilasta herätessä">
-   Käyttöjärjestelmään on tehty korjauksia joiden tavoitteena on nopeuttaa näytönlukituksen avautumista, kun
-   kannettavat herätetään unitilasta.
+- <advanced title="Korjaus: Langattoman verkon tukiasemat">
+   Langattoman verkon tukiasemissa otetaan käyttöön tukiasemaohjelmiston uusi versio, joka korjaa joitakin
+   tukiasemiin liittymisessä olleita ongelmia sekä mahdollistaa uusien ominaisuuksien lisäämistä ja tilatiedon 
+   havainnointia.
 </advanced>
 
 
@@ -49,10 +46,7 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 ### Tekniset muutokset
 
 <advanced title="Näytä...">
-- Lisätty mahdollisuus vikatietojen keräämiseen kannettavilta Kdump-ominaisuuden avulla, mikäli tietokone 
-  kaatuu. Kdump aktivoidaan asettamalla tietokoneelle kernel-parametriksi ``crashkernel=128M``.
-- Lisätty seuraavia ohjelmapaketteja: ``krita, smartmontools, x-tile, ginn, touchegg``
-- Poistettu paketti ``sl`` (ole hyvä Petri!)
+- Poistettu kirjautumisruudun taustakuvista duplikaatteja sekä muuten sopimattomaksi havaittuja teoksia.
 </advanced>
 
 
