@@ -18,6 +18,43 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+## Opinsys 1603 - Juolukka {#ltsp-lukiolaiskannettava-trusty-2016-01-21-120716-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Huomioitavaa: Googlen Chrome-selaimen päivittyessä ilmoitus tuen loppumisesta">
+   Uusin Google Chrome-versio saattaa ilmoittaa, että "tuki tälle linux-alustalle päättyy jatkossa",
+   mutta tästä ei tarvitse huolehtia. Ilmoitus liittyy Chromeen huhtikuussa tuleviin muutoksiin,
+   mutta pyrimme huolehtimaan muutoken niin, että Chrome toimii jatkossakin.
+</advanced>
+
+- <advanced title="Korjaus: Langattomaan verkkoon liittyminen kannettavalla">
+  Langattomaan verkkoon liittymisessä käytettävää komponenttia on päivitetty. Tämän pitäisi
+  korjata joissakin tilanteissa ilmenneitä ongelmia.</advanced>
+
+- <advanced title="Lisäys: Menu-valikon oppiainenäkymää on laajennettu tulevan OPS2016 mukaiseksi.">
+   Oppiainevalikon sisältö on muutettu siten, että se noudattaa tulevan OPS2016 jaottelua. Lisäksi
+   valikkoon on lisätty verkosta löytyvää oppimateriaalia.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Poistettu kirjautumisruudun taustakuvista duplikaatteja sekä muuten sopimattomaksi havaittuja teoksia.
+- Lisäys: Opettajatietokoneisiin liitettyjen kosketustaulujen kalibrointi
+   Joillakin älytykeillä (esim. Hitachi)/kosketusnäytöillä on saattanut olla ongelmana, että kosketuspiste ei vastaa näytöllä
+   kosketettua kohtaa. Nyt asetusta on mahdollista laitekohtaisesti muuttaa Puavo-laitehallinnasta laitetagin avulla.
+   https://github.com/opinsys/puavo/wiki/Kernel-parameters-and-device-tags
+- Korjaus: Langattoman verkon tukiasemat
+   Langattoman verkon tukiasemissa otetaan käyttöön tukiasemaohjelmiston uusi versio, joka korjaa joitakin
+   tukiasemiin liittymisessä olleita ongelmia sekä mahdollistaa uusien ominaisuuksien lisäämistä ja tilatiedon
+   havainnointia.
+</advanced>
+
+
 ## L1550 - Inkivääri {#ltsp-lukiolaiskannettava-trusty-2015-12-10-053724-i386}
 
 ### Korjaukset ja muut muutokset
