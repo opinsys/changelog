@@ -16,6 +16,117 @@
 
 <pre class="markdown"><code>
 
+## Release 28 {#28}
+
+### Notable changes
+
+- The recommended kernel is updated to generic-lts-trusty which is also
+  currently the default kernel in vanilla Ubuntu Precise installations.
+
+- Image synchronization mechanism is updated to obey Puavo's image
+  series configuration. To enable synchronization, image series must be
+  configured by setting image series source URLs in school and/or
+  organization pages. If image source URLs are not set, image
+  synchronization mechanism is disabled (images won't get removed or
+  downloaded).
+
+### Security updates
+
+  - Package `bind9`:
+    [CVE-2015-8704](https://security-tracker.debian.org/tracker/CVE-2015-8704)
+
+  - Package `curl`:
+    [CVE-2014-0015](https://security-tracker.debian.org/tracker/CVE-2014-0015),
+    [CVE-2014-0138](https://security-tracker.debian.org/tracker/CVE-2014-0138),
+    [CVE-2014-3143](https://security-tracker.debian.org/tracker/CVE-2014-3143),
+    [CVE-2016-0755](https://security-tracker.debian.org/tracker/CVE-2016-0755)
+
+  - Package `libxml2`:
+    [CVE-2015-7499](https://security-tracker.debian.org/tracker/CVE-2015-7499),
+    [CVE-2015-8710](https://security-tracker.debian.org/tracker/CVE-2015-8710)
+
+  - Package `mysql-5.5`:
+    [CVE-2016-0505](https://security-tracker.debian.org/tracker/CVE-2016-0505),
+    [CVE-2016-0546](https://security-tracker.debian.org/tracker/CVE-2016-0546),
+    [CVE-2016-0596](https://security-tracker.debian.org/tracker/CVE-2016-0596),
+    [CVE-2016-0597](https://security-tracker.debian.org/tracker/CVE-2016-0597),
+    [CVE-2016-0598](https://security-tracker.debian.org/tracker/CVE-2016-0598),
+    [CVE-2016-0600](https://security-tracker.debian.org/tracker/CVE-2016-0600),
+    [CVE-2016-0606](https://security-tracker.debian.org/tracker/CVE-2016-0606),
+    [CVE-2016-0608](https://security-tracker.debian.org/tracker/CVE-2016-0608),
+    [CVE-2016-0609](https://security-tracker.debian.org/tracker/CVE-2016-0609),
+    [CVE-2016-0616](https://security-tracker.debian.org/tracker/CVE-2016-0616)
+
+  - Package `openjdk-6`:
+    [CVE-2016-0402](https://security-tracker.debian.org/tracker/CVE-2016-0402),
+    [CVE-2016-0448](https://security-tracker.debian.org/tracker/CVE-2016-0448),
+    [CVE-2016-0466](https://security-tracker.debian.org/tracker/CVE-2016-0466),
+    [CVE-2016-0483](https://security-tracker.debian.org/tracker/CVE-2016-0483),
+    [CVE-2016-0494](https://security-tracker.debian.org/tracker/CVE-2016-0494),
+    [CVE-2015-8472](https://security-tracker.debian.org/tracker/CVE-2015-8472)
+
+  - Package `rsync`:
+    [CVE-2014-9512](https://security-tracker.debian.org/tracker/CVE-2014-9512)
+
+### Update path from Release 27
+
+- Typically, need to get 196.0Mib of archives.
+
+- Has **medium** impact on the availability of the end user service:
+
+  - Several daemon processes, such as `bind9`, `ntpd` and `puavo-rest`,
+    will be restarted during the update process
+
+  - Daemon process `puavo-rest` will be started and stopped during the
+    update process. Estimated service downtime for this process ranges
+    from 30sec to 2min. During the downtime, devices are unable to boot
+    or login.
+
+- <advanced title="5 new packages">
+      linux-headers-3.2.0-98          (3.2.0-98.138)
+      linux-headers-3.2.0-98-generic  (3.2.0-98.138)
+      linux-image-3.13.0-77-generic   (3.13.0-77.121~precise1)
+      linux-image-3.2.0-98-generic    (3.2.0-98.138)
+      linux-image-generic-lts-trusty  (3.13.0.77.69)
+</advanced>
+
+- <advanced title="34 updated packages">
+      bind9                   (9.8.1.dfsg.P1-4ubuntu0.14 => 9.8.1.dfsg.P1-4ubuntu0.15)
+      bind9-host              (9.8.1.dfsg.P1-4ubuntu0.14 => 9.8.1.dfsg.P1-4ubuntu0.15)
+      bind9utils              (9.8.1.dfsg.P1-4ubuntu0.14 => 9.8.1.dfsg.P1-4ubuntu0.15)
+      curl                    (7.22.0-3ubuntu4.14 => 7.22.0-3ubuntu4.15)
+      dnsutils                (9.8.1.dfsg.P1-4ubuntu0.14 => 9.8.1.dfsg.P1-4ubuntu0.15)
+      icedtea-6-jre-cacao     (6b37-1.13.9-1ubuntu0.12.04.1 => 6b38-1.13.10-0ubuntu0.12.04.1)
+      icedtea-6-jre-jamvm     (6b37-1.13.9-1ubuntu0.12.04.1 => 6b38-1.13.10-0ubuntu0.12.04.1)
+      libbind9-80             (9.8.1.dfsg.P1-4ubuntu0.14 => 9.8.1.dfsg.P1-4ubuntu0.15)
+      libcurl3                (7.22.0-3ubuntu4.14 => 7.22.0-3ubuntu4.15)
+      libcurl3-gnutls         (7.22.0-3ubuntu4.14 => 7.22.0-3ubuntu4.15)
+      libdns81                (9.8.1.dfsg.P1-4ubuntu0.14 => 9.8.1.dfsg.P1-4ubuntu0.15)
+      libisc83                (9.8.1.dfsg.P1-4ubuntu0.14 => 9.8.1.dfsg.P1-4ubuntu0.15)
+      libisccc80              (9.8.1.dfsg.P1-4ubuntu0.14 => 9.8.1.dfsg.P1-4ubuntu0.15)
+      libisccfg82             (9.8.1.dfsg.P1-4ubuntu0.14 => 9.8.1.dfsg.P1-4ubuntu0.15)
+      liblwres80              (9.8.1.dfsg.P1-4ubuntu0.14 => 9.8.1.dfsg.P1-4ubuntu0.15)
+      libmysqlclient18        (5.5.46-0ubuntu0.12.04.2 => 5.5.47-0ubuntu0.12.04.1)
+      libxml2                 (2.7.8.dfsg-5.1ubuntu4.13 => 2.7.8.dfsg-5.1ubuntu4.14)
+      libxml2-utils           (2.7.8.dfsg-5.1ubuntu4.13 => 2.7.8.dfsg-5.1ubuntu4.14)
+      linux-generic           (3.2.0.97.113 => 3.2.0.98.114)
+      linux-headers-generic   (3.2.0.97.113 => 3.2.0.98.114)
+      linux-image-generic     (3.2.0.97.113 => 3.2.0.98.114)
+      linux-image-server      (3.2.0.97.113 => 3.2.0.98.114)
+      mysql-common            (5.5.46-0ubuntu0.12.04.2 => 5.5.47-0ubuntu0.12.04.1)
+      ntp                     (4.2.6.p3+dfsg-1ubuntu3.7 => 4.2.6.p3+dfsg-1ubuntu3.8)
+      ntpdate                 (4.2.6.p3+dfsg-1ubuntu3.7 => 4.2.6.p3+dfsg-1ubuntu3.8)
+      openjdk-6-jre-headless  (6b37-1.13.9-1ubuntu0.12.04.1 => 6b38-1.13.10-0ubuntu0.12.04.1)
+      openjdk-6-jre-lib       (6b37-1.13.9-1ubuntu0.12.04.1 => 6b38-1.13.10-0ubuntu0.12.04.1)
+      opinsys-bootserver      (0.6.3-237+precise+master.475d4a2c60ca8e3821bc11ae34394162f4980664 => 0.7.0-269+precise+master.89ce51893173f8cd3b16dfaebd445340c525f4eb)
+      opinsys-rules           (0.6.3-237+precise+master.475d4a2c60ca8e3821bc11ae34394162f4980664 => 0.7.0-269+precise+master.89ce51893173f8cd3b16dfaebd445340c525f4eb)
+      puavo-ltsp-bootserver   (0.17.0-959+precise+master.bb116591fb2a6683633fbb61649d83750c673890 => 0.17.0-960+precise+master.e6ded60e1ba9dfd640a9369aad7396a58a4c9ab6)
+      puavo-rest              (0.11.0-758+precise.master.b08439ffe648a37efa156cef9595125f4c54fea5 => 0.11.0-777+precise.master.36ed29b009477abe4c3a19d486621767c5156e88)
+      puavo-rest-bootserver   (0.11.0-758+precise.master.b08439ffe648a37efa156cef9595125f4c54fea5 => 0.11.0-777+precise.master.36ed29b009477abe4c3a19d486621767c5156e88)
+      rsync                   (3.0.9-1ubuntu1 => 3.0.9-1ubuntu1.1)
+      ruby-puavobs            (0.17.0-959+precise+master.bb116591fb2a6683633fbb61649d83750c673890 => 0.17.0-960+precise+master.e6ded60e1ba9dfd640a9369aad7396a58a4c9ab6)
+</advanced>
+
 ## Release 27 {#27}
 
 ### Notable changes
