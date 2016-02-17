@@ -16,6 +16,48 @@
 
 <pre class="markdown"><code>
 
+## Release 29 {#29}
+
+### Security updates
+
+  - Package `eglibc`:
+    [CVE-2015-7547](https://security-tracker.debian.org/tracker/CVE-2015-7547)
+
+  - Package `postgresql-9.1`:
+    [CVE-2016-0773](https://security-tracker.debian.org/tracker/CVE-2016-0773),
+    [CVE-2016-0766](https://security-tracker.debian.org/tracker/CVE-2016-0766)
+
+  - Package `libgcrypt11`:
+    [CVE-2015-7511](https://security-tracker.debian.org/tracker/CVE-2015-7511)
+
+  - Package `samba`:
+    [CVE-2015-5252](https://security-tracker.debian.org/tracker/CVE-2015-5252)
+
+### Update path from Release 28
+
+- Typically, need to get 38.0Mib of archives.
+
+- Has **very high** impact on the availability of the end user service:
+
+  - It is recommended to reboot the system to ensure all processes use
+    the latest libc.
+
+- <advanced title="13 updated packages">
+      libc-bin           (2.15-0ubuntu10.12 => 2.15-0ubuntu10.13)
+      libc-dev-bin       (2.15-0ubuntu10.12 => 2.15-0ubuntu10.13)
+      libc6              (2.15-0ubuntu10.12 => 2.15-0ubuntu10.13)
+      libc6-dev          (2.15-0ubuntu10.12 => 2.15-0ubuntu10.13)
+      libgcrypt11        (1.5.0-3ubuntu0.4 => 1.5.0-3ubuntu0.5)
+      libpq5             (9.1.19-0ubuntu0.12.04 => 9.1.20-0ubuntu0.12.04)
+      libwbclient0       (3.6.3-2ubuntu2.13 => 3.6.3-2ubuntu2.14)
+      multiarch-support  (2.15-0ubuntu10.12 => 2.15-0ubuntu10.13)
+      nscd               (2.15-0ubuntu10.12 => 2.15-0ubuntu10.13)
+      samba              (3.6.3-2ubuntu2.13 => 3.6.3-2ubuntu2.14)
+      samba-common       (3.6.3-2ubuntu2.13 => 3.6.3-2ubuntu2.14)
+      samba-common-bin   (3.6.3-2ubuntu2.13 => 3.6.3-2ubuntu2.14)
+      smbclient          (3.6.3-2ubuntu2.13 => 3.6.3-2ubuntu2.14)
+</advanced>
+
 ## Release 28 {#28}
 
 ### Notable changes
