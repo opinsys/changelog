@@ -18,6 +18,54 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+
+## Opinsys 16.8 - tulossa {#ltsp-opinsysrestricted-trusty-2016-02-}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title= "Huomioitavaa: Google Chrome ei jatkossa ole enää käytettävissä vanhoilla tietokoneilla">
+   Google on ilmoittanut, että se ei jatkossa enää julkaise Chrome-selaimestaan 32-bit versiota. 
+   Tämä tarkoittaa, että Chrome-selainta ei ole mahdollista enää käyttää vanhimmilla tietokoneilla. Tietokoneet 
+   joilta tuki poistuu ovat tyypillisesti noin 10 vuotta vanhoja tietokoneita tai tiettyjä aikanaan "halvemman hintaluokan" 
+   laitteina myytyjä tietokoneita.
+
+   Muilla tietokoneilla (64-bit) Chrome tulee toimimaan jatkossakin normaalisti. Vanhemmat 32-bit koneet ovat edelleen muuten 
+   toimivia, mutta niillä selainvaihtoehtoina ovat Firefox ja Chromium. Chromiumin on Chromen avoin lähdekoodin versio. Tällä hetkellä
+   näiden selainten välillä ei ole huomattavia eroja, koska Chromium hyödyntää Chromen mukana tulevia liitännäisiä (esim. Adobe Flash).
+   Jatkossa on kuitenkin todennäköistä, että Chromiumista poistuu tuki tietyille suljetuille tekniikoille kuten Adoben Flashille ja ne toimivat.
+   vain Chromella. Lisäksi palvelut kuten MTV:n Katsomo ja Netflix tulevat edellyttämään Chromen käyttämistä. Useimmat verkkopalvelut ja esim. 
+   Googlen omat palvelut ovat tyypillisesti näistä tekniikoista riippumattomia ja toimivat siten normaalisti kaikilla järjestelmän selaimilla.
+
+   Chrome toimii näillä laitteilla kuitenkin kevytpääte-tilassa. Muilla tietokoneilla (64-bit suoritin) Chromen käyttö on 
+   mahdollista kuten ennenkin. 
+</advanced>
+
+- <advanced title="Muutos: Kaikki selaimet lisätty työpöydän alapaneeliin">
+   Työpöydän alapaneeliin on lisätty kaikki verkkoselaimet. Tämän muutoksen tarkoituksena on helpottaa
+   selainten löytymistä ja välttää sekaannusta tilanteissa jotka voisivat aiheutua siitä, että
+   Google Chrome-selain ei ole enää käytettävissä kaikista vanhimmilla laitteilla.
+</advanced>
+
+- <advanced title="Päivitys: OpenJDK päivitetty versioon 8 (NetBeans TMC)">
+   OpenJDK Java-ympäristö on päivitetty versioon 8. Muutoksen jälkeen Helsingin yliopiston Mooc-ohjelmointikurssit
+   toimivat ilman erillisiä versiomuutoksia NetBeans-ohjelmistoa käytettäessä.
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Päätekuvan Legacy-kernel on päivitetty ja lisäksi se on oletuksena 64-bit. Vanha legacy löytyy nimellä: ``old-legacy``.
+  Lisäksi legacy-kerneleistä on olemassa 32-bit versiot ``oldlegacy-i386`` ja ``legacy-i386``. 64-bit kernelit löytyvät 
+  nimillä ``oldlegacy-amd64`` ja ``legacy-amd64``.
+- Päätekuvassa on kannettavilla käytössä prosessoriarkkitehtuurin automaattinen tunnistaminen. Ellei arkkitehtuuria ole
+  erikseen määrätty Puavossa, päätekuva päättelee käynnistyksen yhteydessä kernel-version johon käynnistetään. Kerneleistä on 
+  olemassa amd64 ja i386 -versiot. Verkkoboottilaitteilla toimii idealtaan sama mekanismi, mutta se tarvitsee toimiakseen
+  vähintää boottipalvelin version 30.
+</advanced>
+
 ## Opinsys 16.5 - Lumi {#ltsp-opinsysrestricted-trusty-2016-02-02-111639-i386}
 
 ### Korjaukset ja muut muutokset
