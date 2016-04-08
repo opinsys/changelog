@@ -18,6 +18,42 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+## Opinsys 16.14 - Ahvo {#}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title= "Korjaus: Dropbox">
+   Dropboxin automaattinen päivitys saattoi asentaa ohjelmasta toimimattoman version ja siten estää ohjelman käynnistymisen.
+   Ongelma johtui siitä, että Dropbox päivitti itsensä 64-bit versioon joka ei sitten suoraan toiminut. Ongelma on nyt korjattu.
+</advanced>
+
+- <advanced title="Korjaus: Wlan-tukiasemat">
+   Wlan-tukiasemiin on tehty yleisiä toimintaa parantavia korjauksia. Samalla tuki vanhoille 802.11b-standardin laitteille on 
+   oletuksena kytketty pois.
+</advanced>
+
+- <advanced title="Päivitys: Oracle Java">
+   Java on päivitetty versioon ``8 Update 77``.
+</advanced>
+
+- <advanced title="MP3- ja ogg-tiedostojen avautuminen">
+   Musiikki-/äänitiedostot avautuivat aiemmin oletuksena Banhee soittimella. Banshee on kuitenkin osoittautunut toisinaan hitaaksi ja epävakaaksi,
+   joten oletustoistosovellukseksi on vaihdettu VLC.
+</advanced>
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Kannettavien sertifikaatit tarkistetaan ja tarvittaessa (mikäli sertifikaatti umpeutuu puolen vuoden sisällä) uusitaan päivityksen 
+  yhteydessä (puavo-update-client).
+- Kannettavien päivityksen keskeytyminen saattoi estää näennäisen levytilapuutteen takia päivityksen onnistumisen. Ongelma on nyt korjattu
+  ja lisää tietoa löytyy täältä: https://github.com/opinsys/puavo-ltsp/commit/9be98d568377d9af5ed08012b2b3ad63c2fcfc06.
+- Poistettu tilan säästämiseksi päätekuvasta työpöytäohjelmisto yms. -paketteja, joita ei ole ollut Webmenussa.
+- Edge-kernel on päivitetty versioon 4.5.0
+- Lisätty paketit Mono-ajoympäristöä varten (mahdollistaa esim. Repetier 3d-tulostimen testaamisen)
+- Lisätty html-validaattorit: Tidy ja Weblint.
+</advanced>
 
 ## Opinsys 16.9 - Kauko {#ltsp-opinsysrestricted-trusty-2016-03-03-061622-i386}
 
@@ -87,13 +123,6 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 </advanced>
 
 
-### Tiedossa olevat ongelmat
-
-
-### Tekniset muutokset
-
-
-
 
 ## Opinsys 16.3 - Netta {#ltsp-opinsysrestricted-trusty-2016-01-21-102630-i386}
 
@@ -117,10 +146,6 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 </advanced>
 
 
-### Tiedossa olevat ongelmat
-
-
-### Tekniset muutokset
 
 <advanced title="Näytä...">
 - Poistettu kirjautumisruudun taustakuvista duplikaatteja sekä muuten sopimattomaksi havaittuja teoksia.
@@ -150,9 +175,6 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
    Käyttöjärjestelmään on tehty korjauksia joiden tavoitteena on nopeuttaa näytönlukituksen avautumista, kun
    kannettavat herätetään unitilasta.
 </advanced>
-
-
-### Tiedossa olevat ongelmat
 
 
 ### Tekniset muutokset
@@ -187,9 +209,6 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 - <advanced title="Korjaus: Välilehdet poistettu uloskirjautumisikkunasta">
    Edellisen version yhteydessä lisätyt välilehdet on nyt otettu pois uloskirjautumisruudusta.
 </advanced>
-
-
-### Tiedossa olevat ongelmat
 
 
 ### Tekniset muutokset
@@ -255,8 +274,6 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 </advanced>
 
 
-### Tiedossa olevat ongelmat
-
 
 ### Tekniset muutokset
 
@@ -305,9 +322,6 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
   pelkkää akkuvirtaa. Ongelma saattoi näkyä esimerkiksi niin, että ulkoinen hiiri tai muistikortinlukija eivät
   toimineet. Tämä johtui siitä, että tietokoneen usb-portit menivät virransäästötilaan. Ongelma on nyt korjattu.
 </advanced>
-
-
-### Tiedossa olevat ongelmat
 
 
 ### Tekniset muutokset
