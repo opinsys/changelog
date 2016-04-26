@@ -18,6 +18,43 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+## L1616 - Munakoiso {#ltsp-lukiolaiskannettava-trusty-2016-04-22-130148-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title= "Korjaus: Dropbox">
+   Dropboxin automaattinen päivitys saattoi asentaa ohjelmasta toimimattoman version ja siten estää ohjelman käynnistymisen.
+   Ongelma johtui siitä, että Dropbox päivitti itsensä 64-bit versioon joka ei sitten suoraan toiminut. Ongelma on nyt korjattu.
+</advanced>
+
+- <advanced title="Korjaus: MP3- ja ogg-tiedostojen avautuminen">
+   Musiikki-/äänitiedostot avautuivat aiemmin oletuksena Banhee soittimella. Banshee on kuitenkin osoittautunut toisinaan hitaaksi ja epävakaaksi,
+   joten oletustoistosovellukseksi on vaihdettu VLC.
+</advanced>
+
+- <advanced title="Korjaus: Google Chrome">
+   Korjattu uuden 64 bit Google Chromen ulkoasuteema paremman näköiseksi. Lisäksi Google Chromen grafiikkakiihdytys on aktivoitu
+   selaimen 64-bit versiossa. 
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Uusi X intel-ajuri ja mesa + libvdpau2 (päivitykset tulevat kaikkiin seuraaviin kuviin vakiona) 
+- Lisätty tuki uudelle laitemallille HP Probook 430 G3 
+- Kannettavien sertifikaatit tarkistetaan ja tarvittaessa (mikäli sertifikaatti umpeutuu puolen vuoden sisällä) uusitaan päivityksen 
+  yhteydessä (puavo-update-client).
+- Kannettavien päivityksen keskeytyminen saattoi estää näennäisen levytilapuutteen takia päivityksen onnistumisen. Ongelma on nyt korjattu
+  ja lisää tietoa löytyy täältä: https://github.com/opinsys/puavo-ltsp/commit/9be98d568377d9af5ed08012b2b3ad63c2fcfc06.
+- Poistettu tilan säästämiseksi päätekuvasta työpöytäohjelmisto yms. -paketteja, joita ei ole ollut Webmenussa.
+- Edge-kernel on päivitetty versioon 4.5.0
+- Lisätty paketit Mono-ajoympäristöä varten (mahdollistaa esim. Repetier 3d-tulostimen testaamisen)
+- Lisätty html-validaattorit: Tidy ja Weblint.
+</advanced>
+
+
 ## L1610 - Lanttu {#ltsp-lukiolaiskannettava-trusty-2016-03-07-054907-i386}
 
 ### Korjaukset ja muut muutokset
