@@ -17,6 +17,111 @@
 
 <pre class="markdown"><code>
 
+## 16.17 - Omakone031 - Coming {#ltsp-opinsysextra-trusty-XXX-i386}
+
+* Add feature to renew the device (laptop) sertificate automatically if it expires withing the next 6 months.
+* Fix Dropbox by adding 64 bit dependencies. Missing dependencies could break the Dropbox automatic update if
+  device was booted to 64 bit kernel.
+* Make VLC as default player for mp3 and ogg audio files.
+* Fix theme and GPU acceleration for 64 bit Chrome.
+* Update Xorg Intel driver, Mesa and libvdpau2. (Adds support for f.ex. HP Probook 430 G3).
+* Fix laptop <a href="https://github.com/opinsys/puavo-ltsp/commit/9be98d568377d9af5ed08012b2b3ad63c2fcfc06">update</a>.
+* Update Edge kernel to version 4.5.0
+* Add Mono environment
+* Add html validators Tidy and Weblint.
+
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Uusi X intel-ajuri ja mesa + libvdpau2 (päivitykset tulevat kaikkiin seuraaviin kuviin vakiona) 
+- Lisätty tuki uudelle laitemallille HP Probook 430 G3 
+- Kannettavien sertifikaatit tarkistetaan ja tarvittaessa (mikäli sertifikaatti umpeutuu puolen vuoden sisällä) uusitaan päivityksen 
+  yhteydessä (puavo-update-client).
+- Kannettavien päivityksen keskeytyminen saattoi estää näennäisen levytilapuutteen takia päivityksen onnistumisen. Ongelma on nyt korjattu
+  ja lisää tietoa löytyy täältä: https://github.com/opinsys/puavo-ltsp/commit/9be98d568377d9af5ed08012b2b3ad63c2fcfc06.
+- Poistettu tilan säästämiseksi päätekuvasta työpöytäohjelmisto yms. -paketteja, joita ei ole ollut Webmenussa.
+- Edge-kernel on päivitetty versioon 4.5.0
+- Lisätty paketit Mono-ajoympäristöä varten (mahdollistaa esim. Repetier 3d-tulostimen testaamisen)
+- Lisätty html-validaattorit: Tidy ja Weblint.
+</advanced>
+
+
+
+## 16.09 - Omakone030 {#ltsp-opinsysextra-trusty-03-03-101933-i386}
+
+* Make default Kernel 64 bit. System now runs in multiarch mode. The kernel is 64 bit and most of the applictions are
+  32-bit. System recognizes the processor architecture at boot and selects the appropriate kernel. Architecture can
+  also be defined per device with Puavo Kernel version setting. To do that write the kernel name with -i386 suffix.
+* Google Chrome is now 64 bit as 32 bit version is not released anymore.
+* Add icons to all availabe browsers to desktop panel.
+* Add OpenJDK 8 and set is as default Java.
+
+## 16.03 - Omakone029 {#ltsp-opinsysextra-trusty-2015-01-21-135708-i386}
+
+* Google Chrome starts reporting about unsupported 32 bit platform
+* Update wpa-supplicant
+* Add new Puavo tag to add calibration information about touchscreens.
+
+## 15.50 - Omakone028 {#ltsp-opinsysextra-trusty-2015-2015-12-10-083655-i386}
+
+* Add five Source Sans pro fonts
+* Add Teddy programming examples to Arduino Ide.
+* Add Zumo robot examples to Arduino Ide.
+* Fix slowness while opening the locked screen after laptop suspend.
+* Add Kdump to collect logs at Kernel crash.
+* Add packages: ``krita, smartmontools, x-tile, ginn, touchegg``
+* Remove package sl
+
+## 15.47 - Omakone027 {#ltsp-opinsysextra-trusty-2015-2015-11-19-081044-i386}
+
+* Fix Lenovo keyboard/sound volume keys bug. Sometime by pressing the volume down button
+  the whole laptop could get jammed for a while. Bug has been now fixed.
+* Add Python IDLE 3.4.
+* Remove tabs from logout window.
+* Add Mumble package.
+* Blacklist ``yentasocket`` module by default.
+* Starting system services can now be managed with Puavo tags.
+* System setting and system version are now aded to logs during boot.
+* Add hwgen3 kernel name for ``4.2.*`` kernels.
+* Add tags to handle Lenovo sound key fix: ``force_release_keys``.
+* Add Broadcom bcmwl module for Kernel 4.2.5.
+* Fix login screen wallpaper randomizer tag.
+
+## 15.45 - Omakone026 {#ltsp-opinsysextra-trusty-2015-2015-11-06-064431-i386}
+
+* Update LibreOffice to version 5
+* Add feature tabs feature to Webmenu.
+* Add back button to Webmenu UI.
+* Add Lmms music applicaton to webmenu.
+* Change webmenu menu to use yaml as default syntax instead of json. Json also still works. 
+* Opening links outside the browsers (Chrome/Chromium as default) will now open them in a new tab
+  instead of a new window.
+* Add feature to define environment variables by Puavo Tags. ``env:HUMPPA=1 env:LIBGL_ALWAYS_SOFTWARE=1``
+* Updated Mesa dri. This can be activated by a tag: ``edgers_mesa_dri``.
+* Update Xorg Intel and synaptics drivers. To revert to old version use tag: ``trusty_xorg_drivers``.
+* Updated Edge kernel to version 4.2.5.opinsys1. (Broadcom wireless not supported).
+
+## 15.43 - Omakone025 {#ltsp-opinsysextra-trusty-2015-10-19-081155-i386}
+
+* Add support for Picaxe micro controller
+* Fix printing from Tuxpaint by changing the print dialog
+* Fix USB 3 power save mode that caused USB devices not to work while using battery power.
+* Fix updating network manager setting in laptop installation. <a href="https://github.com/opinsys/puavo/issues/259">Link</a>.
+
+## 15.40 - Omakone024 {#ltsp-opinsysextra-trusty-2015-10-02-103400-i386}
+
+* Updated DrRacket programmin ide to version 6.1.
+* Updated Geogebra to version 5.0.155
+* Add feature to reset changes made in the laptop developer mode from the update apple on the desktop panel.
+* Add new tag to set display scaling factor: dconf_scaling_factor:${int}.
+* Add package ibus-libpinyin
+* Add installation preseed fot laptop model Lenovo e11.
+* Add alternative network card driver for Realtek. To use it you need to blacklist the default driver: 
+  ``modprobe.blacklist=r8169``
+
 ## 15.35 - Omakone023 {#ltsp-opinsysextra-trusty-2015-08-28-075550-i386}
 
 * Updated Tuxpaint
