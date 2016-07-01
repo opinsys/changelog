@@ -17,8 +17,9 @@
 
 <pre class="markdown"><code>
 
-## 16.17 - Omakone031 - Coming {#ltsp-opinsysextra-trusty-XXX-i386}
+## E1626 - Adelaide {#ltsp-opinsysextra-trusty-2016-06-29-081033-i386}
 
+* Change the version naming to be more unified with other Opinsys device image releases
 * Add feature to renew the device (laptop) sertificate automatically if it expires withing the next 6 months.
 * Fix Dropbox by adding 64 bit dependencies. Missing dependencies could break the Dropbox automatic update if
   device was booted to 64 bit kernel.
@@ -26,29 +27,10 @@
 * Fix theme and GPU acceleration for 64 bit Chrome.
 * Update Xorg Intel driver, Mesa and libvdpau2. (Adds support for f.ex. HP Probook 430 G3).
 * Fix laptop <a href="https://github.com/opinsys/puavo-ltsp/commit/9be98d568377d9af5ed08012b2b3ad63c2fcfc06">update</a>.
-* Update Edge kernel to version 4.5.0
+* Update Edge kernel to version 4.6.2
+* Add new production kernel hwgen4 aka. kernel 4.5.7
 * Add Mono environment
 * Add html validators Tidy and Weblint.
-
-
-### Tiedossa olevat ongelmat
-
-### Tekniset muutokset
-
-<advanced title="Näytä...">
-- Uusi X intel-ajuri ja mesa + libvdpau2 (päivitykset tulevat kaikkiin seuraaviin kuviin vakiona) 
-- Lisätty tuki uudelle laitemallille HP Probook 430 G3 
-- Kannettavien sertifikaatit tarkistetaan ja tarvittaessa (mikäli sertifikaatti umpeutuu puolen vuoden sisällä) uusitaan päivityksen 
-  yhteydessä (puavo-update-client).
-- Kannettavien päivityksen keskeytyminen saattoi estää näennäisen levytilapuutteen takia päivityksen onnistumisen. Ongelma on nyt korjattu
-  ja lisää tietoa löytyy täältä: https://github.com/opinsys/puavo-ltsp/commit/9be98d568377d9af5ed08012b2b3ad63c2fcfc06.
-- Poistettu tilan säästämiseksi päätekuvasta työpöytäohjelmisto yms. -paketteja, joita ei ole ollut Webmenussa.
-- Edge-kernel on päivitetty versioon 4.5.0
-- Lisätty paketit Mono-ajoympäristöä varten (mahdollistaa esim. Repetier 3d-tulostimen testaamisen)
-- Lisätty html-validaattorit: Tidy ja Weblint.
-</advanced>
-
-
 
 ## 16.09 - Omakone030 {#ltsp-opinsysextra-trusty-03-03-101933-i386}
 
