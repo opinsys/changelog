@@ -18,7 +18,38 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
-## Opinsys 16.14 - Ahvo {#}
+## Opinsys R1627 - Launo {#ltsp-opinsysrestricted-trusty-2016-07-07-125344-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Korjaus: Google Chrome">
+   Korjattu uuden 64 bit Google Chromen ulkoasuteema paremman näköiseksi. Lisäksi Google Chromen grafiikkakiihdytys on aktivoitu
+   selaimen 64-bit versiossa. 
+</advanced>
+
+- <advanced title="Lisäys: Tuki Intel Skylake-piirisarjaa käyttäville kannettaville">
+   - Esim. HP Probook 430 G3 ja Acer Travelmate B117.
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Korjattu palvelimen kotikansion ja yhteisten kansioiden liittäminen kannettaville. Ongelma aiheutui 
+  Samban päivityksen myötä poistuneesta ominaisuudesta.
+- Viimeistelty tuki laitemalleille HP Probook 430 G3 ja Acer Travelmate B117.
+- Lisätty uusia laitemalleja varten kernel hwgen4 eli versio 4.5.7.
+- Edge-kernel on päivitetty versioon 4.6.2
+- Acer Aspire E11 vaatii toimiakseen kernel-parametrin ``usbcore.autosuspend=-1``. Se korjaa laitteen kanssa ilmeneviä
+  käynnistys-, sammumis- ja virtakaapelin irroittamisen yhteydessä toisinaan tapahtuvia jumeja.
+- Päivitetty uusi X intel-ajuri ja mesa + libvdpau2 
+- Lisätty tuki uudelle laitemallille HP Probook 430 G3
+</advanced>
+
+
+## Opinsys 16.14 - Ahvo {#ltsp-opinsysrestricted-trusty-2016-04-07-113358-i386}
 
 ### Korjaukset ja muut muutokset
 
@@ -54,6 +85,7 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 - Lisätty paketit Mono-ajoympäristöä varten (mahdollistaa esim. Repetier 3d-tulostimen testaamisen)
 - Lisätty html-validaattorit: Tidy ja Weblint.
 </advanced>
+
 
 ## Opinsys 16.9 - Kauko {#ltsp-opinsysrestricted-trusty-2016-03-03-061622-i386}
 
