@@ -16,6 +16,40 @@
 
 <pre class="markdown"><code>
 
+## Release 34 {#34}
+
+<i style="float: right">2016-07-07</i>
+
+### Notable changes
+
+- Add DNS SRV records for Samba services.
+
+  - Required for R1627 and newer images to allow Kerberos authenticated Samba
+    mounts.
+
+- Add support for Windows Samba clients.
+
+### Typical update path from Release 33
+
+- Need to get 6.2MiB of archives.
+
+- Has **very low** impact on the availability of the end user service:
+
+  - Daemon process `dnsmasq` will be restarted during the update
+    process. DNS service downtime is approx. 2sec.
+
+- <advanced title="2 new packages">
+      libpam-winbind  (3.6.25-0ubuntu0.12.04.4)
+      winbind         (3.6.25-0ubuntu0.12.04.4)
+</advanced>
+
+- <advanced title="4 updated packages">
+      puavo-image-tools      (0.17.0-972+precise+master.f8489e8ffa629e96413cc4ce497659cc2ac02d95 => 0.18.1-1001+precise+master.2ad83e3101ed7075a5b99487495e7ed56535e63e)
+      puavo-ltsp-bootserver  (0.17.0-993+precise+master.8cbb429cc95b86f462768503e7221f52cf23489d => 0.18.1-1001+precise+master.2ad83e3101ed7075a5b99487495e7ed56535e63e)
+      puavo-rules            (1.6.0-308+precise+master.f7c1f16b6413b731c01cff3a8432135163878b32 => 1.7.0-326+precise+master.c213219d1de3b3df607f6aad5111805b506313bd)
+      ruby-puavobs           (0.17.0-972+precise+master.f8489e8ffa629e96413cc4ce497659cc2ac02d95 => 0.18.1-1001+precise+master.2ad83e3101ed7075a5b99487495e7ed56535e63e)
+</advanced>
+
 ## Release 33 {#33}
 
 <i style="float: right">2016-07-06</i>
