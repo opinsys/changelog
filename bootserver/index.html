@@ -16,6 +16,61 @@
 
 <pre class="markdown"><code>
 
+## Release 35 {#35}
+
+<i style="float: right">2016-08-08</i>
+
+### Security updates
+
+  - Package `libgd2`:
+    [CVE-2016-5766](https://security-tracker.debian.org/tracker/CVE-2016-5766),
+    [CVE-2016-6161](https://security-tracker.debian.org/tracker/CVE-2016-6161)
+
+  - Package `mysql-5.5`:
+    [CVE-2016-3477](https://security-tracker.debian.org/tracker/CVE-2016-3477),
+    [CVE-2016-3521](https://security-tracker.debian.org/tracker/CVE-2016-3521),
+    [CVE-2016-3615](https://security-tracker.debian.org/tracker/CVE-2016-3615),
+    [CVE-2016-5440](https://security-tracker.debian.org/tracker/CVE-2016-5440)
+
+  - Package `nspr`:
+    [CVE-2016-1951](https://security-tracker.debian.org/tracker/CVE-2016-1951)
+
+  - Package `nss`:
+    [CVE-2016-2834](https://security-tracker.debian.org/tracker/CVE-2016-2834),
+    [CVE-2016-1950](https://security-tracker.debian.org/tracker/CVE-2016-1950)
+
+### Typical update path from Release 34
+
+- Need to get 107.0MiB of archives.
+
+- Does not affect the availability of the end user service.
+
+- <advanced title="4 new packages">
+      linux-headers-3.2.0-106          (3.2.0-106.147)
+      linux-headers-3.2.0-106-generic  (3.2.0-106.147)
+      linux-image-3.13.0-92-generic    (3.13.0-92.139~precise1)
+      linux-image-3.2.0-106-generic    (3.2.0-106.147)
+</advanced>
+
+- <advanced title="16 updated packages">
+      libavahi-client3                (0.6.30-5ubuntu2.1 => 0.6.30-5ubuntu2.2)
+      libavahi-common-data            (0.6.30-5ubuntu2.1 => 0.6.30-5ubuntu2.2)
+      libavahi-common3                (0.6.30-5ubuntu2.1 => 0.6.30-5ubuntu2.2)
+      libgd2-xpm                      (2.0.36~rc1~dfsg-6ubuntu2.1 => 2.0.36~rc1~dfsg-6ubuntu2.2)
+      libmysqlclient18                (5.5.49-0ubuntu0.12.04.1 => 5.5.50-0ubuntu0.12.04.1)
+      libnspr4                        (4.10.10-0ubuntu0.12.04.1 => 4.12-0ubuntu0.12.04.1)
+      libnss3                         (3.21-0ubuntu0.12.04.3 => 3.23-0ubuntu0.12.04.1)
+      libnss3-1d                      (3.21-0ubuntu0.12.04.3 => 3.23-0ubuntu0.12.04.1)
+      linux-generic                   (3.2.0.105.121 => 3.2.0.106.122)
+      linux-headers-generic           (3.2.0.105.121 => 3.2.0.106.122)
+      linux-image-generic             (3.2.0.105.121 => 3.2.0.106.122)
+      linux-image-generic-lts-trusty  (3.13.0.91.82 => 3.13.0.92.83)
+      linux-image-server              (3.2.0.105.121 => 3.2.0.106.122)
+      mysql-common                    (5.5.49-0ubuntu0.12.04.1 => 5.5.50-0ubuntu0.12.04.1)
+      tzdata                          (2016d-0ubuntu0.12.04 => 2016f-0ubuntu0.12.04)
+      tzdata-java                     (2016d-0ubuntu0.12.04 => 2016f-0ubuntu0.12.04)
+</advanced>
+
 ## Release 34 {#34}
 
 <i style="float: right">2016-07-07</i>
