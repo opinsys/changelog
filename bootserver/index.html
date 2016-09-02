@@ -16,6 +16,79 @@
 
 <pre class="markdown"><code>
 
+## Release 36 {#36}
+
+<i style="float: right">2016-09-02</i>
+
+### Notable changes
+
+- Fixes slow SSH shell establishment in some cases.
+
+- Fixes occasional Samba share access problems.
+
+### Security updates
+
+  - Package `curl`:
+    [CVE-2016-5419](https://security-tracker.debian.org/tracker/CVE-2016-5419),
+    [CVE-2016-5420](https://security-tracker.debian.org/tracker/CVE-2016-5420)
+
+  - Package `fontconfig`:
+    [CVE-2016-5384](https://security-tracker.debian.org/tracker/CVE-2016-5384)
+
+  - Package `gnupg`:
+    [CVE-2016-6313](https://security-tracker.debian.org/tracker/CVE-2016-6313)
+
+  - Package `libgcrypt11`:
+    [CVE-2016-6313](https://security-tracker.debian.org/tracker/CVE-2016-6313)
+
+  - Package `libidn`:
+    [CVE-2015-8948](https://security-tracker.debian.org/tracker/CVE-2015-8948),
+    [CVE-2016-6262](https://security-tracker.debian.org/tracker/CVE-2016-6262),
+    [CVE-2015-8948](https://security-tracker.debian.org/tracker/CVE-2015-8948),
+    [CVE-2016-6261](https://security-tracker.debian.org/tracker/CVE-2016-6261),
+    [CVE-2016-6263](https://security-tracker.debian.org/tracker/CVE-2016-6263)
+
+  - Package `postgresql-9.1`:
+    [CVE-2016-5423](https://security-tracker.debian.org/tracker/CVE-2016-5423),
+    [CVE-2016-5424](https://security-tracker.debian.org/tracker/CVE-2016-5424)
+
+### Typical update path from Release 35
+
+- Need to get 108.0MiB of archives.
+
+- Does not affect the availability of the end user service.
+
+- <advanced title="4 new packages">
+      linux-headers-3.2.0-109          (3.2.0-109.150)
+      linux-headers-3.2.0-109-generic  (3.2.0-109.150)
+      linux-image-3.13.0-95-generic    (3.13.0-95.142~precise1)
+      linux-image-3.2.0-109-generic    (3.2.0-109.150)
+</advanced>
+
+- <advanced title="21 updated packages">
+      curl                            (7.22.0-3ubuntu4.15 => 7.22.0-3ubuntu4.16)
+      fontconfig                      (2.8.0-3ubuntu9.1 => 2.8.0-3ubuntu9.2)
+      fontconfig-config               (2.8.0-3ubuntu9.1 => 2.8.0-3ubuntu9.2)
+      gnupg                           (1.4.11-3ubuntu2.9 => 1.4.11-3ubuntu2.10)
+      gpgv                            (1.4.11-3ubuntu2.9 => 1.4.11-3ubuntu2.10)
+      libcurl3                        (7.22.0-3ubuntu4.15 => 7.22.0-3ubuntu4.16)
+      libcurl3-gnutls                 (7.22.0-3ubuntu4.15 => 7.22.0-3ubuntu4.16)
+      libfontconfig1                  (2.8.0-3ubuntu9.1 => 2.8.0-3ubuntu9.2)
+      libgcrypt11                     (1.5.0-3ubuntu0.5 => 1.5.0-3ubuntu0.6)
+      libidn11                        (1.23-2 => 1.23-2ubuntu0.1)
+      libpq5                          (9.1.22-0ubuntu0.12.04 => 9.1.23-0ubuntu0.12.04)
+      linux-generic                   (3.2.0.106.122 => 3.2.0.109.125)
+      linux-headers-generic           (3.2.0.106.122 => 3.2.0.109.125)
+      linux-image-generic             (3.2.0.106.122 => 3.2.0.109.125)
+      linux-image-generic-lts-trusty  (3.13.0.92.83 => 3.13.0.95.86)
+      linux-image-server              (3.2.0.106.122 => 3.2.0.109.125)
+      opinsys-bootserver              (0.7.0-292+precise+master.2af6830f335c6f709a12705004498ccd4aeb073e => 0.8.0-305+precise+master.5933945809f1938a40eecf56d359edb52d9278d7)
+      opinsys-rules                   (0.7.0-292+precise+master.2af6830f335c6f709a12705004498ccd4aeb073e => 0.8.0-305+precise+master.5933945809f1938a40eecf56d359edb52d9278d7)
+      puavo-ltsp-bootserver           (0.18.1-1001+precise+master.2ad83e3101ed7075a5b99487495e7ed56535e63e => 0.19.0-1004+precise+master.f2adaa368a9dd605b59e6a0dfb26fff1c6a558a5)
+      puavo-rules                     (1.7.0-326+precise+master.c213219d1de3b3df607f6aad5111805b506313bd => 1.8.1-331+precise+master.6c7722b242462d225bdbb0a82665c04aace0fd87)
+      ruby-puavobs                    (0.18.1-1001+precise+master.2ad83e3101ed7075a5b99487495e7ed56535e63e => 0.19.0-1004+precise+master.f2adaa368a9dd605b59e6a0dfb26fff1c6a558a5)
+</advanced>
+
 ## Release 35 {#35}
 
 <i style="float: right">2016-08-08</i>
