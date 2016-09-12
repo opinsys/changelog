@@ -16,6 +16,50 @@
 
 <pre class="markdown"><code>
 
+## Release 37 {#37}
+
+<i style="float: right">2016-09-11</i>
+
+### Notable changes
+
+- Changed Puavo WLAN Controller's traffic units from binary prefixed bytes to
+  metric prefixed bits (e.g. `630.0KiB` to `5.2Mbit`).
+
+- Added new Munin plugins:
+
+  - Puavo WLAN traffic: show total traffic and traffic per accesspoint host.
+
+  - Puavo WLAN elements: show total number of network elements and elements per
+    accesspoint host.
+
+  - Puavo Bootserver Clients: show total number of client connections (`NBD`,
+    `NFS`, `SMB`).
+
+- Normalized Munin plugin configuration:
+
+  - Removed `if_tap*` and `if_err_tap*` plugins.
+
+  - Removed `nfsd` and `nfs_client` plugins (NFSv3 only).
+
+  - Added `users` plugin.
+
+  - Added `if_` plugin for all static interfaces.
+
+- Removed unused `racoon` service.
+
+### Typical update path from Release 36
+
+- Need to get 3.0MiB of archives.
+
+- Does not affect the availability of the end user service.
+
+- <advanced title="4 updated packages">
+      puavo-ltsp-bootserver  (0.19.0-1004+precise+master.f2adaa368a9dd605b59e6a0dfb26fff1c6a558a5 => 0.19.0-1006+precise+master.4a3a4ef70f0f4e9f7df97f34083a5a3b7e3ef65b)
+      puavo-rules            (1.8.1-331+precise+master.6c7722b242462d225bdbb0a82665c04aace0fd87 => 1.10.2-340+precise+master.e59df8386b95c368c681e3c9a7704c37c969cf93)
+      puavo-wlancontroller   (0.12.12 => 0.15.0)
+      ruby-puavobs           (0.19.0-1004+precise+master.f2adaa368a9dd605b59e6a0dfb26fff1c6a558a5 => 0.19.0-1006+precise+master.4a3a4ef70f0f4e9f7df97f34083a5a3b7e3ef65b)
+</advanced>
+
 ## Release 36 {#36}
 
 <i style="float: right">2016-09-02</i>
