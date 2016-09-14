@@ -16,6 +16,44 @@
 
 <pre class="markdown"><code>
 
+## Release 38 {#38}
+
+<i style="float: right">2016-09-14</i>
+
+### Notable changes
+
+- Fixed flaky host list in Puavo WLAN Controller status view.
+
+- Non-AP hosts are not shown in Puavo WLAN Controller status view anymore.
+
+- Fixed `puavo-bootserver-update-tftpboot --prune` to not fail if TFTP
+  boot directory does not exist.
+
+- CUPS watchdog is now ensured to be left running after a successful
+  update.
+
+- Ensured LDAP client gets configured before applying the bulk of
+  Puppet modules, because some modules might require functional LDAP
+  queries.
+
+- http://PUAVO_HOSTNAME.PUAVO_DOMAIN displays links to Munin and Puavo
+  WLAN Controller.
+
+### Typical update path from Release 37
+
+- Need to get 3.1MiB of archives.
+
+- Does not affect the availability of the end user service.
+
+- <advanced title="6 updated packages">
+      opinsys-bootserver	 (0.8.0-305+precise+master.5933945809f1938a40eecf56d359edb52d9278d7 => 0.10.1-314+precise+master.effc09cf2517b9fdf1513b31d8af27ca17c98e67)
+      opinsys-rules		 (0.8.0-305+precise+master.5933945809f1938a40eecf56d359edb52d9278d7 => 0.10.1-314+precise+master.effc09cf2517b9fdf1513b31d8af27ca17c98e67)
+      puavo-ltsp-bootserver	 (0.19.0-1006+precise+master.4a3a4ef70f0f4e9f7df97f34083a5a3b7e3ef65b => 0.19.1-1007+precise+master.23bc4a8a741bff8870c3bef86d3ecfddd00a55c4)
+      puavo-rules		 (1.10.2-340+precise+master.e59df8386b95c368c681e3c9a7704c37c969cf93 => 1.12.1-346+precise+master.eaae41283b7662897f2df372298e2c8b89ec114b)
+      puavo-wlancontroller	 (0.15.0 => 0.16.0)
+      ruby-puavobs		 (0.19.0-1006+precise+master.4a3a4ef70f0f4e9f7df97f34083a5a3b7e3ef65b => 0.19.1-1007+precise+master.23bc4a8a741bff8870c3bef86d3ecfddd00a55c4)
+</advanced>
+
 ## Release 37 {#37}
 
 <i style="float: right">2016-09-11</i>
