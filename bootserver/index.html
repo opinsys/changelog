@@ -16,6 +16,86 @@
 
 <pre class="markdown"><code>
 
+## Release 39 {#39}
+
+<i style="float: right">2016-09-27</i>
+
+### Notable changes
+
+- Puavo WLAN Controller:
+
+  - Display RSSIs of connected stations.
+
+  - Display vendor names of radios and stations.
+
+- Added new graphs to Puavo WLAN Munin plugin:
+
+  - RSSI of stations.
+
+  - Connection ages of stations.
+
+### Security updates
+
+- Package `mysql-5.5`:
+  [CVE-2016-6662](https://security-tracker.debian.org/tracker/CVE-2016-6662)
+
+- Package `openssl`:
+  [CVE-2016-2182](https://security-tracker.debian.org/tracker/CVE-2016-2182)
+
+- Package `python-imaging`:
+  [CVE-2016-0775](https://security-tracker.debian.org/tracker/CVE-2016-0775),
+  [CVE-2016-2533](https://security-tracker.debian.org/tracker/CVE-2016-2533),
+  [CVE-2014-3596](https://security-tracker.debian.org/tracker/CVE-2014-3596)
+
+- Package `tomcat6`:
+  [CVE-2016-1240](https://security-tracker.debian.org/tracker/CVE-2016-1240),
+  [CVE-2015-5345](https://security-tracker.debian.org/tracker/CVE-2015-5345)
+
+### Typical update path from Release 38
+
+- Need to get 156MiB of archives.
+
+- Has **medium** impact on the availability of the end user service:
+
+  - Service `isc-dhcp-server` will be restarted during the update process and
+    its estimated downtime is 1-2 minutes. During that time, network boot
+    devices will be unable to boot and new WLAN connections cannot be
+    established.
+
+- Does not affect the availability of the end user service.
+
+- <advanced title="4 new packages">
+      linux-headers-3.13.0-96          (3.13.0-96.143~precise1)
+      linux-headers-3.13.0-96-generic  (3.13.0-96.143~precise1)
+      linux-image-3.13.0-96-generic    (3.13.0-96.143~precise1)
+      linux-image-3.2.0-110-generic    (3.2.0-110.151)
+</advanced>
+
+- <advanced title="22 updated packages">
+      icedtea-6-jre-cacao               (6b39-1.13.11-0ubuntu0.12.04.1 => 6b40-1.13.12-0ubuntu0.12.04.1)
+      icedtea-6-jre-jamvm               (6b39-1.13.11-0ubuntu0.12.04.1 => 6b40-1.13.12-0ubuntu0.12.04.1)
+      isc-dhcp-client                   (4.1.ESV-R4-0ubuntu5.10 => 4.1.ESV-R4-0ubuntu5.11)
+      isc-dhcp-common                   (4.1.ESV-R4-0ubuntu5.10 => 4.1.ESV-R4-0ubuntu5.11)
+      isc-dhcp-server                   (4.1.ESV-R4-0ubuntu5.10 => 4.1.ESV-R4-0ubuntu5.11)
+      libmysqlclient18                  (5.5.50-0ubuntu0.12.04.1 => 5.5.52-0ubuntu0.12.04.1)
+      libservlet2.5-java                (6.0.35-1ubuntu3.7 => 6.0.35-1ubuntu3.8)
+      libssl1.0.0                       (1.0.1-4ubuntu5.36 => 1.0.1-4ubuntu5.38)
+      libtomcat6-java                   (6.0.35-1ubuntu3.7 => 6.0.35-1ubuntu3.8)
+      linux-generic-lts-trusty          (3.13.0.95.86 => 3.13.0.96.87)
+      linux-headers-generic-lts-trusty  (3.13.0.95.86 => 3.13.0.96.87)
+      linux-image-generic-lts-trusty    (3.13.0.95.86 => 3.13.0.96.87)
+      linux-image-server                (3.2.0.109.125 => 3.2.0.110.126)
+      mysql-common                      (5.5.50-0ubuntu0.12.04.1 => 5.5.52-0ubuntu0.12.04.1)
+      openjdk-6-jre-headless            (6b39-1.13.11-0ubuntu0.12.04.1 => 6b40-1.13.12-0ubuntu0.12.04.1)
+      openjdk-6-jre-lib                 (6b39-1.13.11-0ubuntu0.12.04.1 => 6b40-1.13.12-0ubuntu0.12.04.1)
+      openssl                           (1.0.1-4ubuntu5.36 => 1.0.1-4ubuntu5.38)
+      puavo-rules                       (1.12.1-346+precise+master.eaae41283b7662897f2df372298e2c8b89ec114b => 1.14.0-353+precise+master.3c6cc287c6a620037eaed5db0afd16b819c705b9)
+      puavo-wlancontroller              (0.16.0 => 0.20.1)
+      python-imaging                    (1.1.7-4ubuntu0.12.04.1 => 1.1.7-4ubuntu0.12.04.2)
+      tomcat6                           (6.0.35-1ubuntu3.7 => 6.0.35-1ubuntu3.8)
+      tomcat6-common                    (6.0.35-1ubuntu3.7 => 6.0.35-1ubuntu3.8)
+</advanced>
+
 ## Release 38 {#38}
 
 <i style="float: right">2016-09-14</i>
