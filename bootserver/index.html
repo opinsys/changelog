@@ -16,6 +16,75 @@
 
 <pre class="markdown"><code>
 
+## Release 42 {#42}
+
+<i style="float: right">2016-10-10</i>
+
+### Notable changes
+
+- Autopoweron: try to Wake-On-Lan fatclients and wirelessaccesspoints every day
+  at 07:30 if they have ``autopoweron`` tag.
+
+- DDNS: configured and maintained by Puppet.
+
+- Installation: simplified and tested extensively.
+
+### Security updates
+
+- Package `bind9`:
+  [CVE-2016-2776](https://security-tracker.debian.org/tracker/CVE-2016-2776)
+
+- Package `ntp`:
+  [CVE-2015-7973](https://security-tracker.debian.org/tracker/CVE-2015-7973),
+  [CVE-2015-7974](https://security-tracker.debian.org/tracker/CVE-2015-7974),
+  [CVE-2015-7976](https://security-tracker.debian.org/tracker/CVE-2015-7976),
+  [CVE-2015-7977](https://security-tracker.debian.org/tracker/CVE-2015-7977),
+  [CVE-2015-7978](https://security-tracker.debian.org/tracker/CVE-2015-7978),
+  [CVE-2015-7979](https://security-tracker.debian.org/tracker/CVE-2015-7979),
+  [CVE-2016-1547](https://security-tracker.debian.org/tracker/CVE-2016-1547),
+  [CVE-2015-8158](https://security-tracker.debian.org/tracker/CVE-2015-8158),
+  [CVE-2016-0727](https://security-tracker.debian.org/tracker/CVE-2016-0727),
+  [CVE-2016-1548](https://security-tracker.debian.org/tracker/CVE-2016-1548),
+  [CVE-2016-1550](https://security-tracker.debian.org/tracker/CVE-2016-1550),
+  [CVE-2016-2516](https://security-tracker.debian.org/tracker/CVE-2016-2516),
+  [CVE-2016-2518](https://security-tracker.debian.org/tracker/CVE-2016-2518),
+  [CVE-2016-4954](https://security-tracker.debian.org/tracker/CVE-2016-4954),
+  [CVE-2016-4955](https://security-tracker.debian.org/tracker/CVE-2016-4955),
+  [CVE-2016-4956](https://security-tracker.debian.org/tracker/CVE-2016-4956)
+
+### Typical update path from Release 41
+
+- Need to get 2,961KiB of archives.
+
+- Has **low** impact on the availability of the end user service:
+
+  - Service 'bind9' will be restarted during the update process and its
+    estimated downtime is 2 seconds.
+
+  - Service `puavo-tftpd` will be restarted during the update process and
+    its estimated downtime is 5 seconds. During that time, network boot
+    devices will be unable to boot.
+
+- <advanced title="17 updated packages">
+      bind9               (9.8.1.dfsg.P1-4ubuntu0.16 => 9.8.1.dfsg.P1-4ubuntu0.17)
+      bind9-host          (9.8.1.dfsg.P1-4ubuntu0.16 => 9.8.1.dfsg.P1-4ubuntu0.17)
+      bind9utils          (9.8.1.dfsg.P1-4ubuntu0.16 => 9.8.1.dfsg.P1-4ubuntu0.17)
+      dnsutils            (9.8.1.dfsg.P1-4ubuntu0.16 => 9.8.1.dfsg.P1-4ubuntu0.17)
+      libbind9-80         (9.8.1.dfsg.P1-4ubuntu0.16 => 9.8.1.dfsg.P1-4ubuntu0.17)
+      libdns81            (9.8.1.dfsg.P1-4ubuntu0.16 => 9.8.1.dfsg.P1-4ubuntu0.17)
+      libisc83            (9.8.1.dfsg.P1-4ubuntu0.16 => 9.8.1.dfsg.P1-4ubuntu0.17)
+      libisccc80          (9.8.1.dfsg.P1-4ubuntu0.16 => 9.8.1.dfsg.P1-4ubuntu0.17)
+      libisccfg82         (9.8.1.dfsg.P1-4ubuntu0.16 => 9.8.1.dfsg.P1-4ubuntu0.17)
+      liblwres80          (9.8.1.dfsg.P1-4ubuntu0.16 => 9.8.1.dfsg.P1-4ubuntu0.17)
+      ntp                 (4.2.6.p3+dfsg-1ubuntu3.9 => 4.2.6.p3+dfsg-1ubuntu3.11)
+      ntpdate             (4.2.6.p3+dfsg-1ubuntu3.9 => 4.2.6.p3+dfsg-1ubuntu3.11)
+      opinsys-bootserver  (0.10.2+precise+dhcpfix.f2165e3e89760bf1faebd2d98a7b98b84bebf2cf => 0.15.0+precise+master.8de0ec700eb652e4b667089382e682e6ec9b401c)
+      opinsys-rules       (0.10.2+precise+dhcpfix.f2165e3e89760bf1faebd2d98a7b98b84bebf2cf => 0.15.0+precise+master.8de0ec700eb652e4b667089382e682e6ec9b401c)
+      puavo-rules         (1.14.3+precise+dhcpfix.d73afd492e5d616d0a36764c222bcd9fed4d4ec1 => 1.17.2-372+precise+master.bb05d84a0c5ef667cfa54d507ea7263a7bb5a626)
+      puavo-tftpd         (0.5.11-12+precise+master.9de399df6d7bca2ac0fbbd61a68b72e395457fa5 => 0.5.11-15+precise+master.21c6298e832f1c523dbefb8b222b4f2230f5b37d)
+      puavo-tftpd-hooks   (0.5.11-12+precise+master.9de399df6d7bca2ac0fbbd61a68b72e395457fa5 => 0.5.11-15+precise+master.21c6298e832f1c523dbefb8b222b4f2230f5b37d)
+</advanced>
+
 ## Release 41 {#41}
 
 <i style="float: right">2016-10-07</i>
