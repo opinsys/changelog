@@ -18,6 +18,24 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+## R1641 - Retiisi {#ltsp-lukiolaiskannettava-trusty-2016-10-13-111319-i386}
+
+### Korjaukset ja muut muutokset
+
+- Lisätty Otavan oppilaan maailma-linkki ohjelmavalikon websovelluksiin
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Puavosta Organisaation External filesistä asetettava Webmenun valikkorakennetiedosto (menu.json/menu.yaml) toimii taas.
+- Langattoman verkon tukiasemalaitteille voi nyt määrittää radiokanavan/kanavat joita laitteessa olevat wlan-adapterit 
+  käyttävät. Tagi: wlanap_channels:CH[:CH].. https://github.com/opinsys/puavo/wiki/Kernel-parameters-and-device-tags
+- Langattoman verkon tukiasemat vastaanottavat tiedon mobiililaitteiden (stations) havaitsemasta lähetystehosta joka
+  sitten voidaan esittää Wlan status-tiedoissa.
+- Puavo-sync-external-files api-server ongelma on korjattu. Ongelma näkyi virheenä ja kannettavien asennuksen yhteydessä
+  silloin kun laitetta asennettin eri organisaatioon kuin missä asennuksessa käytettävä boot-palvelin sijaitsee.
+</advanced>
+
 ## L1635 - Qrpitsa {#ltsp-lukiolaiskannettava-trusty-2016-09-01-052046-i386}
 
 ### Korjaukset ja muut muutokset
