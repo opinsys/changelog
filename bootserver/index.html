@@ -16,6 +16,69 @@
 
 <pre class="markdown"><code>
 
+## Release 43 {#43}
+
+### Notable changes
+
+- Updated `puavo-rest` to fix `autopoweron` functionality.
+
+- Addresses for ntp, images and private-archive servers are resolved via VPN
+  gateway's DNS server.
+
+- `/etc/hosts`:
+
+  - Ensure localhost resolves 127.0.0.1
+  - Addresses for ntp, images and private-archive servers are removed.
+
+- NTP server running in VPN is added to `/etc/ntp.conf` to ensure all servers
+  have access to a time server.
+
+### Security updates
+
+  - Package `linux`:
+  [CVE-2016-5195](https://security-tracker.debian.org/tracker/CVE-2016-5195)
+
+  - Package `xen`:
+  [CVE-2016-5403](https://security-tracker.debian.org/tracker/CVE-2016-5403),
+  [CVE-2016-6258](https://security-tracker.debian.org/tracker/CVE-2016-6258),
+  [CVE-2016-7092](https://security-tracker.debian.org/tracker/CVE-2016-7092),
+  [CVE-2016-7094](https://security-tracker.debian.org/tracker/CVE-2016-7094),
+  [CVE-2016-7777](https://security-tracker.debian.org/tracker/CVE-2016-7777)
+
+### Typical update path from Release 42
+
+- Need to get 154 MB of archives.
+
+- Has impact on the availability of the end users service:
+
+  - Service `puavo-rest` will be restarted during the update process and its estimated downtime is 69 seconds.
+
+- <advanced title="4 installed packages">
+      linux-headers-3.2.0-113-generic (3.2.0-113.155)
+      linux-headers-3.2.0-113 (3.2.0-113.155)
+      linux-image-3.13.0-100-generic (3.13.0-100.147~precise1)
+      linux-image-3.2.0-113-generic (3.2.0-113.155)
+</advanced>
+
+- <advanced title="16 updated packages">
+      linux-image-server (3.2.0.110.126 => 3.2.0.113.129)
+      opinsys-rules (0.15.0+precise+master.8de0ec700eb652e4b667089382e682e6ec9b401c => 0.17.1-333+precise+master.8ecf55c4baa069c1bde895a7fc56673cbdbdcd4f)
+      opinsys-bootserver (0.15.0+precise+master.8de0ec700eb652e4b667089382e682e6ec9b401c => 0.17.1-333+precise+master.8ecf55c4baa069c1bde895a7fc56673cbdbdcd4f)
+      linux-generic (3.2.0.110.126 => 3.2.0.113.129)
+      libxen-4.1 (4.1.6.1-0ubuntu0.12.04.11 => 4.1.6.1-0ubuntu0.12.04.12)
+      vlan (1.9-3ubuntu6 => 1.9-3ubuntu6.1)
+      puavo-rest (0.11.1-790+precise.master.83477d17e666a2e6acf79072ec0e879cd2954bc9 => 0.11.1-814+precise.master.371b98d1d841f526e0e3ce3a46af3942013b05f9)
+      puavo-rules (1.17.2-372+precise+master.bb05d84a0c5ef667cfa54d507ea7263a7bb5a626 => 1.20.2-378+precise+master.e9ec2f9485edd2b609221c7022866949376804bb)
+      tzdata (2016f-0ubuntu0.12.04 => 2016g-0ubuntu0.12.04)
+      linux-headers-generic (3.2.0.110.126 => 3.2.0.113.129)
+      tzdata-java (2016f-0ubuntu0.12.04 => 2016g-0ubuntu0.12.04)
+      linux-image-generic-lts-trusty (3.13.0.96.87 => 3.13.0.100.91)
+      linux-image-generic (3.2.0.110.126 => 3.2.0.113.129)
+      update-manager-core (0.156.14.19 => 0.156.14.20)
+      puavo-rest-bootserver (0.11.1-790+precise.master.83477d17e666a2e6acf79072ec0e879cd2954bc9 => 0.11.1-814+precise.master.371b98d1d841f526e0e3ce3a46af3942013b05f9)
+      libxenstore3.0 (4.1.6.1-0ubuntu0.12.04.11 => 4.1.6.1-0ubuntu0.12.04.12)
+</advanced>
+
 ## Release 42 {#42}
 
 <i style="float: right">2016-10-10</i>
