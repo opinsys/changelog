@@ -16,6 +16,91 @@
 
 <pre class="markdown"><code>
 
+## Release 44 {#44}
+
+<i style="float: right">2016-11-08</i>
+
+### Notable changes
+
+- Preparations for Trusty release upgrade.
+
+- Command `opinsys-update-bootserver` gains an ability to log to `/var/log/opinsys-update-bootserver.log`.
+
+- Added support for manually (locally) maintained Samba configuration: If `/etc/samba/puavo_smb.conf` exists, it will be used instead of `/etc/samba/smb.conf`.
+
+### Security updates
+
+  - Package `libgd2`:
+  [CVE-2016-6911](https://security-tracker.debian.org/tracker/CVE-2016-6911),
+  [CVE-2016-8670](https://security-tracker.debian.org/tracker/CVE-2016-8670)
+  - Package `mysql-5.5`:
+  [CVE-2016-5584](https://security-tracker.debian.org/tracker/CVE-2016-5584),
+  [CVE-2016-7440](https://security-tracker.debian.org/tracker/CVE-2016-7440)
+  - Package `bind9`:
+  [CVE-2012-5689](https://security-tracker.debian.org/tracker/CVE-2012-5689),
+  [CVE-2015-1349](https://security-tracker.debian.org/tracker/CVE-2015-1349),
+  [CVE-2015-4620](https://security-tracker.debian.org/tracker/CVE-2015-4620),
+  [CVE-2015-5477](https://security-tracker.debian.org/tracker/CVE-2015-5477),
+  [CVE-2015-5722](https://security-tracker.debian.org/tracker/CVE-2015-5722),
+  [CVE-2015-8000](https://security-tracker.debian.org/tracker/CVE-2015-8000),
+  [CVE-2015-8704](https://security-tracker.debian.org/tracker/CVE-2015-8704),
+  [CVE-2016-1285](https://security-tracker.debian.org/tracker/CVE-2016-1285),
+  [CVE-2016-1286](https://security-tracker.debian.org/tracker/CVE-2016-1286),
+  [CVE-2016-2776](https://security-tracker.debian.org/tracker/CVE-2016-2776),
+  [CVE-2016-2848](https://security-tracker.debian.org/tracker/CVE-2016-2848),
+  [CVE-2016-8864](https://security-tracker.debian.org/tracker/CVE-2016-8864)
+  - Package `dbus`:
+  [CVE-2015-0245](https://security-tracker.debian.org/tracker/CVE-2015-0245)
+  - Package `curl`:
+  [CVE-2016-7141](https://security-tracker.debian.org/tracker/CVE-2016-7141),
+  [CVE-2016-7167](https://security-tracker.debian.org/tracker/CVE-2016-7167),
+  [CVE-2016-8615](https://security-tracker.debian.org/tracker/CVE-2016-8615),
+  [CVE-2016-8616](https://security-tracker.debian.org/tracker/CVE-2016-8616),
+  [CVE-2016-8617](https://security-tracker.debian.org/tracker/CVE-2016-8617),
+  [CVE-2016-8618](https://security-tracker.debian.org/tracker/CVE-2016-8618),
+  [CVE-2016-8619](https://security-tracker.debian.org/tracker/CVE-2016-8619),
+  [CVE-2016-8621](https://security-tracker.debian.org/tracker/CVE-2016-8621),
+  [CVE-2016-8622](https://security-tracker.debian.org/tracker/CVE-2016-8622),
+  [CVE-2016-8623](https://security-tracker.debian.org/tracker/CVE-2016-8623),
+  [CVE-2016-8624](https://security-tracker.debian.org/tracker/CVE-2016-8624)
+
+### Typical update path from Release 43
+
+- Need to get 7,402 kB of archives.
+
+- Has impact on the availability of the end users service:
+
+  - Service `puavo-wlancontroller` will be restarted during the update process and its estimated downtime is 8 seconds.
+
+- <advanced title="27 updated packages">
+      libmysqlclient18 (5.5.52-0ubuntu0.12.04.1 => 5.5.53-0ubuntu0.12.04.1)
+      libisccc80 (9.8.1.dfsg.P1-4ubuntu0.17 => 9.8.1.dfsg.P1-4ubuntu0.19)
+      libdbus-1-3 (1.4.18-1ubuntu1.7 => 1.4.18-1ubuntu1.8)
+      libisccfg82 (9.8.1.dfsg.P1-4ubuntu0.17 => 9.8.1.dfsg.P1-4ubuntu0.19)
+      puavo-rules (1.20.6+precise+master.8340658c5946c09e9a135eaa2d6a781e619a3122 => 1.22.0-393+trusty+master.b8e22aa51afc193bdfbabf7d4a5acdc6c25dd5f2)
+      opinsys-bootserver (0.17.1-333+precise+master.8ecf55c4baa069c1bde895a7fc56673cbdbdcd4f => 0.20.2-344+trusty+master.4431820848a0e9d8a5667d3f775797992a7b10c2)
+      mysql-common (5.5.52-0ubuntu0.12.04.1 => 5.5.53-0ubuntu0.12.04.1)
+      ruby-puavowlan (0.20.5 => 0.20.5)
+      libgd2-xpm (2.0.36~rc1~dfsg-6ubuntu2.2 => 2.0.36~rc1~dfsg-6ubuntu2.3)
+      curl (7.22.0-3ubuntu4.16 => 7.22.0-3ubuntu4.17)
+      tzdata (2016g-0ubuntu0.12.04 => 2016h-0ubuntu0.12.04)
+      libpq5 (9.1.23-0ubuntu0.12.04 => 9.1.24-0ubuntu0.12.04)
+      bind9 (9.8.1.dfsg.P1-4ubuntu0.17 => 9.8.1.dfsg.P1-4ubuntu0.19)
+      puavo-wlancontroller (0.20.1 => 0.20.5)
+      opinsys-rules (0.17.1-333+precise+master.8ecf55c4baa069c1bde895a7fc56673cbdbdcd4f => 0.20.2-344+trusty+master.4431820848a0e9d8a5667d3f775797992a7b10c2)
+      libisc83 (9.8.1.dfsg.P1-4ubuntu0.17 => 9.8.1.dfsg.P1-4ubuntu0.19)
+      tzdata-java (2016g-0ubuntu0.12.04 => 2016h-0ubuntu0.12.04)
+      debootstrap (1.0.40~ubuntu0.10 => 1.0.40~ubuntu0.11)
+      bind9-host (9.8.1.dfsg.P1-4ubuntu0.17 => 9.8.1.dfsg.P1-4ubuntu0.19)
+      libdns81 (9.8.1.dfsg.P1-4ubuntu0.17 => 9.8.1.dfsg.P1-4ubuntu0.19)
+      dnsutils (9.8.1.dfsg.P1-4ubuntu0.17 => 9.8.1.dfsg.P1-4ubuntu0.19)
+      libcurl3-gnutls (7.22.0-3ubuntu4.16 => 7.22.0-3ubuntu4.17)
+      liblwres80 (9.8.1.dfsg.P1-4ubuntu0.17 => 9.8.1.dfsg.P1-4ubuntu0.19)
+      bind9utils (9.8.1.dfsg.P1-4ubuntu0.17 => 9.8.1.dfsg.P1-4ubuntu0.19)
+      dbus (1.4.18-1ubuntu1.7 => 1.4.18-1ubuntu1.8)
+      libbind9-80 (9.8.1.dfsg.P1-4ubuntu0.17 => 9.8.1.dfsg.P1-4ubuntu0.19)
+      libcurl3 (7.22.0-3ubuntu4.16 => 7.22.0-3ubuntu4.17)
+</advanced>
 
 ## Release 43 {#43}
 
