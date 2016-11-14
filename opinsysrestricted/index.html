@@ -18,6 +18,64 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+## R1646 - Panu {#ltsp-opinsysrestricted-trusty-2016-11-11-092319-i386}
+
+### Korjaukset ja muut muutokset
+- <advanced title="Päivitys: LibreOffice 5">
+   LibreOffice toimisto-ohjelmisto on palautettu versioon 5. Ohjelman tallennusikkunan ulkoasu
+   muuttuu päivityksessä. Tästä johtuen yhteisten kansioiden ja verkkokansion pikakuvakkeita ei ole
+   ikkunan vasemmassa reunassa vaan linkit niihin löytyvät nimillä yhteiset ja verkkokansio muiden 
+   kotikansiossa olevien tiedostojen joukosta.</advanced>
+
+- <advanced title="Päivitys: Google Earth">
+    Sovellus on päivitetty uusimpaan versioon.
+</advanced>
+
+- <advanced title="Päivitys: Geogebra">
+    Sovellus on päivitetty uusimpaan versioon.
+</advanced>
+
+- <advanced title="Korjaus: Pinta-kuvankäsittelyohjelman nimi on korjattu valikossa">
+    Ohjelma löytyi aiemmin nimeltä "Kuvankäsittely" ja nyt se on korjattu nimelle "Pinta-kuvankäsittely".
+</advanced>
+
+- <advanced title="Lisäys: TI NSpire CX CAS-laskinohjelmiston käyttömahdollisuus erillisen aktivoinnin kautta.">
+    TI NSpire CX CAS -ohjelmistoa on mahdollista käyttää tästä versiosta eteenpäin Opinsys-järjestelmän laitteilla.
+    Tässä vaiheessa ohjelmisto on käytettävissä vain henkilökohtaisilla laitteilla (henkilökohtainen kannettava).
+    Ohjelma vaatii toimiakseen henkilökohtaisen lisenssin joka on syöttämisen jälkeen sidottu kyseiseen tietokoneeseen.
+    Ohjelma vastaa ominaisuuksiltaan ylioppilaskirjoituksissa käytettävää versiota.   
+    NSpire-laskinsovellus tulee aktivoida näkyviin Opinsysin tukipalvelun kautta. Tämän jälkeen sen saa käynnistettyä 
+    valitsemalla ``Menu > Opetusohjelmat > TI NSpire CX CAS``.
+</advanced>
+
+- <advanced title="Lisäys: Stopmotion-sovellus">
+    Stopmotion-animaatioiden tekemiseen tarkoitettu Stopmotion-ohjelma on lisätty järjestelmään ja se löytyy sijainnista 
+    ``Menu > Ääni ja video > Stopmotion ``.
+</advanced>
+
+- <advanced title="Lisäys: Tuki Ciscon vpn-tunneleille">
+    Opinsys-järjestelmän kannettavilla on mahdollista liittyä Ciscon vpn-verkkoihin valitsemalla työpöydän alapaneelin
+    verkkokuvakkeesta kohdan ``Muokkaa yhteyksiä``. Avautuvasta ikkunasta valitaan ``Lisää`` ja avautuvasta valikosta 
+    ``Cisco-yhteensopiva VPN-asiakas``. 
+</advanced>
+
+- <advanced title="Korjaus: Adobe Flash Google Chrome-selaimessa vierastunnuksella">
+    Google Chromessa tapahtuneiden muutosten myötä Flash-liitännäinen ei ole toiminut edellisessä versiossa
+    vierastunnuksella. Ongelma on nyt korjattu.
+</advanced>
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Päätelaitteiden kellonajan päivitykseen käytettävän rdate-ohjelman toiminta on korjattu.
+- Nvidian näytönohjainajurit on päivitetty (tietoturvapäivitys).
+- Ubuntun oletuskernelit on päivitetty.
+- Päätekuvasta on poistettu paketit: Mimio, Ebeam, lincity-ng, xfce.
+- TI NSpire CX CAS-sovelluksen saa näkyuviin tagilla/ympäristömuuttujalla ``ti_nspire_cx_cas``.
+- Bradcomin B43 ajuri on mahdollista saada käyttöön poistamalla bcmwl-ajuri tagilla ``blacklist_bcmwl`` .
+</advanced>
+
+
 ## R1641 - Taina {#ltsp-opinsysrestricted-trusty-2016-10-13-132428-i386}
 
 ### Korjaukset ja muut muutokset
