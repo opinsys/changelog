@@ -18,11 +18,12 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
-## R1646 - Panu {#ltsp-opinsysrestricted-trusty-2016-11-11-092319-i386}
+## R1646 - Tulossa {#ltsp-opinsysrestricted-trusty-2016-11-XXX-i386}
 
 ### Korjaukset ja muut muutokset
 - <advanced title="Päivitys: LibreOffice 5">
-   LibreOffice toimisto-ohjelmisto on palautettu versioon 5. Ohjelman tallennusikkunan ulkoasu
+   LibreOffice toimisto-ohjelmisto on päivitetty takaisin versioon 5.0.22. Päivityksen myötä ohjelman 
+   yhteensopivuus Microsoft Office-tiedostojen kanssa paranee. Lisäksi ohjelman tallennusikkunan ulkoasu
    muuttuu päivityksessä. Tästä johtuen yhteisten kansioiden ja verkkokansion pikakuvakkeita ei ole
    ikkunan vasemmassa reunassa vaan linkit niihin löytyvät nimillä yhteiset ja verkkokansio muiden 
    kotikansiossa olevien tiedostojen joukosta.</advanced>
@@ -41,15 +42,15 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 - <advanced title="Lisäys: TI NSpire CX CAS-laskinohjelmiston käyttömahdollisuus erillisen aktivoinnin kautta.">
     TI NSpire CX CAS -ohjelmistoa on mahdollista käyttää tästä versiosta eteenpäin Opinsys-järjestelmän laitteilla.
-    Tässä vaiheessa ohjelmisto on käytettävissä vain henkilökohtaisilla laitteilla (henkilökohtainen kannettava).
-    Ohjelma vaatii toimiakseen henkilökohtaisen lisenssin joka on syöttämisen jälkeen sidottu kyseiseen tietokoneeseen.
+    Ohjelmisto on käytettävissä vain henkilökohtaisilla laitteilla (henkilökohtainen kannettava) ja vaatii toimiakseen
+    henkilökohtaisen lisenssin. Lisenssi on syöttämisen jälkeen sidottu kyseiseen tietokoneeseen ja käyttäjätunnukseen.
     Ohjelma vastaa ominaisuuksiltaan ylioppilaskirjoituksissa käytettävää versiota.   
     NSpire-laskinsovellus tulee aktivoida näkyviin Opinsysin tukipalvelun kautta. Tämän jälkeen sen saa käynnistettyä 
     valitsemalla ``Menu > Opetusohjelmat > TI NSpire CX CAS``.
 </advanced>
 
 - <advanced title="Lisäys: Stopmotion-sovellus">
-    Stopmotion-animaatioiden tekemiseen tarkoitettu Stopmotion-ohjelma on lisätty järjestelmään ja se löytyy sijainnista 
+    Animaatioiden tekemiseen tarkoitettu Stopmotion-ohjelma on lisätty järjestelmään ja se löytyy sijainnista 
     ``Menu > Ääni ja video > Stopmotion ``.
 </advanced>
 
@@ -64,15 +65,21 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
     vierastunnuksella. Ongelma on nyt korjattu.
 </advanced>
 
+- <advanced title="Korjaus: Tiedostoselaimen linkki yhteisiin kansioihin uusilla käyttäjätunnuksilla">
+    Verkosta käynnistyvillä tietokoneilla puuttui linkki yhteisiin kansioihin, jos käyttäjätunnus ei ollut
+    aiemmin käyttänyt järjestelmää. Vanhoilla käyttäjätunnuksilla (ennen viime kesää kirjautuneet) linkit toimivat
+    oikein.
+</advanced>
+
 ### Tekniset muutokset
 
 <advanced title="Näytä...">
-- Päätelaitteiden kellonajan päivitykseen käytettävän rdate-ohjelman toiminta on korjattu.
-- Nvidian näytönohjainajurit on päivitetty (tietoturvapäivitys).
+- Päätelaitteiden kellonajan päivitykseen käytettävän rdate-ohjelman toiminta on korjattu. Verkosta käynnistyvät 
+  laitteet saavat taas oikean kellonajan käynnistyksen yhteydessä.
 - Ubuntun oletuskernelit on päivitetty.
 - Päätekuvasta on poistettu paketit: Mimio, Ebeam, lincity-ng, xfce.
-- TI NSpire CX CAS-sovelluksen saa näkyuviin tagilla/ympäristömuuttujalla ``ti_nspire_cx_cas``.
-- Bradcomin B43 ajuri on mahdollista saada käyttöön poistamalla bcmwl-ajuri tagilla ``blacklist_bcmwl`` .
+- TI NSpire CX CAS-sovelluksen saa näkyviin tagilla/ympäristömuuttujalla ``ti_nspire_cx_cas``.
+- Bradcomin B43 ajuri on mahdollista saada käyttöön poistamalla bcmwl-ajuri tagilla ``blacklist_bcmwl``.
 </advanced>
 
 
