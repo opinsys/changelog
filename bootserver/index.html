@@ -16,6 +16,41 @@
 
 <pre class="markdown"><code>
 
+## Release 45 {#45}
+
+### Notable changes
+
+- New command for upgrading Ubuntu release from Precise to Trusty: ``opinsys-do-release-upgrade``.
+
+- New munin plugin for gathering CUPS page log statistics.
+
+- The return of ``opinsys-img-stat``.
+
+### Typical update path from Release 44
+
+- Need to get 109 MB of archives.
+
+- <advanced title="4 installed packages">
+      linux-image-3.2.0-115-generic (3.2.0-115.157)
+      linux-headers-3.13.0-101 (3.13.0-101.148~precise1)
+      linux-headers-3.13.0-101-generic (3.13.0-101.148~precise1)
+      linux-image-3.13.0-101-generic (3.13.0-101.148~precise1)
+</advanced>
+
+- <advanced title="11 updated packages">
+      linux-generic-lts-trusty (3.13.0.100.91 => 3.13.0.101.92)
+      linux-image-server (3.2.0.113.129 => 3.2.0.115.131)
+      grub-common (1.99-21ubuntu3.19 => 1.99-21ubuntu3.20)
+      grub-pc-bin (1.99-21ubuntu3.19 => 1.99-21ubuntu3.20)
+      grub2-common (1.99-21ubuntu3.19 => 1.99-21ubuntu3.20)
+      grub-pc (1.99-21ubuntu3.19 => 1.99-21ubuntu3.20)
+      puavo-rules (1.22.0-393+precise+master.b8e22aa51afc193bdfbabf7d4a5acdc6c25dd5f2 => 1.23.0-401+precise+master.3134a85a51cb32d74e2e29b1e8d7e9453b664870)
+      opinsys-bootserver (0.20.2-344+precise+master.4431820848a0e9d8a5667d3f775797992a7b10c2 => 0.23.0-349+precise+master.a03b73b30fc047ee2cb5a63ecf428b9020c0cd0a)
+      opinsys-rules (0.20.2-344+precise+master.4431820848a0e9d8a5667d3f775797992a7b10c2 => 0.23.0-349+precise+master.a03b73b30fc047ee2cb5a63ecf428b9020c0cd0a)
+      linux-image-generic-lts-trusty (3.13.0.100.91 => 3.13.0.101.92)
+      linux-headers-generic-lts-trusty (3.13.0.100.91 => 3.13.0.101.92)
+</advanced>
+
 ## Release 44 {#44}
 
 <i style="float: right">2016-11-08</i>
