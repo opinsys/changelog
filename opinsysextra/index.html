@@ -18,9 +18,24 @@
 <pre class="markdown"><code>
 
 
-## E1633 - Brisbane {#ltsp-opinsysextra-trusty-2016-08-19-053925-i386}
+## E1645 - Darwin {#ltsp-opinsysextra-trusty-2016-11-10-090944-i386}
 
-### Korjaukset ja muut muutokset
+* Updated LibreOffice back to version 5.0.22. LibreOffice now uses kde4 libraries
+  for the UI to fix the freezing ui bug. LibreOffice 5 is needed for better MS Office
+  file format support.
+* Updated Google Earth.
+* Updated Geogebra.
+* Update Ubuntu default kernels
+* Add TI NSpire CAS calculator software. In order to use the software a personal license key is needed. 
+  Using the key binds it to the computer hardware and username it is used at. To make it visible to the 
+  menu you should use the tag/ennvironment variable ``ti_nspire_cx_cas``.
+* Add Stopmotion animation software.
+* Add support for Cisco VPN to the network manager.
+* Add tag to blacklist bcmwl module (enables open source b43 driver on some devices): ``blacklist_bcmwl``.
+* Fix Adobe Flash in Google Chrome for guest users.
+* Fix updating date with rdate on network boot devices.
+
+## E1633 - Brisbane {#ltsp-opinsysextra-trusty-2016-08-19-053925-i386}
 
 * Fix laptop login at home networks. Due to certain home wlan routers and their dns handling, the login on a laptop
   could in a worst case take over five minutes. This problem should now be fixed.
