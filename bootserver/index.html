@@ -16,6 +16,91 @@
 
 <pre class="markdown"><code>
 
+## Release 46 {#46}
+
+### Notable changes
+
+- Periodically check user home directory permissions and fix them, in case users have mishandled them.
+
+### Security updates
+
+  - Package `openjdk-6`:
+  [CVE-2016-3458](https://security-tracker.debian.org/tracker/CVE-2016-3458),
+  [CVE-2016-3485](https://security-tracker.debian.org/tracker/CVE-2016-3485),
+  [CVE-2016-3500](https://security-tracker.debian.org/tracker/CVE-2016-3500),
+  [CVE-2016-3508](https://security-tracker.debian.org/tracker/CVE-2016-3508),
+  [CVE-2016-3550](https://security-tracker.debian.org/tracker/CVE-2016-3550),
+  [CVE-2016-3606](https://security-tracker.debian.org/tracker/CVE-2016-3606),
+  [CVE-2016-5542](https://security-tracker.debian.org/tracker/CVE-2016-5542),
+  [CVE-2016-5554](https://security-tracker.debian.org/tracker/CVE-2016-5554),
+  [CVE-2016-5573](https://security-tracker.debian.org/tracker/CVE-2016-5573),
+  [CVE-2016-5582](https://security-tracker.debian.org/tracker/CVE-2016-5582),
+  [CVE-2016-5597](https://security-tracker.debian.org/tracker/CVE-2016-5597)
+  - Package `ghostscript`:
+  [CVE-2013-5653](https://security-tracker.debian.org/tracker/CVE-2013-5653),
+  [CVE-2016-7976](https://security-tracker.debian.org/tracker/CVE-2016-7976),
+  [CVE-2016-7977](https://security-tracker.debian.org/tracker/CVE-2016-7977),
+  [CVE-2016-7978](https://security-tracker.debian.org/tracker/CVE-2016-7978),
+  [CVE-2016-7979](https://security-tracker.debian.org/tracker/CVE-2016-7979),
+  [CVE-2016-8602](https://security-tracker.debian.org/tracker/CVE-2016-8602)
+  - Package `tar`:
+  [CVE-2016-6321](https://security-tracker.debian.org/tracker/CVE-2016-6321)
+  - Package `python2.7`:
+  [CVE-2016-0772](https://security-tracker.debian.org/tracker/CVE-2016-0772),
+  [CVE-2016-1000](https://security-tracker.debian.org/tracker/CVE-2016-1000),
+  [CVE-2016-5636](https://security-tracker.debian.org/tracker/CVE-2016-5636),
+  [CVE-2016-5699](https://security-tracker.debian.org/tracker/CVE-2016-5699)
+  - Package `vim`:
+  [CVE-2016-1248](https://security-tracker.debian.org/tracker/CVE-2016-1248)
+  - Package `python3.2`:
+  [CVE-2016-0772](https://security-tracker.debian.org/tracker/CVE-2016-0772),
+  [CVE-2016-1000](https://security-tracker.debian.org/tracker/CVE-2016-1000),
+  [CVE-2016-5636](https://security-tracker.debian.org/tracker/CVE-2016-5636),
+  [CVE-2016-5699](https://security-tracker.debian.org/tracker/CVE-2016-5699)
+  - Package `c-ares`:
+  [CVE-2016-5180](https://security-tracker.debian.org/tracker/CVE-2016-5180)
+
+### Typical update path from Release 45
+
+- Need to get 171 MB of archives.
+
+- <advanced title="4 installed packages">
+      linux-image-3.13.0-105-generic (3.13.0-105.152~precise1)
+      linux-image-3.2.0-118-generic (3.2.0-118.161)
+      linux-headers-3.13.0-105-generic (3.13.0-105.152~precise1)
+      linux-headers-3.13.0-105 (3.13.0-105.152~precise1)
+</advanced>
+
+- <advanced title="27 updated packages">
+      linux-generic-lts-trusty (3.13.0.101.92 => 3.13.0.105.96)
+      linux-image-server (3.2.0.115.131 => 3.2.0.118.133)
+      icedtea-6-jre-cacao (6b40-1.13.12-0ubuntu0.12.04.1 => 6b40-1.13.12-0ubuntu0.12.04.2)
+      vim-common (7.3.429-2ubuntu2.1 => 7.3.429-2ubuntu2.2)
+      tar (1.26-4ubuntu1 => 1.26-4ubuntu1.1)
+      vim (7.3.429-2ubuntu2.1 => 7.3.429-2ubuntu2.2)
+      puavo-rules (1.23.0-401+precise+master.3134a85a51cb32d74e2e29b1e8d7e9453b664870 => 1.23.1-402+precise+master.43c56ad66253bf35ea05d6468fe1376896324b57)
+      update-manager-core (0.156.14.20 => 0.156.14.21)
+      python3.2-minimal (3.2.3-0ubuntu3.7 => 3.2.3-0ubuntu3.8)
+      libpython2.7 (2.7.3-0ubuntu3.8 => 2.7.3-0ubuntu3.9)
+      tzdata (2016h-0ubuntu0.12.04 => 2016j-0ubuntu0.12.04)
+      linux-image-generic-lts-trusty (3.13.0.101.92 => 3.13.0.105.96)
+      icedtea-6-jre-jamvm (6b40-1.13.12-0ubuntu0.12.04.1 => 6b40-1.13.12-0ubuntu0.12.04.2)
+      python2.7 (2.7.3-0ubuntu3.8 => 2.7.3-0ubuntu3.9)
+      tzdata-java (2016h-0ubuntu0.12.04 => 2016j-0ubuntu0.12.04)
+      linux-headers-generic-lts-trusty (3.13.0.101.92 => 3.13.0.105.96)
+      libc-ares2 (1.7.5-1 => 1.7.5-1ubuntu0.1)
+      openjdk-6-jre-lib (6b40-1.13.12-0ubuntu0.12.04.1 => 6b40-1.13.12-0ubuntu0.12.04.2)
+      ghostscript-cups (9.05~dfsg-0ubuntu4.3 => 9.05~dfsg-0ubuntu4.4)
+      libgs9-common (9.05~dfsg-0ubuntu4.3 => 9.05~dfsg-0ubuntu4.4)
+      ghostscript (9.05~dfsg-0ubuntu4.3 => 9.05~dfsg-0ubuntu4.4)
+      vim-runtime (7.3.429-2ubuntu2.1 => 7.3.429-2ubuntu2.2)
+      openjdk-6-jre-headless (6b40-1.13.12-0ubuntu0.12.04.1 => 6b40-1.13.12-0ubuntu0.12.04.2)
+      python2.7-minimal (2.7.3-0ubuntu3.8 => 2.7.3-0ubuntu3.9)
+      vim-tiny (7.3.429-2ubuntu2.1 => 7.3.429-2ubuntu2.2)
+      python3.2 (3.2.3-0ubuntu3.7 => 3.2.3-0ubuntu3.8)
+      libgs9 (9.05~dfsg-0ubuntu4.3 => 9.05~dfsg-0ubuntu4.4)
+</advanced>
+
 ## Release 45 {#45}
 
 ### Notable changes
