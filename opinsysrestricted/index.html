@@ -18,6 +18,41 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+## R1650 - Aada {#ltsp-opinsysrestricted-trusty-2016-12-16-094119-i386}
+
+### Korjaukset ja muut muutokset
+- <advanced title="Korjaus: Office 365:n hitaus Chrome-selaimella">
+    Microsoftin Office 365:n organisaatioille tarkoitettu version kanssa on pitkin syksyä havaittu hitautta, kun 
+    käytössä on Google Chrome-selain. Pahimmillaan Office 365 saattaa käytettäessä jumittaa 
+    koko Chrome-selainohjelmiston. Ongelma liittyy Officen virheelliseen tapaan käsitellä internetselainten lähettämää
+    tietoja itsestään (user-agent). Jostain syystä Office 365 ei kykene käsittelemään Chrome-selaimen user-agent
+    -tietoa, jos se on tullut Linux-käyttöjärjestelmää käyttävältä tietokoneelta. Kiertokeinona ongelmalle Opinsys-
+    järjestelmän Chrome-selain väittä olevansa Microsoftin palveluita käytettäessä Chromebookin 
+    CrOS-käyttöjärjestelmä. Tätä tietoa käyttämällä Office 356 toimii normaalisti.</advanced>
+
+- <advanced title="Korjaus: Sisäänkirjautumisen toimimattomuus langattoman verkon tukiasema koneilla">
+    Asiakkaillamme on havaittu tilanteita, joissa tietokoneiden sisäänkirjautuminen saattoi rikkoutua pari tuntia 
+    niiden käynnistämisen jälkeen. Ongelma aiheutui niissä olevien langattomanverkon tukiasema-adapteriden virheellisestä toiminnasta.
+    Varsinainen ongelma on vielä epäselvä, mutta se saattaa liittyä esimerkiksi viallisiin adapterilaitteisiin. Vikatilasta
+    aiheutuneiden vikaviestien määrä täytti tietokoneen muistin ja aiheutti lopulta sen että kirjautuminen ei kyseiselle 
+    laitteellei ei einää toiminut. Ongelma on nyt kieretty ja kirjautumisongelmaa ei pitäisi esiintyä.
+    </advanced>
+
+- <advanced title="Lisäys: Robbo-ohjelmointiympäristö">
+    Järjestelmään on lisätty Robbo-ohjelmointiympäristö. Sen saa käynnistettyä valitsemalla ``Menu`` >
+    ``Ohjelmointi`` > ``Robbo``. Ohjelmassa on vielä muutamia puutteita, jotka korjaantunevat Robbon
+    tulevien versioiden kanssa. Suurin puute on, että ohjelman käytössä olevassa versiossa Robbo-laitteen
+    laiteohjelmistoa (firmware) ei pysty asentamaan tai päivittämään. Ohjelmalla voi siis ohjelmoida vain
+    robotteja, joiden laiteohjelmisto on esiasennettu, kunnes laitevalmistaja julkaisee uuden version ohjelmasta.</advanced>
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Päivitetty adm-tunnuksia ajantaisaiseksi.
+</advanced>
+
+
 ## R1646 - Aarni {#ltsp-opinsysrestricted-trusty-2016-11-16-131635-i386}
 
 ### Korjaukset ja muut muutokset
