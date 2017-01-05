@@ -18,6 +18,28 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+## L1701 - Upeaherkkusieni {#ltsp-lukiolaiskannettava-trusty-2017-01-03-065008-i386}
+
+### Korjaukset ja muut muutokset
+
+- <advanced title="Korjaus: Office 365:n hitaus Chrome-selaimella">
+    Microsoftin Office 365:n organisaatioille tarkoitettu version kanssa on havaittu hitautta 
+    käytettäessä Google Chrome-selainta. Käytönyhteydessä palvelu on saattanut jumittaa esim.
+    koko Chrome-selaimen. Ongelma liittyy Officen virheelliseen tapaan käsitellä internetselainten lähettämää
+    tietoja itsestään (user-agent). Jostain syystä Office 365 ei kykene käsittelemään Chrome-selaimen user-agent
+    -tietoa, jos se on tullut Linux-käyttöjärjestelmää käyttävältä tietokoneelta. Kiertokeinona ongelmalle Opinsys-
+    järjestelmän Chrome-selain väittä olevansa Microsoftin palveluita käytettäessä Chromebookin 
+    CrOS-käyttöjärjestelmä.</advanced>
+
+- <advanced title="Lisäys: Kertakirjautuminen Chrome ja Chromium -selaimilla">
+    Chrome ja Chromium-selaimet tukevat nyt SSO-/kertakirjautumista. Tämä
+    tarkoittaa sitä, että Opinsys-tietokoneelle kirjautumisen jälkeen käyttäjä pääsee
+    selaimella suoraan verkkopalveluihin jotka on integroitu Opinsysin käyttäjäkannan 
+    kanssa. Esimerkiksi tämä toimii Opinsysin-tukipalvelusivustolla tai mm. joissakin 
+    kunnissa käytössä olevan Edison-järjestelmän kanssa kun niihin integraatio on tehty.
+    </advanced>
+
+
 ## L1651 - Turnipsi {#ltsp-lukiolaiskannettava-trusty-2016-12-19-090539-i386}
 
 ### Korjaukset ja muut muutokset
