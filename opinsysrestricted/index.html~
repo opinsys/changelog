@@ -18,105 +18,29 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
-## R1712 - Akseli {#ltsp-opinsysrestricted-trusty-2017-03-23-062934-i386}
-
-### Korjaukset ja muut muutokset
-
-- <advanced title="Päivitys: Geogebra">
-    Geogebra on päivitetty uudempaan versioon. Edellisessä versiossa oli ongelmia CAS-laskimen
-    yhtälönratkaisu toiminnon kanssa. Päivitetyssä versiossa tämä ongelma on korjattu.
-    </advanced>
-
-- Muutos: Google Earth lisätty oppiainevalikon maantieto-osioon.
-
-- <advanced title="Päivitys: Dropbox">
-    Dropbox on päivitetty. Vanha versio esti kirjautumisen niiltä henkilöiltä, jotka 
-    käynnistivät Dropboxin ensimmäistä kertaa. Ensimmäisen käynnistyskerran jälkeen 
-    Dropbox päivittyy automaattisesti, joten ongelma ei koskenut muita ohjelman käyttäjiä.
-    </advanced>
-
-
-
-## R1708 - Aslak {#ltsp-opinsysrestricted-trusty-2017-02-23-123243-i386}
-
-### Korjaukset ja muut muutokset
-
-- <advanced title="Päivitys: LibreOffice 5.2.5">
-    LibreOffice on päivitetty versioon 5.2.5. Suurin muutos näkyy ohjelman tallennusvalikoissa, 
-    jotka palautuvat jälleen yhtenäiseen ulkoasuun muun järjestelmän kanssa. Päivitys korjaa
-    ohjelmassa esiintyneitä jumeja ja ohjelman käyttöliittymän aiheuttamaa sekaannusta esimerkiksi tallennettaessa
-    kannettavilta tietokoneilta usb-tikuille, palvelimelle ja yhteisiin hakemistoihin.
-    </advanced>
-
-### Tekniset muutokset
-
-<advanced title="Näytä...">
-- Muutoksia ylläpitäjien ssh-avaimiin.
-</advanced>
-
-## R1707 - Voitto {#ltsp-opinsysrestricted-trusty-2017-02-14-102600-i386}
-
-### Korjaukset ja muut muutokset
-
-- <advanced title="Päivitys: Processing IDE">
-    Processing IDE on päivitetty versioon 3.3.
-    </advanced>
-
-- <advanced title="Lisäys: MIT Appinventor-yhteysohjelma">
-    Järjestelmästä löytyy nyt MIT Appinventor-yhteysohjelma. Sen avulla tietokoneen
-    USB-väylään liitettyä Android-puhelinta on mahdollista käyttää http://appinventor.mit.edu
-    -palvelussa tehtyjen sovellusten testaamiseen. Yhteysohjelman saa päälle valitsemalla
-    ``Menu > Ohjelmointi > Appinventor USB``
-    </advanced>
-
-- <advanced title="Lisäys: Robotmesh-yhteysohjelma">
-    Robotmesh-ohjelmointiympäristöä (www.robotmesh.com) voi nyt käyttää Chrome-selaimella ja 
-    tietokoneeseen liitettyjen robottilaitteiden kanssa osoitteessa http://www.robotmesh.com/.
-    Palvelun käyttö edellyttää edelleen sivuston ohjeiden mukaisen liitännäisen asentamisen
-    käyttäjäkohtaisesti.
-    </advanced>
-
-- <advanced title="Korjaus: Yhteistenkansioiden pikalinkit">
-    Yhteisten kansioiden pikalinkkien toimintaa on korjattu ja esimerkiksi tiedostoselaimessa 
-    näkynyttä välkyntää ei enää esiinny. Lisäksi yhteistenkasioiden linkit tulevat nyt näkyviin
-    myös käyttäjätunnuksen ensimmäisen kirjautumisen yhteydessä.
-    </advanced>
-
-### Tekniset muutokset
-
-<advanced title="Näytä...">
-- Lisätty Cura 3D tulostimen riippuvuudet
-- Lisätty Mattermost client ``/opt/Mattermost/mattermost-desktop``
-- Lisätty android-tools-adb
-</advanced>
-
-
-
-## R1704 - Senja {#ltsp-opinsysrestricted-trusty-2017-01-24-081848-i386}
-
-### Korjaukset ja muut muutokset
-
-- <advanced title="Päivitys: Dr Racket-ohjelmointiympäristö">
-    Dr Racket on päivitetty versioon 6.7.
-    </advanced>
-
-
-## R1701 - Aapeli {#ltsp-opinsysrestricted-trusty-2017-01-02-112429-i386}
+## R1650 - Aapeli {#ltsp-opinsysrestricted-trusty-2017-01-02-112429-i386}
 
 ### Korjaukset ja muut muutokset
 
 - <advanced title="Lisäys: Kertakirjautuminen Chrome ja Chromium -selaimilla">
-    Chrome ja Chromium-selaimet tukevat nyt SSO-/kertakirjautumista. Tämä
+    Chrome ja Chromium-selaimet tukevat nyt SSO/kertakirjautumista. Käytännössä tämä
     tarkoittaa sitä, että Opinsys-tietokoneelle kirjautumisen jälkeen käyttäjä pääsee
     selaimella suoraan verkkopalveluihin jotka on integroitu Opinsysin käyttäjäkannan 
-    kanssa. Esimerkiksi tämä toimii Opinsysin-tukipalvelusivustolla tai mm. joissakin 
-    kunnissa käytössä olevan Edison-järjestelmän kanssa kun niihin integraatio on tehty.
+    kanssa. Yksi esimerkki on Opinsysin-tukipalvelu tai joissakin kunnissa on integraatio
+    esimerkiksi Edison-järjestelmän kanssa.
     </advanced>
 
 - <advanced title="Päivitys: Robbo-ohjelmointiympäristö">
-    Robbo-ohjelmisto on päivittynyt versioon 2.1.42. Tämä versio mahdollistaa robotin laiteohjelmiston/
-    firmwaren päivittämisen käyttöönoton yhteydessä.
+    Robbo-ohjelmisto on päivittynyt versioon 2.1.42 joka tukee myös robotin laiteohjelmiston/
+    firmwaren päivittämistä.
     </advanced>
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+
+</advanced>
 
 
 
@@ -157,10 +81,6 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
     tulevien versioiden kanssa. Suurin puute on, että ohjelman käytössä olevassa versiossa Robbo-laitteen
     laiteohjelmistoa (firmware) ei pysty asentamaan tai päivittämään. Ohjelmalla voi siis ohjelmoida vain
     robotteja, joiden laiteohjelmisto on esiasennettu, kunnes laitevalmistaja julkaisee uuden version ohjelmasta.</advanced>
-
-- <advanced title="Lisäys: Google Cast for Education laajennos Chrome-selaimeen">
-    Chrome-selaimessa on esiasennettuna Google Cast for Education-laajennos.
-    </advanced>
 
 
 ### Tekniset muutokset

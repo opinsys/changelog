@@ -17,41 +17,6 @@
 
 <pre class="markdown"><code>
 
-## E1712 - Ipswich  {#ltsp-opinsysextra-trusty-2017-03-23-114330-i386}
-* Update LibreOffice to version 5.2.5
-* Update Geogebra to the newest version. This fixes some of the CAS functions that were
-  broken in the previous version.
-* Add Google Earth to Geography section in the subjects menu
-
-## E1707 -  Horsham {#ltsp-opinsysextra-trusty-2017-02-15-083645-i386}
-* Update Processing ide to version 3.3.
-* Add Appinventor USB-host package
-* Add android-tools-adb
-* Add dependencies needed by Cura 3d printer software
-* Add robotmeshconnect package needed by the Robotmesh programming ide and Chrome extension
-* Add Mattermost client
-* Fix flickering remote mount bookmarks in Nautilus
-
-## E1704 -  Goulburn {#ltsp-opinsysextra-trusty-2017-01-25-115921-i386}
-* Updated dr Racket IDE.
-
-## E1701 - Fairfield {#ltsp-opinsysextra-trusty-2017-01-03-111942-i386}
-
-* Added single-sign-on support to Chromium and Chrome browsers for Opinsys services.
-* Added a workaround for Microsoft online services (Office 365 business/education)
-  to prevent constant crasches and lags on Chromium ja Chrome browsers. The workaround
-  is to install a User-Agent-swicher that sets the Operating system to appear as
-  Google ChromeOS. This fixes the problem as Microsoft does not seem to like the word
-  Linux.
-
-## E1650 - Edgeworth {#ltsp-opinsysextra-trusty-2016-12-16-134517-i386}
-* Fix adding user specific printers. Sometimes adding new printer on a laptop
-  popped up a requester asking for root permissions. This issue is now fixed
-  by removing cups-pk-helper package.
-* Fix login failure on some fat clients with bad behaving Wlan accespoint. 
-  Propably due to broken wlan hardware fatclient log files started to eat 
-  all the free memory causing the device to crash. This issue is now solved.
-* Update Adobe Flash to from version 11.2 to next generation 24.0.0.186.
 
 ## E1645 - Darwin {#ltsp-opinsysextra-trusty-2016-11-10-090944-i386}
 
