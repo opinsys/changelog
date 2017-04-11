@@ -16,6 +16,86 @@
 
 <pre class="markdown"><code>
 
+## Release 50 {#50}
+
+### Notable changes
+
+- Fixes for puavo-rest character encodings in Trusty.
+- Make host-specific logfiles work in Trusty.
+
+### Security updates
+
+  - Package `samba`:
+  [CVE-2012-1182](https://security-tracker.debian.org/tracker/CVE-2012-1182),
+  [CVE-2012-2111](https://security-tracker.debian.org/tracker/CVE-2012-2111),
+  [CVE-2012-6150](https://security-tracker.debian.org/tracker/CVE-2012-6150),
+  [CVE-2013-0213](https://security-tracker.debian.org/tracker/CVE-2013-0213),
+  [CVE-2013-0214](https://security-tracker.debian.org/tracker/CVE-2013-0214),
+  [CVE-2013-0454](https://security-tracker.debian.org/tracker/CVE-2013-0454),
+  [CVE-2014-0244](https://security-tracker.debian.org/tracker/CVE-2014-0244),
+  [CVE-2015-0240](https://security-tracker.debian.org/tracker/CVE-2015-0240),
+  [CVE-2015-5252](https://security-tracker.debian.org/tracker/CVE-2015-5252),
+  [CVE-2015-5296](https://security-tracker.debian.org/tracker/CVE-2015-5296),
+  [CVE-2015-5299](https://security-tracker.debian.org/tracker/CVE-2015-5299),
+  [CVE-2015-5330](https://security-tracker.debian.org/tracker/CVE-2015-5330),
+  [CVE-2015-5370](https://security-tracker.debian.org/tracker/CVE-2015-5370),
+  [CVE-2015-7560](https://security-tracker.debian.org/tracker/CVE-2015-7560),
+  [CVE-2016-2110](https://security-tracker.debian.org/tracker/CVE-2016-2110),
+  [CVE-2016-2111](https://security-tracker.debian.org/tracker/CVE-2016-2111),
+  [CVE-2016-2112](https://security-tracker.debian.org/tracker/CVE-2016-2112),
+  [CVE-2016-2115](https://security-tracker.debian.org/tracker/CVE-2016-2115),
+  [CVE-2016-2118](https://security-tracker.debian.org/tracker/CVE-2016-2118),
+  [CVE-2016-2125](https://security-tracker.debian.org/tracker/CVE-2016-2125),
+  [CVE-2017-2619](https://security-tracker.debian.org/tracker/CVE-2017-2619)
+  - Package `apparmor`:
+  [CVE-2017-6507](https://security-tracker.debian.org/tracker/CVE-2017-6507)
+  - Package `eject`:
+  [CVE-2017-6964](https://security-tracker.debian.org/tracker/CVE-2017-6964)
+  - Package `linux`:
+  [CVE-2017-7184](https://security-tracker.debian.org/tracker/CVE-2017-7184),
+  [CVE-2017-7308](https://security-tracker.debian.org/tracker/CVE-2017-7308)
+
+### Typical update path from Release 49
+
+- Need to get 189 MB of archives.
+
+- Has impact on the availability of the end users service:
+
+  - Service `smbd` will be restarted during the update process and its estimated downtime is 32 seconds.
+  - Service `puavo-rest` will be restarted during the update process and its estimated downtime is 33 seconds.
+  - Service `nmbd` will be restarted during the update process and its estimated downtime is 32 seconds.
+
+- <advanced title="4 installed packages">
+      linux-headers-3.2.0-126 (3.2.0-126.169)
+      linux-headers-3.2.0-126-generic (3.2.0-126.169)
+      linux-image-3.13.0-116-generic (3.13.0-116.163~precise1)
+      linux-image-3.2.0-126-generic (3.2.0-126.169)
+</advanced>
+
+- <advanced title="21 updated packages">
+      linux-image-server (3.2.0.124.139 => 3.2.0.126.141)
+      samba-common-bin (3.6.25-0ubuntu0.12.04.9 => 3.6.25-0ubuntu0.12.04.10)
+      samba (3.6.25-0ubuntu0.12.04.9 => 3.6.25-0ubuntu0.12.04.10)
+      linux-image-generic-lts-trusty (3.13.0.113.104 => 3.13.0.116.107)
+      eject (2.1.5+deb1+cvs20081104-9 => 2.1.5+deb1+cvs20081104-9ubuntu0.1)
+      libpam-winbind (3.6.25-0ubuntu0.12.04.9 => 3.6.25-0ubuntu0.12.04.10)
+      winbind (3.6.25-0ubuntu0.12.04.9 => 3.6.25-0ubuntu0.12.04.10)
+      linux-image-generic (3.2.0.124.139 => 3.2.0.126.141)
+      smbclient (3.6.25-0ubuntu0.12.04.9 => 3.6.25-0ubuntu0.12.04.10)
+      linux-generic (3.2.0.124.139 => 3.2.0.126.141)
+      libapparmor1 (2.7.102-0ubuntu3.10 => 2.7.102-0ubuntu3.11)
+      puavo-rules (1.23.2-408+precise+master.56a561d19211c69fa8fe184772babd090b8c3f23 => 1.23.2+precise+master.daff823788be0c63be40a66bd958ef0094ae71db)
+      makedev (2.3.1-89ubuntu2 => 2.3.1-89ubuntu3)
+      puavo-rest (0.11.1-834+precise.master.b0a168675278eb7c219e0de70af49f0b8c8029a1 => 0.11.1-837+precise.master.a2a5896dc82b8a0d3b809f5572892f7b004e3b7e)
+      libwbclient0 (3.6.25-0ubuntu0.12.04.9 => 3.6.25-0ubuntu0.12.04.10)
+      linux-headers-generic (3.2.0.124.139 => 3.2.0.126.141)
+      apparmor (2.7.102-0ubuntu3.10 => 2.7.102-0ubuntu3.11)
+      linux-libc-dev (3.2.0-124.167 => 3.2.0-126.169)
+      samba-common (3.6.25-0ubuntu0.12.04.9 => 3.6.25-0ubuntu0.12.04.10)
+      puavo-rest-bootserver (0.11.1-834+precise.master.b0a168675278eb7c219e0de70af49f0b8c8029a1 => 0.11.1-837+precise.master.a2a5896dc82b8a0d3b809f5572892f7b004e3b7e)
+      dh-apparmor (2.7.102-0ubuntu3.10 => 2.7.102-0ubuntu3.11)
+</advanced>
+
 ## Release 49 {#49}
 
 ### Notable changes
