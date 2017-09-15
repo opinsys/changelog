@@ -16,6 +16,285 @@
 
 <pre class="markdown"><code>
 
+## Release 53 {#53}
+
+### Notable changes
+
+- `cups-browsed` package is removed
+- `puavo-bootserver-smoke-test` has been fixed for organisations that use
+  the new "group/role"-model
+- some fixes for `puavo-sync-printers`
+
+### Security updates
+
+  - Package `libgd2`:
+  [CVE-2017-7890](https://security-tracker.debian.org/tracker/CVE-2017-7890)
+  - Package `git`:
+  [CVE-2014-9390](https://security-tracker.debian.org/tracker/CVE-2014-9390),
+  [CVE-2014-9938](https://security-tracker.debian.org/tracker/CVE-2014-9938),
+  [CVE-2015-7545](https://security-tracker.debian.org/tracker/CVE-2015-7545),
+  [CVE-2016-2315](https://security-tracker.debian.org/tracker/CVE-2016-2315),
+  [CVE-2016-2324](https://security-tracker.debian.org/tracker/CVE-2016-2324),
+  [CVE-2017-1000](https://security-tracker.debian.org/tracker/CVE-2017-1000),
+  [CVE-2017-8386](https://security-tracker.debian.org/tracker/CVE-2017-8386)
+  - Package `ntp`:
+  [CVE-2014-9293](https://security-tracker.debian.org/tracker/CVE-2014-9293),
+  [CVE-2014-9294](https://security-tracker.debian.org/tracker/CVE-2014-9294),
+  [CVE-2014-9295](https://security-tracker.debian.org/tracker/CVE-2014-9295),
+  [CVE-2014-9296](https://security-tracker.debian.org/tracker/CVE-2014-9296),
+  [CVE-2014-9297](https://security-tracker.debian.org/tracker/CVE-2014-9297),
+  [CVE-2014-9298](https://security-tracker.debian.org/tracker/CVE-2014-9298),
+  [CVE-2015-1798](https://security-tracker.debian.org/tracker/CVE-2015-1798),
+  [CVE-2015-1799](https://security-tracker.debian.org/tracker/CVE-2015-1799),
+  [CVE-2015-5146](https://security-tracker.debian.org/tracker/CVE-2015-5146),
+  [CVE-2015-5194](https://security-tracker.debian.org/tracker/CVE-2015-5194),
+  [CVE-2015-5195](https://security-tracker.debian.org/tracker/CVE-2015-5195),
+  [CVE-2015-5196](https://security-tracker.debian.org/tracker/CVE-2015-5196),
+  [CVE-2015-5219](https://security-tracker.debian.org/tracker/CVE-2015-5219),
+  [CVE-2015-5300](https://security-tracker.debian.org/tracker/CVE-2015-5300),
+  [CVE-2015-7691](https://security-tracker.debian.org/tracker/CVE-2015-7691),
+  [CVE-2015-7692](https://security-tracker.debian.org/tracker/CVE-2015-7692),
+  [CVE-2015-7701](https://security-tracker.debian.org/tracker/CVE-2015-7701),
+  [CVE-2015-7702](https://security-tracker.debian.org/tracker/CVE-2015-7702),
+  [CVE-2015-7703](https://security-tracker.debian.org/tracker/CVE-2015-7703),
+  [CVE-2015-7704](https://security-tracker.debian.org/tracker/CVE-2015-7704),
+  [CVE-2015-7705](https://security-tracker.debian.org/tracker/CVE-2015-7705),
+  [CVE-2015-7850](https://security-tracker.debian.org/tracker/CVE-2015-7850),
+  [CVE-2015-7852](https://security-tracker.debian.org/tracker/CVE-2015-7852),
+  [CVE-2015-7853](https://security-tracker.debian.org/tracker/CVE-2015-7853),
+  [CVE-2015-7855](https://security-tracker.debian.org/tracker/CVE-2015-7855),
+  [CVE-2015-7871](https://security-tracker.debian.org/tracker/CVE-2015-7871),
+  [CVE-2015-7973](https://security-tracker.debian.org/tracker/CVE-2015-7973),
+  [CVE-2015-7974](https://security-tracker.debian.org/tracker/CVE-2015-7974),
+  [CVE-2015-7976](https://security-tracker.debian.org/tracker/CVE-2015-7976),
+  [CVE-2015-7977](https://security-tracker.debian.org/tracker/CVE-2015-7977),
+  [CVE-2015-7978](https://security-tracker.debian.org/tracker/CVE-2015-7978),
+  [CVE-2015-7979](https://security-tracker.debian.org/tracker/CVE-2015-7979),
+  [CVE-2015-8138](https://security-tracker.debian.org/tracker/CVE-2015-8138),
+  [CVE-2015-8158](https://security-tracker.debian.org/tracker/CVE-2015-8158),
+  [CVE-2015-9296](https://security-tracker.debian.org/tracker/CVE-2015-9296),
+  [CVE-2016-0727](https://security-tracker.debian.org/tracker/CVE-2016-0727),
+  [CVE-2016-1547](https://security-tracker.debian.org/tracker/CVE-2016-1547),
+  [CVE-2016-1548](https://security-tracker.debian.org/tracker/CVE-2016-1548),
+  [CVE-2016-1550](https://security-tracker.debian.org/tracker/CVE-2016-1550),
+  [CVE-2016-2516](https://security-tracker.debian.org/tracker/CVE-2016-2516),
+  [CVE-2016-2518](https://security-tracker.debian.org/tracker/CVE-2016-2518),
+  [CVE-2016-4954](https://security-tracker.debian.org/tracker/CVE-2016-4954),
+  [CVE-2016-4955](https://security-tracker.debian.org/tracker/CVE-2016-4955),
+  [CVE-2016-4956](https://security-tracker.debian.org/tracker/CVE-2016-4956),
+  [CVE-2016-7426](https://security-tracker.debian.org/tracker/CVE-2016-7426),
+  [CVE-2016-7427](https://security-tracker.debian.org/tracker/CVE-2016-7427),
+  [CVE-2016-7428](https://security-tracker.debian.org/tracker/CVE-2016-7428),
+  [CVE-2016-7429](https://security-tracker.debian.org/tracker/CVE-2016-7429),
+  [CVE-2016-9310](https://security-tracker.debian.org/tracker/CVE-2016-9310),
+  [CVE-2016-9311](https://security-tracker.debian.org/tracker/CVE-2016-9311),
+  [CVE-2017-6458](https://security-tracker.debian.org/tracker/CVE-2017-6458),
+  [CVE-2017-6462](https://security-tracker.debian.org/tracker/CVE-2017-6462),
+  [CVE-2017-6463](https://security-tracker.debian.org/tracker/CVE-2017-6463),
+  [CVE-2017-6464](https://security-tracker.debian.org/tracker/CVE-2017-6464)
+  - Package `expat`:
+  [CVE-2017-9233](https://security-tracker.debian.org/tracker/CVE-2017-9233)
+  - Package `heimdal`:
+  [CVE-2017-1110](https://security-tracker.debian.org/tracker/CVE-2017-1110)
+  - Package `poppler`:
+  [CVE-2017-2820](https://security-tracker.debian.org/tracker/CVE-2017-2820),
+  [CVE-2017-7511](https://security-tracker.debian.org/tracker/CVE-2017-7511),
+  [CVE-2017-7515](https://security-tracker.debian.org/tracker/CVE-2017-7515),
+  [CVE-2017-9083](https://security-tracker.debian.org/tracker/CVE-2017-9083),
+  [CVE-2017-9406](https://security-tracker.debian.org/tracker/CVE-2017-9406),
+  [CVE-2017-9408](https://security-tracker.debian.org/tracker/CVE-2017-9408),
+  [CVE-2017-9775](https://security-tracker.debian.org/tracker/CVE-2017-9775)
+  - Package `nginx`:
+  [CVE-2017-7529](https://security-tracker.debian.org/tracker/CVE-2017-7529)
+  - Package `samba`:
+  [CVE-2016-2119](https://security-tracker.debian.org/tracker/CVE-2016-2119),
+  [CVE-2016-2123](https://security-tracker.debian.org/tracker/CVE-2016-2123),
+  [CVE-2016-2125](https://security-tracker.debian.org/tracker/CVE-2016-2125),
+  [CVE-2016-2126](https://security-tracker.debian.org/tracker/CVE-2016-2126),
+  [CVE-2017-1110](https://security-tracker.debian.org/tracker/CVE-2017-1110),
+  [CVE-2017-2619](https://security-tracker.debian.org/tracker/CVE-2017-2619),
+  [CVE-2017-7494](https://security-tracker.debian.org/tracker/CVE-2017-7494),
+  [CVE-2017-9461](https://security-tracker.debian.org/tracker/CVE-2017-9461)
+  - Package `linux`:
+  [CVE-2014-9900](https://security-tracker.debian.org/tracker/CVE-2014-9900),
+  [CVE-2015-8944](https://security-tracker.debian.org/tracker/CVE-2015-8944),
+  [CVE-2015-8955](https://security-tracker.debian.org/tracker/CVE-2015-8955),
+  [CVE-2015-8962](https://security-tracker.debian.org/tracker/CVE-2015-8962),
+  [CVE-2015-8963](https://security-tracker.debian.org/tracker/CVE-2015-8963),
+  [CVE-2015-8964](https://security-tracker.debian.org/tracker/CVE-2015-8964),
+  [CVE-2015-8966](https://security-tracker.debian.org/tracker/CVE-2015-8966),
+  [CVE-2015-8967](https://security-tracker.debian.org/tracker/CVE-2015-8967),
+  [CVE-2016-1008](https://security-tracker.debian.org/tracker/CVE-2016-1008),
+  [CVE-2016-8405](https://security-tracker.debian.org/tracker/CVE-2016-8405),
+  [CVE-2017-1000](https://security-tracker.debian.org/tracker/CVE-2017-1000),
+  [CVE-2017-2618](https://security-tracker.debian.org/tracker/CVE-2017-2618),
+  [CVE-2017-7346](https://security-tracker.debian.org/tracker/CVE-2017-7346),
+  [CVE-2017-7482](https://security-tracker.debian.org/tracker/CVE-2017-7482),
+  [CVE-2017-7895](https://security-tracker.debian.org/tracker/CVE-2017-7895),
+  [CVE-2017-8924](https://security-tracker.debian.org/tracker/CVE-2017-8924),
+  [CVE-2017-8925](https://security-tracker.debian.org/tracker/CVE-2017-8925),
+  [CVE-2017-9074](https://security-tracker.debian.org/tracker/CVE-2017-9074),
+  [CVE-2017-9605](https://security-tracker.debian.org/tracker/CVE-2017-9605)
+  - Package `mysql-5.5`:
+  [CVE-2017-3648](https://security-tracker.debian.org/tracker/CVE-2017-3648),
+  [CVE-2017-3653](https://security-tracker.debian.org/tracker/CVE-2017-3653)
+  - Package `ruby1.9.1`:
+  [CVE-2009-5147](https://security-tracker.debian.org/tracker/CVE-2009-5147),
+  [CVE-2015-1855](https://security-tracker.debian.org/tracker/CVE-2015-1855),
+  [CVE-2015-9096](https://security-tracker.debian.org/tracker/CVE-2015-9096),
+  [CVE-2016-2337](https://security-tracker.debian.org/tracker/CVE-2016-2337),
+  [CVE-2016-2339](https://security-tracker.debian.org/tracker/CVE-2016-2339),
+  [CVE-2016-7798](https://security-tracker.debian.org/tracker/CVE-2016-7798)
+  - Package `spice`:
+  [CVE-2017-7506](https://security-tracker.debian.org/tracker/CVE-2017-7506)
+
+### Typical update path from Release 52
+
+- Need to get 98.2 MB of archives.
+
+- Has impact on the availability of the end users service:
+
+  - Service `winbind` will be restarted during the update process and its estimated downtime is 87 seconds.
+  - Service `samba-ad-dc` will be restarted during the update process and its estimated downtime is ? seconds.
+  - Service `smbd` will be restarted during the update process and its estimated downtime is 78 seconds.
+  - Service `nmbd` will be restarted during the update process and its estimated downtime is 80 seconds.
+  - Service `rsyslog` will be restarted during the update process and its estimated downtime is 0 seconds.
+
+- <advanced title="60 installed packages">
+      linux-headers-3.10.89-031089-generic (3.10.89-031089.201509211852)
+      linux-image-3.10.69-031069-generic (3.10.69-031069.201502110743)
+      linux-image-extra-3.13.0-101-generic (3.13.0-101.148)
+      linux-firmware-image (3.10.61.opinsys1+-1)
+      libopenwsman1 (2.4.3-0ubuntu4.1)
+      linux-headers-3.13.0-116 (3.13.0-116.163)
+      linux-headers-3.10.81-031081-generic (3.10.81-031081.201506230313)
+      libwiretap3 (1.10.6-1)
+      linux-headers-3.10.69-031069-generic (3.10.69-031069.201502110743)
+      linux-headers-3.13.0-105-generic (3.13.0-105.152)
+      linux-image-extra-3.13.0-116-generic (3.13.0-116.163)
+      libxen-4.1 (4.1.6.1-0ubuntu0.12.04.12)
+      linux-image-extra-3.13.0-105-generic (3.13.0-105.152)
+      linux-image-3.13.0-101-generic (3.13.0-101.148)
+      libhdb9-heimdal (1.6~git20131207+dfsg-1ubuntu1.2)
+      linux-headers-3.13.0-128-generic (3.13.0-128.177)
+      linux-headers-3.13.0-113 (3.13.0-113.160)
+      linux-image-extra-3.13.0-113-generic (3.13.0-113.160)
+      linux-image-3.13.0-106-generic (3.13.0-106.153)
+      libmpdec2 (2.4.0-6)
+      linux-headers-3.13.0-24 (3.13.0-24.47)
+      linux-image-3.10.89-031089-generic (3.10.89-031089.201509211852)
+      linux-image-extra-3.13.0-128-generic (3.13.0-128.177)
+      linux-image-3.13.0-77-generic (3.13.0-77.121)
+      linux-image-3.13.0-24-generic (3.13.0-24.47)
+      linux-headers-3.13.0-108-generic (3.13.0-108.155)
+      libwsutil3 (1.10.6-1)
+      linux-image-3.13.0-116-generic (3.13.0-116.163)
+      libcimcclient0 (2.2.6-0ubuntu2)
+      libkdc2-heimdal (1.6~git20131207+dfsg-1ubuntu1.2)
+      linux-headers-3.2.0-113 (3.2.0-113.155)
+      linux-headers-3.13.0-101 (3.13.0-101.148)
+      libssh2-1 (1.4.3-2ubuntu0.1)
+      linux-headers-3.10.89-031089 (3.10.89-031089.201509211852)
+      linux-headers-3.13.0-108 (3.13.0-108.155)
+      linux-headers-3.13.0-128 (3.13.0-128.177)
+      linux-headers-3.13.0-101-generic (3.13.0-101.148)
+      linux-headers-3.13.0-106 (3.13.0-106.153)
+      linux-headers-3.13.0-105 (3.13.0-105.152)
+      linux-headers-3.13.0-106-generic (3.13.0-106.153)
+      linux-image-3.13.0-128-generic (3.13.0-128.177)
+      linux-headers-3.13.0-24-generic (3.13.0-24.47)
+      linux-headers-3.13.0-116-generic (3.13.0-116.163)
+      linux-image-extra-3.13.0-24-generic (3.13.0-24.47)
+      libntdb1 (1.0-2ubuntu1)
+      libhogweed2 (2.7.1-1ubuntu0.2)
+      linux-image-3.10.61.opinsys1+ (3.10.61.opinsys1+-1)
+      linux-headers-3.13.0-113-generic (3.13.0-113.160)
+      linux-headers-3.10.81-031081 (3.10.81-031081.201506230313)
+      python-ntdb (1.0-2ubuntu1)
+      linux-image-extra-3.13.0-100-generic (3.13.0-100.147)
+      linux-image-extra-3.13.0-108-generic (3.13.0-108.155)
+      linux-image-extra-3.13.0-106-generic (3.13.0-106.153)
+      linux-image-3.13.0-105-generic (3.13.0-105.152)
+      linux-image-3.13.0-113-generic (3.13.0-113.160)
+      libwireshark3 (1.10.6-1)
+      linux-image-3.10.81-031081-generic (3.10.81-031081.201506230313)
+      libgnutls28 (3.2.11-2ubuntu1.1)
+      linux-headers-3.10.69-031069 (3.10.69-031069.201502110743)
+      linux-image-3.13.0-108-generic (3.13.0-108.155)
+</advanced>
+
+- <advanced title="69 updated packages">
+      linux-image-server (3.13.0.123.133 => 3.13.0.128.137)
+      libgd3 (2.1.0-3ubuntu0.6 => 2.1.0-3ubuntu0.7)
+      libmysqlclient18 (5.5.55-0ubuntu0.14.04.1 => 5.5.57-0ubuntu0.14.04.1)
+      libnss-winbind (4.3.11+dfsg-0ubuntu0.14.04.9 => 4.3.11+dfsg-0ubuntu0.14.04.10)
+      linux-image-generic (3.13.0.123.133 => 3.13.0.128.137)
+      libpam-winbind (4.3.11+dfsg-0ubuntu0.14.04.9 => 4.3.11+dfsg-0ubuntu0.14.04.10)
+      ruby1.9.1-examples (1.9.3.484-2ubuntu1.2 => 1.9.3.484-2ubuntu1.3)
+      libhcrypto4-heimdal (1.6~git20131207+dfsg-1ubuntu1.1 => 1.6~git20131207+dfsg-1ubuntu1.2)
+      libdrm-radeon1 (2.4.67-1ubuntu0.14.04.1 => 2.4.67-1ubuntu0.14.04.2)
+      libwind0-heimdal (1.6~git20131207+dfsg-1ubuntu1.1 => 1.6~git20131207+dfsg-1ubuntu1.2)
+      rsyslog-relp (7.4.4-1ubuntu2.6 => 7.4.4-1ubuntu2.7)
+      libruby1.9.1-dbg (1.9.3.484-2ubuntu1.2 => 1.9.3.484-2ubuntu1.3)
+      kexec-tools (2.0.6-0ubuntu2.2 => 2.0.6-0ubuntu2.3)
+      libroken18-heimdal (1.6~git20131207+dfsg-1ubuntu1.1 => 1.6~git20131207+dfsg-1ubuntu1.2)
+      git-man (1.9.1-1ubuntu0.5 => 1.9.1-1ubuntu0.6)
+      python3-update-manager (0.196.23 => 0.196.24)
+      libgssapi3-heimdal (1.6~git20131207+dfsg-1ubuntu1.1 => 1.6~git20131207+dfsg-1ubuntu1.2)
+      linux-libc-dev (3.13.0-123.172 => 3.13.0-128.177)
+      samba-common (4.3.11+dfsg-0ubuntu0.14.04.9 => 4.3.11+dfsg-0ubuntu0.14.04.10)
+      libxen-4.4 (4.4.2-0ubuntu0.14.04.11 => 4.4.2-0ubuntu0.14.04.12)
+      rsyslog (7.4.4-1ubuntu2.6 => 7.4.4-1ubuntu2.7)
+      libxenstore3.0 (4.4.2-0ubuntu0.14.04.11 => 4.4.2-0ubuntu0.14.04.12)
+      puavo-client (2.1.0-115+trusty.master.80d910857567b92c8331e2cb22095fd6db04a715 => 2.1.1-118+trusty.master.b7bb7bb873314ebc4e9d9a701f43140a753f05fc)
+      ruby1.9.3 (1.9.3.484-2ubuntu1.2 => 1.9.3.484-2ubuntu1.3)
+      poppler-utils (0.24.5-2ubuntu4.4 => 0.24.5-2ubuntu4.5)
+      libhdb9-heimdal (1.6~git20131207+dfsg-1ubuntu1.1 => 1.6~git20131207+dfsg-1ubuntu1.2)
+      libtcltk-ruby1.9.1 (1.9.3.484-2ubuntu1.2 => 1.9.3.484-2ubuntu1.3)
+      git (1.9.1-1ubuntu0.5 => 1.9.1-1ubuntu0.6)
+      linux-generic (3.13.0.123.133 => 3.13.0.128.137)
+      libsmbclient (4.3.11+dfsg-0ubuntu0.14.04.9 => 4.3.11+dfsg-0ubuntu0.14.04.10)
+      libasn1-8-heimdal (1.6~git20131207+dfsg-1ubuntu1.1 => 1.6~git20131207+dfsg-1ubuntu1.2)
+      nginx-common (1.4.6-1ubuntu3.7 => 1.4.6-1ubuntu3.8)
+      samba-libs (4.3.11+dfsg-0ubuntu0.14.04.9 => 4.3.11+dfsg-0ubuntu0.14.04.10)
+      samba-common-bin (4.3.11+dfsg-0ubuntu0.14.04.9 => 4.3.11+dfsg-0ubuntu0.14.04.10)
+      linux-headers-generic (3.13.0.123.133 => 3.13.0.128.137)
+      linux-image-generic-lts-trusty (3.13.0.123.133 => 3.13.0.128.137)
+      libdrm2 (2.4.67-1ubuntu0.14.04.1 => 2.4.67-1ubuntu0.14.04.2)
+      libkdc2-heimdal (1.6~git20131207+dfsg-1ubuntu1.1 => 1.6~git20131207+dfsg-1ubuntu1.2)
+      ntp (4.2.6.p5+dfsg-3ubuntu2.14.04.11 => 4.2.6.p5+dfsg-3ubuntu2.14.04.12)
+      ruby-puavobs (0.20.3-1012+trusty+master.63aa1e84376d8c83adb1e38d1f9ff3f841921271 => 0.20.8-1019+trusty+master.204e42f55d0cd3508bc09ed39db1fd3c4f87dd0a)
+      ruby1.9.1-dev (1.9.3.484-2ubuntu1.2 => 1.9.3.484-2ubuntu1.3)
+      ruby1.9.1-full (1.9.3.484-2ubuntu1.2 => 1.9.3.484-2ubuntu1.3)
+      update-manager-core (0.196.23 => 0.196.24)
+      winbind (4.3.11+dfsg-0ubuntu0.14.04.9 => 4.3.11+dfsg-0ubuntu0.14.04.10)
+      libdrm-intel1 (2.4.67-1ubuntu0.14.04.1 => 2.4.67-1ubuntu0.14.04.2)
+      smbclient (4.3.11+dfsg-0ubuntu0.14.04.9 => 4.3.11+dfsg-0ubuntu0.14.04.10)
+      python-samba (4.3.11+dfsg-0ubuntu0.14.04.9 => 4.3.11+dfsg-0ubuntu0.14.04.10)
+      libspice-server1 (0.12.4-0nocelt2ubuntu1.4 => 0.12.4-0nocelt2ubuntu1.5)
+      libruby1.9.1 (1.9.3.484-2ubuntu1.2 => 1.9.3.484-2ubuntu1.3)
+      nginx (1.4.6-1ubuntu3.7 => 1.4.6-1ubuntu3.8)
+      ruby1.9.1 (1.9.3.484-2ubuntu1.2 => 1.9.3.484-2ubuntu1.3)
+      samba (4.3.11+dfsg-0ubuntu0.14.04.9 => 4.3.11+dfsg-0ubuntu0.14.04.10)
+      samba-dsdb-modules (4.3.11+dfsg-0ubuntu0.14.04.9 => 4.3.11+dfsg-0ubuntu0.14.04.10)
+      debootstrap (1.0.59ubuntu0.7 => 1.0.59ubuntu0.8)
+      libdrm-nouveau2 (2.4.67-1ubuntu0.14.04.1 => 2.4.67-1ubuntu0.14.04.2)
+      libheimntlm0-heimdal (1.6~git20131207+dfsg-1ubuntu1.1 => 1.6~git20131207+dfsg-1ubuntu1.2)
+      libheimbase1-heimdal (1.6~git20131207+dfsg-1ubuntu1.1 => 1.6~git20131207+dfsg-1ubuntu1.2)
+      libkrb5-26-heimdal (1.6~git20131207+dfsg-1ubuntu1.1 => 1.6~git20131207+dfsg-1ubuntu1.2)
+      libwbclient0 (4.3.11+dfsg-0ubuntu0.14.04.9 => 4.3.11+dfsg-0ubuntu0.14.04.10)
+      ri1.9.1 (1.9.3.484-2ubuntu1.2 => 1.9.3.484-2ubuntu1.3)
+      libseccomp2 (2.1.1-1ubuntu1~trusty3 => 2.1.1-1ubuntu1~trusty4)
+      libpoppler44 (0.24.5-2ubuntu4.4 => 0.24.5-2ubuntu4.5)
+      nginx-full (1.4.6-1ubuntu3.7 => 1.4.6-1ubuntu3.8)
+      samba-vfs-modules (4.3.11+dfsg-0ubuntu0.14.04.9 => 4.3.11+dfsg-0ubuntu0.14.04.10)
+      puavo-ltsp-bootserver (0.20.3-1012+trusty+master.63aa1e84376d8c83adb1e38d1f9ff3f841921271 => 0.20.8-1019+trusty+master.204e42f55d0cd3508bc09ed39db1fd3c4f87dd0a)
+      libhx509-5-heimdal (1.6~git20131207+dfsg-1ubuntu1.1 => 1.6~git20131207+dfsg-1ubuntu1.2)
+      ntpdate (4.2.6.p5+dfsg-3ubuntu2.14.04.11 => 4.2.6.p5+dfsg-3ubuntu2.14.04.12)
+      mysql-common (5.5.55-0ubuntu0.14.04.1 => 5.5.57-0ubuntu0.14.04.1)
+      libexpat1 (2.1.0-4ubuntu1.3 => 2.1.0-4ubuntu1.4)
+</advanced>
+
 ## Release 52 {#52}
 
 ### Notable changes
