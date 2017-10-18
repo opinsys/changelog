@@ -18,6 +18,63 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+## O1742 - Babbage (kehitysversio) {#opinsys-os-opinsys-stretch-2017-10-16-064715-amd64}
+
+- <advanced title="Korjaus: Laitetuki HP Stream 11 G3 -kannettavalle">
+  Kyseisiä laitteita on nyt mahdollista asentaa nomraalin asennusprosessin 
+  mukaisesti. Lisäksi laite on mahdollista asettaa unitilaan sulkemalla luukun.
+    </advanced>
+
+- <advanced title="Korjaus: iOS 10 -mobiililaitteiden liittäminen USB-kaapelilla">
+  iOS 10 -käyttöjärjestelmääkäyttäviä mobiililaitteita on mahdollista liittää 
+  USB-kaapelilla ja siirtää niiltä kuvia ja muita tiedostoja.
+    </advanced>
+
+- <advanced title="Korjaus: Oletustulostimen asettaminen">
+  Puavo-laitehallinnasta asetettu laitekohtainen oletustulostinasetus
+  toimii taas.
+    </advanced>
+
+- <advanced title="Korjaus: Salasananvaihtotyökalu">
+  ``Menu > Salasana`` -työkalu toimii taas normaalisti. Aiemmin työkalun käynnistäminen
+  jumitti menu-valikon.
+    </advanced>
+
+- <advanced title="Korjaus: Verkkokansioiden toimintavarmuuden parantaminen kannettavilla">
+  Koulun Opinsys-verkossa kannettavilla käytettävissä olevat verkkokansiot toimivat
+  nyt luotettavammin eri tilanteissa. 
+    </advanced>
+
+- <advanced title="Lisäys: Lisätty sovellus OpenBoard (korvaa OpenSankoren)">
+  Järjestelmässä aiemmin ollut OpenSankore-valkotaulusovellus korvataan
+  OpenBoard-ohjelmalla. Openboard on uuden organisaation kehittämä versio
+  OpenSankoresta, johon ohjelman jatkokehitys on siirtynyt.
+    </advanced>
+
+- <advanced title="Lisäys: ">
+  
+    </advanced>
+
+- Lisäys: Lisätty Ohjelmavalikkoon Google Earth
+- Lisäys: Lisätty Ohjelmavalikkoon linkkin Peda.net -palvelun Opinsys-kirjautumiseen
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Päätteiden asennusskripti tukee nyt myös eMMC massamuisteja (HP Stream 11 Pro G3).
+- Autopilot-testikäyttäjää voi käyttää laitetagien kautta.
+- Henkilökohtaisen kannettavan kirjautumisruudussa ei näytetä selkokielisenä syötettyä
+  salasanaa.
+- Lisätty Password Gorilla.
+- Imageoverlay ei rikkoudu vaadittaessa levytarkistusta.
+- Puavo-pkg-paketeissa on nyt roskien siivous joka poistaa levytilaa vieviä asennuspaketteja
+  ja vanhoja ohjelmaversioita.
+- NVidian ajurit päivitetty versioon 375.82.
+- Firefox-selaimen teema näyttää taas siistiltä
+</advanced>
+
+
 ## O1731 - Ampère (kehitysversio) {#opinsys-os-opinsys-stretch-2017-08-03-095036-amd64}
 
 Tämä on ensimmäinen julkaisu uudesta Opinsys järjestelmästä. Kyseinen versio on vielä kehitysversio joten siinä saattaa esiintyä puutteita ja esimerkiksi käyttöliittymään
@@ -26,7 +83,10 @@ normaalissa ylläpidossa ja niiden on mahdollista päivittyä automaattisesti uu
 
     
 
-</code></pre>
+</code>
+
+
+</pre>
             </div>
         </div>
         <script src="../bundle.js?v=2" charset="utf-8"></script>
