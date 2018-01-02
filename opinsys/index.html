@@ -19,6 +19,52 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 <pre class="markdown"><code>
 
 
+## O1750 - Descartes (kehitysversio) {#opinsys-os-opinsys-stretch-2017-12-18-100321-amd64}
+
+- <advanced title="Päivitys: Remmina-etätyöpöytäohjelmisto">
+  Uusi ohjelmaversio tukee paremmin esimerkiksi Windows-etätyöpöytäyhteyksiä (RDP).
+    </advanced>
+
+- <advanced title="Lisäys: Krita-piirto-ohjelma">
+  Krita piirto-ohjelma löytyy valitsemalla ``Menu > Grafiikka > Digitaalimaalaus``.
+    </advanced>
+
+- <advanced title="Lisäys: Anki muistikortit-sovellus">
+  Sovellus löytyy valitsemalla ``Menu > Opetusohjelmat > Anki-muistikortit``.
+    </advanced>
+
+- <advanced title="Korjaus: Kannettavien tietokoneiden käynnistymisongelmat">
+  Tuntemattomasta syystä kannettavien tietokoneiden kovalevyosio saattoi korruptoitua, joka 
+  aiheutti sen, että tietokone ei enää käynnistynyt oikein. Ongelman pitäisi olla nyt korjattu
+  ja ongelmalliset osiot korjataan automaattisesti laitteen käynnistyksen yhteydessä.
+    </advanced>
+
+- <advanced title="Korjaus: Yhteistenkansioiden näkyvyys verkkopc:llä">
+  Muutettu järjestelmän oletusasetuksia niin, että yhteiset kansiot näkyvät
+  Tehopääte/VerkkoPC-koneilla automaattisesti.
+    </advanced>
+
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Uusi Puavo-conf-muuttuja ``puavo.wireless.nm.no_autoconnect_networks`` jolla voi estää
+  kannettavia liittymästä automaattisesti langattomiiin verkkoihin.
+- Uusi Puavo-conf-muuttuja ``puavo.boot.plymouth.theme``, jolla voi säätää laitteen 
+  Plymouth-käynnistyskuvaa.
+- Sovellusvalikossa oleva Vendor-kuvake on korjattu ja asetettavissa omalla puavo-conf
+  -muuttujalla.
+- Lisätty tuki puavoon määritetyille sertifikaatti-pohjaisille langattomille verkoille.
+- Korjattu tabulaattoritäydennys adm-tunnuksilla
+- Lisätty Canon tulostinajurit (cnijfilter2-puavo-pkg-paketti)
+- Estetty Skypen autostart kirjautumisen yhteydessä
+- Screenshield ei aktivoidu kannettavan mennessä unitilaan
+- Korjattu kirjautumisruudun ja työpöydän paneelin css-tyylejä
+- Kirjautumisruudun käyttäjälistassa näkyviä käyttäjiä voidaan hallinnoida dconf-muuttujan avulla.
+</advanced>
+
+
 ## O1744 - Curie (kehitysversio) {#opinsys-os-opinsys-stretch-2017-11-01-130855-amd64}
 
 - <advanced title="Korjaus: Tietokoneiden keskitetyt näyttöasetukset">
