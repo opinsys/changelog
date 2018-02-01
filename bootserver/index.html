@@ -16,6 +16,90 @@
 
 <pre class="markdown"><code>
 
+## Release 56 {#56}
+
+### Notable changes
+
+- Fixed `puavo-bootserver-smoke-test`.
+- Fix airprinting for IOS 11.
+- `puavo-rest` looks up puavo-conf values from puavoConf-ldap-attribute.
+
+### Security updates
+
+  - Package `mysql-5.5`:
+  [CVE-2018-2665](https://security-tracker.debian.org/tracker/CVE-2018-2665),
+  [CVE-2018-2668](https://security-tracker.debian.org/tracker/CVE-2018-2668)
+  - Package `rsync`:
+  [CVE-2017-1654](https://security-tracker.debian.org/tracker/CVE-2017-1654),
+  [CVE-2018-5764](https://security-tracker.debian.org/tracker/CVE-2018-5764)
+  - Package `libtasn1-6`:
+  [CVE-2017-1079](https://security-tracker.debian.org/tracker/CVE-2017-1079)
+  - Package `curl`:
+  [CVE-2018-1000](https://security-tracker.debian.org/tracker/CVE-2018-1000)
+  - Package `linux`:
+  [CVE-2017-5753](https://security-tracker.debian.org/tracker/CVE-2017-5753),
+  [CVE-2017-5754](https://security-tracker.debian.org/tracker/CVE-2017-5754)
+
+### Typical update path from Release 55
+
+- Need to get 104 MB of archives.
+
+- Has impact on the availability of the end users service:
+
+  - Service `puavo-rest` will be restarted during the update process and its estimated downtime is 41 seconds.
+
+- <advanced title="28 installed packages">
+      linux-headers-3.13.0-113 (3.13.0-113.160)
+      linux-headers-3.13.0-116 (3.13.0-116.163)
+      linux-headers-3.13.0-117 (3.13.0-117.164)
+      libwiretap3 (1.10.6-1)
+      linux-image-extra-3.13.0-116-generic (3.13.0-116.163)
+      linux-image-extra-3.13.0-128-generic (3.13.0-128.177)
+      linux-headers-3.13.0-128-generic (3.13.0-128.177)
+      linux-headers-3.13.0-123-generic (3.13.0-123.172)
+      linux-image-extra-3.13.0-113-generic (3.13.0-113.160)
+      linux-image-3.13.0-116-generic (3.13.0-116.163)
+      libwsutil3 (1.10.6-1)
+      linux-image-3.13.0-141-generic (3.13.0-141.190)
+      linux-headers-3.13.0-123 (3.13.0-123.172)
+      linux-headers-3.13.0-141 (3.13.0-141.190)
+      linux-headers-3.13.0-117-generic (3.13.0-117.164)
+      linux-headers-3.13.0-128 (3.13.0-128.177)
+      linux-image-3.13.0-128-generic (3.13.0-128.177)
+      linux-image-extra-3.13.0-141-generic (3.13.0-141.190)
+      linux-image-extra-3.13.0-123-generic (3.13.0-123.172)
+      linux-headers-3.13.0-116-generic (3.13.0-116.163)
+      linux-image-extra-3.13.0-117-generic (3.13.0-117.164)
+      linux-headers-3.13.0-141-generic (3.13.0-141.190)
+      linux-image-3.13.0-123-generic (3.13.0-123.172)
+      linux-image-3.13.0-113-generic (3.13.0-113.160)
+      libwireshark3 (1.10.6-1)
+      linux-image-3.13.0-117-generic (3.13.0-117.164)
+      linux-headers-3.13.0-113-generic (3.13.0-113.160)
+      libavahi-glib1 (0.6.31-4ubuntu1.1)
+</advanced>
+
+- <advanced title="18 updated packages">
+      linux-image-server (3.13.0.139.148 => 3.13.0.141.151)
+      ruby-puavobs (0.21.0-1023+trusty+master.8db067ae01a7023eac3da5302f2f1a12a5e5fdea => 0.21.1-1029+trusty+master.7ad050911b719cc1503edb7db020b8605b912fb4)
+      rsync (3.1.0-2ubuntu0.3 => 3.1.0-2ubuntu0.4)
+      libcurl3-gnutls (7.35.0-1ubuntu2.13 => 7.35.0-1ubuntu2.14)
+      linux-image-generic-lts-trusty (3.13.0.139.148 => 3.13.0.141.151)
+      linux-generic (3.13.0.139.148 => 3.13.0.141.151)
+      linux-image-generic (3.13.0.139.148 => 3.13.0.141.151)
+      puavo-rules (1.23.6-432+trusty+master.3116c966b4708fe219da49147d075a8e2515140e => 1.23.6-454+trusty+master.c8e5d23487c43b86a8a248216f7d0bd1b3522da9)
+      puavo-ltsp-bootserver (0.21.0-1023+trusty+master.8db067ae01a7023eac3da5302f2f1a12a5e5fdea => 0.21.1-1029+trusty+master.7ad050911b719cc1503edb7db020b8605b912fb4)
+      linux-headers-generic (3.13.0.139.148 => 3.13.0.141.151)
+      libmysqlclient18 (5.5.58-0ubuntu0.14.04.1 => 5.5.59-0ubuntu0.14.04.1)
+      mysql-common (5.5.58-0ubuntu0.14.04.1 => 5.5.59-0ubuntu0.14.04.1)
+      libcurl3 (7.35.0-1ubuntu2.13 => 7.35.0-1ubuntu2.14)
+      linux-libc-dev (3.13.0-139.188 => 3.13.0-141.190)
+      curl (7.35.0-1ubuntu2.13 => 7.35.0-1ubuntu2.14)
+      puavo-rest-bootserver (0.11.2-18+trusty.trustyrestonly.2a584a4d281756d2a3054f94e94835d95ee4d0b4 => 0.11.2-22+trusty.trustyrestonly.df8ce1bc1099fb4898b8a8b7efb4a3d1efedaf87)
+      puavo-rest (0.11.2-18+trusty.trustyrestonly.2a584a4d281756d2a3054f94e94835d95ee4d0b4 => 0.11.2-22+trusty.trustyrestonly.df8ce1bc1099fb4898b8a8b7efb4a3d1efedaf87)
+      libtasn1-6 (3.4-3ubuntu0.5 => 3.4-3ubuntu0.6)
+</advanced>
+
 ## Release 55 {#55}
 
 ### Notable changes
