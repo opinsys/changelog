@@ -14,9 +14,67 @@
             <div class="doc">
             <h1>Opinsys-järjestelmän versiot ja muutokset</h1>
             <p>Seuraavassa on kuvattu Opinsys-järjestelmän eri versiot ja tärkeimmät käyttöön vaikuttavat muutokset aina 
-edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin sisältyvät uusimmat tietoturva- ja ohjelmistopäivitykset</b> (esim. verkkoselaimet).</p>
+edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin sisältyy uusimmat tietoturva- ja ohjelmistopäivitykset</b> (esim. verkkoselaimet).</p>
 
 <pre class="markdown"><code>
+
+## O1808 - Fahreinheit (kehitysversio) {#opinsys-os-opinsys-stretch-2018-02-19-101910-amd64}
+
+- <advanced title="Lisäys: Geogebra 6 Classic">
+   Ohjelmavalikkoon on lisätty Geogebra 6. Sovellus löytyy valitsemalla 
+   ``Menu > Opetusohjelmat > Geogebra 6``.
+    </advanced>
+
+- <advanced title="Lisäys: SketchUP Free (Web)">
+  Ohjelmavalikkoon on lisätty käynnistin verkkoselaimella käytettävään versioon
+  SketchUP-sovelluksesta. Sovellus löytyy valitsemalla 
+  ``Menu > Grafiikka > SketchUP Free (Web)``. Ohjelma vaatii toimiakseen verkkoyhteyden.
+    </advanced>
+
+- <advanced title="Lisäys: VMWare Horizon Client">
+  Sovellus löytyy valitsemalla ``Menu > Internet > VMWare Horizon Client``.
+    </advanced>
+
+- <advanced title="Korjaus: Henkilökohtaisten tulostinten lisääminen">
+  Kannettaville ja tehopäätteille on jälleen mahdollista lisätä käyttäjätunnuskohtaisia
+  tulostimia. Aiemmin lisääminen oli järjestelmäasetusten käyttöliittymästä estynyt, mutta
+  nyt ominaisuus on jälleen käytettävissä.
+    </advanced>
+
+- <advanced title="Korjaus: Hitachi-älytykkien kalibrointi">
+  Hitachin älytykeille on mahdollista asettaa keskitetyt kalibrointiasetukset
+  Puavo-hallintaliittymästä.
+    </advanced>
+
+- <advanced title="Korjaus: HP Elitebook 820 G1 näyttöjen pimeneminen">
+  Laitemallia vaivannut satunnainen näytön pimeneminen on nyt ratkaistu.
+  Ongelma johtui osassa kannettavamallin laitteita olevasta näyttöpaneelista,
+  joka ei toimi akun virransäästöön käytettävästä virkistystaajuuden muutoksesta.
+    </advanced>
+
+- <advanced title="Korjaus: Ohjelmavalikossa olevien sovellusten nimet">
+  Sovellusten nimet on nyt yhtenäistetty aiemman järjestelmäsukupolven kanssa.
+  Totutusta poikenneet sovellusten nimet aiheuttivat sen, että käyttäjät eivät enää 
+  tunnistaneet tuttuja sovelluksia.   
+    </advanced>
+
+
+- <advanced title="Korjaus: Tulostuksen toimimattomuus tehopäätteellä ja tietokoneen hidastuminen">
+  Joissakin kouluympäristöissä tehopäätteiden tulostuspalvelu ei toiminut oikein, vaan esti
+  vikatilanteessa tulostamisen ja samalla hidasti tietokoneen toimintaa. Ongelma on nyt korjattu.
+    </advanced>
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Päätekuvaan on lisätty Virtualbox-sovellus
+- Tuki salausavaimella suojattuihin langattomiin verkkoihin
+- Lisätty "fresh"-kernel (4.14.0-0.bpo.3-amd64) laitetestauksia varten
+- Lisätty acpitools
+- Lisätty sysfsutils
+</advanced>
+
+
 
 ## O1804 - Einstein (kehitysversio) {#opinsys-os-opinsys-stretch-2018-01-25-110245-amd64}
 
@@ -69,6 +127,7 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 - OpinsysOS-vakioteema on nyt lukittu
 - Lisätty Steam-client
 </advanced>
+
 
 ## O1750 - Descartes (kehitysversio) {#opinsys-os-opinsys-stretch-2017-12-18-100321-amd64}
 
