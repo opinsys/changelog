@@ -18,6 +18,62 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+
+## O1812 - Galilei (kehitysversio) {#opinsys-os-opinsys-stretch-2018-03-26-111732-amd64}
+
+- <advanced title="Päivitys: Firefox-selain">
+  Firefox-selaimessa on siirrytty pois Firefox ESR:stä (konservativisemmin päivittyvä pitkän tuen 
+  versio), takaisin normaaliin Firefox-versioon. Päivitys korjaa selaimen kanssa esiintyneen ongelman, 
+  joka rikkoo käyttäjän selainprofiiliin. Tämä ongelma aiheutti esimerkiksi kirjanmerkkien häviämisen.
+  Jatkossa tätä ongelmaa ei enää ilmene.
+    </advanced>
+
+- <advanced title="Päivitys: Bluegriffon">
+  Bluegriffon-HTML-editori on päivitetty uusimpaan versioon 3.0.1.
+    </advanced>
+
+- <advanced title="Päivitys: Marvinsketch">
+  Marvinsketch on päivitetty uusimpaan versioon 18.8.0.
+    </advanced>
+
+- <advanced title="Lisäys: Kotikansioiden automaattinen poistaminen kannettavilla joissa on pieni kovalevy">
+  Kannettaville tietokoneille on mahdollista kytkeä päälle kotikansioiden
+  automaattinen poisto. Ominaisuudella pyritään auttamaan jaettussa käytössä olevien kannettavien käyttöä
+  joissa on poikkeuksellisen vähän tallennustilaa. Levytilan loppuminen aiheuttaa sen, että laite ei enää 
+  toimi kunnolla. Ominaisuus ei ole oletuksena käytössä, vaan sitä voidaan säätää 
+  organisaatio-/koulu-/laitekohtaisesti.
+    </advanced>
+
+- <advanced title="Korjaus: Pdf-tiedostojen avaaminen Adobe Readerillä">
+  Pdf-tiedostojen avaaminen on jatkossa helpompaa myös Adobe Readerillä.
+  Ohjelma on taas yhtenä vaihtoehtoja pdf-tiedostojen avaamiseen käytettävissä
+  sovelluksissa.
+    </advanced>
+
+- <advanced title="Korjaus: Kotikansion ja verkkokansioiden nimeäminen työpöydällä">
+   Työpöydällä näytettävien kuvakkeiden nimeämisessä käytetään taas samaa logiikkaa, kuin
+   vanhassa Opinsys-järjestelmässä. Kannettavan kovalevyllä oleva kotikansio on nimeltään 
+   "Paikallinen kotikansio" ja tehopäätteellä näkyvä palvelimen kotikansio on nimeltään Verkkokansio. 
+   </advanced>
+
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Lisätty Extrabootscript-ominaisuus, päätekuvan käynnistyksen aikaisten muokkausten tekemiseen.
+  Extrabootscritit tehdään boot-palvelimen /opt/tsp/images/ebs kansioon ja ne suoritetaan laitteilla
+  joissa on "puavo.admin.run_extra_boot_scripts"-puavo-conf asetettuna arvoon true.
+- Lisätty uusi preseed jaetuille kannettaville helpottamaan isojen laitemäärien asennusta.
+- Kannettavien päivityksessä käytettävä ratelimit-kaistanrajoitin on taas oletuksena käytössä.
+- Voikko-oikoluku ei ole enää käytettävissä uuden Firefoxin kanssa.
+- Webmenussa näytettävä palautekysely on nyt poistettu käytöstä.
+- Keskitettyjen Xrandr-asetusten kanssa on havaittu ongelmia joillakin laitteilla kirjautumisruudussa 
+  jossa puavon ja gnomen keskenään kilpailevat asetuskomponentit kilpailevat keskenään aiheuttaen 
+  välkkyvän näytön. Ongelman pitäisi nyt olla korjattu.
+</advanced>
+
+
 ## O1808 - Fahrenheit (kehitysversio) {#opinsys-os-opinsys-stretch-2018-02-19-101910-amd64}
 
 - <advanced title="Lisäys: Geogebra 6 Classic">
