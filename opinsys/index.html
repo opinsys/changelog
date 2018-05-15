@@ -21,114 +21,124 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 ## O1820 - TULOSSA Heisenberg (kehitysversio) {#opinsys-os-opinsys-stretch-2018-}
 
-- <advanced title="Päivitys: Firefox-selain">
-  
+- <advanced title="Päivitys: Firefox-selaimen versio">
+  Samalla sovelluksesta on otettu käyttöön 32-bit versio joka pienentää sen muistinkulutusta ja siten se toimii paremmin myös vanhemmilla koneilla.
     </advanced>
 
-- <advanced title="Päivitys: Libreoffice 6">
-  
+- <advanced title="Päivitys: LibreOffice 6">
+  LibreOffice toimisto-ohjelmisto on päivitetty uusimpaan versioon. Päivitys korjaa havaittuja ongelmia, kuten esimerkiksi
+  liukuvärjäystoiminnon.
     </advanced>
 
-- <advanced title="Päivitys: ">
-  
-    </advanced>
-
-
-- <advanced title="Päivitys: ">
-  
+- <advanced title="Päivitys: Kirjautumisruudun laitetiedot">
+  Kirjautumisruudun laitetiedot toiminto antaa laitteesta nyt enemmän tietoja. Tiedot kerätään panikkeen painamisen yhteydessä,
+  jolloin se ei hidasta laitteen käynnistymistä.
     </advanced>
 
 
-- <advanced title="Päivitys: Kirjautumisruutu">
-  
+- <advanced title="Korjaus: Kirjautumisruudun salasanan kysely">
+  Laitteelle kirjautumista on korjattu siten, että käyttäjän salasanaa kysytään nyt useita kertoja peräkkäin. Aiemmin
+  tunnusten syöttö aiheutti hämmennystä, koska väärin syötetyn salasanan jälkeen tekstikenttä palautui viiveen jälkeen
+  käyttäjätunnuskentäksi.
     </advanced>
 
 - <advanced title="Päivitys: Arduino IDE">
-  
+  Arduino IDE on päivitetty uusimpaan versioon 1.8.5.
     </advanced>
 
-- <advanced title="Lisäys: Gummi">
-  
+- <advanced title="Päivitys: PyCharm">
+  PyChanrm on päivitetty uusimpaan versioon.
     </advanced>
 
 - <advanced title="Lisäys: Arduino esimerkkiohjelmat">
+  Arduino IDE:stä löytyy valmiiksi asennettuna esimerkkiohjelmat Opinsys-nallelle, Zumo-robotille
   
     </advanced>
 
 - <advanced title="Lisäys: Fonttien asennustyökalu">
-  
+  Käyttäjät voivat esikatsella ja asentaa uusia fontteja järjestelmään tuplanapsauttamalla fonttitiedostoa.
     </advanced>
 
 - <advanced title="Lisäys: Idid-infotv">
-  
+  Järjestelmään lisätty tuki Idid-infoTV-järjestelmälle.
     </advanced>
 
-- <advanced title="Lisäys: Nalle-ohjelmointi">
-  
+- <advanced title="Lisäys: Laitteen tiedot lukitusruudussa">
+  Tietokoneiden lukitusruudussa on nyt näkyvissä laitteen tyyppi, järjestelmäversio ja laitteen nimi. 
+    </advanced>
+
+- <advanced title="Lisäys: Opinsys Nalle-ohjelmointi">
+  Nalle-ohjelmointisovellus on käytettävissä valitsemalla ``Menu > Ohjelmointi > Nalleohjelmointi``
     </advanced>
 
 - <advanced title="Korjaus: Firefoxin käynnistyskuvake">
-  
+  Firefox-selaimen käynnistyskuvake on on taas näkyvilä Menu-valikossa.
     </advanced>
 
 - <advanced title="Korjaus: Bluetooth-kuulokkeiden parittaminen">
-    
+  Bluetooth-kuulokkeiden parittaminen äänilaitteeksi toimii paremmin kuin aiemmin. Käyttäjän
+  on edelleen valittava käsin   
    </advanced>
 
-- <advanced title="Korjaus: Robbo">
-    
+- <advanced title="Korjaus: Robbo-robotin liittäminen USB:llä">
+  Robbo-robottia on mahdollista jälleen ohjelmoida USB-kaapelin välityksellä. Bluetoothilla
+  robotin ohjelmointi ei tuntemattomasta syystä vielä onnistu.
    </advanced>
 
 - <advanced title="Korjaus: KHangman">
-    
+  KHangman-hirsipuupeli toimii jälleen oikein.
    </advanced>
 
-- <advanced title="Korjaus: Sovellusten lapsi-ikkunoiden siirtäminen">
-    
+- <advanced title="Korjaus: Sovellusten avaamien 'lapsi-ikkunoiden' siirtäminen">
+  Sovellusten avaamien ali-ikkunoiden siirtäminen onnistuu, nyt ilman että ohjelman kaikki ikkunat siirtyisivät päälimäisen mukaan.
+  Tämä mahdollistaa esimerkiksi ohjelman avaaman tiedostoselaimen alla olevan tiedon kurkistamisen sen alla olevasta ikkunasta.
    </advanced>
 
 - <advanced title="Korjaus: Automaattisammutus pois päältä kannettavilta tietokoneilta">
-    
+  Automaattisammutus oli oletuksena aktiivisena myös kannettavilla tietokoneilla ja saattoi näin aiheutta tietokoneiden sammumista
+  kesken käytön. Ongelma on nyt korjattu.   
    </advanced>
 
-- <advanced title="Korjaus: Työpöydän jäätyminen tehopäätteillä">
-    
+- <advanced title="Korjaus: Työpöydän jäätyminen erityisesti tehopäätteillä">
+  Tietokoneiden käytössä on ilmennyt jumiutumista, jossa hiiri työpöydällä liikkuu, mutta ei ota vastaan klikkauksia. Ongelmaan on 
+  nyt valmisteltu korjausta joka testien perusteella vaikuttaa korjaavan jumittelun. Koska ongelmaa on vaikea toistaa ja varsinainen
+  syy on vielä hieman peitossa, ongelman tutkimista jatketaan edelleen tämän korjauksen jälkeenkin.
    </advanced>
 
 - <advanced title="Korjaus: Käyttöliittymä etätyöpöytäyhteyttä sallittaessa">
-    
+  Etätyöpöytäyhteyden salliminen on käyttöliittymän sekavuudesta johtuen vaatinut paljon neuvomista. Nyt käyttöliittymää on selkeytetty
+  niin, että kun yhteyttä ollaan avaamassa, näkyvät napit kokoajan ja ne myös näyttävät enemmän painikkeilta. 
    </advanced>
 
-- <advanced title="Korjaus: Vstloggerpro">
-    
+- <advanced title="Korjaus: Logger pro sovelluksen käynnistyminen">
+  Ohjelma on jälleen käytettävissä.
    </advanced>
 
 - <advanced title="Korjaus: Windows-ohjelmien ajaminen suoraan tiedostoselaimesta">
-    
+  Windows-ohjelmia pystyy taas jatkossa käynistämään Wine-yhtensopivuuskerroksella
+  tupla napsauttamalla ohjelmien kuvaketta.  
    </advanced>
 
-- <advanced title="Korjaus: DVD-levyjen toistaminen">
-    
+- <advanced title="Korjaus: DVD/CD-levyjen toistaminen levyä vaihdettaessa">
+  DVD- ja CD-levyjen toistaminen saattoi estyä tietokoneesta riippuen levyn vaihdon yhteydessä tai 
+  jos levy oli laitettu asemaan ennen kirjautumista. Ongelman pitäisi nyt olla korjattu.
    </advanced>
 
-- <advanced title="Korjaus: ">
-    
-   </advanced>
 
 ### Tekniset muutokset
 
 <advanced title="Näytä...">
-- Firefox on 32-bit
-- Pycharm
-- Mattermost päivitetty
+- Firefox-selain on nyt 32-bit versio. Testien perusteella se toimii paremmin esim. 2GB musitilla olevilla laitteilla.
+- Mattermost-client päivitetty uusimpaan versioon
 - Lukitusruudun kone info
-- Kirjautumisruudun koneinfo
 - brltty
 - NFS 4.0
 - Modt ssh
 - Autopilot
 - Webkiosk
 - Adm-tunnukset puavosta
+- LateX-editori Gummi
+- Blueman
 </advanced>
 
 
