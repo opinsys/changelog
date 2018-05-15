@@ -21,55 +21,11 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 ## O1820 - TULOSSA Heisenberg (kehitysversio) {#opinsys-os-opinsys-stretch-2018-}
 
-- <advanced title="Päivitys: Firefox-selaimen versio">
-  Samalla sovelluksesta on otettu käyttöön 32-bit versio joka pienentää sen muistinkulutusta ja siten se toimii paremmin myös vanhemmilla koneilla.
-    </advanced>
-
-- <advanced title="Päivitys: LibreOffice 6">
-  LibreOffice toimisto-ohjelmisto on päivitetty uusimpaan versioon. Päivitys korjaa havaittuja ongelmia, kuten esimerkiksi
-  liukuvärjäystoiminnon.
-    </advanced>
-
-- <advanced title="Päivitys: Kirjautumisruudun laitetiedot">
-  Kirjautumisruudun laitetiedot toiminto antaa laitteesta nyt enemmän tietoja. Tiedot kerätään panikkeen painamisen yhteydessä,
-  jolloin se ei hidasta laitteen käynnistymistä.
-    </advanced>
-
-
-- <advanced title="Korjaus: Kirjautumisruudun salasanan kysely">
-  Laitteelle kirjautumista on korjattu siten, että käyttäjän salasanaa kysytään nyt useita kertoja peräkkäin. Aiemmin
-  tunnusten syöttö aiheutti hämmennystä, koska väärin syötetyn salasanan jälkeen tekstikenttä palautui viiveen jälkeen
-  käyttäjätunnuskentäksi.
-    </advanced>
-
-- <advanced title="Päivitys: Arduino IDE">
-  Arduino IDE on päivitetty uusimpaan versioon 1.8.5.
-    </advanced>
-
-- <advanced title="Päivitys: PyCharm">
-  PyChanrm on päivitetty uusimpaan versioon.
-    </advanced>
-
-- <advanced title="Lisäys: Arduino esimerkkiohjelmat">
-  Arduino IDE:stä löytyy valmiiksi asennettuna esimerkkiohjelmat Opinsys-nallelle, Zumo-robotille
-  
-    </advanced>
-
-- <advanced title="Lisäys: Fonttien asennustyökalu">
-  Käyttäjät voivat esikatsella ja asentaa uusia fontteja järjestelmään tuplanapsauttamalla fonttitiedostoa.
-    </advanced>
-
-- <advanced title="Lisäys: Idid-infotv">
-  Järjestelmään lisätty tuki Idid-infoTV-järjestelmälle.
-    </advanced>
-
-- <advanced title="Lisäys: Laitteen tiedot lukitusruudussa">
-  Tietokoneiden lukitusruudussa on nyt näkyvissä laitteen tyyppi, järjestelmäversio ja laitteen nimi. 
-    </advanced>
-
-- <advanced title="Lisäys: Opinsys Nalle-ohjelmointi">
-  Nalle-ohjelmointisovellus on käytettävissä valitsemalla ``Menu > Ohjelmointi > Nalleohjelmointi``
-    </advanced>
+- <advanced title="Korjaus: Työpöydän/tietokoneen jumiutuminen kesken käytön">
+  Tietokoneiden käytössä on ilmennyt jumiutumista, jossa hiiri työpöydällä liikkuu, mutta ei ota vastaan klikkauksia. Ongelmaan on 
+  nyt valmisteltu korjausta joka testien perusteella vaikuttaa korjaavan jumittelun. Koska ongelmaa on vaikea toistaa ja varsinainen
+  syy on vielä löytämättä, ongelman tutkimista jatketaan edelleen. 
+   </advanced>
 
 - <advanced title="Korjaus: Firefoxin käynnistyskuvake">
   Firefox-selaimen käynnistyskuvake on on taas näkyvilä Menu-valikossa.
@@ -85,7 +41,7 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
   robotin ohjelmointi ei tuntemattomasta syystä vielä onnistu.
    </advanced>
 
-- <advanced title="Korjaus: KHangman">
+- <advanced title="Korjaus: KHangman-sovelluksen käynnistyminen">
   KHangman-hirsipuupeli toimii jälleen oikein.
    </advanced>
 
@@ -97,12 +53,6 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 - <advanced title="Korjaus: Automaattisammutus pois päältä kannettavilta tietokoneilta">
   Automaattisammutus oli oletuksena aktiivisena myös kannettavilla tietokoneilla ja saattoi näin aiheutta tietokoneiden sammumista
   kesken käytön. Ongelma on nyt korjattu.   
-   </advanced>
-
-- <advanced title="Korjaus: Työpöydän jäätyminen erityisesti tehopäätteillä">
-  Tietokoneiden käytössä on ilmennyt jumiutumista, jossa hiiri työpöydällä liikkuu, mutta ei ota vastaan klikkauksia. Ongelmaan on 
-  nyt valmisteltu korjausta joka testien perusteella vaikuttaa korjaavan jumittelun. Koska ongelmaa on vaikea toistaa ja varsinainen
-  syy on vielä hieman peitossa, ongelman tutkimista jatketaan edelleen tämän korjauksen jälkeenkin.
    </advanced>
 
 - <advanced title="Korjaus: Käyttöliittymä etätyöpöytäyhteyttä sallittaessa">
@@ -124,21 +74,71 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
   jos levy oli laitettu asemaan ennen kirjautumista. Ongelman pitäisi nyt olla korjattu.
    </advanced>
 
+- <advanced title="Päivitys: Firefox-selaimen versio">
+  Samalla sovelluksesta on otettu käyttöön 32-bit versio, joka pienentää sen muistinkulutusta ja siten se toimii paremmin myös vanhemmilla koneilla.
+    </advanced>
+
+- <advanced title="Päivitys: LibreOffice 6">
+  LibreOffice toimisto-ohjelmisto on päivitetty uusimpaan versioon. Päivitys korjaa havaittuja ongelmia, kuten esimerkiksi
+  liukuvärjäystoiminnon.
+    </advanced>
+
+- <advanced title="Päivitys: Kirjautumisruudun laitetiedot">
+  Kirjautumisruudun laitetiedot toiminto antaa laitteesta nyt enemmän tietoja. Tiedot kerätään panikkeen painamisen yhteydessä,
+  jolloin se ei hidasta laitteen käynnistymistä.
+    </advanced>
+
+- <advanced title="Päivitys: Arduino IDE">
+  Arduino IDE on päivitetty uusimpaan versioon 1.8.5.
+    </advanced>
+
+- <advanced title="Päivitys: PyCharm">
+  PyChanrm on päivitetty uusimpaan versioon.
+    </advanced>
+
+- <advanced title="Lisäys: Arduino-esimerkkiohjelmat">
+  Arduino IDE:stä löytyy nyt valmiiksi asennettuna esimerkkiohjelmat Opinsys-nallelle ja Zumo-robotille.
+    </advanced>
+
+- <advanced title="Lisäys: Fonttien asennustyökalu">
+  Käyttäjät voivat esikatsella ja asentaa uusia fontteja järjestelmään tuplanapsauttamalla fonttitiedostoa.
+    </advanced>
+
+- <advanced title="Lisäys: Idid-infotv">
+  Järjestelmään lisätty tuki Idid-infoTV-järjestelmälle.
+    </advanced>
+
+- <advanced title="Lisäys: Laitteen tiedot lukitusruudussa">
+  Tietokoneiden lukitusruudussa on nyt näkyvissä laitteen tyyppi, järjestelmäversio ja laitteen nimi. 
+    </advanced>
+
+- <advanced title="Lisäys: Opinsys Nalle-ohjelmointi">
+  Nalle-ohjelmointisovellus on käytettävissä valitsemalla ``Menu > Ohjelmointi > Nalleohjelmointi``
+    </advanced>
+
+### Tiedossa olevat ongelmat
+
+<advanced title="Näytä...">
+- Robbo-robottiin yhdistäminen langattomasti Bluetoothin välityksellä ei toimi.
+- Webkiosk-tila ei toimi täysin luotettavasti. Esimerkiksi työpöydän kuvakkeet ja tiedostoselain
+  toimivat kirjautumisen jälkeen vasta pitkähkön viiveen jälkeen.
+</advanced>
+
 
 ### Tekniset muutokset
 
 <advanced title="Näytä...">
 - Firefox-selain on nyt 32-bit versio. Testien perusteella se toimii paremmin esim. 2GB musitilla olevilla laitteilla.
 - Mattermost-client päivitetty uusimpaan versioon
-- Lukitusruudun kone info
-- brltty
-- NFS 4.0
-- Modt ssh
-- Autopilot
-- Webkiosk
-- Adm-tunnukset puavosta
-- LateX-editori Gummi
-- Blueman
+- Poistettu paketti brltty, joka esti Robbo-robottiin yhdistämisen USB-väylällä.
+- Tehopäätteiden/VerkkoPC:den kotikansio yhteys hoidetaan nyt NFS 4.0 versiolla 4.1:n sijaan. Tämä vaikuttaa korjaavan
+  havaittuja epävakausongelmia.
+- Message of the day on tehty informatiivisemmaksi kirjauduttaessa laitteelle ssh:lla
+- Autopilotin toimintaa on kehitetty niin, että se antaa paremmin 
+- Webkiosk-tila on taas käytettävissä
+- Adm-tunnusten avaimet tulevat nyt tarvittaessa suoraan Puavosta.
+- Lisätty testiin LateX-editori Gummi. Sovellusta ei ole lisätty ohjelmavalikkoon.
+- Lisätty blueman-paketti, jota voi käyttää bluetooth paritustestaamiseen.
 </advanced>
 
 
