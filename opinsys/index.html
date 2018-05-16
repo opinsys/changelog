@@ -19,7 +19,7 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 <pre class="markdown"><code>
 
 
-## O1820 - TULOSSA Heisenberg (kehitysversio) {#opinsys-os-opinsys-stretch-2018-}
+## O1820 - Heisenberg (kehitysversio) {#opinsys-os-opinsys-stretch-2018-05-16-072714-amd64}
 
 - <advanced title="Korjaus: Työpöydän/tietokoneen jumiutuminen kesken käytön">
   Tietokoneiden käytössä on ilmennyt jumiutumista, jossa hiiri työpöydällä liikkuu, mutta ei ota vastaan klikkauksia. Ongelmaan on 
@@ -33,7 +33,7 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 - <advanced title="Korjaus: Bluetooth-kuulokkeiden parittaminen">
   Bluetooth-kuulokkeiden parittaminen äänilaitteeksi toimii paremmin kuin aiemmin. Käyttäjän
-  on edelleen valittava käsin   
+  on todennäköisesti valittava käsin laitteen äänimoodi työpöydän ääniasetuksista.
    </advanced>
 
 - <advanced title="Korjaus: Robbo-robotin liittäminen USB:llä">
@@ -46,8 +46,8 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
    </advanced>
 
 - <advanced title="Korjaus: Sovellusten avaamien 'lapsi-ikkunoiden' siirtäminen">
-  Sovellusten avaamien ali-ikkunoiden siirtäminen onnistuu, nyt ilman että ohjelman kaikki ikkunat siirtyisivät päälimäisen mukaan.
-  Tämä mahdollistaa esimerkiksi ohjelman avaaman tiedostoselaimen alla olevan tiedon kurkistamisen sen alla olevasta ikkunasta.
+  Sovellusten avaamien lapsi-ikkunoiden siirtäminen onnistuu, nyt ilman että ohjelman kaikki ikkunat siirtyisivät päälimäisen mukaan.
+  Tämä mahdollistaa esimerkiksi ohjelman avaaman tiedostoselaimen alla olevan tiedon kurkistamisen siirtämällä tiedostovalitsinta.
    </advanced>
 
 - <advanced title="Korjaus: Automaattisammutus pois päältä kannettavilta tietokoneilta">
@@ -60,13 +60,13 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
   niin, että kun yhteyttä ollaan avaamassa, näkyvät napit kokoajan ja ne myös näyttävät enemmän painikkeilta. 
    </advanced>
 
-- <advanced title="Korjaus: Logger pro sovelluksen käynnistyminen">
+- <advanced title="Korjaus: Logger pro-sovelluksen käynnistyminen">
   Ohjelma on jälleen käytettävissä.
    </advanced>
 
 - <advanced title="Korjaus: Windows-ohjelmien ajaminen suoraan tiedostoselaimesta">
   Windows-ohjelmia pystyy taas jatkossa käynistämään Wine-yhtensopivuuskerroksella
-  tupla napsauttamalla ohjelmien kuvaketta.  
+  tuplanapsauttamalla ohjelmien kuvaketta.  
    </advanced>
 
 - <advanced title="Korjaus: DVD/CD-levyjen toistaminen levyä vaihdettaessa">
@@ -75,7 +75,7 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
    </advanced>
 
 - <advanced title="Päivitys: Firefox-selaimen versio">
-  Samalla sovelluksesta on otettu käyttöön 32-bit versio, joka pienentää sen muistinkulutusta ja siten se toimii paremmin myös vanhemmilla koneilla.
+  Sovelluksesta on otettu käyttöön 32-bit versio, joka pienentää sen muistinkulutusta ja siten se toimii paremmin myös vanhemmilla koneilla.
     </advanced>
 
 - <advanced title="Päivitys: LibreOffice 6">
@@ -88,12 +88,18 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
   jolloin se ei hidasta laitteen käynnistymistä.
     </advanced>
 
+- <advanced title="Päivitys: Kirjautumisruudun käyttöliittymä">
+  Kirjautumisruudun salasanakyselyä on nyt selkeytetty niin, että salasanaa kysytään useita kertoja peräkkäin. 
+  Aiempi käytös aiheutti hammennystä ja käyttäjän salasana saattoi vahingossa tulla näkyviin selkokielisenä,
+  jos sitä syötetiin vahingossa virheellisen tunnuksen syöttämisen jälkeen käyttäjätunnuskenttään.
+    </advanced>
+
 - <advanced title="Päivitys: Arduino IDE">
   Arduino IDE on päivitetty uusimpaan versioon 1.8.5.
     </advanced>
 
 - <advanced title="Päivitys: PyCharm">
-  PyChanrm on päivitetty uusimpaan versioon.
+  PyCharm on päivitetty uusimpaan versioon.
     </advanced>
 
 - <advanced title="Lisäys: Arduino-esimerkkiohjelmat">
@@ -105,7 +111,7 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
     </advanced>
 
 - <advanced title="Lisäys: Idid-infotv">
-  Järjestelmään lisätty tuki Idid-infoTV-järjestelmälle.
+  Järjestelmään lisätty tuki Idid-InfoTV-järjestelmälle.
     </advanced>
 
 - <advanced title="Lisäys: Laitteen tiedot lukitusruudussa">
@@ -128,16 +134,16 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 ### Tekniset muutokset
 
 <advanced title="Näytä...">
-- Firefox-selain on nyt 32-bit versio. Testien perusteella se toimii paremmin esim. 2GB musitilla olevilla laitteilla.
-- Mattermost-client päivitetty uusimpaan versioon
+- Firefox-selain on nyt 32-bit versio. Testien perusteella se toimii paremmin esim. 2GB muistilla olevilla laitteilla.
+- Mattermost-client päivitetty uusimpaan versioon.
 - Poistettu paketti brltty, joka esti Robbo-robottiin yhdistämisen USB-väylällä.
 - Tehopäätteiden/VerkkoPC:den kotikansio yhteys hoidetaan nyt NFS 4.0 versiolla 4.1:n sijaan. Tämä vaikuttaa korjaavan
   havaittuja epävakausongelmia.
-- Message of the day on tehty informatiivisemmaksi kirjauduttaessa laitteelle ssh:lla
-- Autopilotin toimintaa on kehitetty niin, että se antaa paremmin 
-- Webkiosk-tila on taas käytettävissä
+- Message of the day on tehty informatiivisemmaksi kirjauduttaessa laitteelle ssh:lla.
+- Autopilotin toimintaa on kehitetty niin, että se vastaisi paremmin normaalia laitteen käytön rasitusta.
+- Webkiosk-tila on taas käytettävissä.
 - Adm-tunnusten avaimet tulevat nyt tarvittaessa suoraan Puavosta.
-- Lisätty testiin LateX-editori Gummi. Sovellusta ei ole lisätty ohjelmavalikkoon.
+- Lisätty testiin LateX-editori Gummi. Sovellusta ei ole vielä lisätty ohjelmavalikkoon.
 - Lisätty blueman-paketti, jota voi käyttää bluetooth paritustestaamiseen.
 </advanced>
 
