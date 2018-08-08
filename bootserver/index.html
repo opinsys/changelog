@@ -16,6 +16,304 @@
 
 <pre class="markdown"><code>
 
+## Release 59 {#59}
+
+### Notable changes
+
+  - Port 514 has been opened in rsyslogd (in addition to 20514).
+
+### Security updates
+
+  - Package `libarchive-zip-perl`:
+  [CVE-2018-1086](https://security-tracker.debian.org/tracker/CVE-2018-1086)
+  - Package `libxcursor`:
+  [CVE-2013-2003](https://security-tracker.debian.org/tracker/CVE-2013-2003),
+  [CVE-2015-9262](https://security-tracker.debian.org/tracker/CVE-2015-9262),
+  [CVE-2017-1661](https://security-tracker.debian.org/tracker/CVE-2017-1661)
+  - Package `openslp-dfsg`:
+  [CVE-2017-1783](https://security-tracker.debian.org/tracker/CVE-2017-1783),
+  [CVE-2018-1293](https://security-tracker.debian.org/tracker/CVE-2018-1293)
+  - Package `jasper`:
+  [CVE-2015-5203](https://security-tracker.debian.org/tracker/CVE-2015-5203),
+  [CVE-2015-5221](https://security-tracker.debian.org/tracker/CVE-2015-5221),
+  [CVE-2016-1024](https://security-tracker.debian.org/tracker/CVE-2016-1024),
+  [CVE-2016-1025](https://security-tracker.debian.org/tracker/CVE-2016-1025),
+  [CVE-2016-8883](https://security-tracker.debian.org/tracker/CVE-2016-8883),
+  [CVE-2016-8887](https://security-tracker.debian.org/tracker/CVE-2016-8887),
+  [CVE-2016-9262](https://security-tracker.debian.org/tracker/CVE-2016-9262),
+  [CVE-2016-9387](https://security-tracker.debian.org/tracker/CVE-2016-9387),
+  [CVE-2016-9388](https://security-tracker.debian.org/tracker/CVE-2016-9388),
+  [CVE-2016-9389](https://security-tracker.debian.org/tracker/CVE-2016-9389),
+  [CVE-2016-9390](https://security-tracker.debian.org/tracker/CVE-2016-9390),
+  [CVE-2016-9391](https://security-tracker.debian.org/tracker/CVE-2016-9391),
+  [CVE-2016-9392](https://security-tracker.debian.org/tracker/CVE-2016-9392),
+  [CVE-2016-9393](https://security-tracker.debian.org/tracker/CVE-2016-9393),
+  [CVE-2016-9394](https://security-tracker.debian.org/tracker/CVE-2016-9394),
+  [CVE-2016-9396](https://security-tracker.debian.org/tracker/CVE-2016-9396),
+  [CVE-2016-9600](https://security-tracker.debian.org/tracker/CVE-2016-9600),
+  [CVE-2017-1000](https://security-tracker.debian.org/tracker/CVE-2017-1000),
+  [CVE-2017-6850](https://security-tracker.debian.org/tracker/CVE-2017-6850)
+  - Package `file`:
+  [CVE-2013-1943](https://security-tracker.debian.org/tracker/CVE-2013-1943),
+  [CVE-2013-7345](https://security-tracker.debian.org/tracker/CVE-2013-7345),
+  [CVE-2014-0207](https://security-tracker.debian.org/tracker/CVE-2014-0207),
+  [CVE-2014-2270](https://security-tracker.debian.org/tracker/CVE-2014-2270),
+  [CVE-2014-3478](https://security-tracker.debian.org/tracker/CVE-2014-3478),
+  [CVE-2014-3479](https://security-tracker.debian.org/tracker/CVE-2014-3479),
+  [CVE-2014-3480](https://security-tracker.debian.org/tracker/CVE-2014-3480),
+  [CVE-2014-3487](https://security-tracker.debian.org/tracker/CVE-2014-3487),
+  [CVE-2014-3538](https://security-tracker.debian.org/tracker/CVE-2014-3538),
+  [CVE-2014-3587](https://security-tracker.debian.org/tracker/CVE-2014-3587),
+  [CVE-2014-3710](https://security-tracker.debian.org/tracker/CVE-2014-3710),
+  [CVE-2014-8116](https://security-tracker.debian.org/tracker/CVE-2014-8116),
+  [CVE-2014-8117](https://security-tracker.debian.org/tracker/CVE-2014-8117),
+  [CVE-2014-9620](https://security-tracker.debian.org/tracker/CVE-2014-9620),
+  [CVE-2014-9621](https://security-tracker.debian.org/tracker/CVE-2014-9621),
+  [CVE-2014-9653](https://security-tracker.debian.org/tracker/CVE-2014-9653),
+  [CVE-2015-8865](https://security-tracker.debian.org/tracker/CVE-2015-8865),
+  [CVE-2018-1036](https://security-tracker.debian.org/tracker/CVE-2018-1036)
+  - Package `linux`:
+  [CVE-2017-0627](https://security-tracker.debian.org/tracker/CVE-2017-0627),
+  [CVE-2017-1213](https://security-tracker.debian.org/tracker/CVE-2017-1213),
+  [CVE-2017-1215](https://security-tracker.debian.org/tracker/CVE-2017-1215),
+  [CVE-2017-1219](https://security-tracker.debian.org/tracker/CVE-2017-1219),
+  [CVE-2017-1322](https://security-tracker.debian.org/tracker/CVE-2017-1322),
+  [CVE-2017-1330](https://security-tracker.debian.org/tracker/CVE-2017-1330),
+  [CVE-2017-1526](https://security-tracker.debian.org/tracker/CVE-2017-1526),
+  [CVE-2017-1744](https://security-tracker.debian.org/tracker/CVE-2017-1744),
+  [CVE-2017-1807](https://security-tracker.debian.org/tracker/CVE-2017-1807),
+  [CVE-2017-1820](https://security-tracker.debian.org/tracker/CVE-2017-1820),
+  [CVE-2017-1822](https://security-tracker.debian.org/tracker/CVE-2017-1822),
+  [CVE-2018-1068](https://security-tracker.debian.org/tracker/CVE-2018-1068),
+  [CVE-2018-1130](https://security-tracker.debian.org/tracker/CVE-2018-1130),
+  [CVE-2018-3639](https://security-tracker.debian.org/tracker/CVE-2018-3639),
+  [CVE-2018-3665](https://security-tracker.debian.org/tracker/CVE-2018-3665),
+  [CVE-2018-5750](https://security-tracker.debian.org/tracker/CVE-2018-5750),
+  [CVE-2018-5803](https://security-tracker.debian.org/tracker/CVE-2018-5803),
+  [CVE-2018-6927](https://security-tracker.debian.org/tracker/CVE-2018-6927),
+  [CVE-2018-7492](https://security-tracker.debian.org/tracker/CVE-2018-7492),
+  [CVE-2018-7755](https://security-tracker.debian.org/tracker/CVE-2018-7755),
+  [CVE-2018-7757](https://security-tracker.debian.org/tracker/CVE-2018-7757),
+  [CVE-2018-8781](https://security-tracker.debian.org/tracker/CVE-2018-8781),
+  [CVE-2018-8822](https://security-tracker.debian.org/tracker/CVE-2018-8822)
+  - Package `curl`:
+  [CVE-2018-1000](https://security-tracker.debian.org/tracker/CVE-2018-1000)
+  - Package `cups`:
+  [CVE-2017-1824](https://security-tracker.debian.org/tracker/CVE-2017-1824),
+  [CVE-2018-4180](https://security-tracker.debian.org/tracker/CVE-2018-4180),
+  [CVE-2018-4181](https://security-tracker.debian.org/tracker/CVE-2018-4181),
+  [CVE-2018-6553](https://security-tracker.debian.org/tracker/CVE-2018-6553)
+  - Package `ruby1.9.1`:
+  [CVE-2017-1774](https://security-tracker.debian.org/tracker/CVE-2017-1774),
+  [CVE-2018-8777](https://security-tracker.debian.org/tracker/CVE-2018-8777)
+  - Package `libgcrypt11`:
+  [CVE-2018-0495](https://security-tracker.debian.org/tracker/CVE-2018-0495)
+  - Package `git`:
+  [CVE-2014-9390](https://security-tracker.debian.org/tracker/CVE-2014-9390),
+  [CVE-2014-9938](https://security-tracker.debian.org/tracker/CVE-2014-9938),
+  [CVE-2015-7545](https://security-tracker.debian.org/tracker/CVE-2015-7545),
+  [CVE-2016-2315](https://security-tracker.debian.org/tracker/CVE-2016-2315),
+  [CVE-2016-2324](https://security-tracker.debian.org/tracker/CVE-2016-2324),
+  [CVE-2017-1000](https://security-tracker.debian.org/tracker/CVE-2017-1000),
+  [CVE-2017-1486](https://security-tracker.debian.org/tracker/CVE-2017-1486),
+  [CVE-2017-8386](https://security-tracker.debian.org/tracker/CVE-2017-8386),
+  [CVE-2018-1123](https://security-tracker.debian.org/tracker/CVE-2018-1123)
+  - Package `qemu`:
+  [CVE-2018-3639](https://security-tracker.debian.org/tracker/CVE-2018-3639),
+  [CVE-2018-7550](https://security-tracker.debian.org/tracker/CVE-2018-7550)
+  - Package `elfutils`:
+  [CVE-2016-1025](https://security-tracker.debian.org/tracker/CVE-2016-1025),
+  [CVE-2017-7607](https://security-tracker.debian.org/tracker/CVE-2017-7607),
+  [CVE-2017-7608](https://security-tracker.debian.org/tracker/CVE-2017-7608),
+  [CVE-2017-7610](https://security-tracker.debian.org/tracker/CVE-2017-7610),
+  [CVE-2017-7611](https://security-tracker.debian.org/tracker/CVE-2017-7611),
+  [CVE-2017-7612](https://security-tracker.debian.org/tracker/CVE-2017-7612),
+  [CVE-2017-7613](https://security-tracker.debian.org/tracker/CVE-2017-7613)
+  - Package `perl`:
+  [CVE-2018-1201](https://security-tracker.debian.org/tracker/CVE-2018-1201)
+  - Package `policykit-1`:
+  [CVE-2015-3218](https://security-tracker.debian.org/tracker/CVE-2015-3218),
+  [CVE-2015-3255](https://security-tracker.debian.org/tracker/CVE-2015-3255),
+  [CVE-2015-4625](https://security-tracker.debian.org/tracker/CVE-2015-4625),
+  [CVE-2018-1116](https://security-tracker.debian.org/tracker/CVE-2018-1116)
+  - Package `libpng`:
+  [CVE-2016-1008](https://security-tracker.debian.org/tracker/CVE-2016-1008)
+  - Package `openjdk-7`:
+  [CVE-2018-2579](https://security-tracker.debian.org/tracker/CVE-2018-2579),
+  [CVE-2018-2588](https://security-tracker.debian.org/tracker/CVE-2018-2588),
+  [CVE-2018-2599](https://security-tracker.debian.org/tracker/CVE-2018-2599),
+  [CVE-2018-2602](https://security-tracker.debian.org/tracker/CVE-2018-2602),
+  [CVE-2018-2603](https://security-tracker.debian.org/tracker/CVE-2018-2603),
+  [CVE-2018-2618](https://security-tracker.debian.org/tracker/CVE-2018-2618),
+  [CVE-2018-2629](https://security-tracker.debian.org/tracker/CVE-2018-2629),
+  [CVE-2018-2633](https://security-tracker.debian.org/tracker/CVE-2018-2633),
+  [CVE-2018-2634](https://security-tracker.debian.org/tracker/CVE-2018-2634),
+  [CVE-2018-2637](https://security-tracker.debian.org/tracker/CVE-2018-2637),
+  [CVE-2018-2641](https://security-tracker.debian.org/tracker/CVE-2018-2641),
+  [CVE-2018-2663](https://security-tracker.debian.org/tracker/CVE-2018-2663),
+  [CVE-2018-2677](https://security-tracker.debian.org/tracker/CVE-2018-2677),
+  [CVE-2018-2678](https://security-tracker.debian.org/tracker/CVE-2018-2678),
+  [CVE-2018-2790](https://security-tracker.debian.org/tracker/CVE-2018-2790),
+  [CVE-2018-2794](https://security-tracker.debian.org/tracker/CVE-2018-2794),
+  [CVE-2018-2795](https://security-tracker.debian.org/tracker/CVE-2018-2795),
+  [CVE-2018-2796](https://security-tracker.debian.org/tracker/CVE-2018-2796),
+  [CVE-2018-2797](https://security-tracker.debian.org/tracker/CVE-2018-2797),
+  [CVE-2018-2798](https://security-tracker.debian.org/tracker/CVE-2018-2798),
+  [CVE-2018-2799](https://security-tracker.debian.org/tracker/CVE-2018-2799),
+  [CVE-2018-2800](https://security-tracker.debian.org/tracker/CVE-2018-2800),
+  [CVE-2018-2814](https://security-tracker.debian.org/tracker/CVE-2018-2814),
+  [CVE-2018-2815](https://security-tracker.debian.org/tracker/CVE-2018-2815)
+  - Package `imagemagick`:
+  [CVE-2014-8716](https://security-tracker.debian.org/tracker/CVE-2014-8716),
+  [CVE-2014-9808](https://security-tracker.debian.org/tracker/CVE-2014-9808),
+  [CVE-2014-9812](https://security-tracker.debian.org/tracker/CVE-2014-9812),
+  [CVE-2014-9816](https://security-tracker.debian.org/tracker/CVE-2014-9816),
+  [CVE-2014-9820](https://security-tracker.debian.org/tracker/CVE-2014-9820),
+  [CVE-2014-9826](https://security-tracker.debian.org/tracker/CVE-2014-9826),
+  [CVE-2014-9831](https://security-tracker.debian.org/tracker/CVE-2014-9831),
+  [CVE-2014-9836](https://security-tracker.debian.org/tracker/CVE-2014-9836),
+  [CVE-2014-9840](https://security-tracker.debian.org/tracker/CVE-2014-9840),
+  [CVE-2014-9845](https://security-tracker.debian.org/tracker/CVE-2014-9845),
+  [CVE-2014-9849](https://security-tracker.debian.org/tracker/CVE-2014-9849),
+  [CVE-2014-9854](https://security-tracker.debian.org/tracker/CVE-2014-9854),
+  [CVE-2015-8896](https://security-tracker.debian.org/tracker/CVE-2015-8896),
+  [CVE-2015-8901](https://security-tracker.debian.org/tracker/CVE-2015-8901),
+  [CVE-2015-8958](https://security-tracker.debian.org/tracker/CVE-2015-8958),
+  [CVE-2016-1014](https://security-tracker.debian.org/tracker/CVE-2016-1014),
+  [CVE-2016-4564](https://security-tracker.debian.org/tracker/CVE-2016-4564),
+  [CVE-2016-5689](https://security-tracker.debian.org/tracker/CVE-2016-5689),
+  [CVE-2016-5842](https://security-tracker.debian.org/tracker/CVE-2016-5842),
+  [CVE-2016-7514](https://security-tracker.debian.org/tracker/CVE-2016-7514),
+  [CVE-2016-7518](https://security-tracker.debian.org/tracker/CVE-2016-7518),
+  [CVE-2016-7522](https://security-tracker.debian.org/tracker/CVE-2016-7522),
+  [CVE-2016-7526](https://security-tracker.debian.org/tracker/CVE-2016-7526),
+  [CVE-2016-7530](https://security-tracker.debian.org/tracker/CVE-2016-7530),
+  [CVE-2016-7534](https://security-tracker.debian.org/tracker/CVE-2016-7534),
+  [CVE-2016-7539](https://security-tracker.debian.org/tracker/CVE-2016-7539),
+  [CVE-2016-9556](https://security-tracker.debian.org/tracker/CVE-2016-9556),
+  [CVE-2017-1000](https://security-tracker.debian.org/tracker/CVE-2017-1000),
+  [CVE-2017-1092](https://security-tracker.debian.org/tracker/CVE-2017-1092),
+  [CVE-2017-1135](https://security-tracker.debian.org/tracker/CVE-2017-1135),
+  [CVE-2017-1145](https://security-tracker.debian.org/tracker/CVE-2017-1145),
+  [CVE-2017-1147](https://security-tracker.debian.org/tracker/CVE-2017-1147),
+  [CVE-2017-1153](https://security-tracker.debian.org/tracker/CVE-2017-1153),
+  [CVE-2017-1242](https://security-tracker.debian.org/tracker/CVE-2017-1242),
+  [CVE-2017-1243](https://security-tracker.debian.org/tracker/CVE-2017-1243),
+  [CVE-2017-1264](https://security-tracker.debian.org/tracker/CVE-2017-1264),
+  [CVE-2017-1269](https://security-tracker.debian.org/tracker/CVE-2017-1269),
+  [CVE-2017-1298](https://security-tracker.debian.org/tracker/CVE-2017-1298),
+  [CVE-2017-1314](https://security-tracker.debian.org/tracker/CVE-2017-1314),
+  [CVE-2017-1376](https://security-tracker.debian.org/tracker/CVE-2017-1376),
+  [CVE-2017-1417](https://security-tracker.debian.org/tracker/CVE-2017-1417),
+  [CVE-2017-1432](https://security-tracker.debian.org/tracker/CVE-2017-1432),
+  [CVE-2017-1440](https://security-tracker.debian.org/tracker/CVE-2017-1440),
+  [CVE-2017-1468](https://security-tracker.debian.org/tracker/CVE-2017-1468),
+  [CVE-2017-1501](https://security-tracker.debian.org/tracker/CVE-2017-1501),
+  [CVE-2017-1654](https://security-tracker.debian.org/tracker/CVE-2017-1654),
+  [CVE-2017-1791](https://security-tracker.debian.org/tracker/CVE-2017-1791),
+  [CVE-2017-5508](https://security-tracker.debian.org/tracker/CVE-2017-5508),
+  [CVE-2017-5511](https://security-tracker.debian.org/tracker/CVE-2017-5511),
+  [CVE-2017-6500](https://security-tracker.debian.org/tracker/CVE-2017-6500),
+  [CVE-2017-7943](https://security-tracker.debian.org/tracker/CVE-2017-7943),
+  [CVE-2017-8346](https://security-tracker.debian.org/tracker/CVE-2017-8346),
+  [CVE-2017-8350](https://security-tracker.debian.org/tracker/CVE-2017-8350),
+  [CVE-2017-8354](https://security-tracker.debian.org/tracker/CVE-2017-8354),
+  [CVE-2017-8765](https://security-tracker.debian.org/tracker/CVE-2017-8765),
+  [CVE-2017-9142](https://security-tracker.debian.org/tracker/CVE-2017-9142),
+  [CVE-2017-9144](https://security-tracker.debian.org/tracker/CVE-2017-9144),
+  [CVE-2017-9407](https://security-tracker.debian.org/tracker/CVE-2017-9407),
+  [CVE-2018-1125](https://security-tracker.debian.org/tracker/CVE-2018-1125),
+  [CVE-2018-1259](https://security-tracker.debian.org/tracker/CVE-2018-1259),
+  [CVE-2018-1260](https://security-tracker.debian.org/tracker/CVE-2018-1260),
+  [CVE-2018-1315](https://security-tracker.debian.org/tracker/CVE-2018-1315),
+  [CVE-2018-8960](https://security-tracker.debian.org/tracker/CVE-2018-8960)
+  - Package `ntp`:
+  [CVE-2014-9297](https://security-tracker.debian.org/tracker/CVE-2014-9297),
+  [CVE-2014-9298](https://security-tracker.debian.org/tracker/CVE-2014-9298),
+  [CVE-2015-1798](https://security-tracker.debian.org/tracker/CVE-2015-1798),
+  [CVE-2015-1799](https://security-tracker.debian.org/tracker/CVE-2015-1799),
+  [CVE-2015-5146](https://security-tracker.debian.org/tracker/CVE-2015-5146),
+  [CVE-2015-5194](https://security-tracker.debian.org/tracker/CVE-2015-5194),
+  [CVE-2015-5195](https://security-tracker.debian.org/tracker/CVE-2015-5195),
+  [CVE-2015-5196](https://security-tracker.debian.org/tracker/CVE-2015-5196),
+  [CVE-2015-5219](https://security-tracker.debian.org/tracker/CVE-2015-5219),
+  [CVE-2015-5300](https://security-tracker.debian.org/tracker/CVE-2015-5300),
+  [CVE-2015-7691](https://security-tracker.debian.org/tracker/CVE-2015-7691),
+  [CVE-2015-7692](https://security-tracker.debian.org/tracker/CVE-2015-7692),
+  [CVE-2015-7701](https://security-tracker.debian.org/tracker/CVE-2015-7701),
+  [CVE-2015-7702](https://security-tracker.debian.org/tracker/CVE-2015-7702),
+  [CVE-2015-7703](https://security-tracker.debian.org/tracker/CVE-2015-7703),
+  [CVE-2015-7704](https://security-tracker.debian.org/tracker/CVE-2015-7704),
+  [CVE-2015-7705](https://security-tracker.debian.org/tracker/CVE-2015-7705),
+  [CVE-2015-7850](https://security-tracker.debian.org/tracker/CVE-2015-7850),
+  [CVE-2015-7852](https://security-tracker.debian.org/tracker/CVE-2015-7852),
+  [CVE-2015-7853](https://security-tracker.debian.org/tracker/CVE-2015-7853),
+  [CVE-2015-7855](https://security-tracker.debian.org/tracker/CVE-2015-7855),
+  [CVE-2015-7871](https://security-tracker.debian.org/tracker/CVE-2015-7871),
+  [CVE-2015-7973](https://security-tracker.debian.org/tracker/CVE-2015-7973),
+  [CVE-2015-7974](https://security-tracker.debian.org/tracker/CVE-2015-7974),
+  [CVE-2015-7976](https://security-tracker.debian.org/tracker/CVE-2015-7976),
+  [CVE-2015-7977](https://security-tracker.debian.org/tracker/CVE-2015-7977),
+  [CVE-2015-7978](https://security-tracker.debian.org/tracker/CVE-2015-7978),
+  [CVE-2015-7979](https://security-tracker.debian.org/tracker/CVE-2015-7979),
+  [CVE-2015-8138](https://security-tracker.debian.org/tracker/CVE-2015-8138),
+  [CVE-2015-8158](https://security-tracker.debian.org/tracker/CVE-2015-8158),
+  [CVE-2016-0727](https://security-tracker.debian.org/tracker/CVE-2016-0727),
+  [CVE-2016-1547](https://security-tracker.debian.org/tracker/CVE-2016-1547),
+  [CVE-2016-1548](https://security-tracker.debian.org/tracker/CVE-2016-1548),
+  [CVE-2016-1550](https://security-tracker.debian.org/tracker/CVE-2016-1550),
+  [CVE-2016-2516](https://security-tracker.debian.org/tracker/CVE-2016-2516),
+  [CVE-2016-2518](https://security-tracker.debian.org/tracker/CVE-2016-2518),
+  [CVE-2016-4954](https://security-tracker.debian.org/tracker/CVE-2016-4954),
+  [CVE-2016-4955](https://security-tracker.debian.org/tracker/CVE-2016-4955),
+  [CVE-2016-4956](https://security-tracker.debian.org/tracker/CVE-2016-4956),
+  [CVE-2016-7426](https://security-tracker.debian.org/tracker/CVE-2016-7426),
+  [CVE-2016-7427](https://security-tracker.debian.org/tracker/CVE-2016-7427),
+  [CVE-2016-7428](https://security-tracker.debian.org/tracker/CVE-2016-7428),
+  [CVE-2016-7429](https://security-tracker.debian.org/tracker/CVE-2016-7429),
+  [CVE-2016-9310](https://security-tracker.debian.org/tracker/CVE-2016-9310),
+  [CVE-2016-9311](https://security-tracker.debian.org/tracker/CVE-2016-9311),
+  [CVE-2017-6458](https://security-tracker.debian.org/tracker/CVE-2017-6458),
+  [CVE-2017-6462](https://security-tracker.debian.org/tracker/CVE-2017-6462),
+  [CVE-2017-6463](https://security-tracker.debian.org/tracker/CVE-2017-6463),
+  [CVE-2017-6464](https://security-tracker.debian.org/tracker/CVE-2017-6464),
+  [CVE-2018-7183](https://security-tracker.debian.org/tracker/CVE-2018-7183),
+  [CVE-2018-7185](https://security-tracker.debian.org/tracker/CVE-2018-7185)
+  - Package `libvirt`:
+  [CVE-2018-1064](https://security-tracker.debian.org/tracker/CVE-2018-1064),
+  [CVE-2018-3639](https://security-tracker.debian.org/tracker/CVE-2018-3639)
+  - Package `spice`:
+  [CVE-2017-1219](https://security-tracker.debian.org/tracker/CVE-2017-1219)
+  - Package `libjpeg-turbo`:
+  [CVE-2014-9092](https://security-tracker.debian.org/tracker/CVE-2014-9092),
+  [CVE-2016-3616](https://security-tracker.debian.org/tracker/CVE-2016-3616),
+  [CVE-2018-1121](https://security-tracker.debian.org/tracker/CVE-2018-1121),
+  [CVE-2018-1152](https://security-tracker.debian.org/tracker/CVE-2018-1152)
+  - Package `openssl`:
+  [CVE-2018-0495](https://security-tracker.debian.org/tracker/CVE-2018-0495),
+  [CVE-2018-0732](https://security-tracker.debian.org/tracker/CVE-2018-0732),
+  [CVE-2018-0737](https://security-tracker.debian.org/tracker/CVE-2018-0737)
+  - Package `gnupg`:
+  [CVE-2017-7526](https://security-tracker.debian.org/tracker/CVE-2017-7526),
+  [CVE-2018-1202](https://security-tracker.debian.org/tracker/CVE-2018-1202)
+  - Package `mysql-5.5`:
+  [CVE-2018-3066](https://security-tracker.debian.org/tracker/CVE-2018-3066),
+  [CVE-2018-3081](https://security-tracker.debian.org/tracker/CVE-2018-3081)
+  - Package `procps`:
+  [CVE-2018-1122](https://security-tracker.debian.org/tracker/CVE-2018-1122),
+  [CVE-2018-1123](https://security-tracker.debian.org/tracker/CVE-2018-1123),
+  [CVE-2018-1124](https://security-tracker.debian.org/tracker/CVE-2018-1124),
+  [CVE-2018-1125](https://security-tracker.debian.org/tracker/CVE-2018-1125),
+  [CVE-2018-1126](https://security-tracker.debian.org/tracker/CVE-2018-1126)
+
+### Typical update path from Release 58
+
+- Need to get 146 MB of archives.
+
+- Has impact on the availability of the end users service:
+
+  - Service `cups` will be restarted during the update process and its estimated downtime is 96 seconds.
+
 ## Release 58 {#58}
 
 ### Security updates
