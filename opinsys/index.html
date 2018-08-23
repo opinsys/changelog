@@ -19,6 +19,80 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 <pre class="markdown"><code>
 
 
+## TULOSSA - O1833 - Icign {#opinsys-os-opinsys-stretch-2018-08-22-120055-amd64}
+
+- <advanced title="Korjaus: Paikallisen USB-tulostimen jakaminen verkotulostimena">
+  Niin sanottu Jetpipe-tulostusominaisuus toimii taas VerkkoPC/Tehopääte-laitteilla.
+   </advanced>
+
+- <advanced title="Lisäys: Henkilökohtaisesti ylläpidettävä kannettava tietokone">
+  Kannettavat tietokoneet on nyt mahdollista asettaa ns. henkilökohtaisesti ylläpidettävään tilaan.
+  Kyseinen ominaisuus on tarkoitettu käytettäväksi kannettavilla, jotka ovat opettajan tai oppilaan 
+  henkilökohtaisessa käytössä. Ominaisuuksia on lueteltu seuraavassa:
+
+  1. Kyseiselle laitteelle ensimmäisenä kirjautuva asetetaan sen ensisijaiseksi käyttäjäksi.
+  2. Laitteen ensisijainen käyttäjä näytetään aina painikkeena kirjautumisruudussa.
+  3. Ensisijaisella käyttäjällä on sudo-oikeus omaan laitteeseensa.
+  4. Laitteen käynnistyksen yhteydessä se on mahdollista käynnistää kehittäjätilaan, jossa voi tehdä kyseistä versiota koskevia. pysyviä muutoksia.
+  5. Laitteen ensisijainen käyttäjä voi nollata edellämainitun ominaisuuden mahdollistamat muutokset.
+  6. Laitteen ensisijainen käyttäjä voi seurata laitteelle tulevia päivityksiä.
+  7. Ominaisuus rajoittaa ylläpidon etäpääsyä laitteelle, edellyttäen ylläpitotilanteessa käyttäjän työpöydän paneelista tekemää hyväksyntää etäpääsylle..
+   </advanced>
+
+- <advanced title="Lisäys: Tulostinten hallintatyökalu">
+  Työpöydän ohjelmavalikkoon on lisätty monipuolisempi tulostinten ja niiden asetusten
+  hallintaan tarkoitettu työkalu. Se löytyy valitsemalla:
+
+  Menu > Apuohjelmat > Tulostusasetukset 
+   </advanced>
+
+- Lisäys: Geogebra 6 -sovellus on lisätty myös Oppiainevalikkoon
+
+- <advanced title="Lisäys: Langaton tukiasema-laitemalli">
+  Langaton tukiasema-laitemallia on nyt mahdollista käytää myös OpinsysOS
+  -järjestelmässä.
+   </advanced>
+
+- <advanced title="Lisäys: Kirjautuneen käyttäjän uloskirjaaminen lukitusruudusta">
+  Esimerkiksi jaetussa käytössä olevalle tietokoneelle kirjatunut ja ruudun lukinnut käyttäjä voidaan nyt
+  kirjata pakotetusti ulos lukitusruudussa olevasta painikkeesta. Aiemmin laitteen käyttö on vaatinut
+  kyseisen henkilön löytämistä lukituksen avaukseen tai laitteen uudelleen käynnistyksen napista.
+   </advanced>
+
+- <advanced title="Lisäys: Kannettavan käynnistäminen Abitti-järjestelmään - BETA">
+  Opinsys-kannettava on mahdollista asettaa tilaan jossa se ylläpitää automaattisesti uusinta versiota
+  YTL:n Abitti-järjestelmää kannettavan kovalevyllä. Järjestelyn tarkoituksena on helpottaa Abitin
+  käyttöä ja kokeiden tekemistä ilman USB-tikuista ja niiden tekemisestä aiheutuvaa vaivaa.
+   </advanced>
+
+### Tiedossa olevat ongelmat
+
+<advanced title="Näytä...">
+- Robbo-robottiin yhdistäminen langattomasti Bluetoothin välityksellä ei toimi.
+- Webkiosk-tila ei toimi täysin luotettavasti. Esimerkiksi työpöydän kuvakkeet ja tiedostoselain
+  toimivat kirjautumisen jälkeen vasta pitkähkön viiveen jälkeen.
+</advanced>
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Abittilevykuvan automaattinen lataus. Puavo-conf: puavo.abitti.mode install-and-update.
+- Jetpipe tulostus toimii taas ja se aktivoidaan tagilla jetpipe tai puavo-confin kautta.
+- Kannettavien sertifikaattien automaattinen päivitys on korjattu ja ne uusitaan jos sertifikaatti on vanhentumassa 6kk:n sisällä.
+- Laitteilla on mahdollista testata uutta menu-komponenttia nimeltä puavomenu. Sen saa aktivoitua
+  Puavo-confilla: puavo.puavomenu.enabled	true
+- Mimio-älytaulusovellus ja ajurit on mahdollista asentaa kannettaville tietokoneille. Asennus tehdään
+  jokaiselle laitteelle erikseen asentamalla paketti puavo-pkg:n avulla. Asennus vaatii root-salasanan
+  asettamisen.
+- Idid-infotv client on päivitetty.
+- Mac osoitteen arpominen (randomization) on kytketty pois kannettavilta tietokoneilta. 
+- Päätekuva tukee laitteiden lokitietojen lähettämistä keskitetylle lokituspalvelimelle.
+- Kannettavan tietokoneen konfiguraatiopäivitys tehdään nyt myös laitteen pxe-päivityksen yhteydessä.
+</advanced>
+
+
+
 ## O1820 - Heisenberg {#opinsys-os-opinsys-stretch-2018-05-16-072714-amd64}
 
 - <advanced title="Korjaus: Työpöydän/tietokoneen jumiutuminen kesken käytön">
