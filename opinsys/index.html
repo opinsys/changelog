@@ -19,7 +19,7 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 <pre class="markdown"><code>
 
 
-## TULOSSA - O1833 - Icign {#opinsys-os-opinsys-stretch-2018-08-22-120055-amd64}
+## O1833 - Isign {#opinsys-os-opinsys-stretch-2018-08-22-120055-amd64}
 
 - <advanced title="Korjaus: Paikallisen USB-tulostimen jakaminen verkotulostimena">
   Niin sanottu Jetpipe-tulostusominaisuus toimii taas VerkkoPC/Tehopääte-laitteilla.
@@ -43,7 +43,7 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
   Työpöydän ohjelmavalikkoon on lisätty monipuolisempi tulostinten ja niiden asetusten
   hallintaan tarkoitettu työkalu. Se löytyy valitsemalla:
 
-  Menu > Apuohjelmat > Tulostusasetukset 
+  ``Menu > Apuohjelmat > Tulostusasetukset``
    </advanced>
 
 - Lisäys: Geogebra 6 -sovellus on lisätty myös Oppiainevalikkoon
@@ -77,16 +77,16 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 ### Tekniset muutokset
 
 <advanced title="Näytä...">
-- Abittilevykuvan automaattinen lataus. Puavo-conf: puavo.abitti.mode install-and-update.
-- Jetpipe tulostus toimii taas ja se aktivoidaan tagilla jetpipe tai puavo-confin kautta.
-- Kannettavien sertifikaattien automaattinen päivitys on korjattu ja ne uusitaan jos sertifikaatti on vanhentumassa 6kk:n sisällä.
+- Abittilevykuvan automaattinen lataus. Puavo-conf: ``puavo.abitti.mode install-and-update``
+- Jetpipe tulostus toimii taas ja se aktivoidaan tagilla ``jetpipe`` tai puavo-confin kautta.
+- Kannettavien sertifikaattien automaattinen päivitys on korjattu ja ne uusitaan, jos sertifikaatti on vanhentumassa 6kk:n sisällä.
 - Laitteilla on mahdollista testata uutta menu-komponenttia nimeltä puavomenu. Sen saa aktivoitua
-  Puavo-confilla: puavo.puavomenu.enabled	true
+  Puavo-confilla: ``puavo.puavomenu.enabled	true``
 - Mimio-älytaulusovellus ja ajurit on mahdollista asentaa kannettaville tietokoneille. Asennus tehdään
   jokaiselle laitteelle erikseen asentamalla paketti puavo-pkg:n avulla. Asennus vaatii root-salasanan
   asettamisen.
-- Idid-infotv client on päivitetty.
-- Mac osoitteen arpominen (randomization) on kytketty pois kannettavilta tietokoneilta. 
+- Idid-infotv-client on päivitetty.
+- Mac-osoitteen arpominen (randomization) on kytketty pois kannettavilta tietokoneilta. 
 - Päätekuva tukee laitteiden lokitietojen lähettämistä keskitetylle lokituspalvelimelle.
 - Kannettavan tietokoneen konfiguraatiopäivitys tehdään nyt myös laitteen pxe-päivityksen yhteydessä.
 </advanced>
