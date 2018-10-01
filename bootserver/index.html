@@ -16,6 +16,267 @@
 
 <pre class="markdown"><code>
 
+## Release 60 {#60}
+
+### Notable changes
+
+  - fixed an unhandled exception bug in `puavoadmins-update`
+  - `password_last_set`-attribute is passed to desktop session info
+
+### Security updates
+
+  - Package `libgd2`:
+  [CVE-2018-1000](https://security-tracker.debian.org/tracker/CVE-2018-1000),
+  [CVE-2018-5711](https://security-tracker.debian.org/tracker/CVE-2018-5711)
+  - Package `openjdk-7`:
+  [CVE-2018-2938](https://security-tracker.debian.org/tracker/CVE-2018-2938),
+  [CVE-2018-2952](https://security-tracker.debian.org/tracker/CVE-2018-2952)
+  - Package `spice`:
+  [CVE-2018-1087](https://security-tracker.debian.org/tracker/CVE-2018-1087)
+  - Package `samba`:
+  [CVE-2017-1110](https://security-tracker.debian.org/tracker/CVE-2017-1110),
+  [CVE-2017-1215](https://security-tracker.debian.org/tracker/CVE-2017-1215),
+  [CVE-2017-1216](https://security-tracker.debian.org/tracker/CVE-2017-1216),
+  [CVE-2017-1474](https://security-tracker.debian.org/tracker/CVE-2017-1474),
+  [CVE-2017-1527](https://security-tracker.debian.org/tracker/CVE-2017-1527),
+  [CVE-2017-2619](https://security-tracker.debian.org/tracker/CVE-2017-2619),
+  [CVE-2017-7494](https://security-tracker.debian.org/tracker/CVE-2017-7494),
+  [CVE-2017-9461](https://security-tracker.debian.org/tracker/CVE-2017-9461),
+  [CVE-2018-1050](https://security-tracker.debian.org/tracker/CVE-2018-1050),
+  [CVE-2018-1057](https://security-tracker.debian.org/tracker/CVE-2018-1057),
+  [CVE-2018-1085](https://security-tracker.debian.org/tracker/CVE-2018-1085),
+  [CVE-2018-1091](https://security-tracker.debian.org/tracker/CVE-2018-1091)
+  - Package `lcms2`:
+  [CVE-2016-1016](https://security-tracker.debian.org/tracker/CVE-2016-1016),
+  [CVE-2018-1643](https://security-tracker.debian.org/tracker/CVE-2018-1643)
+  - Package `intel-microcode`:
+  [CVE-2018-3640](https://security-tracker.debian.org/tracker/CVE-2018-3640),
+  [CVE-2018-3646](https://security-tracker.debian.org/tracker/CVE-2018-3646)
+  - Package `libxml2`:
+  [CVE-2016-9318](https://security-tracker.debian.org/tracker/CVE-2016-9318),
+  [CVE-2017-1825](https://security-tracker.debian.org/tracker/CVE-2017-1825),
+  [CVE-2018-1440](https://security-tracker.debian.org/tracker/CVE-2018-1440),
+  [CVE-2018-1456](https://security-tracker.debian.org/tracker/CVE-2018-1456)
+  - Package `glib2.0`:
+  [CVE-2018-1642](https://security-tracker.debian.org/tracker/CVE-2018-1642)
+  - Package `jq`:
+  [CVE-2015-8863](https://security-tracker.debian.org/tracker/CVE-2015-8863)
+  - Package `poppler`:
+  [CVE-2018-1398](https://security-tracker.debian.org/tracker/CVE-2018-1398)
+  - Package `ghostscript`:
+  [CVE-2018-1591](https://security-tracker.debian.org/tracker/CVE-2018-1591),
+  [CVE-2018-1651](https://security-tracker.debian.org/tracker/CVE-2018-1651),
+  [CVE-2018-1654](https://security-tracker.debian.org/tracker/CVE-2018-1654),
+  [CVE-2018-1680](https://security-tracker.debian.org/tracker/CVE-2018-1680)
+  - Package `libtirpc`:
+  [CVE-2016-4429](https://security-tracker.debian.org/tracker/CVE-2016-4429),
+  [CVE-2017-8779](https://security-tracker.debian.org/tracker/CVE-2017-8779),
+  [CVE-2018-1462](https://security-tracker.debian.org/tracker/CVE-2018-1462)
+  - Package `postgresql-9.3`:
+  [CVE-2018-1091](https://security-tracker.debian.org/tracker/CVE-2018-1091)
+  - Package `libarchive`:
+  [CVE-2016-1020](https://security-tracker.debian.org/tracker/CVE-2016-1020),
+  [CVE-2016-1034](https://security-tracker.debian.org/tracker/CVE-2016-1034),
+  [CVE-2016-1035](https://security-tracker.debian.org/tracker/CVE-2016-1035),
+  [CVE-2017-1416](https://security-tracker.debian.org/tracker/CVE-2017-1416),
+  [CVE-2017-1450](https://security-tracker.debian.org/tracker/CVE-2017-1450)
+  - Package `linux`:
+  [CVE-2016-1020](https://security-tracker.debian.org/tracker/CVE-2016-1020),
+  [CVE-2017-1147](https://security-tracker.debian.org/tracker/CVE-2017-1147),
+  [CVE-2017-1499](https://security-tracker.debian.org/tracker/CVE-2017-1499),
+  [CVE-2017-1564](https://security-tracker.debian.org/tracker/CVE-2017-1564),
+  [CVE-2017-1652](https://security-tracker.debian.org/tracker/CVE-2017-1652),
+  [CVE-2017-1653](https://security-tracker.debian.org/tracker/CVE-2017-1653),
+  [CVE-2017-1664](https://security-tracker.debian.org/tracker/CVE-2017-1664),
+  [CVE-2017-1665](https://security-tracker.debian.org/tracker/CVE-2017-1665),
+  [CVE-2017-1691](https://security-tracker.debian.org/tracker/CVE-2017-1691),
+  [CVE-2017-1755](https://security-tracker.debian.org/tracker/CVE-2017-1755),
+  [CVE-2017-1825](https://security-tracker.debian.org/tracker/CVE-2017-1825),
+  [CVE-2017-1827](https://security-tracker.debian.org/tracker/CVE-2017-1827),
+  [CVE-2017-1834](https://security-tracker.debian.org/tracker/CVE-2017-1834),
+  [CVE-2017-2583](https://security-tracker.debian.org/tracker/CVE-2017-2583),
+  [CVE-2017-2584](https://security-tracker.debian.org/tracker/CVE-2017-2584),
+  [CVE-2017-2671](https://security-tracker.debian.org/tracker/CVE-2017-2671),
+  [CVE-2017-5549](https://security-tracker.debian.org/tracker/CVE-2017-5549),
+  [CVE-2017-5715](https://security-tracker.debian.org/tracker/CVE-2017-5715),
+  [CVE-2017-5897](https://security-tracker.debian.org/tracker/CVE-2017-5897),
+  [CVE-2017-6345](https://security-tracker.debian.org/tracker/CVE-2017-6345),
+  [CVE-2017-6348](https://security-tracker.debian.org/tracker/CVE-2017-6348),
+  [CVE-2017-7518](https://security-tracker.debian.org/tracker/CVE-2017-7518),
+  [CVE-2017-7645](https://security-tracker.debian.org/tracker/CVE-2017-7645),
+  [CVE-2017-8831](https://security-tracker.debian.org/tracker/CVE-2017-8831),
+  [CVE-2017-9984](https://security-tracker.debian.org/tracker/CVE-2017-9984),
+  [CVE-2018-1000](https://security-tracker.debian.org/tracker/CVE-2018-1000),
+  [CVE-2018-1002](https://security-tracker.debian.org/tracker/CVE-2018-1002),
+  [CVE-2018-1008](https://security-tracker.debian.org/tracker/CVE-2018-1008),
+  [CVE-2018-1012](https://security-tracker.debian.org/tracker/CVE-2018-1012),
+  [CVE-2018-1032](https://security-tracker.debian.org/tracker/CVE-2018-1032),
+  [CVE-2018-1067](https://security-tracker.debian.org/tracker/CVE-2018-1067),
+  [CVE-2018-1087](https://security-tracker.debian.org/tracker/CVE-2018-1087),
+  [CVE-2018-1088](https://security-tracker.debian.org/tracker/CVE-2018-1088),
+  [CVE-2018-1092](https://security-tracker.debian.org/tracker/CVE-2018-1092),
+  [CVE-2018-1093](https://security-tracker.debian.org/tracker/CVE-2018-1093),
+  [CVE-2018-1094](https://security-tracker.debian.org/tracker/CVE-2018-1094),
+  [CVE-2018-1223](https://security-tracker.debian.org/tracker/CVE-2018-1223),
+  [CVE-2018-1309](https://security-tracker.debian.org/tracker/CVE-2018-1309),
+  [CVE-2018-1340](https://security-tracker.debian.org/tracker/CVE-2018-1340),
+  [CVE-2018-3646](https://security-tracker.debian.org/tracker/CVE-2018-3646),
+  [CVE-2018-5390](https://security-tracker.debian.org/tracker/CVE-2018-5390),
+  [CVE-2018-5391](https://security-tracker.debian.org/tracker/CVE-2018-5391)
+  - Package `curl`:
+  [CVE-2018-1461](https://security-tracker.debian.org/tracker/CVE-2018-1461)
+  - Package `bind9`:
+  [CVE-2016-2776](https://security-tracker.debian.org/tracker/CVE-2016-2776),
+  [CVE-2016-8864](https://security-tracker.debian.org/tracker/CVE-2016-8864),
+  [CVE-2016-9131](https://security-tracker.debian.org/tracker/CVE-2016-9131),
+  [CVE-2016-9147](https://security-tracker.debian.org/tracker/CVE-2016-9147),
+  [CVE-2016-9444](https://security-tracker.debian.org/tracker/CVE-2016-9444),
+  [CVE-2017-3135](https://security-tracker.debian.org/tracker/CVE-2017-3135),
+  [CVE-2017-3136](https://security-tracker.debian.org/tracker/CVE-2017-3136),
+  [CVE-2017-3137](https://security-tracker.debian.org/tracker/CVE-2017-3137),
+  [CVE-2017-3138](https://security-tracker.debian.org/tracker/CVE-2017-3138),
+  [CVE-2017-3142](https://security-tracker.debian.org/tracker/CVE-2017-3142),
+  [CVE-2017-3143](https://security-tracker.debian.org/tracker/CVE-2017-3143),
+  [CVE-2017-3145](https://security-tracker.debian.org/tracker/CVE-2017-3145),
+  [CVE-2018-5740](https://security-tracker.debian.org/tracker/CVE-2018-5740)
+  - Package `libx11`:
+  [CVE-2016-7942](https://security-tracker.debian.org/tracker/CVE-2016-7942),
+  [CVE-2016-7943](https://security-tracker.debian.org/tracker/CVE-2016-7943),
+  [CVE-2018-1459](https://security-tracker.debian.org/tracker/CVE-2018-1459),
+  [CVE-2018-1460](https://security-tracker.debian.org/tracker/CVE-2018-1460)
+
+### Typical update path from Release 59
+
+- Need to get 175 MB of archives.
+
+- Has impact on the availability of the end users service:
+
+  - Service `winbind` will be restarted during the update process and its estimated downtime is 82 seconds.
+  - Service `samba-ad-dc` will be restarted during the update process and its estimated downtime is ? seconds.
+  - Service `smbd` will be restarted during the update process and its estimated downtime is 78 seconds.
+  - Service `puavo-rest` will be restarted during the update process and its estimated downtime is 69 seconds.
+  - Service `nmbd` will be restarted during the update process and its estimated downtime is 78 seconds.
+
+- <advanced title="45 installed packages">
+      linux-headers-3.13.0-142-generic (3.13.0-142.191)
+      linux-headers-3.13.0-139 (3.13.0-139.188)
+      linux-image-extra-3.13.0-142-generic (3.13.0-142.191)
+      linux-headers-3.13.0-113 (3.13.0-113.160)
+      linux-headers-3.13.0-158 (3.13.0-158.208)
+      linux-headers-3.13.0-133-generic (3.13.0-133.182)
+      linux-headers-3.13.0-116 (3.13.0-116.163)
+      linux-headers-3.13.0-117 (3.13.0-117.164)
+      libwiretap3 (1.10.6-1)
+      linux-image-3.13.0-142-generic (3.13.0-142.191)
+      linux-image-extra-3.13.0-116-generic (3.13.0-116.163)
+      linux-image-extra-3.13.0-128-generic (3.13.0-128.177)
+      linux-headers-3.13.0-128-generic (3.13.0-128.177)
+      linux-headers-3.13.0-123-generic (3.13.0-123.172)
+      linux-image-extra-3.13.0-113-generic (3.13.0-113.160)
+      linux-image-extra-3.13.0-133-generic (3.13.0-133.182)
+      linux-image-3.13.0-116-generic (3.13.0-116.163)
+      libwsutil3 (1.10.6-1)
+      linux-image-3.13.0-139-generic (3.13.0-139.188)
+      linux-image-extra-3.13.0-158-generic (3.13.0-158.208)
+      linux-image-3.13.0-141-generic (3.13.0-141.190)
+      linux-headers-3.13.0-139-generic (3.13.0-139.188)
+      linux-headers-3.13.0-123 (3.13.0-123.172)
+      linux-headers-3.13.0-158-generic (3.13.0-158.208)
+      linux-headers-3.13.0-142 (3.13.0-142.191)
+      linux-headers-3.13.0-141 (3.13.0-141.190)
+      linux-headers-3.13.0-117-generic (3.13.0-117.164)
+      linux-headers-3.13.0-128 (3.13.0-128.177)
+      linux-headers-3.13.0-133 (3.13.0-133.182)
+      linux-image-3.13.0-128-generic (3.13.0-128.177)
+      linux-image-extra-3.13.0-141-generic (3.13.0-141.190)
+      linux-image-extra-3.13.0-123-generic (3.13.0-123.172)
+      linux-headers-3.13.0-116-generic (3.13.0-116.163)
+      linux-image-3.13.0-158-generic (3.13.0-158.208)
+      linux-image-3.13.0-133-generic (3.13.0-133.182)
+      linux-image-extra-3.13.0-139-generic (3.13.0-139.188)
+      libqpdf13 (5.1.1-1)
+      linux-image-extra-3.13.0-117-generic (3.13.0-117.164)
+      linux-headers-3.13.0-141-generic (3.13.0-141.190)
+      linux-image-3.13.0-123-generic (3.13.0-123.172)
+      linux-image-3.13.0-113-generic (3.13.0-113.160)
+      libwireshark3 (1.10.6-1)
+      linux-image-3.13.0-117-generic (3.13.0-117.164)
+      linux-headers-3.13.0-113-generic (3.13.0-113.160)
+      libavahi-glib1 (0.6.31-4ubuntu1.2)
+</advanced>
+
+- <advanced title="69 updated packages">
+      libglib2.0-0 (2.40.2-0ubuntu1 => 2.40.2-0ubuntu1.1)
+      libgd3 (2.1.0-3ubuntu0.8 => 2.1.0-3ubuntu0.10)
+      libglib2.0-data (2.40.2-0ubuntu1 => 2.40.2-0ubuntu1.1)
+      libnss-winbind (4.3.11+dfsg-0ubuntu0.14.04.14 => 4.3.11+dfsg-0ubuntu0.14.04.17)
+      libpam-winbind (4.3.11+dfsg-0ubuntu0.14.04.14 => 4.3.11+dfsg-0ubuntu0.14.04.17)
+      libxml2 (2.9.1+dfsg1-3ubuntu4.12 => 2.9.1+dfsg1-3ubuntu4.13)
+      grub2-common (2.02~beta2-9ubuntu1.14 => 2.02~beta2-9ubuntu1.15)
+      libwbclient0 (4.3.11+dfsg-0ubuntu0.14.04.14 => 4.3.11+dfsg-0ubuntu0.14.04.17)
+      liblcms2-dev (2.5-0ubuntu4.1 => 2.5-0ubuntu4.2)
+      libisc95 (9.9.5.dfsg-3ubuntu0.17 => 9.9.5.dfsg-3ubuntu0.18)
+      linux-libc-dev (3.13.0-153.203 => 3.13.0-158.208)
+      puavoadmins (0.3.1 => 0.3.2)
+      curl (7.35.0-1ubuntu2.16 => 7.35.0-1ubuntu2.17)
+      samba-libs (4.3.11+dfsg-0ubuntu0.14.04.14 => 4.3.11+dfsg-0ubuntu0.14.04.17)
+      poppler-utils (0.24.5-2ubuntu4.11 => 0.24.5-2ubuntu4.12)
+      libx11-data (1.6.2-1ubuntu2 => 1.6.2-1ubuntu2.1)
+      tzdata (2017c-0ubuntu0.14.04 => 2018e-0ubuntu0.14.04)
+      libbind9-90 (9.9.5.dfsg-3ubuntu0.17 => 9.9.5.dfsg-3ubuntu0.18)
+      grub-common (2.02~beta2-9ubuntu1.14 => 2.02~beta2-9ubuntu1.15)
+      libarchive13 (3.1.2-7ubuntu2.4 => 3.1.2-7ubuntu2.6)
+      grub-pc-bin (2.02~beta2-9ubuntu1.14 => 2.02~beta2-9ubuntu1.15)
+      libsmbclient (4.3.11+dfsg-0ubuntu0.14.04.14 => 4.3.11+dfsg-0ubuntu0.14.04.17)
+      libx11-xcb1 (1.6.2-1ubuntu2 => 1.6.2-1ubuntu2.1)
+      libdns100 (9.9.5.dfsg-3ubuntu0.17 => 9.9.5.dfsg-3ubuntu0.18)
+      amd64-microcode (3.20180524.1~ubuntu0.14.04.2+really20130710.1 => 3.20180524.1~ubuntu0.14.04.2+really20130710.1ubuntu1)
+      samba-common (4.3.11+dfsg-0ubuntu0.14.04.14 => 4.3.11+dfsg-0ubuntu0.14.04.17)
+      samba-common-bin (4.3.11+dfsg-0ubuntu0.14.04.14 => 4.3.11+dfsg-0ubuntu0.14.04.17)
+      liblwres90 (9.9.5.dfsg-3ubuntu0.17 => 9.9.5.dfsg-3ubuntu0.18)
+      linux-headers-generic (3.13.0.153.163 => 3.13.0.158.168)
+      libtirpc1 (0.2.2-5ubuntu2 => 0.2.2-5ubuntu2.1)
+      linux-image-generic-lts-trusty (3.13.0.153.163 => 3.13.0.158.168)
+      grub-pc (2.02~beta2-9ubuntu1.14 => 2.02~beta2-9ubuntu1.15)
+      bind9 (9.9.5.dfsg-3ubuntu0.17 => 9.9.5.dfsg-3ubuntu0.18)
+      libx11-dev (1.6.2-1ubuntu2 => 1.6.2-1ubuntu2.1)
+      python-samba (4.3.11+dfsg-0ubuntu0.14.04.14 => 4.3.11+dfsg-0ubuntu0.14.04.17)
+      libx11-6 (1.6.2-1ubuntu2 => 1.6.2-1ubuntu2.1)
+      smbclient (4.3.11+dfsg-0ubuntu0.14.04.14 => 4.3.11+dfsg-0ubuntu0.14.04.17)
+      liblcms2-2 (2.5-0ubuntu4.1 => 2.5-0ubuntu4.2)
+      libxml2-utils (2.9.1+dfsg1-3ubuntu4.12 => 2.9.1+dfsg1-3ubuntu4.13)
+      winbind (4.3.11+dfsg-0ubuntu0.14.04.14 => 4.3.11+dfsg-0ubuntu0.14.04.17)
+      linux-image-generic (3.13.0.153.163 => 3.13.0.158.168)
+      libx11-doc (1.6.2-1ubuntu2 => 1.6.2-1ubuntu2.1)
+      libpq5 (9.3.23-0ubuntu0.14.04 => 9.3.24-0ubuntu0.14.04)
+      libspice-server1 (0.12.4-0nocelt2ubuntu1.6 => 0.12.4-0nocelt2ubuntu1.7)
+      jq (1.3-1.1ubuntu1 => 1.3-1.1ubuntu1.1)
+      libisccfg90 (9.9.5.dfsg-3ubuntu0.17 => 9.9.5.dfsg-3ubuntu0.18)
+      libisccc90 (9.9.5.dfsg-3ubuntu0.17 => 9.9.5.dfsg-3ubuntu0.18)
+      libgs9-common (9.10~dfsg-0ubuntu10.12 => 9.10~dfsg-0ubuntu10.13)
+      libcurl3-gnutls (7.35.0-1ubuntu2.16 => 7.35.0-1ubuntu2.17)
+      samba-dsdb-modules (4.3.11+dfsg-0ubuntu0.14.04.14 => 4.3.11+dfsg-0ubuntu0.14.04.17)
+      libpq-dev (9.3.23-0ubuntu0.14.04 => 9.3.24-0ubuntu0.14.04)
+      puavo-rest-bootserver (0.11.2-24+trusty.trustyrestonly.fa138fa159d3f764e0917c3a7bdb8b4a19dea5c7 => 0.11.2-25+trusty.trustyrestonly.6046fcc89e3b002015c5eecc61259381df3357c3)
+      puavo-rest (0.11.2-24+trusty.trustyrestonly.fa138fa159d3f764e0917c3a7bdb8b4a19dea5c7 => 0.11.2-25+trusty.trustyrestonly.6046fcc89e3b002015c5eecc61259381df3357c3)
+      linux-image-server (3.13.0.153.163 => 3.13.0.158.168)
+      bind9-host (9.9.5.dfsg-3ubuntu0.17 => 9.9.5.dfsg-3ubuntu0.18)
+      dnsutils (9.9.5.dfsg-3ubuntu0.17 => 9.9.5.dfsg-3ubuntu0.18)
+      linux-generic (3.13.0.153.163 => 3.13.0.158.168)
+      ghostscript (9.10~dfsg-0ubuntu10.12 => 9.10~dfsg-0ubuntu10.13)
+      bind9utils (9.9.5.dfsg-3ubuntu0.17 => 9.9.5.dfsg-3ubuntu0.18)
+      tzdata-java (2017c-0ubuntu0.14.04 => 2018e-0ubuntu0.14.04)
+      intel-microcode (3.20180425.1~ubuntu0.14.04.1 => 3.20180807a.0ubuntu0.14.04.1)
+      libpoppler44 (0.24.5-2ubuntu4.11 => 0.24.5-2ubuntu4.12)
+      libxml2-dev (2.9.1+dfsg1-3ubuntu4.12 => 2.9.1+dfsg1-3ubuntu4.13)
+      openjdk-7-jre-headless (7u181-2.6.14-0ubuntu0.1 => 7u181-2.6.14-0ubuntu0.2)
+      samba (4.3.11+dfsg-0ubuntu0.14.04.14 => 4.3.11+dfsg-0ubuntu0.14.04.17)
+      libcurl3 (7.35.0-1ubuntu2.16 => 7.35.0-1ubuntu2.17)
+      libglib2.0-bin (2.40.2-0ubuntu1 => 2.40.2-0ubuntu1.1)
+      libgs9 (9.10~dfsg-0ubuntu10.12 => 9.10~dfsg-0ubuntu10.13)
+      libglib2.0-dev (2.40.2-0ubuntu1 => 2.40.2-0ubuntu1.1)
+</advanced>
+
 ## Release 59 {#59}
 
 ### Notable changes
