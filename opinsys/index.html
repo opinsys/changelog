@@ -18,6 +18,92 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+## O1844 - Lovelace (Tulossa){#opinsys-os-opinsys-stretch-2018-11-02-080336-amd64}
+
+- <advanced title="Lisäys: Mafynetti-sovellus-ohjelmavalikkoon">
+   MAFY-valmennuksen mafynetti-sovellus on nyt käytettävissä OpinsysOS-laitteilla.
+   Sovellus löytyy valmiiksi asennettuna valitsemalla ``Menu > Opetusohjelmat > Mafynetti``
+   </advanced>
+
+- <advanced title="Lisäys: Abitti-tikkutehdas (kokeellinen)">
+   Järjestelmään on lisätty ominaisuus, jolla kannettavatietokone on mahdollista käynnistää ns. 
+   Abitti-koetikku tehtaaksi. Sovelluksen käyttötapauksena on tilannetta,
+   jossa tietokone voi olla esimerkiksi lukion käytävälle ja jolla opiskelija voivat helposti   
+   tehdä itselleen Abitti usb-tikun. Ohjelmaa kehitetään jatkossa, niin että sillä voi tehdä 
+   kerralla useita tikuja.
+   </advanced>
+
+- <advanced title="Lisäys: Kena Vision Mikroskooppi-sovellus on palautettu järjestelmään">
+   Ohjelma löytyy valitsemalla ``Menu > Ääni & Video > Kena Vision Microscope``.
+   </advanced>
+
+- <advanced title="Lisäys: Tieto työpöydälle Abitti-järjestelmän päivitystilanteesta">
+   Alapaneelin Opinsys-appletista näkee nyt laitteella olevan Abitti-järjestelmän version ja
+   tiedon sen päivitystilanteesta.
+   </advanced>
+
+
+- <advanced title="Päivitys: Ekapeli Alku">
+   Ekapeli alku on päivittynyt uusimpaan versioon. Uusi versio mahdollistaa käyttäjän ja etenemisen
+   tallentamisen verkkoon Ekapeli-tunnuksella.
+   </advanced>
+
+- <advanced title="Korjaus: Vanhojen Ekapelien hidastelu (Java-pohjaiset pelit)">
+  Vanhojen Ekapelien kanssa on essintynyt joillakin tietokoneilla hidastelua, joka on tehnyt peleistä lähes käyttökelvottomia. Ongelma johtuu tällätietoa ekapelin päivityksistä, jotka
+aiheuttavat ongelmia joillakin koneilla.
+Vanhoja Ekapelejä varten on nyt tehty väliaikainen korjaus/kiertokeino, jonka pitäisi auttaa hidasteluongelman kanssa. Mikäli ohjelman hidastelua jatkossa esiintyy, ongelmaa voi aina yrittää kiertää sammuttamalla kaikki ekapeli-ikkunat ja käynnistämällä pelin Menu-valikosta uudelleen.
+   </advanced>
+
+
+- <advanced title="Muutos: Työpöydän alapaneelin oikean reunan uloskirjautumispainike">
+   Uuden käynnistysvalikon myötä myös alapaneelin uloskirjautumispainikkeen käytös on muuttunut. 
+   Jatkossa alapaneelin sammutus/lukitus/uloskirjautumispainikkeet sijaitsevat paneelin 
+   oikeassa reunassa olevassa valikossa yhdessä äänevoimakkuden ja verkkoyhteyksien kanssa.
+   </advanced>
+
+
+- <advanced title="Muutos: Opinsys-työpöydän paneeliapplet (laitteiden päivitys, tukipalvelu ja muutosloki-kuvake)">
+   Työpöydän alapaneelissa olleet erilliset applet-kuvakkeet (tietokoneen päivitys, Opinsys-tukipalvelu/etäpääsyn salliminen/muutosloki) on korvattu yhdellä Opinsys-appletilla. Applet 
+   löytyy työpöydän alapaneelin oikeasta reunasta.
+   </advanced>
+
+- <advanced title="Muutos: Uusi ohjelmien käynnistysvalikko (Menu)">
+  Järjestelmän oletuksena on nyt uusi käynnistysvalikko, joka vanhaan verrrattuna vähentää   
+  tietokoneen resurssien käyttöä ja tuo muutamia uusia ominaisuuksia. Näitä ovat esimerkiksi:
+  - Sovelluskuvakkeiden lisääminen paneeliin tai työpöydälle napsauttamalla hiiren kakkospainiketta halutun sovelluskuvakkeen päällä.
+  - Parempi toimivuus kosketusnäytöllä
+   </advanced>
+
+
+
+
+
+
+- <advanced title=" ">
+
+   </advanced>
+
+
+
+### Tiedossa olevat ongelmat
+
+<advanced title="Näytä...">
+- Robbo-robottiin yhdistäminen langattomasti Bluetoothin välityksellä ei toimi.
+- Webkiosk-tila ei toimi täysin luotettavasti. Esimerkiksi työpöydän kuvakkeet ja tiedostoselain
+  toimivat kirjautumisen jälkeen vasta pitkähkön viiveen jälkeen.
+- Dragonbox-ohjelmakäynnistin ei toimi
+</advanced>
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+   - Lisätty Linphone-voip-puhelinsovellus.
+   - Lisätty adb ja fastboot-komennot
+   - Lisätty riippuvuudet Citrix-clientille
+   - Legacy-kernel päivitetty
+</advanced>
+
 ## O1839 - Kepler {#opinsys-os-opinsys-stretch-2018-09-26-100521-amd64}
 
 - <advanced title="Lisäys: Uusi käynnistysvalikon (grub) teema kannettaville">
