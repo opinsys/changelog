@@ -18,40 +18,43 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
-## O1844 - Lovelace (Tulossa){#opinsys-os-opinsys-stretch-2018-11-02-080336-amd64}
+## O1844 - Lovelace {#opinsys-os-opinsys-stretch-2018-11-02-080336-amd64}
 
-- <advanced title="Lisäys: Mafynetti-sovellus-ohjelmavalikkoon">
-   MAFY-valmennuksen mafynetti-sovellus on nyt käytettävissä OpinsysOS-laitteilla.
-   Sovellus löytyy valmiiksi asennettuna valitsemalla ``Menu > Opetusohjelmat > Mafynetti``
+- <advanced title="Lisäys: Mafynetti-sovellus">
+   MAFY-valmennuksen Mafynetti-sovellus on nyt käytettävissä OpinsysOS-laitteilla.
+   Sovellus löytyy valmiiksi asennettuna valitsemalla ``Menu > Opetusohjelmat > Mafynetti``.
    </advanced>
 
 - <advanced title="Lisäys: Abitti-tikkutehdas (kokeellinen)">
    Järjestelmään on lisätty ominaisuus, jolla kannettavatietokone on mahdollista käynnistää ns. 
-   Abitti-koetikku tehtaaksi. Sovelluksen käyttötapauksena on tilannetta,
-   jossa tietokone voi olla esimerkiksi lukion käytävälle ja jolla opiskelija voivat helposti   
-   tehdä itselleen Abitti usb-tikun. Ohjelmaa kehitetään jatkossa, niin että sillä voi tehdä 
-   kerralla useita tikuja.
+   Abitti-koetikkutehtaaksi. Sovellus on tarkoitettu käytettäväksi esimerkiksi käytäväkoneella,
+   jolla opiskelijat voivat helposti tehdä itselleen Abitti usb-tikun. Ohjelmaa kehitetään 
+   jatkossa, niin että sillä voi tehdä yhtäaikaisesti useita tikuja.
    </advanced>
 
 - <advanced title="Lisäys: Kena Vision Mikroskooppi-sovellus on palautettu järjestelmään">
    Ohjelma löytyy valitsemalla ``Menu > Ääni & Video > Kena Vision Microscope``.
    </advanced>
 
-- <advanced title="Lisäys: Tieto työpöydälle Abitti-järjestelmän päivitystilanteesta">
-   Alapaneelin Opinsys-appletista näkee nyt laitteella olevan Abitti-järjestelmän version ja
-   tiedon sen päivitystilanteesta.
+- <advanced title="Lisäys: Abitti-järjestelmän päivitystilannetieto lisätty paneelikuvakkeeseen">
+   Jatkossa käyttäjien on helpompi nähdä koneella oleva Abitti-versio, niillä kannettavilla joille 
+   on aktivoitu automaattinen Abitti-levykuvienpäivittäjä. Alapaneelin uudesta Opinsys-tukikuvakkeesta 
+   näkee jatkossa laitteella olevan Abitti-järjestelmän version ja tiedon sen päivitystilanteesta.
    </advanced>
 
 
 - <advanced title="Päivitys: Ekapeli Alku">
-   Ekapeli alku on päivittynyt uusimpaan versioon. Uusi versio mahdollistaa käyttäjän ja etenemisen
-   tallentamisen verkkoon Ekapeli-tunnuksella.
+   Ekapeli Alku on päivittynyt uusimpaan versioon. Uusi versio mahdollistaa käyttäjätiedon ja pelien etenemisen
+   tallentamisen verkkoon omalla Ekapeli-tunnuksella.
    </advanced>
 
 - <advanced title="Korjaus: Vanhojen Ekapelien hidastelu (Java-pohjaiset pelit)">
-  Vanhojen Ekapelien kanssa on essintynyt joillakin tietokoneilla hidastelua, joka on tehnyt peleistä lähes käyttökelvottomia. Ongelma johtuu tällätietoa ekapelin päivityksistä, jotka
-aiheuttavat ongelmia joillakin koneilla.
-Vanhoja Ekapelejä varten on nyt tehty väliaikainen korjaus/kiertokeino, jonka pitäisi auttaa hidasteluongelman kanssa. Mikäli ohjelman hidastelua jatkossa esiintyy, ongelmaa voi aina yrittää kiertää sammuttamalla kaikki ekapeli-ikkunat ja käynnistämällä pelin Menu-valikosta uudelleen.
+   Vanhojen Ekapelien kanssa on esiintynyt joillakin tietokoneilla hidastelua, joka on tehnyt 
+   peleistä lähes käyttökelvottomia. Ongelma johtuu ekapelin päivityksistä, jotka
+   aiheuttavat ongelmia joillakin koneilla. Vanhoja Ekapelejä varten on nyt tehty väliaikainen 
+   korjaus/kiertokeino, jonka pitäisi auttaa hidasteluongelman kanssa. Mikäli ohjelman 
+   hidastelua jatkossa esiintyy, ongelmaa voi aina yrittää kiertää sammuttamalla kaikki 
+   ekapeli-ikkunat ja käynnistämällä pelin Menu-valikosta uudelleen.
    </advanced>
 
 
@@ -59,28 +62,22 @@ Vanhoja Ekapelejä varten on nyt tehty väliaikainen korjaus/kiertokeino, jonka 
    Uuden käynnistysvalikon myötä myös alapaneelin uloskirjautumispainikkeen käytös on muuttunut. 
    Jatkossa alapaneelin sammutus/lukitus/uloskirjautumispainikkeet sijaitsevat paneelin 
    oikeassa reunassa olevassa valikossa yhdessä äänevoimakkuden ja verkkoyhteyksien kanssa.
+   Sammuta kuvaketta ei tietokoneella näytetä, jos siinä on sisäinen akku tai UPS.
    </advanced>
 
 
-- <advanced title="Muutos: Opinsys-työpöydän paneeliapplet (laitteiden päivitys, tukipalvelu ja muutosloki-kuvake)">
-   Työpöydän alapaneelissa olleet erilliset applet-kuvakkeet (tietokoneen päivitys, Opinsys-tukipalvelu/etäpääsyn salliminen/muutosloki) on korvattu yhdellä Opinsys-appletilla. Applet 
+- <advanced title="Muutos: Opinsys-työpöydän Opinsys-tukikuvake (laitteiden päivitys, tukipalvelu ja muutosloki-kuvake)">
+   Työpöydän alapaneelin oikeassa laidassa olleet erilliset kuvakkeet (tietokoneen päivitys, 
+   Opinsys-tukipalvelu/etäpääsyn salliminen/muutosloki) on korvattu yhdellä Opinsys-tukikuvakkeella. Kuvake 
    löytyy työpöydän alapaneelin oikeasta reunasta.
    </advanced>
 
 - <advanced title="Muutos: Uusi ohjelmien käynnistysvalikko (Menu)">
-  Järjestelmän oletuksena on nyt uusi käynnistysvalikko, joka vanhaan verrrattuna vähentää   
-  tietokoneen resurssien käyttöä ja tuo muutamia uusia ominaisuuksia. Näitä ovat esimerkiksi:
-  - Sovelluskuvakkeiden lisääminen paneeliin tai työpöydälle napsauttamalla hiiren kakkospainiketta halutun sovelluskuvakkeen päällä.
-  - Parempi toimivuus kosketusnäytöllä
-   </advanced>
-
-
-
-
-
-
-- <advanced title=" ">
-
+   Järjestelmän oletuksena on nyt uusi käynnistysvalikko, joka vanhaan verrattuna vapauttaa tietokoneen
+   resursseja ja tuo muutamia uusia ominaisuuksia. Näitä ovat esimerkiksi:
+   - Nopeampi kirjautuminen tietokoneelle
+   - Sovelluskuvakkeiden lisääminen paneeliin tai työpöydälle, napsauttamalla hiiren kakkospainiketta halutun sovelluskuvakkeen päällä.
+   - Parempi toimivuus kosketusnäytöllä
    </advanced>
 
 
