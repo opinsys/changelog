@@ -18,11 +18,19 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
-## O1846 - Tulossa {#}
+## O1846 - Maxwell {#opinsys-os-opinsys-stretch-2018-11-15-083630-amd64}
 
-- Korjaus: Kannettavien tietokoneiden asennus toimii taas normaalisti
-- Korjaus: Kannettavien tietokoneiden päivittäminen vanhasta Ubuntu-pohjaisesta
-  järjestelmästä uuteen OpinsysOS:n toimii luotettavammin.
+- <advanced title="Korjaus: Kannettavien tietokoneiden asennus"> 
+  Kannettavien tietokoneiden asennus ei edellisen päivitksen jälkeen
+  onnistunut kaikille laitteille. Ongelma johtui vaihdoksesta GPT-partitiontitauluun, 
+  joka ei nykyisen järjestelmän kanssa kuitenkaan aina toimi. Nyt
+  järjestelmään on palautettu kannettavien oletukseksi perinteinen MBR-partitiointitaulu.
+</advanced>
+- <advanced title="Korjaus: Kannettavan päivitys Ubuntu Trusty järjestelmästä uuteen OpinsysOS:ään">
+  Päivittäminen vanhasta järjestelmästä uuteen toimii nyt luotettavammin. Esimerkiksi
+  Abitti-kuva ilmestyy nyt käynnistysvalikkoon automaattisesti heti sen asennuksen jälkeen.
+</advanced>
+
 
 ### Tiedossa olevat ongelmat
 
@@ -36,10 +44,11 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 ### Tekniset muutokset
 
 <advanced title="Näytä...">
-   - Dragonboxin käynnistin on korjattu
-   - Webkiosk-moodi avaa oletuksena Firefox-selaimen
-   - xrandr sleep-hack
-   - Lisätty Minetest
+   - Puavomenuun on tehty refaktorointia
+   - Dragonboxin käynnistin on korjattu Puavomenuun
+   - Webkiosk-moodi avaa taas oletuksena Firefox-selaimen
+   - xrandr-komentojen kanssa on mahdollista käyttää ns. sleep-komentoja
+   - Lisätty Minetest-paketti
    - Vaihdettu oletus partitiontiskeemaksi kannettaville MBR ja boottipalvelimille GPT
    - Lisätty kehitysversio monen yhtäaikaisen tikun kirjoitusohjelmasta
 </advanced>
