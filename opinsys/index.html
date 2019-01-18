@@ -18,6 +18,98 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+## O1903 - Pythgoras {#opinsys-os-opinsys-stretch-2019-01-15-094627-amd64}
+
+- <advanced title="Korjaus: KTouch-sovelluksen käynnistyminen">
+   Ktouch-sovellus ei käynnistynyt Menu-valikosta käynnistettäessä.
+   Ongelma on nyt korjattu.
+   </advanced>
+
+- <advanced title="Lisäys: OpenSCAD">
+   OpenSCAD on esim. 3D-tulostukseen tai muuhun CAD-suunnitteluun tarkoitettu
+   sovellus. Se löytyy valitsemalla ``Menu > Grafiikka > OpenSCAD``.
+   </advanced>
+
+- <advanced title="Lisäys: Nightcode">
+   Nightcode on Clojure-kielen ohjelmointiin tarkoitettu ohjelmointiympäristö.
+   Sovellus löytyy valitsemalla ``Menu > Ohjelmointi > Nightcode``.
+   </advanced>
+
+- <advanced title="Lisäys: Flashforge Flashprint">
+   Flashforge 3D-tulostimille tarkoitettu tulostusohjelma. Sovellus löytyy
+   valitsemalla ``Menu > Grafiikka > Flashforge 3D printer control``.
+   </advanced>
+
+- <advanced title="Lisäys: Robotmesh connect VEX-roboteille">
+   VEX-robotin ohjelmointi on jatkossa mahdollista selainpohjaisen
+   Robotmesh Studion avulla ja kykemällä VEX USB-kaapelilla tietokoneeseen. 
+   Selainsovelluksen käyttö edellyttää selaimeen asennettavan laajennoksen käyttöä. 
+   Laajennos on saatavissa Firefoxille ja Chromelle seuraavista linkeistä:
+   - Firefox: https://addons.mozilla.org/en-US/firefox/addon/robot-mesh-connect/
+   - Chrome: https://chrome.google.com/webstore/detail/robot-mesh-connect-extens/kneikgicddfadmnpnjhbfiaoomchignh
+   </advanced>
+
+- <advanced title="Lisäys: Airtame-näytönpeilaus">
+   Airtame-sovellus mahdollistaa tietokoneen kuvan peilaamisen erilliselle, 
+   näyttöön kiinnitettävälle Airtame-laittelle. Ohjelma on lisätty
+   kokeelliseen käyttöön ja siinä on ongelmia esimerkiksi
+   tietokoneen äänten välittämiseksi Airtame-laitteelle.
+   Airtame-sovellus löytyy valitsemalla ``Menu > Apuohjelmat > Airtame``. 
+   </advanced>
+
+- <advanced title="Lisäys: Kojo-ohjelmointiympäristö">
+   Kojo on perinteinen "kilpikonnaohjelmointiympäristö" lapsille.
+   Sovellus löytyy valitsemalla ``Menu > Ohjelmointi > Kojo``.
+   </advanced>
+
+- <advanced title="Lisäys: Mahdollisuus kielenvalitsemiseen käyttäjäkohtaisesti kirjautumisen yhteydessä">
+   Käyttäjän on mahdollista valita ennen kirjautumista työpöytäistunnon kieli.
+   </advanced>
+
+- <advanced title="Lisäys: ">
+   
+   </advanced>
+
+- <advanced title="Korjaus: ">
+   
+   </advanced>
+
+- <advanced title="Korjaus: ">
+   
+   </advanced>
+
+### Tiedossa olevat ongelmat
+
+<advanced title="Näytä...">
+- Robbo-robottiin yhdistäminen langattomasti Bluetoothin välityksellä ei toimi.
+- Webkiosk-tila ei toimi täysin luotettavasti. Esimerkiksi työpöydän kuvakkeet ja tiedostoselain
+  toimivat kirjautumisen jälkeen vasta pitkähkön viiveen jälkeen.
+- Cura 3d-tulostussovellus ei näy ohjelmavalikossa, vaikka se on asennettuna.
+- adm-tunnuksilla kirjautuminen paikallisesti ei onnistu.	
+</advanced>
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Lisätty ruotsinkielen käännöksiä Menu-valikkoon
+- Lisätty Saksankielen käännökset Menu-valikkoon
+- Lisätty Midnightcommander
+- Lisätty dmenu ja xmobar
+- Lisätty devede-sovellus
+- lisätty smplayer
+- Lisätty sbcl
+- Lisätty xmonad
+- Lisätty Cura
+- Lisätty ksh
+- Lisätty: Tuki images-palvelimelta jaettavalle Extrabootscriptille
+- Lisätty: Puavo-pkg-asennin Canon cque-tulostinajureille
+- Lisätty: ~/bin lisätty käytäjään PATH-polkuun
+- Korjaus: Autopoweroff korvattu puavo-autopoweroffilla
+- Korjaus: libvirtd ei käynnisty aina kaikilla koneilla
+- Korjaus: Smoketest korjattu Debian boottipalvelimilla
+</advanced>
+
+
 ## O1850 - Ohm {#opinsys-os-opinsys-stretch-2018-12-13-082605-amd64}
 
 - <advanced title="Korjaus: Google Chrome-selain ja pakotettu selaimeen kirjautuminen">
@@ -50,6 +142,7 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <advanced title="Näytä...">
 - Lisätty Vagrant-paketti
+- Korjaus: InfoTV-laitteiden boottaus öisin
 </advanced>
 
 
