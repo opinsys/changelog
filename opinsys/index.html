@@ -18,16 +18,28 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
-## O1908 - Tulossa {#}
+## O1908 - Quetelet {#opinsys-os-opinsys-stretch-2019-02-21-114545-amd64}
 
-- Korjaus: Työpöydän lukitusruudussa ei näy enää ylimääräisiä applettikuvakkeita
-- Korjaus: Logger Pro kaatuu tiettyjä toimintoja käyetttäessä
-- Korjaus: Geogebra- tiedostojen avautuminen Geogebra Classicilla
-- Korjaus: Tietokoneiden automaattisammutuksen ajastukset
+- <advanced title="Korjaus: Työpöydän lukitusruudussa ei näy enää ylimääräisiä applettikuvakkeita">
+  Työpöydän lukitusruudussa näkyi esimerkiksi käyttäjän Dropbox-valikko. Ongelma on nyt
+  korjattu. Kiitos Juha Liikaselle ongelman havaitsemisesta.
+  </advanced>
+
+- Korjaus: Logger Pro kaatui esim. Linear Fit-toimintoa käytettäessä
+
+- <advanced title="Korjaus: GeoGebra- tiedostojen avautuminen tuplanapsautettaessa">
+  Jatkossa GeoGebralla tallennetut tiedostot avautuvat GeoGebra 6 Classicilla.
+  </advanced>
+
+- <advanced title="Korjaus: Tietokoneiden automaattinen sammuminen aamuisin">
 - Lisäys: Scratch 3.0 lisätty ohjelmointivalikkoon
+  </advanced>
+
 - Lisäys: Kcalc-laskin Abitti-valikkoon
-- Lisäys: Cups-pdf-tulostinajuri
-- Lisäys: Google Cloudprint tuki palvelimille
+
+- Lisäys: Cups-pdf-tulostinajuri käytettäväksi palvelinten tulostusjonoissa
+
+- Lisäys: Google Cloudprint-tuki koulun boottipalvelimille
 
 
 ### Tiedossa olevat ongelmat
@@ -41,10 +53,10 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 ### Tekniset muutokset
 
 <advanced title="Näytä...">
-- Puavo-pkg tuki verkkopc:lle
-- Flow control pois ltsp0 -interfacesta
-- Oikeus tehdä muutoksia Cupsiin adm-tunnuksilla.
-- Lisätty puavo-bootserver-enable-amt-vnc
+- Lisätty alustava Puavo-pkg tuki verkkopc:lle.
+- Flow control pois ltsp0 -interfacesta boottipalvelimilla.
+- Palautettu oikeus tehdä muutoksia Cupsiin adm-tunnuksilla.
+- Lisätty puavo-bootserver-enable-amt-vnc boottipalvelinten etähallintaa varten.
 </advanced>
 
 
