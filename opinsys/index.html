@@ -18,6 +18,58 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+## O1915 - Tulossa {#opinsys-os-opinsys-stretch-2019-04}
+
+- <advanced title="Korjaus: Ohjelmien satunnainen jumiutuminen">
+Joidenkin ohjelmien, kuten VLC:n ja Vinagren käytön yhteydessä on saattanut esiintyä jumeja, joissa
+ohjelmaikkuna jäättyy tai ohjelma kaatuu. Ongelmat ovat johtuneet Menu-käynnistimessä olleesta
+virheestä joka on nyt korjattu.
+</advanced>
+
+- <advanced title="Lisäys: Ilmoitus verkkoyhteyden puuttumisesta kirjautumisen yhteydessä">
+Kannettavalle ensimmäinen kirjautuminen uudella tunnuksella vaatii aina verkkoyhteyden. Jatkossa käyttäjälle
+näytetään selkeämpi virheilmoitus, jos laitteelle kirjautumisen yhteydessä se ei ole yhdistettynä verkkoon.
+</advanced>
+
+- Lisäys: Tuki Papercut-tulostusjärjestelmälle boottipalvelimille
+
+- <advanced title="Lisäys: Novo Launcher One-sovellus">
+Vivitekin Novo Launcher One -näytönpeilaussovellus on lisätty järjestelmään ja ``Menu > Apuohjelmat`` -valikkoon
+</advanced>
+
+- <advanced title="Lisäys: Sovellusten pikakuvakkieden lisääminen alapaneeliin ja työpöydälle">
+Ohjelmavalikossa olevien sovellusten pikakuvakkeiden lisääminen työpöydän alapaneeliin ja työpöydälle
+on nyt helpompaa. Lisääminen tapahtuu siirtämällä Menu-valikossa hiiri halutun sovelluksen päälle ja valitsemalla
+kuvakkeen vieressä olevasta valikosta (kolme pistettä) haluttu toiminto.
+</advanced>
+
+- <advanced title="Lisäys: Kannettavien päivittäminen niiden ollessa unitilassa">
+Jatkossa kannettaville on mahdollista laittaa erikseen asetus, jossa laite herätetään automaattisesti yöllä.
+Tällöin se päivittää ohjelmistonsa uusimpaan versioon, käynnistyy uudelleen ja menee taas nukkumaan.
+Ominaisuuden tavoitteena on vähentää suurten kannettavamäärien aiheuttamaa verkkokuormaa koulupäivien aikana sekä
+saada laitteiden päivityksen paremmin ajantasalle. Ominaisuus toimii parhaiten kouluilla jaetussa käytössä olevien 
+kannettavien kanssa, joita säilytetään yöaikaan esimerkiksi läppärikärryssä latauksessa. Ominaisuus ei usemmilla laittella
+osaa käynnistää sammutettuja laitteita, vaan ainoastaan kannettavia jotka ovat unitilassa (suspend). Tämä toiminnallisuus
+ei ole oletuksena päällä, vaan se tulee kytkeä halutulle laitejoukolle erikseen käyttöön.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+<advanced title="Näytä...">
+- Robbo-robottiin yhdistäminen langattomasti Bluetoothin välityksellä ei toimi.
+- Webkiosk-tila ei toimi täysin luotettavasti. Esimerkiksi työpöydän kuvakkeet ja tiedostoselain
+  toimivat kirjautumisen jälkeen vasta pitkähkön viiveen jälkeen.
+</advanced>
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Boottipalvelimella on esiintynyt NBD-palvelimella ongelmaa, jonka seurauksena
+verkkoboottaavat päätelaitteet eivät aina käynnistyneet. Ongelma on nyt korjattu.
+</advanced>
+
+
+
 ## O1911 - Riemann {#opinsys-os-opinsys-stretch-2019-03-12-105012-amd64}
 
 - Korjaus: Kalzium-sovellus käynnistyy taas normaalisti Menu-valikosta
