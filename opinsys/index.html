@@ -18,6 +18,44 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 
 <pre class="markdown"><code>
 
+
+## O1944 - Watt {#opinsys-os-opinsys-stretch-2019-10-28-085702}
+
+- <advanced title="Korjaus: Tikkutehtaan liittäminen langattomaan verkkoon">
+Jatkossa Tikkutehdas ei enää kysele ns. avainnipun salasanaa liitettäessä laitetta ensimmäistä
+kertaa langattomaan verkkoon.
+</advanced>
+
+- <advanced title="Korjaus: Abitti-yhteensopivan koejärjestelmän langattoman verkon toimivuus">
+Tiettyjen langattoman verkon piirien kanssa on esiintynyt ongelmia koejärjestelmää käytettäessä
+ongelmia langattoman verkon toimivuuden kanssa. Jatkossa Koejärjestelmään käynnistettäessä käytetään
+asetuksia kuin virallisessa Abitti-tikkukäynnistyksessä ja laitetukea on muutenkin yhtenäistetty.
+Näin ollen langattoman verkon toimivuus on nyt koetilassa parempi ja vastaa Abittia.
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+<advanced title="Näytä...">
+- Robbo-robottiin yhdistäminen langattomasti Bluetoothin välityksellä ei toimi.
+- Webkiosk-tila ei toimi täysin luotettavasti. Esimerkiksi työpöydän kuvakkeet ja tiedostoselain
+  toimivat kirjautumisen jälkeen vasta pitkähkön viiveen jälkeen.
+</advanced>
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Käytettävän broadcom-ajurin voi valita jatkossa puavo.wireless.broadcom.driver
+  -puavo-confilla.
+- Lisätty tuki Busterin vaatimille uudemmille sertifikaateille jotka toimivat rinnakkain
+  Stretchin käyttamien sertifikaattien kanssa.
+- Laitteen vapaana oleva tallennustila (/home) sekä Abitti-versio lähetetään puavoon.
+- Idid-sovellus on päivitetty.
+- Puavo-bootserver-smoke-test korjauksia.
+- Korjattu boottipalvelimen mahdollinen jumiutuminen slad-lukkotiedostoihin laitteen käynnistyksessä.
+</advanced>
+
+
 ## O1939 - Volta {#opinsys-os-opinsys-stretch-2019-09-25-141319-amd64}
 
 - <advanced title="Korjaus: Kannettavan näytön kirkkausasteen tallennus">
