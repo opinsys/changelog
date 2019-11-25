@@ -19,6 +19,46 @@ edelliseen julkaisuun nähden. Näiden muutosten lisäksi <b>versiopäivityksiin
 <pre class="markdown"><code>
 
 
+## O1947 - Xanthopoulos {#opinsys-os-opinsys-stretch-2019-11-22-081959-amd64}
+
+- <advanced title="Korjaus: Tikkutehtaan toimintavarmuus">
+Tikkutehtaaseen on tehty muutoksia jotka parantavat sen toimintaa. Tikkutehdas laitteilta kytketään
+jatkossa USB-porttien virransäästö pois päältä, joka parantaa esimerkiksi tikkujen tunnistamista ja
+muita sekavia USB-laiteongelmia. Lisäksi USB-tikkujen tarkastusvaihe on edellisisissä järjestelmäversioissa
+toiminut huonosti ja vienyt kohtuuttomasti laiteresursseja jumittaen laitteen. Nämä ongelmat on nyt
+korjattu.
+</advanced>
+
+- <advanced title="Päivitys: Ekapeli Alku on päivittynyt versioon 91">
+Vanhemmilla versioilla ei voinut käyttää verkkoprofiilia, jos jollain laitteella
+oli kirjauduttu tiettyä versiota uudemmalla Ekapelillä. Tämä päivitys korjaa ongelman.
+</advanced>
+
+- <advanced title="Lisäys: Lisätty Veracrypt-sovellus Apuohjelmat valikkoon.">
+Ohjelmaa voi käyttää tällähetkellä vain henkilökohtaisilla kannettavilla.
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+<advanced title="Näytä...">
+- Robbo-robottiin yhdistäminen langattomasti Bluetoothin välityksellä ei toimi.
+- Webkiosk-tila ei toimi täysin luotettavasti. Esimerkiksi työpöydän kuvakkeet ja tiedostoselain
+  toimivat kirjautumisen jälkeen vasta pitkähkön viiveen jälkeen.
+</advanced>
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Lisätty Unity Hub päätekuvaan. Ohjelma ei näy vielä valikoissa, mutta sen saa käyntiin /opt/unityhub/unityhub.AppImage tai etsimällä ohjelman desktop-tiedosto /usr/share/applications -kansiosta.
+- Puavo-make-install-disk -ohjelmalle voi antaa jatkossa --target-image -option jolla asennustikun
+voi kirjoittaa suoraan tiedostoon massamuistilaitteen sijaan.
+- Tähän järjestelmäversioon asennettuja laitteita voi tarvittaessa käyttää taas myös vanhemmilla
+järjestelmäversioilla.
+
+</advanced>
+
+
 ## O1944 - Watt {#opinsys-os-opinsys-stretch-2019-10-28-085702-amd64}
 
 - <advanced title="Korjaus: Tikkutehtaan liittäminen langattomaan verkkoon">
@@ -37,6 +77,7 @@ Näin ollen langattoman verkon toimivuus on nyt koetilassa parempi ja vastaa Abi
 ### Tiedossa olevat ongelmat
 
 <advanced title="Näytä...">
+- Tähän kuvaan asennettua laitetta ei voi käyttää vanhemmissa päätekuvissa ilman uudelleen asennusta uudempaan/vanhempaan levykuvaan. Käytettäessä vanhempaa versioita laitteen tunnelit eivät toimi.
 - Robbo-robottiin yhdistäminen langattomasti Bluetoothin välityksellä ei toimi.
 - Webkiosk-tila ei toimi täysin luotettavasti. Esimerkiksi työpöydän kuvakkeet ja tiedostoselain
   toimivat kirjautumisen jälkeen vasta pitkähkön viiveen jälkeen.
