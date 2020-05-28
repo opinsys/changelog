@@ -19,7 +19,7 @@
     "marked": "~0.3.2",
     "browserify": "~3.33.0",
     "watchify": "~0.6.2",
-    "uglify-js": "~2.4.13",
+    "uglify-js": "~3.7.6",
     "jquery": "~2.1.0"
   }
 }
