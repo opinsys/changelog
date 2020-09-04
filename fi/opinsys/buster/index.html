@@ -25,6 +25,55 @@
 <pre class="markdown">
   <code>
 
+## O2035 - Betelgeuze (kehitysversio) {#opinsys-os-opinsys-buster-2020-08-25-121648-amd64}
+
+- <advanced title="Korjaus: Sovellusvalikon (Menu) puuttuvat ikonit">
+Sovellusvalikkosta puuttuvia ikoneita on korjattu, niin että ne toimivat
+paremmin myös ikoniteemaa vaihdettaessa.
+</advanced>
+
+- Päivitys: Openboard versioon 1.5.4
+- Korjaus: Täydennetty puuttuvia suomennoksia ulkoasu-asetusten käyttöliittymään
+
+- <advanced title="Lisäys: Henkilökohtaisen kannettavan resetointi tehdasasetuksille">
+Ka	nnettavan asetukset -työkaluun on lisätty mahdollisuus resetoida kannettava perustilaan.
+Toiminto löytyy henkilökohtaisesti ylläpidettäviltä laitteilta ja se tyhjentää kotikansiot
+sekä laitteelle tehdyt asetukset (ensisijainen käyttäjä, verkkoasetukset jne.).
+</advanced>
+
+- <advanced title="Lisäys: Kirjautuminen olemassa olevalla tunnuksella uudelle lukiolaiskannettavalle">
+Jatkossa Lukiolaiskannettavien käyttäjän rekisteröinti lomakkeen voi ohittaa, jos käyttäjällä
+on jo olemassa käyttäjätunnus, jolla kirjautua.
+</advanced>
+
+- <advanced title="Lisäys: Parempi laitetuki HP Probook 440 G7-kannettaville">
+HP Probook 440 G7 -kannettavat toimivat paremmin OpinsysOS-järjestelmässä. Koneille tulee
+asennuksen yhteydessä/jälkeen laittaa seuraavat asetukset.
+```Kernel: current
+Kernel-parametrit puavo.kernel.modules.load=r8169```
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+- Kojo-ohjelmointiympäristö ei käynnisty
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Winestä käytetään järjestelmän oletuksena sen kehitysversiota
+- Google Chromen luomat, käyttäjän kotikansiossa sijaitsevat,
+desktop-tiedostot korjataan aina kirjautumisen yhteydessä.
+- Käytettäessä tummaa teemaa valitaan myös ikoneista oletuksena
+tumma (dark) vaihtoehto.
+- Poistettu darkdm:stä (esm. laitteiden asennus) rebootin jälkeinen
+aikalaskuri.
+- Korjattu rekisteröimättömien laitteiden verkkokäynnistys tilanteessa, 
+jossa organisaatiolle asetettua päätekuvaa ei ole saatavissa palvelimella.
+</advanced>
+
+
+
 ## O2025 - Absolutno (kehitysversio) {#opinsys-os-opinsys-buster-2020-06-18-055608-amd64}
 
 Tämä on ensimmäinen julkaisu uudesta Opinsys-järjestelmästä.
@@ -37,7 +86,10 @@ päivittyä automaattisesti uudempiin versioihin.
 
 ### Tiedossa olevat ongelmat
 
-- Monia ongelmia, mutta kokonaisuutena asiat toimivat kuitenkin varsin hyvin
+- Sovellusvalikon ikoneissa on puutteita
+- Kojo-ohjelmointiympäristö ei käynnisty
+- Tummanteeman valitseminen ei vaihda ikoneita käyttämään niiden 
+tummaa versiota
 
 ### Tekniset muutokset
 

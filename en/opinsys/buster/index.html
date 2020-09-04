@@ -24,6 +24,30 @@
 <pre class="markdown">
   <code>
 
+## O2035 - Betelgeuze (development release) {#opinsys-os-opinsys-buster-2020-08-25-121648-amd64}
+
+- Fixed missing icons in the menu
+- Fixed missing finnish translation to the theme selection settings
+- Updated openboard to version 1.5.4
+- Added "reset to factory default" function to the laptop settings
+- Added better hardware support for HP Probook 440 G7
+- Added "login as existing user" functionality to personal laptop registration tool
+
+
+### Tiedossa olevat ongelmat
+
+- Kojo-ohjelmointiympäristö ei käynnisty
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Set wine-development as the defalt Wine in the system
+- Fixed desktop files created by Google Chrome (~(.local/share/applications/)
+- removed reboot countdown from the darkdm
+- Fixed pxe booting unregistered devices when organizations desktop image cannot 
+be found on the bootserver.
+</advanced>
+
 ## O2025 - Absolutno (development release) {#opinsys-os-opinsys-buster-2020-06-18-055608-amd64}
 
 This is the first version of the upcoming Opinsys OS.
@@ -36,7 +60,10 @@ them automatically to newer releases.
 
 ### Known issues
 
-- Many known issues, but in the big picture most things work quite well
+- Missing/faulty application icons in menu
+- Selecting dark theme does not select the corresponding dark icon theme
+- "Show desktop" icon can be broken depending on the  icon theme
+- Kojo-programming application does not launch
 
 ### Technical changes
 
