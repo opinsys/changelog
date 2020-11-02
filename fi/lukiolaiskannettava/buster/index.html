@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Muutokset Opinsys-järjestelmässä</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/theme.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+  </head>
+  <body>
+    <div class="login main">
+      <a href="http://opinsys.fi" target="_blank">
+        <img src="../../../opinsys_logo.png" alt="Opinsys Oy">
+      </a>
+      <div class="doc">
+        <h1>Opinsys-järjestelmän versiot ja muutokset</h1>
+        <p>
+          Seuraavassa on kuvattu Opinsys-järjestelmän eri versiot ja
+          tärkeimmät käyttöön vaikuttavat muutokset aina edelliseen
+          julkaisuun nähden.  Näiden muutosten lisäksi
+          versiopäivityksiin sisältyy uusimmat tietoturva- ja
+          ohjelmistopäivitykset (esimerkiksi päivitykset uusimpiin
+          verkkoselaimiin).
+        </p>
+
+<pre class="markdown">
+  <code>
+
+## O2044 - Balrog (kehitysversio) {#opinsys-os-lukiolaiskannettava-buster-2020-10-26-082750-amd64}
+
+- <advanced title="Korjaus: Krita-kuvankäsittely-ohjelman kielituki">
+Kritan käyttöliittymä näkyy nyt myös muilla kielillä kuin pelkästään englanniksi.
+</advanced>
+
+- Päivitys: Arduino Ide versioon 1.8.13.
+- Korjaus: Parannettu kirjautumisruudun tekstien luettavuutta. 
+
+- <advanced title="Korjaus: Kotikansion kuvake työpöydän alapaneelissa">
+Alapaneelissa sijaitseva kotikansion kuvake on jatkossa sama, kuin työpöydällä
+näkyvä.
+</advanced>
+
+
+- <advanced title="Lisäys: Automaattinen yhdistäminen 3G/4G-mobiiliverkkoihin">
+Jatkossa kannettavat yhdistävät mobiilidataverkkoihin automaattisesti, kun laitteeseen
+liitetään SIM-kortti. Automaattinen toimivuus edellyttää operaattorin oletus pin-koodin
+käyttöä tai sen asettamista keskitetysti laitehallinnasta.  
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+- Koulun Opinsys-palvelimen verkkokansiot eivät näy työpöydällä. Kuvakkeet saa näkyviin klikkaamalla työpöytää
+hiiren kakkospainikkeella ja valitsemalla 
+```Asetukset - Näytä verkkokansiot työpöydällä```.
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Korjaus: Kannettavan Grub-päivitys on voinut aiheuttaa saman aikaisen virtojen katkaisun yhteydessä
+tilanteen jossa tietokone ei enää käynnisty. Jatkossa virtojen katkaisu/reboot/suspend on estetty, mikäli
+laite tekee Grub-päivitystä.
+- Korjaus: Hp Elitebook 840 G3:n 3G-modeemi toimii jatkossa normaalisti. Aiemmin laitteella ei ole pysytynyt
+yhdistämään verkkoon puutteelisten udev-sääntöjen takia.
+- Korjaus: Korjattu Jetpipe-toiminnallisuus.
+- Korjaus: Lukiolaiskannettavien käyttäjän rekisteröintityökalu hyväksyy + ja - -merkit puhelinnumerokenttään.
+- Lisäys: Lisätty `--secure-delete`-vipu puavo-reset-laptop-to-factory-defaults toiminnallisuuteen.
+- Lisäys: Järjestelmän asennuksen yhteydessä on mahdollista testata hp-bios-utilsia Puavo-os-consolesta.
+Tavoitteena on mahdolistaa Bios-asetusten teko ja -version päivitys laitteiden asennuksen 
+yhteydessä.
+- Lisäys: Paketit wavemon, espeak-ng ja iotop.
+- Lisäys: Kannettavien automaattista yhdistämistä mobiiliverkkoihin voidaan hallita puavo-confilla:
+`puavo.wireless.nm.gsm.automatic.enabled`. 
+- Muutos: Puavomenun kategoriakuvakkeiden tekstit eivät ole jatkossa kursiivilla.
+- Muutos: Työpöytäkuvakkeiden näyttämiseen käytetään jatkossa Desktop icons NG -laajennosta. Tämän
+pitäsi korjata useita kuvakkeiden kanssa ilmennneitä käytettävyysongelmia.
+- Muutos: Realtekin-verkkokorteilla (ethernet) pyritään käyttämään r8169-ajuria r8168:n sijaan.
+- Muutos: Poistettu tilansäästösyistä Extreme Tux Racer
+- Muutos: Super Tux Kart poistettu päätekuvasta ja lisätty vaihtoehtoisesti asennettavaksi 
+puavo-pkg-paketiksi.
+- Päätekuvaan asennettuja puavo-pkg-paketteja on mahdollista disabloida puavo-confin välityksellä.
+- Muutos: Poistettu menusta käytöstä poistuneet palvelut Pahvi ja Walma.
+</advanced>
+
+
+## O2037 - Abra (kehitysversio) {#opinsys-os-lukiolaiskannettava-buster-2020-09-15-063852-amd64}
+
+- <advanced title="Korjaus: Sovellusvalikon (Menu) puuttuvat ikonit">
+Sovellusvalikkosta puuttuvia ikoneita on korjattu, niin että ne toimivat
+paremmin myös ikoniteemaa vaihdettaessa.
+</advanced>
+
+- Päivitys: Openboard versioon 1.5.4
+- Korjaus: Täydennetty puuttuvia suomennoksia ulkoasu-asetusten käyttöliittymään
+
+- <advanced title="Lisäys: Henkilökohtaisen kannettavan resetointi tehdasasetuksille">
+Kannettavan asetukset -työkaluun on lisätty mahdollisuus resetoida kannettava perustilaan.
+Toiminto löytyy henkilökohtaisesti ylläpidettäviltä laitteilta ja se tyhjentää kotikansiot
+sekä laitteelle tehdyt asetukset (ensisijainen käyttäjä, verkkoasetukset jne.).
+</advanced>
+
+- <advanced title="Lisäys: Kirjautuminen olemassa olevalla tunnuksella uudelle lukiolaiskannettavalle">
+Jatkossa Lukiolaiskannettavien käyttäjän rekisteröinti lomakkeen voi ohittaa, jos käyttäjällä
+on jo olemassa käyttäjätunnus, jolla kirjautua.
+</advanced>
+
+- <advanced title="Lisäys: Parempi laitetuki HP Probook 440 G7-kannettaville">
+HP Probook 440 G7 -kannettavat toimivat paremmin OpinsysOS-järjestelmässä. Koneille tulee
+asennuksen yhteydessä/jälkeen laittaa seuraavat asetukset.
+```Kernel: current
+Kernel-parametrit puavo.kernel.modules.load=r8169```
+</advanced>
+
+
+
+### Tiedossa olevat ongelmat
+
+- Kojo-ohjelmointiympäristö ei käynnisty
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Winestä käytetään järjestelmän oletuksena sen kehitysversiota
+- Google Chromen luomat, käyttäjän kotikansiossa sijaitsevat,
+desktop-tiedostot korjataan aina kirjautumisen yhteydessä.
+- Käytettäessä tummaa teemaa valitaan myös ikoneista oletuksena
+tumma (dark) vaihtoehto.
+- Poistettu darkdm:stä (esm. laitteiden asennus) rebootin jälkeinen
+aikalaskuri.
+- Korjattu rekisteröimättömien laitteiden verkkokäynnistys tilanteessa, 
+jossa organisaatiolle asetettua päätekuvaa ei ole saatavissa palvelimella.
+</advanced>
+
+
+
+
+  </code>
+</pre>
+
+      </div>
+    </div>
+    <script src="../../../bundle.js?v=2" charset="utf-8"></script>
+  </body>
+</html>
