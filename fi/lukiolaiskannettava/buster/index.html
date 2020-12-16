@@ -25,6 +25,59 @@
 <pre class="markdown">
   <code>
 
+## O2050 - Croft {#opinsys-os-lukiolaiskannettava-buster-2020-12-09-114101-amd64}
+
+- <advanced title="Korjaus: Kannettavan näytön kirkkausasetus">
+Kannettavan uudelleen käynistyksen jälkeen näytön kirkkaus on ollut aina 100%. 
+Jatkossa käyttäjän asettama näytönkirkkausasetus tallentuu ja palautuu
+oikein uudelleen käynnistysten yhteydessä. Tämä parantaa laitteiden akunkestoa, 
+koska näyttö ei niin helposti jää kirkkaimmalle asetukselle.
+</advanced>
+
+- <advanced title="Korjaus: OpenSCAD ei käynnisty">
+OpenSCAD-ohjelmisto toimii taas normaalisti.
+</advanced>
+
+- <advanced title="Korjaus: Näyttöasetusten keskitetty hallinta">
+Päätelaitteilla on nyt mahdollista käyttää kahta vaihtoehtoista tapaa
+näyttöasetusten keskitettyyn hallintaan. Toiminnallisuus on hyödyllinen 
+esimerkiksi tietokoneilla joita käyttävät useat eri henkilöt ja joissa on useita näyttöjä
+(esimerkiksi luokan opettajatietokone/videotykki).
+Tuttuina ovat vanha (xrandr) muotoinen näyttöasetusten tekeminen sekä uusi
+(Gnome monitors.xml) muotoinen näyttöasetusten teko. Vanha asetusmuoto tulee poistumaan
+järjestelmän kehittyessä.
+</advanced>
+
+- <advanced title="Muutos: AppImage-sovellusten suorittaminen">
+Kakkien (esim. Electron pohjaisten sovellusten) suorittaminen AppImage-tiedostoista
+ei ole ollut aiemmin mahdollista ilman ns. AppImagen sandboxin pois kytkemistä. Tämä
+on ollut järjestelmän tietoturvaominaisuus. Nyt tätä rajausta on höllennetty ja
+myös Electron muotoiset appimaget on mahdollista suorittaa suoraan kuvaketta 
+tuplanapsauttamalla. 
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Korjaus: puavo-send-monitors-xml pystyy taas lähettämään näyttötiedot laitehallintaan.
+- Korjaus: Kannettavien tulostinlistan päivittyminen. Kannettavien tulostinlistan päivitys 
+ei ole aiemmassa versiossa toiminut oikein. Tästä johtuen kannettavilla on saattanut näkyä 
+vanhentunut lista tulostimista tai ei tulostimia lainkaan. Ongelma on nyt korjattu.
+- Muutos: Current-kernel on päivitetty versioon 5.9.0-0.bpo.2-amd64.
+- Muutos: UEFI / Legacy BIOS käynnistuslataajien tuki. Tähän asti Opinsys OS on tukenut 
+kunnolla vain Legacy BIOS-käynnistysohjelmistoa käyttäviä tietokoneita. Jatkossa Opinsys OS 
+on mahdollista asentaa Legacy BIOS -ohjelmiston lisäksi myös vain UEFI-käynnistystä tukeviin 
+tietokoneisiin. Lisäksi järjestelmällä tehtävät asennustikut tukevat oletuksena molempia
+käynnistysohjelmistomuotoja samanaikaisesti.
+- Lisäys: Mahdollisuus asentaa puavo-pkg:llä seuraavat sovellukset: GDevelop, Microsoft 
+Visual Studio Code, Prusa3D, Otto DIY sekä Otto robotin arduino-kirjastot.
+</advanced>
+
+
+
 ## L2044 - Balrog (kehitysversio) {#opinsys-os-lukiolaiskannettava-buster-2020-10-26-082750-amd64}
 
 - <advanced title="Korjaus: Krita-kuvankäsittely-ohjelman kielituki">
