@@ -25,6 +25,70 @@
 <pre class="markdown">
   <code>
 
+## O2104 - Tulossa {#opinsys-os-opinsys-buster-2021-01-27-071357-amd64}
+
+- <advanced title="Korjaus: Kannettavien tulostinlistan päivittyminen">
+Kannettavien tulostinlistaus ei aiemmin päivittynyt ja tästä johtuen kannettavilla
+on saattanut näkyä vanhentunut lista tulostimista tai ei tulostimia lainkaan.
+Ongelma on nyt korjattu.
+</advanced>
+
+
+- <advanced title="Päivitys: Opinsys koejakaja">
+Koejakaja toiminnallisuuteen on lisätty tukea automatisoidulle Abitti-koepalvelimelle.
+Jatkossa koepalvelin osaa käynnistää kokeita automatisoidusti koejakaja-verkkopalveluun
+tehtyjen aikataulujen ja koetietojen mukaisesti. Kokeen päätyttyä koevastaukset kerätään
+vastaukset kansioon.
+
+</advanced>
+
+- <advanced title="Päivitys: Mafynetti">
+Mafynetti on päivittynyt uusimpaan sovellusversioon. Tulevaisuudessa Mafynet siirtyy käyttämään verkkosivupohjaista järjestelmää ja vanha sovellus poistuu kokonaan käytöstä.
+</advanced>
+
+- <advanced title="Päivitys: Tuki Adobe Flashille on poistettu">
+Adobe Flashin elinkaari päättyi vuoden vaihteessa ja jatkossa Flashin suorittaminen
+verkkosivuilla ei ole mahdollista. Tästä johtuen kaikki Flashiin viitanneet komponentit
+on poistettu myös Opinsys OS -käyttöjärjestelmästä.
+</advanced>
+
+- <advanced title="Korjaus: Abitti-version määrittäminen henkilökohtaisella kannettavalla">
+Henkilökohtaisilla kannettavilla näkyvässä "Kannettavan asetukset" -työkalussa on mahdollista määrittää Abitti yhteensopivan koejärjestelmän numero myös ABITTIXXXXY -muodossa. Eli työkalussa version voi määrittää jatkossa vanhaan tapaan Abitin build-numeron mukaan (esim. 232) tai käyttämällä nykyään virallista versiomerkintää esim. ABITTI2053T.
+</advanced>
+
+- <advanced title="Korjaus: Näyttöasetusten keskitetty hallinta">
+Päätelaitteilla on nyt mahdollista käyttää kahta vaihtoehtoista tapaa
+näyttöasetusten keskitettyyn hallintaan. Toiminnallisuus on hyödyllinen 
+esimerkiksi tietokoneilla joita käyttävät useat eri henkilöt ja joissa on useita näyttöjä
+(esimerkiksi luokan opettajatietokone/videotykki).
+Tuttuina ovat vanha (xrandr) muotoinen näyttöasetusten tekeminen sekä uusi
+(Gnome monitors.xml) muotoinen näyttöasetusten teko. Vanha asetusmuoto tulee poistumaan
+järjestelmän kehittyessä.
+</advanced>
+
+- <advanced title="Muutos: AppImage-sovellusten suorittaminen">
+Kakkien (esim. Electron pohjaisten sovellusten) suorittaminen AppImage-tiedostoista
+ei ole ollut aiemmin mahdollista ilman ns. AppImagen sandboxin pois kytkemistä. Jatkossa
+myös Electron muotoiset appimaget on mahdollista suorittaa suoraan kuvaketta 
+tuplanapsauttamalla. 
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Korjaus: adm-x11vnc toimii taas normaalisti ja samalla lisätty tuki esim. tikkutehdas
+  ja infotv -istunnoille.
+- Lisäys: Laitteiden asennukseen on lisätty näytettävien laitetietojen joukkoon näytön
+  natiiviresoluutio, SKU numero ja akun kapasiteetti sekä perustiedot.
+- Lisäys: Jatkossa laitetietojen lähetyksen yhteydessä välitetään kokonainen lspci-tuloste
+  aiemman valikoidun (vain osa tiedoista lähetettiin) tulosteen sijaan.
+- Lisäys: virt-manager -paketti.
+</advanced>
+
+
 ## O2050 - Elnath {#opinsys-os-opinsys-buster-2020-12-09-114058-amd64}
 
 - <advanced title="Korjaus: Kannettavien tulostinlistan päivittyminen">
