@@ -23,6 +23,40 @@
 
 <pre class="markdown">
   <code>
+## O2104 - Fomalhaut {#opinsys-os-opinsys-buster-2021-01-27-071357-amd64}
+
+- Update exam room server device mode with automated exam startup.
+- Update Mafynetti application
+- Remove support for Adobe Flash player
+- Fix Abitti compatible exam system to use also the currently official version
+numbering of the Abitti system.
+
+## O2050 - Elnath {#opinsys-os-opinsys-buster-2020-12-09-114058-amd64}
+
+- Fix updating the available printers list.
+- Fix restoring the screen brightness setting on laptops after reboot.
+- Fix launching OpenSCAD
+- Fix launching Electron based Appimage applications
+- Add support for simultaneus supports for UEFI and Legacy BIOS booting.
+- Add support for Otto DIY robots. The Otto Blockly application for programming
+the robots is not included in the image, but can be installed via puavo-pkg.
+
+### Known issues
+
+- adm-x11vnc does not run due to security update to the vnc server.
+
+### Technical changes
+
+- Fix puavo-send-monitors to send xml based monitor settings to device management
+- Current kernel updated to version 5.9.0-0.bpo.2-amd64
+- Add new puavo-pkg installable applications: GDevelop, Microsoft Visual Studio Code,
+Otto DIY Blockly application and new arduino libraries for Otto robots.
+
+## O2045 - Deneb {#opinsys-os-opinsys-buster-2020-11-09-120441-amd64}
+- Fix displaying network folders (from bootserver/puavobox)on the desktop.
+- Fix Virtualbox guest additions
+- Fix slow startup of stating the Puavo OS console when installing new devices.
+
 
 ## O2043 - Capella (development release) {#opinsys-os-opinsys-buster-2020-10-22-121114-amd64}
 
