@@ -25,6 +25,43 @@
 <pre class="markdown">
   <code>
 
+## L2104 - Donkey {#opinsys-os-lukiolaiskannettava-buster-2021-01-27-071258-amd64}
+
+- <advanced title="Päivitys: Mafynetti">
+Mafynetti on päivittynyt uusimpaan sovellusversioon. Päivitys on todennäköisesti viimeinen ennen kuin
+Mafynet siirtyy käyttämään verkkoselain pohjaista järjestelmää jolloin tämä sovellus poistuu käytöstä ja
+sovelluskuvake aukaisee tuon uuden palvelun.
+</advanced>
+
+- <advanced title="Päivitys: Tuki Adobe Flashille on poistettu">
+Adobe Flashin elinkaari päättyi vuoden vaihteessa ja jatkossa Flashin suorittaminen
+verkkosivuilla ei ole mahdollista. Tästä johtuen kaikki Flashiin viitanneet komponentit
+on poistettu myös Opinsys OS -käyttöjärjestelmästä.
+</advanced>
+
+- <advanced title="Korjaus: Koejärjestelmän Abittiversion määrittäminen henkilökohtaisella kannettavalla">
+Henkilökohtaisilla kannettavilla näkyvässä "Kannettavan asetukset" -työkalussa on nyt mahdollista 
+määrittää Abitti yhteensopivan koejärjestelmän versionumero myös ABITTIXXXXY -muodossa. Eli 
+työkalussa version voi määrittää jatkossa vanhaan tapaan Abitin build-numeron mukaan (esim. 232) 
+tai käyttämällä virallista versiomerkintää esim. ABITTI2053T.
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Korjaus: adm-x11vnc toimii taas normaalisti ja samalla lisätty tuki esim. tikkutehdas
+  ja infotv -istunnoille.
+- Lisäys: Laitteiden asennukseen on lisätty näytettävien laitetietojen joukkoon näytön
+  natiiviresoluutio, SKU numero ja akun kapasiteetti sekä perustiedot.
+- Lisäys: Jatkossa laitetietojen lähetyksen yhteydessä välitetään kokonainen lspci-tuloste
+  aiemman valikoidun (vain osa tiedoista lähetettiin) tulosteen sijaan.
+- Lisäys: virt-manager -paketti.
+</advanced>
+
+
 ## L2050 - Croft {#opinsys-os-lukiolaiskannettava-buster-2020-12-09-114101-amd64}
 
 - <advanced title="Korjaus: Kannettavan näytön kirkkausasetus">

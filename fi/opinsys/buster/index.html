@@ -25,17 +25,19 @@
 <pre class="markdown">
   <code>
 
-## O2104 - Tulossa {#opinsys-os-opinsys-buster-2021-01-27-071357-amd64}
+## O2104 - Fomalhaut {#opinsys-os-opinsys-buster-2021-01-27-071357-amd64}
 
-- <advanced title="Päivitys: Opinsys koejakaja">
-Koejakaja toiminnallisuuteen on lisätty tukea automatisoidulle Abitti-koepalvelimelle.
+- <advanced title="Päivitys: Opinsys-koejakaja">
+Abitti-koepalvelimen automaatiota on kehitetty eteenpäin kokeiden ajastetun käynnistyksen osalta.
 Jatkossa koepalvelin osaa käynnistää kokeita automatisoidusti koejakaja-verkkopalveluun
 tehtyjen aikataulujen ja koetietojen mukaisesti. Kokeen päätyttyä koevastaukset kerätään
-vastaukset kansioon.
+koepalvelimen vastaukset kansioon.
 </advanced>
 
 - <advanced title="Päivitys: Mafynetti">
-Mafynetti on päivittynyt uusimpaan sovellusversioon. Tulevaisuudessa Mafynet siirtyy käyttämään verkkosivupohjaista järjestelmää ja vanha sovellus poistuu kokonaan käytöstä.
+Mafynetti on päivittynyt uusimpaan sovellusversioon. Päivitys on todennäköisesti viimeinen ennen kuin
+Mafynet siirtyy käyttämään verkkoselain pohjaista järjestelmää jolloin tämä sovellus poistuu käytöstä ja
+sovelluskuvake aukaisee tuon uuden palvelun.
 </advanced>
 
 - <advanced title="Päivitys: Tuki Adobe Flashille on poistettu">
@@ -45,7 +47,10 @@ on poistettu myös Opinsys OS -käyttöjärjestelmästä.
 </advanced>
 
 - <advanced title="Korjaus: Abitti-version määrittäminen henkilökohtaisella kannettavalla">
-Henkilökohtaisilla kannettavilla näkyvässä "Kannettavan asetukset" -työkalussa on mahdollista määrittää Abitti yhteensopivan koejärjestelmän numero myös ABITTIXXXXY -muodossa. Eli työkalussa version voi määrittää jatkossa vanhaan tapaan Abitin build-numeron mukaan (esim. 232) tai käyttämällä nykyään virallista versiomerkintää esim. ABITTI2053T.
+Henkilökohtaisilla kannettavilla näkyvässä "Kannettavan asetukset" -työkalussa on mahdollista 
+määrittää Abitti yhteensopivan koejärjestelmän numero myös ABITTIXXXXY -muodossa. Eli 
+työkalussa version voi määrittää jatkossa vanhaan tapaan Abitin build-numeron mukaan (esim. 232) 
+tai käyttämällä virallista versiomerkintää esim. ABITTI2053T.
 </advanced>
 
 
@@ -118,6 +123,7 @@ tuplanapsauttamalla.
 
 
 ### Tiedossa olevat ongelmat
+- adm-x11vnc -ylläpitotyökalu ei toimi tietoturvapoäivityksen aiheuttaman muutoksen takia.
 
 ### Tekniset muutokset
 
