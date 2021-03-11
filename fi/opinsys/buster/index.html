@@ -25,6 +25,63 @@
 <pre class="markdown">
   <code>
 
+## O2108 - Gakyid {#opinsys-os-opinsys-buster-2021-02-25-121821-amd64}
+
+- <advanced title="Lisäys: Telegram">
+Telegram-viestintäsovellus on lisätty Menun Internet-valikkoon.
+</advanced>
+
+- <advanced title="Lisäys: Signal (pyydettäessä)">
+Signal-viestintäsovellus on mahdollista lisätä Menun Internet-valikkoon laitehallinnan kautta tai
+pyytämällä Opinsysin tukipalvelusta. Signal-sovellusta ei asenneta oletuksena, johtuen sen kohtuuttoman 
+suuresta tilantarpeesta.
+</advanced>
+
+- <advanced title="Korjaus: Kannettavien touchpadien kakkospainikkeen toiminta">
+Kannettavat joiden touchpadeissä ei ole fyysisesti erillisiä "hiirennappipainikkeita" ainut tapa
+saada hiiren kakkospainallus on ollut käyttää kahden sormen täpäytystä kosketuslevylle. Nyt
+järjestelmään on palautettu aiempi oletustoiminnallisuus, jolloin kakkospainikkeen painaminen on
+mahdollista tehdä myös kosketuslevyn alareunan painikealueista. 
+</advanced>
+
+- <advanced title="Korjaus: Menu-valikon "Omat ohjelmat"">
+Menu-valikon "Omat ohjelmat" välilehdeltä on voinut puuttua sovelluskuvakkeita,
+jos sovellusasennin on luonut kuvakkeet oman kansion alle. Jatkossa Menu osaa
+hakea myös tällaisten sovellusten kuvakkeet ja näyttää ne oikein.
+</advanced>
+
+- <advanced title="Korjaus: Laiteyhteensopivuus Dell Latitude 3510 ja HP ProBook 440 G7">
+Kyseisten kannettavamallien mikrofonien toiminnassa on ollut aiemmin ongelmia. Tässä
+versiossa ongelma näiden laitteiden äänipiirien osalta korjautuu.
+</advanced>
+
+- <advanced title="Muutos: Airtame-sovellus on poistettu">
+Airtame-sovellus on poistettu vähäisen käytön ja sovelluksen päivitysten
+hankaloitumisen vuoksi.
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Päivitys: Current kernel päivitetty versioon 5.10.0-0.bpo.3-amd64.
+- Korjaus: Puavo OS Consolen näyttämän laitteen akun kapasiteetin värikoodausta on selkeytetty.
+- Korjaus: Intelin 8086:02c8 -äänikorttia käyttävillek oneille tulee käyttöön hwquirk joka korjaa
+mikrofonin toiminan.
+- Lisäys: "puavo.graphics.driver" puavo-conf on jatkossa mäpätty kernel-parametreihin.
+- Lisäys: Kannettavat on mahdollista asettaa päivittymään jatkossa torrent-pohjaista vertaisverkkopäivitystä.
+Kannettavat voivat siis jakaa päivitystiedostoa muille samassa lähiverkossa oleville kannettaville. 
+Tämä vähentää koulun internet-kaistan kuormitusta, jos kannettavien käytössä ei ole koululla olevaa boot-palvelinta. 
+Ominaisuuden saa kytkettyä päälle `puavo.service.puavo-image-torrent-updated.enabled` puavo-confia käyttäen.
+- Lisäys: Discord-työpöytäsovellus on mahdollista asentaa puavo-pkg-pakettina puavo-confin avulla.
+- Lisäys: puavo.xrandr.extra_modes -puavo-confilla on mahdollista lisätä kaikille laitteen näyttöulostuloille
+haluttu/puuttuva resoluutio.
+</advanced>
+
+
 ## O2104 - Fomalhaut {#opinsys-os-opinsys-buster-2021-01-27-071357-amd64}
 
 - <advanced title="Päivitys: Opinsys-koejakaja">
