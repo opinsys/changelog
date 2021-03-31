@@ -25,6 +25,53 @@
 <pre class="markdown">
   <code>
 
+## O2112 - Hadar {#opinsys-os-opinsys-buster-2021-03-24-123005-amd64}
+
+- <advanced title="Lisäys: Freeplane-miellekarttasovellus">
+Sovellus löytyy Menu-valikon Toimisto-kategoriasta.
+</advanced>
+
+- Päivitys: Teams-sovellus on päivitetty versioon 1.4.00.4855.
+
+- <advanced title="Korjaus: Flashprint -sovelluksen g-code ongelmat">
+Flashprintin uusimman version kanssa on havaittu ongelmia ohjelman 
+slicer-ominaisuuden kanssa. Sovellus palautettu viimeiseen toimivaan versioon. 
+</advanced>
+
+- <advanced title="Korjaus: Lisäohjelmistojen asennus henkilökohtaisella kannettavalla">
+Lisätyt tai poistetut lisäohjelmistot eivät tulleet näkyviin Menu-valikkoon. Ongelma
+on nyt korjattu.
+</advanced>
+
+- <advanced title="Muutos: Järjestelmäversion näyttäminen käynnistysvalikossa">
+Jatkossa kannettavien käynnistysvalikossa näytetään järjestelmän virallinen
+versionumero ja nimi.
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Korjaus: Kannettavien päivityksen keskeyttäminen (esimerkiksi tietokoneen sammuttaminen) on bugista johtuen aiheuttanut sen, että päivityksen lataus on alkanut aina alusta. Ongelma on nyt korjattu.
+- Korjaus: Poistettu mahdollisuus päästä Gnome extensions -asetuksiin työpöydän paneelista.
+- Muutos: Primuskurre client -ohjelman käyttöön on pyritty tekemään muutoksia niin, että 
+ohjelmisto voisi päivittää itse itsensä. 
+- Muutos: Kannettavan käyttäjätunuksen rekisteröintityökalulla tunnus luodaan jatkossa
+kyseisen laitteen organisaatioon/kouluun. Aiemmin työkalua on voitu käyttää vain lukiolaiskannetavat -organisaatioon.
+- Muutos: Opinsys OS-käyttöjärjestelmän tikkuasennuksessa ei pitäisi jatkossa tulla 
+virheilmoitusta siitä että laiteietojen tai päätekuvan päivittäminen asennuksen yhteydessä
+epäonnistuisivat.
+- Lisäys: Käyttämällä "puavo.wired.nm.shared.enabled" -puavo-conf-muuttujaa voidaan jakaa
+kannettavan internetyhteys (esim. LTE) laitteen ethernetportista toisille laitteille.
+- Lisäys: Veyon ja Epoptes -paketit testikäyttöön
+- Lisäys: Boottipalvelimen laitetietojen lähettäminen puavoon.
+</advanced>
+
+
+
 ## O2108 - Gakyid {#opinsys-os-opinsys-buster-2021-02-25-121821-amd64}
 
 - <advanced title="Lisäys: Telegram">
@@ -32,8 +79,7 @@ Telegram-viestintäsovellus on lisätty Menun Internet-valikkoon.
 </advanced>
 
 - <advanced title="Lisäys: Signal (pyydettäessä)">
-Signal-viestintäsovellus on mahdollista lisätä Menun Internet-valikkoon laitehallinnan kautta tai
-pyytämällä Opinsysin tukipalvelusta. Signal-sovellusta ei asenneta oletuksena, johtuen sen kohtuuttoman 
+Signal-viestintäsovellus on mahdollista lisätä Menun Internet-valikkoon laitehallinnan kautta tai pyytämällä Opinsysin tukipalvelusta. Signal-sovellusta ei asenneta oletuksena, johtuen sen kohtuuttoman 
 suuresta tilantarpeesta.
 </advanced>
 
