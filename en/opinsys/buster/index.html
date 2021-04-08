@@ -23,6 +23,40 @@
 
 <pre class="markdown">
   <code>
+
+## O2112 - Hadar {#opinsys-os-opinsys-buster-2021-03-24-123005-amd64}
+
+- Add Freeplane midmapping application.
+- Add new puavo-conf variable ´puavo.wired.nm.shared.enabled´ to enable sharing the internet 
+(for example LTE connection on laptop) from the ethernet port.
+- Add Veyon ja Epoptes -packages for testing and development purposes.
+- Add 
+- Update Teams applivation to version 1.4.00.4855.
+- Fix Flashprint slicer by downgrading the application to latest working version.
+- Fix updating menu items when installing additional applications on personal laptops.
+- Fix rdiff based laptop updates to continue the download from the point where it
+left of in case of reboot or shutdown.
+- Fix vpn connection and when doing usb stick installation 
+- Change bootmenu (Grub) to use official version numbering of device images instead of
+the device image filename.
+
+## O2108 - Gakyid {#opinsys-os-opinsys-buster-2021-02-25-121821-amd64}
+
+- Add Telegram application.
+- Add puavo-pkg package for Signal application. This can be installed by request.
+- Fix touchpad usage on laptop touchpads that do not have physical buttons. Basically the 
+old default settings (by Gnome) have been.
+- Fix 'Your programs' tab in the application menu to discover installed applications better .
+than before. Previously the application did not discover application desktop files that where
+under subfolders.
+- Fix Hadware compatibility with Dell Latitude 3510 and Probook 440 G7 laptops. These device
+models had trouble with internal microphone.
+- Fix battery capacity coloring in Puavo OS Console.
+- Removed Airtame application.
+- Update the Current kernel to version 5.10.0-0.bpo.3-amd64.
+- Add possibility to add new resolutions to device outputs via puavo.xrandr.extra_modes puavo-conf.
+- Add puavo-pkg installer for Discord.
+
 ## O2104 - Fomalhaut {#opinsys-os-opinsys-buster-2021-01-27-071357-amd64}
 
 - Update exam room server device mode with automated exam startup.
@@ -53,6 +87,7 @@ the robots is not included in the image, but can be installed via puavo-pkg.
 Otto DIY Blockly application and new arduino libraries for Otto robots.
 
 ## O2045 - Deneb {#opinsys-os-opinsys-buster-2020-11-09-120441-amd64}
+
 - Fix displaying network folders (from bootserver/puavobox)on the desktop.
 - Fix Virtualbox guest additions
 - Fix slow startup of stating the Puavo OS console when installing new devices.
