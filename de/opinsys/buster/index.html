@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Änderungen im Opinsys OS</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/theme.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+  </head>
+  <body>
+    <div class="login main">
+      <a href="http://opinsys.fi" target="_blank">
+        <img src="../../../opinsys_logo.png" alt="Opinsys Oy">
+      </a>
+      <div class="doc">
+        <h1>Opinsys Betriebssystem, Versionen und Änderungen</h1>
+        <p>
+          Nachfolgend sind die Versionen und Änderungen von Opinsys OS 
+Betriebssystem) im Vergleich zu den vorherigen Versionen 
+beschrieben. Zusätzlich zu den beschriebenen. Zusätzlich 
+zu den Änderungen enthält jede neue Version die neuesten 
+sicherheitsrelevanten Software-Updates (z. B. Updates für 
+die neuesten Webbrowser).
+        </p>
+
+<pre class="markdown">
+  <code>
+
+## O2112 - Hadar {#opinsys-os-opinsys-buster-2021-03-24-123005-amd64}
+
+- <advanced title="Erweiterung: Freeplane Mindmapping-Anwendung">
+Das Programm finden Sie im Menü unter der Office-Kategorie.
+</advanced>
+
+- Update: Die Teams-Anwendung ist durch die Version 1.4.00.4855 aktualisiert worden.
+
+- <advanced title="Fix: Problem bezüglich Flashprint-Anwendung und Gcode behoben">
+Durch ein Downgrade der Flahsprint-Anwendung auf die letzte funktionsfähige Version wurde das Problem mit der Slicer-Funktion behoben.
+</advanced>
+
+- <advanced title="Fix: Korrektur der Aktualisierung von Menüelementen im Zusammenhang der Installation zusätzlicher Anwendungen auf den persönlichen Laptops.">
+Die zugefügten oder entfernten zusätzlichen Anwendungen wurden nicht in der Menüansicht aktualisiert. Diese Funktion wurde nun korrigiert.
+</advanced>
+
+- <advanced title="Änderung: Anzeigen der Betriebssystemversion im Bootmenü">
+Das Bootmenü wurde so konfiguriert, daß die offizielle Name und Versionsnummer des Betriebssystems angezeigt werden.
+</advanced>
+
+
+### Bekannte Probleme
+
+
+### Technische Änderungen
+
+<advanced title="Anzeigen...">
+- Fix: Das Unterbrechen von Updates, z.B. durch Ausschalten des Computers, hatte bei Laptops zur Folge, daß der Updateprozeß von vorne begann. Dieses Problem ist jetzt beseitigt worden.
+- Fix: Das Abrufen von der Gnome-Erweiterung über die Bedienfeldoberfläche wurde deaktiviert.
+- Änderung: Das Primuskurre Clinet Programm wurde so konfiguriert, daß es sich selber aktualisieren kann.
+- Änderung: Mit dem Registrierungstool von den Laptops kann man zukünftig die Benutzer direkt in die Organisation/ Schule erstellen. Dies war vorher nicht möglich.
+- Änderung: Zukünftig werden bei der Installation des Opinsys OS-Betriebssystem mit dem USB-Stick keine unnötigen Fehlermeldungen in bezüglich Gerätedaten oder Image aufgezeigt.
+- Ergänzung: Mit dem Befehl "puavo.wired.nm.shared.enabled", einer puavo-conf-Variable, kann man die Internetverbindung (z.B. LTE) eines Laptops über den Ethernet-Port mit anderen Geräten teilen.
+- Ergänzung: Veyon- und Epopter-Packete wurden zu Testzwecken hinzugefügt.
+- Ergänzung: Der Transfer von Gerätedaten des Bootservers zu Puavo wurde aktiviert.
+</advanced>
+
+  </code>
+</pre>
+
+      </div>
+    </div>
+    <script src="../../../bundle.js?v=2" charset="utf-8"></script>
+  </body>
+</html>
