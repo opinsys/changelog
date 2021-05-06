@@ -25,6 +25,47 @@
 <pre class="markdown">
   <code>
 
+
+## O2117 - Imai {#opinsys-os-opinsys-buster-2021-04-29-090246-amd64.img}
+
+- <advanced title="Lisäys: Lisätty Texmaker-sovellus">
+Texmaker on LaTeX-dokumenttien editointisovellus. Ohjelma löytyy valitsemalla Menu > Toimisto > Texmaker.
+</advanced>
+
+- <advanced title="Lisäys: Tulostinjonojen tyjennystoiminto työpöydän paneeliin">
+Käyttäjien on jatkossa esimerkiksi poistaa jumiutuneita tulostustöitä helposti työpöydän alapaneelista löytyvällä
+tulostusjono toiminnolla. Paneeliin ilmestyy tulostimen kuvake, kun käyttäjällä on aktiivisia tulostustöitä jonossa.
+</advanced>
+
+- <advanced title="Muutos: Abitti-yhteensopivan koejärjestelmä version valinta">
+Jatkossa laitteen koejärjestelmän Abitti-versio voidaan valita helposti käyttöliittymän valintalistasta. "Kannettavan
+asetukset" -sovelluksessa näytetään kahdeksan edellistä Abitti-versiota joihin kannettavan koejärjestelmä voidaan päivittää.
+Koejärjestelmän päivitys aloitetaan välittömästi, kun versiota on vaihdettu ja "Kannettavan asetukset" -sovellusikkuna on suljettu.
+</advanced>
+
+- <advanced title="Korjaus: Kaksipuoleinen tulostus">
+Kaksipuoleinen tulostus ei ole ollut valittavissa, vaikka tulostin olisi ominaisuutta tukenutkin. Ongelma on nyt korjattu.
+</advanced>
+
+-  Päivitys: Novo Connect Software on päivitetty versioon 4.3.1.59557.
+
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+
+<advanced title="Näytä...">
+- Korjaus: `puavo-reset-laptop-to-factory-defaults` -komento on mahdollista ajaa Puavo OS Consolesta, kun kannettava on verkkobootattu.
+- Korjaus: `puavo-update-airprint-ddns` toimii nyt oikein Buster-bootpalvelimilla.
+- Lisäys: Bootpalvelimet osaavat lähettää laitetietonsa puavoon (vaatii organisaatioon uusimmat Ldap ACL:t).
+- Lisäys: Kannettavien koejärjestelmän Abitti-versiopäivitykseen on mahdollista kytkeä päälle torrent-muotoinen päivitys. Tällöin
+koneet jakavat Abitti-päivityksiä muille samassa lähiverkossa oleville kannettaville, nopettaen päivitystä ja säästäen samalla
+koulun internetkaistaa. Ominaisuuden saa päälle `puavo.service.puavo-abitti-torrent-updated.enabled` -asetuksella.
+</advanced>
+
+
+
 ## O2112 - Hadar {#opinsys-os-opinsys-buster-2021-03-24-123005-amd64}
 
 - <advanced title="Lisäys: Freeplane-miellekarttasovellus">
