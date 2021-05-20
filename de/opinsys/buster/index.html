@@ -25,6 +25,42 @@ die neuesten Webbrowser).
 <pre class="markdown">
   <code>
 
+## O2117 - Imai {#opinsys-os-opinsys-buster-2021-04-29-090246-amd64}
+
+- <advanced title="Erweiterung: Texmarker-Anwendung wurde hinzugefügt">
+Texmarker ist eine Editierungsprogramm für LaTeX-Dokumente. Das Programm findet man unter Menü > Office > Texmarker 
+</advanced>
+
+- <advanced title="Erweiterung: Das Löschen von der Druckerwarteschlange von der Bedienfeldoberfläche.">
+Die Benutzer können zukünftig z.B. feststeckende Druckaufträge von dem unteren Bedienfeld  löschen. Im dem Bedienfeld erscheint ein Druckersymbol, wenn der Benutzer einen Druckauftrag aktiviert hat.
+</advanced>
+
+- <advanced title="Fix: Die Auswahl von einer kompatiblen Version des Abitti-Klausurprogramms">
+Zukünftig kann man die Abitti-Klausurprogrammversion von der Bedienoberfläche auswählen.
+In der Auswahl ”Laptop-Einstellungen” kann man zwischen den letzten acht Abitti-Versionen auswählen und aktualisieren. Der Update beginnt sofort nach der Auswahl der Version und dem Schließen der Anwendung.
+</advanced>
+
+- <advanced title="Fix: Beidseitiges Drucken">
+Beidseitiges Drucken konnte früher nicht ausgewählt werden, auch wenn der Drucker die technische Möglichkeit hierfür hatte. Dieses Problem ist nun behoben.
+</advanced>
+
+-  Update: Novo Connect Software ist auf die Version 4.3.1.59557 aktualisiert worden.
+
+
+### Bekannte Probleme
+
+
+### Technische Änderungen
+
+<advanced title="Anzeigen...">
+- Fix: Der `puavo-reset-laptop-to-factory-defaults` -Befehl kann von der Puavo OS-Konsole benutzt werden, wenn das Betriebssystem über das Netzwerk gebootet wird.
+- Fix: `puavo-update-airprint-ddns` funktioniert jetzt korrekt im Buster-Bootserver.
+- Ergänzung: Bootserver sind jetzt in der Lage Gerätedaten an Puavo zu senden. (es wird hierfür der neuste LDAP ACL benötigt) 
+- Ergänzung: Für das Abitti-Klausurenprogramm der Laptops kann man für das Update jetzt das Torrent Filesharing-Protokoll auswählen. Bei Auswahl dieser Möglichkeit werden die Abitti-Updates auf andere Laptops, die sich im lokalen Netzwerk befinden, verteilt und somit der Updateprozeß beschleunigt. Hiermit wird ebenfalls die Netzwerkkapazität effizienter genutzt.
+Diese Funktionalität wird mit der Einstellung `puavo.service.puavo-abitti-torrent-updated.enabled` aktiviert.
+</advanced>
+
+
 ## O2112 - Hadar {#opinsys-os-opinsys-buster-2021-03-24-123005-amd64}
 
 - <advanced title="Erweiterung: Freeplane Mindmapping-Anwendung">
