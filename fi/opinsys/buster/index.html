@@ -25,6 +25,71 @@
 <pre class="markdown">
   <code>
 
+
+## O2202 - Polaris {#opinsys-os-opinsys-buster-2022-01-10-125220-amd64}
+
+- <advanced title="Muutos: Päivitysten edistymisen seuranta yhteiskäyttökoneilla">
+Jaetussa yhteiskäytössä olevilla koneilla voidaan jatkossa seurata päivityksen edistymistä
+työpöydän alapaneelin tukikuvakkeen kautta. Myös päivitysten tarkastaminen voidaan jatkossa
+laukaista tukikuvakkeen alta käsin.
+</advanced>
+
+- <advanced title="Lisäys: Mahdollisuus asentaa uusia levykuvan ulkopuolisia puavo-pkg ohjelmistoja">
+Jatkossa laitteille voi asentaa seuraavat puavo-pkgt: Telegram, Konica Minulta Cups-ajurit, Logicsim
+ja Epson EasyMP.
+</advanced>
+
+- <advanced title="Lisäys: Tiedostojen palautuskansio palvelimen yhteisiin kansioihin">
+Boottipalvelimen yhteisissä kansioissa on nyt kaksi uutta kansiota, joita voidaan käyttää esimerkiksi
+koetiedostojen palautukseen. Yhteisissä kansioissa sijaitsevaan palautuslaatikko-kansioon opiskelija 
+voi laittaa opettajille palautettavan tiedoston. Tiedosto kopioidaan automaattisesti Palautukset-kansioon,
+josta opettajat voivat avata tarkastettavaksi lähetetyt tiedostot.
+</advanced>
+
+- <advanced title="Korjaus: Geogebran toiminta Intelin 10-sukupolven piirisarjallisilla tietokoneilla">
+Geogebra 6 toimii nyt paremmin esim. 10-sukupolven piirisarjaa käyttävillä tietokoneilla. 
+</advanced>
+
+
+- <advanced title="Korjaus: Työpöydän jumittuminen esim. jaetussa käytössä olleille tietokoneilla">
+Tietokoneen työpöytä on saattanut alkaa jumiutua joissakin harvinaisissa tapauksissa, joissa työpöydällä
+on ollut jokin tiedosto ilman käyttäjän kirjoitusoikeuksia. Tällainen tilanne on voinut syntyä esimerkiksi
+jos yhdellä koneella on onllut peräkkäin kaksi eri käyttäjää, joista ensimmäinen on liittänyt tietokoneeseen
+usb-muistitikun. Tällöin istunto on saattanut alkaa hidastella jälkimmäisellä koneen käyttäjällä. Ongelma
+on nyt korjattu.
+</advanced>
+
+- Korjaus: Libreofficen suomennokset toimivat paremmin.
+
+- Korjaus: Minetest-sovellus palautettu Pelit-valikkoon.
+
+- Korjaus: Korjattu ruotsinkielisen työpöydän puuttuvia käännöksiä.
+
+
+### Tiedossa olevat ongelmat
+- Google Chromessa olevan bugin takia, välilehtien siirto selainikkunasta toiseen ei toimi.
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Päivitys: IdId-toistinsovellus on päivittynyt uusimpaan versioon.
+- Korjaus: State-partition täyttyminen lokitiedostojen takia on estetty uusien logrotate sääntöjen avulla.
+- Korjaus: Puavo-make-install-disk -työkalulle voidaan jatkossa antaa `--only-legacy-boot`-vipu, jolloin
+tikku boottaa varmemmin laitteilla jotka tukevat huonosti legacy + gpt -yhdistelmää.
+- Korjaus: Nextcloud desktop ei anna enää ilmoitusta päivityksistä.	
+- Muutos: Boottipavelimen puavo-tftp-palvelin on korvattu hook-tftp-komponentilla. Muutos
+mahdollistaa Bullseye-pohjaisten levykuvien verkkobootin ja samalla parantaa tftp-palvelimen 
+suorituskykyä.
+- Muutos: Savedisk -toiminnolle voidaan antaa tallennettavan levykuvan nimi.
+- Muutos: Uusi puavo.printing.cleanup_printers -puavo-conf mahdollistaa tulostimien automaattisen siivouksen
+tarkempaa määrittämistä.
+- Lisäys: Uusi puavo-conf `puavo.printing.airprint.enabled`, Airprint toiminnallisuuden poiskytkemiseksi laitteilta.
+- Lisäys: Boottipalvelimelle lisätty skripti `puavo-gather-printing-statistics` joka kerää Cupsin tulostustilastoja.
+- Lisäys: Unshield-ohjelmisto Windows InstallShield-asennusbinäärien purkamiseen.
+</advanced>
+
+
+
 ## O2147 - Okab {#opinsys-os-opinsys-buster-2021-11-22-121516-amd64}
 
 - <advanced title="Päivitys: Nextcloud Desktop -tiedostojen synkronointityökalu">
@@ -103,11 +168,11 @@ on sama ohjelmistoversio kuin Abitti-kurssikoejärjestelmässä. Ohjelmiston kan
 ### Tekniset muutokset
 
 <advanced title="Näytä...">
-- Mahdollisuus asentaa Mindplus-ohjelmointisovellus testikäyttöön.
-- Puavo OS Consolen laitetiedot näyttää jatkossa perustietoja laitteen kovalevyjen kunnosta.
-- Puavo OS Consolen laitetestaustyökaluun on lisätty toiminto josta näkee tarkat raportit kovalevyjen Smart-tiedoista.
-- Puavo-confin avulla (puavo.printing.servers) on mahdollista määrittää manuaalisesti tulostuspalvelinten tiedot. Tästä on apua verkoissa, joissa tulostuspalvelinten tiedot eivät välity oikein Airprintin avulla.
-- Lisätty tukea joillekin 11th gen Intel kannettavien äänilaitteille.
+- Lisäys: Mahdollisuus asentaa Mindplus-ohjelmointisovellus testikäyttöön.
+- Lisäys: Puavo OS Consolen laitetiedot näyttää jatkossa perustietoja laitteen kovalevyjen kunnosta.
+- Lisäys: Puavo OS Consolen laitetestaustyökaluun on lisätty toiminto josta näkee tarkat raportit kovalevyjen Smart-tiedoista.
+- Lisäys: Puavo-confin avulla (puavo.printing.servers) on mahdollista määrittää manuaalisesti tulostuspalvelinten tiedot. Tästä on apua verkoissa, joissa tulostuspalvelinten tiedot eivät välity oikein Airprintin avulla.
+- Lisäys: Lisätty tukea joillekin 11th gen Intel kannettavien äänilaitteille.
 </advanced>
 
 ## O2137 - Maia {#opinsys-os-opinsys-buster-2021-09-17-120102-amd64}
@@ -151,8 +216,8 @@ pääsee takaisin edelliselle tasolle Alt + vasen nuoli -näppäinyhdistelmäll�
 ### Tekniset muutokset
 
 <advanced title="Näytä...">
-- Laitteet lähettävät laitteen ensisijaisen kovalevyn tiedon laitehallintaan.
-- Tulostusjärjestelmän kunnollinen toiminta edellyttää, että kannettavan ja palvelimen
+- Lisäys: Laitteet lähettävät laitteen ensisijaisen kovalevyn tiedon laitehallintaan.
+- Muutos: Tulostusjärjestelmän kunnollinen toiminta edellyttää, että kannettavan ja palvelimen
 käyttöjärjestelmät päivitetään samanaikaisesti käyttämään tätä julkaisua.
 </advanced>
 
@@ -170,8 +235,8 @@ käyttöjärjestelmät päivitetään samanaikaisesti käyttämään tätä julk
 ### Tekniset muutokset
 
 <advanced title="Näytä...">
-- Korjattu Woeusb (lisätty puuttunut riippuvuus) ja Windows-asennustikkujen tekeminen onnistuu taas normaalisti.
-- Korjattu puavo-bootserver-sync-images -skriptin levykuvien ja torrent-tiedostojen hallintaa.
+- Korjaus: Woeusb (lisätty puuttunut riippuvuus) ja Windows-asennustikkujen tekeminen onnistuu taas normaalisti.
+- Korjaus: puavo-bootserver-sync-images -skriptin tekemää levykuvien ja torrent-tiedostojen hallintaa on kehitetty.
 </advanced>
 
 
