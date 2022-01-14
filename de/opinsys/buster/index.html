@@ -24,6 +24,67 @@ die neuesten Webbrowser).
 
 <pre class="markdown">
   <code>
+
+## O2202 - Polaris {#opinsys-os-opinsys-buster-2022-01-10-125220-amd64}
+
+- <advanced title="Veränderung: Aktualisierungsfortschritt an geteilten Geräten">
+Die Fortschritt von Aktualisierungen ist jetzt auch an geteilten Geräten unter
+Support-Applet sichtbar.
+</advanced>
+
+- <advanced title="Erweiterung: Neue Puavo-Pkgs verfügbar">
+Die folgende Puavo-Pkgs sind ab O2202 nach Wunsch verfügbar: Telegram, Konica Minolta Druckertreiber,
+der Logikgatter-Simulator LogicSim, und EasyMP Network Projection für Epson Netzwerk-Beamers.
+</advanced>
+
+- <advanced title="Erweiterung: Abgabeordner an Puavoboxes">
+Um z.B. Prüfungsantworten, Hausaufgaben oder andere Dateien von Schülern bequem einsammeln zu
+können, findet man ab O2202 am Puavobox in geteilten Ordnern einen „Abgabeordner“ und einen
+Ordner mit dem Namen „Eingesammelte Aufgaben“.
+Diese zwei sind miteinander gekoppelt und in ihrer Funktionalitäten so ausgelegt, dass
+der “Abgabeordner” als Sammelplatz für die Arbeiten der SuS funktioniert
+und der Ordner “Eingesammelte Aufgaben” wiederum eine geschlossene Umgebung für
+Lehrkräfte darstellt, worauf die Schüler keinen Zugang haben. Von allen Dateien, die im
+Abgabeordner gespeichert werden/worden sind, wird automatisch eine Kopie in den Ordner
+“Eingesammelte Aufgaben” für Lehrkräfte gemacht. Somit ist der Abgabeordner nur ein
+einfacher Briefkasten für die Dateien der Schüler und der Ordner “Eingesammelte Aufgaben” eine
+geschlossene Umgebung für die Lehrkräfte darstellt.
+
+</advanced>
+
+- <advanced title="Fix: Geogebran an 10. Generation Intel-Geräte">
+Ein Fehler bei Programmstart von Geogebra 6 an neue Intel-Geräte wurde behoben.
+</advanced>
+
+
+- <advanced title="Fix: Hängen vom Desktop an geteilte Geräte">
+Ein seltener, durch ein Datei an Desktop ohne Schriftberechtigungen ausgelöste, Fehler vom Desktop
+wurde behoben.
+</advanced>
+
+- Fix: Minetest-Icon wieder in Puavo-Menu sichtbar.
+
+### Bekannte Probleme
+- Wegen eines Bugs von Google Chrome, die Übertragung von Tabs zwischen Chrome-Browserfenster funktioniert immer nicht.
+
+
+### Technische Änderungen
+<advanced title="Näytä...">
+- Aktualisierung: Neue Version von IdId-Programm.
+- Fix: Neue Log-Regeln gegen die Füllung von der State-Partition
+- Fix: Dem Puavo-make-install-disk -Werkzeug können einen Parameter `--only-legacy-boot` gegeben werden,
+um maximale Kompatibilität mit alten Geräten zu erreichen.
+- Fix: Automatisches Update-Prüfung von Nextcloud Desktop wurde abgeschaltet.
+- Veränderung: Der Puavo-tftp-Server ist mit hook-tftp ersetzt. Diese Veränderung ermöglicht Netzwerkboot
+von Bullseye-Images, und verbessert die Leistung.
+- Veränderung: Dem Savedisk -Werkzeug können einen Namen des Images gegeben werden.
+- Veränderung: Die neue Puavo-Conf `puavo.printing.cleanup_printers` ermöglicht genauere Einstellungen von Druckersäuberung.
+- Erweiterung: Die neue Puavo-Conf `puavo.printing.airprint.enabled` ermöglicht die Abschaltung von Airprint-Funktionalität.
+- Erweiterung: Nach Wunsch aktivierbar Druckstatistikfunktion an Puavoboxes.
+- Erweiterung: Unshield-Programm für entpacken von Windows InstallShield-Dateien.
+</advanced>
+
+
 ## O2147 - Okab {#opinsys-os-opinsys-buster-2021-11-22-121516-amd64}
 
 - Aktualisierung: Nextcloud Desktop Client 3.3.6.
@@ -39,7 +100,7 @@ Windows Puavo-pkg Programme.
 ### Bekannte Probleme
 
 
-### Technische Änderungende.
+### Technische Änderungen
 
 <advanced title="Anzeigen...">
 - Fix Synchronisation von Puavo OS Images an Puavoboxes bei Organizations mit vielen registrierten Geräte.
@@ -61,7 +122,7 @@ Windows Puavo-pkg Programme.
 
 <advanced title="Anzeigen...">
 - Erweiterung: Puavo-pkg installer für Windows Logger Pro 3.
-- Erweiterung: Puavo-pkg installer for mindplus.
+- Erweiterung: Puavo-pkg installer für mindplus.
 - Erweiterung: Eine neue puavo-conf (puavo.printing.servers) um Druckerserver manuell zu wählen.
 - Erweiterung: Unterstützung für 11th Gen Intel Tongeräte.
 - Das Stickfactory unterstützt jetzt die neue Abitti-Versionsnummern.
