@@ -24,6 +24,62 @@
 <pre class="markdown">
   <code>
 
+## O2202 - Polaris {#opinsys-os-opinsys-buster-2022-01-10-125220-amd64}
+
+- <advanced title="Change: Update progress on shared devices">
+The progress of an ongoing update is now visible on shared devices, and can be found from support
+applet menu. Updates can also be checked for on shared devices using the support applet.
+</advanced>
+
+- <advanced title="Addition: New extra software available as puavo-pkgs">
+The following puavo-pkgs are available: Telegram, Konica Minolta Printer drivers, Logicsim,
+and Epson EasyMP Network Projection.
+</advanced>
+
+- <advanced title="Addition: Assigment Submission Box available on bootservers">
+Shared folders on bootservers now include two new folders, which can be used e.g. for returning test
+answers. Students can save their answers to "Assigment Submission Box"-folder, from which they will
+be automatically collected to "Collected Assignments" folders, which is available for teachers.
+</advanced>
+
+- <advanced title="Fix: Geogebra with 10th gen Intel devices">
+A startup problem of Geogebra 6 on 10th Gen Intel devices was fixed.
+</advanced>
+
+
+- <advanced title="Fix: Desktop hanging e.g. on shared devices">
+In some rare occasions, e.g. a file with no write permissions on the users desktop could
+have caused the desktop to hang. This has now been fixed.
+</advanced>
+
+- Fix: Fixes in Libreoffice localizations.
+
+- Fix: Minetest-icon is again visible in Puavomenu.
+
+- Fix: Fixed missing Swedish desktop applet translations.
+
+
+### Known issues
+- Due to a Google Chrome bug, dragging tabs between Chrome browser windows is not working properly.
+
+
+### Technical changes
+<advanced title="Show...">
+- Update: IdId-player has been updated to latest version.
+- Fix: Added logging configs to prevent state partition from filling.
+- Fix: Puavo-make-install-disk -tool can be given `--only-legacy-boot` parameter for
+maximal support with legacy devices.
+- Fix: Automatic update notifier was disabled from Nextcloud Desktop
+- Change: Puavo-tftp-server on bootservers has been replaced with hook-tftp. This change enables
+the booting of Bullseye-based images, and improves the tftp server performance
+- Change: Savedisk -tool can be given a specific name to save as.
+- Change: New `puavo.printing.cleanup_printers` -puavo-conf allows more fine-grained configuration of automatic cleaning
+of printers connected to system.
+- Addition: New puavo-conf `puavo.printing.airprint.enabled` allows disabling of Airprint on devices.
+- Addition: A script `puavo-gather-printing-statistics` was added to boot servers, allowing to collect statistics of printing.
+- Addition: Unshield-program to enable uncompression of Windows InstallShield packages.
+</advanced>
+
 
 ## O2147 - Okab {#opinsys-os-opinsys-buster-2021-11-22-121516-amd64}
 
