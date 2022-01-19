@@ -25,6 +25,56 @@
 <pre class="markdown">
   <code>
   
+
+## L2202 - Mario {#lukiolaiskannettava-buster-2022-01-10-125814-amd64}
+
+
+- <advanced title="Korjaus: Geogebran toiminta Intelin 10-sukupolven piirisarjallisilla tietokoneilla">
+Geogebra 6 toimii nyt paremmin esim. 10-sukupolven piirisarjaa käyttävillä tietokoneilla. 
+</advanced>
+
+
+- <advanced title="Korjaus: Työpöydän jumittuminen esim. jaetussa käytössä olleille tietokoneilla">
+Tietokoneen työpöytä on saattanut alkaa jumiutua joissakin harvinaisissa tapauksissa, joissa työpöydällä
+on ollut jokin tiedosto ilman käyttäjän kirjoitusoikeuksia. Tällainen tilanne on voinut syntyä esimerkiksi
+jos yhdellä koneella on onllut peräkkäin kaksi eri käyttäjää, joista ensimmäinen on liittänyt tietokoneeseen
+usb-muistitikun. Tällöin istunto on saattanut alkaa hidastella jälkimmäisellä koneen käyttäjällä. Ongelma
+on nyt korjattu.https://www.asus.com/fi/Motherboards-Components/Motherboards/PRIME/PRIME-X570-PRO/
+</advanced>
+
+- Korjaus: Libreofficen suomennokset toimivat paremmin.
+
+- Korjaus: Minetest-sovellus palautettu Pelit-valikkoon.
+
+- Korjaus: Korjattu ruotsinkielisen työpöydän puuttuvia käännöksiä.
+
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Päivitys: IdId-toistinsovellus on päivittynyt uusimpaan versioon.
+- Korjaus: State-partition täyttyminen lokitiedostojen takia on estetty uusien logrotate sääntöjen avulla.
+- Korjaus: Puavo-make-install-disk -työkalulle voidaan jatkossa antaa `--only-legacy-boot`-vipu, jolloin
+tikku boottaa varmemmin laitteilla jotka tukevat huonosti legacy + gpt -yhdistelmää.
+- Korjaus: Nextcloud desktop ei anna enää ilmoitusta päivityksistä.	
+- Muutos: Boottipavelimen puavo-tftp-palvelin on korvattu hook-tftp-komponentilla. Muutos
+mahdollistaa Bullseye-pohjaisten levykuvien verkkobootin ja samalla parantaa tftp-palvelimen 
+suorituskykyä.
+- Muutos: Savedisk -toiminnolle voidaan antaa tallennettavan levykuvan nimi.
+- Muutos: Uusi puavo.printing.cleanup_printers -puavo-conf mahdollistaa tulostimien automaattisen siivouksen
+tarkempaa määrittämistä.
+- Muutos: Jaetuilla kannettavilla onmahdollista tarkasta päivitykset ja seurata niiden edistymistä.
+- Lisäys: Uusi puavo-conf `puavo.printing.airprint.enabled`, Airprint toiminnallisuuden poiskytkemiseksi laitteilta.
+- Lisäys: Boottipalvelimelle lisätty skripti `puavo-gather-printing-statistics` joka kerää Cupsin tulostustilastoja.
+- Lisäys: Unshield-ohjelmisto Windows InstallShield-asennusbinäärien purkamiseen.
+- Lisäys: Konica Mnolta puavo-pkg -ajurit
+</advanced>
+
+  
+  
+  
 ## L2147 - Luigi {#opinsys-os-lukiolaiskannettava-buster-2021-11-22-121517-amd64}
 
 - <advanced title="Päivitys: Nextcloud Desktop -tiedostojen synkronointityökalu">
