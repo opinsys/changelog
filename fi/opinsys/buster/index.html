@@ -25,8 +25,56 @@
 <pre class="markdown">
   <code>
   
+  ## O2219 - Taygeta {#opinsys-os-opinsys-buster-2022-05-12-121616-amd64}
 
-  ## O2214 - Sirius {#opinsys-os-opinsys-buster-2022-04-06-113148-amd64}
+- <advanced title="Lisäys: Laitteiden palautus tehdasasetuksille laitehallinnan kautta">
+Järjestelmään on listätty ominaisuus jonka avulla laite voidaan asettaa latehallinnasta
+ns. nollaustilaan. Tämän jälkeen laitteen uudelleen käynnistyksen jälkeen laite kertoo olevansa
+nollaustilassa ja käyttäjän hyväksyessä operaation erillisellä pin-koodilla, kaikki laitteella
+olevat tiedostot poistetaan turvallisesti ja laite asetetaan ns. tehdastilaan oletusasetuksille.
+
+Nollaustilaa käytetään kirjautumalla organisaation laitehallintaan, valitsemalla halutun laitteen tietosivu
+ja valitsemalla Muut toiminnot -painikkeesta "Aseta laite nollaustilaan"-valinta.
+</advanced>
+
+- <advanced title="Lisäys: Mahdollisuus asentaa CleverTouch LYNX-sovellus">
+Kyseinen älytaulusovellus voidaan ottaa käyttöön laitehallinnan kautta tai pyytämällä
+sitä asiakaspalvelustamme.
+</advanced>
+
+- <advanced title="Lisäys: Ukrainan kielituki">
+Käyttöliittymään on mahdollista ottaa käyttöön Ukrainan kieli.
+</advanced>
+
+- <advanced title="Päivitys: Flashforge Flashprint on päivittynyt versioon 5.3.3">
+
+</advanced>
+
+- <advanced title="Päivitys: Koepalvelimen automaattinen toiminta koejakajan kanssa">
+Uusimpien Abitti-koepalvelin versioiden myötä koejakajan toiminta on nyt automaattista
+aikataulutettujen kokeiden aloittamisen. Aiemmin täysi automaatio on vaatinut muutoksia
+virtuaalikoneella käynnistettyyn Abitti-koepalvelimeen jokaisen Abitti-päivityksen yhteydessä.
+</advanced>
+
+
+- Korjaus: Koepalvelimelta (puavo-ers) on oletuksena estetty suspend-nukkumaanmeno toiminnallisuus.
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Lisäys: Bluetooth-testi puavo-test-hardware -laitetestiin.
+- Lisäys: Ohjelmistopaketit retext ja okteta.
+- Lisäys: Laitteen akun puuttuessa Puavo OS Console osaa ilmoittaa, että "BATTERY MISSING".
+- Lisäys: Disk Erase -toiminnallisuus Puavo OS Consoleen.
+- Päivitys: HP:n Elitebookien bios-päivitys hakee ja päivittää uusimman bios-version Puavo OS Consolessa.
+- Muutos: Kaiutin ja mikrofonitestit on jatkosa yhdistetty yhdeksi äänitestiksi puavo-test-hardware 
+-laitetestissä.
+</advanced>
+
+
+## O2214 - Sirius {#opinsys-os-opinsys-buster-2022-04-06-113148-amd64}
 
 - <advanced title="Päivitys: Koepalvelin - valvojan koneen toimintojen korvaaminen koejakajalla">
 Koepalvelimelle on tehty uudistuksia joiden tarkoituksena on mahdollistaa valvojan koneen toiminnan
