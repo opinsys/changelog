@@ -24,6 +24,30 @@
 <pre class="markdown">
   <code>
   
+## O2232 - Vega {#opinsys-os-opinsys-buster-2022-08-08-174910-amd64.img}  
+
+
+- <advanced title="Add: EShare display mirroring">
+EShare can be installed by admins via puavo-pkg or by asking it from our helpdesk.
+</advanced>
+
+- <advanced title="Fix: Network printers not working after long suspend on laptops">
+There has been constant problems with network printing on laptops that have been suspended
+and used in different networks. It is possible that there is now a fix for this problem which
+is difficult to reproduce and solve. 
+</advanced>
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Näytä...">
+- Add: Wireguard-tools package has been added to the system
+- Add: puavo-change-hostname tool has been added to make it easier to change laptop/bootserver hostname
+- Fix: HP 3G modem (id 03f0:0c51) will be disable automatically via hwquirkin as it is misbehaving and causing various problems
+</advanced> 
+  
+  
 ## O2224 - Uruk {#opinsys-os-opinsys-buster-2022-06-16-122316-amd64}
 
 - <advanced title="Add: Cryptomator file encryptor puavo-pkg">

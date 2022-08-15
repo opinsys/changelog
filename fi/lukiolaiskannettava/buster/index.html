@@ -24,7 +24,28 @@
 
 <pre class="markdown">
   <code>
-  
+
+## L2232 - Sonic {#opinsys-os-lukiolaiskannettava-buster-2022-08-08-174923-amd64}  
+
+- <advanced title="Korjaus: Verkkotulostinten toimimattomuus pitkän unitilan jälkeen">
+Verkkotulostinten kanssa on havaittu toistuvaa ongelmaa, joka aiheuttaa tulostusjonojen toimimattomuuden
+pitkän (yli vuorokausi) mittaisen unitilan jälkeen. Ongelma on vaikeasti toistettava ja ratkaistava,
+mutta siihen on löytynyt todennäköinen korjaus joka on nyt käytössä.
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Lisäys: Wireguard Tools -ohjelmistopaketti on lisätty järjestelmään
+- Lisäys: puavo-change-hostname -työkalu laitteen nimen vaihtamiseksi helpommin
+- Lisäys: Mahdollisuus asentaa EShare-näytönjako puavo-pkg:llä
+- Lisäys: Mahdollisuus asentaa Dragonbox sovelluksia puavo-pkg:llä
+- Korjaus: Korjauksia laiteasennustyökaluihin
+- Korjaus: HP 3G-modeemi (id 03f0:0c51) poistetaan automaattisesti käytöstä hwquirkin avulla
+</advanced> 
   
 ## O2224 - Ryu {#opinsys-os-lukiolaiskannettava-buster-2022-06-16-122315-amd64}
 
