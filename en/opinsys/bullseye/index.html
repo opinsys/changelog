@@ -23,6 +23,41 @@
 
 <pre class="markdown">
   <code>
+  
+## O2240 - Eburacum {#opinsys-os-opinsys-bullseye-2022-10-06-105238-amd64}
+
+- Update: Lazarus IDE to version 2.2
+    
+- <advanced title="Update: Veyon - fixes and new features">
+Veyon integration has several fixes and updates. Changing the network during the desktop session 
+does not prevent joining a Veyon session. Previously a login/logout was required to fix it. This update also 
+changes the needed device configuration. From now on the Veyon session type (master/client)
+is defined by user type. By default teacher becomes veyon master and student becomes client. One other
+new feature is the possibility to invite users by their userg roup to joint the Veyn session.
+</advanced>
+
+- <advanced title="Add: Support for installing PWA applications to Google Chrome/Chromium ">
+Progressive Web Applications can now be centrally activated/installed via Opinsys helpdesk or by using
+`puavo.www.chromium.pwa.forcelist puavo-conf variable. Applications are installed after making the required
+setting and starting up the Chrome browser. A launcher for the application is installed to Menu > Your programs
+tab.
+</advanced>
+
+- Add: Noto Color Emoji -fonts.
+
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Näytä...">
+- Update: Grub version 2.06-3~deb11u2
+- Add: puavo-firmware package is installed by default
+- Fix: Support for jetpipe printing
+- Fix: Small changes to puavo-disk-erase tool
+- Fix: Virtualbox update fixes possible instability problems with high io load.
+</advanced> 
+  
 
 ## O2236 - Durocortorum {#opinsys-os-opinsys-bullseye-2022-09-08-105038-amd64}
 

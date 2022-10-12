@@ -25,7 +25,43 @@
 <pre class="markdown">
   <code>
   
-  
+ ## O2240 - Eburacum {#opinsys-os-opinsys-bullseye-2022-10-06-105238-amd64}
+
+- Päivitys: Lazarus IDE päivitetty versioon 2.2
+    
+- <advanced title="Päivitys: Veyonin uusia ominaisuuksia ja korjauksia">
+Veyon-tukeen on tehty useita korjauksia ja ominaisuuksia. Verkkojen vaihtuminen työpöytäistunnon aikana
+ei enää estä Veyon-palvelimen löytymistä. Jatkossa Opettaja/Oppilas jaottelua ei enää tehdä laitetasolla,
+vaan käyttäjätunnuksen käyttäjätyypin mukaisesti. Esimerkiksi oletuksena opettaja-käyttäjätyyppi saa jatkossa 
+automaattisesti hallintaoikeudet ja opiskelija ns. asiakasoikeudet, mikäli Veyon on otettu laitteella käyttöön.
+</advanced>
+
+- <advanced title="Lisäys: Tuki PWA-sovellusten keskitetylle asennukselle Chrome-selaimeen">
+Progressive Web Application -sovelluksia on mahdollista asentaa keskitetysti laitteiden Google 
+Chrome/Chromium -selainten profiiliin. Asennusta voi pyytää Opinsysin tukipalvelusta tai tehdä
+ylläpitäjänä itse laitehallinnasta `puavo.www.chromium.pwa.forcelist -puavo-conf muuttujalla. Tämä
+mahdollistaa esimerkiksi Vernierin Graphical Analysis (https://graphicalanalysis.app/) -sovelluksen
+ottamisen keskitetysti käyttöön fysiikan opetuksessa. Ohjelmien asentaminen edellyttää Chrome-selaimen
+käynnistyksen. Tämän jälkeen PWA-sovellukset löytyvät työpöydän sovellusvalikon (Menu) Omat ohjelmat
+-valikosta.
+</advanced>
+
+- Lisäys: Noto Color Emoji -fontit lisätty järjestelmään.
+
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Päivitys: Grub-päivittyy versioon 2.06-3~deb11u2
+- Lisäys: puavo-firmware -paketti asennetaan oletuksena levykuvaan.
+- Korjaus: Tuki Jetpipe-tulostukselle toimii jälleen
+- Korjaus: puavo-disk-erase-työkaluun pieniä parannuksia
+- Korjaus: Virtualbox-päivittynyt (toiminee paremmin jos on paljon io-kuormaa.)
+</advanced>
+ 
+ 
 ## O2236 - Durocortorum {#opinsys-os-opinsys-bullseye-2022-09-08-105038-amd64}
 
 - Lisäys: Kirjautumisruutuun lisätty tukipalvelun aukioloajat ja päivitetty 
