@@ -25,6 +25,43 @@ die neuesten Webbrowser).
 <pre class="markdown">
   <code>
 
+## O2240 - Eburacum {#opinsys-os-opinsys-bullseye-2022-10-06-105238-amd64}
+
+- Aktualisierung: Die Pascal-Entwicklungsumgebung Lazarus zur Version 2.2
+
+- <advanced title="Aktualisierung: Veyon - Fixe und neue Funktionalitäten">
+Bei der Veyon-Integration finden mehrere Verbesserungen statt.
+Frühere Änderungen von Netzwerkverbindungen in System werden nicht mehr Anmeldungen in
+Veyon-Sitzungen stören. Früher war ein Neuanmeldung für die Behebung erforderlich.
+Die erforderlichen Geräteeinstellungen werden mit dieser Aktualisierung verändert.
+Von nun an wird der Veyon-Sitzung-Typ (Master/Client) automatisch den Typ des Puavo-Kontos befolgen.
+LuL-Konten werden Masters und SuS- und Gastkonten Clients sein.
+Noch neue Funktionalitäten sind die Möglichkeit, Benutzer über Klassen in der Veyon-Sitzung einzuladen,
+und ein automatisch generierte Protokoll von An- und Abmeldungen in der Sitzung.
+</advanced>
+
+- <advanced title="Erweiterung: Support for installing PWA applications to Google Chrome/Chromium ">
+Progressive Web Applications können jetzt zentral mit Puavo-Conf-Variable `puavo.www.chromium.pwa.forcelist` aktiviert werden.
+Applications werden nach der Erstellung der Puavo-Conf und ein Neustart des Chrome-Browsers installiert.
+Ein Icon für das Programm findet man in `Menü > Eigene Programme` danach.
+</advanced>
+
+- Erweiterung: Die Schriftart Noto Color Emoji.
+
+
+### Bekannte Probleme
+
+
+### Technische Änderungen
+<advanced title="Anzeigen...">
+- Aktualisierung: Grub Version 2.06-3~deb11u2
+- Erweiterung: Das Puavo-firmware-Paket ist als Vorgabe aktiviert
+- Fix: Das Jetpipe-Drucksystem funktioniert jetzt auch in Bullseye
+- Fix: Kleine Verbesserungen in dem Puavo-disk-erase-Werkzeug
+- Fix: Virtualbox-Aktualisierung behebt mögliche instabilitätprobleme bei höhere E/A-Auslastung
+</advanced>
+
+
 ## O2236 - Durocortorum {#opinsys-os-opinsys-bullseye-2022-09-08-105038-amd64}
 
 - <advanced title="Erweiterung: Celestia">
@@ -52,9 +89,9 @@ nicht mehr gegenseitig stören.
 
 ### Technische Änderungen
 <advanced title="Anzeigen...">
-- Erweiterung: Die Benutzermenü in Systemeinstellungen wurde deaktiviert.
-- Erweiterung: Ein Radius-Server ist an Puavoboxes erstellbar.
-- Fix: Gastkonten folgen die Spracheinstellungen von der Puavo-Conf des Geräts.
+- Erweiterung: Die Benutzermenü in Systemeinstellungen wurde deaktiviert
+- Erweiterung: Ein Radius-Server ist an Puavoboxes erstellbar
+- Fix: Gastkonten folgen die Spracheinstellungen von der Puavo-Conf des Geräts
 </advanced>
 
 ## O2232 - Cantabrigia {#opinsys-os-opinsys-bullseye-2022-08-08-150020-amd64}  
