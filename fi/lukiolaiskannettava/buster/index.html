@@ -25,6 +25,45 @@
 <pre class="markdown">
   <code>
   
+## L2243 -  {#Vibri}
+
+Tämä on ensisijaisesti tietoturvapäivitys, jossa ei tule erityisiä toiminnallisia muutoksia peruskäyttäjille.
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Päivitys: Laitetietojen mukana lähetetään tieto, että onko laitteella UEFI käytössä.
+- Päivitys: Tabulaattori täydenykset puavo-bootserver-sync-images ja puavo-make-install-disk -skripteille.
+- Pävitys: Tulostintietojen automaattinen päivitys laitehallintaan
+- Päivitys: Tuki samannimisille tulostimille eri boottipalvelimilla
+- Päivitys: Freeradius konfiguraatio- ja lokitusmuutoksia
+</advanced>  
+
+  
+## L2240 - Undyne {#opinsys-os-lukiolaiskannettava-buster-2022-10-06-105006-amd64}
+
+- <advanced title="Lisäys: Tuki PWA-sovellusten keskitetylle asennukselle Chrome-selaimeen">
+Progressive Web Application -sovelluksia on mahdollista asentaa keskitetysti laitteiden Google 
+Chrome/Chromium -selainten profiiliin. Asennusta voi pyytää Opinsysin tukipalvelusta tai tehdä
+ylläpitäjänä itse laitehallinnasta `puavo.www.chromium.pwa.forcelist` -puavo-conf muuttujalla. Tämä
+mahdollistaa esimerkiksi Vernierin Graphical Analysis (https://graphicalanalysis.app/) -sovelluksen
+ottamisen keskitetysti käyttöön fysiikan opetuksessa. Ohjelmien asentaminen edellyttää Chrome-selaimen
+käynnistyksen. Tämän jälkeen PWA-sovellukset löytyvät työpöydän sovellusvalikon (Menu) `Omat ohjelmat`
+-valikosta.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Korjaus: puavo-disk-erase-työkaluun pieniä parannuksia
+- Korjaus: Virtualbox-päivittynyt (toiminee paremmin jos on paljon io-kuormaa.)
+</advanced>
+  
+  
 ## L2236 - Tracer {#opinsys-os-lukiolaiskannettava-buster-2022-09-07-062452-amd64}
 
 - Lisäys: Kirjautumisruutuun lisätty tukipalvelun aukioloajat ja päivitetty
