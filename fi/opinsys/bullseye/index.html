@@ -25,6 +25,32 @@
 <pre class="markdown">
   <code>
   
+ ## O2249 - Gratianopolis {#opinsys-os-opinsys-bullseye-2022-12-07-120446-amd64}
+
+- <advanced title="Lisäys: Rustdesk-etätukisovellus">
+Vakio-ohjelmistoihin on lisätty Rustdesk-sovellus, jota voi käyttää etätuen tarjoamiseen. Sovellus löytyy valitsemalla
+`Menu > Internet > Rustdesk`
+</advanced>
+
+- Korjaus: USB-muistitikkujen formatointi tiedostoselaimesta
+- Korjaus: Flashprint-sovelluksen käyttöliittymä toimii taas oikein
+
+- Päivitys: Veyon on päivittynyt uudempaan versioon
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Muutos: Zram on kytketty oletuksena pois kannettavilta tietokoneilta. Ominaisuuden saa kytkettyä käyttöön/pois `puavo.service.zram-config.enabled` puavo-confilla.
+- Lisätty puavo-pkg-asennin Bitwardenille
+- Lisätty puavo-pkg-asennin Thymio Suitelle
+- Lisätty Intelin suljetut va-ajurit
+- Puavo-send-sysinfo lähettää uusia laitetietoja ja viimeksi kirjautuneen käyttäjän laiterekisteriin
+- Kannettavan asetukset-työkalun käyttöliittymä on käännetty ruotsiksi
+</advanced> 
+  
+  
 ## O2243 - Flavia Solva {#opinsys-os-opinsys-bullseye-2022-10-27-093643-amd64}
 
 - Päivitys: Libreoffice-versio 7.4.1.2
