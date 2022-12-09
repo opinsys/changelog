@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Muutokset Opinsys-järjestelmässä</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/theme.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+  </head>
+  <body>
+    <div class="login main">
+      <a href="http://opinsys.fi" target="_blank">
+        <img src="../../../opinsys_logo.png" alt="Opinsys Oy">
+      </a>
+      <div class="doc">
+        <h1>Opinsys-järjestelmän versiot ja muutokset</h1>
+        <p>
+          Seuraavassa on kuvattu Opinsys-järjestelmän eri versiot ja
+          tärkeimmät käyttöön vaikuttavat muutokset aina edelliseen
+          julkaisuun nähden.  Näiden muutosten lisäksi
+          versiopäivityksiin sisältyy uusimmat tietoturva- ja
+          ohjelmistopäivitykset (esimerkiksi päivitykset uusimpiin
+          verkkoselaimiin).
+        </p>
+
+<pre class="markdown">
+  <code>
+  
+ ## L2249 - Gogh {#opinsys-os-lean-bullseye-2022-12-08-085629-amd64}
+
+- <advanced title="Lisäys: Rustdesk-etätukisovellus">
+Vakio-ohjelmistoihin on lisätty Rustdesk-sovellus, jota voi käyttää etätuen tarjoamiseen. Sovellus löytyy valitsemalla
+`Menu > Internet > Rustdesk`
+</advanced>
+
+- Korjaus: USB-muistitikkujen formatointi tiedostoselaimesta
+- Korjaus: Flashprint-sovelluksen käyttöliittymä toimii taas oikein
+- Päivitys: Veyon on päivittynyt uudempaan versioon
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Muutos: Zram on kytketty oletuksena pois kannettavilta tietokoneilta. Ominaisuuden saa kytkettyä käyttöön/pois `puavo.service.zram-config.enabled` puavo-confilla.
+- Lisätty puavo-pkg-asennin Bitwardenille
+- Lisätty puavo-pkg-asennin Thymio Suitelle
+- Lisätty Intelin suljetut va-ajurit
+- Puavo-send-sysinfo lähettää uusia laitetietoja ja viimeksi kirjautuneen käyttäjän laiterekisteriin
+- Kannettavan asetukset-työkalun käyttöliittymä on käännetty ruotsiksi
+</advanced> 
+  
+  
+## L2243 - Friedrich {#opinsys-os-lean-bullseye-2022-10-27-093645-amd64}
+
+- Päivitys: Libreoffice-versio 7.4.1.2
+
+- <advanced title="Lisäys: Tuki Scratch Link -toiminnallisuudelle">
+Scratch link mahdollistaa erilaisten robottien ohjelmoinnin suoraan Scratch-ohjelmointiympäristöllä.
+Ohjelmalle tulee oma käynnistin Ohjelmointi-valikkoon, mikäli pyscrlink-ominaisuus on otettu koneelle käyttöön (aseta puavo-pkg tai pyydä tukipalvelusta).
+</advanced>
+
+- Päivitys: Miracast-ruudunjakosovellus "Gnomen verkkonäytöt" on päivittynyt uudempaan versioon
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Päivitys: Puavo-pkg-pakettien päivitystilanne tarkastetaan laitteen konfiguraatiopäivityksen yhteydessä
+- Lisäys: Laitetietojen mukana lähetetään tieto, onko laitteella käytössä UEFI.
+- Lisäys: Tulostintietojen automaattinen päivittyminen laitehallintaan
+- Päivitys: Freeradius-konfiguraatio- ja lokitusmuutoksia
+- Korjaus: Kerberostiketti uusitaan lukitusruudun avauksen yhteydessä
+- Korjaus: Levykuvan kokoa pienennetty poistamalla käyttämättömiä lokalisointi- ja dokumentaatiotiedostoja
+- Korjaus: Korjattu Veyon Appletin saksan käännökset
+- Lisäys: Palautettu Filius-sovellus levykuvaan
+</advanced>
+
+  
+ ## L2240 - Eyck {#opinsys-os-lean-bullseye-2022-10-06-105235-amd64}
+
+- Päivitys: Lazarus IDE päivitetty versioon 2.2
+    
+- <advanced title="Päivitys: Veyonin uusia ominaisuuksia ja korjauksia">
+Veyon-tukeen on tehty useita korjauksia ja ominaisuuksia. Verkkojen vaihtuminen työpöytäistunnon aikana
+ei enää estä Veyon-palvelimen löytymistä. Jatkossa Opettaja/Oppilas jaottelua ei enää tehdä laitetasolla,
+vaan käyttäjätunnuksen käyttäjätyypin mukaisesti. Esimerkiksi oletuksena opettaja-käyttäjätyyppi saa jatkossa 
+automaattisesti hallintaoikeudet ja opiskelija ns. asiakasoikeudet, mikäli Veyon on otettu laitteella käyttöön. Lisäksi
+uutena ominaisuutena opettaja voi kutsua käyttäjiä liittymään Veyon-istuntoon lähettämällä haluamalleen 
+käyttäjäryhmälle kutsun.
+</advanced>
+
+- <advanced title="Lisäys: Tuki PWA-sovellusten keskitetylle asennukselle Chrome-selaimeen">
+Progressive Web Application -sovelluksia on mahdollista asentaa keskitetysti laitteiden Google 
+Chrome/Chromium -selainten profiiliin. Asennusta voi pyytää Opinsysin tukipalvelusta tai tehdä
+ylläpitäjänä itse laitehallinnasta `puavo.www.chromium.pwa.forcelist` -puavo-conf muuttujalla. Tämä
+mahdollistaa esimerkiksi Vernierin Graphical Analysis (https://graphicalanalysis.app/) -sovelluksen
+ottamisen keskitetysti käyttöön fysiikan opetuksessa. Ohjelmien asentaminen edellyttää Chrome-selaimen
+käynnistyksen. Tämän jälkeen PWA-sovellukset löytyvät työpöydän sovellusvalikon (Menu) `Omat ohjelmat`
+-valikosta.
+</advanced>
+
+- Lisäys: Noto Color Emoji -fontit lisätty järjestelmään.
+
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Päivitys: Grub-päivittyy versioon 2.06-3~deb11u2
+- Lisäys: puavo-firmware -paketti asennetaan oletuksena levykuvaan.
+- Korjaus: Tuki Jetpipe-tulostukselle toimii jälleen
+- Korjaus: puavo-disk-erase-työkaluun pieniä parannuksia
+- Korjaus: Virtualbox-päivittynyt (toiminee paremmin jos on paljon io-kuormaa.)
+</advanced>
+ 
+ 
+## L2236 - Dali {#opinsys-os-lean-bullseye-2022-09-08-105039-amd64}
+
+- Lisäys: Kirjautumisruutuun lisätty tukipalvelun aukioloajat ja päivitetty 
+lukiolaiskannettaville tuen puhelinnumero.
+
+- <advanced title="Lisäys: Celestia">
+Palautettu Celestia-sovellus järjestelmään.
+</advanced>
+
+- <advanced title="Korjaus: Google Earthin haku">
+Google Earth -sovelluksen haku löytää ja keskittää näkymän nyt oikein haettuun
+kohteeseen.
+</advanced>
+
+- <advanced title="Korjaus: Scribuksen valikoiden kuvakkeet">
+Scribuksen valikoiden (esim. Insert -valikko) kuvakkeet toimivat taas oikein.
+</advanced>
+
+- <advanced title="Korjaus: Veyon luokkahuoneen hallinta ja monitorointi">
+Veyonin toimintaan on tehty useita pieniä korjauksia. Veyon Masterin käyttöliittymää
+on selkeytetty ja siinä näkyy suoraan istuntoon liittynee oppilaskoneet. Lisäksi 
+näytönpäivitysnopeutta on muutettu niin, että se kuormittaa vähemmän verkkoa ja 
+on responsiivisempi käyttää. Lisäksi verkossa samanaikaisesti olevat Veyon palvelimet
+eivät sotke toistensa toimintaa.
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Lisäys: Järjestelmän asetuksissa ei jatkossa näytetä Käyttäjät-valikkoa
+- Lisäys: Lisätty bootpalvelimelle tuki Radius-palvelimelle
+- Korjaus: Vieras-tunnus noudattaa nyt oikein laitteen puavo-confilla asetettua kieltä 
+</advanced>
+
+  
+## L2232 - Cezanne {#opinsys-os-lean-bullseye-2022-08-08-150029-amd64}  
+
+- <advanced title="Lisäys: Mahdollisuus asentaa Dragonbox sovelluksia">
+Järjestelmään voidaan tukipalvelusta pyytämällä asentaa seuraavat Dragonbox-sovellukset:
+Dragonbox koulu 1, koulu 2, Algebra 5+, Algebra 12+, Numbers ja Big numbers.
+</advanced>
+
+- <advanced title="Lisäys: Kokeellinen Miracast-peilaustuki">
+Näytön peilaaminen Miracast-teknologialla on nyt mahdollista Gnome Network Displays-sovelluksella.
+Ohjelma on käynnistettävissä valitsemalla `Menu > Apuohjelmat > Gnomen verkkonäytöt.`
+</advanced>
+
+- <advanced title="Korjaus: Mahdollisuus asentaa EShare-näytönjako">
+Järjestelmään voidaan tukipalvelusta pyytämällä asentaa EShare-näytönjako sovellus.
+</advanced>
+
+- <advanced title="Korjaus: Verkkotulostinten toimimattomuus pitkän unitilan jälkeen">
+Verkkotulostinten kanssa on havaittu toistuvaa ongelmaa, joka aiheuttaa tulostusjonojen toimimattomuuden
+pitkän (yli vuorokausi) mittaisen unitilan jälkeen. Ongelma on vaikeasti toistettava ja ratkaistava,
+mutta siihen on löytynyt todennäköinen korjaus joka on nyt käytössä.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Lisäys: Wireguard Tools -ohjelmistopaketti on lisätty järjestelmään
+- Lisäys: paketit: flameshot, git-gui ja gitk
+- Lisäys: puavo-change-hostname -työkalu laitteen nimen vaihtamiseksi helpommin
+- Korjaus: Korjauksia laiteasennustyökaluihin
+- Korjaus: HP 3G-modeemi (id 03f0:0c51) poistetaan automaattisesti käytöstä hwquirkin avulla
+</advanced> 
+  
+## L2224 - Botticelli {#opinsys-os-lean-bullseye-2022-06-16-122823-amd64}  
+  
+- <advanced title="Lisäys: Tuki Cryptomator-tiedostojen salaussovellukselle">
+Sovellus on asennettavissa laitteille keskitetysti puavo-pkg-pakettina pyytämällä
+asennusta tukipalvelustamme.
+</advanced>
+
+- <advanced title="Korjaus: Chrome ja Chromium selainten Single sign-on (SSO) -tuki">
+SSO toiminnallisuus toimii taas normaalisti Googlen selaimia käytettäessä esimerkiksi
+kirjauduttaessa Opinsysin tukipalveluun tai koulujen integraatioiden kautta
+saavutettaviin kolmannen osapuolen palveluihin.
+</advanced>
+
+- <advanced title="Korjaus: Työpöydän katoava alapaneeli kokoruudun videon ja unitilan yhdistelmässä">
+Työpöydän alapaneeli saattoi jäädä pysyvästi piiloon mikäli kannettavalla tietokoneella katsottiin
+kokoruusun videota ja samassa yhteydessä laite laitettiin unitilaan. Ongelma on nyt korjattu.
+</advanced>
+
+- Korjaus: Koepalvelimen (puavo-ers) koetiedostojen hakua ja käsittelyä on parannettu
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Lisäys: puavo-test-hardware:n automaattitestausta on kehitetty eteenpäin
+- Lisäys: Kiinan kielen hanyu pinyin on lisätty näppäimistön asetteluihin
+- Lisäys: Handbrake-videokonvertointisovellus 
+- Korjaus: Poistettu vanhoja tulostusjärjestelmään liittyviä asetuksia
+</advanced>
+
+
+## L2220 - Angelico {#opinsys-os-lean-bullseye-2022-05-18-092649-amd64}
+
+Ensimmäinen julkaisu uudesta Opinsys OS-käyttöjärjestelmän pääversiosta, joka pohjautuu
+Debian GNU/Linux Bullseye -jakeluun. Merkittävin osa muutoksista tapahtuu käyttäjälle
+suoraan näkyvissä komponenteissa. Peruskäyttöliittymät pysyvät tuttuina ja turvallisina.
+Olennaisimmat järjestelmän muutokset ovat:
+- Kaikki ohjelmistot päivittyvät uudempiin versioihin
+- Integroitu Veyon-Luokkahuoneopetuksen tukisovellus joka mahdollistaa oppilaskoneiden hallintaan
+ja yhteistyöhön liittyviä ominaisuuksia.
+- Poistuneiden käyttäjien kotikansiot poistetaan automaattisesti kannettavilta tietokoneilta
+- Laitteistotuki erilaisille kannettaville ja lisälaitteille on parempi
+ 
+
+### Tiedossa olevat ongelmat
+- Työpöydän alapaneeli voi hävitä, jos laite on laitettu nukkumaan siten että selaimesta
+on toistettu Fullscreen-tilassa videota.
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+
+</advanced>
+
+
+  </code>
+</pre>
+
+      </div>
+    </div>
+    <script src="../../../bundle.js?v=2" charset="utf-8"></script>
+  </body>
+</html>
