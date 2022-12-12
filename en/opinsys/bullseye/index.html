@@ -23,7 +23,32 @@
 
 <pre class="markdown">
   <code>
-  
+
+ ## O2249 - Gratianopolis {#opinsys-os-opinsys-bullseye-2022-12-08-085623-amd64}
+
+- <advanced title="Add: RustDesk remote support software">
+Rustdesk, a software that can be used for remote access and support, has been added to default software. It can be found from
+`Menu > Internet > RustDesk`
+</advanced>
+
+- Fix: Formatting of USB sticks via the shortcut in file browser sidebar wouldn't work in some cases
+- Fix: User interface of Flashprint software works again properly
+
+- Update: Veyon is updated to a newer version
+
+
+### Known problems
+
+### Technical changes
+<advanced title="Show...">
+- Change: Zram has been turned off as default on laptops. The feature can be turned on/off with the puavo-conf `puavo.service.zram-config.enabled`
+- Add: Bitwarden can be installed by admins via puavo-pkg or by asking it from helpdesk
+- Add: Thymio Suite can be installed by admins via puavo-pkg or by asking it from helpdesk
+- Add: Intel non-free video acceleration drivers
+- Change: Puavo-send-sysinfo sends some new device details and the latest logged user to be shown in Puavo-web.
+- Add: German and Swedish translations for Laptop Settings tool
+</advanced>
+
 ## O2243 - Flavia Solva {#opinsys-os-opinsys-bullseye-2022-10-27-093643-amd64}
     
 - Update: Libreoffice to version 7.4.1.2
