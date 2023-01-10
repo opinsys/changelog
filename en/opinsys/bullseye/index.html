@@ -24,6 +24,20 @@
 <pre class="markdown">
   <code>
 
+## O2302 - Hagae-Comitis {#opinsys-os-opinsys-bullseye-2023-01-10-075548-amd64.img}
+
+- Change: The screenshot tool's user interface has been revised
+- Update: The compatibility layer for Windows software, Wine, has been updated
+
+### Known problems
+
+### Technical changes
+<advanced title="Show...">
+- Change: The remaining Python2 packages have been removed from the system image
+- Add: Puavo OS Console reports "NO DISK FOUND" for devices that do not have a hard drive
+- Change: The git repository used for building the system image, previously available at /puavo-os, has been replaced with the file /etc/puavo-image/puavo-os-git.log, which contains the latest git log entries
+</advanced>
+
  ## O2249 - Gratianopolis {#opinsys-os-opinsys-bullseye-2022-12-08-085623-amd64}
 
 - <advanced title="Add: RustDesk remote support software">
@@ -31,6 +45,7 @@ Rustdesk, a software that can be used for remote access and support, has been ad
 `Menu > Internet > RustDesk`
 </advanced>
 
+- Add: Search results in program menu are categorized by program type
 - Fix: Formatting of USB sticks via the shortcut in file browser sidebar wouldn't work in some cases
 - Fix: User interface of Flashprint software works again properly
 
