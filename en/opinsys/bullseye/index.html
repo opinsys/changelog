@@ -24,6 +24,36 @@
 <pre class="markdown">
   <code>
 
+## O2304 - Isurium {#opinsys-os-opinsys-bullseye-2023-01-27-083115-amd64}
+
+- <advanced title="Fix: Various small functionality improvements for LoggerPro3">
+At startup, LoggerPro3 connects itself more actively to opening .cmbl files. Additionally, the font used by the software has been changed, allowing e.g. Greek alphabet
+to be properly displayed.
+</advanced>
+
+- <advanced title="Add: Smartphone tool KDE Connect">
+KDE Connect can be used to e.g. transfer files, control the pointer, display phone notifications on computer screen, and to various other uses,
+by connecting a phone and a computer over WLAN. To start using, one should download the KDE Connect app, available in various smartphone appstores,
+and pair their phone with their computer in the app.
+</advanced>
+
+- Fix: Calculating and displaying 3D charges of molecules functions again properly in MarvinSketch
+- Update: MuseScore is updated to the new version 4.0.1
+- Change: Font antialiasing settings have been unified systemwide
+
+### Known problems
+
+### Technical changes
+<advanced title="Show...">
+- Add: Commandline Apple device maintenance tools ideviceinstaller and idevicerestore are now included in the system image
+- Change: Some unused files have been cleaned up from taking space in the system image
+- Fix: Fixes in boot servers' nbd-server. Due to a bug still residing, nbd-server needs to be restarted if one wishes to netboot to images added to server after the server boot.
+- Fix: The printer driver hpijs, which was not previously available due to a packaging fault, is again available in the system image.
+- Fix: Small installer fixes in Puavo OS Console.
+- Add: Hamster-Simulator saatavilla pkgna
+</advanced>
+
+
 ## O2302 - Hagae-Comitis {#opinsys-os-opinsys-bullseye-2023-01-10-075548-amd64}
 
 - Change: The screenshot tool's user interface has been revised
