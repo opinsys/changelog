@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Changes in the Opinsys OS</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/theme.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+  </head>
+  <body>
+    <div class="login main">
+      <a href="http://opinsys.fi" target="_blank">
+        <img src="../../../opinsys_logo.png" alt="Opinsys Oy">
+      </a>
+      <div class="doc">
+        <h1>Opinsys OS releases and changes</h1>
+        <p>
+          The following changelog lists Opinsys OS (operating system)
+          releases and changes after the previous version.
+          In addition to the described changes, each release contains
+          the latest security related software updates
+          (for example, updates to the latest web browsers).
+        </p>
+
+<pre class="markdown">
+  <code>
+
+## O2304 - Isurium {#opinsys-os-opinsys-bullseye-2023-01-27-083115-amd64}
+
+- <advanced title="Fix: Various small functionality improvements for LoggerPro3">
+At startup, LoggerPro3 connects itself more actively to opening .cmbl files. Additionally, the font used by the software has been changed, allowing e.g. Greek alphabet
+to be properly displayed.
+</advanced>
+
+- <advanced title="Add: Smartphone tool KDE Connect">
+KDE Connect can be used to e.g. transfer files, control the pointer, display phone notifications on computer screen, and to various other uses,
+by connecting a phone and a computer over WLAN. To start using, one should download the KDE Connect app, available in various smartphone appstores,
+and pair their phone with their computer in the app.
+</advanced>
+
+- Fix: Calculating and displaying 3D charges of molecules functions again properly in MarvinSketch
+- Update: MuseScore is updated to the new version 4.0.1
+- Change: Font antialiasing settings have been unified systemwide
+
+### Known problems
+
+### Technical changes
+<advanced title="Show...">
+- Add: Commandline Apple device maintenance tools ideviceinstaller and idevicerestore are now included in the system image
+- Change: Some unused files have been cleaned up from taking space in the system image
+- Fix: Fixes in boot servers' nbd-server. Due to a bug still residing, nbd-server needs to be restarted if one wishes to netboot to images added to server after the server boot.
+- Fix: The printer driver hpijs, which was not previously available due to a packaging fault, is again available in the system image.
+- Fix: Small installer fixes in Puavo OS Console.
+- Add: Hamster-Simulator saatavilla pkgna
+</advanced>
+
+
+## O2302 - Hagae-Comitis {#opinsys-os-opinsys-bullseye-2023-01-10-075548-amd64}
+
+- Change: The screenshot tool's user interface has been revised
+- Update: The compatibility layer for Windows software, Wine, has been updated
+
+### Known problems
+
+### Technical changes
+<advanced title="Show...">
+- Change: The remaining Python2 packages have been removed from the system image
+- Add: Puavo OS Console reports "NO DISK FOUND" for devices that do not have a hard drive
+- Change: The git repository used for building the system image, previously available at /puavo-os, has been replaced with the file /etc/puavo-image/puavo-os-git.log, which contains the latest git log entries
+</advanced>
+
+ ## O2249 - Gratianopolis {#opinsys-os-opinsys-bullseye-2022-12-08-085623-amd64}
+
+- <advanced title="Add: RustDesk remote support software">
+Rustdesk, a software that can be used for remote access and support, has been added to default software. It can be found from
+`Menu > Internet > RustDesk`
+</advanced>
+
+- Add: Search results in program menu are categorized by program type
+- Fix: Formatting of USB sticks via the shortcut in file browser sidebar wouldn't work in some cases
+- Fix: User interface of Flashprint software works again properly
+
+- Update: Veyon is updated to a newer version
+
+
+### Known problems
+
+### Technical changes
+<advanced title="Show...">
+- Change: Zram has been turned off as default on laptops. The feature can be turned on/off with the puavo-conf `puavo.service.zram-config.enabled`
+- Add: Bitwarden can be installed by admins via puavo-pkg or by asking it from helpdesk
+- Add: Thymio Suite can be installed by admins via puavo-pkg or by asking it from helpdesk
+- Add: Intel non-free video acceleration drivers
+- Change: Puavo-send-sysinfo sends some new device details and the latest logged user to be shown in Puavo-web.
+- Add: German and Swedish translations for Laptop Settings tool
+</advanced>
+
+## O2243 - Flavia Solva {#opinsys-os-opinsys-bullseye-2022-10-27-093643-amd64}
+    
+- Update: Libreoffice to version 7.4.1.2
+
+- <advanced title="Add: support for Scratch link via pyscrlink (puavo-pkg)">
+New additionally installable application pyscrlink makes it possible to programs
+different kind of educational robots with Scratch IDE. The application can be installed
+via puavo-pkg which will add a "Scratch Link" launcher into the Programming menu.
+</advanced>
+
+- Update: Gnome network displays is updated to a newer version
+
+### Known problems
+
+### Technical changes
+<advanced title="Show...">
+- Add: Return Filius application to the image
+- Update: Trigger puavo-pkg package updates when checking configuration
+- Add: System info collector sends info if device has UEFI installation
+- Add: puavo-bootserver-sync-images and puavo-make-install-disk support bash completion
+- Add: Printer details are automatically updated to puavo
+- Update: Freeradius configuration changes
+- Fix: German translation of Puavo-Veyon applet
+- Fix: Make the system image smaller by removing unused/unnecessary locale and documentation files
+</advanced> 
+  
+  
+## O2240 - Eburacum {#opinsys-os-opinsys-bullseye-2022-10-06-105238-amd64}
+
+- Update: Lazarus IDE to version 2.2
+    
+- <advanced title="Update: Veyon - fixes and new features">
+Veyon integration has several fixes and updates. Changing the network during the desktop session 
+does not prevent joining a Veyon session. Previously a login/logout was required to fix it. This update also 
+changes the needed device configuration. From now on the Veyon session type (master/client)
+is defined by user type. By default teacher becomes veyon master and student becomes client. Another
+new feature is the possibility to invite users by their user group to join the Veyon session.
+</advanced>
+
+- <advanced title="Add: Support for installing PWA applications to Google Chrome/Chromium ">
+Progressive Web Applications can now be centrally activated/installed via Opinsys helpdesk or by using
+`puavo.www.chromium.pwa.forcelist` puavo-conf variable. Applications are installed after making the required
+setting and starting up the Chrome browser. A launcher for the application is installed to `Menu > Your programs`
+tab.
+</advanced>
+
+- Add: Noto Color Emoji -fonts.
+
+
+### Known problems
+- Puavo-Veyon-Applet uses Finnish translations in German desktop sessions.
+
+### Technical changes
+<advanced title="Show...">
+- Update: Grub version 2.06-3~deb11u2
+- Add: puavo-firmware package is installed by default
+- Fix: Support for jetpipe printing
+- Fix: Small changes to puavo-disk-erase tool
+- Fix: Virtualbox update fixes possible instability problems with high io load.
+</advanced> 
+  
+
+## O2236 - Durocortorum {#opinsys-os-opinsys-bullseye-2022-09-08-105038-amd64}
+
+- <advanced title="Add: Celestia">
+Celestia-application is now installed by default.
+</advanced>
+
+- <advanced title="Fix: Google Earth search">
+Search functionality in Google Earth now actually works and it centers
+the map to the search target.
+</advanced>
+
+- <advanced title="Fix: Scribus menu icons">
+The menu icons (eg. Tools menu) are now correctly displayed.
+</advanced>
+
+- <advanced title="Fix: Veyon classroom monitoring">
+There are several small fixes to Veyon integration in this update. First of all the
+UI of Veyon Master is cleaner and it automatically displays the student computers. 
+The screen update frame rate has been changed to create less network traffic and make it
+more responsive. Also having several simultaneous Veyon servers do not interfere each other.
+</advanced>
+
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Show...">
+- Add: Users menu has been disabled from the System settings
+- Add: Bootservers now have support for Radius server
+- Fix: Guest-accounts now obey the devices puavo-conf language settings
+</advanced>
+
+  
+## O2232 - Cantabrigia {#opinsys-os-opinsys-bullseye-2022-08-08-150020-amd64}  
+
+- <advanced title="Add: Experimental Miracast mirroring support">
+Mirroring displays via Miracast is now possible by using Gnome Network Displays application.
+Application is available by selecting `Menu > Accessories > Gnome Network Displays`
+</advanced>
+
+- <advanced title="Add: EShare display mirroring">
+EShare can be installed by admins via puavo-pkg or by asking it from our helpdesk.
+</advanced>
+
+- <advanced title="Fix: Network printers not working after long suspend on laptops">
+There has been constant problems with network printing on laptops that have been suspended
+and used in different networks. It is possible that there is now a fix for this problem which
+is difficult to reproduce and solve. 
+</advanced>
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Show...">
+- Add: Wireguard-tools package has been added to the system
+- Add: New packages: flameshot, git-gui ja gitk
+- Add: puavo-change-hostname tool has been added to make it easier to change laptop/bootserver hostname
+- Fix: HP 3G modem (id 03f0:0c51) will be disable automatically via hwquirk as it is misbehaving and causing various problems
+</advanced> 
+
+## O2224 - Barcino {#opinsys-os-opinsys-bullseye-2022-06-16-122820-amd64}  
+  
+- <advanced title="Add: Cryptomator file encryptor puavo-pkg">
+Cryptomator can be installed by admins via puavo-pkg or by asking it from helpdesk.
+</advanced>
+
+- Fix: Disappearing desktop panel after combination of fullscreen video and suspend
+
+- Fix: Chrome and Chromium browsers Single sign-on (SSO) support
+
+- Fix: Exam servers (puavo-ers) exam file handling has been improved
+
+### Known Problems
+
+
+### Technical changes
+<advanced title="Show...">
+- Add: puavo-test-hardware automatic testing improved
+- Add: Chinese hanyu pinyin keyboard layout.
+- Add: Handbrake application 
+- Fix: Removed old printing system configurations
+</advanced>
+
+
+## O2219 - Argentoratum {#opinsys-os-opinsys-bullseye-2022-05-17-091102-amd64}
+
+This is the first release of Opinsys OS image series, based on the Debian GNU/Linux 11 Bullseye. 
+This is a major update version bringing new features as well as basic level updates to the whole
+system. The major changes are:
+- All the applications are updated to newer versions
+- Integrated Veyon classroom management application
+- Better hardware support for newer computer models and peripherals.
+- Automatically delete home directories of removed users (turned on by default)
+
+### Known problems
+- The desktop panel may dissappear when screen is locked / computer is suspended
+during fullscreen video playback (for example Youtube, Netflix etc.).
+
+### Technical changes
+<advanced title="Show...">
+
+</advanced>
+
+  </code>
+</pre>
+
+      </div>
+    </div>
+    <script src="../../../bundle.js?v=2" charset="utf-8"></script>
+  </body>
+</html>

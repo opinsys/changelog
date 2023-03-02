@@ -1,0 +1,606 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Changes in the Opinsys OS</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/theme.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+  </head>
+  <body>
+    <div class="login main">
+      <a href="http://opinsys.fi" target="_blank">
+        <img src="../../../opinsys_logo.png" alt="Opinsys Oy">
+      </a>
+      <div class="doc">
+        <h1>Opinsys OS releases and changes</h1>
+        <p>
+          The following changelog lists Opinsys OS (operating system)
+          releases and changes after the previous version.
+          In addition to the described changes, each release contains
+          the latest security related software updates
+          (for example, updates to the latest web browsers).
+        </p>
+
+<pre class="markdown">
+  <code>
+
+## O2308 - Bellatrix {#opinsys-os-opinsys-buster-2023-02-24-095931-amd64}
+
+This is primarily a standard security update without significant changes to a standard user.
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Show...">
+- Change: The git repository used for building the system image, previously available at /puavo-os, has been replaced with the file /etc/puavo-image/puavo-os-git.log, which contains the latest git log entries
+</advanced>
+
+## O2302 - Antares {#opinsys-os-opinsys-buster-2023-01-10-080905-amd64}
+
+- Add: Search results in program menu are categorized by program type
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Show...">
+- Add: Thymio Suite can be installed by admins via puavo-pkg or by asking it from helpdesk
+- Add: Puavo OS Console reports "NO DISK FOUND" for devices that do not have a hard drive
+</advanced>
+
+## O2247 - Zaurak {#opinsys-os-opinsys-buster-2022-11-24-102511-amd64}
+ 
+This is primarily a standard security update without significant changes to a standard user.
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Show...">
+- Fix: Cura startup problems
+- Fix: Bootserver backup system parameter fixes
+- Fix: Unnecessarily verbose printer browser logging
+- Add: Printer "info" fields are automatically updated to puavo
+- Add: Usability improvements in puavo-bios-config tool
+</advanced>  
+
+## O2243 - Yed Prior {#opinsys-os-opinsys-buster-2022-10-27-081225-amd64}
+ 
+This is primarily a standard security update without significant changes to a standard user.
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Show...">
+- Add: System info collector sends info if device has UEFI installation
+- Add: puavo-bootserver-sync-images and puavo-make-install-disk support bash completion
+- Add: Printer details are automatically updated to puavo
+- Update: Freeradius configuration changes
+</advanced>  
+  
+## O2240 - Xuange {#opinsys-os-opinsys-buster-2022-10-06-105005-amd64}
+
+- <advanced title="Add: Support for installing PWA applications to Google Chrome/Chromium ">
+Progressive Web Applications can now be centrally activated/installed via Opinsys helpdesk or by using
+`puavo.www.chromium.pwa.forcelist` puavo-conf variable. Applications are installed after making the required
+setting and starting up the Chrome browser. A launcher for the application is installed to `Menu > Your programs`
+tab.
+</advanced>
+
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Näytä...">
+- Fix: Small changes to puavo-disk-erase tool
+- Fix: Virtualbox update fixes possible instability problems with high io load.
+</advanced> 
+
+
+## O2236 - Wezen {#opinsys-os-opinsys-buster-2022-09-07-062453-amd64}
+
+- <advanced title="Fix: Google Earth search">
+Search functionality in Google Earth now actually works and it centers
+the map to the search target.
+</advanced>
+
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Show...">
+- Add: Users menu has been disabled from the System settings
+- Add: Bootservers now have support for Radius server
+- Fix: Guest-accounts now obey the devices puavo-conf language settings
+</advanced>
+  
+## O2232 - Vega {#opinsys-os-opinsys-buster-2022-08-08-174910-amd64.img}  
+
+
+- <advanced title="Add: EShare display mirroring">
+EShare can be installed by admins via puavo-pkg or by asking it from our helpdesk.
+</advanced>
+
+- <advanced title="Fix: Network printers not working after long suspend on laptops">
+There has been constant problems with network printing on laptops that have been suspended
+and used in different networks. It is possible that there is now a fix for this problem which
+is difficult to reproduce and solve. 
+</advanced>
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Show...">
+- Add: puavo-change-hostname tool has been added to make it easier to change laptop/bootserver hostname
+- Fix: HP 3G modem (id 03f0:0c51) will be disable automatically via hwquirk as it is misbehaving and causing various problems
+</advanced> 
+  
+  
+## O2224 - Uruk {#opinsys-os-opinsys-buster-2022-06-16-122316-amd64}
+
+- <advanced title="Add: Cryptomator file encryptor puavo-pkg">
+Cryptomator can be installed by admins via puavo-pkg or by asking it from helpdesk.
+</advanced>
+
+- Fix: Chrome and Chromium browsers Single sign-on (SSO) support
+
+- Fix: Exam servers (puavo-ers) exam file handling has been improved
+
+### Known Problems
+
+
+### Technical changes
+<advanced title="Show...">
+- Add: puavo-test-hardware automatic testing improved
+- Add: Chinese hanyu pinyin keyboard layout.
+- Add: Handbrake application 
+- Fix: Removed old printing system configurations
+</advanced>
+  
+
+## O2219 - Taygeta {#opinsys-os-opinsys-buster-2022-05-12-121616-amd64}
+
+- <advanced title="Addition: Factory reset devices from the device management">
+Opinsys OS devices can now be set to factory reset mode from the device management. On next startup 
+this will make the laptop boot to a special reset mode where all the files and configuration will be securely
+deleted. Setting laptop to a reset mode can be done from the devices information page and by selecting 
+"Set to reset mode" from the "More Actions" menu.
+</advanced>
+
+- <advanced title="Addition: Possibility to install CleverTouch LYNX-application">
+This whiteboard application can be installed via puavo-pkg from the device management
+or by contacting our support.
+</advanced>
+
+- <advanced title="Addition: Ukrainian language">
+Support for Ukrainian language has been added to applications and UI.
+</advanced>
+
+- Update: Flashforge Flashprint is updated to version 5.3.3
+
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Näytä...">
+- Fix: Puavo-ers exam server disables suspend by default.
+- Addition: Added Bluetooth test to puavo-test-hardware.
+- Addition: Packages retext ja okteta.
+- Addition: Puavo OS Console reports "BATTERY MISSING" for devices that do not have battery.
+- Addition: Added Disk Erase option to Puavo OS Console.
+- Update: Puavo-ers server supports full automation with Abitti KTP servers starting from server versions SERVER2216L.
+- Update: HP Elitebook bioses can be updated to the latest version from Puavo OS Console.
+- Change: Microphone and speaker test have beencompined as one audiotest in puavo-test-hardware.
+</advanced>  
+  
+
+## O2214 - Sirius {#opinsys-os-opinsys-buster-2022-04-06-113148-amd64}
+
+- Addition: Webex video conference software available as a puavo-pkg.
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Show...">
+- Addition: Tools for setting up and updating HP Elitebook BIOSes from Puavo OS Console.
+- Fix: The microphone test in puavo-test-hardware works now better with various device models
+- Addition: Exam server functionality enhancements to allow replacing physical supervisor computer with a web service based system.
+- Addition: The Finnish Alku font is available for customers with a valid license.
+</advanced>
+
+
+## O2210 - Rigel {#opinsys-os-opinsys-buster-2022-03-10-095530-amd64}
+
+- Update: User registration on personal laptops is now working more reliably.
+
+- Update: Cura 3d printing application updated to version 4.13.1
+
+### Known problems
+
+
+### Technical changes
+<advanced title="Show...">
+- Change: Adding Windows 10-computers to NT4 Samba domain doesn not work any more due to security changes
+- Add: Battery charge percentage info added to Puavo OS Console.
+- Add: Support for Fortinet SSLVPN VPN to NetworkManager.
+- Add: Unregistered computers can send hardware info to a backend service.
+- Fix: UEFI boot entries are fixed on restoredisk installed dualboot laptops.
+</advanced>
+
+
+## O2204 - Queyta {#opinsys-os-opinsys-buster-2022-01-28-125920-amd64.img}
+
+- <advanced title="Addition: Improved screenreader voices">
+Screenreader has been changed to use listener-friendlier voices on Finnish, German and English desktop sessions.
+</advanced>
+
+- Fix: The Polkit vulnerability CVE-2021-4034 which allowed local user to escalate to super user privileges has been fixed in the system Polkit version.
+
+- Fix: Problems with dragging tabs in Google Chrome windows has been fixed in the updated browser version.
+
+- Update: Tela icon theme has been updated.
+
+
+### Technical changes
+<advanced title="Show...">
+- Change: Puavo-wlanap is turned off as default on fatclients.
+- Fix: Program menu entries of some specific programs installed by the user via WINE would not work.
+</advanced>
+
+
+## O2202 - Polaris {#opinsys-os-opinsys-buster-2022-01-10-125220-amd64}
+
+- <advanced title="Change: Update progress on shared devices">
+The progress of an ongoing update is now visible on shared devices, and can be found from support
+applet menu. Updates can also be checked for on shared devices using the support applet.
+</advanced>
+
+- <advanced title="Addition: New extra software available as puavo-pkgs">
+The following puavo-pkgs are available: Telegram, Konica Minolta Printer drivers, Logicsim,
+and Epson EasyMP Network Projection.
+</advanced>
+
+- <advanced title="Addition: Assigment Submission Box available on bootservers">
+Shared folders on bootservers now include two new folders, which can be used e.g. for returning test
+answers. Students can save their answers to "Assigment Submission Box"-folder, from which they will
+be automatically collected to "Collected Assignments" folders, which is available for teachers.
+</advanced>
+
+- <advanced title="Fix: Geogebra with 10th gen Intel devices">
+A startup problem of Geogebra 6 on 10th Gen Intel devices was fixed.
+</advanced>
+
+
+- <advanced title="Fix: Desktop hanging e.g. on shared devices">
+In some rare occasions, e.g. a file with no write permissions on the users desktop could
+have caused the desktop to hang. This has now been fixed.
+</advanced>
+
+- Fix: Fixes in Libreoffice localizations.
+
+- Fix: Minetest-icon is again visible in Puavomenu.
+
+- Fix: Fixed missing Swedish desktop applet translations.
+
+
+### Known issues
+- Due to a Google Chrome bug, dragging tabs between Chrome browser windows is not working properly.
+
+
+### Technical changes
+<advanced title="Show...">
+- Update: IdId-player has been updated to latest version.
+- Fix: Added logging configs to prevent state partition from filling.
+- Fix: Puavo-make-install-disk -tool can be given `--only-legacy-boot` parameter for
+maximal support with legacy devices.
+- Fix: Automatic update notifier was disabled from Nextcloud Desktop
+- Change: Puavo-tftp-server on bootservers has been replaced with hook-tftp. This change enables
+the booting of Bullseye-based images, and improves the tftp server performance
+- Change: Savedisk -tool can be given a specific name to save as.
+- Change: New `puavo.printing.cleanup_printers` -puavo-conf allows more fine-grained configuration of automatic cleaning
+of printers connected to system.
+- Addition: New puavo-conf `puavo.printing.airprint.enabled` allows disabling of Airprint on devices.
+- Addition: A script `puavo-gather-printing-statistics` was added to boot servers, allowing to collect statistics of printing.
+- Addition: Unshield-program to enable uncompression of Windows InstallShield packages.
+</advanced>
+
+
+## O2147 - Okab {#opinsys-os-opinsys-buster-2021-11-22-121516-amd64}
+
+- Update Nextcloud desktop client.
+- Update Inkscape to newer version.
+- Add possibility to install QCAD/CAM community edition via puavo-pkg.
+- Fix duplicates in the printer listings by removing them.
+- Fix installing packages via package manager in DrRacket IDE.
+- Fix symbolic links to users home folder in TI Nspire CX CAS and Logger Pro 3
+Windows puavo-pkg applications.
+- Fix pasting screenshots to text fields in Chrome (Chrome upstream fix).
+- Fix problems in launching Virtual box with default kernel.
+
+### Known issues
+
+
+### Technical changes
+
+<advanced title="Show...">
+- Fix synchronising Puavo OS images to bootservers in organizations with
+large amount of registered devices.
+- Fix displaying Smart information of nvme mass storage devices in Puavo OS
+Console.
+</advanced>
+
+
+
+
+
+  
+## O2143 - Nembus {#opinsys-os-opinsys-buster-2021-10-26-093541-amd64}
+
+- Update LibreOffice to version 7.0.
+- Update Stickfactory to support the newer Abitti version numbers.
+- Remove Gnome printers applet that might cause UI hang problems.
+- Add Smart information for harddisk to Puavo OS Console hardware information screen.
+- Puavo-hardware-test can show smart reports for harddisks.
+- Add puavo-pkg installer for Windows Logger Pro 3.
+- Add puavo-pkg installer for mindplus.
+- Add new puavo-conf (puavo.printing.servers) to manually set printing server.
+- Add support for some 11th gen Intel audio devices
+
+### Known issues
+
+
+### Technical changes
+
+<advanced title="Show...">
+- 
+</advanced>
+  
+  
+## O2137 - Maia {#opinsys-os-opinsys-buster-2021-09-17-120102-amd64}
+
+- Renewed printing system with better and unified support for printing rights and Airprint.
+- Fix permissions for attaching Vernier USB devices.
+- Add ruslav and Sami keyboard layouts available for Gnome settings UI. 
+- Add keyboard navigation to puavomenu.
+- Add BlueJ as installable puavo-pkg application.
+- Add Filius network simulator.
+
+### Known issues
+
+
+### Technical changes
+
+<advanced title="Show...">
+- Device information of the primary data storage device is sent to device management
+- For correct functionality of the new printing system, both the laptops and boot servers
+should be updated simultaneously to use this release version.
+</advanced>
+
+
+
+
+
+## O2132 - Lich {#opinsys-os-opinsys-buster-2021-08-13-090543-amd64}
+
+- Update Robbo programming environment to version 3.
+- Add Swedish localization for the support desktop-applet
+
+
+### Known issues
+
+
+### Technical changes
+
+<advanced title="Show...">
+- Fix Woeusb (missing dependency added), creation of Windows install media works normally again.
+- Fix puavo-bootserver-sync-images -script's management of disk images and torrent files.
+</advanced>
+
+
+
+## O2123 - Kang {#opinsys-os-opinsys-buster-2021-06-11-114317-amd64}
+
+- <advanced title="Update: MarvinSketch - NOTE! Changes in software license">
+MarvinSketch has updated to newer version. From now on, the program requires a separate user-specific license. 
+Students can acquire a free license code from MarvinSketch's web page at https://chemaxon.com/products/marvin . 
+License is acquired by creating a user account on the page and registering a non-commercial license. After this, the license file
+can be downloaded, to be activated on program startup.
+</advanced>
+- Add Godot Engine development environment in Programming menu
+- Fix backup system's icon to be displayed correctly during laptop bootup
+
+
+### Known issues
+
+
+### Technical changes
+
+<advanced title="Show...">
+- Add Puavo hardware test -feature, allowing test of physical condition of the device during installation.
+Testing is started by booting the computer into Puavo OS Console and typing `test`.
+- Add ability to highlight device resolution and model when using Preseed
+- Add console mouse support (gpm) to Puavo OS Console.
+- Add ability to use puavo-conf to change the web site opened by Puavomenu's Change Password functionality
+</advanced>
+
+
+## O2119 - Jabbah {#opinsys-os-opinsys-buster-2021-05-12-125757-amd64}
+
+- Add icons for boot modes in the bootmenu (grub).
+- Add guide image to bootmenu (grub) to help selecting the bootmode.
+- Add support for organization specific MAL lisence for the TI Nspire CX CAS.
+- Add support for WPA2 EAP networks (with username / password) into the useraccount registration mode.
+- Microsoft Teams updated to version 1.4.00.7556_amd64.
+- Add configuration option to hide elements from the Application Menu sidebar: `puavo.puavomenu.sidebar_hide_elements`.
+
+## O2112 - Hadar {#opinsys-os-opinsys-buster-2021-03-24-123005-amd64}
+
+- Add Freeplane midmapping application.
+- Add new puavo-conf variable ´puavo.wired.nm.shared.enabled´ to enable sharing the internet 
+(for example LTE connection on laptop) from the ethernet port.
+- Add Veyon ja Epoptes -packages for testing and development purposes.
+- Add 
+- Update Teams applivation to version 1.4.00.4855.
+- Fix Flashprint slicer by downgrading the application to latest working version.
+- Fix updating menu items when installing additional applications on personal laptops.
+- Fix rdiff based laptop updates to continue the download from the point where it
+left of in case of reboot or shutdown.
+- Fix vpn connection and when doing usb stick installation 
+- Change bootmenu (Grub) to use official version numbering of device images instead of
+the device image filename.
+
+## O2108 - Gakyid {#opinsys-os-opinsys-buster-2021-02-25-121821-amd64}
+
+- Add Telegram application.
+- Add puavo-pkg package for Signal application. This can be installed by request.
+- Fix touchpad usage on laptop touchpads that do not have physical buttons. Basically the 
+old default settings (by Gnome) have been.
+- Fix 'Your programs' tab in the application menu to discover installed applications better .
+than before. Previously the application did not discover application desktop files that where
+under subfolders.
+- Fix Hadware compatibility with Dell Latitude 3510 and Probook 440 G7 laptops. These device
+models had trouble with internal microphone.
+- Fix battery capacity coloring in Puavo OS Console.
+- Removed Airtame application.
+- Update the Current kernel to version 5.10.0-0.bpo.3-amd64.
+- Add possibility to add new resolutions to device outputs via puavo.xrandr.extra_modes puavo-conf.
+- Add puavo-pkg installer for Discord.
+
+## O2104 - Fomalhaut {#opinsys-os-opinsys-buster-2021-01-27-071357-amd64}
+
+- Update exam room server device mode with automated exam startup.
+- Update Mafynetti application
+- Remove support for Adobe Flash player
+- Fix Abitti compatible exam system to use also the currently official version
+numbering of the Abitti system.
+
+## O2050 - Elnath {#opinsys-os-opinsys-buster-2020-12-09-114058-amd64}
+
+- Fix updating the available printers list.
+- Fix restoring the screen brightness setting on laptops after reboot.
+- Fix launching OpenSCAD
+- Fix launching Electron based Appimage applications
+- Add support for simultaneus supports for UEFI and Legacy BIOS booting.
+- Add support for Otto DIY robots. The Otto Blockly application for programming
+the robots is not included in the image, but can be installed via puavo-pkg.
+
+### Known issues
+
+- adm-x11vnc does not run due to security update to the vnc server.
+
+### Technical changes
+
+- Fix puavo-send-monitors to send xml based monitor settings to device management
+- Current kernel updated to version 5.9.0-0.bpo.2-amd64
+- Add new puavo-pkg installable applications: GDevelop, Microsoft Visual Studio Code,
+Otto DIY Blockly application and new arduino libraries for Otto robots.
+
+## O2045 - Deneb {#opinsys-os-opinsys-buster-2020-11-09-120441-amd64}
+
+- Fix displaying network folders (from bootserver/puavobox)on the desktop.
+- Fix Virtualbox guest additions
+- Fix slow startup of stating the Puavo OS console when installing new devices.
+
+
+## O2043 - Capella (development release) {#opinsys-os-opinsys-buster-2020-10-22-121114-amd64}
+
+- Fix desktop icons
+- Fix readability of text in the login screen
+- Fix home folder icon at the desktop panel as the same as on the desktop
+- Update Cura -3D printing application to version 4.7.1.
+- Update Flahforge Flashprint to version 4.4.1.
+- Update Arduino Ide to version 1.8.13.
+- Update Microroft Teams to version 1.3.00.25560 
+- Add new NovoConnect Software -application for NovoCast devices
+- Add automatic connection to mobile networks when SIM-card is inserted.
+- Add icon for Anton APP to Education menu
+
+### Known issues
+
+- Network folders are not automatically displayed on the desktop. Icon can be activated by
+clicking the secondary mouse button on the desktop and selecting ```Settings > Show network folders```.
+
+### Technical changes
+
+<advanced title="Show...">
+- Fix grub update from Stretch to Buster so that computer cannot be turned off/restarted during update
+- Fix HP Elitebook 840 G3 3G modem udev rules
+- Fix jetpipe fuctionality
+- Update openboard to version 1.5.4
+- Add "reset to factory default" function to the laptop settings
+- Add better hardware support for HP Probook 440 G7
+- Add "login as existing user" functionality to personal laptop registration tool
+- Add packages wavemon, espeak-ng ja iotop.
+- Change puavomenu category texts to non-italic font
+- Change Realtek ethernet cards to prefer r8169 driver instead of r8168.
+- Change Super tux cart as installable via puavo-pkg
+- Remove Extreme tux racer to save space on the image
+
+</advanced>
+
+
+## O2035 - Betelgeuze (development release) {#opinsys-os-opinsys-buster-2020-08-25-121648-amd64}
+
+- Fix missing icons in the menu
+- Fix missing finnish translation to the theme selection settings
+- Update openboard to version 1.5.4
+- Add "reset to factory default" function to the laptop settings
+- Add better hardware support for HP Probook 440 G7
+- Add "login as existing user" functionality to personal laptop registration tool
+
+
+### Known issues
+
+- Kojo-programming environment does not launch
+
+### Technical changes
+
+<advanced title="Show...">
+- Set wine-development as the defalt Wine in the system
+- Fixed desktop files created by Google Chrome (~(.local/share/applications/)
+- removed reboot countdown from the darkdm
+- Fixed pxe booting unregistered devices when organizations desktop image cannot 
+be found on the bootserver.
+</advanced>
+
+## O2025 - Absolutno (development release) {#opinsys-os-opinsys-buster-2020-06-18-055608-amd64}
+
+This is the first version of the upcoming Opinsys OS.
+This version is still a development version, thus it may
+lack some things and for example the user interface might still
+undergo some small changes.  This release is however mostly
+stable and is safe to use.  The devices using this release
+are under normal maintainance and it is possible to update
+them automatically to newer releases.
+
+### Known issues
+
+- Missing/faulty application icons in menu
+- Selecting dark theme does not select the corresponding dark icon theme
+- "Show desktop" icon can be broken depending on the  icon theme
+- Kojo-programming application does not launch
+
+### Technical changes
+
+<advanced title="Show...">
+  - moved on to using Debian "Buster"-version
+  - using Linux kernel 4.19 by default
+  - most software has been updated
+  - and a whole lot more...
+</advanced>
+
+  </code>
+</pre>
+
+      </div>
+    </div>
+    <script src="../../../bundle.js?v=2" charset="utf-8"></script>
+  </body>
+</html>
