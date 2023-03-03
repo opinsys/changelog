@@ -24,6 +24,26 @@
 <pre class="markdown">
   <code>
 
+## O2308 - Juliomagus {#opinsys-os-opinsys-bullseye-2023-02-24-095959-amd64}
+
+- Fix: Support for i.a. Korean fonts has been improved
+- Fix: Display brightness controls function again in login screen
+- Fix: GIMP does not crash any more when large pictures are copied to clipboard under certain circumstances
+- Update: Veyon is updated to a newer version
+
+### Known problems
+
+### Technical changes
+<advanced title="Show...">
+- Change: The type of the devices' maintenance tunnel connection has changed, the new IP of the tunnel is 217.112.254.5
+- Change: Some unused files have been cleaned up from taking space in the system image
+- Change: Usability and clarity improvements in puavo-bootserver-smoke-test
+- Add: Improvements to device data transmission in Puavo OS Console
+- Add: Commandline tool speedtest-cli
+- Fix: Improvements to netbooting the system with USB ethernet adapters
+- Fix: The remaining known issues with nbd-server on bootservers have been fixed
+</advanced>
+
 ## O2304 - Isurium {#opinsys-os-opinsys-bullseye-2023-01-27-083115-amd64}
 
 - <advanced title="Fix: Various small functionality improvements for LoggerPro3">
@@ -50,7 +70,6 @@ and pair their phone with their computer in the app.
 - Fix: Fixes in boot servers' nbd-server. Due to a bug still residing, nbd-server needs to be restarted if one wishes to netboot to images added to server after the server boot.
 - Fix: The printer driver hpijs, which was not previously available due to a packaging fault, is again available in the system image.
 - Fix: Small installer fixes in Puavo OS Console.
-- Add: Hamster-Simulator saatavilla pkgna
 </advanced>
 
 
