@@ -25,6 +25,20 @@
 <pre class="markdown">
   <code>
 
+## O2402 - Berkeelium {#opinsys-os-opinsys-bookworm-2024-01-09-111411-amd64}
+
+- Korjaus: Webkiosk-vierasistunnon kielenvalintakäyttöliittymää on paranneltu ja sen toiminta on korjattu. Lisäksi kielivalintaan on lisätty uutena kielenä saksa. 
+- Korjaus: Koepalvelimen toimintaa on korjattu uusimman Abitin mukaiseksi, siten että opiskelijoiden koeistuntoja ei katkaista ennen kuin kokeet on oikeasti päätetty.
+- Lisäys: Lisätty tuki Microsoft Surface Go laitteille (esim. kamera), erilliseen Crisp-kerneliin.
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Muutos: Koneiden laitteiden tehdasasetuksille resetoinnissa käytetään joka tilanteessa oletuksena ns. tietoturvallista poistoa. Mikäli laitteessa on SSD-levy poisto tehdää discard/trim -toiminnallisuudella ja HDD-kiintolevyille tiedostojen ylikirjoituksella.
+- Lisäys: ```faketime``` ja ```psensor``` -paketit.
+</advanced>
+
 
 ## O2349 Alumiinium - (KEHITYSVERSIO) {#opinsys-os-opinsys-bookworm-2023-12-05-084357-amd64}
 

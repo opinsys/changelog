@@ -25,7 +25,20 @@
 <pre class="markdown">
   <code>
 
-## L2349 - Sanzio {#opinsys-os-lean-bullseye-2023-12-05-102038-amd64.img}
+## L2402 - Tintoretto {#opinsys-os-lean-bullseye-2024-01-10-121738-amd64}
+
+- Korjaus: Webkiosk-vierasistunnon kielenvalintakäyttöliittymää on paranneltu ja sen toiminta on korjattu. Lisäksi kielivalintaan on lisätty uutena kielenä saksa. 
+- Korjaus: Koepalvelimen toimintaa on korjattu uusimman Abitin mukaiseksi, siten että opiskelijoiden koeistuntoja ei katkaista ennen kuin kokeet on oikeasti päätetty.
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Muutos: Koneiden laitteiden tehdasasetuksille resetoinnissa käytetään joka tilanteessa oletuksena ns. tietoturvallista poistoa. Mikäli laitteessa on SSD-levy poisto tehdää discard/trim -toiminnallisuudella ja HDD-kiintolevyille tiedostojen ylikirjoituksella.
+- Lisäys: ```faketime``` ja ```psensor``` -paketit.
+</advanced>
+
+## L2349 - Sanzio {#opinsys-os-lean-bullseye-2023-12-05-102038-amd64}
 
 - Korjaus: Google Chrome -selaimen käyttö on saattanut estyä, kun sitä on yritetty käyttää samalla tunnuksella usealta eri tehopääte/fatclient -tietokoneelta. Ongelma johtuu Chromen toiminnan muutoksesta, jota Google ei ole vielä korjannut. Ongelmaan on nyt kiertokeino ja sen ei pitäisi enää häiritä Chromen käynnistämistä.
 - Korjaus: Työpöydän Menu-valikko ei jatkossa avaa oletuksena esiin käyttöä häiritsevää virtuaalinäppäimistöä, kun valikko avataan kosketusnäytöltä.
