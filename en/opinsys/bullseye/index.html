@@ -24,7 +24,20 @@
 <pre class="markdown">
   <code>
 
-## O2349 - Salernum {#opinsys-os-opinsys-bullseye-2023-12-05-102040-amd64}
+## O2402 - Turicum {#opinsys-os-opinsys-bullseye-2024-01-10-121732-amd64}
+
+- Fix: The language selection interface of the Webkiosk guest session has been improved and its operation has been fixed. In addition, German language has been added as a new language to the language selection.
+- Fix: The operation of the test server has been corrected to comply with the latest Abit, so that students' test sessions are not interrupted until the tests have actually been decided.
+
+### Known problems
+
+### Technical changes
+<advanced title="Show...">
+- Change: When resetting machine devices to factory settings, the so-called default is used in every situation. secure deletion. If the device has an SSD disk, remove it using the discard/trim functionality and overwrite the files on HDD hard disks.
+- Addition: ``faketime'' and ``psensor'' packages.
+</advanced>
+
+    ## O2349 - Salernum {#opinsys-os-opinsys-bullseye-2023-12-05-102040-amd64}
 
 - Fix: Google Chrome didn't open when opened on another fat client if Chrome was not closed by the user
 - Fix: Virtual keyboard is not displayed on top of the desktop menu by default on touchscreen devices
