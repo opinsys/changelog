@@ -23,19 +23,19 @@
 <pre class="markdown">
   <code>
 
-## O2402 - Berkeelium {#opinsys-os-opinsys-bookworm-2024-01-09-111411-amd64}
+## O2402 - Berkeelium (ENTWICKLUNGSVERSION) {#opinsys-os-opinsys-bookworm-2024-01-09-111411-amd64}
 
 - Fix: Die Sprachauswahloberfläche der Webkiosk-Gastsitzung wurde verbessert und ihre Bedienung wurde korrigiert. Darüber hinaus wurde Deutsch als neue Sprache zur Sprachauswahl hinzugefügt.
-- Fix: Der Betrieb des Testservers wurde entsprechend dem aktuellen Abit korrigiert, sodass die Testsitzungen der Studierenden nicht unterbrochen werden, bis die Tests tatsächlich entschieden wurden.
-- Erweiterung: Unterstützung für Microsoft Surface Go-Geräte (z. B. Kamera) hinzugefügt, separater Crisp-Kernel.
+<!-- - Fix: Der Betrieb des Testservers wurde entsprechend dem aktuellen Abit korrigiert, sodass die Testsitzungen der Studierenden nicht unterbrochen werden, bis die Tests tatsächlich entschieden wurden.-->
+- Erweiterung: Unterstützung für Microsoft Surface Go-Geräte (z. B. Kamera) in der Crisp-Kernel-Einstellung hinzugefügt.
 
 ### Bekannte Probleme
 
 ### Technische Änderungen	
 <advanced title="Anzeigen...">
-  - Änderung: Beim Zurücksetzen von Maschinengeräten auf Werkseinstellungen wird in jeder Situation der sogenannte Default verwendet. 
-  Sicheres Löschen. Wenn das Gerät über eine SSD-Festplatte verfügt, entfernen Sie diese mithilfe der Funktion "Verwerfen/Trimmen“ und 
-  überschreiben Sie die Dateien auf den Festplatten.
+  - Änderung: Beim Zurücksetzen von Geräten auf Werkseinstellungen wird in jeder Situation das sichere Löschen als Standard verwendet. 
+  Wenn das Gerät über eine SSD-Festplatte verfügt,werden die Daten mithilfe der Befehle "Discard/Trim“ gelöscht.  
+  Das sichere löschen der Dateien auf den herkömmlichen Festplatten (HDD) wird durch überschreiben der Daten durchgeführt.
   - Erweiterung: Pakete ```faketime``` und ```psensor```.
 </advanced>
 
