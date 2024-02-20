@@ -25,6 +25,34 @@
 <pre class="markdown">
   <code>
 
+## O2406 - Cesium - (KEHITYSVERSIO) {#opinsys-os-opinsys-bookworm-2024-02-09-112427-amd64}
+
+- <advanced title="Lisäys: Kantti-peli">
+  Kantti-peli on mahdollista ottaa jatkossa käyttöön erikseen asennettavana sovelluksena. Asennuksen jälkeen peli löytyy valitsemalla
+   ```M > Pelit > Kantti```.
+  </advanced>
+- <advanced title="Lisäys: Kaksoiskäynnistyvällä kannettavalla (dualboot) olevan Vapaa-ajantilan (Windows-asennus) nollaaminen tehdasasetuksille">
+  Jatkossa kaksoikäynnistyslaitteella oleva Windows-käyttöjärjestelmä on mahdollista nollata ja tyhjätä joko valitsemalla 
+  ```Menu > Kannettavan asetukset > Tehdasasetusten palautus``` tai käyttämällä laitehallinnan ```Aseta laite nollaustilaan```-toimintoa.
+  </advanced>
+- <advanced title="Muutos: Webkiosk-toiminnallisuutta kehitetty">
+  Webkiosk-laiteprofiilissa selain avautuu jatkossa oletuksena kokonäytön kokoiseksi. Lisäksi epäaktiivisen istunnon
+  automaattisen uloskirjatumisen kestoa voidaan säätää laitehallinnasta.
+  </advanced>
+- <advanced title="Muutos: Yhteisten kansioiden koulukohtaiset linkit">
+  Jatkossa Yhteisissä kansioissa näytetään linkit vain niihin organisaation kouluihin, joita kyseinen koulupalvelin on asetettu
+  laitehallinnasta palvelemaan. Lisäksi paikallista Nextcloud-instanssia käytettäessä, siellä oleva share-linkki osoittaa palvelimen pääkouluun.
+  </advanced>
+
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Lisäys: Uusi puavo-conf ```puavo.grub.timeout``` mahdollistaa kannettavana ja palvelimen käynnistyksen yhteydessä olevan Grub-valikon 
+näyttämiseen käytettävän ajan muuttamisen halutuksi. Arvolla ```0``` valikkoa ei näytetä lainkaan.
+</advanced>
+
 ## O2402 - Berkeelium {#opinsys-os-opinsys-bookworm-2024-01-09-111411-amd64}
 
 - Korjaus: Webkiosk-vierasistunnon kielenvalintakäyttöliittymää on paranneltu ja sen toiminta on korjattu. Lisäksi kielivalintaan on lisätty uutena kielenä saksa. 
