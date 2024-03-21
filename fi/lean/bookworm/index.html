@@ -25,6 +25,28 @@
 <pre class="markdown">
   <code>
 
+## L2411 - Dammastock - (KEHITYSVERSIO) {#opinsys-os-lean-bookworm-2024-03-18-104957-amd64}
+
+- <advanced title="Lisäys: Koepalvelimen YO-koe-tila">
+  Koepalvelin on mahdollista asettaa ns. Naksu/YO-koetilaan. Tällä asetuksella tietokone käynnistyy automaattisesti työpöydälle ja käynnistää Naksu-ohjelman. Naksu/YO-koetilassa laitteella ei käynnisty kurssikoepalvelimelle tyypilliset koeautomaatiot ja yhteys koejakajan aikatauluautomaattiin ei ole saatavilla. 
+  </advanced>
+  
+- <advanced title="Lisäys: Laitteille asennettavissa Slack ja Balona Etcher-sovellukset">
+  Edellä mainitut ohjelmistot on mahdollista asentaa keskitetysti organisaation laitehallinnasta.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Lisäys: Naksu-/YO-koetilan saa aktivoitua ```puavo.ers.mode = naksu``` -puavo-confilla.
+- Korjaus: Dualboot-kannettavalla Windows ei välttämättä käynnistynyt, jos laitteessa oli bootin yhteydessä 
+  USB-tikku kiinni. Ongelma on nyt korjattu.
+- Lisäys: Puavo-pkg -asennnukset siivotaan jatkossa laitteilta automaattisesti, jos asennettu paketti ei ole
+  enää puavo-confissa määritelty.
+- Muutos: Kerberoksen toimintaa on muutettu siten, että esimerkiksi Single-Sign-On paikallisen boottipalvelimen Nextcloudiin on jatkossa mahdollista.
+</advanced>
+
 ## L2406 - Chamlang - (KEHITYSVERSIO) {#opinsys-os-lean-bookworm-2024-02-09-112420-amd64}
 
 - <advanced title="Lisäys: Kantti-peli">

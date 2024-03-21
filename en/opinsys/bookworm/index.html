@@ -23,6 +23,23 @@
 
 <pre class="markdown">
   <code>
+  
+## O2411 - Dubnium (DEVELOPMENT VERSION) {#opinsys-os-opinsys-bookworm-2024-03-18-105133-amd64}
+
+- <advanced title="Addition: Slack and Balona Etcher apps can be installed on devices">
+   These applications can be installed centrally from the organization's device management.
+   </advanced>
+
+### Known issues
+
+### Technical changes
+<advanced title="View...">
+- Addition: Naksu/YO trial mode can be activated with ```puavo.ers.mode = naksu``` -puavo-conf.
+- Fix: On a dualboot laptop, Windows might not have booted if the device had a USB stick connected. The problem is now fixed.
+- Addition: Puavo-pkg installations will be automatically cleaned from devices if the installed package is not
+   no longer defined with puavo-conf.
+- Change: The operation of Kerberos has been changed so that, for example Single-Sign-On to the Nextcloud on local boot server is now possible.
+</advanced>
 
 ## O2406 - Cesium - (DEVELOPMENT VERSION) {#opinsys-os-opinsys-bookworm-2024-02-09-112427-amd64}
 

@@ -23,6 +23,42 @@
 <pre class="markdown">
   <code>
   
+## L2411 - Dammastock - (KEHITYSVERSIO) {#opinsys-os-lean-bookworm-2024-03-18-104957-amd64}
+
+- <advanced title="Erweiterung: Slack- und Balona Etcher-Apps können auf Geräten installiert werden">
+    Diese Anwendungen können zentral über die Geräteverwaltung der Organisation installiert werden.
+    </advanced>
+
+### Bekannte Probleme
+
+### Technische Änderungen
+<advanced title="Anzeigen...">
+- Erweiterung: Der Naksu/YO-Testmodus kann mit ```puavo.ers.mode = naksu``` -puavo-conf aktiviert werden.
+- Fix: Auf einem Dualboot-Laptop wurde Windows möglicherweise nicht gestartet, wenn an das Gerät ein USB-Stick angeschlossen war. Das Problem ist nun behoben.
+- Ergänzung: Puavo-pkg-Installationen werden automatisch von Geräten bereinigt, wenn das installierte Paket nicht installiert ist
+    nicht mehr mit puavo-conf definiert.
+- Änderung: Die Funktionsweise von Kerberos wurde geändert, sodass beispielsweise Single-Sign-On zur Nextcloud auf dem lokalen Boot-Server möglich ist.
+</advanced>
+  
+## O2406 – Cesium – (ENTWICKLUNGSVERSION) {#opinsys-os-opinsys-bookworm-2024-02-09-112427-amd64}
+
+- <advanced title="Erweiterung: Kantti-game">
+   Kantti ist ein finnisches Lernspiel im Visual Novel-Format, das zur Aufklärung über Drogenmissbrauch und psychische Gesundheit gedacht ist.
+   Es ist als separat installierbares puavo-pkg-Paket verfügbar und kann nach der Installation über ```Menü > Spiele > Kantti``` gestartet werden.
+   </advanced>
+- <advanced title="Erweiterung: Windows auf Werkseinstellungen auf Dualboot-Laptop zurücksetzen">
+   Die Windows-Installation auf einem Dualboot-Laptop kann jetzt über die Laptop-Einstellungen auf dem Desktop oder beim Zurücksetzen auf die Werkseinstellungen zurückgesetzt werden
+   Gerät aus der Puavo Web-Geräteregistrierung.
+   </advanced>
+- <advanced title="Änderung: Webkiosk">
+   Im Webkiosk-Geräteprofil befindet sich der Webbrowser jetzt standardmäßig im Vollbildmodus. Das Zeitlimit für aktive Sitzungen kann durch die Gerätekonfiguration geändert werden.
+   </advanced>
+- <advanced title="Änderung: Schulspezifische Links in den freigegebenen Ordnern des Bootservers">
+   Von nun an werden die schulspezifischen Links unter den freigegebenen Ordnern des Bootservers basierend auf den Schulen angezeigt, auf die der Server beschränkt ist
+   in der Puavo-Webgerätekonfiguration.
+   </advanced>  
+  
+  
 ## L2406 - Chamlang - (ENTWICKLUNGSVERSION) {#opinsys-os-lean-bookworm-2024-02-09-112420-amd64}
 
 - <advanced title="Erweiterung: Kantti-game">

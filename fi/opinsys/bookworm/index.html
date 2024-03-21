@@ -25,6 +25,30 @@
 <pre class="markdown">
   <code>
 
+
+## O2411 - Dubnium (KEHITYSVERSIO) {#opinsys-os-opinsys-bookworm-2024-03-18-105133-amd64}
+
+- <advanced title="Lisäys: Koepalvelimen YO-koe-tila">
+  Koepalvelin on mahdollista asettaa ns. Naksu/YO-koetilaan. Tällä asetuksella tietokone käynnistyy automaattisesti työpöydälle ja käynnistää Naksu-ohjelman. Naksu/YO-koetilassa laitteella ei käynnisty kurssikoepalvelimelle tyypilliset koeautomaatiot ja yhteys koejakajan aikatauluautomaattiin ei ole saatavilla. 
+  </advanced>
+  
+- <advanced title="Lisäys: Laitteille asennettavissa Slack ja Balona Etcher-sovellukset">
+  Edellä mainitut ohjelmistot on mahdollista asentaa keskitetysti organisaation laitehallinnasta.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Lisäys: Naksu-/YO-koetilan saa aktivoitua ```puavo.ers.mode = naksu``` -puavo-confilla.
+- Korjaus: Dualboot-kannettavalla Windows ei välttämättä käynnistynyt, jos laitteessa oli bootin yhteydessä 
+  USB-tikku kiinni. Ongelma on nyt korjattu.
+- Lisäys: Puavo-pkg -asennnukset siivotaan jatkossa laitteilta automaattisesti, jos asennettu paketti ei ole
+  enää puavo-confissa määritelty.
+- Muutos: Kerberoksen toimintaa on muutettu siten, että esimerkiksi Single-Sign-On paikallisen boottipalvelimen Nextcloudiin on jatkossa mahdollista.
+</advanced>
+
+
 ## O2406 - Cesium - (KEHITYSVERSIO) {#opinsys-os-opinsys-bookworm-2024-02-09-112427-amd64}
 
 - <advanced title="Lisäys: Kantti-peli">
@@ -53,7 +77,7 @@
 näyttämiseen käytettävän ajan muuttamisen halutuksi. Arvolla ```0``` valikkoa ei näytetä lainkaan.
 </advanced>
 
-## O2402 - Berkeelium {#opinsys-os-opinsys-bookworm-2024-01-09-111411-amd64}
+## O2402 - Berkeelium - (KEHITYSVERSIO) {#opinsys-os-opinsys-bookworm-2024-01-09-111411-amd64}
 
 - Korjaus: Webkiosk-vierasistunnon kielenvalintakäyttöliittymää on paranneltu ja sen toiminta on korjattu. Lisäksi kielivalintaan on lisätty uutena kielenä saksa. 
 - Korjaus: Koepalvelimen toimintaa on korjattu uusimman Abitin mukaiseksi, siten että opiskelijoiden koeistuntoja ei katkaista ennen kuin kokeet on oikeasti päätetty.
