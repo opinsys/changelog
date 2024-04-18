@@ -25,6 +25,40 @@
 <pre class="markdown">
   <code>
 
+## L2415 - Xceron {#opinsys-os-lean-bullseye-2024-04-10-103245-amd64}
+
+- <advanced title="Lisäys: Mahdollisuus käyttää PASCO:n mittalaitteita SparkVUE-webbisovelluksella">
+  PASCO-fysiikan mittalaitteita on mahdollista käyttää jatkossa PASCO:n uuden selainkäyttöisen SparkVUE
+  -sovelluksen avulla. Sovellus toimii Googlen Chrome-selaimella ja se löytyy osoitteesta 
+  https://sparkvue.pasco.com/ Riippuen mittalaitteesta sitä voi käyttää joko Bluetoothilla tai
+  USB-liitännän avulla. Laitteesi yhteensopivuuden saat selville PASCO:n tuotesivuilta.
+  </advanced>
+  
+- <advanced title="Muutos: Bluetoothin käyttö webbisovelluksissa (esim. Vernier, LEGO jne.)">
+  Jatkossa Google Chrome ja Chromium -selaimissa on nyt oletuksena käytettävissä Web bluetooth-toiminnallisuus.
+  Siten erilaiset Bluetooth-laitteet on kytkettävissä kyseisiä selaimia käytettäessä esimerkiksi erilaisiin
+  verkkopohjaisiin sovelluksiin. Käytännössä tämä tarkoittaa esimerkiksi Vernierin mittalaitteiden käyttöä
+  https://graphicalanalysis.app/ -sovelluksessa tai Legon ohjelmoitavien SPARK-laitteiden ohjelmointia
+  langattomasti.
+  </advanced>
+  
+### Tiedossa olevat ongelmat
+
+- <advanced title="Käyttäjätunnuksen ensimmäinen kertakirjautuminen laitteella"> 
+SSO ei toimi Googlen Chromium/Chrome-selaimilla tilanteessa jossa tietyllä käyttäjätunnuksella selainta
+käytetään ensimmäistä kertaa. Ongelma esiintyy siten, että kirjauduttaessa johonkin Opinsys-kertakirjautumista
+tukevaan palveluun, tulee virheilmoitus. Ongelma ratkea, kun sivun päivittää uudelleen. Kyseessä on selaimen 
+virheellinen toiminta joka korjautunee myöhemmin sen päivitysten myötä. Ongelma ei koske Firefox-selainta.
+</advanced>
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Lisäys: Abitti-koepalvelimet keräävät jatkossa Munin-laitetilastodataa palvelimen esim. kuormituksesta.
+- Muutos: Paikallista Nextcloud-toiminnallisuutta kehitetty ja tehty korjauksia.
+- Lisäys: Lisätty udev-sääntöjä mm. Lego, PASCO ja Microbit -laitteille, jotta käyttäjällä on oikeuksia kirjoittaa
+nihin ohjelmointiympäristöistä.
+</advanced>
+
 
 ## L2410 - Vinci {#opinsys-os-lean-bullseye-2024-03-05-100912-amd64}
 

@@ -24,6 +24,39 @@
 <pre class="markdown">
   <code>
   
+## O2415 - Einsteinium (DEVELOPMENT VERSION) {#opinsys-os-opinsys-bookworm-2024-04-11-120504-amd64}
+
+- <advanced title="Add: Ability to use PASCO measuring devices with SparkVUE web application">
+   It is now possible to use the PASCO physics measuring devices with PASCO's new browser-based SparkVUE
+   using the application. The application runs on Google's Chrome browser and can be found at
+   https://sparkvue.pasco.com/ . Depending on the measuring device, it can be used either with Bluetooth or
+   USB connection. You can find out the compatibility of your device on PASCO's product sites.
+   </advanced>
+  
+- <advanced title="Change: Bluetooth usage in web applications (eg Vernier, LEGO, etc.)">
+   In the future, Google Chrome and Chromium browsers have Web bluetooth functionality available by default.
+   In practice, this means that for example Vernier or programmable Lego SPARK devices work out of the box 
+   with on their own web apps (e.g. https://graphicalanalysis.app/). No user made settings are required anymore.
+   </advanced>
+   
+- <advanced title="Change: Desktop quick settings menu and desktop theme">
+   A desktop theme has been updated and thus the quick settings menu has improved functionality. 
+   Now the selection of Bluetooth, Wlan, and audio devices is easier and can be done directly from the menu.
+   </advanced>
+  
+### Known issues
+- SSO does not work on Google's Chromium/Chrome browsers in a situation where a browser is used with a certain username
+ for the first time. The problem is solved when the page refreshes again. 
+
+### Technical changes
+<advanced title="View...">
+- Add: In the future, Abitti test servers will collect Munin device statistics data about e.g. server load.
+- Change: Local Nextcloud functionality developed further and fixes made.
+- Add: Added udev rules, e.g. For Lego, PASCO and Microbit USB devices, so that the user has write permissions
+of their programming environments.
+</advanced>  
+
+  
 ## O2412 - Dubnium (DEVELOPMENT VERSION) {#opinsys-os-opinsys-bookworm-2024-03-18-105133-amd64}
 
 - <advanced title="Addition: Slack and Balona Etcher apps can be installed on devices">

@@ -25,6 +25,48 @@
 <pre class="markdown">
   <code>
 
+
+## L2415 - Escudilla (KEHITYSVERSIO) {#opinsys-os-lean-bookworm-2024-04-11-120506-amd64}
+
+- <advanced title="Lisäys: Mahdollisuus käyttää PASCO:n mittalaitteita SparkVUE-webbisovelluksella">
+  PASCO-fysiikan mittalaitteita on mahdollista käyttää jatkossa PASCO:n uuden selainkäyttöisen SparkVUE
+  -sovelluksen avulla. Sovellus toimii Googlen Chrome-selaimella ja se löytyy osoitteesta 
+  https://sparkvue.pasco.com/ Riippuen mittalaitteesta sitä voi käyttää joko Bluetoothilla tai
+  USB-liitännän avulla. Laitteesi yhteensopivuuden saat selville PASCO:n tuotesivuilta.
+  </advanced>
+  
+- <advanced title="Muutos: Bluetoothin käyttö webbisovelluksissa (esim. Vernier, LEGO jne.)">
+  Jatkossa Google Chrome ja Chromium -selaimissa on nyt oletuksena käytettävissä Web bluetooth-toiminnallisuus.
+  Siten erilaiset Bluetooth-laitteet on kytkettävissä kyseisiä selaimia käytettäessä esimerkiksi erilaisiin
+  verkkopohjaisiin sovelluksiin. Käytännössä tämä tarkoittaa esimerkiksi Vernierin mittalaitteiden käyttöä
+  https://graphicalanalysis.app/ -sovelluksessa tai Legon ohjelmoitavien SPARK-laitteiden ohjelmointia
+  langattomasti.
+  </advanced>
+  
+- <advanced title="Muutos: Työpöydän pikavalintavalikko ja työpöytäteema">
+  Tähän päivitykseen on tehty työpöytä teemaa ja siten esimerkiksi pikavalikon (työpöydän paneelin oikean 
+  alalaidan valikko) toiminnallisuuksia parantavia muutoksia. Jatkossa Bluetooth-, Wlan-, ja äänilaitteiden
+  valinta on helpompaa ja onnistuu suoraan pikavalikosta.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+- <advanced title="Käyttäjätunnuksen ensimmäinen kertakirjautuminen laitteella"> 
+- SSO ei toimi Googlen Chromium/Chrome-selaimilla tilanteessa jossa tietyllä käyttäjätunnuksella selainta
+käytetään ensimmäistä kertaa. Ongelma esiintyy siten, että kirjauduttaessa johonkin Opinsys-kertakirjautumista
+tukevaan palveluun tulee virheilmoitus. Ongelma ratkea, kun sivun päivittää uudelleen. Kyseessä on selaimen 
+virhe joka on sen kehittäjillä selvityksessä.
+</advanced>
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Korjaus: Wine-versio on päivittynyt ja samalla korjattu Loggerpron mittalaitteiden toimintaa.
+- Lisäys: Abitti-koepalvelimet keräävät jatkossa Munin-laitetilastodataa palvelimen esim. kuormituksesta.
+- Muutos: Paikallista Nextcloud-toiminnallisuutta kehitetty ja tehty korjauksia.
+- Lisäys: Lisätty udev-sääntöjä mm. Lego, PASCO ja Microbit -laitteille, jotta käyttäjällä on oikeuksia kirjoittaa
+nihin ohjelmointiympäristöistä.
+</advanced>
+
+
 ## L2412 - Dammastock - (KEHITYSVERSIO) {#opinsys-os-lean-bookworm-2024-03-18-104957-amd64}
 
 - <advanced title="Lisäys: Koepalvelimen YO-koe-tila">
