@@ -40,7 +40,7 @@
   Google Chrome ja Chromium -selaimissa on nyt oletuksena käytettävissä Web bluetooth-toiminnallisuus.
   Siten erilaiset Bluetooth-laitteet on kytkettävissä kyseisiä selaimia käytettäessä erilaisiin
   verkkopohjaisiin sovelluksiin. Käytännössä tämä tarkoittaa esimerkiksi Vernierin mittalaitteiden käyttöä
-  https://graphicalanalysis.app/ -sovelluksessa tai Legon ohjelmoitavien SPARK-laitteiden ohjelmointia
+  https://graphicalanalysis.app/ -sovelluksessa tai Legon ohjelmoitavien SPIKE-laitteiden ohjelmointia
   langattomasti.
   </advanced>
   
@@ -65,6 +65,28 @@ virheellinen toiminta joka korjautunee myöhemmin sen päivitysten myötä. Onge
 - Muutos: Paikallista Nextcloud-toiminnallisuutta kehitetty ja tehty korjauksia.
 - Lisäys: Lisätty udev-sääntöjä mm. Lego, PASCO ja Microbit -laitteille, jotta käyttäjällä on oikeuksia kirjoittaa
 nihin ohjelmointiympäristöistä.
+</advanced>
+
+## O2411 - Dubnium (KEHITYSVERSIO) {#opinsys-os-opinsys-bookworm-2024-03-18-105133-amd64}
+
+- <advanced title="Lisäys: Koepalvelimen YO-koe-tila">
+  Koepalvelin on mahdollista asettaa ns. Naksu/YO-koetilaan. Tällä asetuksella tietokone käynnistyy automaattisesti työpöydälle ja käynnistää Naksu-ohjelman. Naksu/YO-koetilassa laitteella ei käynnisty kurssikoepalvelimelle tyypilliset koeautomaatiot ja yhteys koejakajan aikatauluautomaattiin ei ole saatavilla. 
+  </advanced>
+  
+- <advanced title="Lisäys: Laitteille asennettavissa Slack ja Balona Etcher-sovellukset">
+  Edellä mainitut ohjelmistot on mahdollista asentaa keskitetysti organisaation laitehallinnasta.
+  </advanced>
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Lisäys: Naksu-/YO-koetilan saa aktivoitua ```puavo.ers.mode = naksu``` -puavo-confilla.
+- Korjaus: Dualboot-kannettavalla Windows ei välttämättä käynnistynyt, jos laitteessa oli bootin yhteydessä 
+  USB-tikku kiinni. Ongelma on nyt korjattu.
+- Lisäys: Puavo-pkg -asennnukset siivotaan jatkossa laitteilta automaattisesti, jos asennettu paketti ei ole
+  enää puavo-confissa määritelty.
+- Muutos: Kerberoksen toimintaa on muutettu siten, että esimerkiksi Single-Sign-On paikallisen boottipalvelimen Nextcloudiin on jatkossa mahdollista.
 </advanced>
 
 
