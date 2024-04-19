@@ -24,6 +24,38 @@ die neuesten Webbrowser).
 <pre class="markdown">
   <code>
 
+## O2415 - Xanthos {#opinsys-os-opinsys-bullseye-2024-04-10-103243-amd64}
+
+- <advanced title="Hinzufügen: Möglichkeit, PASCO-Messgeräte mit der SparkVUE-Webanwendung zu verwenden">
+    Ab sofort ist es möglich, die PASCO-Physikmessgeräte mit PASCOs neuem browserbasierten SparkVUE zu nutzen
+    Verwendung der Anwendung. Die Anwendung läuft im Chrome-Browser von Google und ist unter zu finden
+    https://sparkvue.pasco.com/ . Je nach Messgerät ist die Nutzung entweder mit Bluetooth oder möglich
+    USB-Anschluss. Die Kompatibilität Ihres Geräts können Sie auf den Produktseiten von PASCO erfahren.
+    </advanced>
+  
+- <advanced title="Änderung: Bluetooth-Nutzung in Webanwendungen (z. B. Vernier, LEGO usw.)">
+   In den Browsern Google Chrome und Chromium ist jetzt standardmäßig die Web-Bluetooth-Funktionalität verfügbar.
+    In der Praxis bedeutet dies, dass beispielsweise Vernier- oder programmierbare Lego SPIKE-Geräte sofort funktionieren
+    mit eigenen Web-Apps (z. B. https://graphicalanalysis.app/). Es sind keine vom Benutzer vorgenommenen Einstellungen mehr erforderlich.
+    </advanced>
+   
+- <advanced title="Änderung: Desktop-Schnelleinstellungsmenü und Desktop-Design">
+    Ein Desktop-Design wurde aktualisiert und somit verfügt das Schnelleinstellungsmenü über eine verbesserte Funktionalität.
+    Jetzt ist die Auswahl von Bluetooth-, WLAN- und Audiogeräten einfacher und kann direkt aus dem Menü erfolgen.
+    </advanced>
+  
+### Bekannte Probleme
+– SSO funktioniert in den Chromium/Chrome-Browsern von Google nicht, wenn ein Browser mit einem bestimmten Benutzernamen verwendet wird
+  zum ersten Mal. Das Problem ist behoben, wenn die Seite erneut aktualisiert wird.
+
+### Technische Änderungen
+<advanced title="Ansicht...">
+- Änderung: Lokale Nextcloud-Funktionalität weiterentwickelt und Korrekturen vorgenommen.
+- Hinzufügen: udev-Regeln hinzugefügt, z.B. Für Lego-, PASCO- und Microbit-USB-Geräte, damit der Benutzer Schreibrechte hat
+ihrer Programmierumgebungen.
+</advanced>
+
+
 ## O2410 - Venetiae {#opinsys-os-opinsys-bullseye-2024-03-05-100921-amd64}
 
   - <advanced title="Erweiterung: Unterstützung für neue puavo-pkg-Anwendungen: Slack und Balona Etcher">
