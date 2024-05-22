@@ -24,6 +24,53 @@
 <pre class="markdown">
   <code>
   
+## O2420 - Fermium (DEVELOPMENT VERSION) {#opinsys-os-opinsys-bookworm-2024-05-16-091413-amd64}
+
+- <advanced title="Add: Support for programming teaching tools: S4A and Python and Javakara">
+These applications can be installed centrally from the organization's device management. 
+After installation, the programs appear in the Programming menu.
+   </advanced>
+  
+- <advanced title="Add: New Voice Recorder app">
+A simple Voice Recorder application has been added to the Audio and Video category.
+   </advanced>
+
+- <advanced title="Addition: Icon theme selection from system settings">
+The desktop icon theme can be selected by selecting Menu > System Settings > Appearance.
+   </advanced>
+
+- <advanced title="Change: Centralized reset of laptops and connecting to network">
+In case Opinsys laptop is set to "Factory reset mode" in the device manager,
+it has a Windows operating system installed and the device is not online, system offers an opportunity
+to connect to the network using the text-based nmtui user interface.
+   </advanced>
+   
+- <advanced title="Fix: Dark/light desktop theme selection">
+In addition to the default light desktop theme, you can choose a dark theme for the desktop
+The behavior of the Dark theme selection has now been fixed, so that now also lower panel menus and
+the application launch menu will follow the selected theme.
+</advanced>
+  
+- <advanced title="Fix: Microsoft Surface Go 3 cameras not working">
+The cameras on Microsoft Surface Go 3 devices have been improved and now work more reliably.
+The only browser currently supporting the cameras is the Firefox. To make this work the device requires
+a separate ```puavo.libcamerify.enabled true'' setting to device management.
+   </advanced>
+  
+- Fix: The Nextcloud Client window does not always open when using the file browser
+
+### Known issues
+
+
+### Technical changes
+<advanced title="View...">
+- Updated iDiD app
+- Removed several little-used apps and unused code.
+- Winemono has been updated, i.e. when starting Windows programs (E.g. TI Nspire) there is no question
+about installing winemono.
+</advanced> 
+  
+  
 ## O2415 - Einsteinium (DEVELOPMENT VERSION) {#opinsys-os-opinsys-bookworm-2024-04-11-120504-amd64}
 
 - <advanced title="Add: Ability to use PASCO measuring devices with SparkVUE web application">

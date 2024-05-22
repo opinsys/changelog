@@ -25,8 +25,55 @@
 <pre class="markdown">
   <code>
 
+## O2420 - Fermium (KEHITYSVERSIO) {#opinsys-os-opinsys-bookworm-2024-05-16-091413-amd64}
 
-## O2415 Einsteinium (KEHITYSVERSIO) {#opinsys-os-opinsys-bookworm-2024-04-11-120504-amd64}
+- <advanced title="Lisäys: Tuki ohjelmoinnin opetustyökaluille: S4A sekä Python- ja Javakara">
+Järjestelmään on lisätty mahdollisuus asentaa keskitetysti käyttöön kouluilta toivotut sovellukset 
+S4A sekä Python- ja Javakara. Ohjelmat tulevat asennuksen jälkeen näkyviin Ohjelmointi-valikkoon.
+  </advanced>
+  
+- <advanced title="Lisäys: Uusi ääninauhuri-sovellus">
+Ääni- ja Video-kategoriaan on lisätty yksinkertainen Ääninauhurisovellus.
+  </advanced>
+
+- <advanced title="Lisäys: Kuvaketeeman valinta järjestelmäasetuksista">
+Työpöydän kuvaketeeman voi valita valitsemalla Menu > Järjestelmä-asetukset > Ulkoasu.
+  </advanced>
+
+- <advanced title="Muutos: Kannettavien keskitetty nollaus ja liittyminen langattomaan verkkoon">
+Mikäli Opinsys-kannettava on asetettu laitehallinnasta "Tehdasasetusten nollaustilaan", 
+siinä on Windows-käyttöjärjestelmä asennettuna ja laite ei ole verkossa, niin sille tarjotaan mahdollisuutta
+liittyä verkkoon tekstipohjaisella nmtui-käyttöliittymällä.  
+  </advanced>
+   
+- <advanced title="Korjaus: Tumman-/vaalean työpöytä teeman valinta">
+Työpöydälle voidaan valita oletuksena olevan vaalean työpöytäteeman lisäksi tumma teema valitsemalla
+Menu > Järjestelmä-asetukset > Ulkoasu. Teeman toimintaa on nyt korjattu, niin että alapaneelin valikot ja
+sovellusten käynnistysvalikko noudattavat valittua teemaa.
+</advanced>
+  
+  
+- <advanced title="Korjaus: Microsoft Surface Go 3 kameroiden toiminta">
+Microsoft Surface Go 3 -laitteiden kameroiden toimintaa on paranneltu ja ne toimivat nyt luotettavammin. 
+Selaimilla käytettäessä kamerat toimivat tällä hetkellä vain Firefox-selaimessa ja laite vaatii erikseen
+```puavo.libcamerify.enabled	true``` -asetuksen laitehallintaan. 
+  </advanced>
+  
+- Korjaus: Nextcloud Client-ikkuna ei jatkossa aukea aina tiedostoselainta käytettäessä
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Päivitetty iDiD-sovellus
+- Poistettu useita vähän käytettyjä sovelluksia ja käyttämätöntä koodia.
+- Winemono on päivitetty eli Windows-ohjelmien käynnsityksen yhteydessä (Esim. TI Nspire) ei tule kysymystä 
+sen asentamisesta. 
+</advanced>
+
+
+## O2415 - Einsteinium (KEHITYSVERSIO) {#opinsys-os-opinsys-bookworm-2024-04-11-120504-amd64}
 
 - <advanced title="Lisäys: Mahdollisuus käyttää PASCO:n mittalaitteita SparkVUE-webbisovelluksella">
   PASCO-fysiikan mittalaitteita on mahdollista käyttää jatkossa PASCO:n uuden selainkäyttöisen SparkVUE
