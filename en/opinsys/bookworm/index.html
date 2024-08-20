@@ -23,6 +23,25 @@
 
 <pre class="markdown">
   <code>
+
+## O2433 - Helium (DEVELOPMENT VERSION) {#opinsys-os-opinsys-bookworm-2024-08-15-110102-amd64}
+
+This update is a routine security update. This update also includes a few underlying technical changes that are not visible in the basic use of the operating system.
+
+### Known issues
+
+
+### Technical changes
+<advanced title="View...">
+- Space usage/file storage of boot server image/rdiff syncs has been optimized in a situation where the disk is full.
+- Device xrandr information now comes to devices from all device types (infotv, test server, stick factory, etc.)
+- On Bookworm boot servers, automatic ACL/schema sync on an organization-specific weekday
+- Addition: ```testipp``` added for troubleshooting printer problems
+- PCIe power saving off by default
+- Enterprise WLAN connection works from the Gnome panel
+
+</advanced>
+
   
 ## O2425 - Germanium (DEVELOPMENT VERSION) {#opinsys-os-opinsys-bookworm-2024-06-17-122936-amd64}
 
@@ -149,6 +168,7 @@ of their programming environments.
 - Addition: Puavo-pkg installations will be automatically cleaned from devices if the installed package is not
    no longer defined with puavo-conf.
 - Change: The operation of Kerberos has been changed so that, for example Single-Sign-On to the Nextcloud on local boot server is now possible.
+- Change: Firefox and Chrome browsers are now updated by more regularly via puavo-pkg. The browsers are still included in the disk image, but if the version available in the upstream puavo-pkg is newer, the system uses it.
 </advanced>
 
 ## O2406 - Cesium - (DEVELOPMENT VERSION) {#opinsys-os-opinsys-bookworm-2024-02-09-112427-amd64}

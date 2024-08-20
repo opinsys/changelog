@@ -23,7 +23,25 @@
 <pre class="markdown">
   <code>
 
-## L2425 - Gahinga {#opinsys-os-lean-bookworm-2024-06-17-122932-amd64}
+## L2433 - Hvannadalshnjúkur  (ENTWICKLUNGSVERSION) {#opinsys-os-lean-bookworm-2024-08-15-105320-amd64}
+
+Bei diesem Update handelt es sich um ein routinemäßiges Sicherheitsupdate. Dieses Update enthält auch einige grundlegende technische Änderungen, die bei der grundlegenden Verwendung des Betriebssystems nicht sichtbar sind.
+
+### Bekannte Probleme
+
+
+### Technische Änderungen
+<advanced title="Ansicht...">
+– Die Speicherplatznutzung/Dateispeicherung von Boot-Server-Images/RDIFF-Synchronisierungen wurde in Situationen optimiert, in denen die Festplatte voll ist.
+- Geräte-Xrandr-Informationen kommen jetzt auf Geräte aller Gerätetypen (infotv, Testserver, Stick Factory usw.)
+– Auf Bookworm-Bootservern automatische ACL-/Schema-Synchronisierung an einem organisationsspezifischen Wochentag
+- Ergänzung: „testipp“ zur Behebung von Druckerproblemen hinzugefügt
+- PCIe-Energiesparmodus standardmäßig deaktiviert
+- Die WLAN-Verbindung für Unternehmen funktioniert über das Gnome-Panel
+
+</advanced>
+
+## L2425 - Gahinga (ENTWICKLUNGSVERSION) {#opinsys-os-lean-bookworm-2024-06-17-122932-amd64}
 
 - <advanced title="Fix: Microsoft Surface Go 3-Kameras funktionieren nicht">
 Auf den MS Surface-Laptops funktionierten die Kameras nicht/waren nicht bei jedem Start verfügbar.
@@ -144,6 +162,7 @@ ihrer Programmierumgebungen.
 - Ergänzung: Puavo-pkg-Installationen werden automatisch von Geräten bereinigt, wenn das installierte Paket nicht installiert ist
     nicht mehr mit puavo-conf definiert.
 - Änderung: Die Funktionsweise von Kerberos wurde geändert, sodass beispielsweise Single-Sign-On zur Nextcloud auf dem lokalen Boot-Server möglich ist.
+- Änderung: Künftig werden auch Firefox- und Chrome-Browser durch das Terminal-Image direkt mit dem vaumo-pkg-System aktualisiert. Die Browser sind weiterhin im Terminal-Image enthalten, aber wenn die im vaumo-pkg verfügbare Version neuer ist, verwendet das System diese.
 </advanced>
   
 ## O2406 – Cesium – (ENTWICKLUNGSVERSION) {#opinsys-os-opinsys-bookworm-2024-02-09-112427-amd64}

@@ -23,6 +23,23 @@
 <pre class="markdown">
   <code>
 
+## O2433 – Helium (ENTWICKLUNGSVERSION) {#opinsys-os-opinsys-bookworm-2024-08-15-110102-amd64}
+
+Bei diesem Update handelt es sich um ein routinemäßiges Sicherheitsupdate. Dieses Update enthält auch einige grundlegende technische Änderungen, die bei der grundlegenden Verwendung des Betriebssystems nicht sichtbar sind.
+
+### Bekannte Probleme
+
+
+### Technische Änderungen
+<advanced title="Ansicht...">
+– Die Speicherplatznutzung/Dateispeicherung von Boot-Server-Images/RDIFF-Synchronisierungen wurde in Situationen optimiert, in denen die Festplatte voll ist.
+- Geräte-Xrandr-Informationen kommen jetzt auf Geräte aller Gerätetypen (infotv, Testserver, Stick Factory usw.)
+– Auf Bookworm-Bootservern automatische ACL-/Schema-Synchronisierung an einem organisationsspezifischen Wochentag
+- Ergänzung: „testipp“ zur Behebung von Druckerproblemen hinzugefügt
+- PCIe-Energiesparmodus standardmäßig deaktiviert
+- Die WLAN-Verbindung für Unternehmen funktioniert über das Gnome-Panel
+</advanced>
+
 ## O2425 - Germanium (ENTWICKLUNGSVERSION) {#opinsys-os-opinsys-bookworm-2024-06-17-122936-amd64}
 
 - <advanced title="Fix: Microsoft Surface Go 3-Kameras funktionieren nicht">
@@ -145,6 +162,7 @@ ihrer Programmierumgebungen.
 - Ergänzung: Puavo-pkg-Installationen werden automatisch von Geräten bereinigt, wenn das installierte Paket nicht installiert ist
     nicht mehr mit puavo-conf definiert.
 - Änderung: Die Funktionsweise von Kerberos wurde geändert, sodass beispielsweise Single-Sign-On zur Nextcloud auf dem lokalen Boot-Server möglich ist.
+- Änderung: Die Browser Firefox und Chrome werden jetzt regelmäßiger über puavo-pkg aktualisiert. Die Browser sind noch immer im Disk-Image enthalten, aber wenn die im Upstream-puavo-pkg verfügbare Version neuer ist, verwendet das System diese.
 </advanced>
   
 ## O2406 – Cesium – (ENTWICKLUNGSVERSION) {#opinsys-os-opinsys-bookworm-2024-02-09-112427-amd64}

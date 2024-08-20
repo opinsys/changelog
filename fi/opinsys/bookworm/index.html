@@ -25,6 +25,26 @@
 <pre class="markdown">
   <code>
   
+## O2433 - Heelium (KEHITYSVERSIO) {#opinsys-os-opinsys-bookworm-2024-08-15-110102-amd64}
+
+Tämä päivitys on rutiini tietoturvapäivitys ja lisäksi mukana on muutamia taustalla olevia teknisiä muutoksia, jotka eivät näy käyttöjärjestelmän peruskäytössä.
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Boottipalvelinten image/rdiff-syncien tilankäyttöä/tiedostojen säilyttämistä on optimoitu tilanteessa jossa levy on täynnä.
+- Laitteen xrandr-tiedot tulevat nyt laiteitoihin kaikilta laitetyypeiltä (infotv, koepalvelin, tikkutehdas, yms.)
+- Bookworm-boottipalvelimilla automaattinen ACL/skeemasynkka organisaatiokohtaisena arkipäivänä
+- Lisäys: ```testipp``` lisätty tulostinongelmien selvittämistä varten
+- PCIe-virransäästö oletuksena pois päältä
+- Enterprise WLAN liittyminen toimii Gnomen paneelista
+
+</advanced>  
+  
+ 
+  
 ## O2425 - Germaanium (KEHITYSVERSIO) {#opinsys-os-opinsys-bookworm-2024-06-17-122936-amd64}
 
 - <advanced title="Korjaus: Microsoft Surface Go 3 -kameroiden toiminta">
@@ -174,6 +194,7 @@ nihin ohjelmointiympäristöistä.
 - Lisäys: Puavo-pkg -asennnukset siivotaan jatkossa laitteilta automaattisesti, jos asennettu paketti ei ole
   enää puavo-confissa määritelty.
 - Muutos: Kerberoksen toimintaa on muutettu siten, että esimerkiksi Single-Sign-On paikallisen boottipalvelimen Nextcloudiin on jatkossa mahdollista.
+- Muutos: Firefox- ja Chrome-selaimet päivittyvät jatkossa myös päätekuvan ohi suoraan puavo-pkg-järjestelmällä. Selaimet ovat edelleen mukana päätekuvassa, mutta jos puavo-pkg:ssä tarjolla oleva versio uudempi niin järjestelmä käyttää sitä.
 </advanced>
 
 
