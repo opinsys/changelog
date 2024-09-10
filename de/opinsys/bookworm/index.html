@@ -22,6 +22,49 @@
 
 <pre class="markdown">
   <code>
+  
+## O2436 - Iriidium {#opinsys-os-opinsys-bookworm-2024-09-03-111255-amd64}
+
+- <advanced title="Fix: Microsoft Teams PWA-Client im Internetmenü">
+Der Teams-Client im Internetmenü der Anwendungsübersicht der Computer hat seit dem Sommer für einige Benutzer nicht richtig funktioniert. Die Anwendung ist im Grunde ein webbasiertes Dienstprogramm, das wie eine eigenständige Anwendung aussieht. Die Einstellungen der Anwendung wurden jetzt aktualisiert und sie funktioniert wieder normal. </advanced>
+
+- <advanced title="Fix: Verschiedene Druckprobleme">
+Es gab mehrere verschiedene Probleme mit dem Drucken, was zu einer unzuverlässigen Druckleistung führte. Die Ursachen dieser Probleme wurden nun identifiziert und die Zuverlässigkeit und Fehlertoleranz des Drucksystems wurden verbessert. </advanced>
+
+- <advanced title="Erweiterung: Möglichkeit, den Abicus-Funktionsrechner zu installieren">
+Abicus ist ein Funktionsrechner, der im Abitti2-Prüfungssystem enthalten ist. Die Anwendung kann nun auf Anfrage separat installiert werden und erscheint zum Beispiel im Menü "Zubehör“. In zukünftigen Updates wird die Anwendung vorinstalliert sein. </advanced>
+
+- <advanced title="Erweiterung: Ketcher Chemiesoftware-Demo">
+Ketcher ist eine Anwendung zur Zeichnung von chemischen Strukturformeln. Die Anwendung ist webbasiert und ein Link zu ihrer Demoversion befindet sich zum Beispiel im Menü "Bildungsprogramme“. </advanced>
+
+- <advanced title="Erweiterung: Draw.io Zeichenprogramm">
+Draw.io ist ein Vektorgrafikprogramm, das im Abitti2-Prüfungssystem enthalten ist. Die Anwendung kann jetzt auf Anfrage separat installiert werden und erscheint im Menü "Grafik“. In zukünftigen Updates wird die Anwendung vorinstalliert sein. 
+</advanced>
+
+- Erweiterung: Möglichkeit, die Metacom-Symbolschriftanwendung zu installieren
+
+- Erweiterung: Möglichkeit, die Greenfoot-Programmierumgebung zu installieren
+
+### Bekannte Probleme
+
+### Technische Änderungen
+<advanced title="Anzeigen..."> 
+- Hinzufügung: Neue puavo-conf-Variablen wurden dem System hinzugefügt, um Druckprobleme zu untersuchen und die Protokollierung der Komponenten des CUPS-Drucksystems zu erweitern: ```puavo.printing.debug.cups``` und ```puavo.printing.debug.cups-browsed```. 
+- Änderung: Das Einstellen der Computeruhr über NTP-Dienste funktioniert jetzt zuverlässiger, und eine falsche Uhrzeit verhindert in bestimmten Situationen nicht mehr die Installation eines neuen Geräts. 
+</advanced>
+
+## O2432 – Condate {#opinsys-os-opinsys-bullseye-2024-08-07-101450-amd64}
+
+Dieses Update ist ein routinemäßiges Sicherheitsupdate. Dieses Update enthält auch einige grundlegende technische Änderungen, die bei der grundlegenden Verwendung des Betriebssystems nicht sichtbar sind.
+
+### Bekannte Probleme
+
+### Technische Änderungen
+<advanced title="View...">
+- Die Speicherplatznutzung/Dateispeicherung von Bootserver-Image/Rdiff-Synchronisierungen wurde in einer Situation optimiert, in der die Festplatte voll ist.
+- Geräte-Xrandr-Informationen kommen jetzt von allen Gerätetypen (Infotv, Testserver, Stick Factory usw.) zu Geräten
+</advanced>
+
 
 ## O2433 – Helium (ENTWICKLUNGSVERSION) {#opinsys-os-opinsys-bookworm-2024-08-15-110102-amd64}
 

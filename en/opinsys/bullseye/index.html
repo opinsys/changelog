@@ -24,6 +24,34 @@
 <pre class="markdown">
   <code>
 
+## O2436 - Dubris {#opinsys-os-opinsys-bullseye-2024-09-03-053532-amd64}
+
+- <advanced title="Fix: Microsoft Teams PWA client in the Internet menu">
+The preinstalled Teams client in the Internet category of the application menu has not worked properly for all users since the summer. The application is essentially a web service running in the browser but appears as an independent application. The application settings have now been updated, and it is functioning normally. </advanced>
+
+- <advanced title="Fix: Miscellaneous printing issues">
+There have been several different issues with printing, resulting in unreliable printing. The root causes of these problems have now been identified, and the reliability and fault tolerance of the printing system have been improved. </advanced>
+
+- <advanced title="Add: Ability to install the Abicus function calculator (Abitti 2)">
+Abicus is a function calculator included in the Abitti2 exam system. The application can now be installed separately upon request and will appear in, for example, the Accessories and Abitti2 menus in the application menu. In future updates, the application will come pre-installed in the system. </advanced>
+
+- <advanced title="Add: Ketcher chemistry software demo (Abitti 2)">
+Ketcher is a chemical structure drawing application included in the Abitti2 exam system. The application is browser-based, and a link to its demo version can be found in, for example, the Education Software and Abitti2 menus in the application menu. </advanced>
+
+- <advanced title="Add: Draw.io drawing software (Abitti 2)">
+Draw.io is a vector graphics application included in the Abitti2 exam system. The application can now be installed separately upon request and will appear in, for example, the Graphics and Abitti2 menus in the application menu. In future updates, the application will come pre-installed in the system. </advanced>
+
+- Add: Ability to install the Metacom symbol writing application
+
+- Add: Ability to install the Greenfoot programming environment
+
+### Known Issues
+
+### Technical Changes
+<advanced title="Show..."> 
+- Add: New puavo-conf variables have been added to the system for investigating printing issues, to increase logging of the components of the CUPS printing system: ```puavo.printing.debug.cups``` and ```puavo.printing.debug.cups-browsed```. 
+ </advanced>
+
 ## O2432 - Condate {#opinsys-os-opinsys-bullseye-2024-08-07-101450-amd64}
 
 This update is a routine security update. This update also includes a few underlying technical changes that are not visible in the basic use of the operating system.

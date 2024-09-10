@@ -24,6 +24,54 @@
 
 <pre class="markdown">
   <code>
+  
+## L2436 - Delacroix {#opinsys-os-lean-bullseye-2024-09-03-053255-amd64}
+
+- <advanced title="Korjaus: Internet-valikon Microsoft Teams PWA-client">
+Tietokoneiden sovellusvalikon Internet-kategoriassa oleva Teams client ei 
+kesän jälkeen ole toiminut oikein kaikille käyttäjille. Sovellus on käytännössä
+selaimella toimiva verkkopalvelu, joka näyttää itsenäiseltä sovellukselta.
+Sovelluksen asetuksia on nyt päivitetty ja se toimii normaalisti.
+</advanced>
+
+- <advanced title="Korjaus: Sekalaiset tulostusongelmat">
+Tulostuksessa on esiintynyt useita erilaisia ongelmia, jotka ovat tulostamisen epäluotettavuutena. 
+Ongelmien syltä on nyt selvitetty ja tulostusjärjestelmän luotettavuutta ja vikasietoisuutta 
+on parannettu.
+</advanced>
+
+- <advanced title="Lisäys: Mahdollisuus asentaa Abicus-funktiolaskin (Abitti 2)">
+Abicus on Abitti2-koejärjestelmässä mukana oleva funktiolaskin. Sovellus on nyt asennettavissa
+erikseen pyydettäessä järjestelmään ja se tulee näkyviin mm. sovellusvalikon Apuohjelmat ja 
+Abitti2 -valikoihin. Tulevissa päivityksissä sovellus tulee järjestelmään valmiiksi asennettuna.
+</advanced>
+
+- <advanced title="Lisäys: Ketcher -kemiaohjelmiston demo (Abitti 2)">
+Ketcher on Abitti2-koejärjestelmässä mukana oleva kemian rakennekaavojen piirtosovellus. 
+Sovellus on verkkoselainkäyttöinen ja linkki sen demoversioon löytyy mm. sovellusvalikon 
+Opetusohjelmat ja Abitti2 -valikoihin.
+</advanced>
+
+- <advanced title="Lisäys: Draw.io -piirto-ohjelma (Abitti 2)">
+Draw.io on Abitti2-koejärjestelmässä mukana oleva vektorigrafiikkasovellus. Sovellus on nyt asennettavissa
+erikseen pyydettäessä järjestelmään ja se tulee näkyviin mm. sovellusvalikon Grafiikka ja 
+Abitti2 -valikoihin. Tulevissa päivityksissä sovellus tulee järjestelmään valmiiksi asennettuna.
+</advanced>
+
+- Lisäys: Mahdollisuus asentaa Metacom symbolikirjoitussovellus
+
+- Lisäys: Mahdollisuus asentaa Greenfoot-ohjelmointiympäristö
+
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Lisäys: Tulostusongelmien tutkimista varten järjestelmään on lisätty uudet puavo-conf-muuttujat
+CUPS-tulostusjärjestelmän komponenttien lokituksen lisäämiseksi.
+```puavo.printing.debug.cups``` sekä ```puavo.printing.debug.cups-browsed```.
+</advanced>  
 
 ## L2432 - Chagall {#opinsys-os-lean-bullseye-2024-08-07-101502-amd64}
 
