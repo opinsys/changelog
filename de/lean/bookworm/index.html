@@ -25,10 +25,10 @@
 
 ## L2440 - Jatunhuma {#opinsys-os-lean-bookworm-2024-10-01-062847-amd64.img}
 
-- <advanced title="Ergänzung: Abicus und Draw.io sind jetzt auf allen Geräten vorinstalliert">
+- <advanced title="Erweiterung: Abicus und Draw.io sind jetzt auf allen Geräten vorinstalliert">
 Der Abicus-Taschenrechner und die Draw.io-Anwendung sind jetzt direkt enthalten und können beispielsweise im Abitti-Anwendungsmenü gefunden werden.
 </advanced>
-- <advanced title="Änderung: Verhindern des Windows-Starts auf Dual-Boot-Computern">
+- <advanced title="Fix: Verhindern des Windows-Starts auf Dual-Boot-Computern">
 Wenn Windows über die Geräteverwaltung der Organisation ausgeblendet wurde, ist das Booten in Windows auf Dual-Boot-Computern zukünftig nicht mehr einfach möglich.
 </advanced>
 
@@ -43,31 +43,34 @@ Wenn Windows über die Geräteverwaltung der Organisation ausgeblendet wurde, is
 
 ## L2436 - Istor-o-Nal (ENTWICKLUNGSVERSION) {#opinsys-os-lean-bookworm-2024-09-03-111253-amd64}
 
-- <advanced title="Fix: Microsoft Teams PWA client in the Internet menu">
-The preinstalled Teams client in the Internet category of the application menu has not worked properly for all users since the summer. The application is essentially a web service running in the browser but appears as an independent application. The application settings have now been updated, and it is functioning normally. </advanced>
+- <advanced title="Fix: Microsoft Teams PWA-Client im Internetmenü">
+Der Teams-Client im Internetmenü der Anwendungsübersicht der Computer hat seit dem Sommer für einige Benutzer nicht richtig funktioniert. Die Anwendung ist im Grunde ein webbasiertes Dienstprogramm, das wie eine eigenständige Anwendung aussieht. Die Einstellungen der Anwendung wurden jetzt aktualisiert und sie funktioniert wieder normal. </advanced>
 
-- <advanced title="Fix: Miscellaneous printing issues">
-There have been several different issues with printing, resulting in unreliable printing. The root causes of these problems have now been identified, and the reliability and fault tolerance of the printing system have been improved. </advanced>
+- <advanced title="Fix: Verschiedene Druckprobleme">
+Es gab mehrere verschiedene Probleme mit dem Drucken, was zu einer unzuverlässigen Druckleistung führte. Die Ursachen dieser Probleme wurden nun identifiziert und die Zuverlässigkeit und Fehlertoleranz des Drucksystems wurden verbessert. </advanced>
 
-- <advanced title="Add: Ability to install the Abicus function calculator (Abitti 2)">
-Abicus is a function calculator included in the Abitti2 exam system. The application can now be installed separately upon request and will appear in, for example, the Accessories and Abitti2 menus in the application menu. In future updates, the application will come pre-installed in the system. </advanced>
+- <advanced title="Erweiterung: Möglichkeit, den Abicus-Funktionsrechner zu installieren">
+Abicus ist ein Funktionsrechner, der im Abitti2-Prüfungssystem enthalten ist. Die Anwendung kann nun auf Anfrage separat installiert werden und erscheint zum Beispiel im Menü "Zubehör“. In zukünftigen Updates wird die Anwendung vorinstalliert sein. </advanced>
 
-- <advanced title="Add: Ketcher chemistry software demo (Abitti 2)">
-Ketcher is a chemical structure drawing application included in the Abitti2 exam system. The application is browser-based, and a link to its demo version can be found in, for example, the Education Software and Abitti2 menus in the application menu. </advanced>
+- <advanced title="Erweiterung: Ketcher Chemiesoftware-Demo">
+Ketcher ist eine Anwendung zur Zeichnung von chemischen Strukturformeln. Die Anwendung ist webbasiert und ein Link zu ihrer Demoversion befindet sich zum Beispiel im Menü "Bildungsprogramme“. </advanced>
 
-- <advanced title="Add: Draw.io drawing software (Abitti 2)">
-Draw.io is a vector graphics application included in the Abitti2 exam system. The application can now be installed separately upon request and will appear in, for example, the Graphics and Abitti2 menus in the application menu. In future updates, the application will come pre-installed in the system. </advanced>
+- <advanced title="Erweiterung: Draw.io Zeichenprogramm">
+Draw.io ist ein Vektorgrafikprogramm, das im Abitti2-Prüfungssystem enthalten ist. Die Anwendung kann jetzt auf Anfrage separat installiert werden und erscheint im Menü "Grafik“. In zukünftigen Updates wird die Anwendung vorinstalliert sein. 
+</advanced>
 
-- Add: Ability to install the Metacom symbol writing application
+- Erweiterung: Möglichkeit, die Metacom-Symbolschriftanwendung zu installieren
 
-- Add: Ability to install the Greenfoot programming environment
+- Erweiterung: Möglichkeit, die Greenfoot-Programmierumgebung zu installieren
 
-### Known Issues
+### Bekannte Probleme
 
-### Technical Changes
-<advanced title="Show..."> 
-- Add: New puavo-conf variables have been added to the system for investigating printing issues, to increase logging of the components of the CUPS printing system: ```puavo.printing.debug.cups``` and ```puavo.printing.debug.cups-browsed```. 
-- Change: Setting the computer's clock via NTP services now works more reliably, and an incorrect clock time will no longer prevent the installation of a new device in certain situations. </advanced>
+### Technische Änderungen
+<advanced title="Anzeigen..."> 
+- Hinzufügung: Neue puavo-conf-Variablen wurden dem System hinzugefügt, um Druckprobleme zu untersuchen und die Protokollierung der Komponenten des CUPS-Drucksystems zu erweitern: ```puavo.printing.debug.cups``` und ```puavo.printing.debug.cups-browsed```. 
+- Änderung: Das Einstellen der Computeruhr über NTP-Dienste funktioniert jetzt zuverlässiger, und eine falsche Uhrzeit verhindert in bestimmten Situationen nicht mehr die Installation eines neuen Geräts. 
+</advanced>
+
 
 ## L2432 - Chagall {#opinsys-os-lean-bullseye-2024-08-07-101502-amd64}
 
