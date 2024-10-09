@@ -23,6 +23,25 @@
 
 <pre class="markdown">
   <code>
+  
+## O2440 - Jood {#opinsys-os-opinsys-bookworm-2024-10-01-062853-amd64}
+
+- <advanced title="Addition: New Abitti 2 applications are now pre-installed on all devices">
+The Abicus calculator and the Draw.io application are now directly included and can be found, for example, in the Abitti applications menu.
+</advanced>
+- <advanced title="Change: Blocking Windows boot on dual-boot machines">
+If Windows has been hidden through the organization's device management, booting into Windows on dual-boot machines will no longer be easily possible.
+</advanced>
+
+### Known issues
+
+### Technical changes	
+<advanced title="Show...">
+- Added: First test version of the exam environment targetted primarely for Abitti 2 exams. The exam environment can be enabled on the device using a special setting (```puavo.exammode.enabled```). After this, the prototype of the exam environment can be tested by starting the exam mode via the Exam Mode button found in the desktop application menu. Upon entering the exam mode, a URL for the exam location is requested.
+- Addition: The Puavo-pkg application has been added for Greenfoot to the launcher menu.
+- Addition: The zbarcam barcode reader application has been added to the image for testing purposes, but it is not yet found in the menus.
+- Change: The TSO feature is now disabled by default on exam servers using I219 network cards. The change is intended to improve the performance of the network cards. This change is also the setting used on YTL's Linux exam servers.
+</advanced>
 
 ## O2436 - Iriidium (DEVELOPMENT VERSION) {#opinsys-os-opinsys-bookworm-2024-09-03-111255-amd64}
 

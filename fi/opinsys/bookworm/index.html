@@ -24,6 +24,32 @@
 
 <pre class="markdown">
   <code>
+  
+## O2440 - Jood {#opinsys-os-opinsys-bookworm-2024-10-01-062853-amd64}
+
+- <advanced title="Lisäys: Uudet Abitti 2 -sovellukset löytyvät nyt esiasennettuna kaikista laitteista">
+Abicus-laskin sekä Draw.io -sovellukset ovat nyt suoraaan mukana ja löytyvät esimerkiksi Abitti-sovellukset valikosta.
+</advanced>
+- <advanced title="Muutos: Windowsin käynnistyksen estäminen dualbootkoneilla">
+Mikäli Windows on asetettu organisaation laitehallinnasta piilotetuksi niin dualboot-koneilla siihen käynnistäminen ei ole jatkossa helposti mahdollista.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Lisätty: Ensimmäinen testiversio Abitti 2-koetilasta. Koetila on kytkettävissä laitteelle käytettäväksi erityisellä
+asetuksella (
+puavo.exammode.enabled
+). Tämän jälkeen koetilan prototyyppiä voidaan testata työpöydän sovellusvalikosta
+löytyvät Koemoodi -painikkeen kautta käynnistyvästä koetilasta. Koetilaan liityttäessä pyydetään syöttämään URL-osoite jossa
+koe sijaitsee.
+- Lisäys: Lisätty Puavo-pkg -sovellus Greenfoot:lle käynnistin menuun.
+- Lisäys: zbarcam -viivakoodien lukusovellus lisätty kuvaan testikäyttöä varten, mutta ei löydy vielä valikoista.
+- Muutos: I219-verkkokortteja käyttäviltä koepalvelimilta kytketään oletuksena ns. TSO-ominaisuus pois.
+Muutoksen on tarkoitus parantaa verkkokorttien toimivuutta. Muutos on myös YTL:n Linux-koepalvelimilla
+käytetty asetus.
+</advanced>
 
 ## O2436 - Iriidium (KEHITYSVERSIO) {#opinsys-os-opinsys-bookworm-2024-09-03-111255-amd64}
 
