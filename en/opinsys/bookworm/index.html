@@ -24,6 +24,40 @@
 <pre class="markdown">
   <code>
 
+## O2504 - Meitneerium {#opinsys-os-opinsys-bookworm-2025-01-23-085317-amd64}
+
+- <advanced title="Addition: Option to install the Lazarus IDE for Pascal programming.">
+The Lazarus programming environment can be installed as an additional application 
+(puavo-pkg) on the devices in the system. The software package includes the latest 
+available version.
+</advanced>
+
+- <advanced title="Change: Cura, Lazarus, Celestia, and Mandelbulber removed from default applications">
+These applications have been removed from the system's default installation. 
+The purpose of this change is to reduce unnecessary disk space usage by removing 
+rarely used applications. The applications can still be made available by requesting 
+their installation through support services.
+</advanced>
+
+- <advanced title="Change: Option to use the centrally installed Naksu application">
+The Naksu application can now be used as a centrally installed application, for example, 
+directly from the teacher's workstation desktop.
+</advanced>
+
+### Known Issues
+
+### Technical Changes	
+<advanced title="Show...">
+- Addition: Added support for the Nextcloud Talk client.
+- Addition: The `puavo.admin.autoreboot.enabled` puavo-conf enables automatic 
+nightly reboots for devices.
+- Addition: The package ```ncdu``` has been added for admin use.
+- Update: VirtualBox updated to version 7.0.20.
+- Change: Automatic reboot functionality has been added for the USB stick factory, 
+Abitti exam servers, and InfoTV displays. These device profiles will now have automatic nightly 
+reboots enabled by default.
+</advanced>
+
 ## O2449 - Lavrentsium {#opinsys-os-opinsys-bookworm-2024-12-05-090135-amd64}
 
 - Update: Musescore updated to version 4.4.3.

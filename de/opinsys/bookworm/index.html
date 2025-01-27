@@ -23,6 +23,37 @@
 <pre class="markdown">
   <code>
 
+## O2504 - Meitneerium {#opinsys-os-opinsys-bookworm-2025-01-23-085317-amd64}
+
+- <advanced title="Erweiterung: Möglichkeit zur Installation der Lazarus-IDE für Pascal-Programmierung.">
+Die Lazarus-Programmierumgebung kann als zusätzliche Anwendung (puavo-pkg) auf den Geräten 
+im System installiert werden. Das Softwarepaket enthält die neueste verfügbare Version.
+</advanced>
+
+- <advanced title="Änderung: Cura, Lazarus, Celestia und Mandelbulber aus den Standardanwendungen entfernt">
+Diese Anwendungen wurden aus der Standardinstallation des Systems entfernt. Ziel dieser 
+Änderung ist es, unnötigen Speicherplatzverbrauch zu reduzieren, indem selten genutzte Anwendungen entfernt 
+werden. Die Anwendungen können weiterhin auf Anfrage über den Support installiert werden.
+</advanced>
+
+- <advanced title="Änderung: Möglichkeit zur Nutzung der zentral installierten Naksu-Anwendung">
+Die Naksu-Anwendung kann nun zentral installiert genutzt werden, z. B. direkt vom Desktop 
+des Lehrerarbeitsplatzes.
+</advanced>
+
+### Bekannte Probleme
+
+### Technische Änderungen	
+<advanced title="Anzeigen...">
+- Erweiterung: Unterstützung für den Nextcloud Talk-Client hinzugefügt.
+- Erweiterung: Die `puavo.admin.autoreboot.enabled` puavo-conf ermöglicht automatische 
+nächtliche Neustarts für Geräte.
+- Erweiterung: Das Paket ```ncdu``` wurde für die Admin-Nutzung hinzugefügt.
+- Aktualisierung: VirtualBox wurde auf Version 7.0.20 aktualisiert.
+- Änderung: Automatische Neustarts wurden für die USB-Stick-Fabrik, Abitti-Prüfungsserver 
+und InfoTV-Displays hinzugefügt. Diese Geräteprofile haben nun standardmäßig automatische nächtliche Neustarts aktiviert.
+</advanced> 
+
 ## O2449 - Lavrentsium {#opinsys-os-opinsys-bookworm-2024-12-05-090135-amd64}
 
 - Aktualisierung: Musescore wurde auf Version 4.4.3 aktualisiert.
@@ -62,7 +93,7 @@ Die native Spotify-Linux-Anwendung wird standardmäßig nicht mehr im System ins
 - Änderung: Der Inhalt des Browsers im Prüfungsmodus kann jetzt mit den Tasten F5 und Strg+R aktualisiert werden.
 - Änderung: Die Fehlermeldungen und die Ansicht zum Beitritt in den Prüfungsmodus wurden verbessert.
 - Änderung: Das Symbol im Prüfungsmodus wurde angepasst, sodass es dem auf dem Desktop im Prüfungsmodus verwendeten entspricht.
-- Fehlerbehebung: Die Funktionalität im Prüfungsmodus wurde verbessert, um die Kompatibilität mit der Abitti 2-Oberfläche zu optimieren.
+- Fix: Die Funktionalität im Prüfungsmodus wurde verbessert, um die Kompatibilität mit der Abitti 2-Oberfläche zu optimieren.
 </advanced>
 
 ## O2440 - Jood {#opinsys-os-opinsys-bookworm-2024-10-01-062853-amd64}
