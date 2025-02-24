@@ -22,6 +22,36 @@
 
 <pre class="markdown">
   <code>
+  
+## L2508 - Nyiragongo {#opinsys-os-lean-bookworm-2025-02-21-071835-amd64}
+
+- <advanced title="Fix: Dia-Anwendung in das Büroanwendungsmenü zurückgeführt">
+Aufgrund eines Konfigurationsfehlers war das Programm nach dem Hauptversionsupdate nicht im Anwendungsmenü sichtbar.  
+Das Problem wurde nun behoben.
+</advanced>
+
+- <advanced title="Fix: Start des Gnome-Taschenrechners">
+Die Währungsumrechnungsfunktion der Taschenrechner-Anwendung konnte verhindern, dass die Anwendung vollständig startet. Wir haben die Währungsumrechnung im Gnome-Taschenrechner nun standardmäßig deaktiviert, damit sie im Fehlerfall die Nutzung der Anwendung nicht behindert.
+</advanced>
+
+- <advanced title="Änderung: Der Prüfungsserver öffnet das Prüfungsnetz erst, wenn alle geplanten Prüfungen gestartet wurden">
+Zukünftig erlaubt der Prüfungsserver den Zugang der Studierenden zum Prüfungsnetz erst, wenn alle Prüfungen des Prüfungspakets erfolgreich gestartet wurden.
+</advanced>
+
+- <advanced title="Änderung: Entfernung der Sudo-Rechte standardmäßig für die primären Benutzer der Geräte">
+Zukünftig erhält der primäre Benutzer nicht automatisch Sudo-Rechte auf dem Gerät. Diese Einstellung kann über die Gerätemanagement-Einstellungen geändert werden. Dieses Update bereitet die zukünftige Änderung vor, und die tatsächliche Standardeinstellung wird im nächsten Update geändert.
+</advanced>
+
+### Bekannte Probleme
+
+### Technische Änderungen	
+<advanced title="Anzeigen...">
+- Erweiterung: Unterstützung für die Inuvika-Anwendungsvirtualisierung.
+- Erweiterung: Symbol im Menü für die Kdenlive Puavo-Pkg-Version (AppImage).
+- Fix: Der Start von dnsmasq auf dem Boot-Server wird beim Neustart sichergestellt.
+- Fix: In einigen Fällen geriet der Desktop des ERS-Prüfungsservers in einen Fehlerzustand, in dem der Opinsys-Desktop durch den Standard-Gnome-Desktop ersetzt wurde. Dieses Problem wurde behoben.
+</advanced>
+
 
 ## L2504 - Manaslu {#opinsys-os-lean-bookworm-2025-01-23-085408-amd64}
 

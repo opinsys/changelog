@@ -24,6 +24,41 @@
 
 <pre class="markdown">
   <code>
+
+## L2508 - Nyiragongo {#opinsys-os-lean-bookworm-2025-02-21-071835-amd64}
+
+- <advanced title="Korjaus: Palautettu Toimisto-sovellukset valikkoon Dia-sovellus">
+Ohjelma ei asetusvirheen takia ollut näkyvissä SOVELLUSvalikossa pääversion päivityksen jälkeen.
+Ongelma on nyt korjattu.
+</advanced>
+
+- <advanced title="Korjaus: Gnome-laskimen käynnistyminen">
+Laskinsovelluksen valuuttamuunnintoiminnallisuus saattoi aiheuttaa sen, että koko sovellus
+ei välttämättä aina käynnistynyt. Valuutanmuunnostoiminnallisuus on nyt Gnome-laskimesta
+kytketty oletuksena pois päältä, jotta se ei vikatilanteessa estäisi sovelluksen käyttöä.
+</advanced>
+
+- <advanced title="Muutos: Koepalvelin avaa koeverkon vasta kun kaikki aikataulutetut kokeet on käynnistetty">
+Jatkossa koepalvelin sallii opiskelijoiden pääsyn koeverkkoon vasta, kun koepalvelin on onnistuneesti
+saanut käynnistettyä kaikki koepaketin kokeet.
+</advanced>
+
+- <advanced title="Muutos: Sudo-oikeuksien poistaminen oletuksena laitteiden ensisijaisilta käyttäjiltä">
+Jatkossa ensisijainen käyttäjä ei saa laitteeseen automaattisesti sudo-oikeuksia. Ominaisuttaa on mahdollista
+muuttaa laitehallinnan asetusten kautta. Tämä päivitys pohjustaa tulevaa muutosta ja varsinainen oletusasetus
+vaihtuu seuraavassa päivityksessä.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Lisäys: Tuki Inuvika-sovellusvirtualisointia varten.
+- Lisäys: Kuvake menuun Kdenliven Puavo-pkg-versiolle (appimage).
+- Korjaus: Boottipalvelimen dsnmasq-käynnistyminen varmistetaan rebootin yhteydessä.
+- Korjaus: Joissakin tapauksissa ERS-koepalvelimen työpöytä on menny vikatilaan, jossa
+Opinsys-työpöytä on korvautunut vakio-Gnome-työpöydällä. Tämä ongelma on korjattu.
+</advanced> 
   
 ## L2504 - Manaslu {#opinsys-os-lean-bookworm-2025-01-23-085408-amd64}
 

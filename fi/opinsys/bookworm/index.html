@@ -25,6 +25,44 @@
 <pre class="markdown">
   <code>
 
+
+## O2508 - Neptuunium {#opinsys-os-opinsys-bookworm-2025-02-21-071828-amd64}
+
+- <advanced title="Korjaus: Palautettu Toimisto-sovellukset valikkoon Dia-sovellus">
+Ohjelma ei asetusvirheen takia ollut näkyvissä SOVELLUSvalikossa pääversion päivityksen jälkeen.
+Ongelma on nyt korjattu.
+</advanced>
+
+- <advanced title="Korjaus: Gnome-laskimen käynnistyminen">
+Laskinsovelluksen valuuttamuunnintoiminnallisuus saattoi aiheuttaa sen, että koko sovellus
+ei välttämättä aina käynnistynyt. Valuutanmuunnostoiminnallisuus on nyt Gnome-laskimesta
+kytketty oletuksena pois päältä, jotta se ei vikatilanteessa estäisi sovelluksen käyttöä.
+</advanced>
+
+- <advanced title="Muutos: Koepalvelin avaa koeverkon vasta kun kaikki aikataulutetut kokeet on käynnistetty">
+Jatkossa koepalvelin sallii opiskelijoiden pääsyn koeverkkoon vasta, kun koepalvelin on onnistuneesti
+saanut käynnistettyä kaikki koepaketin kokeet.
+</advanced>
+
+- <advanced title="Muutos: Sudo-oikeuksien poistaminen oletuksena laitteiden ensisijaisilta käyttäjiltä">
+Jatkossa ensisijainen käyttäjä ei saa laitteeseen automaattisesti sudo-oikeuksia. Ominaisuttaa on mahdollista
+muuttaa laitehallinnan asetusten kautta. Tämä päivitys pohjustaa tulevaa muutosta ja varsinainen oletusasetus
+vaihtuu seuraavassa päivityksessä.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Lisäys: Tuki Inuvika-sovellusvirtualisointia varten.
+- Lisäys: Kuvake menuun Kdenliven Puavo-pkg-versiolle (appimage).
+- Korjaus: Boottipalvelimen dsnmasq-käynnistyminen varmistetaan rebootin yhteydessä.
+- Korjaus: Joissakin tapauksissa ERS-koepalvelimen työpöytä on menny vikatilaan, jossa
+Opinsys-työpöytä on korvautunut vakio-Gnome-työpöydällä. Tämä ongelma on korjattu.
+</advanced> 
+
+
+
 ## O2504 - Meitneerium {#opinsys-os-opinsys-bookworm-2025-01-23-085317-amd64}
 
 - <advanced title="Korjaus: Chrome-selain kysyy oletusavainnipun salasanaa käynnistyksen yhteydessä">

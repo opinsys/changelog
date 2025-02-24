@@ -24,6 +24,35 @@
 <pre class="markdown">
   <code>
 
+## O2508 - Neptuunium {#opinsys-os-opinsys-bookworm-2025-02-21-071828-amd64}
+
+- <advanced title="Fix: Dia application restored to the Office Applications menu">
+Due to a configuration error, the program was not visible in the application menu after latest the major version update.  
+The issue has now been fixed.
+</advanced>
+
+- <advanced title="Fix: Gnome Calculator Startup">
+The currency conversion functionality of the calculator application could have prevented the entire application from starting. We have now disabled the currency conversion functionality by default in the Gnome Calculator, so that it does not prevent the application from running.
+</advanced>
+
+- <advanced title="Change: The exam server opens the exam network only after all scheduled exams have been started">
+From now on, the exam server will allow students access to the exam network only after it has successfully launched all the exams in the exam package.
+</advanced>
+
+- <advanced title="Change: Removal of sudo privileges by default from primary users of devices">
+From now on, the primary user will not automatically receive sudo privileges on the device. This setting can be changed via the device management settings. This update lays the groundwork for the upcoming change, and the actual default setting will be modified in the next update.
+</advanced>
+
+### Known Issues
+
+### Technical Changes	
+<advanced title="Show...">
+- Addition: Support for Inuvika application virtualization service.
+- Addition: Added an icon to the menu for the Kdenlive Puavo-pkg version (AppImage).
+- Fix: The boot server’s dnsmasq startup is ensured during reboot.
+- Fix: In some cases, the desktop of the ERS exam server entered a failure state, resulting in the Opinsys desktop being replaced by the standard Gnome desktop. This issue has been fixed.
+</advanced>
+
 ## O2504 - Meitneerium {#opinsys-os-opinsys-bookworm-2025-01-23-085317-amd64}
 
 - <advanced title="Fix: Chrome browser prompts for the default keyring password on startup">
