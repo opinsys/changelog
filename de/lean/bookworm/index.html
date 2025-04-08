@@ -23,6 +23,38 @@
 <pre class="markdown">
   <code>
   
+## L2513 - Ortler {#opinsys-os-lean-bookworm-2025-03-28-083543-amd64}
+
+- <advanced title="Fix: Freecad-Anwendung wieder im Menü verfügbar">
+Die Anwendung war nach einem größeren Versionsupdate aufgrund eines Konfigurationsfehlers nicht im Anwendungsmenü sichtbar. Das Problem wurde behoben.
+</advanced>
+
+- <advanced title="Fix: Schaltflächen für Barrierefreiheitsfunktionen">
+Bei aktivierter Barrierefreiheit waren die Ein-/Aus-Schaltflächen für einzelne Funktionen nicht im Menü der unteren Leiste sichtbar. Das Problem wurde behoben.
+</advanced>
+
+- Thonny-Programmierwerkzeug zum Anwendungsmenü hinzugefügt
+
+- <advanced title="Erweiterung: Unterstützung für die Anwendung SonoBus hinzugefügt">
+Die Anwendung kann über das *puavo-pkg*-Installationsprogramm in der Geräteverwaltung installiert werden.
+</advanced>
+
+- <advanced title="Änderung: Standardmäßiger Entzug von Sudo-Rechten für Hauptbenutzer">
+Künftig erhält der Hauptbenutzer eines persönlichen Geräts nicht mehr automatisch Sudo-Rechte im Betriebssystem. Der Benutzer kann jedoch weiterhin Netzwerkeinstellungen verwalten und das Gerät zurücksetzen. Ein Administrator der Organisation kann die Rechte in den Einstellungen der Geräteverwaltung anpassen.
+</advanced>
+
+### Bekannte Probleme
+
+
+### Technische Änderungen
+<advanced title="Anzeigen...">
+- Erweiterung: Paket `scdaemon`
+- Fix: Das Benutzerregistrierungs-Tool (für Schul-Laptops) verhindert nun Benutzernamen, die mit einem Punkt (.) enden.
+- Fix: Nicht funktionierende Screencast-Schaltfläche aus dem integrierten Screenshot-Tool der Gnome-Oberfläche entfernt.
+- Fix: Größenänderung von LVM-Partitionen während eines `restoredisk`-Laufs deaktiviert.
+- Erweiterung: `zsh`-Shell
+</advanced>  
+
 ## L2508 - Nyiragongo {#opinsys-os-lean-bookworm-2025-02-21-071835-amd64}
 
 - <advanced title="Fix: Dia-Anwendung in das Büroanwendungsmenü zurückgeführt">

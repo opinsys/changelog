@@ -23,6 +23,39 @@
 
 <pre class="markdown">
   <code>
+  
+## O2513 - Osmium {#opinsys-os-opinsys-bookworm-2025-03-28-083546-amd64}
+
+- <advanced title="Fix: Freecad application restored to the menu">
+The application was not visible in the application menu after a major version upgrade due to a configuration error. This issue has now been fixed.
+</advanced>
+
+- <advanced title="Fix: Accessibility toggle buttons">
+When accessibility features were enabled, the toggle buttons for individual functions were not visible in the menu on the bottom panel of the desktop. This issue has now been fixed.
+</advanced>
+
+- Thonny programming tool added to the application menu
+
+- <advanced title="Addition: Support for SonoBus application added">
+The application is available via the *puavo-pkg* installer in device management.
+</advanced>
+
+- <advanced title="Change: Default removal of sudo rights from primary users">
+From now on, the primary user of a personal device will no longer automatically have sudo rights to the operating system. However, the user can still manage network settings and wipe the device to restore factory settings. An organization administrator can adjust these rights in device management settings.
+</advanced>
+
+### Known issues
+
+
+### Technical changes
+<advanced title="Show...">
+- Addition: `scdaemon` package
+- Fix: The username registration tool (for high school laptops) now prevents usernames from ending with a dot (.).
+- Fix: Non-functional Screencast button removed from the Gnome desktop’s built-in screenshot tool.
+- Fix: Resizing LVM partitions is now disabled during `restoredisk` runs.
+- Addition: `zsh` shell
+</advanced>
+
 
 ## O2508 - Neptuunium {#opinsys-os-opinsys-bookworm-2025-02-21-071828-amd64}
 

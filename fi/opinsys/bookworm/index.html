@@ -26,6 +26,38 @@
   <code>
 
 
+## O2513 - Osmium {#opinsys-os-opinsys-bookworm-2025-03-28-083546-amd64}
+
+- <advanced title="Korjaus: Freecad-sovellus palautettu valikkoon">
+Sovellus ei ollut näkyvissä sovellusvalikossa pääversion päivityksen jälkeen asetusvirheen vuoksi. Ongelma on nyt korjattu.
+</advanced>
+
+- <advanced title="Korjaus: Esteettömyysasetusten päälle/pois-painikkeet">
+Esteettömyysasetusten ollessa käytössä toimintojen päälle/pois-painikkeet eivät näkyneet työpöydän alapaneelissa olevassa valikossa. Ongelma on nyt korjattu.
+</advanced>
+
+- Thonny-ohjelmointityökalu lisätty sovellusvalikkoon
+
+- <advanced title="Lisäys: Tuki SonoBus-sovellukselle lisätty">
+Sovellus on asennettavissa erillisen *puavo-pkg*-asentimen kautta laitehallinnasta.
+</advanced>
+
+- <advanced title="Muutos: Sudo-oikeuksien poistaminen ensisijaisilta käyttäjiltä oletuksena">
+Jatkossa henkilökohtaisen laitteen ensisijainen käyttäjä ei saa automaattisesti sudo-oikeuksia käyttöjärjestelmään. Käyttäjä voi kuitenkin edelleen hallinnoida verkkoasetuksia sekä tyhjentää laitteen ja palauttaa sen tehdasasetuksiin. Oikeuksia voi muuttaa organisaation pääkäyttäjä laitehallinnan asetuksista.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset	
+<advanced title="Näytä...">
+- Lisäys: `scdaemon`-paketti
+- Korjaus: Käyttäjätunnuksen rekisteröintisovellus (lukiolaiskannettavat) estää jatkossa pisteen (.) käytön tunnuksen lopussa.
+- Korjaus: Toimimaton Screencast-painike on poistettu Gnome-työpöydän integroidusta kuvankaappaustyökalusta.
+- Korjaus: `restoredisk`-ajon yhteydessä LVM-osioiden koon muuttaminen on poistettu käytöstä.
+- Lisäys: `zsh`-komentotulkki
+</advanced>
+
 ## O2508 - Neptuunium {#opinsys-os-opinsys-bookworm-2025-02-21-071828-amd64}
 
 - <advanced title="Korjaus: Palautettu Toimisto-sovellukset valikkoon Dia-sovellus">
@@ -45,7 +77,7 @@ saanut käynnistettyä kaikki koepaketin kokeet.
 </advanced>
 
 - <advanced title="Muutos: Sudo-oikeuksien poistaminen oletuksena laitteiden ensisijaisilta käyttäjiltä">
-Jatkossa ensisijainen käyttäjä ei saa laitteeseen automaattisesti sudo-oikeuksia. Ominaisuttaa on mahdollista
+Jatkossa ensisijainen käyttäjä ei saa laitteeseen automaattisesti sudo-oikeuksia. Ominaisuutta on mahdollista
 muuttaa laitehallinnan asetusten kautta. Tämä päivitys pohjustaa tulevaa muutosta ja varsinainen oletusasetus
 vaihtuu seuraavassa päivityksessä.
 </advanced>
