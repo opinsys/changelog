@@ -23,6 +23,83 @@
 
 <pre class="markdown">
   <code>
+
+## O2523 - Rimpfischhorn {#opinsys-os-lean-bookworm-2025-06-06-061618-amd64}
+
+- <advanced title="Fix: Herunterfahren- und Neustart-Schaltflächen bei Fatclient-Geräten">
+  Auf einigen Fatclient-Geräten wurden die Schaltflächen *Herunterfahren* und *Neustart* nicht korrekt im rechten Menü der unteren Panel-Leiste angezeigt. Dieses Problem wurde nun behoben.
+</advanced>
+
+### Bekannte Probleme
+
+*(Keine bekannten Probleme in dieser Version.)*
+
+### Technische Änderungen
+<advanced title="Anzeigen...">
+- Fehlerbehebung: Unterstützung für HP lt4132 4G-Modem (EliteBook G5)
+- Änderung: Echtzeitfunktionen für Anwendungen mit Jackd-API aktiviert
+- Fehlerbehebung: Die Sprache der Benutzerkontoregistrierung orientiert sich standardmäßig an der Sprache der Schule des Geräts
+- Fehlerbehebung: Dateiberechtigungen von Hintergrundbildern, die über Puavo Web gesetzt wurden, werden nach dem Herunterladen auf dem Gerät angepasst
+- Erweiterung: Die IP-Adresse des Geräts wird im Installationsmodus (DarkDM) im unteren Panel angezeigt
+- Erweiterung: Erkennung der Tastaturbeleuchtung bei HP EliteBook-Laptops
+</advanced>
+  
+## O2523 - Rubidium {#opinsys-os-opinsys-bookworm-2025-06-06-061629-amd64}
+
+- <advanced title="Fix: Shutdown and Restart buttons on Fatclient and exam server devices">
+On Fatclients the Shutdown and Restart buttons were not displayed in the right-side menu of the desktop bottom panel. This issue has now been resolved.
+</advanced>
+
+- <advanced title="Addition: DHCP support for Abitti 2 server mode">
+A device using the Abitti 2 profile can now be set to ```abitti2server``` mode, allowing it to provide IP addresses to other devices on the local network via DHCP. This is useful, for example, when connecting an Abitti 2 server device to an older Abitti 1 exam network.
+</advanced>
+
+### Known Issues
+
+*(No known issues in this release.)*
+
+### Technical Changes
+<advanced title="Show...">
+- Fix: Support for HP lt4132 4G modem (EliteBook G5)
+- Change: Real-time features enabled for applications using the Jackd API
+- Fix: Language selection of the user account registration form now defaults to the language of the device's school
+- Fix: File permissions of background images configured via Puavo Web are corrected on the device after download
+- Addition: The device IP address is now shown in the bottom panel during installation mode (DarkDM)
+- Addition: Keyboard backlight detection support for HP EliteBook laptops
+</advanced>
+
+# O2518 - Plii {#opinsys-os-opinsys-bookworm-2025-05-02-072518-amd64}
+
+- <advanced title="Addition: Abicode added to the application menu">
+A link to the Abitti Abicode programming tool has been added to the application menu:
+```Menu > Abitti > Abicode```
+</advanced>
+
+- Addition: VirtualBox and the system resource monitor have been added to the exam server's application menu.
+
+- <advanced title="Addition: Support for Abitti 2 exam server">
+A computer running Opinsys OS can now be configured to function
+as a server for the Abitti 2 exam system. Scheduling from Koejakaja
+is not yet supported, and there is no graphical interface for
+operating as a DHCP server for the exam network.
+Abitti 2 functionality can be tested by contacting our support
+and requesting the necessary installations on the desired device.
+</advanced>
+
+- <advanced title="Change: Keyboard shortcuts for screen zoom removed">
+Keyboard shortcuts for screen zoom have been removed due to frequent
+support requests caused by accidental activation. Users can define
+their preferred shortcuts in System Settings.
+</advanced>
+
+### Known issues
+
+
+### Technical changes
+<advanced title="Show...">
+- Addition: `fwupd` package added for firmware updates.
+- Addition: Support for `measureapp` puavo-pkg installer.
+</advanced>
   
 ## O2513 - Osmium {#opinsys-os-opinsys-bookworm-2025-03-28-083546-amd64}
 

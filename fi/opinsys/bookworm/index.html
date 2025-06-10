@@ -25,6 +25,31 @@
 <pre class="markdown">
   <code>
 
+## O2523 - Rubiidium {#opinsys-os-opinsys-bookworm-2025-06-06-061629-amd64}
+
+- <advanced title="Korjaus: Tehopääte/koepalvelin -laitteiden sammuta ja uudelleen käynnistyspainikkeet">
+Esimerkiksi koepalvelimilla ei virheellisesti näkynyt Sammuta ja Uudelleenkäynnistä -painikkeita työpöydän alapaneelin oikeanlaidan valikossa. Ongelma on nyt korjattu.
+</advanced>
+
+- <advanced title="Lisäys: Abitti 2-palvelimen dhcp-tuki">
+Abitti 2 -profiililla oleva laite voidaan asettaa ```abitti2server``` -tilaan jolloin se
+jakaa lähiverkkoon dhcp:llä ip-osoitteita verkossa oleville laitteille. Tämä on hyödyllistä
+liitettäessä Abitti 2 -palvelin laite esim. vanhaan Abitti 1 -koeverkkoon. 
+</advanced> 
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Korjaus: Tuki HP:n lt4132 4g-modeemille (Elitebook G5)
+- Muutos: Kytketty reaaliaika ominaisuudet päälle Jackd API:a käyttäviä sovelluksia varten
+- Korjaus: Käyttäjätunnuksen rekisteröintisovelluksen tietojen keräyslomakkeen kielivalinta noudattaa oletuksena laitteen koulun kieltä.
+- Korjaus: Puavo webin ulkoisista tiedostoista asetettujen taustakuvien tiedosto-oikeudet korjataan järkeviksi laitteella niiden latauksen jälkeen.
+- Lisäys: Laitteiden asennustilassa (DarkDM) näytetään laitteen ip-osoite alapaneelissa.
+- Lisäys: HP Elitebook -kannettavien näppäimistön taustavalon tunnistus.
+</advanced>
+
 
 ## O2518 - Plii {#opinsys-os-opinsys-bookworm-2025-05-02-072518-amd64}
 
