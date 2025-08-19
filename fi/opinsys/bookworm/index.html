@@ -25,6 +25,44 @@
 <pre class="markdown">
   <code>
 
+## O2533 - Skandium {#opinsys-os-opinsys-bookworm-2025-08-15-065628-amd64}
+
+- <advanced title="Muutos: Koetila oletuksena aktiivinen">
+Opiskelutilan koetila on suljettujen kokeiden tekemiseen suunniteltu käyttöympäristö, jossa käyttäjän normaalityöpöytä, vapaa tiedonhaku internetistä ja pääsy omiin tiedostoihin on estetty. Jatkossa koetila on oletuksena näkyvissä ja käytettävissä Menu-valikon ```Koemoodi```-painikkeesta. 
+</advanced>
+
+- <advanced title="Muutos: Suljetun koetilan uudet ominaisuudet (Abitti 2)">
+Suljettua koetilaa voidaan käyttää esimerkiksi Abitti 2 -kokeiden, Next-Exam-kokeiden tai Google Formsilla ja eri kustantajien koeympäristöissä laadittujen kokeiden tekemiseen.  
+Kokeisiin liittyminen on uudistettu: kun koetila käynnistetään sovellusvalikosta, avautuu erillinen ```Liity kokeeseen```-ikkuna. Sen kautta opiskelija voi osallistua Abitti 2 -kokeeseen syöttämällä koekoodin tai liittyä haluamaansa URL-pohjaiseen kokeeseen.  
+Huomioitavaa on, että koetila ei ole virallinen YTL:n hyväksymä tapa osallistua Abitti 2 -kokeisiin. Jos koe järjestetään Abitti 2 -palvelimella (versio 1.0 tai uudempi), palvelimelta tulee olla sallittuna kokeeseen liittyminen verkkoselaimella.  
+YTL:n virallinen Abitti 2 -sovellus tulee esimerkiksi lukiolaiskannettaville sitten, kun YTL sen julkaisee.
+</advanced>
+
+- <advanced title="Päivitys: Koetilan verkkoselain uudistunut">
+Koetilassa käytettävä verkkoselain on uudistettu. Selain toimii Abitti 2 -kokeissa kokoruudun tilassa ja tukee nyt mm. Abitti 2 -käyttöliittymän kirkkauden- ja äänenvoimakkuudensäätöä sekä kaikkien sovellusten ja oheismateriaalien käyttöä.  
+Muiden kokeiden osalta selaimen käyttöliittymää on kehitetty: käyttäjälle näytetään selaimeen lukittu URL-osoite sekä sivunavigointi- ja zoomaustoiminnot. 
+</advanced>
+
+- Päivitys: VirtualBox päivitetty versioon 7.1.12
+
+- <advanced title="Lisäys: Tuki Next-Exam-koeympäristölle">
+Next-Exam on avoimen lähdekoodin ohjelmisto suljettujen kokeiden järjestämistä varten. Opinsys OS -järjestelmässä Next-Exam on integroitu osaksi suljettua koetilaa.  
+Sovelluksesta on kaksi versiota, jotka asennetaan laitteille erikseen:  
+```Opiskelijaversio```, joka integroituu koetilan yhteyteen  
+```Opettajaversio```, joka on saatavilla opettajakäyttäjätunnuksella kirjautuville työpöydän sovellusvalikon *Opetusohjelmat*-osiosta
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+- Abitti 1-koepalvelinten automaattikäynnistyksessä on havaitut satunnaisia ongelmia, jotka voivat johtaa vsiihen että Abitin Virtualbox-palvelin käynnistyy hitaasti tai automaattikäynnistys on estynyt. Ongelmaa selvitetään. 
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Muutos: Koepalvelinten automaattinen uudelleen käynnistys on kytketty oletuksena pois päältä.
+- Päivitys: pieniä korjauksia puavo-disk-erase, puavo-disk-clone sekä laitetestaukseen.
+</advanced>
+
+
 ## O2523 - Rubiidium {#opinsys-os-opinsys-bookworm-2025-06-06-061629-amd64}
 
 - <advanced title="Korjaus: Tehopääte/koepalvelin -laitteiden sammuta ja uudelleen käynnistyspainikkeet">
