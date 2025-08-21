@@ -22,7 +22,35 @@
 
 <pre class="markdown">
   <code>
-  
+
+## O2533 - Skandium {#opinsys-os-opinsys-bookworm-2025-08-15-065628-amd64}
+
+- <advanced title="Änderung: Prüfungsmodus standardmäßig aktiviert">
+Der ```Prüfungsmodus``` in der Schülerumgebung ist eine spezielle Arbeitsumgebung für gesperrte Prüfungen, in der der normale Desktop und der Zugriff auf persönliche Dateien deaktiviert sind. Ab sofort ist der Prüfungsmodus standardmäßig sichtbar und über die *Prüfungsmodus*-Schaltfläche im Menü verfügbar. 
+</advanced>
+
+- <advanced title="Aktualisierung: Browser im Prüfungsmodus verbessert">
+Der im Prüfungsmodus verwendete Webbrowser wurde aktualisiert. Bei Abitti-2-Prüfungen läuft der Browser jetzt im Vollbildmodus und unterstützt u. a. die Helligkeits- und Lautstärkeregelung aus der Abitti-2-Oberfläche sowie die Nutzung aller Anwendungen und Materialien.  
+Für andere Prüfungen wurde die Browseroberfläche verbessert: Angezeigt werden nun die gesperrte Prüfungs-URL sowie Navigations- und Zoomfunktionen. 
+</advanced>
+
+- Aktualisierung: VirtualBox auf Version 7.1.12 aktualisiert
+
+- <advanced title="Ergänzung: Unterstützung für Next-Exam-Umgebung (experimentell)">
+Next-Exam ist eine Open-Source-Software zur Organisation gesperrter Prüfungen. In Opinsys OS wurde Next-Exam in den gesperrten Prüfungsmodus integriert.  
+Es gibt zwei Versionen der Anwendung, die separat auf den Geräten installiert werden:  
+```Schülerversion```, integriert in den Prüfungsmodus  
+```Lehrerversion```, verfügbar für Lehrerkonten im Bereich *Lehrsoftware* des Anwendungsmenüs
+</advanced>
+
+### Bekannte Probleme
+
+### Technische Änderungen
+<advanced title="Anzeigen...">
+- Änderung: Automatischer Neustart der Prüfungsserver ist standardmäßig deaktiviert.  
+- Aktualisierung: Kleine Korrekturen in *puavo-disk-erase*, *puavo-disk-clone* sowie in der Geräteprüfung.
+</advanced>
+
 ## O2523 - Rubidium {#opinsys-os-opinsys-bookworm-2025-06-06-061629-amd64}
 
 - <advanced title="Fix: Herunterfahren- und Neustart-Schaltflächen bei Fatclient-Geräten">

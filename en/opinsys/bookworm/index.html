@@ -24,24 +24,40 @@
 <pre class="markdown">
   <code>
 
-## O2523 - Rimpfischhorn {#opinsys-os-lean-bookworm-2025-06-06-061618-amd64}
+## O2533 - Skandium {#opinsys-os-opinsys-bookworm-2025-08-15-065628-amd64}
 
-- <advanced title="Fix: Herunterfahren- und Neustart-Schaltflächen bei Fatclient-Geräten">
-  Auf einigen Fatclient-Geräten wurden die Schaltflächen *Herunterfahren* und *Neustart* nicht korrekt im rechten Menü der unteren Panel-Leiste angezeigt. Dieses Problem wurde nun behoben.
+- <advanced title="Change: Exam Mode enabled by default">
+The **Exam Mode** in Student Session is a special environment designed for taking locked exams, where the normal desktop and access to personal files are disabled. From now on, Exam Mode is enabled by default and available via the *Exam Mode* button in the Menu. 
 </advanced>
 
-### Bekannte Probleme
+- <advanced title="Change: New features in Locked Exam Mode (Abitti 2)">
+Locked Exam Mode can be used for taking Abitti 2 exams, Next-Exam assessments, or exams created with Google Forms or publishers’ online platforms.  
+The process of joining an exam has been redesigned: when Exam Mode is launched from the application menu, a dedicated "Join Exam" window is shown. From there, a student can join an Abitti 2 exam directly with the exam code or connect to any URL-based exam.  
+Note: Locked Exam Mode is not an officially approved way by the Matriculation Examination Board (YTL) to participate in Abitti 2 exams. If the exam is run on an Abitti 2 server (version 1.0 or newer), the server must allow joining the exam via a web browser.  
+The official YTL Abitti 2 application will be provided for upper secondary laptops once YTL releases it.
+</advanced>
 
-*(Keine bekannten Probleme in dieser Version.)*
+- <advanced title="Update: Exam Mode web browser improved">
+The web browser used in Exam Mode has been updated. For Abitti 2 exams, the browser now runs in full-screen mode and supports functions such as brightness and volume controls from the Abitti 2 interface, as well as the use of all apps and materials.  
+For other exams, the browser interface has been enhanced: the locked exam URL is shown, along with page navigation and zoom controls. 
+</advanced>
 
-### Technische Änderungen
-<advanced title="Anzeigen...">
-- Fehlerbehebung: Unterstützung für HP lt4132 4G-Modem (EliteBook G5)
-- Änderung: Echtzeitfunktionen für Anwendungen mit Jackd-API aktiviert
-- Fehlerbehebung: Die Sprache der Benutzerkontoregistrierung orientiert sich standardmäßig an der Sprache der Schule des Geräts
-- Fehlerbehebung: Dateiberechtigungen von Hintergrundbildern, die über Puavo Web gesetzt wurden, werden nach dem Herunterladen auf dem Gerät angepasst
-- Erweiterung: Die IP-Adresse des Geräts wird im Installationsmodus (DarkDM) im unteren Panel angezeigt
-- Erweiterung: Erkennung der Tastaturbeleuchtung bei HP EliteBook-Laptops
+- Update: VirtualBox updated to version 7.1.12
+
+- <advanced title="Addition: Support for Next-Exam environment">
+Next-Exam is an open-source software for organizing locked exams. In Opinsys OS, Next-Exam has been integrated into Locked Exam Mode.  
+There are two versions of the application, installed separately on devices:  
+- **Student version**, integrated into Exam Mode  
+- **Teacher version**, available for teacher accounts in the *Teaching software* section of the application menu
+</advanced>
+
+### Known Issues
+- Random issues have been observed in the automatic startup of Abitti 1 exam servers. These may cause the Abitti VirtualBox server to start slowly or prevent the automatic startup altogether. The issue is under investigation. 
+
+### Technical Changes
+<advanced title="Show...">
+- Change: Automatic restart of exam servers is disabled by default.  
+- Update: Minor fixes in *puavo-disk-erase*, *puavo-disk-clone* and in device testing.
 </advanced>
   
 ## O2523 - Rubidium {#opinsys-os-opinsys-bookworm-2025-06-06-061629-amd64}
