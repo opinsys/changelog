@@ -27,6 +27,38 @@
 
 ## L2537 - Teide {#opinsys-os-lean-bookworm-2025-09-12-092405-amd64}
 
+- <advanced title="Korjaus: Abitti KTP-virtuaalikoneen automaattinen käynnistyminen koepalvelimilla">
+Naksun ja virtualboxin päivitysten myötä on havaittu, että Abitti KTP-virtuaalikoneen käynnistyminen
+koepalvelin tietokoneen uudelleen käynnistyksen jälkeen ei ole ollut täysin lutettavaa. Ongelmaa
+on nyt korjattu ja järjestelmä toimii luotettavammin. Naksu saattaa nyt käynnistyä hitaammin, mutta 
+ongelmaa ei pitäisi enää esiintyä.
+</advanced>
+
+- <advanced title="Korjaus: Tulostustöiden monistuminen tulostettaessa useita kopioita">
+Joillakin tulostimilla on esiintynyt ongelma, jossa tulostettaessa työstä useita kopioita
+on niiden paperille tulostunut määrä saattanut olla todella valtava (n²). Ongelma on nyt korjattu.
+</advanced>
+
+- <advanced title="Muutos: Käytettävyyskorjauksia kirjautumisruutuun ja työpöydälle">
+Kirjautumisruudun tekstikenttien, virheilmoitusten sekä työpöydän alapaneelin tekstien luettavuutta on parannettu.
+</advanced>
+
+- Lisäys: Resussimonitori ja levytilananalysointisovellus lisätty sovellusvalikon apuohjelmiin
+
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Muutos: Koepalvelimen logien luettavuutta parannettu
+- Korjaus: Next-examin opettajaversio näkyy jatkossa menussa oikein, jos se on asennettuna ja kirjautuneen käyttäjän rooli on opettaja.
+- Lisäys: Tipp10 -kymmensormijärjestelmäsovellus on jatkossa esiasennettuna, mutta se pitää kytkeä erikseen näkyville.
+- Lisäys: Tuki Xeroxin Office Driver puavo-pkg-asentimelle.
+</advanced>
+
+## L2533 - Silverthrone {#opinsys-os-lean-bookworm-2025-08-15-065620-amd64}
+
 - <advanced title="Muutos: Koetila oletuksena aktiivinen">
 Opiskelutilan koetila on suljettujen kokeiden tekemiseen suunniteltu käyttöympäristö, jossa käyttäjän normaalityöpöytä, vapaa tiedonhaku internetistä ja pääsy omiin tiedostoihin on estetty. Jatkossa koetila on oletuksena näkyvissä ja käytettävissä Menu-valikon ```Koemoodi```-painikkeesta. 
 </advanced>
