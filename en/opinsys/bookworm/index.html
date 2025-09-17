@@ -24,6 +24,40 @@
 <pre class="markdown">
   <code>
 
+## O2537 - Titan {#opinsys-os-opinsys-bookworm-2025-09-12-092034-amd64}
+
+### Changes
+- <advanced title="Fix: Automatic startup of Abitti KTP virtual machine on exam servers">
+With the updates to Naksu and VirtualBox, it was observed that the Abitti KTP virtual machine
+did not always start automatically after rebooting an exam server.  
+This issue has now been fixed, and the system is more reliable.  
+Naksu may start more slowly than before, but the problem should no longer occur.
+</advanced>
+
+- <advanced title="Fix: Print jobs multiplying when printing multiple copies">
+On some printers, when printing multiple copies of a job, the number of pages printed
+could grow excessively large (n²). This issue has now been fixed.
+</advanced>
+
+- <advanced title="Change: Usability improvements to the login screen and desktop">
+The readability of text fields and error messages in the login screen, as well as text in the bottom panel of the desktop, has been improved.
+</advanced>
+
+- Addition: Resource Monitor and Disk Usage Analyzer have been added to the Utilities section of the application menu.
+
+
+### Known issues
+- No known issues.
+
+
+### Technical changes
+<advanced title="Show...">
+- Change: Improved readability of exam server logs.
+- Fix: The teacher version of Next-exam is now displayed correctly in the menu if it is installed and the logged-in user’s role is teacher.
+- Addition: Tipp10 touch typing application is now preinstalled, but needs to be manually enabled to appear in the menu.
+</advanced>
+
+
 ## O2533 - Skandium {#opinsys-os-opinsys-bookworm-2025-08-15-065628-amd64}
 
 - <advanced title="Change: Exam Mode enabled by default">

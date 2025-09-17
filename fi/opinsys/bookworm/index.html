@@ -24,6 +24,39 @@
 
 <pre class="markdown">
   <code>
+  
+## O2537 - Titaan {#opinsys-os-opinsys-bookworm-2025-09-12-092034-amd64}
+
+- <advanced title="Korjaus: Abitti KTP-virtuaalikoneen automaattinen käynnistyminen koepalvelimilla">
+Naksun ja virtualboxin päivitysten myötä on havaittu, että Abitti KTP-virtuaalikoneen käynnistyminen
+koepalvelin tietokoneen uudelleen käynnistyksen jälkeen ei ole ollut täysin lutettavaa. Ongelmaa
+on nyt korjattu ja järjestelmä toimii luotettavammin. Naksu saattaa nyt käynnistyä hitaammin, mutta 
+ongelmaa ei pitäisi enää esiintyä.
+</advanced>
+
+- <advanced title="Korjaus: Tulostustöiden monistuminen tulostettaessa useita kopioita">
+Joillakin tulostimilla on esiintynyt ongelma, jossa tulostettaessa työstä useita kopioita
+on niiden paperille tulostunut määrä saattanut olla todella valtava (n²). Ongelma on nyt korjattu.
+</advanced>
+
+- <advanced title="Muutos: Käytettävyyskorjauksia kirjautumisruutuun ja työpöydälle">
+Kirjautumisruudun tekstikenttien, virheilmoitusten sekä työpöydän alapaneelin tekstien luettavuutta on parannettu.
+</advanced>
+
+- Lisäys: Resussimonitori ja levytilananalysointisovellus lisätty sovellusvalikon apuohjelmiin
+
+
+### Tiedossa olevat ongelmat
+- 
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Muutos: Koepalvelimen logien luettavuutta parannettu
+- Korjaus: Next-examin opettajaversio näkyy jatkossa menussa oikein, jos se on asennettuna ja kirjautuneen käyttäjän rooli on opettaja.
+- Lisäys: Tipp10 -kymmensormijärjestelmäsovellus on jatkossa esiasennettuna, mutta se pitää kytkeä erikseen näkyville.
+- Lisäys: Tuki Xeroxin Office Driver puavo-pkg-asentimelle.
+</advanced>
+
 
 ## O2533 - Skandium {#opinsys-os-opinsys-bookworm-2025-08-15-065628-amd64}
 
