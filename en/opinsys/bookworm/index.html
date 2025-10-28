@@ -24,6 +24,51 @@
 <pre class="markdown">
   <code>
 
+## O2543 Uraan - {#opinsys-os-opinsys-bookworm-2025-10-22-114052-amd64}
+
+- <advanced title="Change: Keyboard shortcuts in exam mode (Abitti 2)">
+In the exam mode it is now possible to use the following keyboard shortcuts when connected to an Abitti 2 exam:  
+Zoom ```Ctrl +``` and ```Ctrl -```, and page reload ```Ctrl + R```.  
+In addition, the device’s own buttons can be used to adjust screen brightness and volume.
+</advanced>
+
+- <advanced title="Change: Added exam mode restrictions and removed Bluetooth and WLAN selections">
+Additional restrictions have been added to the exam mode, preventing the launch of applications unrelated to the exam.  
+Bluetooth and WLAN network selections have been removed.  
+Furthermore, certain touch gestures are now disabled when a touchscreen is in use.
+</advanced>
+
+- <advanced title="Change: WLAN network lock in exam mode">
+From now on, the exam mode will lock to the wireless network that was active when joining the exam.  
+This prevents disruptions caused by the device switching to another network, for example due to signal strength fluctuations.
+</advanced>
+
+- <advanced title="Fix: Vernier Graphical Analysis startup in Abitti 2 exam mode">
+Occasional startup issues with the Vernier Graphical Analysis application in Abitti 2 exam mode have now been fixed.
+</advanced>
+
+- <advanced title="Fix: Launching the Ekapeli application">
+The legacy Ekapeli application has had issues due to its use of an outdated Java version that is no longer supported by the operating system.  
+Modifications have now been made to enable the application to run with a newer Java version.
+</advanced>
+
+- <advanced title="Fix: Setting desktop wallpaper from the file manager">
+Setting the desktop wallpaper directly from the file manager did not previously work. This issue has now been fixed.
+</advanced>
+
+- <advanced title="Addition: Kara programming environments">
+The system now includes the option to install the German-language Kara programming environment.
+</advanced>
+
+### Known issues
+
+
+### Technical changes
+<advanced title="Show...">
+- Update: The boot server’s Nextcloud has been updated to version 31.0.9.  
+- Change: Corrected the name of the GeoGebra application launcher (thanks for the anonymous feedback).
+</advanced>
+
 ## O2537 - Titan {#opinsys-os-opinsys-bookworm-2025-09-12-092034-amd64}
 
 ### Changes

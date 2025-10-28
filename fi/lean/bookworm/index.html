@@ -25,6 +25,52 @@
 <pre class="markdown">
   <code>
 
+## L2543 - Uluru - {#opinsys-os-lean-bookworm-2025-10-22-114051-amd64}
+
+- <advanced title="Muutos: Pikanäppäimet koetilassa (Abitti 2)">
+Koetilassa on nyt mahdollista käyttää seuraavia pikanäppäimiä, kun ollaan liittyneenä Abitti 2 -kokeeseen:  
+Zoomaus ```Ctrl +``` ja ```Ctrl -```, sekä sivun uudelleenlataus ```Ctrl + R```.  
+Lisäksi näytön kirkkauden ja äänenvoimakkuuden säätämiseen voidaan käyttää laitteen omia painikkeita.
+</advanced>
+
+- <advanced title="Muutos: Koetilan lukituksia lisätty ja Bluetooth- sekä WLAN-valinnat poistettu">
+Koetilan lukituksia on lisätty, ja tapoja käynnistää kokeeseen kuulumattomia sovelluksia on estetty.  
+Bluetooth- ja WLAN-verkkojen valinnat on poistettu.  
+Lisäksi koetilasta on poistettu käytöstä tietyt kosketuseletoiminnot, jos käytössä on kosketusnäyttö.
+</advanced>
+
+- <advanced title="Muutos: Koetilan WLAN-verkon lukitus">
+Jatkossa koetila lukittuu siihen langattomaan verkkoon, joka on ollut käytössä kokeeseen liityttäessä.  
+Tällä estetään kokeen tekemistä häiritsevät tilanteet, joissa laite voisi esimerkiksi signaalin heikkenemisen 
+vuoksi vaihtaa lennossa toiseen verkkoon.
+</advanced>
+
+- <advanced title="Korjaus: Vernier Graphical Analysis -sovelluksen käynnistyminen Abitti 2 -koetilassa">
+Vernier Graphical Analysis -sovelluksessa on ollut ajoittaisia käynnistymisongelmia, jotka on nyt korjattu.
+</advanced>
+
+- <advanced title="Korjaus: Ekapelin käynnistyminen">
+Vanhan Ekapelin toiminnassa on ollut ongelmia, jotka ovat johtuneet sen käyttämästä vanhasta Java-versiosta, jota käyttöjärjestelmä ei enää tue.  
+Pelin käynnistämiseen on nyt tehty muutoksia, joiden ansiosta se toimii myös uudemmalla Java-versiolla.
+</advanced>
+
+- <advanced title="Korjaus: Työpöydän taustakuvan asettaminen tiedostoselaimesta">
+Taustakuvan asettaminen suoraan tiedostoselaimesta ei aiemmin toiminut. Ongelma on nyt korjattu.
+</advanced>
+
+- <advanced title="Lisäys: Kara-ohjelmointiympäristöt">
+Järjestelmään on lisätty mahdollisuus asentaa saksankielinen Kara-ohjelmointiympäristö.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Päivitys: Boot-palvelimen Nextcloud on päivitetty versioon 31.0.9.  
+- Muutos: Korjattu GeoGebra-sovelluskäynnistimen nimi (kiitos anonyymista palautteesta).
+</advanced>
+
 ## L2537 - Teide {#opinsys-os-lean-bookworm-2025-09-12-092405-amd64}
 
 - <advanced title="Korjaus: Abitti KTP-virtuaalikoneen automaattinen käynnistyminen koepalvelimilla">
