@@ -23,6 +23,41 @@
 
 <pre class="markdown">
   <code>
+  
+## O2602 - Ütrium {#opinsys-os-opinsys-bookworm-2026-01-08-103817-amd64}
+
+- <advanced title="Change: Abitti 2 – exam mode and exam browser">
+From now on, the exam browser can only be used in exam mode. The update also includes other minor fixes related to the functionality of the exam browser.
+</advanced>
+
+- <advanced title="Fix: Idid / InfoTV">
+Fixes related to Idid InfoTV system registration in situations where the Idid registration screen has remained black.
+</advanced>
+
+- <advanced title="Add: Klecks">
+A launcher has been added for the Klecks web application used in Abitti 2.
+</advanced>
+
+- <advanced title="Add: Gambas 3">
+The Gambas 3 programming IDE has been added to the Programming application menu.
+</advanced>
+
+- <advanced title="Add: Python Pyscard">
+The Python library `python-pyscard` has been added to the system.
+</advanced>
+
+
+### Known issues
+- No new known issues at the time of release.
+
+### Technical changes
+<advanced title="Show...">
+- Improvement: Functionality of centralized xrandr display settings has been improved.
+- Change: `puavo-disk-erase` now again uses ATA/NVMe Secure Erase as the default method, with `blkdiscard` as a fallback.
+- Change: Currently known Realtek network adapters have been added to the TLP suspend denylist to prevent incorrect suspend behavior.
+- Change: `rules/syslog` – `/var/log/messages` has been added to logrotate.
+</advanced>
+  
 
 ## O2547 - Vesinik {#opinsys-os-opinsys-bookworm-2025-11-21-103115-amd64}
 

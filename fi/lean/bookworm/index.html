@@ -24,7 +24,42 @@
 
 <pre class="markdown">
   <code>
-  
+
+## L2602 - Watzmann {#opinsys-os-lean-bookworm-2026-01-08-104842-amd64}
+
+- <advanced title="Muutos: Koetila ja koeselain (Abitti 2)">
+Jatkossa koeselaimen käyttö on mahdollista vain koetilassa. Lisäksi päivityksessä on muita pieniä korjauksia koeselaimen toimintaan.
+</advanced>
+
+- <advanced title="Korjaus: Idid / InfoTV">
+Idid InfoTV -järjestelmän rekisteröintiin liittyviä korjauksia tilanteisiin, joissa Idid-rekisteröintiruutu on jäänyt mustaksi.
+</advanced>
+
+- <advanced title="Lisäys: Klecks -selaimella käytettävä piirto-ohjelma (Abitti 2)">
+Lisätty käynnistin Abitti 2:ssa käytössä olevalle Klecks-webbisovellukselle.
+</advanced>
+
+- <advanced title="Lisäys: Gambas 3 -ohjelmointiympäristö">
+Lisätty Gambas 3 -ohjelmointi-IDE Ohjelmointi-sovellusvalikkoon.
+</advanced>
+
+- <advanced title="Lisäys: Python Pyscard">
+Lisätty järjestelmään Python-kirjasto `python-pyscard`.
+</advanced>
+
+
+### Tiedossa olevat ongelmat
+- Ei uusia tiedossa olevia ongelmia julkaisuhetkellä.
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Parannus: Keskitettyjen xrandr-näyttöasetusten toimintaa parannettu.
+- Muutos: `puavo-disk-erase` käyttää oletuksena ATA/NVMe Secure Erase -menetelmää, ja käyttää `blkdiscard`-menetelmää varavaihtoehtona.
+- Muutos: TLP-sääntöihin lisätty tällä hetkellä tunnetut Realtek-verkkokortit estämään virheellinen lepotilaan siirtyminen.
+- Muutos: `rules/syslog` – lisätty `/var/log/messages` mukaan logrotate-kiertoon.
+</advanced>
+
+
 ## L2547 - Vesuvius {#opinsys-os-lean-bookworm-2025-11-21-103059-amd64}
 
 - <advanced title="Muutos: MAOL-sovelluksen käynnistyminen koetilassa (Abitti 2)">

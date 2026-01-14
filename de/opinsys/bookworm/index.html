@@ -22,6 +22,32 @@
 
 <pre class="markdown">
   <code>
+  
+## O2602 - Ütrium {#opinsys-os-opinsys-bookworm-2026-01-08-103817-amd64}
+
+- <advanced title="Fix: Idid / InfoTV">
+Korrekturen an der Registrierung des Idid-InfoTV-Systems in Situationen, in denen das Idid-Registrierungsfenster schwarz geblieben ist.
+</advanced>
+
+- <advanced title="Erweiterung: Gambas 3">
+Die Programmier-IDE Gambas 3 wurde dem Anwendungsmenü für Programmierung hinzugefügt.
+</advanced>
+
+- <advanced title="Erweiterung: Python Pyscard">
+Die Python-Bibliothek `python-pyscard` wurde dem System hinzugefügt.
+</advanced>
+
+
+### Bekannte Probleme
+- Zum Zeitpunkt der Veröffentlichung sind keine neuen bekannten Probleme bekannt.
+
+### Technische Änderungen
+<advanced title="Anzeigen...">
+- Änderung: Die Funktion der zentralisierten xrandr-Anzeigeeinstellungen wurde verbessert.
+- Änderung: `puavo-disk-erase` verwendet standardmäßig wieder ATA/NVMe Secure Erase und greift bei Bedarf auf `blkdiscard` zurück.
+- Änderung: Derzeit bekannte Realtek-Netzwerkkarten wurden den TLP-Regeln hinzugefügt, um ein fehlerhaftes Wechseln in den Ruhezustand zu verhindern.
+- Änderung: `rules/syslog` – `/var/log/messages` wurde zur logrotate-Konfiguration hinzugefügt.
+</advanced>
 
 ## O2547 - Vesinik {#opinsys-os-opinsys-bookworm-2025-11-21-103115-amd64}
 

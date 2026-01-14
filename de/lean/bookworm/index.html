@@ -23,6 +23,32 @@
 <pre class="markdown">
   <code>
 
+## L2602 - Watzmann {#opinsys-os-lean-bookworm-2026-01-08-104842-amd64}
+
+- <advanced title="Korrektur: Idid / InfoTV">
+Korrekturen an der Registrierung des Idid-InfoTV-Systems in Situationen, in denen das Idid-Registrierungsfenster schwarz geblieben ist.
+</advanced>
+
+- <advanced title="Hinzugefügt: Gambas 3">
+Die Programmier-IDE Gambas 3 wurde dem Anwendungsmenü für Programmierung hinzugefügt.
+</advanced>
+
+- <advanced title="Python Pyscard">
+Die Python-Bibliothek `python-pyscard` wurde dem System hinzugefügt.
+</advanced>
+
+
+### Bekannte Probleme
+- Zum Zeitpunkt der Veröffentlichung sind keine neuen bekannten Probleme bekannt.
+
+### Technische Änderungen
+<advanced title="Anzeigen...">
+- Verbesserung: Die Funktion der zentralisierten xrandr-Anzeigeeinstellungen wurde verbessert.
+- Änderung: `puavo-disk-erase` verwendet standardmäßig wieder ATA/NVMe Secure Erase und greift bei Bedarf auf `blkdiscard` zurück.
+- Änderung: Derzeit bekannte Realtek-Netzwerkkarten wurden den TLP-Regeln hinzugefügt, um ein fehlerhaftes Wechseln in den Ruhezustand zu verhindern.
+- Änderung: `rules/syslog` – `/var/log/messages` wurde zur logrotate-Konfiguration hinzugefügt.
+</advanced>
+
 ## L2547 - Vesuvius {#opinsys-os-lean-bookworm-2025-11-21-103059-amd64}
 
 - <advanced title="Änderung: Next-exam-Starter für Lehrkräfte">
