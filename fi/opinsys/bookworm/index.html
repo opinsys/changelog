@@ -24,6 +24,57 @@
 
 <pre class="markdown">
   <code>
+ 
+## O2607 – Aktiinium {#opinsys-os-opinsys-bookworm-2026-02-13-102438-amd64}
+
+- <advanced title="Muutos: Parannuksia Abitti-kokeisiin liittymiseen">
+Koemoodin Abitti-kokeisiin liittymistä on päivitetty vastaamaan
+Abitti 2 -järjestelmän muutoksia. Aiemmin kokeeseen liittyminen on
+onnistunut vain käyttämällä kaksiosaista koepalvelimen nimeä
+(esim. Kamala Trumpetti). Jatkossa tuettuna ovat myös Abitti 2
+-koepalvelimen yksiosainen nimi (esim. liikuntasali) sekä koko
+domain-nimi (esim. ktp1.999.koe.abitti.net). Muutos parantaa
+yhteensopivuutta uuden Abitti 2 -koetilan palvelimen kanssa ja
+helpottaa kokeeseen liittymistä eri nimikäytännöillä.
+</advanced>
+
+- <advanced title="Muutos: Koemoodin ”Liity kokeeseen” -käyttöliittymä uudistettu">
+Koemoodin Liity kokeeseen -käyttöliittymä on uudistettu.
+Liittymistavat (Abitti 2, URL-kokeet ja Next-Exam) on jaettu omille
+välilehdilleen ja käyttöliittymässä näkyy kerrallaan vain yksi
+liittymistapa selkeyden parantamiseksi. Jokaisella välilehdellä on
+yhtenäinen ”Liity kokeeseen” -painike. Uudistus selkeyttää näkymää
+ja helpottaa oikean liittymistavan valintaa koetilanteessa.
+</advanced>
+
+- <advanced title="Lisäys: OTPClient lisätty Apuohjelmat-valikkoon">
+OTPClient-kaksivaiheisen tunnistautumisen sovellus on lisätty
+Apuohjelmat-valikkoon. Sovelluksella voidaan hallita TOTP-pohjaisia
+kertakäyttökoodeja palveluihin, jotka edellyttävät kaksivaiheista
+tunnistautumista.
+</advanced>
+
+- <advanced title="Lisäys: Edistynyt verkkokokoonpano lisätty Apuohjelmat-valikkoon">
+Apuohjelmat-valikkoon on lisätty Edistynyt verkkokokoonpano
+-sovellus (nm-connection-editor). Sovelluksella voidaan hallita ja
+muokata laitteen verkkoyhteyksiä tarkemmalla tasolla.
+</advanced>
+
+- <advanced title="Lisäys: Tuki Koejakaja-palvelimelle Abitti 2 -ympäristössä">
+Järjestelmään on lisätty tuki Koejakaja-palvelimen
+toiminnallisuudelle Abitti 2 -koepalvelinympäristössä.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+- Ei tiedossa olevia ongelmia.
+
+### Tekniset muutokset
+<advanced title="Näytä...">
+- Kernel päivitetty versioon 6.1.0-42 (Debian Bookworm).
+- NVIDIA-ajuri päivitetty.
+- Docker-versiot yhdenmukaistettu YTL Linux -ympäristön kanssa.
+</advanced>
 
 ## O2602 - Ütrium {#opinsys-os-opinsys-bookworm-2026-01-08-103817-amd64}
 

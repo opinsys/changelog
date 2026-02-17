@@ -23,6 +23,59 @@
 
 <pre class="markdown">
   <code>
+
+## O2607 – Aktiinium {#opinsys-os-opinsys-bookworm-2026-02-13-102438-amd64}
+
+- <advanced title="Change: Improvements to joining Abitti exams">
+Joining Abitti exams in exam mode has been updated to match
+changes in the Abitti 2 system. Previously, joining was only
+possible using a two-part exam server name (e.g. Kamala
+Trumpetti). It is now also possible to use a single-part Abitti 2
+server name (e.g. liikuntasali) as well as the full domain name
+(e.g. ktp1.999.koe.abitti.net). The change improves compatibility
+with the new Abitti 2 exam server and makes joining easier with
+different naming conventions.
+</advanced>
+
+- <advanced title="Change: Renewed 'Join exam' user interface in exam mode">
+The Join exam user interface in exam mode has been renewed.
+Joining methods (Abitti 2, URL exams and Next-Exam) are now
+separated into their own tabs, and only one method is visible at
+a time for clarity. Each tab includes a unified "Join exam"
+button. The renewal improves clarity and makes it easier to
+select the correct joining method during an exam.
+</advanced>
+
+- <advanced title="Add: OTPClient added to Utilities menu">
+The OTPClient two-factor authentication application has been
+added to the Utilities menu. The application can be used to
+manage TOTP-based one-time codes for services requiring
+two-factor authentication.
+</advanced>
+
+- <advanced title="Add: Advanced network configuration added to Utilities menu">
+The Advanced network configuration application
+(nm-connection-editor) has been added to the Utilities menu.
+The application allows detailed management and modification of
+network connections.
+</advanced>
+
+- <advanced title="Add: Support for Koejakaja server in Abitti 2 environment">
+Support for Koejakaja server functionality has been added to the
+Abitti 2 exam server environment.
+</advanced>
+
+### Known issues
+
+- No known issues.
+
+### Technical changes
+<advanced title="Show...">
+- Kernel updated to version 6.1.0-42 (Debian Bookworm).
+- NVIDIA driver updated.
+- Docker versions aligned with YTL Linux environment.
+</advanced>
+
   
 ## O2602 - Ütrium {#opinsys-os-opinsys-bookworm-2026-01-08-103817-amd64}
 
