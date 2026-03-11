@@ -23,6 +23,51 @@
 
 <pre class="markdown">
   <code>
+  
+## O2611 – Broom {#opinsys-os-opinsys-bookworm-2026-03-09-100004-amd64}
+
+## O2611 – Broom
+
+- <advanced title="Add: Support for YTL Abitti 2 candidate application">
+After this update it is possible to install the Abitti 2 candidate
+application provided by the Finnish Matriculation Examination Board
+(YTL) on upper secondary school laptops. Technically the application
+is the Abitti 2 candidate USB environment integrated onto the
+computer’s internal storage. The installed version is defined in the
+customer organisation settings and Opinsys upper secondary school
+laptops will normally receive the latest available version of the
+application. Two versions of the application may exist on the device
+at the same time, providing flexibility between student laptops and
+the version used on the exam server. The application updates
+automatically in the background and normally requires no actions
+from school staff or students. If the school network allows device
+to device communication, laptops can share the Abitti 2 installation
+with each other which speeds up updates and reduces internet
+bandwidth usage. After installation the Abitti 2 candidate
+application appears in the computer’s start menu. The application
+is launched in the same way as with the previous Abitti 1 system
+from the boot menu shown when the computer is started or restarted.
+</advanced>
+
+- <advanced title="Fix: Compatibility with Abitti 2 exam server version 1.24 and newer">
+Exam mode now works normally again with newer Abitti 2 exam
+server versions.
+</advanced>
+
+- <advanced title="Update: Improvements to Opinsys Abitti 2 exam server functionality">
+The operation of the Opinsys Abitti 2 exam server has been improved
+as part of the system update.
+</advanced>
+
+### Known issues
+
+- No known issues.
+
+### Technical changes
+<advanced title="Show technical changes">
+- OTPClient is shown only on personally managed laptops.
+- Abitti 2 exam server component ktp-controller updated to version 0.3.0.
+</advanced>
 
 ## O2607 – Aktiinium {#opinsys-os-opinsys-bookworm-2026-02-13-102438-amd64}
 
