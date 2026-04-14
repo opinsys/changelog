@@ -23,10 +23,56 @@
 
 <pre class="markdown">
   <code>
-  
-## O2611 – Broom {#opinsys-os-opinsys-bookworm-2026-03-09-100004-amd64}
 
-## O2611 – Broom
+## O2615 – Curium {#opinsys-os-opinsys-bookworm-2026-04-13-071631-amd64}
+
+- <advanced title="Change: Expansion of Abitti 2 exam server IP range">
+The IP range of the Abitti 2 exam server has been expanded so that
+the server can provide IP addresses to a larger number of student
+devices during the day. As a result of this change, the exam network
+IP address will change during the update, which requires requesting
+a new address for the exam server from Naksu 2.
+</advanced>
+
+- <advanced title="Change: Support for open network on Abitti 2 exam server">
+The Opinsys exam server can now be connected to the Koejakaja
+service also in a so-called open network where the server does not
+act as a DHCP server. Previously this was only partially possible
+and did not persist across device reboots. Going forward, the
+functionality can be enabled via device management using the
+setting: `puavo.ers.mode abitti2server_examnet_unmanaged`.
+</advanced>
+
+- <advanced title="Change: Browser updates on fatclients moved to nighttime">
+On fatclients, Google Chrome and Firefox browser updates are now
+applied on the server during nighttime only. This prevents situations
+where a browser update interrupts an active session or causes
+browser instability.
+</advanced>
+
+- <advanced title="Add: Support for Abitti 2 in Laptop settings tool">
+Support for Abitti 2 functionality has been added to the Laptop
+settings tool.
+</advanced>
+
+- <advanced title="Update: Boot server Nextcloud updated">
+The local Nextcloud on the Opinsys boot server has been updated
+to version 32.0.8.
+</advanced>
+
+### Known issues
+
+- No known issues.
+
+### Technical changes
+<advanced title="Show technical changes">
+- Add: Ability to enable GRUB password protection.
+- Add: Munin configuration for Abitti exam servers and ability to monitor load metrics.
+- Add: Packages nodejs and npm.
+- Add: Support for devel branch puavo-pkg packages.
+</advanced>
+
+## O2611 – Broom {#opinsys-os-opinsys-bookworm-2026-03-09-100004-amd64}
 
 - <advanced title="Add: Support for YTL Abitti 2 candidate application">
 After this update it is possible to install the Abitti 2 candidate

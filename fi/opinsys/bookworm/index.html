@@ -25,6 +25,54 @@
 <pre class="markdown">
   <code>
   
+## O2615 – Curium {#opinsys-os-opinsys-bookworm-2026-04-13-071631-amd64.img}
+
+- <advanced title="Muutos: Abitti 2 -koepalvelimen IP-alueen kasvattaminen">
+Abitti 2 -koepalvelimen IP-aluetta on kasvatettu, jotta palvelin
+voi tarjota IP-osoitteita suuremmalle määrälle opiskelijoiden
+laitteita päivän aikana. Muutoksen seurauksena koeverkon
+IP-osoite muuttuu päivityksen yhteydessä, mikä edellyttää, että koepalvelimelle
+haetaan Naksu 2:sta uusi osoite.
+</advanced>
+
+- <advanced title="Muutos: Abitti 2 -koepalvelimelle avoimen verkon tuki">
+Opinsys-koepalvelin voidaan nyt liittää Koejakaja-palveluun myös ns.
+avoimessa verkossa, jossa palvelin ei toimi DHCP-palvelimena.
+Aiemmin tämä oli mahdollista vain rajoitetusti eikä ratkaisu
+kestänyt esimerkiksi laitteen uudelleenkäynnistystä. Jatkossa
+toiminnallisuus voidaan ottaa käyttöön laitehallinnassa
+asetuksella: `puavo.ers.mode abitti2server_examnet_unmanaged`.
+</advanced>
+
+- <advanced title="Muutos: Selainpäivitykset tehopäätteillä siirretty yöaikaan">
+Tehopäätteillä (fatclient) Google Chrome- ja Firefox-selainten
+päivitykset otetaan käyttöön palvelimella vasta yöaikaan.
+Muutos estää tilanteita, joissa selainpäivitys keskeyttää
+käynnissä olevan istunnon tai aiheuttaa selaimen virhetiloja.
+</advanced>
+
+- <advanced title="Lisäys: Tuki Abitti 2:lle Kannettavan asetukset -työkaluun">
+Kannettavan asetukset -työkaluun on lisätty tuki Abitti 2
+-toiminnallisuuksille.
+</advanced>
+
+- <advanced title="Päivitys: Bootpalvelimen Nextcloud päivitetty">
+Opinsys Bootpalvelimen paikallinen Nextcloud on päivitetty
+versioon 32.0.8.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+- Ei tiedossa olevia ongelmia.
+
+### Tekniset muutokset
+<advanced title="Näytä tekniset muutokset">
+- Lisäys: Mahdollisuus ottaa käyttöön Grubin salasanalukitus.
+- Lisäys: Munin-konfiguraatio Abitti-koepalvelimille ja mahdollisuus seurata kuormitustietoja.
+- Lisäys: Paketit nodejs ja npm.
+- Lisäys: Tuki devel-haaran puavo-pkg -paketeille.
+</advanced>
+  
 ## O2611 – Broom {#opinsys-os-opinsys-bookworm-2026-03-09-100004-amd64}
 
 - <advanced title="Lisäys: Tuki YTL:n Abitti 2 -kokelassovellukselle">
