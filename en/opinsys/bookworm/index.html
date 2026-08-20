@@ -23,6 +23,37 @@
 
 <pre class="markdown">
   <code>
+  
+## O2633 – Fosfor {#opinsys-os-opinsys-bookworm-2026-08-14-085316-amd64}
+
+- <advanced title="Change: Joining an Abitti 2 exam in Exam Mode requires supervisor approval">
+Joining an Abitti 2 exam using Exam Mode now requires approval
+from the exam server's supervisor view. Exam Mode is no longer
+identified to the Abitti 2 exam server as YTL's candidate
+application, but instead as a regular browser. This change has
+been made because YTL's candidate application has developed into
+the primary way to participate in Abitti 2 exams. The change
+improves supervision of course exams in cases of possible cheating
+and also helps prevent human errors in matriculation examinations,
+where using Exam Mode instead of the candidate application is not
+permitted.
+</advanced>
+
+- <advanced title="Update: Boot server Nextcloud and Collabora updated">
+The local Nextcloud on the Opinsys boot server has been updated
+to version 32.0.13 and Collabora to version 26.04.2.4.1.
+</advanced>
+
+### Known issues
+
+- No known issues.
+
+### Technical changes
+<advanced title="Show technical changes">
+- Change: OpenLDAP TLS implementation changed from GnuTLS to OpenSSL.
+- Update: Default kernel updated to version 6.1.0-52.
+- Update: Crisp kernel updated to version 6.12.100+deb12.1.
+</advanced>
 
 ## O2623 – Europium {#opinsys-os-opinsys-bookworm-2026-06-03-115104-amd64}
 
