@@ -22,6 +22,41 @@
 
 <pre class="markdown">
   <code>
+
+## O2638 – Gadoliinium {#opinsys-os-opinsys-bookworm-2026-09-15-110146-amd64}
+
+- <advanced title="Fix: GeoGebra startet mit einem leeren weißen Fenster">
+In einigen Situationen konnte GeoGebra mit einem leeren weißen Fenster
+starten. Die problematischen GPUCache-Daten werden nun beim Start der
+Anwendung umgangen und verhindern dadurch nicht mehr den normalen Start
+von GeoGebra.
+</advanced>
+
+- <advanced title="Erweiterung: TI-Nspire CX Online Starter">
+Dem System wurde ein TI-Nspire CX Online Starter hinzugefügt, der
+standardmäßig ausgeblendet ist. Die Anwendung öffnet eine
+Webanwendung, die dem in Abitti 2 enthaltenen TI-Nspire-Rechner
+ähnelt, in einem eigenen Anwendungsfenster und kann dadurch wie eine
+normale Desktop-Anwendung verwendet werden.
+</advanced>
+
+- <advanced title="Erweiterung: Unterstützung für separat installierbares Sweet Home 3D">
+Sweet Home 3D kann nun zentral über die puavo-pkg-Funktion der
+Geräteverwaltung auf Computern installiert werden.
+</advanced>
+
+### Bekannte Probleme
+
+- Keine bekannten Probleme.
+
+### Technische Änderungen
+<advanced title="Technische Änderungen anzeigen">
+- Erweiterung: Cache-Verzeichnisse im Home-Verzeichnis können mit einer
+  separat aktivierbaren Funktion automatisch bereinigt werden.
+  Standardmäßig umfasst die Bereinigung Schrift- und Browser-Caches
+  und wird über neue puavo-conf: `puavo.admin.cleanup.caches.ensure_free_space`.
+</advanced>
+
   
 ## O2633 – Fosfor {#opinsys-os-opinsys-bookworm-2026-08-14-085316-amd64}
 

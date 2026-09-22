@@ -25,6 +25,42 @@
 <pre class="markdown">
   <code>
 
+```markdown
+## L2638 – Grossglockner {#opinsys-os-lean-bookworm-2026-09-15-110046-amd64}
+
+- <advanced title="Korjaus: GeoGebran käynnistyminen valkoiseen ikkunaan">
+GeoGebra on joissakin tilanteissa voinut käynnistyä tyhjään valkoiseen
+ikkunaan. Ongelman aiheuttanut GPUCache-välimuisti ohitetaan jatkossa
+ohjelman käynnistyksen yhteydessä, eikä se enää estä GeoGebran normaalia
+käynnistymistä.
+</advanced>
+
+- <advanced title="Lisäys: TI-Nspire CX Online -käynnistin">
+Järjestelmään on lisätty TI-Nspire CX Online -käynnistin, joka on
+oletuksena piilotettu. Sovellus avaa Abitti 2:n mukana tulevaa
+TI-Nspire-laskinta muistuttavan verkkosovelluksen omaan
+sovellusikkunaansa, jossa sitä voidaan käyttää tavallisen
+työpöytäsovelluksen tapaan.
+</advanced>
+
+- <advanced title="Lisäys: Tuki erikseen asennettavalle Sweet Home 3D -sovellukselle">
+Sweet Home 3D voidaan nyt asentaa tietokoneille keskitetysti
+laitehallinnan puavo-pkg-toiminnallisuuden avulla.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+- Ei tiedossa olevia ongelmia.
+
+### Tekniset muutokset
+<advanced title="Näytä tekniset muutokset">
+- Lisäys: Kotikansion välimuistihakemistoja voidaan siivota automaattisesti
+  erikseen kytkettävällä ominaisuudella. Oletuksena siivous koskee fontti-
+  ja selainvälimuisteja, ja toimintoa ohjataan uudella puavo-conf-asetuksella:  
+`puavo.admin.cleanup.caches.ensure_free_space`.
+</advanced>
+```
+
 ## L2633 – Fuji {#opinsys-os-lean-bookworm-2026-08-14-085312-amd64}
 
 - <advanced title="Muutos: Abitti 2 -kokeeseen liittyminen Koemoodilla vaatii valvojan hyväksynnän">

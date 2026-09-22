@@ -23,7 +23,40 @@
 
 <pre class="markdown">
   <code>
-  
+
+## O2638 – Gadoliinium {#opinsys-os-opinsys-bookworm-2026-09-15-110146-amd64}
+
+- <advanced title="Fix: GeoGebra starting with a blank white window">
+In some situations GeoGebra could start with a blank white window.
+The GPUCache data causing the issue is now bypassed when the
+application starts, preventing it from interfering with normal
+GeoGebra startup.
+</advanced>
+
+- <advanced title="Add: TI-Nspire CX Online launcher">
+A TI-Nspire CX Online launcher has been added to the system and is
+hidden by default. The application opens a web application resembling
+the TI-Nspire calculator included with Abitti 2 in its own application
+window, allowing it to be used like a regular desktop application.
+</advanced>
+
+- <advanced title="Add: Support for separately installable Sweet Home 3D">
+Sweet Home 3D can now be centrally installed on computers using the
+puavo-pkg functionality in device management.
+</advanced>
+
+### Known issues
+
+- No known issues.
+
+### Technical changes
+<advanced title="Show technical changes">
+- Add: Home directory cache folders can be cleaned automatically using
+  a separately configurable feature. By default, the cleanup covers
+  font and browser caches and is controlled by new puavo-conf:  
+`puavo.admin.cleanup.caches.ensure_free_space`.
+</advanced>
+
 ## O2633 – Fosfor {#opinsys-os-opinsys-bookworm-2026-08-14-085316-amd64}
 
 - <advanced title="Change: Joining an Abitti 2 exam in Exam Mode requires supervisor approval">
