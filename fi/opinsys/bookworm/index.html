@@ -25,6 +25,56 @@
 <pre class="markdown">
   <code>
   
+## O2648 – Indium {#opinsys-os-opinsys-bookworm-2026-11-23-084441-amd64}
+
+- <advanced title="Korjaus: Vernier Graphical Analysis avaa .gambl-tiedostot oikein">
+Vernier Graphical Analysis avaa nyt .gambl-tiedostot oikein. Myös
+.gambl-tiedostojen avaaminen suoraan tiedostohallinnasta toimii
+päivityksen jälkeen.
+</advanced>
+
+- <advanced title="Korjaus: Verkkoyhteydet Abitti 2 -koepalvelimilla">
+Abitti 2 -koepalvelimien verkkotoimintaan on tehty korjauksia, jotka
+parantavat erityisesti Chromebook- ja Windows-laitteiden
+verkkoyhteyksien toimintaa koeverkossa.
+</advanced>
+
+- <advanced title="Korjaus: Verkkotulostinten toiminnan parantaminen">
+Tulostusjärjestelmän välimuistitiedostot tyhjennetään jatkossa
+laitteen käynnistyksen yhteydessä. Muutos ehkäisee tilanteita, joissa
+vanhentuneet välimuistitiedot voivat häiritä verkkotulostinten
+toimintaa.
+</advanced>
+
+- <advanced title="Lisäys: TI-Nspire Connect voidaan lisätä sovellusvalikkoon">
+TI-Nspire Connect -verkkosovellukselle on lisätty oma käynnistin ja
+se voidaan nyt ottaa käyttöön sovellusvalikossa laitehallinnan
+asetuksilla.
+</advanced>
+
+### Tiedossa olevat ongelmat
+
+- Ei tiedossa olevia ongelmia.
+
+### Tekniset muutokset
+<advanced title="Näytä tekniset muutokset">
+- Päivitys: Bookworm-kernelit päivitetty ja 6.12-kernelin Surface-pätsit
+  päivitetty uusimpiin versioihin.
+- Päivitys: Bootpalvelimen/Puavoboxin Nextcloud päivitetty versioon
+  33.0.11, Collabora versioon 26.04.6.1.1 ja PostgreSQL versioon 16.16.
+- Muutos: Ajan synkronoinnissa systemd-timesyncd on korvattu
+  OpenNTPD:llä. ERS-profiilin laitteet voivat toimia myös NTP-palvelimina.
+- Korjaus: LDAP-replikoinnin ja LDAP-palvelinten toimintaa on parannettu
+  erityisesti palvelimen uudelleenkäynnistyksen jälkeisissä tilanteissa.
+- Muutos: Logrotate suoritetaan jatkossa myös laitteen ollessa
+  akkukäytöllä.
+- Lisäys: Abitti-koepalvelinten Munin-seurantaan on lisätty
+  WLAN-verkkoliitännät.
+- Korjaus: puavo-test-hardware-ohjelman äänitestin toimintaa on
+  parannettu HP EliteBook Aero- ja HP ZBook Fury G8 -malleilla.
+</advanced>
+
+  
   ## O2643 – Hapnik {#opinsys-os-opinsys-bookworm-2026-10-20-062837-amd64}
 
 Tämä julkaisu sisältää ensisijaisesti tavanomaisia tietoturva- ja

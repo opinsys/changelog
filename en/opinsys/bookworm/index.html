@@ -23,6 +23,54 @@
 
 <pre class="markdown">
   <code>
+  
+## O2648 – Indium {#opinsys-os-opinsys-bookworm-2026-11-23-084441-amd64}
+
+- <advanced title="Fix: Vernier Graphical Analysis opens .gambl files correctly">
+Vernier Graphical Analysis now opens .gambl files correctly. Opening
+.gambl files directly from the file manager also works after this
+update.
+</advanced>
+
+- <advanced title="Fix: Network connections on Abitti 2 exam servers">
+Improvements have been made to networking on Abitti 2 exam servers,
+particularly improving network connectivity for Chromebook and
+Windows devices in the exam network.
+</advanced>
+
+- <advanced title="Fix: Improved network printer functionality">
+Print system cache files are now cleared when the device starts.
+This helps prevent situations where stale cache data interferes
+with the operation of network printers.
+</advanced>
+
+- <advanced title="Add: TI-Nspire Connect can be added to the application menu">
+A dedicated launcher has been added for the TI-Nspire Connect web
+application. It can now be enabled in the application menu through
+device management settings.
+</advanced>
+
+### Known issues
+
+- No known issues.
+
+### Technical changes
+<advanced title="Show technical changes">
+- Update: Bookworm kernels updated and Surface patches for the 6.12 kernel
+  updated to the latest versions.
+- Update: Nextcloud on the boot server/Puavobox updated to version 33.0.11,
+  Collabora to version 26.04.6.1.1 and PostgreSQL to version 16.16.
+- Change: systemd-timesyncd replaced by OpenNTPD for time synchronization.
+  Devices with the ERS profile can also operate as NTP servers.
+- Fix: LDAP replication and LDAP server operation improved, particularly
+  after server restarts.
+- Change: Logrotate now also runs while the device is running on battery
+  power.
+- Add: All physical network interfaces (Ethernet and WLAN) added to Munin
+  monitoring on Abitti exam servers.
+- Fix: Audio tests in puavo-test-hardware improved for HP EliteBook Aero
+  and HP ZBook Fury G8 models.
+</advanced>
 
 ## O2643 – Hapnik {#opinsys-os-opinsys-bookworm-2026-10-20-062837-amd64}
 

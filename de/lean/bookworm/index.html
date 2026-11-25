@@ -22,7 +22,49 @@
 
 <pre class="markdown">
   <code>
-  
+
+## L2648 – Innerdalstårnet {#opinsys-os-lean-bookworm-2026-11-23-085402-amd64}
+
+- <advanced title="Fix: Vernier Graphical Analysis öffnet .gambl-Dateien korrekt">
+Vernier Graphical Analysis öffnet .gambl-Dateien nun korrekt. Auch
+das direkte Öffnen von .gambl-Dateien über den Dateimanager
+funktioniert nach diesem Update.
+</advanced>
+
+- <advanced title="Fix: Verbesserte Funktion von Netzwerkdruckern">
+Cache-Dateien des Drucksystems werden nun beim Start des Geräts
+gelöscht. Dadurch werden Situationen vermieden, in denen veraltete
+Cache-Daten die Funktion von Netzwerkdruckern beeinträchtigen.
+</advanced>
+
+- <advanced title="Erweiterung: TI-Nspire Connect kann dem Anwendungsmenü hinzugefügt werden">
+Für die Webanwendung TI-Nspire Connect wurde ein eigener Starter
+hinzugefügt. Die Anwendung kann nun über die Einstellungen der
+Geräteverwaltung im Anwendungsmenü aktiviert werden.
+</advanced>
+
+### Bekannte Probleme
+
+- Keine bekannten Probleme.
+
+### Technische Änderungen
+<advanced title="Technische Änderungen anzeigen">
+- Aktualisierung: Bookworm-Kernel aktualisiert und Surface-Patches für
+  den 6.12-Kernel auf die neuesten Versionen gebracht.
+- Aktualisierung: Nextcloud auf dem Bootserver/Puavobox auf Version
+  33.0.11, Collabora auf Version 26.04.6.1.1 und PostgreSQL auf Version
+  16.16 aktualisiert.
+- Änderung: systemd-timesyncd wurde für die Zeitsynchronisierung durch
+  OpenNTPD ersetzt.
+- Fix: LDAP-Replikation und der Betrieb der LDAP-Server wurden
+  insbesondere nach Serverneustarts verbessert.
+- Änderung: Logrotate wird nun auch ausgeführt, wenn das Gerät im
+  Akkubetrieb läuft.
+- Fix: Die Audiotests in puavo-test-hardware wurden für HP EliteBook Aero
+  und HP ZBook Fury G8 verbessert.
+</advanced>
+
+
 ## L2643 – Hualcán {#opinsys-os-lean-bookworm-2026-10-20-062826-amd64}
 
 Diese Version enthält hauptsächlich reguläre Sicherheits- und
